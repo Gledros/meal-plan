@@ -1,0 +1,22 @@
+{
+  "id": 13,
+  "nombre": "Kiwi Suave",
+  "sabores": "kiwi + pepino",
+  "informacion_nutricional": {
+    "kcal": 405,
+    "carbohidratos_g": 42,
+    "grasas_g": 16,
+    "proteina_g": 20
+  },
+  "ingredientes": [
+    "2 kiwis",
+    "1/2 taza pepino",
+    "1 taza agua",
+    "1 scoop proteína vegetal en polvo",
+    "1 scoop creatina",
+    "1 cda chía pre-hidratada",
+    "1 cda linaza pre-hidratada",
+    "1 cda semillas de cáñamo peladas"
+  ],
+  "color": "#9EDC89"
+}

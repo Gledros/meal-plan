@@ -1,0 +1,22 @@
+{
+  "id": 30,
+  "nombre": "Frambuesa Suave",
+  "sabores": "frambuesa + manzana",
+  "informacion_nutricional": {
+    "kcal": 410,
+    "carbohidratos_g": 42,
+    "grasas_g": 16,
+    "proteina_g": 20
+  },
+  "ingredientes": [
+    "1/2 taza frambuesas",
+    "1 manzana",
+    "1 taza agua",
+    "1 scoop proteína vegetal en polvo",
+    "1 scoop creatina",
+    "1 cda chía pre-hidratada",
+    "1 cda linaza pre-hidratada",
+    "1 cda semillas de cáñamo peladas"
+  ],
+  "color": "#FF8CA1"
+}

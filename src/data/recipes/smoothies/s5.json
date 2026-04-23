@@ -1,0 +1,23 @@
+{
+  "id": 5,
+  "nombre": "Proteico natural",
+  "sabores": "avena + cacahuate",
+  "informacion_nutricional": {
+    "kcal": 490,
+    "carbohidratos_g": 42,
+    "grasas_g": 22,
+    "proteina_g": 23
+  },
+  "ingredientes": [
+    "1 cda avena",
+    "1 cdita mantequilla de cacahuate natural",
+    "1/2 plátano",
+    "1 taza agua o bebida vegetal",
+    "1 scoop proteína vegetal en polvo",
+    "1 scoop creatina",
+    "1 cda chía pre-hidratada",
+    "1 cda linaza pre-hidratada",
+    "1 cda semillas de cáñamo peladas"
+  ],
+  "color": "#C9A46C"
+}

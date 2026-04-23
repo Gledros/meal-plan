@@ -1,0 +1,24 @@
+{
+  "id": 4,
+  "nombre": "Desinflamante",
+  "sabores": "manzana + canela + chía",
+  "informacion_nutricional": {
+    "kcal": 435,
+    "carbohidratos_g": 50,
+    "grasas_g": 17,
+    "proteina_g": 21
+  },
+  "ingredientes": [
+    "1 manzana",
+    "1 cda chía",
+    "1/2 taza pepino",
+    "1 taza agua",
+    "Canela al gusto",
+    "1 scoop proteína vegetal en polvo",
+    "1 scoop creatina",
+    "1 cda chía pre-hidratada",
+    "1 cda linaza pre-hidratada",
+    "1 cda semillas de cáñamo peladas"
+  ],
+  "color": "#E5C49A"
+}

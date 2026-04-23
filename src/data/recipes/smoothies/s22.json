@@ -1,0 +1,22 @@
+{
+  "id": 22,
+  "nombre": "Piña Cúrcuma Active",
+  "sabores": "piña + cúrcuma",
+  "informacion_nutricional": {
+    "kcal": 400,
+    "carbohidratos_g": 42,
+    "grasas_g": 16,
+    "proteina_g": 20
+  },
+  "ingredientes": [
+    "1/2 taza piña",
+    "1/2 cdita cúrcuma",
+    "1 taza agua",
+    "1 scoop proteína vegetal en polvo",
+    "1 scoop creatina",
+    "1 cda chía pre-hidratada",
+    "1 cda linaza pre-hidratada",
+    "1 cda semillas de cáñamo peladas"
+  ],
+  "color": "#F2C572"
+}
