@@ -1,0 +1,19 @@
+{
+  "id": 7,
+  "nombre": "Sopa de verduras (+25%)",
+  "informacion_nutricional": {
+    "kcal": 92,
+    "carbohidratos_g": 0,
+    "grasas_g": 0,
+    "proteina_g": 0
+  },
+  "ingredientes": [
+    "1 1/4 zanahoria",
+    "3/4 papa",
+    "3/4 calabaza",
+    "1/3 taza ejotes"
+  ],
+  "pasos": [
+    "Hervir hasta suavizar."
+  ]
+}

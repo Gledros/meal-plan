@@ -1,0 +1,18 @@
+{
+  "id": 5,
+  "nombre": "Ensalada tibia de garbanzos",
+  "informacion_nutricional": {
+    "kcal": 180,
+    "carbohidratos_g": 0,
+    "grasas_g": 0,
+    "proteina_g": 0
+  },
+  "ingredientes": [
+    "1/2 taza + 1 cda garbanzos",
+    "1/2 taza tomate",
+    "1/4 taza pepino"
+  ],
+  "pasos": [
+    "Mezclar y servir tibio."
+  ]
+}

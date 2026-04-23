@@ -1,0 +1,18 @@
+{
+  "id": 2,
+  "nombre": "Crema vegana de calabaza",
+  "informacion_nutricional": {
+    "kcal": 160,
+    "carbohidratos_g": 0,
+    "grasas_g": 0,
+    "proteina_g": 0
+  },
+  "ingredientes": [
+    "1 1/10 taza calabaza",
+    "1/4 taza leche de coco light",
+    "1 1/10 taza agua"
+  ],
+  "pasos": [
+    "Cocer y licuar."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 3,
+  "nombre": "Sándwich vegano con hummus (+10%)",
+  "informacion_nutricional": {
+    "kcal": 260,
+    "carbohidratos_g": 0,
+    "grasas_g": 0,
+    "proteina_g": 0
+  },
+  "ingredientes": [
+    "2 rebanadas pan integral",
+    "2 hojas lechuga",
+    "2 rodajas tomate",
+    "1/4 aguacate + 1 cda extra",
+    "2 cdas hummus",
+    "Pepino en rodajas (opcional)"
+  ],
+  "pasos": [
+    "Untar hummus en el pan, agregar verduras y aguacate."
+  ]
+}

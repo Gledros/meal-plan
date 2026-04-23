@@ -1,0 +1,22 @@
+{
+  "id": 2,
+  "nombre": "Bowl mediterráneo (+25%)",
+  "informacion_nutricional": {
+    "kcal": 260,
+    "carbohidratos_g": 0,
+    "grasas_g": 0,
+    "proteina_g": 0
+  },
+  "ingredientes": [
+    "3/4 taza garbanzos cocidos",
+    "3/4 taza pepino",
+    "3/4 taza tomate",
+    "1/2 taza pimiento",
+    "1 1/4 cda aceite de oliva",
+    "1 1/4 cda jugo de limón",
+    "Perejil al gusto"
+  ],
+  "pasos": [
+    "Mezclar y servir."
+  ]
+}

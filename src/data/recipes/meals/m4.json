@@ -1,0 +1,20 @@
+{
+  "id": 4,
+  "nombre": "Garbanzos con espinaca (+25%)",
+  "informacion_nutricional": {
+    "kcal": 134,
+    "carbohidratos_g": 0,
+    "grasas_g": 0,
+    "proteina_g": 0
+  },
+  "ingredientes": [
+    "1 1/4 taza garbanzos",
+    "3/4 taza espinaca",
+    "1 1/4 tomate",
+    "1 diente ajo",
+    "1/4 cdta comino"
+  ],
+  "pasos": [
+    "Guisar todo."
+  ]
+}

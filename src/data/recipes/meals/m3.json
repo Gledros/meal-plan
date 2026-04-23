@@ -1,0 +1,19 @@
+{
+  "id": 3,
+  "nombre": "Ensalada fresca de pepino y tomate (+25%)",
+  "informacion_nutricional": {
+    "kcal": 118,
+    "carbohidratos_g": 0,
+    "grasas_g": 0,
+    "proteina_g": 0
+  },
+  "ingredientes": [
+    "1 1/4 pepino",
+    "1 1/4 tomate",
+    "1/3 cebolla morada",
+    "Cilantro y limón"
+  ],
+  "pasos": [
+    "Mezclar y aderezar al gusto."
+  ]
+}
