@@ -1,13 +1,66 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import SmoothieCard from "@components/SmoothieCard.astro";
+import TabsSlider from "@components/TabsSlider.astro";
 import { getCollection, type InferEntrySchema } from "astro:content";
+import mealsMarkdown from "@data/recipes/meals.md?raw";
+import dinnersMarkdown from "@data/recipes/dinners.md?raw";
 
 type Smoothie = InferEntrySchema<"Smoothies">;
+
+interface ParsedRecipe {
+	title: string;
+	kcal: number | null;
+	ingredients: string[];
+	preparation: string[];
+}
+
 const entries = await getCollection("Smoothies");
 const parseNumericId = (value: string) => {
 	const match = value.match(/\d+/);
 	return match ? Number.parseInt(match[0], 10) : Number.MAX_SAFE_INTEGER;
+};
+
+const parseRecipeMarkdown = (source: string): ParsedRecipe[] => {
+	const normalizedSource = source.replace(/\r\n/g, "\n");
+	const sections = normalizedSource
+		.split(/^##\s+/gm)
+		.slice(1)
+		.map((section) => section.trim())
+		.filter((section) => section.length > 0);
+
+	const parseBullets = (value: string | undefined): string[] =>
+		(value ?? "")
+			.split("\n")
+			.map((line) => line.trim())
+			.filter((line) => line.startsWith("- "))
+			.map((line) => line.replace(/^- /, "").trim());
+
+	const parseSteps = (value: string | undefined): string[] =>
+		(value ?? "")
+			.split("\n")
+			.map((line) => line.trim())
+			.filter((line) => /^\d+\.\s+/.test(line))
+			.map((line) => line.replace(/^\d+\.\s+/, "").trim());
+
+	return sections.map((section) => {
+		const [rawTitle = "", ...rest] = section.split("\n");
+		const body = rest.join("\n");
+		const kcalMatch = body.match(
+			/### Informaci[oó]n nutrimental[\s\S]*?-\s*([0-9]+(?:\.[0-9]+)?)\s*kcal/i,
+		);
+		const ingredientsMatch = body.match(
+			/### Ingredientes \(1 porci[oó]n\)\s*([\s\S]*?)(?:\n###|\n---|$)/i,
+		);
+		const preparationMatch = body.match(/### Preparaci[oó]n\s*([\s\S]*?)(?:\n---|$)/i);
+
+		return {
+			title: rawTitle.trim(),
+			kcal: kcalMatch ? Number.parseFloat(kcalMatch[1]) : null,
+			ingredients: parseBullets(ingredientsMatch?.[1]),
+			preparation: parseSteps(preparationMatch?.[1]),
+		};
+	});
 };
 
 const smoothies = entries
@@ -16,18 +69,124 @@ const smoothies = entries
 		smoothie: entry.data,
 	}))
 	.sort((a, b) => a.id - b.id);
+
+const meals = parseRecipeMarkdown(mealsMarkdown);
+const dinners = parseRecipeMarkdown(dinnersMarkdown);
+
+const tabs = [
+	{ id: "smoothies", label: "Smoothies" },
+	{ id: "comidas", label: "Comidas" },
+	{ id: "cenas", label: "Cenas" },
+];
 ---
 
 <Layout title="Meal Plan">
-	<div class='print-header sticky top-0 z-10 p-4 bg-white/80 backdrop-blur-sm border-b-2 border-gray-200'>
+	<div
+		class='print-header sticky top-0 z-10 border-b-2 border-[#b8b8b9] bg-white/80 p-4 backdrop-blur-sm'
+		data-tabs-sticky-header
+	>
 		<h1 class='text-center text-5xl font-bold'>Meal Plan</h1>
-		<h2 class='text-center text-3xl font-bold'>Smoothies</h2>
+		<p class='text-center text-xl font-semibold text-gray-600'>
+			smoothies, comidas y cenas
+		</p>
 	</div>
-	<div class="print-grid w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-2 p-1 md:p-4">
-		{
-			smoothies.map(({ id, smoothie }: { id: number; smoothie: Smoothie }) => (
-				<SmoothieCard {smoothie} {id} />
-			))
-		}
-		</div>
+	<TabsSlider {tabs}>
+		<section data-tab-panel='smoothies' class='p-1 md:p-4'>
+			<div class='print-grid grid w-full grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6'>
+				{
+					smoothies.map(({ id, smoothie }: { id: number; smoothie: Smoothie }) => (
+						<SmoothieCard {smoothie} {id} />
+					))
+				}
+			</div>
+		</section>
+
+		<section data-tab-panel='comidas' class='p-2 md:p-4'>
+			<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
+				{
+					meals.map((meal, index) => (
+						<article class='rounded-xl border-2 border-emerald-200 bg-emerald-50/60 p-4 shadow-sm'>
+							<div class='mb-3 flex items-baseline justify-between gap-2'>
+								<h2 class='text-xl font-bold text-emerald-900'>
+									{`Comida ${index + 1}`}
+								</h2>
+								{
+									meal.kcal !== null && (
+										<span class='rounded-full bg-emerald-100 px-2 py-1 text-sm font-semibold text-emerald-800'>
+											{meal.kcal} kcal
+										</span>
+									)
+								}
+							</div>
+							<h3 class='text-lg font-semibold leading-tight text-emerald-950'>
+								{meal.title}
+							</h3>
+							<p class='mt-3 text-sm font-semibold uppercase tracking-wide text-emerald-800'>
+								Ingredientes (1 porcion)
+							</p>
+							<ul class='mt-1 space-y-1'>
+								{
+									meal.ingredients.map((ingredient) => (
+										<li class="list-none list-outside relative pl-5 text-base text-emerald-950 before:absolute before:left-0 before:content-['-']">
+											{ingredient}
+										</li>
+									))
+								}
+							</ul>
+							<p class='mt-3 text-sm font-semibold uppercase tracking-wide text-emerald-800'>
+								Preparacion
+							</p>
+							<ol class='mt-1 list-decimal pl-5 text-base text-emerald-950'>
+								{meal.preparation.map((step) => <li>{step}</li>)}
+							</ol>
+						</article>
+					))
+				}
+			</div>
+		</section>
+
+		<section data-tab-panel='cenas' class='p-2 md:p-4'>
+			<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
+				{
+					dinners.map((dinner, index) => (
+						<article class='rounded-xl border-2 border-orange-200 bg-orange-50/60 p-4 shadow-sm'>
+							<div class='mb-3 flex items-baseline justify-between gap-2'>
+								<h2 class='text-xl font-bold text-orange-900'>
+									{`Cena ${index + 1}`}
+								</h2>
+								{
+									dinner.kcal !== null && (
+										<span class='rounded-full bg-orange-100 px-2 py-1 text-sm font-semibold text-orange-800'>
+											{dinner.kcal} kcal
+										</span>
+									)
+								}
+							</div>
+							<h3 class='text-lg font-semibold leading-tight text-orange-950'>
+								{dinner.title}
+							</h3>
+							<p class='mt-3 text-sm font-semibold uppercase tracking-wide text-orange-800'>
+								Ingredientes (1 porcion)
+							</p>
+							<ul class='mt-1 space-y-1'>
+								{
+									dinner.ingredients.map((ingredient) => (
+										<li class="list-none list-outside relative pl-5 text-base text-orange-950 before:absolute before:left-0 before:content-['-']">
+											{ingredient}
+										</li>
+									))
+								}
+							</ul>
+							<p class='mt-3 text-sm font-semibold uppercase tracking-wide text-orange-800'>
+								Preparacion
+							</p>
+							<ol class='mt-1 list-decimal pl-5 text-base text-orange-950'>
+								{dinner.preparation.map((step) => <li>{step}</li>)}
+							</ol>
+						</article>
+					))
+				}
+			</div>
+		</section>
+	</TabsSlider>
 </Layout>
