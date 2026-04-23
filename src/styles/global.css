@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+	/* 501px so base styles apply through 500px */
+	--breakpoint-sm: 31.3125rem;
+}
+
+@media print {
+	@page {
+		size: letter landscape;
+		margin: 6mm;
+	}
+
+	html,
+	body {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	* {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+
+	.print-header {
+		display: none !important;
+	}
+
+	.print-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+		gap: 0.35rem !important;
+		padding: 0 !important;
+	}
+
+	.smoothie-card {
+		break-inside: avoid;
+		page-break-inside: avoid;
+		margin-bottom: 0.25rem;
+	}
+}

@@ -1,0 +1,103 @@
+---
+import { type InferEntrySchema } from 'astro:content';
+import { type ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+import { lightenHexColor, darkenHexColor } from '@util';
+type Smoothie = InferEntrySchema<'Smoothies'>;
+
+interface Props {
+	id: number;
+	smoothie: Smoothie;
+}
+const { id, smoothie } = Astro.props;
+
+const smoothieImages = import.meta.glob<ImageMetadata>(
+	'/src/assets/images/smoothie/smoothie-*.png',
+	{ eager: true, import: 'default' },
+);
+const smoothieImagePath = `/src/assets/images/smoothie/smoothie-${id}.png`;
+const smoothieImage = smoothieImages[smoothieImagePath];
+---
+
+<div
+	class='smoothie-card border-3 rounded-xl overflow-hidden flex flex-col'
+	style={'border-color: ' + darkenHexColor(smoothie.color, 0.2)}
+>
+	<div class='p-2' style={'background-color: ' + smoothie.color}>
+		<h2 class='text-xl font-bold text-center'>
+			{`Smoothie ${id}`}<br />{smoothie.nombre}
+		</h2>
+	</div>
+	<div class='p-2 flex-1'>
+		<p
+			class='mb-2 h-14 text-lg text-center leading-tight flex items-center justify-center'
+		>
+			{smoothie.sabores}
+		</p>
+		<!-- <div class="w-full h-[10rem] rounded-lg overflow-hidden">
+      {smoothieImage ? (
+        <Image
+          src={smoothieImage}
+          alt={smoothie.nombre}
+          loading="lazy"
+          decoding="async"
+          class="w-full h-full object-cover object-center scale-140 sm:scale-130 md:scale-120 lg:scale-110 xl:scale-100"
+        />
+      ) : (
+        <div class="w-full h-full bg-gray-200 text-gray-600 flex items-center justify-center text-base font-semibold">
+          No image available
+        </div>
+      )}
+    </div> -->
+		<!-- <p class='text-center font-bold text-xl'>Ingredientes</p> -->
+		<ul class='p-2'>
+			{
+				smoothie.ingredientes.map((ingrediente, index) => (
+					<li class="text-lg list-none list-outside relative pl-8 before:content-['✅'] before:absolute before:left-0 before:top-1.25 before:text-lg before:leading-none">
+						{ingrediente}
+					</li>
+				))
+			}
+		</ul>
+	</div>
+	<div
+		id='perfil_nutricional'
+		class='m-1 p-1 rounded-xl'
+		style={'background-color: ' + lightenHexColor(smoothie.color, 0.5)}
+	>
+		<h3 class='text-center font-bold text-xl'>Perfil nutricional</h3>
+		<div class='w-full grid grid-cols-2 gap-2 p-2'>
+			<div class='flex flex-col items-center gap-1'>
+				<Icon name='noto:fire' size={40} />
+				<p class='text-lg'>
+					Energía<br />{smoothie.informacion_nutricional.kcal} kcal
+				</p>
+			</div>
+			<div class='flex flex-col items-center gap-1'>
+				<Icon name='noto:baguette-bread' size={40} />
+				<p class='text-lg'>
+					Carbohidrato<br />{smoothie.informacion_nutricional.carbohidratos_g} g
+				</p>
+			</div>
+			<div class='flex flex-col items-center gap-1'>
+				<Icon name='noto:butter' size={40} />
+				<p class='text-lg'>
+					Grasa<br />{smoothie.informacion_nutricional.grasas_g} g
+				</p>
+			</div>
+			<div class='flex flex-col items-center gap-1'>
+				<Icon name='noto:cut-of-meat' size={40} />
+				<p class='text-lg'>
+					Proteína<br />{smoothie.informacion_nutricional.proteina_g} g
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	#perfil_nutricional p {
+		text-align: center;
+	}
+</style>

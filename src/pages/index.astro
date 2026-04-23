@@ -1,17 +1,33 @@
 ---
+import Layout from "@layouts/Layout.astro";
+import SmoothieCard from "@components/SmoothieCard.astro";
+import { getCollection, type InferEntrySchema } from "astro:content";
 
+type Smoothie = InferEntrySchema<"Smoothies">;
+const entries = await getCollection("Smoothies");
+const parseNumericId = (value: string) => {
+	const match = value.match(/\d+/);
+	return match ? Number.parseInt(match[0], 10) : Number.MAX_SAFE_INTEGER;
+};
+
+const smoothies = entries
+	.map((entry) => ({
+		id: parseNumericId(entry.id),
+		smoothie: entry.data,
+	}))
+	.sort((a, b) => a.id - b.id);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Meal Plan">
+	<div class='print-header sticky top-0 z-10 p-4 bg-white/80 backdrop-blur-sm border-b-2 border-gray-200'>
+		<h1 class='text-center text-5xl font-bold'>Meal Plan</h1>
+		<h2 class='text-center text-3xl font-bold'>Smoothies</h2>
+	</div>
+	<div class="print-grid w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-2 p-1 md:p-4">
+		{
+			smoothies.map(({ id, smoothie }: { id: number; smoothie: Smoothie }) => (
+				<SmoothieCard {smoothie} {id} />
+			))
+		}
+		</div>
+</Layout>
