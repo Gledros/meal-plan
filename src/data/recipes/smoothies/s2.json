@@ -3,16 +3,16 @@
   "nombre": "Antioxidante rojo",
   "sabores": "fresa + betabel",
   "informacion_nutricional": {
-    "kcal": 410,
+    "kcal": 436,
     "carbohidratos_g": 46,
-    "grasas_g": 15,
-    "proteina_g": 19
+    "grasas_g": 17,
+    "proteina_g": 20
   },
   "ingredientes": [
     "1 taza fresas",
     "1/4 taza betabel crudo en cubos",
     "1/2 plátano",
-    "1 taza agua o bebida vegetal",
+    "1 taza bebida vegetal",
     "1 scoop proteína vegetal en polvo",
     "1 scoop creatina",
     "1 cda chía pre-hidratada",

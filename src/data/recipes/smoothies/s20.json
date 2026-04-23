@@ -3,15 +3,15 @@
   "nombre": "Pepino Menta Hidra",
   "sabores": "pepino + menta",
   "informacion_nutricional": {
-    "kcal": 370,
+    "kcal": 396,
     "carbohidratos_g": 42,
-    "grasas_g": 16,
-    "proteina_g": 20
+    "grasas_g": 18,
+    "proteina_g": 21
   },
   "ingredientes": [
     "1 taza pepino",
     "4 hojas menta",
-    "1 taza agua",
+    "1 taza bebida vegetal",
     "1 scoop proteína vegetal en polvo",
     "1 scoop creatina",
     "1 cda chía pre-hidratada",
