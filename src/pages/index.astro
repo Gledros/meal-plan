@@ -1,42 +1,22 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import SmoothieCard from "@components/SmoothieCard.astro";
+import MealDinnerCard from "@components/MealDinnerCard.astro";
 import TabsSlider from "@components/TabsSlider.astro";
-import { getCollection, type InferEntrySchema } from "astro:content";
+import ReadmeModal from "@components/ReadmeModal.astro";
+import {
+	loadRecipesFromDisk,
+	type MealDinnerRecipe,
+	type SmoothieRecipe,
+} from "@data/runtime-recipes";
+import ReadmeContent from "../../README.md";
+import veganBadge from "../vegan-badge.svg";
 
-type Smoothie = InferEntrySchema<"Smoothies">;
-type Meal = InferEntrySchema<"Meals">;
-type Dinner = InferEntrySchema<"Dinners">;
+type Smoothie = SmoothieRecipe;
+type Meal = MealDinnerRecipe;
+type Dinner = MealDinnerRecipe;
 
-const parseNumericId = (value: string) => {
-	const match = value.match(/\d+/);
-	return match ? Number.parseInt(match[0], 10) : Number.MAX_SAFE_INTEGER;
-};
-
-const smoothieEntries = await getCollection("Smoothies");
-const mealEntries = await getCollection("Meals");
-const dinnerEntries = await getCollection("Dinners");
-
-const smoothies = smoothieEntries
-	.map((entry) => ({
-		id: parseNumericId(entry.id),
-		smoothie: entry.data,
-	}))
-	.sort((a, b) => a.id - b.id);
-
-const meals = mealEntries
-	.map((entry) => ({
-		id: parseNumericId(entry.id),
-		meal: entry.data,
-	}))
-	.sort((a, b) => a.id - b.id);
-
-const dinners = dinnerEntries
-	.map((entry) => ({
-		id: parseNumericId(entry.id),
-		dinner: entry.data,
-	}))
-	.sort((a, b) => a.id - b.id);
+const { smoothies, meals, dinners } = await loadRecipesFromDisk();
 
 const tabs = [
 	{ id: "smoothies", label: "Smoothies" },
@@ -50,22 +30,22 @@ const tabs = [
 		class='print-header sticky top-0 z-10 border-b-2 border-[#b8b8b9] bg-white/80 p-4 backdrop-blur-sm'
 		data-tabs-sticky-header
 	>
-		<div class='grid grid-cols-[auto_1fr] items-center gap-3'>
+		<div class='grid grid-cols-1 items-center gap-3 sm:grid-cols-[auto_1fr]'>
 			<img
 				src={veganBadge.src}
 				alt='Sello vegano'
-				class='h-16 w-auto object-contain sm:h-20'
+				class='hidden h-16 w-auto object-contain sm:block sm:h-20'
 				loading='eager'
 				decoding='async'
 			/>
-			<div class='grid grid-cols-[1fr_auto] items-center gap-x-3 gap-y-1'>
-				<h1 class='self-center text-center text-3xl font-bold sm:text-5xl'>Plan alimenticio</h1>
-				<div class='self-center justify-self-end'>
+			<div class='grid grid-cols-1 items-center gap-x-3 gap-y-1 sm:grid-cols-[1fr_auto]'>
+				<h1 class='order-1 self-center text-center text-3xl font-bold sm:text-5xl'>Plan alimenticio</h1>
+				<div class='order-3 mt-1 self-center justify-self-center sm:order-2 sm:col-start-2 sm:row-start-1 sm:mt-0 sm:justify-self-end'>
 					<ReadmeModal title='Ayuda'>
 						<ReadmeContent />
 					</ReadmeModal>
 				</div>
-				<p class='col-span-2 text-center text-xl font-semibold text-gray-600'>
+				<p class='order-2 text-center text-xl font-semibold text-gray-600 sm:order-3 sm:col-span-2'>
 					vegano, sin gluten, sin azúcar refinada, sin aceites añadidos
 				</p>
 			</div>
@@ -86,43 +66,12 @@ const tabs = [
 			<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
 				{
 					meals.map(({ id, meal }: { id: number; meal: Meal }) => (
-						<article class='rounded-xl border-2 border-emerald-200 bg-emerald-50/60 p-4 shadow-sm'>
-							<div class='mb-3 flex items-baseline justify-between gap-2'>
-								<h2 class='text-xl font-bold text-emerald-900'>
-									{`Comida ${id}`}
-								</h2>
-								<span class='rounded-full bg-emerald-100 px-2 py-1 text-sm font-semibold text-emerald-800'>
-									{meal.informacion_nutricional.kcal} kcal
-								</span>
-							</div>
-							<h3 class='text-lg font-semibold leading-tight text-emerald-950'>
-								{meal.nombre}
-							</h3>
-							<p class='mt-3 text-sm font-semibold uppercase tracking-wide text-emerald-800'>
-								Ingredientes (1 porcion)
-							</p>
-							<ul class='mt-1 space-y-1'>
-								{
-									meal.ingredientes.map((ingredient) => (
-										<li class="list-none list-outside relative pl-5 text-base text-emerald-950 before:absolute before:left-0 before:content-['-']">
-											{ingredient}
-										</li>
-									))
-								}
-							</ul>
-							<p class='mt-3 text-sm font-semibold uppercase tracking-wide text-emerald-800'>
-								Pasos
-							</p>
-							<ol class='mt-1 space-y-1'>
-								{
-									meal.pasos.map((step) => (
-										<li class='list-decimal list-inside text-base text-emerald-950'>
-											{step}
-										</li>
-									))
-								}
-							</ol>
-						</article>
+						<MealDinnerCard
+							id={id}
+							recipe={meal}
+							kind='Comida'
+							color='#BBF7D0'
+						/>
 					))
 				}
 			</div>
@@ -132,43 +81,12 @@ const tabs = [
 			<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
 				{
 					dinners.map(({ id, dinner }: { id: number; dinner: Dinner }) => (
-						<article class='rounded-xl border-2 border-orange-200 bg-orange-50/60 p-4 shadow-sm'>
-							<div class='mb-3 flex items-baseline justify-between gap-2'>
-								<h2 class='text-xl font-bold text-orange-900'>
-									{`Cena ${id}`}
-								</h2>
-								<span class='rounded-full bg-orange-100 px-2 py-1 text-sm font-semibold text-orange-800'>
-									{dinner.informacion_nutricional.kcal} kcal
-								</span>
-							</div>
-							<h3 class='text-lg font-semibold leading-tight text-orange-950'>
-								{dinner.nombre}
-							</h3>
-							<p class='mt-3 text-sm font-semibold uppercase tracking-wide text-orange-800'>
-								Ingredientes (1 porcion)
-							</p>
-							<ul class='mt-1 space-y-1'>
-								{
-									dinner.ingredientes.map((ingredient) => (
-										<li class="list-none list-outside relative pl-5 text-base text-orange-950 before:absolute before:left-0 before:content-['-']">
-											{ingredient}
-										</li>
-									))
-								}
-							</ul>
-							<p class='mt-3 text-sm font-semibold uppercase tracking-wide text-orange-800'>
-								Pasos
-							</p>
-							<ol class='mt-1 space-y-1'>
-								{
-									dinner.pasos.map((step) => (
-										<li class='list-decimal list-inside text-base text-orange-950'>
-											{step}
-										</li>
-									))
-								}
-							</ol>
-						</article>
+						<MealDinnerCard
+							id={id}
+							recipe={dinner}
+							kind='Cena'
+							color='#FED7AA'
+						/>
 					))
 				}
 			</div>

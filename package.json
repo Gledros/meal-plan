@@ -8,12 +8,14 @@
   "scripts": {
     "dev": "astro dev --host",
     "build": "astro build",
+    "start": "node ./dist/server/entry.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",
     "@astrojs/mdx": "^5.0.3",
+    "@astrojs/node": "^10.0.6",
     "@iconify-json/noto": "^1.2.7",
     "@iconify-json/streamline-plump-color": "^1.2.2",
     "@sentry/astro": "^10.46.0",
