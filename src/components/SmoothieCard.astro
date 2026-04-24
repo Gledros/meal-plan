@@ -1,14 +1,12 @@
 ---
-import { type InferEntrySchema } from 'astro:content';
+import { type SmoothieRecipe } from '@data/runtime-recipes';
 import { type ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 import { lightenHexColor, darkenHexColor } from '@util';
-type Smoothie = InferEntrySchema<'Smoothies'>;
 
 interface Props {
 	id: number;
-	smoothie: Smoothie;
+	smoothie: SmoothieRecipe;
 }
 const { id, smoothie } = Astro.props;
 
@@ -17,7 +15,7 @@ const smoothieImages = import.meta.glob<ImageMetadata>(
 	{ eager: true, import: 'default' },
 );
 const smoothieImagePath = `/src/assets/images/smoothie/smoothie-${id}.png`;
-const smoothieImage = smoothieImages[smoothieImagePath];
+// const smoothieImage = smoothieImages[smoothieImagePath];
 ---
 
 <div
