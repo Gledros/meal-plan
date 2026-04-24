@@ -1,0 +1,332 @@
+---
+interface Props {
+	title?: string;
+	triggerLabel?: string;
+}
+
+const {
+	title = "README",
+	triggerLabel = "ℹ️ ayuda",
+} = Astro.props;
+---
+
+<div class='readme-modal' data-readme-modal>
+	<button type='button' class='readme-modal__trigger' data-readme-trigger aria-haspopup='dialog'>
+		{triggerLabel}
+	</button>
+
+	<div class='readme-modal__overlay' data-readme-overlay aria-hidden='true'>
+		<section
+			class='readme-modal__panel'
+			role='dialog'
+			aria-modal='true'
+			aria-label={title}
+			tabindex='-1'
+			data-readme-dialog
+		>
+			<header class='readme-modal__header'>
+				<h2>{title}</h2>
+				<button type='button' class='readme-modal__close' data-readme-close aria-label='Cerrar ayuda'>
+					Cerrar
+				</button>
+			</header>
+			<div class='readme-modal__content'>
+				<div class='readme-modal__markdown'>
+					<slot />
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<script is:inline>
+	const modalRoots = document.querySelectorAll("[data-readme-modal]");
+
+	for (const root of modalRoots) {
+		const trigger = root.querySelector("[data-readme-trigger]");
+		const overlay = root.querySelector("[data-readme-overlay]");
+		const dialog = root.querySelector("[data-readme-dialog]");
+		const closeButton = root.querySelector("[data-readme-close]");
+
+		if (
+			!(trigger instanceof HTMLButtonElement) ||
+			!(overlay instanceof HTMLElement) ||
+			!(dialog instanceof HTMLElement) ||
+			!(closeButton instanceof HTMLButtonElement)
+		) {
+			continue;
+		}
+
+		if (overlay.parentElement !== document.body) {
+			document.body.appendChild(overlay);
+		}
+
+		trigger.setAttribute("aria-expanded", "false");
+
+		let isOpen = false;
+		let lastFocusedElement = null;
+
+		const closeModal = () => {
+			if (!isOpen) {
+				return;
+			}
+
+			isOpen = false;
+			overlay.classList.remove("is-open");
+			overlay.setAttribute("aria-hidden", "true");
+			trigger.setAttribute("aria-expanded", "false");
+			document.body.classList.remove("has-readme-modal");
+
+			if (lastFocusedElement instanceof HTMLElement) {
+				lastFocusedElement.focus();
+			}
+		};
+
+		const openModal = () => {
+			if (isOpen) {
+				return;
+			}
+
+			isOpen = true;
+			lastFocusedElement = document.activeElement;
+			overlay.classList.add("is-open");
+			overlay.setAttribute("aria-hidden", "false");
+			trigger.setAttribute("aria-expanded", "true");
+			document.body.classList.add("has-readme-modal");
+			requestAnimationFrame(() => {
+				dialog.focus();
+			});
+		};
+
+		trigger.addEventListener("click", openModal);
+		closeButton.addEventListener("click", closeModal);
+
+		overlay.addEventListener("click", (event) => {
+			if (event.target === overlay) {
+				closeModal();
+			}
+		});
+
+		window.addEventListener("keydown", (event) => {
+			if (event.key === "Escape" && isOpen) {
+				closeModal();
+			}
+		});
+	}
+</script>
+
+<style>
+	.readme-modal {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.readme-modal__trigger {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.35rem;
+		border-radius: 9999px;
+		border: 1px solid #b8b8b9;
+		background: rgba(255, 255, 255, 0.92);
+		color: #334155;
+		font-size: 0.875rem;
+		font-weight: 700;
+		line-height: 1;
+		padding: 0.6rem 0.95rem;
+		cursor: pointer;
+		transition:
+			background-color 180ms ease,
+			transform 180ms ease,
+			box-shadow 180ms ease;
+	}
+
+	.readme-modal__trigger:hover {
+		background: #f8fafc;
+		box-shadow: 0 10px 18px -14px rgba(15, 23, 42, 0.65);
+		transform: translateY(-1px);
+	}
+
+	.readme-modal__overlay {
+		position: fixed;
+		inset: 0;
+		z-index: 60;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		background: rgba(15, 23, 42, 0.28);
+		backdrop-filter: blur(2px);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition:
+			opacity 220ms ease,
+			visibility 220ms ease;
+	}
+
+	.readme-modal__panel {
+		width: min(54rem, 88vw);
+		max-height: min(86vh, 52rem);
+		border-radius: 1rem;
+		border: 1px solid #e2e8f0;
+		background: #ffffff;
+		box-shadow:
+			0 26px 60px -35px rgba(15, 23, 42, 0.7),
+			0 12px 28px -18px rgba(15, 23, 42, 0.45);
+		transform: translateY(14px) scale(0.98);
+		transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	.readme-modal__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.75rem;
+		padding: 0.9rem 1.15rem;
+		border-bottom: 1px solid #e2e8f0;
+		background: #f8fafc;
+	}
+
+	.readme-modal__header h2 {
+		margin: 0;
+		font-size: 1rem;
+		font-weight: 800;
+		color: #0f172a;
+	}
+
+	.readme-modal__close {
+		border-radius: 0.6rem;
+		border: 1px solid #cbd5e1;
+		background: #ffffff;
+		color: #334155;
+		font-size: 0.8rem;
+		font-weight: 700;
+		padding: 0.4rem 0.65rem;
+		cursor: pointer;
+	}
+
+	.readme-modal__content {
+		padding: 1rem 1.15rem 1.2rem;
+		overflow: auto;
+	}
+
+	.readme-modal__markdown {
+		font-size: 0.92rem;
+		line-height: 1.55;
+		color: #1e293b;
+	}
+
+	.readme-modal__markdown :global(*) {
+		word-break: break-word;
+	}
+
+	.readme-modal__markdown :global(h1),
+	.readme-modal__markdown :global(h2),
+	.readme-modal__markdown :global(h3),
+	.readme-modal__markdown :global(h4) {
+		margin: 1.1rem 0 0.55rem;
+		line-height: 1.2;
+		color: #0f172a;
+	}
+
+	.readme-modal__markdown :global(h1) {
+		font-size: 1.35rem;
+	}
+
+	.readme-modal__markdown :global(h2) {
+		font-size: 1.1rem;
+	}
+
+	.readme-modal__markdown :global(h3) {
+		font-size: 1rem;
+	}
+
+	.readme-modal__markdown :global(p),
+	.readme-modal__markdown :global(ul),
+	.readme-modal__markdown :global(ol),
+	.readme-modal__markdown :global(blockquote),
+	.readme-modal__markdown :global(pre),
+	.readme-modal__markdown :global(table) {
+		margin: 0.65rem 0;
+	}
+
+	.readme-modal__markdown :global(ul),
+	.readme-modal__markdown :global(ol) {
+		padding-left: 1.25rem;
+	}
+
+	.readme-modal__markdown :global(li + li) {
+		margin-top: 0.32rem;
+	}
+
+	.readme-modal__markdown :global(a) {
+		color: #0369a1;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
+
+	.readme-modal__markdown :global(code) {
+		font-family:
+			ui-monospace,
+			SFMono-Regular,
+			Menlo,
+			Monaco,
+			Consolas,
+			"Liberation Mono",
+			"Courier New",
+			monospace;
+		font-size: 0.82em;
+		background: #e2e8f0;
+		border-radius: 0.3rem;
+		padding: 0.12rem 0.3rem;
+	}
+
+	.readme-modal__markdown :global(pre) {
+		overflow: auto;
+		padding: 0.75rem 0.8rem;
+		border-radius: 0.6rem;
+		background: #0f172a;
+		color: #e2e8f0;
+	}
+
+	.readme-modal__markdown :global(pre code) {
+		background: transparent;
+		padding: 0;
+		color: inherit;
+	}
+
+	.readme-modal__overlay.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.readme-modal__overlay.is-open .readme-modal__panel {
+		transform: translateY(0) scale(1);
+	}
+
+	:global(body.has-readme-modal) {
+		overflow: hidden;
+	}
+
+	@media (max-width: 640px) {
+		.readme-modal__overlay {
+			padding: 0;
+			align-items: flex-end;
+		}
+
+		.readme-modal__panel {
+			width: 100%;
+			max-height: 100dvh;
+			border-radius: 1rem 1rem 0 0;
+			border-left: none;
+			border-right: none;
+			border-bottom: none;
+		}
+	}
+</style>
