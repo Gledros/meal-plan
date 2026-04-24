@@ -45,15 +45,31 @@ const tabs = [
 ];
 ---
 
-<Layout title="Meal Plan">
+<Layout title="Plan alimenticio">
 	<div
 		class='print-header sticky top-0 z-10 border-b-2 border-[#b8b8b9] bg-white/80 p-4 backdrop-blur-sm'
 		data-tabs-sticky-header
 	>
-		<h1 class='text-center text-5xl font-bold'>Meal Plan</h1>
-		<!-- <p class='text-center text-xl font-semibold text-gray-600'>
-			smoothies, comidas y cenas
-		</p> -->
+		<div class='grid grid-cols-[auto_1fr] items-center gap-3'>
+			<img
+				src={veganBadge.src}
+				alt='Sello vegano'
+				class='h-16 w-auto object-contain sm:h-20'
+				loading='eager'
+				decoding='async'
+			/>
+			<div class='grid grid-cols-[1fr_auto] items-center gap-x-3 gap-y-1'>
+				<h1 class='self-center text-center text-3xl font-bold sm:text-5xl'>Plan alimenticio</h1>
+				<div class='self-center justify-self-end'>
+					<ReadmeModal title='Ayuda'>
+						<ReadmeContent />
+					</ReadmeModal>
+				</div>
+				<p class='col-span-2 text-center text-xl font-semibold text-gray-600'>
+					vegano, sin gluten, sin azúcar refinada, sin aceites añadidos
+				</p>
+			</div>
+		</div>
 	</div>
 	<TabsSlider {tabs}>
 		<section data-tab-panel='smoothies' class='p-1 md:p-4'>
