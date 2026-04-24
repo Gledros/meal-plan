@@ -1,0 +1,14 @@
+services:
+  meal-plan:
+    image: ${MEAL_PLAN_IMAGE:-ghcr.io/your-github-user/meal-plan:latest}
+    container_name: meal-plan
+    restart: unless-stopped
+    pull_policy: always
+    ports:
+      - "${MEAL_PLAN_PORT:-4321}:4321"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 4321
+      RECIPES_DIR: /data/recipes
+    volumes:
+      - ${RECIPES_HOST_PATH:-./recipes}:/data/recipes:ro
