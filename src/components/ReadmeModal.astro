@@ -21,11 +21,10 @@ const {
 			role='dialog'
 			aria-modal='true'
 			aria-label={title}
-			tabindex='-1'
 			data-readme-dialog
 		>
 			<header class='readme-modal__header'>
-				<h2>{title}</h2>
+				<h2 aria-label={title}>{title}</h2>
 				<button type='button' class='readme-modal__close' data-readme-close aria-label='Cerrar ayuda'>
 					Cerrar
 				</button>
@@ -94,7 +93,7 @@ const {
 			trigger.setAttribute("aria-expanded", "true");
 			document.body.classList.add("has-readme-modal");
 			requestAnimationFrame(() => {
-				dialog.focus();
+				closeButton.focus();
 			});
 		};
 

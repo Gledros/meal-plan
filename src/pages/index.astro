@@ -1,5 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
 import SmoothieCard from "@components/SmoothieCard.astro";
 import MealDinnerCard from "@components/MealDinnerCard.astro";
 import TabsSlider from "@components/TabsSlider.astro";
@@ -31,8 +32,8 @@ const tabs = [
 		data-tabs-sticky-header
 	>
 		<div class='grid grid-cols-1 items-center gap-3 sm:grid-cols-[auto_1fr]'>
-			<img
-				src={veganBadge.src}
+			<Image
+				src={veganBadge}
 				alt='Sello vegano'
 				class='hidden h-16 w-auto object-contain sm:block sm:h-20'
 				loading='eager'
