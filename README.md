@@ -24,6 +24,7 @@ La carpeta base debe tener estas subcarpetas:
 ```text
 <RECIPES_DIR>/
   smoothies/
+  breakfasts/
   meals/
   dinners/
 ```
@@ -31,12 +32,14 @@ La carpeta base debe tener estas subcarpetas:
 Patrones de nombre por tipo:
 
 - Smoothies: `s[NUMERO].json`
+- Desayunos: `b[NUMERO].json`
 - Comidas: `m[NUMERO].json`
 - Cenas: `d[NUMERO].json`
 
 Ejemplos:
 
 - `smoothies/s32.json`
+- `breakfasts/b8.json`
 - `meals/m8.json`
 - `dinners/d8.json`
 
@@ -71,7 +74,7 @@ Campos obligatorios:
 - `ingredientes`: arreglo de strings
 - `color`: string en formato `#RRGGBB`
 
-## Formato JSON para comida y cena
+## Formato JSON para desayuno, comida y cena
 
 ```json
 {
@@ -152,6 +155,8 @@ Estructura esperada en `RECIPES_HOST_PATH`:
   smoothies/
     s1.json
     s2.json
+  breakfasts/
+    b1.json
   meals/
     m1.json
   dinners/
@@ -188,7 +193,7 @@ docker pull ghcr.io/<GITHUB_USER>/meal-plan:latest
 ## Errores comunes
 
 - No aparece una receta:
-  - Revisa nombre de archivo (`s`, `m`, `d` + numero + `.json`).
+  - Revisa nombre de archivo (`s`, `b`, `m`, `d` + numero + `.json`).
 - Error de color en smoothie:
   - Debe ser `#RRGGBB`.
 - Error de schema:

@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import { Image } from "astro:assets";
 import SmoothieCard from "@components/SmoothieCard.astro";
-import MealDinnerCard from "@components/MealDinnerCard.astro";
+import RecipeCard from "@components/RecipeCard.astro";
 import TabsSlider from "@components/TabsSlider.astro";
 import ReadmeModal from "@components/ReadmeModal.astro";
 import {
@@ -14,13 +14,15 @@ import ReadmeContent from "../../README.md";
 import veganBadge from "../vegan-badge.svg";
 
 type Smoothie = SmoothieRecipe;
+type Breakfast = MealDinnerRecipe;
 type Meal = MealDinnerRecipe;
 type Dinner = MealDinnerRecipe;
 
-const { smoothies, meals, dinners } = await loadRecipesFromDisk();
+const { smoothies, breakfasts, meals, dinners } = await loadRecipesFromDisk();
 
 const tabs = [
 	{ id: "smoothies", label: "Smoothies" },
+	{ id: "desayunos", label: "Desayunos" },
 	{ id: "comidas", label: "Comidas" },
 	{ id: "cenas", label: "Cenas" },
 ];
@@ -63,11 +65,34 @@ const tabs = [
 			</div>
 		</section>
 
+		<section data-tab-panel='desayunos' class='p-2 md:p-4'>
+			{
+				breakfasts.length > 0 ? (
+					<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
+						{
+							breakfasts.map(({ id, breakfast }: { id: number; breakfast: Breakfast }) => (
+								<RecipeCard
+									id={id}
+									recipe={breakfast}
+									kind='Desayuno'
+									color='#FDE68A'
+								/>
+							))
+						}
+					</div>
+				) : (
+					<p class='rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center text-lg text-gray-600'>
+						No hay desayunos cargados todavia.
+					</p>
+				)
+			}
+		</section>
+
 		<section data-tab-panel='comidas' class='p-2 md:p-4'>
 			<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
 				{
 					meals.map(({ id, meal }: { id: number; meal: Meal }) => (
-						<MealDinnerCard
+						<RecipeCard
 							id={id}
 							recipe={meal}
 							kind='Comida'
@@ -82,7 +107,7 @@ const tabs = [
 			<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
 				{
 					dinners.map(({ id, dinner }: { id: number; dinner: Dinner }) => (
-						<MealDinnerCard
+						<RecipeCard
 							id={id}
 							recipe={dinner}
 							kind='Cena'

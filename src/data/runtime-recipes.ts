@@ -33,6 +33,11 @@ export interface SmoothieListItem {
 	smoothie: SmoothieRecipe;
 }
 
+export interface BreakfastListItem {
+	id: number;
+	breakfast: MealDinnerRecipe;
+}
+
 export interface MealListItem {
 	id: number;
 	meal: MealDinnerRecipe;
@@ -45,16 +50,18 @@ export interface DinnerListItem {
 
 export interface RuntimeRecipes {
 	smoothies: SmoothieListItem[];
+	breakfasts: BreakfastListItem[];
 	meals: MealListItem[];
 	dinners: DinnerListItem[];
 }
 
-type RecipePrefix = "s" | "m" | "d";
+type RecipePrefix = "s" | "b" | "m" | "d";
 
 interface RecipeConfig<T> {
 	folder: string;
 	prefix: RecipePrefix;
 	schema: z.ZodType<T>;
+	optional?: boolean;
 }
 
 interface RecipeEntry<T> {
@@ -96,6 +103,13 @@ const readRecipeGroup = async <T>(
 	try {
 		folderEntries = await readdir(folderPath);
 	} catch (error) {
+		const errorWithCode =
+			typeof error === "object" && error !== null ? (error as NodeJS.ErrnoException) : null;
+
+		if (config.optional && errorWithCode?.code === "ENOENT") {
+			return [];
+		}
+
 		throw new Error(
 			`[recipes] No se pudo leer la carpeta ${folderPath}: ${error instanceof Error ? error.message : String(error)}`,
 		);
@@ -153,11 +167,17 @@ const readRecipeGroup = async <T>(
 export const loadRecipesFromDisk = async (): Promise<RuntimeRecipes> => {
 	const recipesDir = await resolveRecipesDir();
 
-	const [smoothiesRaw, mealsRaw, dinnersRaw] = await Promise.all([
+	const [smoothiesRaw, breakfastsRaw, mealsRaw, dinnersRaw] = await Promise.all([
 		readRecipeGroup(recipesDir, {
 			folder: "smoothies",
 			prefix: "s",
 			schema: SmoothieSchema,
+		}),
+		readRecipeGroup(recipesDir, {
+			folder: "breakfasts",
+			prefix: "b",
+			schema: MealDinnerSchema,
+			optional: true,
 		}),
 		readRecipeGroup(recipesDir, {
 			folder: "meals",
@@ -173,6 +193,7 @@ export const loadRecipesFromDisk = async (): Promise<RuntimeRecipes> => {
 
 	return {
 		smoothies: smoothiesRaw.map(({ id, data }) => ({ id, smoothie: data })),
+		breakfasts: breakfastsRaw.map(({ id, data }) => ({ id, breakfast: data })),
 		meals: mealsRaw.map(({ id, data }) => ({ id, meal: data })),
 		dinners: dinnersRaw.map(({ id, data }) => ({ id, dinner: data })),
 	};
