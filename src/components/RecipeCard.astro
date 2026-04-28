@@ -15,22 +15,29 @@ const displayId = recipe.id ?? id;
 const prepTimeNotes = recipe.tiempo_preparacion.notas.trim();
 const cookTimeNotes = recipe.tiempo_cocinado.notas.trim();
 const recipeNotes = recipe.notas.filter((note) => note.trim().length > 0);
+const borderHex = darkenHexColor(color, 0.2);
+const nutritionHex = lightenHexColor(color, 0.5);
+const cardBorderStyle = `border-color: ${borderHex} !important; forced-color-adjust: none;`;
+const headerBgStyle = `background-color: ${color} !important; forced-color-adjust: none;`;
+const headerTextStyle = 'color: #000000 !important; forced-color-adjust: none;';
+const timeBorderStyle = `border-color: ${borderHex} !important; forced-color-adjust: none;`;
+const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #000000 !important; forced-color-adjust: none;`;
 ---
 
 <div
 	class='meal-dinner-card border-3 rounded-xl overflow-hidden flex flex-col'
-	style={'border-color: ' + darkenHexColor(color, 0.2)}
+	style={cardBorderStyle}
 >
-	<div class='p-2' style={'background-color: ' + color}>
-		<h2 class='text-xl font-bold text-center'>
+	<div class='p-2' style={headerBgStyle}>
+		<h2 class='text-xl font-bold text-center' style={headerTextStyle}>
 			{`${kind} ${displayId}`}<br />{recipe.nombre}
 		</h2>
-		<p class='text-center text-sm font-semibold uppercase tracking-wide'>{recipe.referencia}</p>
+		<p class='text-center text-sm font-semibold uppercase tracking-wide' style={headerTextStyle}>{recipe.referencia}</p>
 	</div>
 	<div class='p-2 flex-1'>
 		<div class='mb-2 grid grid-cols-2 gap-2'>
 			<div class='rounded-lg border-2 p-2 text-center'
-			style={'border-color: ' + darkenHexColor(color, 0.2)}
+			style={timeBorderStyle}
 			>
 				<p class='text-sm font-semibold uppercase tracking-wide'>Preparacion</p>
 				<p class='text-lg font-bold leading-tight'>
@@ -39,7 +46,7 @@ const recipeNotes = recipe.notas.filter((note) => note.trim().length > 0);
 				{prepTimeNotes && <p class='text-sm leading-tight'>{prepTimeNotes}</p>}
 			</div>
 			<div class='rounded-lg border-2 p-2 text-center'
-			style={'border-color: ' + darkenHexColor(color, 0.2)}
+			style={timeBorderStyle}
 			>
 				<p class='text-sm font-semibold uppercase tracking-wide'>Cocinado</p>
 				<p class='text-lg font-bold leading-tight'>
@@ -64,7 +71,7 @@ const recipeNotes = recipe.notas.filter((note) => note.trim().length > 0);
 			</div>
 			<div
 				class='perfil-nutricional m-1 p-1 rounded-xl'
-				style={'background-color: ' + lightenHexColor(color, 0.5)}
+				style={nutritionBgStyle}
 			>
 				<h3 class='text-center font-bold text-xl'>Perfil nutricional</h3>
 				<div class='w-full grid grid-cols-2 gap-2 p-2'>
