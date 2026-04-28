@@ -1,32 +1,14 @@
 import { access, readdir, readFile } from "node:fs/promises";
 import path from "node:path";
-import { z } from "astro/zod";
-import { hexColorSchema } from "@util";
+import type { ZodType } from "astro/zod";
+import {
+	MealDinnerSchema,
+	SmoothieSchema,
+	type MealDinnerRecipe,
+	type SmoothieRecipe,
+} from "./recipe-schemas";
 
-const NutritionSchema = z.object({
-	kcal: z.number(),
-	carbohidratos_g: z.number(),
-	grasas_g: z.number(),
-	proteina_g: z.number(),
-});
-
-const SmoothieSchema = z.object({
-	nombre: z.string(),
-	sabores: z.string(),
-	informacion_nutricional: NutritionSchema,
-	ingredientes: z.array(z.string()),
-	color: hexColorSchema,
-});
-
-const MealDinnerSchema = z.object({
-	nombre: z.string(),
-	informacion_nutricional: NutritionSchema,
-	ingredientes: z.array(z.string()),
-	pasos: z.array(z.string()),
-});
-
-export type SmoothieRecipe = z.infer<typeof SmoothieSchema>;
-export type MealDinnerRecipe = z.infer<typeof MealDinnerSchema>;
+export type { MealDinnerRecipe, SmoothieRecipe };
 
 export interface SmoothieListItem {
 	id: number;
@@ -60,7 +42,7 @@ type RecipePrefix = "s" | "b" | "m" | "d";
 interface RecipeConfig<T> {
 	folder: string;
 	prefix: RecipePrefix;
-	schema: z.ZodType<T>;
+	schema: ZodType<T>;
 	optional?: boolean;
 }
 
@@ -154,6 +136,29 @@ const readRecipeGroup = async <T>(
 					.join("; ");
 
 				throw new Error(`[recipes] Schema invalido en ${filePath}: ${issues}`);
+			}
+
+			if (typeof parsed.data === "object" && parsed.data !== null) {
+				const dataWithIdentity = parsed.data as {
+					id?: unknown;
+					referencia?: unknown;
+				};
+
+				if (typeof dataWithIdentity.id === "number" && dataWithIdentity.id !== id) {
+					throw new Error(
+						`[recipes] El id del contenido (${dataWithIdentity.id}) no coincide con el nombre del archivo ${fileName}.`,
+					);
+				}
+
+				if (typeof dataWithIdentity.referencia === "string") {
+					const expectedReference = `${config.prefix}${id}`;
+
+					if (dataWithIdentity.referencia !== expectedReference) {
+						throw new Error(
+							`[recipes] La referencia del contenido (${dataWithIdentity.referencia}) no coincide con ${expectedReference} en ${fileName}.`,
+						);
+					}
+				}
 			}
 
 			return {
