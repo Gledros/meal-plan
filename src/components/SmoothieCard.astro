@@ -15,15 +15,21 @@ const smoothieImages = import.meta.glob<ImageMetadata>(
 	{ eager: true, import: 'default' },
 );
 const smoothieImagePath = `/src/assets/images/smoothie/smoothie-${id}.png`;
+const borderHex = darkenHexColor(smoothie.color, 0.2);
+const nutritionHex = lightenHexColor(smoothie.color, 0.5);
+const cardBorderStyle = `border-color: ${borderHex} !important; forced-color-adjust: none;`;
+const headerBgStyle = `background-color: ${smoothie.color} !important; forced-color-adjust: none;`;
+const headerTextStyle = 'color: #000000 !important; forced-color-adjust: none;';
+const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #000000 !important; forced-color-adjust: none;`;
 // const smoothieImage = smoothieImages[smoothieImagePath];
 ---
 
 <div
 	class='smoothie-card border-3 rounded-xl overflow-hidden flex flex-col'
-	style={'border-color: ' + darkenHexColor(smoothie.color, 0.2)}
+	style={cardBorderStyle}
 >
-	<div class='p-2' style={'background-color: ' + smoothie.color}>
-		<h2 class='text-xl font-bold text-center'>
+	<div class='p-2' style={headerBgStyle}>
+		<h2 class='text-xl font-bold text-center' style={headerTextStyle}>
 			{`Smoothie ${id}`}<br />{smoothie.nombre}
 		</h2>
 	</div>
@@ -62,7 +68,7 @@ const smoothieImagePath = `/src/assets/images/smoothie/smoothie-${id}.png`;
 	<div
 		id='perfil_nutricional'
 		class='m-1 p-1 rounded-xl'
-		style={'background-color: ' + lightenHexColor(smoothie.color, 0.5)}
+		style={nutritionBgStyle}
 	>
 		<h3 class='text-center font-bold text-xl'>Perfil nutricional</h3>
 		<div class='w-full grid grid-cols-2 gap-2 p-2'>
