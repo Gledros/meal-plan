@@ -9,7 +9,7 @@
     "dev": "astro dev --host",
     "build": "astro build",
     "build:node": "astro build --config astro.config.mjs",
-    "build:static": "astro build --config astro.config.static.mjs --outDir dist-static",
+    "build:static": "astro build --config astro.config.static.mjs --outDir docs",
     "build:all": "pnpm run build:node && pnpm run build:static",
     "start": "node ./dist/server/entry.mjs",
     "preview": "astro preview",

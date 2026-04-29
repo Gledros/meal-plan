@@ -68,6 +68,7 @@ const addHeadingAccessibleNames = () => {
 
 export default defineConfig({
 	output: "static",
+	outDir: "./docs",
 	integrations: [mdx(), sentry(), spotlightjs(), icon()],
 	markdown: {
 		rehypePlugins: [addHeadingAccessibleNames],
