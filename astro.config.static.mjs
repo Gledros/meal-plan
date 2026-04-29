@@ -69,6 +69,8 @@ const addHeadingAccessibleNames = () => {
 export default defineConfig({
 	output: "static",
 	outDir: "./docs",
+	site: "https://meal-plan.dellarocca.mx",
+	base: "/",
 	integrations: [mdx(), sentry(), spotlightjs(), icon()],
 	markdown: {
 		rehypePlugins: [addHeadingAccessibleNames],
