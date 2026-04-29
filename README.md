@@ -119,6 +119,25 @@ pnpm build
 pnpm start
 ```
 
+## Build estatico
+
+```bash
+pnpm run build:static
+```
+
+Esto genera el sitio en `dist-static`.
+
+## Build dual (SSR + estatico)
+
+```bash
+pnpm run build:all
+```
+
+Resultados:
+
+- SSR Node en `dist`
+- Estático en `dist-static`
+
 ## Docker Compose + GHCR publico (Umbrel)
 
 Este repo incluye `docker-compose.yml` para correr desde una imagen publica en GHCR y montar recetas desde disco.
