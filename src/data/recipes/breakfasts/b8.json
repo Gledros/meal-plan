@@ -1,0 +1,194 @@
+{
+  "id": 8,
+  "referencia": "b008",
+  "nombre": "Shakshuka de frijoles con cilantro",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Se puede preparar la noche anterior y recalentar en la mañana. Rinde 2 porciones."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Cocción a fuego medio. Los frijoles y jitomates se agregan tras sofreír las verduras."
+  },
+  "informacion_nutricional": {
+    "kcal": 543,
+    "carbohidratos_g": 84,
+    "grasas_g": 13,
+    "proteina_g": 28
+  },
+  "ingredientes": [
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 13.8,
+      "estado": "líquido"
+    },
+    {
+      "clave": "small_red_onion",
+      "nombre": "Cebolla morada",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 80.0,
+      "estado": "pequeña, picada finamente"
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 2.0,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 10.0,
+      "estado": "machacado"
+    },
+    {
+      "clave": "smoked_paprika",
+      "nombre": "Pimentón ahumado",
+      "cantidad": 2.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 4.6,
+      "estado": "molido"
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.1,
+      "estado": "molido"
+    },
+    {
+      "clave": "chili_powder",
+      "nombre": "Chile en polvo",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.5,
+      "estado": "molido"
+    },
+    {
+      "clave": "kale",
+      "nombre": "Col rizada (kale)",
+      "cantidad": 3.0,
+      "unidad": "piece",
+      "unidad_display": "tallo",
+      "equivalente_g": 90.0,
+      "estado": "tallos removidos, hojas picadas"
+    },
+    {
+      "clave": "tinned_diced_tomatoes",
+      "nombre": "Jitomates en cubos (lata)",
+      "cantidad": 396.9,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 396.9,
+      "estado": "lata, con jugo"
+    },
+    {
+      "clave": "cannellini_beans",
+      "nombre": "Frijoles canellini (lata)",
+      "cantidad": 396.9,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 396.9,
+      "estado": "lata, escurridos y enjuagados"
+    },
+    {
+      "clave": "black_beans",
+      "nombre": "Frijoles negros (lata)",
+      "cantidad": 198.45,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 198.45,
+      "estado": "lata, escurridos y enjuagados"
+    },
+    {
+      "clave": "tofu_cream_cheese",
+      "nombre": "Queso crema de tofu",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 30.0,
+      "estado": "preparado, ver p.26",
+      "enlace": "recipe://tofu-cream-cheese-p26"
+    },
+    {
+      "clave": "cilantro",
+      "nombre": "Cilantro",
+      "cantidad": 7.09,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 7.09,
+      "estado": "hojas picadas, para decorar"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.71,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 0.66,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "crusty_bread",
+      "nombre": "Pan rústico",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "rebanada",
+      "equivalente_g": 120.0,
+      "estado": "para acompañar (1 rebanada por porción)"
+    }
+  ],
+  "pasos": [
+    "Calentar el aceite de oliva en una sartén grande a fuego medio.",
+    "Sofreír la cebolla morada y el ajo durante 2–3 minutos hasta que estén suaves.",
+    "Agregar el pimentón ahumado, el comino y el chile en polvo. Mezclar y cocinar 1 minuto.",
+    "Incorporar el kale picado y sofreír hasta que se marchite ligeramente, 2–3 minutos.",
+    "Verter los jitomates en cubos con su jugo, los frijoles canellini y los frijoles negros. Mezclar bien.",
+    "Llevar a ebullición suave y cocinar durante 5–6 minutos hasta que la mezcla espese ligeramente.",
+    "Sazonar con sal y pimienta al gusto.",
+    "Servir con una cucharada de queso crema de tofu y cilantro picado encima. Acompañar con pan rústico."
+  ],
+  "notas": [
+    "⚠️ NOTA DE PRODUCCIÓN: Esta receta rinde 2 porciones. Los valores nutricionales (543 kcal) corresponden a 1 porción. Las cantidades en el JSON representan la receta completa. Se puede preparar la noche anterior y recalentar.",
+    "Medidas originales en oz de peso: 14 oz jitomates en lata → 396.9g; 14 oz frijoles canellini → 396.9g; 7 oz frijoles negros → 198.45g.",
+    "Cilantro (¼ oz = 7.09g): guarnición aromática. WARNING por debajo de 20g; válido semánticamente.",
+    "Kale (3 tallos): equivalente_g de 30g por tallo = 90g total, estimación estándar para tallo de kale mediano sin tallo central.",
+    "Los frijoles canellini pueden sustituirse por frijoles blancos o bayos escurridos en la misma cantidad.",
+    "El queso crema de tofu (p.26) es sub-receta del libro. Equivalente_g (30g) calculado a 15g/cda.",
+    "Pan rústico: 60g por rebanada = 120g total (2 porciones). Estimación estándar; varía por tipo de pan.",
+    "Densidades usadas: aceite de oliva 0.92 g/ml; pimentón ahumado 0.46 g/ml; comino molido 0.42 g/ml; chile en polvo 0.50 g/ml."
+  ],
+  "validacion": {
+    "score": 85,
+    "warnings": [
+      "Receta multiserving (2 porciones): valores nutricionales por porción individual. Frontend debe dividir cantidades entre 2 al mostrar por porción.",
+      "Cilantro (7.09g): por debajo del umbral de 20g. Guarnición; válido semánticamente.",
+      "Kale (3 tallos = 90g): equivalente_g es estimación por pieza.",
+      "Pan rústico: tipo no especificado, equivalente_g estimado."
+    ],
+    "correcciones": [
+      "14 oz jitomates en lata (oz peso) → 396.9g",
+      "14 oz frijoles canellini (oz peso) → 396.9g",
+      "7 oz frijoles negros (oz peso) → 198.45g",
+      "Sal y pimienta sin cantidad → 0.25 cdita c/u asignadas para frontend"
+    ]
+  }
+}

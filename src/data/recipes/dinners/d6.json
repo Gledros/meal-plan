@@ -1,0 +1,159 @@
+{
+  "id": 6,
+  "referencia": "d006",
+  "nombre": "Hongos portobello rellenos",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "El camote y los hongos se asan primero; el relleno se prepara mientras se hornean."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 25,
+    "unidad": "minutes",
+    "notas": "Incluye 12–15 min de asado del camote/hongos + 5–10 min de calentado final relleno."
+  },
+  "informacion_nutricional": {
+    "kcal": 660,
+    "carbohidratos_g": 42,
+    "grasas_g": 33,
+    "proteina_g": 16
+  },
+  "ingredientes": [
+    {
+      "clave": "sweet_potato",
+      "nombre": "Camote",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75.0,
+      "estado": "pequeño, pelado y en cubos"
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 1.0,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 5.0,
+      "estado": "entero, con piel"
+    },
+    {
+      "clave": "rosemary_sprig",
+      "nombre": "Romero fresco",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "ramita",
+      "equivalente_g": 2.0,
+      "estado": "fresco"
+    },
+    {
+      "clave": "portobello_mushrooms",
+      "nombre": "Hongos portobello grandes",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 200.0,
+      "estado": "tallos removidos"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 27.6,
+      "estado": "líquido, dividido"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal de mar",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1.25,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "cooked_quinoa",
+      "nombre": "Quinoa cocida",
+      "cantidad": 127.58,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 127.58,
+      "estado": "cocida, ver p.66"
+    },
+    {
+      "clave": "crunchy_seed_mix",
+      "nombre": "Mezcla de semillas crujientes",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10.0,
+      "estado": "preparada, ver p.24",
+      "enlace": "recipe://crunchy-seed-mix-p24"
+    },
+    {
+      "clave": "sundried_tomatoes",
+      "nombre": "Jitomates deshidratados (sol)",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 8.0,
+      "estado": "picados"
+    },
+    {
+      "clave": "nutritional_yeast",
+      "nombre": "Levadura nutricional",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 5.0,
+      "estado": "en copos"
+    },
+    {
+      "clave": "pesto",
+      "nombre": "Pesto",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 32.1,
+      "estado": "preparado, ver p.26",
+      "enlace": "recipe://pesto-p26"
+    }
+  ],
+  "pasos": [
+    "Precalentar el horno a 180°C (350°F).",
+    "Colocar el camote en cubos, el diente de ajo entero y la ramita de romero junto con los hongos portobello (boca arriba) en una charola con papel para hornear.",
+    "Rociar con la mitad del aceite de oliva, espolvorear con sal de mar y asar durante 12–15 minutos hasta que el camote esté dorado y los hongos suaves.",
+    "Retirar del horno. Pelar el ajo asado y picar junto con las hojas de romero.",
+    "En un tazón, combinar la quinoa cocida, el camote asado, el ajo y el romero picados, la mezcla de semillas, los jitomates deshidratados y la levadura nutricional.",
+    "Rociar con el aceite de oliva restante y sazonar. Mezclar bien.",
+    "Rellenar generosamente cada hongo portobello con la mezcla de quinoa.",
+    "Colocar 1 cucharada de pesto sobre cada hongo y regresar al horno durante 5–10 minutos hasta calentar bien.",
+    "Servir de inmediato."
+  ],
+  "notas": [
+    "Medida original: 4½ oz quinoa cocida (oz peso) → 127.58g.",
+    "Camote (½ pieza pequeña): equivalente_g de 75g estimado para la mitad de un camote pequeño (~150g entero). ✅ Sobre umbral de 20g.",
+    "Hongos portobello (2 piezas grandes): equivalente_g de 100g por pieza = 200g total. Estimación estándar; el peso real varía con el tamaño.",
+    "Romero fresco (1 ramita = ~2g): guarnición aromática, no afecta el cálculo nutricional de forma significativa.",
+    "La levadura nutricional aporta un sabor umami y queso sin ser láctea. Se consigue en tiendas naturistas en México. Sustitución: no tiene equivalente exacto, pero puede omitirse o reemplazarse con 1 cdita de miso claro.",
+    "Los jitomates deshidratados al sol (1 cda): equivalente_g de 8g calculado con densidad aparente ~0.53 g/ml.",
+    "La quinoa cocida puede prepararse con anticipación y refrigerarse hasta 3 días. Ver referencia p.66 del libro.",
+    "Densidades usadas: aceite de oliva 0.92 g/ml; levadura nutricional 0.33 g/ml; pesto 1.07 g/ml; sal de mar 1.25 g/ml."
+  ],
+  "validacion": {
+    "score": 84,
+    "warnings": [
+      "Camote (½ pieza pequeña): equivalente_g de 75g es estimación. ✅ Sobre umbral de 20g.",
+      "Hongos portobello (2 piezas): equivalente_g de 100g por pieza es estimación; el peso varía significativamente con el tamaño.",
+      "Romero fresco (1 ramita = ~2g): guarnición aromática por debajo de 20g; válido semánticamente.",
+      "Levadura nutricional: ingrediente poco común en México. Nota de disponibilidad y sustitución agregada.",
+      "Sal de mar: sin cantidad en fuente → 0.25 cdita asignada; marcar como 'al gusto' en UI."
+    ],
+    "correcciones": [
+      "4½ oz quinoa cocida (oz peso) → 127.58g",
+      "Sal de mar sin cantidad → 0.25 cdita asignada para escalado en frontend"
+    ]
+  }
+}

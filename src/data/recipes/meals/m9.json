@@ -1,0 +1,142 @@
+{
+  "id": 9,
+  "referencia": "m009",
+  "nombre": "Ensalada de brotes mixtos",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Sin cocción. Asegurarse de tener el aderezo de yogur de coco con limón y chile (p.18) preparado."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": "Receta completamente en crudo."
+  },
+  "informacion_nutricional": {
+    "kcal": 246,
+    "carbohidratos_g": 21,
+    "grasas_g": 10,
+    "proteina_g": 7
+  },
+  "ingredientes": [
+    {
+      "clave": "mixed_sprouts",
+      "nombre": "Brotes mixtos (mung, garbanzo, soya)",
+      "cantidad": 28.35,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 28.35,
+      "estado": "frescos, ver p.10",
+      "enlace": "recipe://growing-sprouts-p10"
+    },
+    {
+      "clave": "snow_pea_shoots",
+      "nombre": "Brotes de chícharo",
+      "cantidad": 7.09,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 7.09,
+      "estado": "frescos, microgreens"
+    },
+    {
+      "clave": "beansprouts",
+      "nombre": "Germinado de frijol",
+      "cantidad": 14.18,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 14.18,
+      "estado": "fresco"
+    },
+    {
+      "clave": "fresh_mint",
+      "nombre": "Hierbabuena fresca",
+      "cantidad": 7.09,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 7.09,
+      "estado": "picada"
+    },
+    {
+      "clave": "persian_cucumber",
+      "nombre": "Pepino persa",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75.0,
+      "estado": "rebanado finamente"
+    },
+    {
+      "clave": "black_sesame_seeds",
+      "nombre": "Semillas de ajonjolí negro",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 3.0,
+      "estado": "crudas"
+    },
+    {
+      "clave": "red_chili",
+      "nombre": "Chile rojo",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 7.0,
+      "estado": "rebanado finamente, opcional"
+    },
+    {
+      "clave": "coconut_yogurt_dressing",
+      "nombre": "Aderezo de yogur de coco con limón y chile",
+      "cantidad": 1.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 22.5,
+      "estado": "preparado, ver p.18",
+      "enlace": "recipe://coconut-yogurt-lime-chili-dressing-p18"
+    },
+    {
+      "clave": "roasted_cashew_nuts",
+      "nombre": "Nueces de la india tostadas",
+      "cantidad": 21.26,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 21.26,
+      "estado": "tostadas, picadas groseramente"
+    }
+  ],
+  "pasos": [
+    "En un tazón grande, combinar los brotes mixtos, los brotes de chícharo, el germinado de frijol, la hierbabuena picada y el pepino rebanado.",
+    "Agregar las semillas de ajonjolí negro y el chile rojo rebanado si se usa.",
+    "Verter el aderezo de yogur de coco con limón y chile. Mezclar suavemente para cubrir todos los ingredientes.",
+    "Servir en un plato y colocar las nueces de la india tostadas y picadas encima justo antes de comer."
+  ],
+  "notas": [
+    "Medidas originales en oz de peso: 1 oz brotes mixtos → 28.35g; ¼ oz brotes de chícharo → 7.09g; ½ oz germinado de frijol → 14.18g; ¼ oz hierbabuena → 7.09g; ¾ oz nueces de la india → 21.26g.",
+    "Brotes de chícharo (7.09g) y germinado de frijol (14.18g): ambos por debajo del umbral de 20g. Son ingredientes de textura y frescura en ensalada de brotes; válidos semánticamente para 1 porción.",
+    "Hierbabuena (7.09g): hierba aromática. WARNING por debajo de 20g; válido semánticamente.",
+    "RANGO DE CANTIDAD: la fuente indica '1–2 cdas' de aderezo. Se usó 1.5 cdas como punto medio. Ajustar al gusto.",
+    "Pepino persa (½ pieza): equivalente_g de 75g. ✅ Sobre umbral de 20g. Si no se consigue, usar pepino mexicano pelado y sin semillas.",
+    "Chile rojo: opcional según la fuente. ½ pieza = ~7g estimado; marcar como opcional en UI.",
+    "Las semillas de ajonjolí negro pueden sustituirse por ajonjolí blanco tostado.",
+    "Los brotes mixtos (p.10) pueden ser de elaboración casera según el libro.",
+    "Densidades usadas: ajonjolí negro 0.60 g/ml; aderezo yogur de coco 1.0 g/ml."
+  ],
+  "validacion": {
+    "score": 82,
+    "warnings": [
+      "Brotes de chícharo (7.09g): por debajo del umbral de 20g. Microgreen/decorativo en ensalada de brotes; válido semánticamente.",
+      "Germinado de frijol (14.18g): por debajo del umbral de 20g. Ingrediente de textura en ensalada pequeña; válido semánticamente.",
+      "Hierbabuena (7.09g): hierba aromática por debajo de 20g; válido semánticamente.",
+      "Chile rojo (½ pieza = 7g): opcional; por debajo de 20g. Marcado como opcional en ingredientes.",
+      "Aderezo: rango 1–2 cdas → punto medio 1.5 cdas. Documentado en notas.",
+      "Pepino persa (½ pieza): equivalente_g de 75g es estimación. ✅ Sobre umbral de 20g."
+    ],
+    "correcciones": [
+      "1 oz brotes mixtos (oz peso) → 28.35g",
+      "¼ oz brotes de chícharo (oz peso) → 7.09g",
+      "½ oz germinado de frijol (oz peso) → 14.18g",
+      "¼ oz hierbabuena (oz peso) → 7.09g",
+      "¾ oz nueces de la india (oz peso) → 21.26g",
+      "1–2 cdas aderezo (rango) → punto medio 1.5 cdas"
+    ]
+  }
+}

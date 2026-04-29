@@ -1,0 +1,155 @@
+{
+  "id": 6,
+  "referencia": "b006",
+  "nombre": "Tofu revuelto",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Picar todos los vegetales antes de encender el fuego para agilizar la cocción."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Cocción a fuego medio. Las espinacas se agregan al final para marchitarlas levemente."
+  },
+  "informacion_nutricional": {
+    "kcal": 383,
+    "carbohidratos_g": 17,
+    "grasas_g": 27,
+    "proteina_g": 26
+  },
+  "ingredientes": [
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 13.8,
+      "estado": "líquido"
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 15.0,
+      "estado": "picada finamente"
+    },
+    {
+      "clave": "red_bell_pepper",
+      "nombre": "Chile morrón rojo",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75.0,
+      "estado": "cortado en tiras"
+    },
+    {
+      "clave": "roma_tomato",
+      "nombre": "Jitomate guaje (saladet)",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60.0,
+      "estado": "en cubos"
+    },
+    {
+      "clave": "crumbled_tofu",
+      "nombre": "Tofu extra firme desmenuzado",
+      "cantidad": 155.93,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 155.93,
+      "estado": "prensado y desmenuzado"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.71,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 0.66,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "basil_leaves",
+      "nombre": "Hojas de albahaca",
+      "cantidad": 6.0,
+      "unidad": "piece",
+      "unidad_display": "hoja",
+      "equivalente_g": 2.0,
+      "estado": "fresca, en chiffonade"
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 4.0,
+      "estado": "picado"
+    },
+    {
+      "clave": "baby_spinach",
+      "nombre": "Espinacas baby",
+      "cantidad": 60.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 60.0,
+      "estado": "hojas frescas"
+    },
+    {
+      "clave": "sweet_chili_sauce",
+      "nombre": "Salsa de chile dulce",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 16.5,
+      "estado": "para acompañar, opcional"
+    }
+  ],
+  "pasos": [
+    "Calentar el aceite de oliva en una sartén a fuego medio.",
+    "Agregar la cebollita de cambray y el chile morrón en tiras. Sofreír durante 2–3 minutos hasta que ablanden.",
+    "Incorporar el jitomate en cubos y cocinar 1 minuto más.",
+    "Agregar el tofu desmenuzado. Mezclar bien con las verduras y sazonar con sal y pimienta. Cocinar durante 4–5 minutos, moviendo frecuentemente.",
+    "Retirar del fuego. Mezclar las hojas de albahaca en chiffonade y el perejil picado.",
+    "Incorporar las espinacas baby y mezclar sobre el calor residual hasta que se marchiten ligeramente.",
+    "Servir de inmediato, acompañado de salsa de chile dulce si se desea."
+  ],
+  "notas": [
+    "Medida original: 5½ oz tofu extra firme (oz peso) → 155.93g.",
+    "'2 handfuls' espinacas baby: medida ambigua. Estimado 30g por puñado = 60g total. ✅ Sobre umbral de 20g.",
+    "Hojas de albahaca (6 hojas = ~2g): guarnición aromática. WARNING por debajo de 20g; válido semánticamente.",
+    "Sal y pimienta sin cantidad en la fuente. Asignado 0.25 cdita c/u; ajustar al gusto.",
+    "La salsa de chile dulce es opcional según la fuente. Se incluye en ingredientes marcada como tal; no excluir del escalado pero señalar como opcional en la UI.",
+    "El tofu debe estar bien prensado antes de desmenuzar para evitar exceso de humedad en la sartén.",
+    "Se pueden agregar sobrantes de verduras de la semana (champiñones, zucchini, brócoli) según sugiere la introducción del día.",
+    "Densidades usadas: aceite de oliva 0.92 g/ml; salsa de chile dulce 1.10 g/ml."
+  ],
+  "validacion": {
+    "score": 86,
+    "warnings": [
+      "Espinacas baby ('2 handfuls'): medida ambigua → 60g estimado. ✅ Sobre umbral de 20g.",
+      "Hojas de albahaca (6 hojas = ~2g): por debajo del umbral de 20g. Clasificado como guarnición aromática; válido semánticamente.",
+      "Sal y pimienta: sin cantidad en fuente → 0.25 cdita c/u asignadas; marcar como 'al gusto' en UI.",
+      "Salsa de chile dulce: opcional según la fuente → marcar como opcional en UI; cantidad asignada de 1 cda para escalado."
+    ],
+    "correcciones": [
+      "5½ oz tofu extra firme (oz peso) → 155.93g",
+      "2 handfuls espinacas baby (medida ambigua) → 60g estimado",
+      "Sal y pimienta sin cantidad → 0.25 cdita c/u asignadas para frontend"
+    ]
+  }
+}

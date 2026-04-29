@@ -1,0 +1,127 @@
+{
+  "id": 6,
+  "referencia": "m006",
+  "nombre": "Ensalada de jitomate con crutones de ajo",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Preparar los crutones primero; mientras se hornean, armar la ensalada."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 6,
+    "unidad": "minutes",
+    "notas": "Solo el tiempo de horneado de los crutones a 180°C (350°F)."
+  },
+  "informacion_nutricional": {
+    "kcal": 316,
+    "carbohidratos_g": 82,
+    "grasas_g": 31,
+    "proteina_g": 17
+  },
+  "ingredientes": [
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 27.6,
+      "estado": "líquido, dividido"
+    },
+    {
+      "clave": "sourdough_bread",
+      "nombre": "Pan de masa madre",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "rebanada",
+      "equivalente_g": 60.0,
+      "estado": "cortado en cubos"
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 2.0,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 10.0,
+      "estado": "machacado"
+    },
+    {
+      "clave": "heirloom_tomatoes",
+      "nombre": "Jitomates heirloom (variedad mixta)",
+      "cantidad": 100.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 100.0,
+      "estado": "rebanados"
+    },
+    {
+      "clave": "ruby_red_grapefruit",
+      "nombre": "Toronja roja (ruby red)",
+      "cantidad": 0.25,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60.0,
+      "estado": "en gajos, sin piel ni membrana"
+    },
+    {
+      "clave": "basil_mint_leaves",
+      "nombre": "Hojas de albahaca y menta",
+      "cantidad": 7.09,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 7.09,
+      "estado": "fresca, en chiffonade"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal de mar",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1.25,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 0.66,
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Precalentar el horno a 180°C (350°F).",
+    "En un tazón, verter la mitad del aceite de oliva sobre los cubos de pan de masa madre. Agregar el ajo machacado y mezclar bien para cubrir.",
+    "Extender los cubos de pan en una charola con papel para hornear y hornear durante 5–6 minutos hasta que estén dorados y crujientes.",
+    "Mientras se hornean los crutones, combinar en un tazón los jitomates rebanados, los gajos de toronja y las hojas de albahaca y menta.",
+    "Rociar con el aceite de oliva restante y sazonar con sal de mar y pimienta al gusto. Mezclar suavemente.",
+    "Servir la ensalada en un plato y colocar los crutones crujientes encima justo antes de llevar a la mesa."
+  ],
+  "notas": [
+    "Medida original: '1 handful mixed heirloom tomatoes' → medida ambigua convertida a 100g estimado para un puñado de jitomates cherry/heirloom medianos.",
+    "Medida original: ¼ oz albahaca y menta (oz peso) → 7.09g. Cantidad de guarnición herbácea; WARNING por debajo de 20g, válido semánticamente.",
+    "Toronja roja (¼ pieza): equivalente_g de 60g estimado para ¼ de toronja mediana (~240g entera). ✅ Sobre umbral de 20g para frutas.",
+    "Los jitomates heirloom pueden ser difíciles de conseguir en algunos mercados de México. Sustitución: jitomates cherry de colores variados o jitomates saladet maduros en la misma cantidad.",
+    "Sal de mar y pimienta sin cantidad en la fuente. Asignado 0.25 cdita c/u; ajustar al gusto.",
+    "Los crutones deben agregarse justo al momento de servir para mantener su textura crujiente.",
+    "Densidades usadas: aceite de oliva 0.92 g/ml; sal de mar 1.25 g/ml."
+  ],
+  "validacion": {
+    "score": 83,
+    "warnings": [
+      "Jitomates heirloom ('1 handful'): medida ambigua → 100g estimado. Peso real puede variar según tamaño.",
+      "Albahaca y menta (¼ oz = 7.09g): por debajo del umbral de 20g. Clasificado como guarnición herbácea; válido semánticamente.",
+      "Toronja roja (¼ pieza): equivalente_g de 60g es estimación estándar. ✅ Sobre umbral de 20g para frutas.",
+      "Pan de masa madre (1 rebanada): equivalente_g de 60g es estimación; varía por marca y grosor.",
+      "Sal y pimienta: sin cantidad en fuente → 0.25 cdita c/u; marcar como 'al gusto' en UI."
+    ],
+    "correcciones": [
+      "¼ oz albahaca y menta (oz peso) → 7.09g",
+      "1 handful jitomates heirloom (medida ambigua) → 100g estimado",
+      "Sal y pimienta sin cantidad → 0.25 cdita c/u asignadas para frontend"
+    ]
+  }
+}

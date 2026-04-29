@@ -1,0 +1,139 @@
+{
+  "id": 9,
+  "referencia": "d009",
+  "nombre": "Bowl mexicano de quinoa",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Si se usa quinoa pre-cocida, el tiempo de preparación se reduce a 5 minutos. Requiere shakshuka de frijoles del Día 08 (b008)."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Si se usa quinoa pre-cocida, solo se calienta en la sartén con la shakshuka. Si se cocina desde cruda, agregar 12 minutos de cocción + 10 minutos de reposo."
+  },
+  "informacion_nutricional": {
+    "kcal": 1137,
+    "carbohidratos_g": 152,
+    "grasas_g": 47,
+    "proteina_g": 42
+  },
+  "ingredientes": [
+    {
+      "clave": "quinoa",
+      "nombre": "Quinoa",
+      "cantidad": 28.35,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 28.35,
+      "estado": "seca (equivalente: 85.05g cocida / 3 oz cocida)"
+    },
+    {
+      "clave": "bean_shakshuka",
+      "nombre": "Shakshuka de frijoles pre-cocida",
+      "cantidad": 198.45,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 198.45,
+      "estado": "sobrante del Día 08, recalentada",
+      "enlace": "recipe://bean-shakshuka-b008"
+    },
+    {
+      "clave": "red_cabbage",
+      "nombre": "Col morada",
+      "cantidad": 28.35,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 28.35,
+      "estado": "rallada finamente"
+    },
+    {
+      "clave": "iceberg_lettuce",
+      "nombre": "Lechuga iceberg",
+      "cantidad": 28.35,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 28.35,
+      "estado": "rallada"
+    },
+    {
+      "clave": "pico_de_gallo",
+      "nombre": "Pico de gallo",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15.0,
+      "estado": "preparado, ver p.28",
+      "enlace": "recipe://pico-de-gallo-p28"
+    },
+    {
+      "clave": "cilantro",
+      "nombre": "Cilantro",
+      "cantidad": 7.09,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 7.09,
+      "estado": "hojas frescas, para decorar"
+    },
+    {
+      "clave": "avocado",
+      "nombre": "Aguacate",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75.0,
+      "estado": "rebanado"
+    },
+    {
+      "clave": "hot_chili_sauce",
+      "nombre": "Salsa picante",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5.5,
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "OPCIÓN A (quinoa cruda): Llevar la quinoa con 162.64ml (5½ fl oz) de agua a ebullición. Reducir el fuego, tapar y cocinar 10–12 minutos hasta absorber. Apagar el fuego y reposar tapado 10 minutos. Esponjar con tenedor.",
+    "OPCIÓN B (quinoa pre-cocida): Calentar la quinoa directamente en la sartén con la shakshuka.",
+    "Calentar la shakshuka de frijoles sobrante del Día 08 en una sartén a fuego medio.",
+    "En un tazón para servir, distribuir la quinoa como base.",
+    "Colocar la shakshuka caliente sobre la quinoa.",
+    "Agregar capas de col morada rallada, lechuga iceberg rallada y rebanadas de aguacate.",
+    "Colocar el pico de gallo y decorar con las hojas de cilantro.",
+    "Terminar con salsa picante al gusto y servir de inmediato."
+  ],
+  "notas": [
+    "⚠️ INGREDIENTE VINCULADO: La shakshuka de frijoles pre-cocida (198.45g) proviene de la receta del Día 08, desayuno (b008). Este bowl aprovecha el sobrante producido por esa receta multiserving (rinde 2 porciones).",
+    "Medidas originales en oz: 1 oz quinoa cruda → 28.35g (equivalente a 3 oz / 85.05g cocida). Ambos valores son consistentes; se registra el peso seco como valor primario.",
+    "El agua de cocción de la quinoa (5½ fl oz = 162.64ml) es líquido de proceso; no se registra como ingrediente.",
+    "Medidas originales en oz de peso: 7 oz shakshuka → 198.45g; 1 oz col morada → 28.35g; 1 oz lechuga iceberg → 28.35g.",
+    "Cilantro (¼ oz = 7.09g): guarnición aromática. WARNING por debajo de 20g; válido semánticamente.",
+    "Aguacate (½ pieza): equivalente_g de 75g. ✅ Sobre umbral de 20g.",
+    "El pico de gallo (p.28) es sub-receta del libro. Equivalente_g (15g/cda) calculado con densidad estándar 1.0 g/ml.",
+    "Salsa picante 'al gusto': asignada 1 cdita como estimación estándar de porción; ajustar según preferencia.",
+    "El valor calórico alto (1137 kcal) se debe a la combinación de quinoa + shakshuka completa (que ya incluye dos tipos de frijoles). Verificar en la UI que este valor se muestre con contexto adecuado.",
+    "Densidades usadas: salsa picante 1.10 g/ml; pico de gallo 1.0 g/ml."
+  ],
+  "validacion": {
+    "score": 81,
+    "warnings": [
+      "Shakshuka de frijoles (198.45g): ingrediente vinculado a b008. Cantidad estimada como 1 porción del sobrante del lote de 2. El peso exacto depende de la preparación real del Día 08.",
+      "Cilantro (7.09g): por debajo del umbral de 20g. Guarnición; válido semánticamente.",
+      "Aguacate (½ pieza = 75g): equivalente_g es estimación. ✅ Sobre umbral de 20g.",
+      "Quinoa: registrada en peso seco (28.35g). Equivalente cocido (85.05g) documentado en estado del ingrediente para referencia del frontend.",
+      "Salsa picante 'al gusto': sin cantidad en la fuente → 1 cdita asignada; marcar como 'al gusto' en UI.",
+      "Valor calórico elevado (1137 kcal): resultado de la combinación quinoa + shakshuka completa. Revisar presentación en UI para contexto nutricional adecuado."
+    ],
+    "correcciones": [
+      "1 oz quinoa cruda (oz peso) → 28.35g seco (= 85.05g cocido)",
+      "7 oz shakshuka pre-cocida (oz peso) → 198.45g; vínculo a b008",
+      "1 oz col morada (oz peso) → 28.35g",
+      "1 oz lechuga iceberg (oz peso) → 28.35g",
+      "¼ oz cilantro (oz peso) → 7.09g",
+      "5½ fl oz agua de cocción (fl oz líquido) → 162.64ml, líquido de proceso, no registrado como ingrediente",
+      "Salsa picante sin cantidad → 1 cdita asignada para escalado en frontend"
+    ]
+  }
+}

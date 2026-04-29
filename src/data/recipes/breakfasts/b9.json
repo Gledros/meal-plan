@@ -1,0 +1,190 @@
+{
+  "id": 9,
+  "referencia": "b009",
+  "nombre": "Muffins de camote",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Rinde 6 muffins pequeños. Se conservan hasta 4 días en recipiente hermético o se pueden congelar individualmente."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 30,
+    "unidad": "minutes",
+    "notas": "Horneado a 170°C (340°F) durante 25–30 minutos hasta dorar. Enfriar 5 minutos en el molde antes de desmoldar."
+  },
+  "informacion_nutricional": {
+    "kcal": 251,
+    "carbohidratos_g": 44,
+    "grasas_g": 7,
+    "proteina_g": 7
+  },
+  "ingredientes": [
+    {
+      "clave": "flaxseed_chia_eggs",
+      "nombre": "Huevos de linaza o chía",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 100.0,
+      "estado": "preparados, ver p.14",
+      "enlace": "recipe://flaxseed-chia-eggs-p14"
+    },
+    {
+      "clave": "silken_tofu",
+      "nombre": "Tofu sedoso",
+      "cantidad": 56.7,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 56.7,
+      "estado": "escurrido"
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de maple",
+      "cantidad": 3.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 59.85,
+      "estado": "líquido"
+    },
+    {
+      "clave": "vanilla_extract",
+      "nombre": "Extracto natural de vainilla",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5.25,
+      "estado": "líquido"
+    },
+    {
+      "clave": "wholewheat_flour",
+      "nombre": "Harina integral con polvo para hornear",
+      "cantidad": 127.58,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 127.58,
+      "estado": "harina integral con leudante incorporado"
+    },
+    {
+      "clave": "ground_almonds",
+      "nombre": "Almendra molida",
+      "cantidad": 28.35,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 28.35,
+      "estado": "finamente molida"
+    },
+    {
+      "clave": "coconut_sugar",
+      "nombre": "Azúcar de coco",
+      "cantidad": 49.61,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 49.61,
+      "estado": "granulada o alternativa (azúcar mascabado)"
+    },
+    {
+      "clave": "baking_powder",
+      "nombre": "Polvo para hornear",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.0,
+      "estado": "leudante"
+    },
+    {
+      "clave": "ground_ginger",
+      "nombre": "Jengibre molido",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1.2,
+      "estado": "seco, molido"
+    },
+    {
+      "clave": "ground_cinnamon",
+      "nombre": "Canela molida",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.8,
+      "estado": "molida"
+    },
+    {
+      "clave": "sweet_potato",
+      "nombre": "Camote",
+      "cantidad": 155.93,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 155.93,
+      "estado": "pelado y rallado"
+    },
+    {
+      "clave": "pear",
+      "nombre": "Pera",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 150.0,
+      "estado": "pelada y picada finamente"
+    },
+    {
+      "clave": "oil_greasing",
+      "nombre": "Aceite vegetal",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 4.6,
+      "estado": "para engrasar el molde"
+    },
+    {
+      "clave": "granola",
+      "nombre": "Granola",
+      "cantidad": 3.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 20.0,
+      "estado": "preparada, ver p.32, para decorar encima",
+      "enlace": "recipe://granola-p32"
+    }
+  ],
+  "pasos": [
+    "Precalentar el horno a 170°C (340°F). Engrasar un molde para 6 muffins pequeños con aceite vegetal.",
+    "Preparar los huevos de linaza o chía (p.14) y reservar.",
+    "En un tazón, batir el tofu sedoso, el jarabe de maple y el extracto de vainilla hasta obtener una mezcla homogénea.",
+    "En otro tazón, combinar la harina integral, la almendra molida, el azúcar de coco, el polvo para hornear, el jengibre molido y la canela. Mezclar bien.",
+    "Hacer un pozo en el centro de los ingredientes secos y agregar la mezcla de tofu y los huevos de linaza/chía. Incorporar suavemente.",
+    "Agregar el camote rallado y la pera picada. Mezclar hasta integrar sin sobremezclar.",
+    "Dividir la mezcla equitativamente entre los 6 espacios del molde engrasado.",
+    "Espolvorear la granola encima de cada muffin.",
+    "Hornear durante 25–30 minutos hasta que estén dorados y un palillo insertado en el centro salga limpio.",
+    "Dejar enfriar en el molde 5 minutos antes de transferir a una rejilla."
+  ],
+  "notas": [
+    "⚠️ NOTA DE PRODUCCIÓN: Esta receta rinde 6 muffins pequeños. Los valores nutricionales (251 kcal) corresponden a 1 muffin. Las cantidades en el JSON representan el lote completo.",
+    "Medidas originales en oz de peso: 2 oz tofu sedoso → 56.7g; 4½ oz harina integral → 127.58g; 1 oz almendra molida → 28.35g; 1¾ oz azúcar de coco → 49.61g; 5½ oz camote → 155.93g.",
+    "La harina integral con leudante ('self-rising') no es común en México. Sustitución: mezclar 127.58g de harina integral con 1.5 cditas adicionales de polvo para hornear y ¼ cdita de sal.",
+    "Los huevos de linaza/chía (2 piezas, p.14): equivalente_g de 50g por unidad = 100g total. Cada huevo = 1 cda de linaza/chía molida + 3 cdas de agua, reposado 5 minutos.",
+    "Azúcar de coco: puede sustituirse por azúcar mascabado o piloncillo molido en la misma cantidad.",
+    "Granola (3 cdas = ~20g): calculado con densidad aparente 0.45 g/ml × 45ml.",
+    "Los muffins se conservan 4 días en recipiente hermético o se pueden congelar individualmente hasta 1 mes.",
+    "Densidades usadas: jarabe de maple 1.33 g/ml; extracto de vainilla 1.05 g/ml; jengibre molido 0.48 g/ml; canela molida 0.56 g/ml; aceite vegetal 0.92 g/ml."
+  ],
+  "validacion": {
+    "score": 83,
+    "warnings": [
+      "Receta multibatch (6 muffins): valores nutricionales por unidad. Frontend debe dividir cantidades entre 6 al mostrar por porción.",
+      "Harina integral con leudante: no disponible fácilmente en México. Sustitución documentada en notas.",
+      "Pera (1 pieza = ~150g): equivalente_g es estimación estándar. ✅ Sobre umbral de 20g para frutas.",
+      "Granola: sub-receta p.32 — equivalente_g basado en densidad aparente estimada.",
+      "Aceite para engrasar: cantidad de proceso no nutricional → 1 cdita asignada como estimación mínima."
+    ],
+    "correcciones": [
+      "2 oz tofu sedoso (oz peso) → 56.7g",
+      "4½ oz harina integral (oz peso) → 127.58g",
+      "1 oz almendra molida (oz peso) → 28.35g",
+      "1¾ oz azúcar de coco (oz peso) → 49.61g",
+      "5½ oz camote (oz peso) → 155.93g"
+    ]
+  }
+}

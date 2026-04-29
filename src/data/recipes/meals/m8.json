@@ -1,0 +1,90 @@
+{
+  "id": 8,
+  "referencia": "m008",
+  "nombre": "Sopa de miso con kimchi",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Receta muy rápida. El miso NO debe hervir para preservar sus probióticos."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "El alga wakame y el kimchi se calientan primero; el miso se disuelve fuera del fuego."
+  },
+  "informacion_nutricional": {
+    "kcal": 38,
+    "carbohidratos_g": 6,
+    "grasas_g": 1,
+    "proteina_g": 2
+  },
+  "ingredientes": [
+    {
+      "clave": "wakame",
+      "nombre": "Wakame (alga marina seca)",
+      "cantidad": 7.09,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 7.09,
+      "estado": "seco, se rehidrata durante la cocción"
+    },
+    {
+      "clave": "kimchi",
+      "nombre": "Kimchi",
+      "cantidad": 20.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 20.0,
+      "estado": "fermentado"
+    },
+    {
+      "clave": "white_miso_paste",
+      "nombre": "Pasta de miso blanco",
+      "cantidad": 14.18,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 14.18,
+      "estado": "pasta, disuelta fuera del fuego"
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 15.0,
+      "estado": "rebanada finamente, para servir"
+    }
+  ],
+  "pasos": [
+    "Llevar 1 taza (240ml) de agua a ebullición en una olla mediana.",
+    "Reducir el fuego a fuego lento. Agregar el wakame seco y el kimchi. Calentar durante 2–3 minutos.",
+    "Retirar un par de cucharadas del caldo caliente y verterlas en una taza pequeña. Agregar la pasta de miso blanco y disolver completamente con un tenedor o batidor pequeño.",
+    "Incorporar el miso disuelto a la olla. NO volver a hervir para preservar los probióticos y el sabor.",
+    "Servir en tazones y decorar con la cebollita de cambray rebanada."
+  ],
+  "notas": [
+    "Medida original: ¼ oz wakame seco → 7.09g. Para alga marina seca, esta es una cantidad estándar de uso (se rehidrata y expande ~6–8 veces su peso seco). Válido semánticamente.",
+    "Medida original: ½ oz pasta de miso blanco → 14.18g.",
+    "Kimchi ('1 heaped tablespoon'): medida copeteada estimada en ~20g. El kimchi es un fermentado de col con especias; se consigue en tiendas de productos asiáticos en México.",
+    "⚠️ CRÍTICO: El miso NUNCA debe hervir. Siempre disolverlo en caldo retirado del fuego y agregar al final. El calor excesivo destruye los probióticos y altera el sabor.",
+    "El agua de cocción (1 taza = 240ml) es líquido de proceso; no se registra como ingrediente.",
+    "El miso blanco (shiro miso) es más suave y dulce que el miso rojo. Se consigue en tiendas de productos asiáticos o naturistas en México.",
+    "Sustitución de kimchi: si no se consigue, usar col fermentada (chucrut) en la misma cantidad, aunque el perfil de sabor será diferente.",
+    "Esta sopa tiene un valor calórico muy bajo (38 kcal). Es complemento de otras comidas, no una comida completa por sí sola."
+  ],
+  "validacion": {
+    "score": 88,
+    "warnings": [
+      "Wakame seco (7.09g): por debajo del umbral de 20g para vegetales. Para alga seca, esta cantidad es estándar y se rehidrata significativamente; válido semánticamente.",
+      "Kimchi ('heaped tablespoon'): medida ambigua → 20g estimado. Ajustar al gusto.",
+      "Valor calórico muy bajo (38 kcal): esta sopa funciona como acompañamiento o entrada, no como comida principal. Verificar contexto de uso en la UI.",
+      "Cebollita de cambray (1 pieza = 15g): guarnición por debajo de 20g; válido semánticamente."
+    ],
+    "correcciones": [
+      "¼ oz wakame seco (oz peso) → 7.09g",
+      "½ oz pasta de miso blanco (oz peso) → 14.18g",
+      "1 heaped tbsp kimchi (medida ambigua) → 20g estimado"
+    ]
+  }
+}

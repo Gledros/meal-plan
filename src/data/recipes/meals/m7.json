@@ -1,0 +1,107 @@
+{
+  "id": 7,
+  "referencia": "m007",
+  "nombre": "Ensalada de lechuga mantequilla con aderezo miso",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Sin cocción. Asegurarse de tener el aderezo miso de tofu (p.18) preparado con anticipación."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": "Receta completamente en crudo."
+  },
+  "informacion_nutricional": {
+    "kcal": 350,
+    "carbohidratos_g": 74,
+    "grasas_g": 4,
+    "proteina_g": 13
+  },
+  "ingredientes": [
+    {
+      "clave": "butter_lettuce",
+      "nombre": "Lechuga mantequilla",
+      "cantidad": 0.25,
+      "unidad": "piece",
+      "unidad_display": "cabeza",
+      "equivalente_g": 60.0,
+      "estado": "hojas rotas con las manos"
+    },
+    {
+      "clave": "french_breakfast_radishes",
+      "nombre": "Rábanos",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 15.0,
+      "estado": "pequeños, rebanados finamente"
+    },
+    {
+      "clave": "sweetcorn_kernels",
+      "nombre": "Granos de elote",
+      "cantidad": 80.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 80.0,
+      "estado": "frescos, desgranados de ½ mazorca"
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 15.0,
+      "estado": "rebanada finamente"
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "ramita",
+      "equivalente_g": 2.0,
+      "estado": "hojas picadas"
+    },
+    {
+      "clave": "tofu_miso_dressing",
+      "nombre": "Aderezo miso de tofu",
+      "cantidad": 1.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 22.5,
+      "estado": "preparado, ver p.18",
+      "enlace": "recipe://tofu-miso-dressing-p18"
+    }
+  ],
+  "pasos": [
+    "Romper las hojas de lechuga mantequilla con las manos en trozos medianos y colocar en un tazón grande.",
+    "Agregar los rábanos rebanados, los granos de elote frescos, la cebollita de cambray y el perejil picado.",
+    "Verter el aderezo miso de tofu sobre la ensalada.",
+    "Mezclar suavemente para combinar todos los ingredientes y servir de inmediato."
+  ],
+  "notas": [
+    "RANGO DE CANTIDAD: la fuente indica '1–2 cdas de aderezo miso de tofu'. Se usó 1.5 cdas como punto medio. Ajustar al gusto; el rango completo es 1–2 cdas.",
+    "Lechuga mantequilla (¼ cabeza): equivalente_g de 60g estimado para ¼ de una cabeza mediana (~240g entera). ✅ Sobre umbral de 20g.",
+    "Rábanos French breakfast (2 piezas pequeñas): equivalente_g de 7.5g por pieza = 15g total. WARNING por debajo del umbral de 20g para vegetales; clasificado como ingrediente de textura/color en ensalada, válido semánticamente.",
+    "Granos de elote (½ mazorca): equivalente_g de 80g estimado para los granos de media mazorca mediana. ✅ Sobre umbral de 20g.",
+    "Perejil liso (1 ramita): equivalente_g de 2g, guarnición aromática. WARNING por debajo de 20g; válido semánticamente.",
+    "El aderezo miso de tofu (p.18) es sub-receta del libro. Equivalente_g (15g/cda × 1.5 = 22.5g) calculado con densidad estándar de aderezo líquido-espeso 1.0 g/ml.",
+    "Los rábanos 'French breakfast' son rábanos alargados rosados. En México se pueden usar rábanos comunes rebanados en la misma cantidad.",
+    "La lechuga mantequilla se conoce también como lechuga Bibb o Boston. Se consigue en supermercados grandes. Sustitución: lechuga orejona tierna o escarola."
+  ],
+  "validacion": {
+    "score": 85,
+    "warnings": [
+      "Rábanos (2 piezas = 15g total): por debajo del umbral de 20g para vegetales. Clasificado como ingrediente de textura/decoración; válido semánticamente.",
+      "Perejil liso (1 ramita = 2g): guarnición aromática por debajo de 20g; válido semánticamente.",
+      "Lechuga mantequilla (¼ cabeza): equivalente_g de 60g es estimación. ✅ Sobre umbral de 20g.",
+      "Granos de elote (½ mazorca): equivalente_g de 80g es estimación. ✅ Sobre umbral de 20g.",
+      "Aderezo miso: rango 1–2 cdas → usado punto medio 1.5 cdas. Documentado en notas."
+    ],
+    "correcciones": [
+      "1–2 cdas aderezo miso (rango) → punto medio 1.5 cdas para escalado; rango documentado en notas"
+    ]
+  }
+}

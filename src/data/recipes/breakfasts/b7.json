@@ -1,0 +1,152 @@
+{
+  "id": 7,
+  "referencia": "b007",
+  "nombre": "Hash browns con espinacas y aguacate",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Incluye el tiempo de escurrir las papas ralladas. Esta receta produce extra; guardar los sobrantes en refrigerador para snack."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Freído superficial a fuego medio-alto, 3–4 minutos por lado. Las espinacas se cocinan al vapor por separado 1–2 minutos."
+  },
+  "informacion_nutricional": {
+    "kcal": 580,
+    "carbohidratos_g": 84,
+    "grasas_g": 70,
+    "proteina_g": 12
+  },
+  "ingredientes": [
+    {
+      "clave": "sweet_potato",
+      "nombre": "Camote",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75.0,
+      "estado": "pelado y rallado"
+    },
+    {
+      "clave": "russet_potatoes",
+      "nombre": "Papas russet (alpha)",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 300.0,
+      "estado": "peladas y ralladas"
+    },
+    {
+      "clave": "chickpea_flour",
+      "nombre": "Harina de garbanzo (besan)",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 6.5,
+      "estado": "en polvo"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal de mar",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1.25,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 0.66,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "frying_oil",
+      "nombre": "Aceite de coco o vegetal",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 27.6,
+      "estado": "para freír superficialmente"
+    },
+    {
+      "clave": "fresh_herbs",
+      "nombre": "Hierbas frescas picadas (sobrantes)",
+      "cantidad": 5.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 5.0,
+      "estado": "opcionales, sobrantes de la semana"
+    },
+    {
+      "clave": "baby_spinach",
+      "nombre": "Espinacas baby",
+      "cantidad": 21.26,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 21.26,
+      "estado": "frescas, cocidas al vapor"
+    },
+    {
+      "clave": "avocado",
+      "nombre": "Aguacate",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75.0,
+      "estado": "partido, sin hueso, rebanado"
+    },
+    {
+      "clave": "lemon_wedge",
+      "nombre": "Limón",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "gajo",
+      "equivalente_g": 10.0,
+      "estado": "gajo, para servir"
+    }
+  ],
+  "pasos": [
+    "Rallar el camote y las papas russet. Colocar en un colador y presionar firmemente para escurrir todo el exceso de líquido.",
+    "Transferir la mezcla escurrida a un tazón. Agregar la harina de garbanzo, sal, pimienta y las hierbas picadas si se usan. Mezclar bien.",
+    "Calentar suficiente aceite en una sartén a fuego medio-alto para freír superficialmente.",
+    "Con las manos, tomar una porción de la mezcla, formar una bola apretada y aplanar con una espátula directamente en el aceite caliente. Agregar 2–3 hash browns a la vez.",
+    "Cocinar 3–4 minutos por lado hasta que estén dorados y crujientes. Retirar y escurrir sobre papel absorbente.",
+    "Cocer las espinacas al vapor durante 1–2 minutos hasta que estén apenas marchitas.",
+    "Servir los hash browns acompañados de las espinacas al vapor, el aguacate rebanado y el gajo de limón.",
+    "Guardar los hash browns sobrantes en el refrigerador para snack."
+  ],
+  "notas": [
+    "Medida original: ¾ oz espinacas baby (oz peso) → 21.26g. ✅ Sobre el umbral mínimo de 20g.",
+    "Papas russet (2 piezas): equivalente_g de 150g por pieza = 300g total. Estimación estándar para papa russet mediana.",
+    "Camote (½ pieza): equivalente_g de 75g, consistente con criterio aplicado en b006 y d006.",
+    "Aceite para freír (2 cdas): cantidad estimada para freído superficial. El aceite absorbido real varía con la técnica; el valor nutricional impreso ya considera esta absorción.",
+    "Hierbas frescas: opcionales, sin tipo específico ni cantidad en la fuente. Se asignaron 5g como estimación; no afectan significativamente el cálculo nutricional.",
+    "Aguacate (½ pieza): equivalente_g de 75g. ✅ Sobre umbral de 20g.",
+    "⚠️ NOTA DE PRODUCCIÓN: La receta produce extra de hash browns. Los sobrantes se guardan en refrigerador para snack; no forman parte de ninguna receta de días posteriores en la Semana 1.",
+    "La papa russet es la variedad ideal por su alto contenido de almidón. En México se conoce como papa para hornear o papa blanca grande. Alternativa: papa cambray blanca grande.",
+    "La harina de garbanzo (besan) actúa como aglutinante en lugar del huevo. Se consigue en tiendas de productos naturistas o de comida asiática.",
+    "Densidades usadas: harina de garbanzo 0.43 g/ml; aceite de coco 0.92 g/ml; sal de mar 1.25 g/ml."
+  ],
+  "validacion": {
+    "score": 84,
+    "warnings": [
+      "Papas russet (2 piezas): equivalente_g de 300g es estimación estándar. Peso real puede variar 250–400g según tamaño.",
+      "Camote (½ pieza): equivalente_g de 75g es estimación. ✅ Sobre umbral de 20g.",
+      "Aceite para freír: cantidad estimada (2 cdas); absorción real durante la fritura varía.",
+      "Hierbas frescas: opcionales, sin tipo ni cantidad en fuente → 5g estimado; marcar como opcional en UI.",
+      "Aguacate (½ pieza): equivalente_g de 75g es estimación. ✅ Sobre umbral de 20g.",
+      "Sal y pimienta: sin cantidad en fuente → 0.25 cdita c/u; marcar como 'al gusto' en UI."
+    ],
+    "correcciones": [
+      "¾ oz espinacas baby (oz peso) → 21.26g",
+      "Aceite para freír sin cantidad → 2 cdas estimadas para escalado en frontend",
+      "Hierbas opcionales sin cantidad → 5g estimado",
+      "Sal y pimienta sin cantidad → 0.25 cdita c/u asignadas"
+    ]
+  }
+}
