@@ -9,20 +9,25 @@ interface Props {
 }
 
 const { tabs } = Astro.props;
-const defaultTabId = tabs[0]?.id ?? "";
+const defaultTabId = tabs[0]?.id ?? '';
 ---
 
-<div class='tabs-slider ' data-tabs-slider data-tabs-default={defaultTabId}>
-	<div class='tabs-list' data-tabs-list role='tablist' aria-label='Secciones del plan alimenticio'>
+<div class='tabs-slider' data-tabs-slider data-tabs-default={defaultTabId}>
+	<div
+		class='tabs-list'
+		data-tabs-list
+		role='tablist'
+		aria-label='Secciones del plan alimenticio'
+	>
 		{
 			tabs.map((tab, index) => (
 				<button
 					type='button'
 					role='tab'
-					class={`tabs-trigger ${index === 0 ? "is-active" : ""}`}
+					class={`tabs-trigger ${index === 0 ? 'is-active' : ''}`}
 					data-tab-target={tab.id}
-					aria-selected={index === 0 ? "true" : "false"}
-					tabindex={index === 0 ? "0" : "-1"}
+					aria-selected={index === 0 ? 'true' : 'false'}
+					tabindex={index === 0 ? '0' : '-1'}
 				>
 					{tab.label}
 				</button>
@@ -37,14 +42,14 @@ const defaultTabId = tabs[0]?.id ?? "";
 </div>
 
 <script is:inline>
-	const roots = document.querySelectorAll("[data-tabs-slider]");
+	const roots = document.querySelectorAll('[data-tabs-slider]');
 
 	for (const root of roots) {
-		const viewport = root.querySelector("[data-tabs-viewport]");
-		const track = root.querySelector("[data-tabs-track]");
-		const tabsList = root.querySelector("[data-tabs-list]");
-		const buttons = Array.from(root.querySelectorAll("[data-tab-target]"));
-		const stickyHeader = document.querySelector("[data-tabs-sticky-header]");
+		const viewport = root.querySelector('[data-tabs-viewport]');
+		const track = root.querySelector('[data-tabs-track]');
+		const tabsList = root.querySelector('[data-tabs-list]');
+		const buttons = Array.from(root.querySelectorAll('[data-tab-target]'));
+		const stickyHeader = document.querySelector('[data-tabs-sticky-header]');
 
 		if (
 			!(viewport instanceof HTMLElement) ||
@@ -56,26 +61,37 @@ const defaultTabId = tabs[0]?.id ?? "";
 		}
 
 		const panels = Array.from(track.children).filter(
-			(node) => node instanceof HTMLElement && node.hasAttribute("data-tab-panel"),
+			(node) =>
+				node instanceof HTMLElement && node.hasAttribute('data-tab-panel'),
 		);
 
 		if (panels.length === 0) {
 			continue;
 		}
 
-		const panelIds = panels.map((panel) => panel.getAttribute("data-tab-panel") ?? "");
-		const defaultTabId = root.getAttribute("data-tabs-default") ?? "";
-		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+		const panelIds = panels.map(
+			(panel) => panel.getAttribute('data-tab-panel') ?? '',
+		);
+		const defaultTabId = root.getAttribute('data-tabs-default') ?? '';
+		const prefersReducedMotion = window.matchMedia(
+			'(prefers-reduced-motion: reduce)',
+		).matches;
 		let activeIndex = Math.max(0, panelIds.indexOf(defaultTabId));
 
 		const setTabsOffsets = () => {
 			if (stickyHeader instanceof HTMLElement) {
-				root.style.setProperty("--tabs-sticky-top", `${stickyHeader.getBoundingClientRect().height}px`);
+				root.style.setProperty(
+					'--tabs-sticky-top',
+					`${stickyHeader.getBoundingClientRect().height}px`,
+				);
 			} else {
-				root.style.setProperty("--tabs-sticky-top", "0px");
+				root.style.setProperty('--tabs-sticky-top', '0px');
 			}
 
-			root.style.setProperty("--tabs-list-height", `${tabsList.getBoundingClientRect().height}px`);
+			root.style.setProperty(
+				'--tabs-list-height',
+				`${tabsList.getBoundingClientRect().height}px`,
+			);
 		};
 
 		const setActiveTab = (nextIndex, smooth) => {
@@ -86,47 +102,48 @@ const defaultTabId = tabs[0]?.id ?? "";
 			activeIndex = nextIndex;
 			const offset = viewport.clientWidth * activeIndex;
 			track.style.transition = smooth
-				? "transform 420ms cubic-bezier(0.22, 1, 0.36, 1)"
-				: "none";
+				? 'transform 420ms cubic-bezier(0.22, 1, 0.36, 1)'
+				: 'none';
 			track.style.transform = `translate3d(-${offset}px, 0, 0)`;
 
 			buttons.forEach((button, index) => {
 				const isActive = index === activeIndex;
-				button.setAttribute("aria-selected", String(isActive));
-				button.setAttribute("tabindex", isActive ? "0" : "-1");
-				button.classList.toggle("is-active", isActive);
+				button.setAttribute('aria-selected', String(isActive));
+				button.setAttribute('tabindex', isActive ? '0' : '-1');
+				button.classList.toggle('is-active', isActive);
 			});
 
 			panels.forEach((panel, index) => {
 				const isActive = index === activeIndex;
-				panel.setAttribute("aria-hidden", String(!isActive));
+				panel.setAttribute('aria-hidden', String(!isActive));
 			});
 		};
 
 		buttons.forEach((button) => {
-			button.addEventListener("click", () => {
-				const target = button.getAttribute("data-tab-target") ?? "";
+			button.addEventListener('click', () => {
+				const target = button.getAttribute('data-tab-target') ?? '';
 				const nextIndex = panelIds.indexOf(target);
 				if (nextIndex !== -1) {
 					setActiveTab(nextIndex, !prefersReducedMotion);
 				}
 			});
 
-			button.addEventListener("keydown", (event) => {
-				if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") {
+			button.addEventListener('keydown', (event) => {
+				if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') {
 					return;
 				}
 
 				event.preventDefault();
-				const direction = event.key === "ArrowRight" ? 1 : -1;
-				const nextIndex = (activeIndex + direction + buttons.length) % buttons.length;
+				const direction = event.key === 'ArrowRight' ? 1 : -1;
+				const nextIndex =
+					(activeIndex + direction + buttons.length) % buttons.length;
 				setActiveTab(nextIndex, !prefersReducedMotion);
 				buttons[nextIndex].focus();
 			});
 		});
 
 		window.addEventListener(
-			"resize",
+			'resize',
 			() => {
 				setTabsOffsets();
 				setActiveTab(activeIndex, false);
@@ -134,14 +151,14 @@ const defaultTabId = tabs[0]?.id ?? "";
 			{ passive: true },
 		);
 
-		if (stickyHeader instanceof HTMLElement && "ResizeObserver" in window) {
+		if (stickyHeader instanceof HTMLElement && 'ResizeObserver' in window) {
 			const headerObserver = new ResizeObserver(() => {
 				setTabsOffsets();
 			});
 			headerObserver.observe(stickyHeader);
 		}
 
-		if ("ResizeObserver" in window) {
+		if ('ResizeObserver' in window) {
 			const rootObserver = new ResizeObserver(() => {
 				setTabsOffsets();
 				setActiveTab(activeIndex, false);
@@ -233,13 +250,31 @@ const defaultTabId = tabs[0]?.id ?? "";
 		}
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 640px) {
+		:global([data-tabs-sticky-header]) {
+			position: static !important;
+			top: auto !important;
+		}
+
 		.tabs-list {
-			justify-content: center;
+			justify-content: stretch;
+			flex-wrap: wrap;
+			overflow-x: visible;
+			padding: 0.625rem;
+			border-width: 1px;
+			border-top-width: 0;
+			position: sticky;
+			top: 0;
+			left: 0;
+			width: 100%;
 		}
 
 		.tabs-trigger {
-			flex: 0 0 auto;
+			flex: 1 1 calc(50% - 0.25rem);
+			min-width: calc(50% - 0.25rem);
+			width: 100%;
+			text-align: center;
+			white-space: normal;
 		}
 	}
 
