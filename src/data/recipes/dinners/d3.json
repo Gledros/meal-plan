@@ -1,21 +1,180 @@
 {
   "id": 3,
-  "nombre": "Sándwich vegano con hummus (+10%)",
+  "referencia": "d003",
+  "nombre": "Dal de lentejas rojas",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Esta receta rinde 2 porciones más sobrante para las croquetas del viernes. Guardar la mitad en refrigerador hasta el día 05."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 30,
+    "unidad": "minutes",
+    "notas": "Las lentejas se cuecen a fuego lento hasta estar tiernas; el chalote se fríe por separado."
+  },
   "informacion_nutricional": {
-    "kcal": 260,
-    "carbohidratos_g": 0,
-    "grasas_g": 0,
-    "proteina_g": 0
+    "kcal": 391,
+    "carbohidratos_g": 68,
+    "grasas_g": 7,
+    "proteina_g": 17
   },
   "ingredientes": [
-    "2 rebanadas pan integral",
-    "2 hojas lechuga",
-    "2 rodajas tomate",
-    "1/4 aguacate + 1 cda extra",
-    "2 cdas hummus",
-    "Pepino en rodajas (opcional)"
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 1.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 20.7,
+      "estado": "líquido o derretido, dividido"
+    },
+    {
+      "clave": "large_carrot",
+      "nombre": "Zanahoria",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 90.0,
+      "estado": "grande, rallada"
+    },
+    {
+      "clave": "parsnip",
+      "nombre": "Chirivía (pastinaca)",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 100.0,
+      "estado": "rallada"
+    },
+    {
+      "clave": "onion",
+      "nombre": "Cebolla",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 150.0,
+      "estado": "rallada"
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 2.0,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 10.0,
+      "estado": "picado finamente"
+    },
+    {
+      "clave": "fresh_ginger",
+      "nombre": "Jengibre fresco",
+      "cantidad": 5.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 5.0,
+      "estado": "trozo de ~2 cm, pelado y rallado finamente"
+    },
+    {
+      "clave": "mild_curry_powder",
+      "nombre": "Curry en polvo suave",
+      "cantidad": 2.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5.0,
+      "estado": "molido"
+    },
+    {
+      "clave": "vegan_broth",
+      "nombre": "Caldo vegano",
+      "cantidad": 2.0,
+      "unidad": "cup",
+      "unidad_display": "taza",
+      "equivalente_g": 480.0,
+      "estado": "líquido, ver p.30",
+      "enlace": "recipe://vegan-broth-p30"
+    },
+    {
+      "clave": "dried_red_lentils",
+      "nombre": "Lentejas rojas secas",
+      "cantidad": 226.8,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 226.8,
+      "estado": "secas, sin remojar"
+    },
+    {
+      "clave": "baby_spinach",
+      "nombre": "Espinacas baby",
+      "cantidad": 99.23,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 99.23,
+      "estado": "hojas frescas"
+    },
+    {
+      "clave": "french_shallot",
+      "nombre": "Chalote francés",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 30.0,
+      "estado": "rebanado finamente"
+    },
+    {
+      "clave": "cooked_brown_rice",
+      "nombre": "Arroz integral cocido",
+      "cantidad": 127.58,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 127.58,
+      "estado": "cocido, para acompañar"
+    },
+    {
+      "clave": "roasted_sumac_chickpeas",
+      "nombre": "Garbanzos al sumaque tostado",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10.0,
+      "estado": "preparados, ver p.24",
+      "enlace": "recipe://roasted-sumac-chickpeas-p24"
+    }
   ],
   "pasos": [
-    "Untar hummus en el pan, agregar verduras y aguacate."
-  ]
+    "Calentar ½ cucharada de aceite de coco en una olla a fuego medio. Agregar la zanahoria, chirivía, cebolla, ajo y especias (curry en polvo y jengibre) y sofreír durante 4–5 minutos, moviendo constantemente.",
+    "Agregar el caldo vegano y las lentejas rojas. Llevar a ebullición.",
+    "Reducir el fuego, tapar y cocinar a fuego lento hasta que las lentejas estén tiernas, aproximadamente 20–25 minutos.",
+    "Apartar la mitad del dal en un recipiente hermético y refrigerar; esta porción se usará para las croquetas del Día 05 (viernes).",
+    "Incorporar las espinacas baby al dal restante (para hoy) y mezclar hasta que se marchiten con el calor residual.",
+    "En otra sartén pequeña, calentar el aceite de coco restante (1 cucharada) a fuego medio-alto. Freír el chalote rebanado hasta que esté dorado y crujiente. Escurrir sobre papel absorbente.",
+    "Servir el dal sobre el arroz integral cocido. Decorar con el chalote frito crujiente y los garbanzos al sumaque tostado."
+  ],
+  "notas": [
+    "⚠️ NOTA IMPORTANTE DE PRODUCCIÓN: Esta receta rinde 2 porciones más sobrante extra destinado a las croquetas de lentejas del Día 05 (viernes). Los valores nutricionales indicados (391 kcal) corresponden a 1 porción individual. Las cantidades de ingredientes en el JSON representan la receta completa tal como aparece en la fuente.",
+    "Medidas originales en oz de peso: 8 oz lentejas rojas → 226.8g; 3½ oz espinacas baby → 99.23g; 4½ oz arroz integral cocido → 127.58g.",
+    "El jengibre ('¾ inch piece') fue convertido de medida de longitud a peso: ~5g (referencia estándar para trozo de ~2 cm).",
+    "La chirivía (parsnip/pastinaca) es poco común en México. Sustitución sugerida: raíz de apio (apio nabo) o nabo blanco rallado en la misma cantidad.",
+    "El caldo vegano es una sub-receta del libro (p.30). Puede sustituirse por caldo de verduras comercial bajo en sodio.",
+    "Los garbanzos al sumaque tostado son una sub-receta del libro (p.24). Equivalente_g (10g por cda) es estimación estándar.",
+    "Las lentejas rojas no requieren remojo previo; se cuecen directamente en el caldo.",
+    "El chalote francés puede sustituirse por ½ cebolla morada pequeña, rebanada y frita de la misma forma.",
+    "Densidades usadas: aceite de coco 0.92 g/ml; curry en polvo 0.50 g/ml; caldo vegano 1.0 g/ml; jengibre 0.70 g/ml."
+  ],
+  "validacion": {
+    "score": 83,
+    "warnings": [
+      "Receta de múltiples porciones: rinde 2 porciones + extra para viernes. Los valores nutricionales son por 1 porción. El sistema frontend debe escalar ingredientes correctamente según el número de comensales.",
+      "Zanahoria (1 pieza grande): equivalente_g de 90g es estimación. Peso real puede variar 70–120g.",
+      "Chirivía (1 pieza): equivalente_g de 100g es estimación. Ingrediente poco común en México; sustitución anotada.",
+      "Cebolla (1 pieza): equivalente_g de 150g es estimación para cebolla mediana.",
+      "Chalote francés (1 pieza): equivalente_g de 30g es estimación para chalote mediano.",
+      "Garbanzos al sumaque (sub-receta p.24): equivalente_g de 10g es estimación por volumen.",
+      "Caldo vegano (sub-receta p.30): equivalente_g de 480g asumiendo densidad 1.0; válido para caldo estándar."
+    ],
+    "correcciones": [
+      "8 oz lentejas rojas secas (oz peso) → 226.8g",
+      "3½ oz espinacas baby (oz peso) → 99.23g",
+      "4½ oz arroz integral cocido (oz peso) → 127.58g",
+      "¾ pulgada de jengibre (medida de longitud) → ~5g estimado por referencia estándar"
+    ]
+  }
 }

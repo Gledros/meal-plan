@@ -1,18 +1,183 @@
 {
   "id": 2,
-  "nombre": "Crema vegana de calabaza",
+  "referencia": "d002",
+  "nombre": "Salteado de tofu con ajonjolí",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Incluye tiempo de prensado del tofu si no viene pre-prensado. Preparar la salsa antes de encender el fuego."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Cocción rápida a fuego alto. No alejarse de la sartén."
+  },
   "informacion_nutricional": {
-    "kcal": 160,
-    "carbohidratos_g": 0,
-    "grasas_g": 0,
-    "proteina_g": 0
+    "kcal": 539,
+    "carbohidratos_g": 39,
+    "grasas_g": 35,
+    "proteina_g": 27
   },
   "ingredientes": [
-    "1 1/10 taza calabaza",
-    "1/4 taza leche de coco light",
-    "1 1/10 taza agua"
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 6.9,
+      "estado": "líquido o derretido"
+    },
+    {
+      "clave": "extra_firm_tofu",
+      "nombre": "Tofu extra firme",
+      "cantidad": 127.58,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 127.58,
+      "estado": "prensado y cortado en cubos"
+    },
+    {
+      "clave": "mixed_vegetables",
+      "nombre": "Verduras mixtas picadas",
+      "cantidad": 198.45,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 198.45,
+      "estado": "picadas (brócoli, zanahoria, pimiento, champiñones o al gusto)"
+    },
+    {
+      "clave": "beansprouts",
+      "nombre": "Germinado de frijol",
+      "cantidad": 21.26,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 21.26,
+      "estado": "fresco"
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 15.0,
+      "estado": "rebanada, para servir"
+    },
+    {
+      "clave": "cilantro_garnish",
+      "nombre": "Cilantro",
+      "cantidad": 5.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 5.0,
+      "estado": "fresco, para servir (cantidad estimada)"
+    },
+    {
+      "clave": "toasted_sesame_seeds",
+      "nombre": "Semillas de ajonjolí tostadas",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 4.2,
+      "estado": "tostadas, para servir"
+    },
+    {
+      "clave": "fresh_ginger_sauce",
+      "nombre": "Jengibre fresco rallado (para salsa)",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10.5,
+      "estado": "rallado"
+    },
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de ajonjolí tostado (para salsa)",
+      "cantidad": 2.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 9.2,
+      "estado": "líquido"
+    },
+    {
+      "clave": "soy_sauce",
+      "nombre": "Salsa de soya (para salsa)",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 34.5,
+      "estado": "líquida"
+    },
+    {
+      "clave": "rice_vinegar",
+      "nombre": "Vinagre de arroz (para salsa)",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15.15,
+      "estado": "líquido"
+    },
+    {
+      "clave": "agave_syrup",
+      "nombre": "Miel de agave (para salsa)",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10.5,
+      "estado": "líquida"
+    },
+    {
+      "clave": "chili_flakes",
+      "nombre": "Hojuelas de chile (para salsa)",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 0.38,
+      "estado": "seco, opcional"
+    },
+    {
+      "clave": "cornstarch",
+      "nombre": "Maicena (para salsa)",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 4.5,
+      "estado": "en polvo"
+    }
   ],
   "pasos": [
-    "Cocer y licuar."
-  ]
+    "Preparar la salsa: batir el jengibre rallado, aceite de ajonjolí, salsa de soya, vinagre de arroz, miel de agave, hojuelas de chile (si se usan) y maicena con 1 cucharada de agua hasta integrar. Reservar.",
+    "Calentar una sartén o wok a fuego alto. Agregar el aceite de coco y girarlo para cubrir la sartén.",
+    "Agregar los cubos de tofu y cocinar hasta dorar por todos lados. Retirar de la sartén y reservar.",
+    "En la misma sartén, agregar las verduras mixtas y saltear durante 2 minutos.",
+    "Agregar 2 cucharadas de la salsa y saltear 2 minutos más.",
+    "Verter el resto de la salsa, mezclar bien y cocinar hasta que espese ligeramente.",
+    "Incorporar el germinado de frijol y el tofu dorado. Mezclar con cuidado.",
+    "Servir de inmediato, decorado con la cebollita de cambray rebanada, cilantro fresco y semillas de ajonjolí tostadas."
+  ],
+  "notas": [
+    "Medidas originales en oz de peso: 4½ oz tofu → 127.58g; 7 oz verduras mixtas → 198.45g; ¾ oz germinado → 21.26g.",
+    "Las 'verduras mixtas' no se especifican en la fuente. Se sugieren: brócoli, zanahoria, pimiento morrón, champiñones o bok choy. El equivalente_g (198.45g) es la cantidad total.",
+    "El cilantro aparece sin cantidad en la fuente ('cilantro... para servir'). Se asignaron 5g como estimación razonable de guarnición; ajustar al gusto.",
+    "La miel de agave es un producto muy común en México y es el edulcorante ideal para esta receta. Si no se tiene, sustituir con 1 cdita de piloncillo disuelto o jarabe de maple en la misma cantidad.",
+    "La maicena (fécula de maíz) espesa la salsa al calentarse. Asegurarse de que esté bien disuelta antes de agregar a la sartén para evitar grumos.",
+    "El tofu debe estar bien prensado antes de cocinar para eliminar el exceso de agua y lograr que dore correctamente.",
+    "Densidades usadas: aceite de coco 0.92 g/ml; aceite de ajonjolí 0.92 g/ml; salsa de soya 1.15 g/ml; vinagre de arroz 1.01 g/ml; miel de agave 1.40 g/ml; jengibre rallado 0.70 g/ml; hojuelas de chile 0.30 g/ml; maicena 0.60 g/ml; semillas de ajonjolí 0.56 g/ml."
+  ],
+  "validacion": {
+    "score": 84,
+    "warnings": [
+      "Cilantro (guarnición): sin cantidad en la fuente. Se asignaron 5g como estimación; marcar como 'al gusto' en la UI.",
+      "Verduras mixtas: el tipo no está especificado en la fuente. El equivalente_g es correcto en peso total, pero la densidad nutricional puede variar según la combinación elegida.",
+      "Cebollita de cambray y semillas de ajonjolí: cantidades de guarnición; equivalente_g son estimaciones estándar.",
+      "Hojuelas de chile: 0.25 cdita = 0.38g — dentro del límite de especias de 15g. Opcional según la fuente."
+    ],
+    "correcciones": [
+      "4½ oz tofu extra firme (oz peso) → 127.58g",
+      "7 oz verduras mixtas (oz peso) → 198.45g",
+      "¾ oz germinado de frijol (oz peso) → 21.26g",
+      "Cilantro sin cantidad → asignado 5g estimado para escalado frontend"
+    ]
+  }
 }

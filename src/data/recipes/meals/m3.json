@@ -1,19 +1,141 @@
 {
   "id": 3,
-  "nombre": "Ensalada fresca de pepino y tomate (+25%)",
+  "referencia": "m003",
+  "nombre": "Ensalada tibia de betabel y nuez",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Preparar mientras el betabel se cuece y se asa."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 30,
+    "unidad": "minutes",
+    "notas": "Incluye 20–30 min de cocción en agua + 10–12 min en horno a 180°C (350°F)."
+  },
   "informacion_nutricional": {
-    "kcal": 118,
-    "carbohidratos_g": 0,
-    "grasas_g": 0,
-    "proteina_g": 0
+    "kcal": 303,
+    "carbohidratos_g": 19,
+    "grasas_g": 24,
+    "proteina_g": 7
   },
   "ingredientes": [
-    "1 1/4 pepino",
-    "1 1/4 tomate",
-    "1/3 cebolla morada",
-    "Cilantro y limón"
+    {
+      "clave": "beets",
+      "nombre": "Betabel",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 160.0,
+      "estado": "fresco, entero"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 13.8,
+      "estado": "líquido, dividido"
+    },
+    {
+      "clave": "walnuts",
+      "nombre": "Nueces de Castilla",
+      "cantidad": 7.09,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 7.09,
+      "estado": "picadas groseramente"
+    },
+    {
+      "clave": "balsamic_vinegar",
+      "nombre": "Vinagre balsámico",
+      "cantidad": 2.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 10.6,
+      "estado": "líquido"
+    },
+    {
+      "clave": "spinach_arugula_mix",
+      "nombre": "Mezcla de espinaca baby y arúgula",
+      "cantidad": 28.35,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 28.35,
+      "estado": "hojas frescas"
+    },
+    {
+      "clave": "crunchy_seed_mix",
+      "nombre": "Mezcla de semillas crujientes",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10.0,
+      "estado": "preparada, ver p.24",
+      "enlace": "recipe://crunchy-seed-mix-p24"
+    },
+    {
+      "clave": "dill_sprig",
+      "nombre": "Eneldo",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "ramita",
+      "equivalente_g": 2.0,
+      "estado": "fresco, una ramita"
+    },
+    {
+      "clave": "chives",
+      "nombre": "Cebollín",
+      "cantidad": 3.0,
+      "unidad": "piece",
+      "unidad_display": "tallo",
+      "equivalente_g": 3.0,
+      "estado": "picado finamente"
+    },
+    {
+      "clave": "sea_salt_flakes",
+      "nombre": "Sal de mar en hojuelas",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1.25,
+      "estado": "al gusto"
+    }
   ],
   "pasos": [
-    "Mezclar y aderezar al gusto."
-  ]
+    "Colocar los betabeles enteros en una olla con agua hirviendo y cocer durante 20–30 minutos hasta que estén suaves al picarlos con un tenedor.",
+    "Retirar del agua y pelar mientras aún están calientes (la piel sale fácilmente al enfriarse un poco).",
+    "Precalentar el horno a 180°C (350°F). Colocar los betabeles pelados en una charola con papel para hornear y bañar con la mitad del aceite y la sal de mar.",
+    "Hornear durante 10–12 minutos hasta que estén dorados.",
+    "En otra charola, tostar las nueces de Castilla en el horno durante 4–5 minutos. Vigilar para que no se quemen.",
+    "Rociar las nueces tostadas con el aceite restante y el vinagre balsámico. Picar groseramente.",
+    "En un tazón, combinar la espinaca baby y la arúgula con el eneldo y el cebollín picado.",
+    "Añadir el betabel horneado, las nueces y la mezcla de semillas. Mezclar suavemente y servir de inmediato."
+  ],
+  "notas": [
+    "Medida original: ¼ oz nueces de Castilla (oz peso) → 7.09g. Cantidad de topping/guarnición; válida semánticamente para 1 porción.",
+    "Medida original: 1 oz mezcla de espinaca y arúgula (oz peso) → 28.35g. ✅ Sobre el umbral mínimo de 20g para hojas verdes.",
+    "La mezcla de semillas crujientes es una sub-receta del libro (p.24). Equivalente_g (10g por cda) es estimación estándar para mezcla de semillas.",
+    "Sal de mar sin cantidad especificada en la fuente. Asignado 0.25 cdita para escalado; ajustar al gusto.",
+    "El eneldo (dill) puede conseguirse en mercados de especialidad o tiendas gourmet en México. Sustitución: hojas de hinojo fresco o perejil liso en la misma cantidad.",
+    "La arúgula se conoce también como 'rocket' o 'rúcula' en México; disponible en supermercados grandes.",
+    "Betabel (2 piezas medianas): equivalente_g estimado en 80g por pieza = 160g total.",
+    "Densidades usadas: aceite de oliva 0.92 g/ml; vinagre balsámico 1.06 g/ml; sal de mar 1.25 g/ml por densidad aparente en hojuelas."
+  ],
+  "validacion": {
+    "score": 85,
+    "warnings": [
+      "Nueces de Castilla: 7.09g por debajo del umbral heurístico de 20g. Clasificado como topping de ensalada; válido semánticamente.",
+      "Betabel (2 piezas): equivalente_g de 160g es estimación estándar para betabel mediano. El peso real puede variar.",
+      "Mezcla de semillas crujientes: sub-receta p.24 — equivalente_g de 10g es estimación por volumen.",
+      "Eneldo (1 ramita): equivalente_g de 2g es estimación; ingrediente de guarnición.",
+      "Cebollín (3 tallos): equivalente_g de 3g es estimación estándar (1g por tallo).",
+      "Sal de mar sin cantidad en la fuente: asignado 0.25 cdita; marcar como 'al gusto' en la UI."
+    ],
+    "correcciones": [
+      "¼ oz nueces de Castilla (oz peso) → 7.09g",
+      "1 oz mezcla espinaca y arúgula (oz peso) → 28.35g",
+      "Sal de mar sin cantidad → asignado 0.25 cdita estimada para escalado en frontend"
+    ]
+  }
 }

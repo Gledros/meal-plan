@@ -1,18 +1,111 @@
 {
   "id": 1,
-  "nombre": "Tostadas de frijoles y pico de gallo",
+  "referencia": "d001",
+  "nombre": "Pizzetas de berenjena",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Asume que los panes planos (p.36) y la crema de ajo (p.26) están preparados con anticipación."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Incluye 3–4 min por lado en plancha más 1–2 min bajo el grill."
+  },
   "informacion_nutricional": {
-    "kcal": 210,
-    "carbohidratos_g": 0,
-    "grasas_g": 0,
-    "proteina_g": 0
+    "kcal": 715,
+    "carbohidratos_g": 96,
+    "grasas_g": 29,
+    "proteina_g": 20
   },
   "ingredientes": [
-    "1 tostada horneada",
-    "1/2 taza frijoles machacados",
-    "1/4 taza pico de gallo"
+    {
+      "clave": "eggplant",
+      "nombre": "Berenjena",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 200.0,
+      "estado": "pequeña, rebanada a lo largo en láminas delgadas"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 27.6,
+      "estado": "líquido"
+    },
+    {
+      "clave": "zaatar",
+      "nombre": "Za'atar",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7.5,
+      "estado": "mezcla de especias seca"
+    },
+    {
+      "clave": "quick_flatbreads",
+      "nombre": "Panes planos rápidos",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 120.0,
+      "estado": "caseros, ver p.36",
+      "enlace": "recipe://quick-flatbreads-p36"
+    },
+    {
+      "clave": "garlic_whip",
+      "nombre": "Crema de ajo",
+      "cantidad": 4.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 60.0,
+      "estado": "casera, ver p.26",
+      "enlace": "recipe://garlic-whip-p26"
+    },
+    {
+      "clave": "baby_spinach",
+      "nombre": "Espinacas baby",
+      "cantidad": 7.09,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 7.09,
+      "estado": "hojas frescas"
+    }
   ],
   "pasos": [
-    "Untar frijoles y agregar pico de gallo."
-  ]
+    "Calentar una plancha a fuego alto hasta que esté muy caliente.",
+    "Barnizar las rebanadas de berenjena con aceite de oliva por ambos lados.",
+    "Cocinar la berenjena en la plancha durante 3–4 minutos por lado hasta que esté dorada y suave.",
+    "Espolvorear el za'atar sobre la berenjena asada y dejar enfriar un poco.",
+    "Untar la crema de ajo sobre cada pan plano.",
+    "Colocar encima las hojas de espinaca baby y luego las rebanadas de berenjena asada.",
+    "Espolvorear con el za'atar restante y rociar con un poco más de aceite de oliva.",
+    "Gratinar bajo el grill del horno durante 1–2 minutos hasta calentar bien.",
+    "Servir de inmediato. Guardar los sobrantes en el refrigerador."
+  ],
+  "notas": [
+    "Los panes planos rápidos y la crema de ajo son sub-recetas del mismo libro (p.36 y p.26). Su aporte nutricional ya está incluido en los totales por porción impresos.",
+    "El equivalente_g de la berenjena (200g) es una estimación para berenjena 'pequeña'. El peso real puede variar entre 150–250g.",
+    "El equivalente_g de los panes planos (120g total / 60g c/u) es una estimación; el peso exacto depende de la sub-receta p.36.",
+    "Za'atar: mezcla de especias de Medio Oriente (tomillo, ajonjolí, zumaque, sal). Puede ser difícil de conseguir en México.",
+    "Sustitución para za'atar: mezclar 1 cdita de tomillo seco + 1 cdita de ajonjolí + ½ cdita de zumaque molido + una pizca de sal.",
+    "¼ oz espinacas baby (7.09g) es una cantidad ligera de guarnición. Válida semánticamente para esta receta."
+  ],
+  "validacion": {
+    "score": 85,
+    "warnings": [
+      "Berenjena (1 pieza): equivalente_g de 200g es una estimación estándar para berenjena pequeña.",
+      "Panes planos (2 piezas): equivalente_g de 120g es una estimación sin sub-receta disponible.",
+      "Espinacas baby: 7.09g por debajo del umbral heurístico de 20g. Clasificado como guarnición; válido semánticamente.",
+      "Za'atar: ingrediente poco común en México. Nota de sustitución agregada."
+    ],
+    "correcciones": [
+      "¼ oz espinacas baby (onzas en peso) → 7.09g",
+      "Za'atar revisión de especias: 1 cda = 7.5g — dentro del límite de 15g. Sin corrección necesaria."
+    ]
+  }
 }

@@ -1,19 +1,130 @@
 {
   "id": 5,
-  "nombre": "Lentejas con verduras (+25%)",
+  "referencia": "m005",
+  "nombre": "Tabulé de quinoa",
+  "tiempo_preparacion": {
+    "tiempo": 20,
+    "unidad": "minutes",
+    "notas": "Incluye el tiempo de reposo de la quinoa tapada fuera del fuego."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 12,
+    "unidad": "minutes",
+    "notas": "Cocción a fuego lento con tapa, seguida de 10 minutos de reposo fuera del fuego."
+  },
   "informacion_nutricional": {
-    "kcal": 229,
-    "carbohidratos_g": 0,
-    "grasas_g": 0,
-    "proteina_g": 0
+    "kcal": 304,
+    "carbohidratos_g": 36,
+    "grasas_g": 16,
+    "proteina_g": 7
   },
   "ingredientes": [
-    "1 1/4 taza lentejas",
-    "1 1/4 zanahoria",
-    "3/4 calabaza",
-    "1/4 cebolla"
+    {
+      "clave": "quinoa",
+      "nombre": "Quinoa",
+      "cantidad": 85.05,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 85.05,
+      "estado": "seca, enjuagada"
+    },
+    {
+      "clave": "mixed_herbs",
+      "nombre": "Mezcla de hierbas frescas (perejil liso, cilantro, menta)",
+      "cantidad": 20.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 20.0,
+      "estado": "picadas finamente"
+    },
+    {
+      "clave": "small_red_onion",
+      "nombre": "Cebolla morada",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 25.0,
+      "estado": "pequeña, picada finamente"
+    },
+    {
+      "clave": "roma_tomatoes",
+      "nombre": "Jitomates guaje (saladet)",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 120.0,
+      "estado": "picados finamente"
+    },
+    {
+      "clave": "persian_cucumber",
+      "nombre": "Pepino persa",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75.0,
+      "estado": "pequeño, en cubos"
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Jugo de limón",
+      "cantidad": 15.0,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 15.45,
+      "estado": "fresco, de medio limón"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 13.8,
+      "estado": "líquido"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal de mar",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1.25,
+      "estado": "al gusto"
+    }
   ],
   "pasos": [
-    "Cocer y mezclar."
-  ]
+    "Enjuagar la quinoa bajo agua fría usando un colador de malla fina para eliminar la saponina.",
+    "Colocar la quinoa en una olla pequeña con 1 taza (240ml) de agua. Llevar a ebullición.",
+    "Reducir el fuego, tapar y cocinar a fuego lento durante 10–12 minutos.",
+    "Retirar del fuego, mantener tapado y dejar reposar 10 minutos. Esponjar con un tenedor y dejar enfriar.",
+    "En un tazón grande, combinar la quinoa fría con las hierbas picadas, la cebolla morada, los jitomates y el pepino.",
+    "Verter el jugo de limón y el aceite de oliva encima. Mezclar bien y sazonar con sal de mar al gusto.",
+    "Servir a temperatura ambiente o ligeramente frío."
+  ],
+  "notas": [
+    "Medida original: 3 oz quinoa (oz peso) → 85.05g.",
+    "'1 bunch mixed herbs' (perejil liso, cilantro, menta): medida de manojo sin peso definido. Estimado en 20g total de hierbas mezcladas. ✅ Justo en el umbral de 20g; clasificado como ingrediente principal de sabor, no guarnición.",
+    "Jugo de ½ limón convertido a ml: ~15ml como referencia estándar.",
+    "Sal de mar sin cantidad en la fuente. Asignado 0.25 cdita para escalado; ajustar al gusto.",
+    "El agua de cocción de la quinoa (1 taza) es líquido de proceso, no se registra como ingrediente.",
+    "Los jitomates guaje (saladet/roma) son el equivalente mexicano de los 'roma plum tomatoes'. Equivalente_g: 60g por pieza = 120g total.",
+    "Pepino persa (½ pieza pequeña): equivalente_g de 75g estimado para la mitad de un pepino persa pequeño (~150g entero). Si no se consigue pepino persa, usar pepino mexicano pelado y sin semillas en la misma cantidad.",
+    "Densidades usadas: aceite de oliva 0.92 g/ml; jugo de limón 1.03 g/ml; sal de mar 1.25 g/ml."
+  ],
+  "validacion": {
+    "score": 84,
+    "warnings": [
+      "Mezcla de hierbas ('1 bunch'): sin peso definido en la fuente. Estimado 20g total. Ajustar al gusto; el impacto nutricional es bajo.",
+      "Jitomates guaje (2 piezas): equivalente_g de 60g por pieza es estimación estándar para jitomate saladet mediano.",
+      "Pepino persa (½ pieza): equivalente_g de 75g es estimación. Peso real varía por tamaño.",
+      "Cebolla morada (½ pieza pequeña): equivalente_g de 25g es estimación.",
+      "Sal de mar: sin cantidad en fuente → 0.25 cdita asignada; marcar como 'al gusto' en la UI."
+    ],
+    "correcciones": [
+      "3 oz quinoa (oz peso) → 85.05g",
+      "1 bunch hierbas mixtas (manojo sin peso) → 20g estimado total",
+      "Jugo de ½ limón (medida implícita) → 15ml estimado",
+      "Sal de mar sin cantidad → 0.25 cdita asignada para escalado en frontend"
+    ]
+  }
 }

@@ -1,0 +1,94 @@
+{
+  "id": 3,
+  "referencia": "b003",
+  "nombre": "Pan de zanahoria y chirivía con crema de tahini y canela",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Asume que el pan de zanahoria y chirivía (p.34) está preparado con anticipación."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Solo el tiempo de tostado del pan."
+  },
+  "informacion_nutricional": {
+    "kcal": 667,
+    "carbohidratos_g": 73,
+    "grasas_g": 30,
+    "proteina_g": 11
+  },
+  "ingredientes": [
+    {
+      "clave": "carrot_parsnip_bread",
+      "nombre": "Pan de zanahoria y chirivía",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "rebanada",
+      "equivalente_g": 120.0,
+      "estado": "rebanado, listo para tostar",
+      "enlace": "recipe://carrot-parsnip-bread-p34"
+    },
+    {
+      "clave": "strawberries",
+      "nombre": "Fresas",
+      "cantidad": 50.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 50.0,
+      "estado": "frescas, rebanadas, para servir"
+    },
+    {
+      "clave": "tahini",
+      "nombre": "Tahini",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 32.1,
+      "estado": "pasta de ajonjolí"
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de maple",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 19.95,
+      "estado": "líquido"
+    },
+    {
+      "clave": "ground_cinnamon",
+      "nombre": "Canela molida",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1.4,
+      "estado": "molida"
+    }
+  ],
+  "pasos": [
+    "Tostar las rebanadas de pan de zanahoria y chirivía.",
+    "Mientras el pan tuesta, mezclar en un tazón pequeño el tahini, el jarabe de maple y la canela molida hasta obtener una crema homogénea.",
+    "Untar generosamente la crema de tahini sobre el pan tostado.",
+    "Colocar las fresas rebanadas encima y servir de inmediato, aún tibio."
+  ],
+  "notas": [
+    "El pan de zanahoria y chirivía es una sub-receta del mismo libro (p.34). Su aporte nutricional ya está incluido en los totales impresos.",
+    "Equivalente_g del pan (120g total / 60g por rebanada) es una estimación; el peso exacto depende de la sub-receta p.34.",
+    "Las fresas no tienen cantidad especificada en la fuente ('fresas rebanadas, para servir'). Se asignaron 50g como estimación razonable de decoración.",
+    "La chirivía (parsnip) es poco común en México. Se puede encontrar en tiendas de productos orgánicos o mercados especializados. Como referencia, tiene un sabor similar al nabo pero más dulce.",
+    "El tahini (pasta de ajonjolí) se consigue en tiendas naturistas o de productos del Medio Oriente. Alternativa: crema de ajonjolí molida en casa.",
+    "Densidades usadas: tahini 1.07 g/ml; jarabe de maple 1.33 g/ml; canela molida 0.56 g/ml."
+  ],
+  "validacion": {
+    "score": 82,
+    "warnings": [
+      "Pan de zanahoria y chirivía: equivalente_g (120g) es estimación sin sub-receta disponible. Marcar como pendiente de confirmación con p.34.",
+      "Fresas: sin cantidad en la fuente. Se asignaron 50g de estimación; marcar como 'al gusto / para decorar' en la UI.",
+      "Chirivía: ingrediente poco común en México. Nota de disponibilidad agregada."
+    ],
+    "correcciones": [
+      "Fresas sin cantidad especificada → asignado 50g estimado para escalado en frontend"
+    ]
+  }
+}

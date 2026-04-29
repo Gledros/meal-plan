@@ -1,20 +1,118 @@
 {
   "id": 4,
-  "nombre": "Garbanzos con espinaca (+25%)",
+  "referencia": "m004",
+  "nombre": "Tostadas de aguacate con pesto",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Preparar la mezcla de aguacate mientras tuesta el pan."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Solo el tiempo de tostado del pan de masa madre."
+  },
   "informacion_nutricional": {
-    "kcal": 134,
-    "carbohidratos_g": 0,
-    "grasas_g": 0,
-    "proteina_g": 0
+    "kcal": 452,
+    "carbohidratos_g": 18,
+    "grasas_g": 39,
+    "proteina_g": 13
   },
   "ingredientes": [
-    "1 1/4 taza garbanzos",
-    "3/4 taza espinaca",
-    "1 1/4 tomate",
-    "1 diente ajo",
-    "1/4 cdta comino"
+    {
+      "clave": "avocado",
+      "nombre": "Aguacate",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 150.0,
+      "estado": "maduro, carne en cubos"
+    },
+    {
+      "clave": "pesto",
+      "nombre": "Pesto",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 32.1,
+      "estado": "preparado, ver p.26",
+      "enlace": "recipe://pesto-p26"
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Jugo de limón",
+      "cantidad": 15.0,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 15.45,
+      "estado": "fresco, de medio limón"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.71,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 0.66,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "sourdough_bread",
+      "nombre": "Pan de masa madre",
+      "cantidad": 2.0,
+      "unidad": "piece",
+      "unidad_display": "rebanada",
+      "equivalente_g": 120.0,
+      "estado": "rebanado, para tostar"
+    },
+    {
+      "clave": "crunchy_seed_mix",
+      "nombre": "Mezcla de semillas crujientes",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10.0,
+      "estado": "preparada, ver p.24",
+      "enlace": "recipe://crunchy-seed-mix-p24"
+    }
   ],
   "pasos": [
-    "Guisar todo."
-  ]
+    "Tostar las rebanadas de pan de masa madre.",
+    "En un tazón pequeño, combinar suavemente el aguacate en cubos, el pesto y el jugo de limón. Sazonar con sal y pimienta al gusto.",
+    "Distribuir la mezcla de aguacate sobre el pan tostado.",
+    "Espolvorear la mezcla de semillas crujientes encima y servir de inmediato."
+  ],
+  "notas": [
+    "RANGO DE CANTIDAD: la fuente indica '½–1 aguacate'. Se usa 1 aguacate como valor estándar para facilitar el escalado en frontend. El usuario puede reducir a ½ pieza (~75g) si prefiere una porción más ligera; los valores nutricionales variarán.",
+    "El pesto es sub-receta del libro (p.26). Equivalente_g (32.1g) calculado con densidad de pesto estándar 1.07 g/ml × 30ml.",
+    "El jugo de limón ('jugo de ½ limón') fue convertido a ml: ~15ml estimado como referencia estándar de medio limón.",
+    "Sal y pimienta sin cantidad en la fuente. Asignado 0.25 cdita de cada uno para escalado; ajustar al gusto.",
+    "La mezcla de semillas crujientes (p.24) no tiene cantidad especificada en la fuente. Se asigna 1 cda por consistencia con el uso en el Día 03.",
+    "Pan de masa madre: equivalente_g (60g por rebanada = 120g total) es estimación estándar; el peso real varía según la hogaza.",
+    "Densidades usadas: pesto 1.07 g/ml; jugo de limón 1.03 g/ml; sal 2.17 g/ml; pimienta negra 0.53 g/ml."
+  ],
+  "validacion": {
+    "score": 83,
+    "warnings": [
+      "Aguacate: cantidad original es rango ½–1 pieza. Se usó 1 pieza (150g) como valor estándar. Documentado en notas.",
+      "Pan de masa madre (2 rebanadas): equivalente_g de 120g es estimación estándar; varía por marca y grosor.",
+      "Mezcla de semillas crujientes: sin cantidad en la fuente → asignado 1 cda por referencia. Sub-receta p.24.",
+      "Pesto: sub-receta p.26 — equivalente_g basado en densidad estándar, puede variar con la receta específica.",
+      "Sal y pimienta: sin cantidad en la fuente → asignado 0.25 cdita cada uno; marcar como 'al gusto' en UI."
+    ],
+    "correcciones": [
+      "½–1 aguacate (rango) → 1 pieza como valor estándar para escalado; rango documentado en notas",
+      "Jugo de ½ limón (medida implícita) → 15ml estimado",
+      "Sal y pimienta sin cantidad → 0.25 cdita cada uno asignados para frontend"
+    ]
+  }
 }

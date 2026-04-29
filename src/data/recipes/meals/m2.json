@@ -1,22 +1,175 @@
 {
   "id": 2,
-  "nombre": "Bowl mediterráneo (+25%)",
+  "referencia": "m002",
+  "nombre": "Rollitos de papel de arroz arcoíris con salsa satay",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Rinde 8 rollitos — porción completa para 1 persona. Preparar la salsa primero."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": "Sin cocción. Los rollitos se arman en frío con papel de arroz rehidratado."
+  },
   "informacion_nutricional": {
-    "kcal": 260,
-    "carbohidratos_g": 0,
-    "grasas_g": 0,
-    "proteina_g": 0
+    "kcal": 440,
+    "carbohidratos_g": 67,
+    "grasas_g": 16,
+    "proteina_g": 10
   },
   "ingredientes": [
-    "3/4 taza garbanzos cocidos",
-    "3/4 taza pepino",
-    "3/4 taza tomate",
-    "1/2 taza pimiento",
-    "1 1/4 cda aceite de oliva",
-    "1 1/4 cda jugo de limón",
-    "Perejil al gusto"
+    {
+      "clave": "red_cabbage",
+      "nombre": "Col morada",
+      "cantidad": 99.23,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 99.23,
+      "estado": "rallada finamente"
+    },
+    {
+      "clave": "carrot",
+      "nombre": "Zanahoria",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 80.0,
+      "estado": "en juliana"
+    },
+    {
+      "clave": "beansprouts",
+      "nombre": "Germinado de frijol",
+      "cantidad": 49.61,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 49.61,
+      "estado": "fresco"
+    },
+    {
+      "clave": "cilantro_leaves",
+      "nombre": "Cilantro",
+      "cantidad": 21.26,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 21.26,
+      "estado": "hojas enteras"
+    },
+    {
+      "clave": "rice_paper_rounds",
+      "nombre": "Láminas de papel de arroz",
+      "cantidad": 8.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 120.0,
+      "estado": "secas, para rehidratar"
+    },
+    {
+      "clave": "peanut_butter",
+      "nombre": "Mantequilla de cacahuate crujiente",
+      "cantidad": 56.7,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 56.7,
+      "estado": "crujiente, sin azúcar añadida preferible"
+    },
+    {
+      "clave": "light_soy_sauce",
+      "nombre": "Salsa de soya light",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5.75,
+      "estado": "líquida"
+    },
+    {
+      "clave": "sweet_chili_sauce",
+      "nombre": "Salsa de chile dulce",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 16.5,
+      "estado": "líquida"
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 0.5,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 2.5,
+      "estado": "machacado"
+    },
+    {
+      "clave": "red_onion_diced",
+      "nombre": "Cebolla morada",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10.0,
+      "estado": "picada finamente"
+    },
+    {
+      "clave": "curry_powder",
+      "nombre": "Curry en polvo",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.5,
+      "estado": "molido"
+    },
+    {
+      "clave": "lemongrass",
+      "nombre": "Hierba limón (zacate limón)",
+      "cantidad": 1.0,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.5,
+      "estado": "tallo, picado finamente"
+    },
+    {
+      "clave": "coconut_milk_sauce",
+      "nombre": "Leche de coco (para salsa)",
+      "cantidad": 0.333,
+      "unidad": "cup",
+      "unidad_display": "taza",
+      "equivalente_g": 80.0,
+      "estado": "líquida"
+    }
   ],
   "pasos": [
-    "Mezclar y servir."
-  ]
+    "Preparar la salsa satay: mezclar la mantequilla de cacahuate, salsa de soya, salsa de chile dulce, ajo machacado, cebolla morada, curry en polvo, hierba limón y leche de coco en un tazón hasta obtener una salsa homogénea. Reservar.",
+    "En un tazón grande, combinar la col morada rallada, la zanahoria en juliana, el germinado de frijol y el cilantro.",
+    "Sumergir una lámina de papel de arroz en un tazón con agua caliente durante 20–30 segundos, hasta que esté suave y flexible. Retirar y colocar sobre un trapo limpio.",
+    "Colocar 2 cucharadas del relleno de verduras en el centro de la lámina.",
+    "Doblar los bordes laterales hacia adentro y enrollar firmemente. Repetir con las láminas restantes.",
+    "Servir los 8 rollitos acompañados de la salsa satay. Guardar los sobrantes en refrigerador."
+  ],
+  "notas": [
+    "Medidas originales en oz de peso: 3½ oz col morada → 99.23g; 1¾ oz germinado → 49.61g; ¾ oz cilantro → 21.26g; 2 oz mantequilla de cacahuate → 56.7g.",
+    "AUTO-CORRECCIÓN APLICADA: la fuente indica '1 cucharada de hierba limón picada'. Según la regla documentada del pipeline ('lemongrass 1 tbsp → demasiado fuerte → corregir a 1 cdita'), se redujo a 1 cdita. Nota de corrección registrada.",
+    "La cantidad 1/3 taza (0.333) representa exactamente un tercio. Heurística de fracciones aplicada: 0.333 → 1/3.",
+    "Equivalente_g de la zanahoria (80g) y láminas de papel de arroz (15g c/u × 8 = 120g) son estimaciones estándar de peso.",
+    "Equivalente_g de cebolla morada picada (1 cda ≈ 10g) es estimación por densidad de cebolla troceada.",
+    "La hierba limón (lemongrass) puede ser difícil de conseguir en algunas regiones de México. Sustitución: ralladura de limón (1 cdita de ralladura de limón verde) + unas gotas de jugo de limón.",
+    "La salsa satay rinde para los 8 rollitos. Se puede preparar con anticipación y refrigerar hasta 3 días.",
+    "Densidades usadas: salsa de soya 1.15 g/ml; salsa de chile dulce 1.10 g/ml; curry en polvo 0.50 g/ml; leche de coco 1.0 g/ml."
+  ],
+  "validacion": {
+    "score": 86,
+    "warnings": [
+      "Zanahoria (1 pieza): equivalente_g de 80g es estimación estándar para zanahoria mediana.",
+      "Láminas de papel de arroz (8 piezas): equivalente_g de 15g por lámina es estimación; el peso real varía por marca.",
+      "Cebolla morada (1 cda picada): equivalente_g de 10g es estimación por densidad aparente.",
+      "La salsa satay está concebida para 1 porción (8 rollitos). Si se escala, ajustar todos los ingredientes de la salsa proporcionalmente."
+    ],
+    "correcciones": [
+      "3½ oz col morada (oz peso) → 99.23g",
+      "1¾ oz germinado de frijol (oz peso) → 49.61g",
+      "¾ oz cilantro (oz peso) → 21.26g",
+      "2 oz mantequilla de cacahuate (oz peso) → 56.7g",
+      "1 cda hierba limón (demasiado intensa para 1 porción) → corregido a 1 cdita según regla de corrección documentada",
+      "1/3 taza leche de coco → cantidad almacenada como 0.333 (heurística de fracción aplicada)"
+    ]
+  }
 }

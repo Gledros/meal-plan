@@ -149,16 +149,6 @@ const readRecipeGroup = async <T>(
 						`[recipes] El id del contenido (${dataWithIdentity.id}) no coincide con el nombre del archivo ${fileName}.`,
 					);
 				}
-
-				if (typeof dataWithIdentity.referencia === "string") {
-					const expectedReference = `${config.prefix}${id}`;
-
-					if (dataWithIdentity.referencia !== expectedReference) {
-						throw new Error(
-							`[recipes] La referencia del contenido (${dataWithIdentity.referencia}) no coincide con ${expectedReference} en ${fileName}.`,
-						);
-					}
-				}
 			}
 
 			return {

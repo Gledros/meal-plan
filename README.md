@@ -1,6 +1,11 @@
-# Plan alimenticio SSR
+# Plan alimenticio — SSR y Estático
 
-Este proyecto usa Astro en modo SSR y carga recetas desde disco en cada request.
+Este repositorio puede producir dos salidas de build: un servidor Node (SSR) y un sitio prerenderizado (estático).
+
+- **SSR (Node):** el servidor lee las recetas desde disco en cada request (usa `RECIPES_DIR` o el fallback `src/data/recipes`). Ideal si quieres añadir/editar recetas en caliente montando la carpeta en el contenedor.
+- **Estático:** el sitio se genera en tiempo de build y las recetas deben estar disponibles durante el build para incluirse en la salida estática. Si usas `astro:assets` para optimizar imágenes, la build estática puede requerir la dependencia `sharp`.
+
+Las configuraciones principales son [astro.config.mjs](astro.config.mjs) (SSR) y [astro.config.static.mjs](astro.config.static.mjs) (estático). Los scripts se encuentran en [package.json](package.json).
 
 ## Disclaimer
 
@@ -112,31 +117,36 @@ pnpm dev
 
 En local, si no defines `RECIPES_DIR`, se usa `src/data/recipes`.
 
-## Build SSR
+## Scripts y builds
+
+- `pnpm build` — Build por defecto. Con la configuración actual genera la salida SSR en `dist`.
+- `pnpm run build:node` — Build explícito para Node (SSR) usando `astro.config.mjs`.
+- `pnpm run build:static` — Build estático usando `astro.config.static.mjs`. Salida en `dist-static`.
+- `pnpm run build:all` — Ejecuta ambos builds en secuencia (Node, luego Estático).
+
+Ejemplos rápidos:
 
 ```bash
-pnpm build
-pnpm start
-```
+# Build SSR (Node)
+pnpm run build:node
 
-## Build estatico
-
-```bash
+# Build Estático
 pnpm run build:static
-```
 
-Esto genera el sitio en `dist-static`.
-
-## Build dual (SSR + estatico)
-
-```bash
+# Ambos
 pnpm run build:all
+
+# Ejecutar servidor SSR (después de build:node)
+pnpm start
+
+# Previsualizar build estático
+pnpm run preview:static
 ```
 
-Resultados:
+Salidas:
 
-- SSR Node en `dist`
-- Estático en `dist-static`
+- SSR Node: `dist/` (arranque con `pnpm start`)
+- Estático: `dist-static/` (sirve con `pnpm run preview:static` o subir a cualquier hosting estático)
 
 ## Docker Compose + GHCR publico (Umbrel)
 

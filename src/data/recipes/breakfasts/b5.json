@@ -1,0 +1,96 @@
+{
+  "id": 5,
+  "referencia": "b005",
+  "nombre": "El mejor smoothie verde",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Todos los ingredientes van directamente a la licuadora. Sin tiempo de cocción."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 267,
+    "carbohidratos_g": 51,
+    "grasas_g": 8,
+    "proteina_g": 4
+  },
+  "ingredientes": [
+    {
+      "clave": "baby_spinach",
+      "nombre": "Espinacas baby",
+      "cantidad": 28.35,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 28.35,
+      "estado": "hojas frescas"
+    },
+    {
+      "clave": "frozen_banana",
+      "nombre": "Plátano",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60.0,
+      "estado": "congelado"
+    },
+    {
+      "clave": "frozen_mango",
+      "nombre": "Mango",
+      "cantidad": 99.23,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 99.23,
+      "estado": "congelado"
+    },
+    {
+      "clave": "coconut_yogurt",
+      "nombre": "Yogur de coco",
+      "cantidad": 45.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 45.0,
+      "estado": "2 cucharadas copeteadas"
+    },
+    {
+      "clave": "coconut_water",
+      "nombre": "Agua de coco",
+      "cantidad": 103.5,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 103.5,
+      "estado": "líquida"
+    }
+  ],
+  "pasos": [
+    "Agregar todos los ingredientes a la licuadora: espinacas, plátano congelado, mango congelado, yogur de coco y agua de coco.",
+    "Licuar a velocidad alta hasta obtener una mezcla completamente suave y homogénea.",
+    "Si la consistencia es muy espesa, agregar un poco más de agua o agua de coco hasta alcanzar la textura deseada.",
+    "Servir de inmediato en un vaso alto."
+  ],
+  "notas": [
+    "Medida original: 1 oz espinacas baby (oz peso) → 28.35g. ✅ Sobre el umbral mínimo de 20g.",
+    "Medida original: 3½ oz mango congelado (oz peso) → 99.23g.",
+    "Medida original: 3½ fl oz agua de coco (onzas fluidas) → 103.5ml. NO convertido como oz de peso.",
+    "'2 heaped spoonfuls' de yogur de coco: medida ambigua. Interpretado como 2 cucharadas copeteadas (~22.5ml c/u) → 45ml → 45g con densidad 1.0.",
+    "Plátano (½ pieza congelado): equivalente_g de 60g estimado para la mitad de un plátano mediano. ✅ Sobre umbral de 20g para frutas.",
+    "El smoothie acepta otros tipos de hojas verdes: col rizada (kale), bok choy, lechuga. El valor nutricional variará según la elección.",
+    "Se recomienda congelar el plátano y el mango con anticipación para obtener una textura más cremosa sin necesidad de hielos."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Yogur de coco: medida original 'heaped spoonfuls' es ambigua. Convertida a 45g como estimación razonable; ajustar si la sub-receta de yogur tiene densidad diferente.",
+      "Plátano (½ pieza): equivalente_g de 60g es estimación estándar. ✅ Sobre umbral de 20g para frutas."
+    ],
+    "correcciones": [
+      "1 oz espinacas baby (oz peso) → 28.35g",
+      "3½ oz mango congelado (oz peso) → 99.23g",
+      "3½ fl oz agua de coco (fl oz líquido) → 103.5ml",
+      "2 heaped spoonfuls yogur de coco (medida ambigua) → 45g estimado"
+    ]
+  }
+}

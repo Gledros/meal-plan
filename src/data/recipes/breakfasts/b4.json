@@ -1,0 +1,125 @@
+{
+  "id": 4,
+  "referencia": "b004",
+  "nombre": "Pudín de arroz integral horneado con durazno",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Se puede preparar la noche anterior hasta el paso de horneado y refrigerar. Hornear en la mañana."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Horneado a 180°C (350°F) en un ramekín de 1 taza hasta que cuaje."
+  },
+  "informacion_nutricional": {
+    "kcal": 240,
+    "carbohidratos_g": 40,
+    "grasas_g": 6,
+    "proteina_g": 6
+  },
+  "ingredientes": [
+    {
+      "clave": "flaxseed_egg",
+      "nombre": "Huevo de linaza",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 25.0,
+      "estado": "preparado, ver p.14",
+      "enlace": "recipe://flaxseed-egg-p14"
+    },
+    {
+      "clave": "non_dairy_milk",
+      "nombre": "Leche vegetal",
+      "cantidad": 0.5,
+      "unidad": "cup",
+      "unidad_display": "taza",
+      "equivalente_g": 123.6,
+      "estado": "líquida (almendras, avena, coco o soya)"
+    },
+    {
+      "clave": "lemon_zest",
+      "nombre": "Ralladura de limón",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "limón",
+      "equivalente_g": 1.0,
+      "estado": "ralladura de medio limón"
+    },
+    {
+      "clave": "ground_cinnamon",
+      "nombre": "Canela molida",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1.4,
+      "estado": "molida"
+    },
+    {
+      "clave": "vanilla_extract",
+      "nombre": "Extracto natural de vainilla",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.63,
+      "estado": "líquido"
+    },
+    {
+      "clave": "cooked_brown_rice",
+      "nombre": "Arroz integral cocido",
+      "cantidad": 99.23,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 99.23,
+      "estado": "cocido, tibio o frío"
+    },
+    {
+      "clave": "peach",
+      "nombre": "Durazno",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60.0,
+      "estado": "fresco, rebanado"
+    },
+    {
+      "clave": "flaked_almonds",
+      "nombre": "Almendras fileteadas",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 4.0,
+      "estado": "en hojuelas, para decorar"
+    }
+  ],
+  "pasos": [
+    "Precalentar el horno a 180°C (350°F).",
+    "En un tazón, batir el huevo de linaza, la leche vegetal, la ralladura de limón, la canela molida y el extracto de vainilla hasta integrar.",
+    "Verter el arroz integral cocido en un ramekín de 1 taza (240ml) y distribuir uniformemente.",
+    "Verter la mezcla líquida sobre el arroz.",
+    "Colocar las rebanadas de durazno encima y espolvorear las almendras fileteadas.",
+    "Hornear durante 10 minutos o hasta que el pudín cuaje y esté ligeramente dorado en los bordes.",
+    "Disfrutar tibio directamente del ramekín."
+  ],
+  "notas": [
+    "Medida original: 3½ oz arroz integral cocido (oz peso) → 99.23g.",
+    "El huevo de linaza (½ pieza) es sub-receta del libro (p.14). Equivalente_g (25g) estimado como la mitad de un huevo de linaza completo (~50g: 1 cda de linaza molida + 3 cdas de agua).",
+    "El durazno (½ pieza) equivale a ~60g; ✅ sobre el umbral mínimo de 20g para frutas.",
+    "Se puede preparar la noche anterior: montar el ramekín sin hornear y refrigerar. Hornear en la mañana directamente del refrigerador, agregar 2–3 minutos extra al tiempo de cocción.",
+    "Leche vegetal: cualquier variedad funciona (almendras, avena, coco, soya). La densidad usada es 1.03 g/ml como referencia genérica.",
+    "Densidades usadas: leche vegetal 1.03 g/ml; canela molida 0.56 g/ml; extracto de vainilla 1.05 g/ml; almendras fileteadas 0.53 g/ml."
+  ],
+  "validacion": {
+    "score": 86,
+    "warnings": [
+      "Huevo de linaza (½ pieza): equivalente_g de 25g es estimación; depende de la sub-receta p.14.",
+      "Durazno (½ pieza): equivalente_g de 60g es estimación para durazno mediano; peso real puede variar 50–80g. ✅ Sobre umbral de 20g para frutas.",
+      "Ralladura de limón (½ limón): equivalente_g de 1g es estimación de guarnición aromática; no afecta cálculo nutricional de forma significativa.",
+      "Almendras fileteadas (½ cda = ~4g): por debajo del umbral de 20g. Clasificado como topping; válido semánticamente."
+    ],
+    "correcciones": [
+      "3½ oz arroz integral cocido (oz peso) → 99.23g"
+    ]
+  }
+}

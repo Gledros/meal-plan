@@ -1,18 +1,152 @@
 {
   "id": 5,
-  "nombre": "Ensalada tibia de garbanzos",
+  "referencia": "d005",
+  "nombre": "Croquetas de lentejas con salsa de jitomate y chile, y raita de pepino",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Requiere el sobrante del dal de lentejas rojas del Día 03. Asegurarse de tenerlo listo del refrigerador."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 20,
+    "unidad": "minutes",
+    "notas": "Horneado a 180°C (350°F) durante 15–20 minutos hasta que estén crujientes y doradas."
+  },
   "informacion_nutricional": {
-    "kcal": 180,
-    "carbohidratos_g": 0,
-    "grasas_g": 0,
-    "proteina_g": 0
+    "kcal": 549,
+    "carbohidratos_g": 74,
+    "grasas_g": 22,
+    "proteina_g": 19
   },
   "ingredientes": [
-    "1/2 taza + 1 cda garbanzos",
-    "1/2 taza tomate",
-    "1/4 taza pepino"
+    {
+      "clave": "leftover_red_lentil_dal",
+      "nombre": "Sobrante de dal de lentejas rojas",
+      "cantidad": 300.0,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 300.0,
+      "estado": "frío, del refrigerador",
+      "enlace": "recipe://red-lentil-dal-d003"
+    },
+    {
+      "clave": "panko_breadcrumbs",
+      "nombre": "Pan molido panko",
+      "cantidad": 99.23,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": 99.23,
+      "estado": "seco"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2.71,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 0.66,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "tomato_chili_relish",
+      "nombre": "Salsa de jitomate y chile",
+      "cantidad": 2.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 34.0,
+      "estado": "preparada, ver p.22, para acompañar",
+      "enlace": "recipe://tomato-chili-relish-p22"
+    },
+    {
+      "clave": "coconut_yogurt_raita",
+      "nombre": "Yogur de coco (para raita)",
+      "cantidad": 0.25,
+      "unidad": "cup",
+      "unidad_display": "taza",
+      "equivalente_g": 60.0,
+      "estado": "líquido"
+    },
+    {
+      "clave": "persian_cucumber_raita",
+      "nombre": "Pepino persa (para raita)",
+      "cantidad": 0.25,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 37.0,
+      "estado": "pequeño, picado finamente"
+    },
+    {
+      "clave": "fresh_mint_raita",
+      "nombre": "Menta fresca (para raita)",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 2.5,
+      "estado": "finamente desmenuzada"
+    },
+    {
+      "clave": "sea_salt_raita",
+      "nombre": "Sal de mar (para raita)",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1.25,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "black_pepper_raita",
+      "nombre": "Pimienta negra molida (para raita)",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 0.66,
+      "estado": "al gusto"
+    }
   ],
   "pasos": [
-    "Mezclar y servir tibio."
-  ]
+    "Precalentar el horno a 180°C (350°F) y cubrir una charola con papel para hornear.",
+    "En un tazón, mezclar el dal de lentejas sobrante con el pan molido panko, sal y pimienta hasta obtener una masa manejable.",
+    "Formar bolitas o croquetas con las manos y colocarlas sobre la charola preparada.",
+    "Hornear durante 15–20 minutos hasta que estén crujientes y doradas por fuera.",
+    "Mientras se hornean, preparar la raita: mezclar el yogur de coco, el pepino picado, la menta desmenuzada, sal y pimienta en un tazón pequeño. Refrigerar hasta servir.",
+    "Servir las croquetas acompañadas de la raita de pepino y la salsa de jitomate y chile.",
+    "Los sobrantes de croquetas se pueden congelar para otra ocasión y recalentar en horno."
+  ],
+  "notas": [
+    "⚠️ INGREDIENTE VINCULADO: El sobrante de dal de lentejas rojas proviene del Día 03 (d003). Cantidad estimada en 300g correspondiente a 1 porción del sobrante extra producido en esa receta. El peso exacto dependerá de la cantidad real que sobró.",
+    "Medida original: 3½ oz panko (oz peso) → 99.23g.",
+    "La salsa de jitomate y chile (p.22) es sub-receta del libro sin cantidad especificada ('to serve'). Se asignaron 2 cdas como porción estándar de acompañamiento; no afecta el cálculo nutricional principal.",
+    "¼ cup yogur de coco (raita): 0.25 × 240ml = 60ml → 60g con densidad 1.0.",
+    "¼ pepino persa (raita): equivalente_g de 37g estimado para ¼ de pepino pequeño (~150g entero).",
+    "Menta fresca (1 cda desmenuzada = ~2.5g): cantidad de guarnición aromática. WARNING por debajo de 20g, válido semánticamente.",
+    "Sal y pimienta sin cantidad en fuente (croquetas y raita). Asignado 0.25 cdita de cada uno en ambas preparaciones.",
+    "Si el pan molido panko no está disponible, puede sustituirse por pan molido regular o avena molida en la misma cantidad.",
+    "La raita es refrescante y equilibra el picante de la salsa de chile. Puede prepararse con hasta 2 horas de anticipación.",
+    "Densidades usadas: panko 0.25 g/ml (densidad aparente); yogur de coco 1.0 g/ml; jugo de limón 1.03 g/ml; sal 2.17 g/ml."
+  ],
+  "validacion": {
+    "score": 80,
+    "warnings": [
+      "Dal sobrante (300g): cantidad estimada — el peso real depende del sobrante del Día 03. Marcar como ingrediente variable en la UI con referencia a d003.",
+      "Menta fresca (1 cda = 2.5g): por debajo del umbral de 20g. Clasificada como guarnición aromática de raita; válida semánticamente.",
+      "Pepino persa ¼ pieza (raita): equivalente_g de 37g es estimación.",
+      "Salsa de jitomate y chile (p.22): sub-receta sin cantidad → asignadas 2 cdas estimadas como acompañamiento.",
+      "Sal y pimienta (croquetas y raita): sin cantidad en la fuente → 0.25 cdita c/u en cada preparación; marcar como 'al gusto' en UI."
+    ],
+    "correcciones": [
+      "3½ oz panko (oz peso) → 99.23g",
+      "Dal sobrante sin cantidad → 300g estimado basado en producción del Día 03 (d003)",
+      "Sal, pimienta (×2 preparaciones): sin cantidad → 0.25 cdita cada uno asignados",
+      "Salsa jitomate y chile 'to serve' → 2 cdas asignadas para escalado en frontend"
+    ]
+  }
 }

@@ -27,6 +27,39 @@ export const lightenHexColor = (hex: string, amount = 0.5): string => {
 	return `#${toHex(lighten(red))}${toHex(lighten(green))}${toHex(lighten(blue))}`;
 };
 
+const FRACTIONS: [number, string][] = [
+	[1 / 8, "⅛"],
+	[1 / 4, "¼"],
+	[1 / 3, "⅓"],
+	[1 / 2, "½"],
+	[2 / 3, "⅔"],
+	[3 / 4, "¾"],
+];
+
+const FRACTION_UNITS = new Set(["taza", "cda", "cdita", "cup", "tbsp", "tsp"]);
+
+export const formatQuantity = (value: number, unit?: string): string => {
+	const useFraction = unit !== undefined && FRACTION_UNITS.has(unit.toLowerCase());
+
+	if (!useFraction) return String(value);
+
+	const whole = Math.floor(value);
+	const decimal = value - whole;
+
+	if (decimal < 0.01) return whole === 0 ? "0" : String(whole);
+
+	const match = FRACTIONS.reduce(
+		(best, [frac, symbol]) =>
+			Math.abs(frac - decimal) < Math.abs(best[0] - decimal) ? [frac, symbol] : best,
+		FRACTIONS[0] as [number, string],
+	);
+
+	const [frac, symbol] = match;
+	if (Math.abs(frac - decimal) > 0.04) return String(value);
+
+	return whole === 0 ? symbol : `${whole}${symbol}`;
+};
+
 export const darkenHexColor = (hex: string, amount = 0.5): string => {
 	const parsedHex = hexColorSchema.safeParse(hex);
 

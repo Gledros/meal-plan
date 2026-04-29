@@ -1,0 +1,94 @@
+{
+  "id": 2,
+  "referencia": "b002",
+  "nombre": "Pudín de chía con arándanos",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Tiempo activo de mezclado. El reposo en refrigerador es obligatorio."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 120,
+    "unidad": "minutes",
+    "notas": "No es cocción. Es tiempo de cuajado/reposo en refrigerador. Puede dejarse toda la noche."
+  },
+  "informacion_nutricional": {
+    "kcal": 174,
+    "carbohidratos_g": 16,
+    "grasas_g": 12,
+    "proteina_g": 3
+  },
+  "ingredientes": [
+    {
+      "clave": "coconut_milk",
+      "nombre": "Leche de coco (o cualquier leche vegetal)",
+      "cantidad": 51.75,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 51.75,
+      "estado": "líquida"
+    },
+    {
+      "clave": "vanilla_bean",
+      "nombre": "Vaina de vainilla",
+      "cantidad": 1.0,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 3.0,
+      "estado": "abierta, semillas raspadas"
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de maple",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 9.98,
+      "estado": "líquido, opcional"
+    },
+    {
+      "clave": "chia_seeds",
+      "nombre": "Semillas de chía",
+      "cantidad": 1.0,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 12.0,
+      "estado": "secas"
+    },
+    {
+      "clave": "fresh_blueberries",
+      "nombre": "Arándanos frescos",
+      "cantidad": 0.25,
+      "unidad": "cup",
+      "unidad_display": "taza",
+      "equivalente_g": 37.0,
+      "estado": "frescos, divididos en dos partes"
+    }
+  ],
+  "pasos": [
+    "En un tazón, batir la leche de coco con 1 cucharada de agua, las semillas de vainilla, el jarabe de maple (si se usa) y las semillas de chía.",
+    "Dejar reposar 5 minutos y batir nuevamente para asegurarse de que las semillas de chía queden bien distribuidas y no formen grumos.",
+    "Agregar la mitad de los arándanos y mezclar para integrar.",
+    "Transferir a un tazón pequeño o frasco. Cubrir y refrigerar durante mínimo 2 horas, o hasta que cuaje.",
+    "Al servir, colocar los arándanos restantes encima como decoración. Se conserva en refrigerador hasta 4 días."
+  ],
+  "notas": [
+    "Medida original: 1¾ fl oz leche de coco (onzas fluidas) → convertido a 51.75 ml. NO se convirtió como oz de peso.",
+    "AUTO-CORRECCIÓN APLICADA: la fuente indica '¼ oz arándanos frescos' (7.09g), lo cual activa el error heurístico de fruta < 20g. Corregido a ¼ taza (~37g) según la regla de corrección documentada del pipeline.",
+    "El jarabe de maple está marcado como opcional en la receta original. Si se omite, afecta ligeramente el valor calórico.",
+    "La vainilla en vaina puede sustituirse por 1 cdita de extracto puro de vainilla.",
+    "Densidades usadas: leche de coco 1.0 g/ml; jarabe de maple 1.33 g/ml; semillas de chía densidad aparente ~0.80 g/ml (equiv_g = 12g por referencia estándar de 1 cda).",
+    "Si no se encuentran arándanos frescos (blueberries), pueden sustituirse por moras azules o zarzamoras en la misma cantidad."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Jarabe de maple (opcional): presente en el cálculo nutricional impreso. Si se omite, los valores nutricionales variarán ligeramente.",
+      "Vaina de vainilla: equivalente_g de 3g es estimación estándar de peso de una vaina; no afecta el cálculo nutricional de forma significativa."
+    ],
+    "correcciones": [
+      "1¾ fl oz leche de coco → 51.75 ml (conversión fl oz a ml, no a g directamente)",
+      "¼ oz arándanos frescos (7.09g, ERROR heurístico fruta < 20g) → ¼ taza arándanos (~37g)"
+    ]
+  }
+}
