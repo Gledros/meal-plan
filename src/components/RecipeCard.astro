@@ -12,6 +12,14 @@ interface Props {
 
 const { id, recipe, kind, color } = Astro.props;
 const displayId = recipe.id ?? id;
+const unitTranslations = {
+	minutes: 'minutos',
+	hours: 'horas',
+	days: 'días',
+};
+
+const formatTime = (t: { tiempo: number; unidad: string }) =>
+	`${t.tiempo} ${unitTranslations[t.unidad as keyof typeof unitTranslations] ?? t.unidad}`;
 const prepTimeNotes = recipe.tiempo_preparacion.notas.trim();
 const cookTimeNotes = recipe.tiempo_cocinado.notas.trim();
 const recipeNotes = recipe.notas.filter((note) => note.trim().length > 0);
@@ -34,23 +42,19 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 			{`${kind} ${displayId}`}<br />{recipe.nombre}
 		</h2>
 	</div>
-	<div class='p-2 flex-1'>
+	<div class='p-2 flex-1 flex flex-col'>
 		<div class='mb-2 grid grid-cols-2 gap-2'>
-			<div class='rounded-lg border-2 p-2 text-center'
-			style={timeBorderStyle}
-			>
+			<div class='rounded-lg border-2 p-2 text-center' style={timeBorderStyle}>
 				<p class='text-sm font-semibold uppercase tracking-wide'>Preparacion</p>
 				<p class='text-lg font-bold leading-tight'>
-					{recipe.tiempo_preparacion.tiempo} {recipe.tiempo_preparacion.unidad}
+					{formatTime(recipe.tiempo_preparacion)}
 				</p>
 				{prepTimeNotes && <p class='text-sm leading-tight'>{prepTimeNotes}</p>}
 			</div>
-			<div class='rounded-lg border-2 p-2 text-center'
-			style={timeBorderStyle}
-			>
+			<div class='rounded-lg border-2 p-2 text-center' style={timeBorderStyle}>
 				<p class='text-sm font-semibold uppercase tracking-wide'>Cocinado</p>
 				<p class='text-lg font-bold leading-tight'>
-					{recipe.tiempo_cocinado.tiempo} {recipe.tiempo_cocinado.unidad}
+					{formatTime(recipe.tiempo_cocinado)}
 				</p>
 				{cookTimeNotes && <p class='text-sm leading-tight'>{cookTimeNotes}</p>}
 			</div>
@@ -58,7 +62,9 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 
 		<div class='grid items-start gap-2 md:grid-cols-2'>
 			<div>
-				<p class='mb-1 text-lg text-center font-semibold'>Ingredientes (1 porción)</p>
+				<p class='mb-1 text-lg text-center font-semibold'>
+					Ingredientes (1 porción)
+				</p>
 				<ul class='p-2 space-y-1'>
 					{
 						recipe.ingredientes.map((ing) => (
@@ -66,12 +72,15 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 								<span class='shrink-0 text-lg leading-none'>✅</span>
 								<span>
 									<span class='font-semibold'>
-										{formatQuantity(ing.cantidad, ing.unidad_display)} {ing.unidad_display}
-									</span>
-									{' '}
+										{formatQuantity(ing.cantidad, ing.unidad_display)}{' '}
+										{ing.unidad_display}
+									</span>{' '}
 									<span>{ing.nombre}</span>
 									{ing.estado && (
-										<span class='text-sm text-gray-500 italic'> — {ing.estado}</span>
+										<span class='text-sm text-gray-500 italic'>
+											{' '}
+											— {ing.estado}
+										</span>
 									)}
 								</span>
 							</li>
@@ -115,25 +124,22 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 
 		<p class='mb-1 mt-2 text-lg text-center font-semibold'>Pasos</p>
 		<ol class='px-8 pb-2 list-decimal space-y-1'>
-			{
-				recipe.pasos.map((paso) => (
-					<li class='text-lg'>{paso}</li>
-				))
-			}
+			{recipe.pasos.map((paso) => <li class='text-lg'>{paso}</li>)}
 		</ol>
 
 		{
 			recipeNotes.length > 0 && (
-				<>
-					<p class='mb-1 mt-2 text-lg text-center font-semibold'>Notas</p>
-					<ul class='px-8 pb-2 list-disc space-y-1'>
-						{
-							recipeNotes.map((note) => (
-								<li class='text-lg'>{note}</li>
-							))
-						}
+				<details
+					class='recipe-notes mt-auto rounded-lg border p-2'
+					style={timeBorderStyle}
+				>
+					<summary class='text-lg font-semibold text-center'>Notas</summary>
+					<ul class='px-8 pb-2 list-disc space-y-1 mt-2'>
+						{recipeNotes.map((note) => (
+							<li class='text-lg'>{note}</li>
+						))}
 					</ul>
-				</>
+				</details>
 			)
 		}
 	</div>
@@ -142,5 +148,25 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 <style>
 	.perfil-nutricional p {
 		text-align: center;
+	}
+
+	.recipe-notes summary {
+		list-style: none;
+		cursor: pointer;
+	}
+
+	.recipe-notes summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.recipe-notes summary::after {
+		content: '▾';
+		display: inline-block;
+		margin-left: 0.5rem;
+		transition: transform 120ms ease-in-out;
+	}
+
+	.recipe-notes[open] summary::after {
+		transform: rotate(180deg);
 	}
 </style>
