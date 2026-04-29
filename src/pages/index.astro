@@ -1,17 +1,17 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import { Image } from "astro:assets";
-import SmoothieCard from "@components/SmoothieCard.astro";
-import RecipeCard from "@components/RecipeCard.astro";
-import TabsSlider from "@components/TabsSlider.astro";
-import ReadmeModal from "@components/ReadmeModal.astro";
+import Layout from '@layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import SmoothieCard from '@components/SmoothieCard.astro';
+import RecipeCard from '@components/RecipeCard.astro';
+import TabsSlider from '@components/TabsSlider.astro';
+import ReadmeModal from '@components/ReadmeModal.astro';
 import {
 	loadRecipesFromDisk,
 	type MealDinnerRecipe,
 	type SmoothieRecipe,
-} from "@data/runtime-recipes";
-import ReadmeContent from "../../README.md";
-import veganBadge from "../vegan-badge.svg";
+} from '@data/runtime-recipes';
+import ReadmeContent from '../../README.md';
+import veganBadge from '../vegan-badge.svg';
 
 type Smoothie = SmoothieRecipe;
 type Breakfast = MealDinnerRecipe;
@@ -21,14 +21,14 @@ type Dinner = MealDinnerRecipe;
 const { smoothies, breakfasts, meals, dinners } = await loadRecipesFromDisk();
 
 const tabs = [
-	{ id: "smoothies", label: "Smoothies" },
-	{ id: "desayunos", label: "Desayunos" },
-	{ id: "comidas", label: "Comidas" },
-	{ id: "cenas", label: "Cenas" },
+	{ id: 'smoothies', label: 'Smoothies' },
+	{ id: 'desayunos', label: 'Desayunos' },
+	{ id: 'comidas', label: 'Comidas' },
+	{ id: 'cenas', label: 'Cenas' },
 ];
 ---
 
-<Layout title="Plan alimenticio">
+<Layout title='Plan alimenticio'>
 	<div
 		class='print-header sticky top-0 z-10 border-b-2 border-[#b8b8b9] bg-white/80 p-4 backdrop-blur-sm'
 		data-tabs-sticky-header
@@ -41,14 +41,24 @@ const tabs = [
 				loading='eager'
 				decoding='async'
 			/>
-			<div class='grid grid-cols-1 items-center gap-x-3 gap-y-1 sm:grid-cols-[1fr_auto]'>
-				<h1 class='order-1 self-center text-center text-3xl font-bold sm:text-5xl'>Plan alimenticio</h1>
-				<div class='order-3 mt-1 self-center justify-self-center sm:order-2 sm:col-start-2 sm:row-start-1 sm:mt-0 sm:justify-self-end'>
+			<div
+				class='grid grid-cols-1 items-center gap-x-3 gap-y-1 sm:grid-cols-[1fr_auto]'
+			>
+				<h1
+					class='order-1 self-center text-center text-3xl font-bold sm:text-5xl'
+				>
+					Plan alimenticio
+				</h1>
+				<div
+					class='order-3 mt-1 self-center justify-self-center sm:order-2 sm:col-start-2 sm:row-start-1 sm:mt-0 sm:justify-self-end'
+				>
 					<ReadmeModal title='Ayuda'>
 						<ReadmeContent />
 					</ReadmeModal>
 				</div>
-				<p class='order-2 text-center text-xl font-semibold text-gray-600 sm:order-3 sm:col-span-2'>
+				<p
+					class='order-2 text-center text-xl font-semibold text-gray-600 sm:order-3 sm:col-span-2'
+				>
 					vegano, sin gluten, sin azúcar refinada, sin aceites añadidos
 				</p>
 			</div>
@@ -56,11 +66,15 @@ const tabs = [
 	</div>
 	<TabsSlider {tabs}>
 		<section data-tab-panel='smoothies' class='p-1 md:p-4'>
-			<div class='print-grid grid w-full grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6'>
+			<div
+				class='print-grid grid w-full grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6'
+			>
 				{
-					smoothies.map(({ id, smoothie }: { id: number; smoothie: Smoothie }) => (
-						<SmoothieCard {smoothie} {id} />
-					))
+					smoothies.map(
+						({ id, smoothie }: { id: number; smoothie: Smoothie }) => (
+							<SmoothieCard {smoothie} {id} />
+						),
+					)
 				}
 			</div>
 		</section>
@@ -68,54 +82,56 @@ const tabs = [
 		<section data-tab-panel='desayunos' class='p-2 md:p-4'>
 			{
 				breakfasts.length > 0 ? (
-					<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
-						{
-							breakfasts.map(({ id, breakfast }: { id: number; breakfast: Breakfast }) => (
+					<div class='grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
+						{breakfasts.map(
+							({ id, breakfast }: { id: number; breakfast: Breakfast }) => (
 								<RecipeCard
 									id={id}
 									recipe={breakfast}
 									kind='Desayuno'
 									color='#FFBD66'
 								/>
-							))
-						}
+							),
+						)}
 					</div>
 				) : (
 					<p class='rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center text-lg text-gray-600'>
-						No hay desayunos cargados todavia.
+						No hay desayunos cargados todavía.
 					</p>
 				)
 			}
 		</section>
 
 		<section data-tab-panel='comidas' class='p-2 md:p-4'>
-			<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
-				{
-					meals.map(({ id, meal }: { id: number; meal: Meal }) => (
-						<RecipeCard
-							id={id}
-							recipe={meal}
-							kind='Comida'
-							color='#9BCC7A'
-						/>
-					))
-				}
-			</div>
+			{
+				meals.length > 0 ? (
+					<div class='grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
+						{meals.map(({ id, meal }: { id: number; meal: Meal }) => (
+							<RecipeCard id={id} recipe={meal} kind='Comida' color='#9BCC7A' />
+						))}
+					</div>
+				) : (
+					<p class='rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center text-lg text-gray-600'>
+						No hay comidas cargadas todavía.
+					</p>
+				)
+			}
 		</section>
 
 		<section data-tab-panel='cenas' class='p-2 md:p-4'>
-			<div class='grid w-full grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
-				{
-					dinners.map(({ id, dinner }: { id: number; dinner: Dinner }) => (
-						<RecipeCard
-							id={id}
-							recipe={dinner}
-							kind='Cena'
-							color='#A1B3FF'
-						/>
-					))
-				}
-			</div>
+			{
+				dinners.length > 0 ? (
+					<div class='grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
+						{dinners.map(({ id, dinner }: { id: number; dinner: Dinner }) => (
+							<RecipeCard id={id} recipe={dinner} kind='Cena' color='#A1B3FF' />
+						))}
+					</div>
+				) : (
+					<p class='mb-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center text-lg text-gray-600'>
+						No hay cenas cargadas todavía.
+					</p>
+				)
+			}
 		</section>
 	</TabsSlider>
 </Layout>
