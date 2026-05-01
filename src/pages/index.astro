@@ -6,7 +6,11 @@ import RecipeCard from '@components/RecipeCard.astro';
 import TabsSlider from '@components/TabsSlider.astro';
 import ReadmeModal from '@components/ReadmeModal.astro';
 import IngredientsModal from '@components/IngredientsModal.astro';
+import PortionMultiplier from '@components/PortionMultiplier.astro';
 import week1 from '@data/weeks/w1.json';
+import week2 from '@data/weeks/w2.json';
+import week3 from '@data/weeks/w3.json';
+import week4 from '@data/weeks/w4.json';
 import {
 	loadRecipesFromDisk,
 	type MealDinnerRecipe,
@@ -27,6 +31,13 @@ const tabs = [
 	{ id: 'desayunos', label: 'Desayunos' },
 	{ id: 'comidas', label: 'Comidas' },
 	{ id: 'cenas', label: 'Cenas' },
+];
+
+const shoppingWeeks = [
+	{ id: 'semana-1', label: 'Semana 1', week: week1 },
+	{ id: 'semana-2', label: 'Semana 2', week: week2 },
+	{ id: 'semana-3', label: 'Semana 3', week: week3 },
+	{ id: 'semana-4', label: 'Semana 4', week: week4 },
 ];
 ---
 
@@ -57,11 +68,6 @@ const tabs = [
 					<ReadmeModal title='Ayuda'>
 						<ReadmeContent />
 					</ReadmeModal>
-					<IngredientsModal
-						week={week1}
-						title='Lista de compras (semana 1)'
-						triggerLabel='Lista de compras'
-					/>
 				</div>
 				<p
 					class='order-2 text-center text-xl font-semibold text-gray-600 sm:order-3 sm:col-span-2'
@@ -72,6 +78,23 @@ const tabs = [
 		</div>
 	</div>
 	<TabsSlider {tabs}>
+		<div slot='tabs-controls-extra' class='tabs-controls-extra'>
+			<div class='flex items-center gap-4'>
+				<PortionMultiplier
+					id='multiplier-select'
+					wrapperClass='w-fit flex gap-2 items-center'
+					labelClass='tabs-controls-label'
+					selectClass='tabs-multiplier'
+					ariaLabel='Multiplicar porciones'
+					value={3}
+				/>
+				<IngredientsModal
+					weeks={shoppingWeeks}
+					title='Lista de compras'
+					triggerLabel='Lista de compras'
+				/>
+			</div>
+		</div>
 		<section data-tab-panel='smoothies' class='p-1 md:p-4'>
 			<div
 				class='print-grid grid w-full grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6'
