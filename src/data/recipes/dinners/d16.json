@@ -1,0 +1,176 @@
+{
+  "id": 16,
+  "referencia": "d016",
+  "nombre": "Cazuela/vegetales gratinados (Vegetable bake)",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 40,
+    "unidad": "minutes",
+    "notas": "Hornear 25–30 min cubierto y 10–15 min descubierto para dorar"
+  },
+  "informacion_nutricional": {
+    "kcal": 318,
+    "grasas_g": 4.32,
+    "carbohidratos_g": 62.67,
+    "proteina_g": 12.04
+  },
+  "ingredientes": [
+    {
+      "clave": "potato",
+      "nombre": "Papa",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 150,
+      "estado": "pelada y en láminas finas",
+      "enlace": ""
+    },
+    {
+      "clave": "sweet_potato",
+      "nombre": "Camote pequeño",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 150,
+      "estado": "en gajos o láminas",
+      "enlace": ""
+    },
+    {
+      "clave": "baby_spinach",
+      "nombre": "Hojas de espinaca baby",
+      "cantidad": 21,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "eggplant",
+      "nombre": "Berenjena pequeña",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 150,
+      "estado": "en láminas finas",
+      "enlace": ""
+    },
+    {
+      "clave": "mushrooms",
+      "nombre": "Champiñones grandes",
+      "cantidad": 3,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 120,
+      "estado": "rebanados",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco (para engrasar)",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 13,
+      "estado": "para aceitar la bandeja",
+      "enlace": ""
+    },
+    {
+      "clave": "soy_milk",
+      "nombre": "Leche de soya",
+      "cantidad": 148,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 148,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "chickpea_flour",
+      "nombre": "Harina de garbanzo (besan)",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "thyme",
+      "nombre": "Tomillo (ramita)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "ramita",
+      "equivalente_g": 1,
+      "estado": "hojas picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 5,
+      "estado": "machacado",
+      "enlace": ""
+    },
+    {
+      "clave": "nutritional_yeast",
+      "nombre": "Levadura nutricional en copos",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 8,
+      "estado": "para espolvorear",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 200°C (400°F). Engrasa una fuente con aceite de coco.",
+    "Dispón capas de papa, camote, berenjena, espinaca y champiñones, salpimienta y agrega ajo y tomillo.",
+    "Mezcla la leche de soya con la harina de garbanzo y la levadura nutricional; vierte sobre las verduras.",
+    "Cubre y hornea 25–30 min; descubre y hornea 10–15 min más hasta dorar.",
+    "Sirve caliente."
+  ],
+  "notas": [
+    "Puedes cambiar verduras según temporada; ajustar tiempos de horneado.",
+    "La mezcla de leche y harina de garbanzo hace una salsa ligera vegana.",
+    "La levadura nutricional aporta sabor 'quesoso'."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Equivalentes de piezas a gramos son aproximados y dependen del tamaño.",
+      "Leche de soya 5 fl oz ≈ 148 ml.",
+      "Se aplicó equivalente_g = -1 a ingredientes con unidad 'g' (espinaca, etc.)."
+    ],
+    "correcciones": [
+      "Conversiones oz→g y fl oz→ml aplicadas donde correspondía."
+    ]
+  }
+}

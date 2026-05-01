@@ -1,0 +1,103 @@
+{
+  "id": 16,
+  "referencia": "b016",
+  "nombre": "Granola cup",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Sin cocción; sirve inmediatamente para que la granola conserve el crujiente."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 398,
+    "grasas_g": 16.77,
+    "carbohidratos_g": 64.88,
+    "proteina_g": 19.86
+  },
+  "ingredientes": [
+    {
+      "clave": "vanilla_protein_powder",
+      "nombre": "Proteína vegetal sabor vainilla",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "en polvo",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_yogurt",
+      "nombre": "Yogur de coco (u otro vegetal)",
+      "cantidad": 0.25,
+      "unidad": "cup",
+      "unidad_display": "taza",
+      "equivalente_g": 62,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "granola",
+      "nombre": "Granola",
+      "cantidad": 57,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "ver p.32",
+      "enlace": "recipe://granola-p32"
+    },
+    {
+      "clave": "nectarine",
+      "nombre": "Nectarina",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 140,
+      "estado": "deshuesada y en láminas",
+      "enlace": ""
+    },
+    {
+      "clave": "strawberries",
+      "nombre": "Fresas",
+      "cantidad": 3,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 45,
+      "estado": "rebanadas",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_coconut_flakes",
+      "nombre": "Hojuelas de coco tostado",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Mezcla la proteína en polvo con el yogur hasta que quede homogéneo.",
+    "En un vaso o bowl, coloca la granola, añade la mezcla de yogur y proteína.",
+    "Cubre con nectarina y fresas rebanadas; espolvorea las hojuelas de coco tostado y sirve."
+  ],
+  "notas": [
+    "La receta indica 2 oz de granola → 57 g.",
+    "El yogur 1/4 cup ≈ 62 g.",
+    "Puedes variar los toppings según temporada."
+  ],
+  "validacion": {
+    "score": 89,
+    "warnings": [
+      "Granola y yogur medidos para una porción; ajustar si compartes.",
+      "Piezas de fruta convertidas a equivalentes aproximados."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 aplicado a la granola (unidad g)."
+    ]
+  }
+}

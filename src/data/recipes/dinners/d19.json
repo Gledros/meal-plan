@@ -1,0 +1,155 @@
+{
+  "id": 19,
+  "referencia": "d019",
+  "nombre": "Berenjena glaseada con miso",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 25,
+    "unidad": "minutes",
+    "notas": "Hornear la berenjena y aplicar el glaseado varias veces"
+  },
+  "informacion_nutricional": {
+    "kcal": 275,
+    "grasas_g": 8.49,
+    "carbohidratos_g": 44.08,
+    "proteina_g": 8.45
+  },
+  "ingredientes": [
+    {
+      "clave": "eggplant",
+      "nombre": "Berenjena mediana",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 350,
+      "estado": "partida a lo largo (mitades)",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "para frotar y dejar reposar",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_seeds",
+      "nombre": "Semillas de sésamo tostadas",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 4,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "cilantro_stem",
+      "nombre": "Tallo de cilantro (hojas separadas)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "tallo",
+      "equivalente_g": 2,
+      "estado": "hojas reservadas para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 15,
+      "estado": "en rodajas finas para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "mirin",
+      "nombre": "Mirin",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 18,
+      "estado": "para el glaseado",
+      "enlace": ""
+    },
+    {
+      "clave": "sake",
+      "nombre": "Sake",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 18,
+      "estado": "para el glaseado",
+      "enlace": ""
+    },
+    {
+      "clave": "raw_sugar",
+      "nombre": "Azúcar cruda (demerara) o jarabe de maple",
+      "cantidad": 8,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "½ tbsp aprox. (o usar ½ tbsp maple)",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de ajonjolí tostado",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "white_miso_paste",
+      "nombre": "Pasta de miso blanco",
+      "cantidad": 15,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "1 cda copeteada",
+      "enlace": ""
+    },
+    {
+      "clave": "fresh_ginger",
+      "nombre": "Jengibre fresco",
+      "cantidad": 5,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "finamente rallado (≈1 tsp)",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 375°F (190°C). Marca la pulpa de las mitades de berenjena en un patrón cruzado; espolvorea con sal y deja reposar 10 minutos.",
+    "En un bol, mezcla mirin, sake, azúcar (o maple), aceite de ajonjolí, miso y jengibre hasta obtener un glaseado homogéneo.",
+    "Enjuaga el exceso de sal de las berenjenas y seca. Coloca en una fuente para hornear, pincela con parte del glaseado.",
+    "Hornea 25 minutos. Retira y pincela con más glaseado; vuelve a hornear si lo deseas hasta caramelizar ligeramente.",
+    "Sirve espolvoreado con semillas de sésamo tostadas, hojas de cilantro y cebollita en rodajas."
+  ],
+  "notas": [
+    "Si no encuentras mirin o sake, puedes usar un poco de vino blanco dulce y reducir azúcar.",
+    "Ajusta la cantidad de miso según la salinidad de la marca.",
+    "El tiempo de horneado varía con el tamaño de la berenjena; busca que la pulpa esté blanda y caramelizada."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Equivalentes en gramos para piezas y cucharadas son aproximados.",
+      "Se aplicó 'equivalente_g': -1 en ingredientes con unidad 'g'."
+    ],
+    "correcciones": [
+      "Se convirtieron medidas oz→g y fl oz→ml donde correspondía y se aplicaron redondeos prácticos."
+    ]
+  }
+}

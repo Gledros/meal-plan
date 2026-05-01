@@ -1,0 +1,154 @@
+{
+  "id": 16,
+  "referencia": "m016",
+  "nombre": "Ensalada asiática de hinojo y manzana con sésamo",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Sin cocción; preparar y servir fría."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 400,
+    "grasas_g": 23.68,
+    "carbohidratos_g": 33.27,
+    "proteina_g": 16.69
+  },
+  "ingredientes": [
+    {
+      "clave": "extra_firm_tofu",
+      "nombre": "Tofu extra firme (opcional)",
+      "cantidad": 50,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "rallado o desmenuzado",
+      "enlace": ""
+    },
+    {
+      "clave": "green_apple",
+      "nombre": "Manzana verde",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": "en tiras finas",
+      "enlace": ""
+    },
+    {
+      "clave": "chinese_cabbage",
+      "nombre": "Col china (wombok)",
+      "cantidad": 28,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "laminada",
+      "enlace": ""
+    },
+    {
+      "clave": "fennel",
+      "nombre": "Bulbo de hinojo (½ pequeño) + frondas",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": "laminado, reservar frondas",
+      "enlace": ""
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 15,
+      "estado": "rebanada fina",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Jugo de limón",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de ajonjolí tostado",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "mirin",
+      "nombre": "Mirin",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "rice_vinegar",
+      "nombre": "Vinagre de arroz",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "black_sesame_seeds",
+      "nombre": "Ajonjolí negro",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 9,
+      "estado": "tostado",
+      "enlace": ""
+    },
+    {
+      "clave": "flaked_almonds",
+      "nombre": "Almendras fileteadas",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 14,
+      "estado": "tostadas",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Ralla o lamina el hinojo, la col china y la manzana. Coloca en un bol grande con la cebollita.",
+    "Mezcla el jugo de limón, aceite de ajonjolí, mirin y vinagre de arroz. Vierte sobre la ensalada y mezcla.",
+    "Añade las almendras fileteadas y el ajonjolí negro; incorpora el tofu rallado si lo usas y sirve."
+  ],
+  "notas": [
+    "El tofu es opcional, aporta proteína y textura.",
+    "Ajusta la cantidad de mirin y vinagre según prefieras más o menos dulce/ácido.",
+    "Las frondas de hinojo se pueden usar como garnish."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Tofu 1¾ oz → 50 g (opcional).",
+      "Equivalentes de semillas y almendras son aproximados.",
+      "Mirin/vinagre pueden sustituirse si no se encuentran."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 aplicado donde la unidad es 'g'."
+    ]
+  }
+}

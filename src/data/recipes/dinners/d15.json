@@ -1,0 +1,135 @@
+{
+  "id": 15,
+  "referencia": "d015",
+  "nombre": "Verduras de raíz asadas con chermoula",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 30,
+    "unidad": "minutes",
+    "notas": "Asado al horno 25–30 min, volteando a la mitad"
+  },
+  "informacion_nutricional": {
+    "kcal": 362,
+    "grasas_g": 16.59,
+    "carbohidratos_g": 51.02,
+    "proteina_g": 5.94
+  },
+  "ingredientes": [
+    {
+      "clave": "baby_beets",
+      "nombre": "Betabeles baby",
+      "cantidad": 2,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 80,
+      "estado": "cortados en cuartos",
+      "enlace": ""
+    },
+    {
+      "clave": "baby_carrots",
+      "nombre": "Zanahorias baby",
+      "cantidad": 1,
+      "unidad": "bunch",
+      "unidad_display": "manojo",
+      "equivalente_g": 150,
+      "estado": "limpias y recortadas",
+      "enlace": ""
+    },
+    {
+      "clave": "parsnip",
+      "nombre": "Chirivía",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 100,
+      "estado": "cuarteada",
+      "enlace": ""
+    },
+    {
+      "clave": "sweet_potato",
+      "nombre": "Camote pequeño",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 150,
+      "estado": "cortado en gajos",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 2,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 10,
+      "estado": "machacado",
+      "enlace": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "chermoula",
+      "nombre": "Chermoula",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 30,
+      "estado": "ver receta p.28",
+      "enlace": "recipe://chermoula-p28"
+    },
+    {
+      "clave": "roasted_sumac_chickpeas",
+      "nombre": "Garbanzos tostados con sumac",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 30,
+      "estado": "ver p.24, para servir",
+      "enlace": "recipe://roasted-sumac-chickpeas-p24"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 190–200°C (375–400°F). Coloca las verduras y el ajo en una bandeja, rocía con aceite y espolvorea sal.",
+    "Hornea 25–30 minutos hasta que estén tiernas y doradas, removiendo a mitad del tiempo.",
+    "Transfiere a un bol, añade la chermoula y mezcla para cubrir.",
+    "Agrega los garbanzos tostados con sumac por encima al servir."
+  ],
+  "notas": [
+    "Puedes usar otras raíces según temporada. Ajusta tiempos de horneado según tamaño.",
+    "La chermoula (p.28) aporta hierbas y acidez; si no hay, usa mezcla de perejil, ajo, comino y limón.",
+    "Los garbanzos tostados dan textura crujiente y aporte proteico."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Equivalentes en gramos para piezas son estimados y pueden variar por tamaño.",
+      "Bunch/manojo de zanahoria estimado en 150 g.",
+      "Chermoula y garbanzos referenciados como sub-recetas."
+    ],
+    "correcciones": [
+      "Se aplicó equivalente_g = -1 únicamente en ingredientes cuya unidad es 'g' (arroz en m15)."
+    ]
+  }
+}

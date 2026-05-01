@@ -1,0 +1,101 @@
+{
+  "id": 19,
+  "referencia": "b019",
+  "nombre": "Ensalada de frutas de verano",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 314,
+    "grasas_g": 23.24,
+    "carbohidratos_g": 28.52,
+    "proteina_g": 4
+  },
+  "ingredientes": [
+    {
+      "clave": "watermelon",
+      "nombre": "Sandía",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "rebanada",
+      "equivalente_g": 150,
+      "estado": "cortada en cubos",
+      "enlace": ""
+    },
+    {
+      "clave": "mango",
+      "nombre": "Mango",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 200,
+      "estado": "carrillos (cheeks) cortados en cubos",
+      "enlace": ""
+    },
+    {
+      "clave": "strawberries",
+      "nombre": "Fresas",
+      "cantidad": 4,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": "partidas por la mitad",
+      "enlace": ""
+    },
+    {
+      "clave": "plum",
+      "nombre": "Ciruela (plum)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 50,
+      "estado": "deshuesada y en rodajas",
+      "enlace": ""
+    },
+    {
+      "clave": "mint_leaves",
+      "nombre": "Hojas de menta",
+      "cantidad": 5,
+      "unidad": "piece",
+      "unidad_display": "hojas",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "passionfruit",
+      "nombre": "Maracuyá / passionfruit",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 20,
+      "estado": "pulpa para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Combina las frutas cortadas en un bol grande.",
+    "Añade las hojas de menta y mezcla suavemente.",
+    "Sirve con la pulpa de maracuyá por encima."
+  ],
+  "notas": [
+    "Puedes ajustar las frutas según temporada y tamaño; los equivalentes en gramos son aproximados.",
+    "Sirve frío."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Equivalentes en gramos para piezas son estimados según tamaño promedio de fruta."
+    ],
+    "correcciones": [
+      "No se encontraron conversiones indebidas; campos en gramos llevan equivalente_g = -1 solo si unidad es 'g'."
+    ]
+  }
+}

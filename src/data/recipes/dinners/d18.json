@@ -1,0 +1,166 @@
+{
+  "id": 18,
+  "referencia": "d018",
+  "nombre": "Pilaf de lentejas con almendras laminadas y hierbas",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 40,
+    "unidad": "minutes",
+    "notas": "Cocer arroz y lentejas juntos hasta que absorban el líquido"
+  },
+  "informacion_nutricional": {
+    "kcal": 296.5,
+    "grasas_g": 9.19,
+    "carbohidratos_g": 49.88,
+    "proteina_g": 7.52
+  },
+  "ingredientes": [
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 14,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "scallions",
+      "nombre": "Cebollitas de cambray",
+      "cantidad": 3,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 45,
+      "estado": "picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 5,
+      "estado": "finamente picado",
+      "enlace": ""
+    },
+    {
+      "clave": "puy_lentils",
+      "nombre": "Lentejas puy",
+      "cantidad": 64,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "2¼ oz, enjuagadas",
+      "enlace": ""
+    },
+    {
+      "clave": "brown_rice",
+      "nombre": "Arroz integral (brown rice)",
+      "cantidad": 50,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "1¾ oz, enjuagado",
+      "enlace": ""
+    },
+    {
+      "clave": "wild_rice",
+      "nombre": "Arroz silvestre (wild rice)",
+      "cantidad": 28,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "1 oz, enjuagado",
+      "enlace": ""
+    },
+    {
+      "clave": "thyme",
+      "nombre": "Tomillo (ramitas)",
+      "cantidad": 2,
+      "unidad": "piece",
+      "unidad_display": "ramita",
+      "equivalente_g": 2,
+      "estado": "hojas picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_broth",
+      "nombre": "Caldo vegano",
+      "cantidad": 360,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 360,
+      "estado": "1½ cups",
+      "enlace": ""
+    },
+    {
+      "clave": "flaked_almonds",
+      "nombre": "Almendras fileteadas",
+      "cantidad": 14,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "2 tbsp, tostadas",
+      "enlace": ""
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso",
+      "cantidad": 8,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "2 tbsp, picado",
+      "enlace": ""
+    },
+    {
+      "clave": "pomegranate_seeds",
+      "nombre": "Semillas de granada",
+      "cantidad": 30,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "2 tbsp, para espolvorear",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Calienta el aceite en una olla grande y sofríe las cebollas y el ajo 4–5 minutos.",
+    "Añade las lentejas y los arroces, remueve 1 minuto para tostar ligeramente.",
+    "Agrega el caldo, el tomillo y lleva a ebullición; reduce, tapa y cocina 30–40 minutos hasta que el líquido se absorba y los granos estén tiernos.",
+    "Añade las almendras fileteadas y el perejil en los últimos 5 minutos de cocción.",
+    "Sirve con semillas de granada por encima."
+  ],
+  "notas": [
+    "Las cantidades de arroz/lenteja pueden ajustarse a tus preferencias de textura.",
+    "Remojar wild rice previo puede acortar tiempo de cocción.",
+    "Almendras y perejil se añaden al final para mantener textura y frescor."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Conversión oz→g aplicada a lentejas y arroces: 2¼ oz → 64 g, 1¾ oz → 50 g, 1 oz → 28 g.",
+      "Caldo 1½ cups → 360 ml (equivalente_g incluido).",
+      "equivalente_g = -1 para ingredientes con unidad 'g'."
+    ],
+    "correcciones": [
+      "Redondeos prácticos aplicados en conversiones."
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": 18,
+  "referencia": "b018",
+  "nombre": "Porridge de quinoa y plátano",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Cocer a fuego bajo hasta espesar"
+  },
+  "informacion_nutricional": {
+    "kcal": 343,
+    "grasas_g": 7.47,
+    "carbohidratos_g": 63.32,
+    "proteina_g": 9.14
+  },
+  "ingredientes": [
+    {
+      "clave": "quinoa_flakes",
+      "nombre": "Hojuelas de quinoa",
+      "cantidad": 43,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "seca",
+      "enlace": ""
+    },
+    {
+      "clave": "almond_milk",
+      "nombre": "Leche de almendra (u otra vegetal)",
+      "cantidad": 120,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 124,
+      "estado": "½ cup",
+      "enlace": ""
+    },
+    {
+      "clave": "banana",
+      "nombre": "Plátano",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 120,
+      "estado": "machacado",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_hemp_seeds",
+      "nombre": "Semillas de cáñamo molidas",
+      "cantidad": 10,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "1 tbsp",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Añade las hojuelas de quinoa a una olla pequeña con la leche y 3½–4 oz (aprox. 100–120 ml) de agua si la receta lo requiere.",
+    "Calienta a fuego lento durante 5 minutos hasta que espese, removiendo ocasionalmente.",
+    "Sirve con plátano machacado por encima y espolvorea las semillas de cáñamo."
+  ],
+  "notas": [
+    "1½ oz hojuelas de quinoa ≈ 43 g.",
+    "½ cup leche de almendra ≈ 120 ml (equivalente ≈124 g usado).",
+    "Ajusta la consistencia añadiendo más líquido si lo deseas."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Hojuelas de quinoa medidas en gramos; ajustar líquido según gusto.",
+      "Equivalentes en gramos son aproximados para leche vegetal."
+    ],
+    "correcciones": [
+      "oz→g aplicado y equivalent_g = -1 para ingredientes en grams."
+    ]
+  }
+}

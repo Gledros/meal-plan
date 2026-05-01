@@ -1,0 +1,144 @@
+{
+  "id": 14,
+  "referencia": "m014",
+  "nombre": "Ensalada rápida de alubias blancas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 468,
+    "grasas_g": 17.5,
+    "carbohidratos_g": 65.05,
+    "proteina_g": 18.03
+  },
+  "ingredientes": [
+    {
+      "clave": "vegan_aioli",
+      "nombre": "Vegan alioli",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 28,
+      "estado": "ver receta p.18",
+      "enlace": "recipe://vegan-aioli-p18"
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de ½ limón",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 25,
+      "estado": "recién exprimido",
+      "enlace": ""
+    },
+    {
+      "clave": "cannellini_beans",
+      "nombre": "Alubias cannellini en conserva",
+      "cantidad": 200,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "escurridas y enjuagadas",
+      "enlace": ""
+    },
+    {
+      "clave": "red_onion",
+      "nombre": "Cebolla morada",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 40,
+      "estado": "finamente picada",
+      "enlace": ""
+    },
+    {
+      "clave": "parsley",
+      "nombre": "Perejil liso",
+      "cantidad": 20,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "hojas picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "bell_pepper",
+      "nombre": "Pimiento morrón",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 50,
+      "estado": "cortado en cubos",
+      "enlace": ""
+    },
+    {
+      "clave": "marinated_artichoke",
+      "nombre": "Corazones de alcachofa marinados",
+      "cantidad": 2,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 70,
+      "estado": "picados",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 3,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_wedge",
+      "nombre": "Limón",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "gajo",
+      "equivalente_g": 10,
+      "estado": "para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "En un tazón pequeño, combina alioli, zumo de limón y sazona.",
+    "Mezcla con el resto de ingredientes en un bol más grande.",
+    "Sirve con gajos de limón."
+  ],
+  "notas": [
+    "Puedes añadir espinaca baby o arúgula.",
+    "El alioli puede ser casero o comprado.",
+    "Las cantidades de vegetales pueden variar según tu gusto."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Alubia cannellini peso escurrido.",
+      "Zumo de limón y alioli cantidades estándares.",
+      "Pimiento y cebolla medio/pequeños por pieza."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 para ingredientes en gramos."
+    ]
+  }
+}

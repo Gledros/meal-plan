@@ -1,0 +1,134 @@
+{
+  "id": 19,
+  "referencia": "m019",
+  "nombre": "Ensalada de quinoa, espárragos y tomates asados",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 45,
+    "unidad": "minutes",
+    "notas": "25 min para asar tomates + tiempo de cocción de quinoa"
+  },
+  "informacion_nutricional": {
+    "kcal": 329,
+    "grasas_g": 11.39,
+    "carbohidratos_g": 46.34,
+    "proteina_g": 12.54
+  },
+  "ingredientes": [
+    {
+      "clave": "cherry_tomatoes",
+      "nombre": "Tomates cherry",
+      "cantidad": 8,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 120,
+      "estado": "mitades",
+      "enlace": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "asparagus",
+      "nombre": "Espárragos",
+      "cantidad": 6,
+      "unidad": "piece",
+      "unidad_display": "vara",
+      "equivalente_g": 90,
+      "estado": "partidos por la mitad",
+      "enlace": ""
+    },
+    {
+      "clave": "quinoa",
+      "nombre": "Quinoa",
+      "cantidad": 57,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "seca",
+      "enlace": ""
+    },
+    {
+      "clave": "basil",
+      "nombre": "Hojas de albahaca",
+      "cantidad": 6,
+      "unidad": "piece",
+      "unidad_display": "hojas",
+      "equivalente_g": 2,
+      "estado": "picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_mustard_vinaigrette",
+      "nombre": "Vinagreta de limón y mostaza",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "ver receta p.16",
+      "enlace": "recipe://lemon-mustard-vinaigrette-p16"
+    },
+    {
+      "clave": "roasted_sumac_chickpeas",
+      "nombre": "Garbanzos tostados con sumac",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 30,
+      "estado": "ver p.24, para servir",
+      "enlace": "recipe://roasted-sumac-chickpeas-p24"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 320°F (160°C). Coloca los tomates en una bandeja, rocía con aceite y sazona; asa 25 minutos hasta que se caramelicen.",
+    "Añade los espárragos a la bandeja en los últimos minutos para que se doren ligeramente.",
+    "Cocina la quinoa: cubre con agua y lleva a ebullición; reduce el fuego, tapa y cocina 10 minutos. Deja reposar y esponja.",
+    "Mezcla la quinoa con los tomates asados, los espárragos, la vinagreta y la albahaca. Añade los garbanzos tostados y ajusta la sazón."
+  ],
+  "notas": [
+    "La quinoa se midió como 2 oz ≈ 57 g (seca).",
+    "La vinagreta está referenciada en p.16; puedes usar una vinagreta ligera de limón y mostaza comprada si prefieres.",
+    "Los garbanzos tostados aportan textura crujiente y pueden sustituirse por semillas tostadas."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Tiempo de asado puede variar según tamaño de tomates y horno.",
+      "Equivalentes en gramos para piezas son aproximados."
+    ],
+    "correcciones": [
+      "Se aplicó equivalente_g = -1 para quinoa (unidad 'g')."
+    ]
+  }
+}

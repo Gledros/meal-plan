@@ -1,0 +1,156 @@
+{
+  "id": 14,
+  "referencia": "d014",
+  "nombre": "Sopa de fideos de coco con chile y lima",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 842,
+    "grasas_g": 46.25,
+    "carbohidratos_g": 99.17,
+    "proteina_g": 12.77
+  },
+  "ingredientes": [
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ginger",
+      "nombre": "Jengibre fresco",
+      "cantidad": 5,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "finamente picado",
+      "enlace": ""
+    },
+    {
+      "clave": "shallot",
+      "nombre": "Echalote",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 15,
+      "estado": "finamente picada",
+      "enlace": ""
+    },
+    {
+      "clave": "red_chili",
+      "nombre": "Chile rojo",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 7,
+      "estado": "sin semillas y picado fino",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_thai_red_curry_paste",
+      "nombre": "Pasta de curry rojo thai vegana",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 18,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_cream",
+      "nombre": "Crema de coco",
+      "cantidad": 250,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 250,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_broth",
+      "nombre": "Caldo vegano",
+      "cantidad": 237,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 237,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "rice_noodles",
+      "nombre": "Fideos de arroz",
+      "cantidad": 50,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "snow_peas",
+      "nombre": "Ejote chino (snow peas)",
+      "cantidad": 37,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "lime_juice",
+      "nombre": "Jugo de lima",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 25,
+      "estado": "más gajos extra para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "cilantro",
+      "nombre": "Cilantro fresco",
+      "cantidad": 10,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "en hojas, para decorar",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Calienta el aceite y sofríe jengibre, echalote, chile y pasta de curry.",
+    "Agrega crema de coco y caldo. Lleva a hervor suave.",
+    "Agrega fideos y ejote chino, cocina 4-5 minutos.",
+    "Agrega jugo de lima y la mitad del cilantro al apagar el fuego.",
+    "Sirve con cilantro, más gajos de lima y chile extra."
+  ],
+  "notas": [
+    "El tipo de fideo puede variar a tu preferencia.",
+    "La crema de coco aporta cuerpo y sabor.",
+    "Especias y picante ajustables al gusto."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Fideos de arroz y snow peas pueden variar en presentación.",
+      "Jugo de lima estándar, ajustar cítrico al gusto.",
+      "equivalente_g = -1 en ingredientes en gramos."
+    ],
+    "correcciones": [
+      "Conversión/redondeo de gramos y mililitros."
+    ]
+  }
+}

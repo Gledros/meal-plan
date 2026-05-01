@@ -1,0 +1,197 @@
+{
+  "id": 17,
+  "referencia": "d017",
+  "nombre": "Curry de calabaza y garbanzos",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Si usas garbanzos secos, remojar la noche anterior; la receta asume garbanzos remojados y escurridos."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 30,
+    "unidad": "minutes",
+    "notas": "Cocción en sartén/olla hasta que la calabaza esté tierna y la salsa reduzca."
+  },
+  "informacion_nutricional": {
+    "kcal": 757,
+    "grasas_g": 57.32,
+    "carbohidratos_g": 54.16,
+    "proteina_g": 18.33
+  },
+  "ingredientes": [
+    {
+      "clave": "ground_turmeric",
+      "nombre": "Cúrcuma molida",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_coriander",
+      "nombre": "Cilantro molido",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cardamom",
+      "nombre": "Cardamomo molido",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 0.5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "cinnamon_stick",
+      "nombre": "Canela en rama",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "chili_flakes",
+      "nombre": "Hojuelas de chile (opcional)",
+      "cantidad": 1,
+      "unidad": "pinch",
+      "unidad_display": "pinch",
+      "equivalente_g": 0.3,
+      "estado": "opcional",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7,
+      "estado": "para sofreír",
+      "enlace": ""
+    },
+    {
+      "clave": "red_onion",
+      "nombre": "Cebolla roja",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 25,
+      "estado": "en rodajas",
+      "enlace": ""
+    },
+    {
+      "clave": "dried_chickpeas",
+      "nombre": "Garbanzos secos (remojados)",
+      "cantidad": 50,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "1¾ oz ≈ 50 g, remojados",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_cream",
+      "nombre": "Crema de coco",
+      "cantidad": 148,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 148,
+      "estado": "5 fl oz ≈ 148 ml",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_broth",
+      "nombre": "Caldo vegano",
+      "cantidad": 207,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 207,
+      "estado": "7 fl oz ≈ 207 ml",
+      "enlace": ""
+    },
+    {
+      "clave": "winter_squash",
+      "nombre": "Calabaza de invierno (winter squash)",
+      "cantidad": 50,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "1¾ oz ≈ 50 g, pelada y en cubos",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_coconut_flakes",
+      "nombre": "Hojuelas de coco tostado",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 5,
+      "estado": "para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "crunchy_seed_mix",
+      "nombre": "Mezcla de semillas crujientes",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10,
+      "estado": "ver p.24, para servir",
+      "enlace": "recipe://crunchy-seed-mix-p24"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "En un tazón mezcla las especias secas (cúrcuma, comino, coriandro, cardamomo, hojuelas de chile) y reserva.",
+    "Calienta el aceite de coco en una olla, sofríe la cebolla 2–3 minutos hasta translúcida.",
+    "Agrega las especias y sofríe 1 minuto para liberar aromas.",
+    "Incorpora los garbanzos remojados, la crema de coco y el caldo. Lleva a hervor suave y cuece 10 minutos.",
+    "Añade la calabaza en cubos y cocina hasta que esté tierna (10–15 min). Ajusta sazón con sal.",
+    "Sirve con hojuelas de coco tostado y mezcla de semillas por encima."
+  ],
+  "notas": [
+    "Si usas garbanzos en lata, ajusta (usar aprox. 160 g escurridos) y reduce tiempo de cocción.",
+    "La receta original sugiere remojar garbanzos 8–12 hrs para textura óptima.",
+    "Puedes agregar espinaca al final para más verde."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Conversión de 1¾ oz → 50 g aplicada a garbanzo y calabaza.",
+      "Fl oz convertidos a ml para crema de coco y caldo.",
+      "Equivalente_g = -1 en ingredientes con unidad 'g'."
+    ],
+    "correcciones": [
+      "Se aplicaron conversiones oz→g y fl oz→ml y redondeos prácticos."
+    ]
+  }
+}

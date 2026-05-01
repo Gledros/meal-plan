@@ -1,0 +1,81 @@
+{
+  "id": 15,
+  "referencia": "b015",
+  "nombre": "Pan de banana tostado",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Solo tostar rebanadas"
+  },
+  "informacion_nutricional": {
+    "kcal": 531,
+    "grasas_g": 20.29,
+    "carbohidratos_g": 81.63,
+    "proteina_g": 11.05
+  },
+  "ingredientes": [
+    {
+      "clave": "banana_bread_slice",
+      "nombre": "Rebanadas de pan de banana",
+      "cantidad": 2,
+      "unidad": "piece",
+      "unidad_display": "rebanada",
+      "equivalente_g": 120,
+      "estado": "ver receta p.34",
+      "enlace": "recipe://banana-bread-p34"
+    },
+    {
+      "clave": "coconut_yogurt",
+      "nombre": "Yogur de coco",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 20,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_coconut_flakes",
+      "nombre": "Hojuelas de coco tostado",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de maple",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Tuesta las rebanadas de pan de banana a tu gusto.",
+    "Sirve con yogur de coco, espolvorea las hojuelas de coco tostado y un chorrito de jarabe de maple."
+  ],
+  "notas": [
+    "Usa pan de banana casero o comprado (la referencia está en p.34).",
+    "El yogur y las hojuelas aportan textura y cremosidad; ajustar toppings al gusto."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Equivalente en gramos de las rebanadas de pan es estimado (120g para 2 rebanadas).",
+      "Hojuelas de coco y yogur son toppings, cantidades orientativas."
+    ],
+    "correcciones": [
+      "Se aplicó equivalente_g = -1 sólo en ingredientes en 'g' (no hubo 'g' puros salvo equivalentes estimados)."
+    ]
+  }
+}

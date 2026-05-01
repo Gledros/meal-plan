@@ -1,0 +1,124 @@
+{
+  "id": 17,
+  "referencia": "m017",
+  "nombre": "Ensalada de ejotes a la parrilla y broccolini con aderezo de tahini",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Blanquear los ejotes y saltear el broccolini para marcarlos."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Cocción corta para mantener textura crujiente."
+  },
+  "informacion_nutricional": {
+    "kcal": 388,
+    "grasas_g": 36.32,
+    "carbohidratos_g": 13.54,
+    "proteina_g": 7.92
+  },
+  "ingredientes": [
+    {
+      "clave": "green_beans",
+      "nombre": "Ejotes (green beans)",
+      "cantidad": 99,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "3½ oz ≈ 99 g",
+      "enlace": ""
+    },
+    {
+      "clave": "broccolini",
+      "nombre": "Broccolini",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "ramito",
+      "equivalente_g": 40,
+      "estado": "½ manojo, cortado",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de ajonjolí tostado",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 14,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_hazelnuts",
+      "nombre": "Avellanas tostadas",
+      "cantidad": 7,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "¼ oz ≈ 7 g, picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "tahini",
+      "nombre": "Tahini",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 32,
+      "estado": "para el aderezo",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Jugo de limón",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "para el aderezo",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_zest",
+      "nombre": "Ralladura de limón",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "ralladura, para aderezo",
+      "enlace": ""
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua (para ajustar aderezo)",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "opcional, para aligerar el aderezo",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Blanquea los ejotes 2 minutos en agua hirviendo y refresca en agua fría.",
+    "En sartén caliente, saltea broccolini con una pizca de aceite hasta dorar ligeramente.",
+    "Mezcla tahini, jugo de limón, ralladura y agua hasta obtener una textura cremosa; sazona.",
+    "Mezcla ejotes y broccolini con el aderezo, espolvorea avellanas tostadas y sirve."
+  ],
+  "notas": [
+    "Puedes sustituir avellanas por almendras fileteadas si lo prefieres.",
+    "El aderezo tahini puede diluirse con agua para obtener la consistencia deseada.",
+    "Servir tibio o a temperatura ambiente."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Cantidad de aceite y tahini aporta gran parte de las grasas (consumir según gusto).",
+      "Broccolini y ejotes deben quedar ligeramente crujientes."
+    ],
+    "correcciones": [
+      "oz→g aplicado: 3½ oz ejotes → 99 g; ¼ oz avellanas → 7 g; equivalentes de cucharadas aproximados."
+    ]
+  }
+}

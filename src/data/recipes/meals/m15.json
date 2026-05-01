@@ -1,0 +1,136 @@
+{
+  "id": 15,
+  "referencia": "m015",
+  "nombre": "Sushi hand rolls",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 25,
+    "unidad": "minutes",
+    "notas": "Cocción del arroz y tiempo de reposo"
+  },
+  "informacion_nutricional": {
+    "kcal": 525,
+    "grasas_g": 17.52,
+    "carbohidratos_g": 83.96,
+    "proteina_g": 10.39
+  },
+  "ingredientes": [
+    {
+      "clave": "sushi_rice",
+      "nombre": "Arroz para sushi, enjuagado",
+      "cantidad": 78,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "seco, enjuagado",
+      "enlace": ""
+    },
+    {
+      "clave": "kombu",
+      "nombre": "Kombu (alga seca)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 2,
+      "estado": "1 hoja, opcional para cocer el arroz",
+      "enlace": ""
+    },
+    {
+      "clave": "rice_vinegar",
+      "nombre": "Vinagre de arroz",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "nori_sheets",
+      "nombre": "Hojas de nori",
+      "cantidad": 2,
+      "unidad": "piece",
+      "unidad_display": "hoja",
+      "equivalente_g": 10,
+      "estado": "cortadas a la mitad (para 4 hand rolls)",
+      "enlace": ""
+    },
+    {
+      "clave": "avocado",
+      "nombre": "Aguacate",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75,
+      "estado": "en láminas",
+      "enlace": ""
+    },
+    {
+      "clave": "cucumber",
+      "nombre": "Pepino",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75,
+      "estado": "cortado en tiras a lo largo",
+      "enlace": ""
+    },
+    {
+      "clave": "yellow_bell_pepper",
+      "nombre": "Pimiento amarillo",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": "en tiras finas",
+      "enlace": ""
+    },
+    {
+      "clave": "nori_furikake",
+      "nombre": "Furikake de nori",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_aioli",
+      "nombre": "Alioli vegano",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 14,
+      "estado": "ver p.18, opcional",
+      "enlace": "recipe://vegan-aioli-p18"
+    }
+  ],
+  "pasos": [
+    "Cocer el arroz con 3 fl oz (≈90 ml) de agua y kombu según la técnica clásica; tapar y dejar reposar 10 min.",
+    "Añadir vinagre de arroz al arroz cocido y mezclar para enfriar y dar sabor.",
+    "Colocar una mitad de hoja de nori sobre superficie, poner 3 cucharadas de arroz y aplanar en forma triangular.",
+    "Agregar relleno (aguacate, pepino, pimiento), espolvorear furikake y enrollar formando cono.",
+    "Servir con alioli vegano y salsa a elección."
+  ],
+  "notas": [
+    "Rinde 4 hand rolls; usar 2 hojas de nori cortadas a la mitad.",
+    "Kombu es opcional pero aporta umami; se retira antes de servir.",
+    "Si no encuentras alioli vegano, usar mayonesa vegana o salsa de soya ligera."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Conversión 2¾ oz arroz → 78 g (seco).",
+      "Kombu y nori son ingredientes secos; peso estimado.",
+      "Alioli y furikake cantidades orientativas."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 para arroz (unidad g)."
+    ]
+  }
+}

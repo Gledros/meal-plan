@@ -1,0 +1,115 @@
+{
+  "id": 14,
+  "referencia": "b014",
+  "nombre": "Banana pancakes",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 321,
+    "grasas_g": 11.62,
+    "carbohidratos_g": 47.14,
+    "proteina_g": 29.13
+  },
+  "ingredientes": [
+    {
+      "clave": "banana",
+      "nombre": "Plátano maduro grande",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 120,
+      "estado": "hecho puré",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 13,
+      "estado": "derretido",
+      "enlace": ""
+    },
+    {
+      "clave": "vanilla_protein_powder",
+      "nombre": "Proteína vegetal sabor vainilla",
+      "cantidad": 12,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "almond_milk",
+      "nombre": "Leche de almendra",
+      "cantidad": 220,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 226,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "baking_powder",
+      "nombre": "Polvo para hornear",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 8,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "all_purpose_flour",
+      "nombre": "Harina de trigo",
+      "cantidad": 225,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_almonds",
+      "nombre": "Almendra molida",
+      "cantidad": 30,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Bate plátano, aceite, proteína, polvo para hornear y leche de almendra. Agrega harina y almendra molida y mezcla.",
+    "Calienta una sartén antiadherente, agrega un poco de aceite. Cocina las pancakes por tandas, volteando cuando salgan burbujas.",
+    "Sirve con frambuesas o fresas, miel de maple y más plátano si lo deseas."
+  ],
+  "notas": [
+    "Las pancakes pueden congelarse.",
+    "Puedes agregar vainilla al gusto o usar otra leche vegetal.",
+    "La proteína es opcional.",
+    "El peso de la harina es para pancakes esponjosos."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Plátano estimado en grande. Si es pequeño usa 1.5 piezas.",
+      "Harina y almendra molida pueden variar por textura deseada.",
+      "Leche de almendra puede variar/marca."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 para ingredientes en gramos."
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": 17,
+  "referencia": "b017",
+  "nombre": "Smoothie de frutos rojos para llevar",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Licuar hasta obtener textura homogénea; ajustar cantidad de leche según preferencia."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 629,
+    "grasas_g": 26.38,
+    "carbohidratos_g": 72.83,
+    "proteina_g": 14.97
+  },
+  "ingredientes": [
+    {
+      "clave": "frozen_mixed_berries",
+      "nombre": "Frutos rojos congelados",
+      "cantidad": 156,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "congelados, mezcla de berries",
+      "enlace": ""
+    },
+    {
+      "clave": "acai_powder",
+      "nombre": "Polvo de açaí",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 14,
+      "estado": "en polvo",
+      "enlace": ""
+    },
+    {
+      "clave": "rolled_oats",
+      "nombre": "Avena en hojuelas (porridge)",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 12,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "almond_milk",
+      "nombre": "Leche de almendra (o vegetal)",
+      "cantidad": 270,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 270,
+      "estado": "9–10 fl oz aprox.",
+      "enlace": ""
+    },
+    {
+      "clave": "banana",
+      "nombre": "Plátano",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 120,
+      "estado": "maduro, hecho puré",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_hemp_seeds",
+      "nombre": "Semillas de cáñamo molidas",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10,
+      "estado": "molidas",
+      "enlace": ""
+    },
+    {
+      "clave": "baby_spinach",
+      "nombre": "Espinaca baby",
+      "cantidad": 21,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "puñado",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Coloca todos los ingredientes en la licuadora.",
+    "Licúa hasta obtener una textura homogénea y cremosa; añade más leche si la quieres más líquida.",
+    "Vierte en termo o vaso para llevar y sirve."
+  ],
+  "notas": [
+    "El rango de frutos rojos en la receta original es 3½–5½ oz; aquí se usó 5½ oz → 156 g para una porción abundante.",
+    "El polvo de açaí es opcional; puede sustituirse por más berries.",
+    "Si quieres menos calorías, reduce la cantidad de leche vegetal o la proteína en polvo."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Frutos rojos y plátano determinan la dulzura; ajustar maple/edulcorante si es necesario.",
+      "Avena en cucharadas: medida pequeña, aporta cuerpo."
+    ],
+    "correcciones": [
+      "oz→g y fl oz→ml aplicados donde correspondía; ingredientes en g usan equivalente_g = -1."
+    ]
+  }
+}

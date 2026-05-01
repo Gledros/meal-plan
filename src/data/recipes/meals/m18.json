@@ -1,0 +1,154 @@
+{
+  "id": 18,
+  "referencia": "m018",
+  "nombre": "Saag de tofu y espinaca",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Saltear y luego cocer a fuego lento"
+  },
+  "informacion_nutricional": {
+    "kcal": 413,
+    "grasas_g": 35.32,
+    "carbohidratos_g": 15.32,
+    "proteina_g": 16.84
+  },
+  "ingredientes": [
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "firm_tofu",
+      "nombre": "Tofu extra firme",
+      "cantidad": 78,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "2¾ oz, presionado y cortado en cubos",
+      "enlace": ""
+    },
+    {
+      "clave": "small_onion",
+      "nombre": "Cebolla pequeña",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 25,
+      "estado": "picada",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 2,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 10,
+      "estado": "finamente picado",
+      "enlace": ""
+    },
+    {
+      "clave": "garam_masala",
+      "nombre": "Garam masala",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_turmeric",
+      "nombre": "Cúrcuma molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_milk",
+      "nombre": "Leche/crema de coco",
+      "cantidad": 104,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 104,
+      "estado": "3½ fl oz aprox.",
+      "enlace": ""
+    },
+    {
+      "clave": "frozen_spinach",
+      "nombre": "Espinaca congelada",
+      "cantidad": 71,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "2½ oz",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Calienta aceite en sartén y dora los cubos de tofu hasta que estén dorados por todos lados; retira y reserva.",
+    "En la misma sartén, añade cebolla y ajo y sofríe hasta translúcidos.",
+    "Agrega las especias y remueve 1 minuto, incorpora la leche de coco, la espinaca y el tofu.",
+    "Cocina a fuego lento 8–10 minutos, sazona con sal y pimienta y sirve."
+  ],
+  "notas": [
+    "Tofu: escurrir y prensar para mejor textura.",
+    "Espinaca congelada se incorpora directamente; ajustar sal al final.",
+    "Se puede añadir chile al gusto."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Conversión 2¾ oz tofu → 78 g; 2½ oz espinaca → 71 g.",
+      "Leche de coco 3½ fl oz → 104 ml (equivalente_g incluido)."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 aplicado en ingredientes con unidad 'g'."
+    ]
+  }
+}
