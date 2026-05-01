@@ -58,8 +58,11 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 		<ul class='p-2'>
 			{
 				smoothie.ingredientes.map((ingrediente, index) => (
-					<li class="text-lg list-none list-outside relative pl-8 before:content-['✅'] before:absolute before:left-0 before:top-1.25 before:text-lg before:leading-none">
-						{ingrediente}
+					<li
+						class="text-lg list-none list-outside relative pl-8 before:content-['✅'] before:absolute before:left-0 before:top-1.25 before:text-lg before:leading-none"
+						data-ingredient-raw={ingrediente}
+					>
+						<span class='ingredient-text'>{ingrediente}</span>
 					</li>
 				))
 			}

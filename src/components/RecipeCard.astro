@@ -62,7 +62,10 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 
 		<div class='grid items-start gap-2 md:grid-cols-2'>
 			<div>
-				<p class='mb-1 text-lg text-center font-semibold'>
+				<p
+					class='mb-1 text-lg text-center font-semibold'
+					data-ingredients-header
+				>
 					Ingredientes (1 porción)
 				</p>
 				<ul class='p-2 space-y-1'>
@@ -71,11 +74,20 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 							<li class='flex items-baseline gap-2 text-base'>
 								<span class='shrink-0 text-lg leading-none'>✅</span>
 								<span>
-									<span class='font-semibold'>
-										{formatQuantity(ing.cantidad, ing.unidad_display)}{' '}
-										{ing.unidad_display}
+									<span
+										class='font-semibold ingredient-quantity'
+										data-qty-base={ing.cantidad}
+										data-qty-unit={ing.unidad_display}
+									>
+										<span class='ingredient-qty-value'>
+											{formatQuantity(ing.cantidad, ing.unidad_display)}
+										</span>
+										<span class='ingredient-qty-unit'>
+											{' '}
+											{ing.unidad_display}
+										</span>
 									</span>{' '}
-									<span>{ing.nombre}</span>
+									<span class='ingredient-name'>{ing.nombre}</span>
 									{ing.estado && (
 										<span class='text-sm text-gray-500 italic'>
 											{' '}

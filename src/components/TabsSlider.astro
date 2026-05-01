@@ -33,6 +33,21 @@ const defaultTabId = tabs[0]?.id ?? '';
 				</button>
 			))
 		}
+		<div class='tabs-controls' data-tabs-controls>
+			<label class='tabs-controls-label' for='multiplier-select'
+				>Porciones</label
+			>
+			<select
+				id='multiplier-select'
+				class='tabs-multiplier'
+				data-multiplier
+				aria-label='Multiplicar porciones'
+			>
+				<option value='1'>x1</option>
+				<option value='3' selected>x3</option>
+				<option value='5'>x5</option>
+			</select>
+		</div>
 	</div>
 	<div class='tabs-viewport' data-tabs-viewport>
 		<div class='tabs-track' data-tabs-track>
@@ -168,6 +183,136 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 		setTabsOffsets();
 		setActiveTab(activeIndex, false);
+
+		// Multiplier logic: update ingredient quantities shown in panels
+		const multiplierSelect = root.querySelector('[data-multiplier]');
+
+		const FRACTIONS = [
+			[1 / 8, '⅛'],
+			[1 / 4, '¼'],
+			[1 / 3, '⅓'],
+			[1 / 2, '½'],
+			[2 / 3, '⅔'],
+			[3 / 4, '¾'],
+		];
+
+		const FRACTION_UNITS = new Set([
+			'taza',
+			'cda',
+			'cdita',
+			'cup',
+			'tbsp',
+			'tsp',
+		]);
+
+		const formatQuantityClient = (value, unit) => {
+			const useFraction =
+				typeof unit === 'string' && FRACTION_UNITS.has(unit.toLowerCase());
+			if (!useFraction) {
+				if (Number.isInteger(value)) return String(value);
+				const rounded = Math.round(value * 100) / 100;
+				return String(rounded).replace(/\.0+$/, '');
+			}
+
+			const whole = Math.floor(value);
+			const decimal = value - whole;
+			if (decimal < 0.01) return whole === 0 ? '0' : String(whole);
+
+			let best = FRACTIONS[0];
+			for (const f of FRACTIONS) {
+				if (Math.abs(f[0] - decimal) < Math.abs(best[0] - decimal)) best = f;
+			}
+			const [frac, symbol] = best;
+			if (Math.abs(frac - decimal) > 0.04) return String(value);
+			return whole === 0 ? symbol : `${whole}${symbol}`;
+		};
+
+		const parseLeadingQuantity = (text) => {
+			if (!text) return null;
+			const regex =
+				/^\s*((?:\d+\s+\d+\/\d+)|\d+\/\d+|\d+(?:\.\d+)?|[½¼¾⅛⅓⅔⅝⅜])/;
+			const m = String(text).match(regex);
+			if (!m) return null;
+			const token = m[1];
+			let num = 0;
+			if (/^[½¼¾⅛⅓⅔⅝⅜]$/.test(token)) {
+				const map = {
+					'½': 0.5,
+					'¼': 0.25,
+					'¾': 0.75,
+					'⅛': 0.125,
+					'⅓': 1 / 3,
+					'⅔': 2 / 3,
+					'⅝': 0.625,
+					'⅜': 0.375,
+				};
+				num = map[token] ?? 0;
+			} else if (token.indexOf(' ') !== -1 && token.indexOf('/') !== -1) {
+				const parts = token.split(/\s+/);
+				const whole = Number(parts[0]);
+				const [n, d] = parts[1].split('/');
+				num = whole + Number(n) / Number(d);
+			} else if (token.indexOf('/') !== -1) {
+				const [n, d] = token.split('/');
+				num = Number(n) / Number(d);
+			} else {
+				num = Number(token);
+			}
+			const rest = text.slice(m[0].length).trimStart();
+			return { num, rest };
+		};
+
+		const updateQuantities = (mult) => {
+			// structured ingredients (RecipeCard)
+			const qtyNodes = Array.from(root.querySelectorAll('[data-qty-base]'));
+			qtyNodes.forEach((node) => {
+				const base = Number(node.getAttribute('data-qty-base'));
+				if (Number.isNaN(base)) return;
+				const unit = node.getAttribute('data-qty-unit') ?? '';
+				const newValue = base * mult;
+				const formatted = formatQuantityClient(newValue, unit);
+				const valueEl = node.querySelector('.ingredient-qty-value');
+				const unitEl = node.querySelector('.ingredient-qty-unit');
+				if (valueEl) valueEl.textContent = formatted;
+				if (unitEl) unitEl.textContent = unit ? ' ' + unit : '';
+			});
+
+			// smoothie / free-text ingredients (try to parse leading quantity)
+			const rawItems = Array.from(
+				root.querySelectorAll('[data-ingredient-raw]'),
+			);
+			rawItems.forEach((li) => {
+				const raw = li.getAttribute('data-ingredient-raw') ?? '';
+				const parsed = parseLeadingQuantity(raw);
+				if (!parsed) return;
+				const { num, rest } = parsed;
+				const newValue = num * mult;
+				const unitCandidate = rest.split(/\s+/)[0] ?? '';
+				const formatted = formatQuantityClient(newValue, unitCandidate);
+				const newText = `${formatted}${rest ? ' ' + rest : ''}`;
+				const textEl = li.querySelector('.ingredient-text');
+				if (textEl) textEl.textContent = newText;
+				else li.textContent = newText;
+			});
+
+			// update headers
+			const headers = Array.from(
+				root.querySelectorAll('[data-ingredients-header]'),
+			);
+			headers.forEach((h) => {
+				const n = Number(mult) || 1;
+				h.textContent = `Ingredientes (${n === 1 ? '1 porción' : `${n} porciones`})`;
+			});
+		};
+
+		if (multiplierSelect instanceof HTMLSelectElement) {
+			multiplierSelect.addEventListener('change', () => {
+				const m = Number(multiplierSelect.value) || 1;
+				updateQuantities(m);
+			});
+			// initialize according to default value
+			updateQuantities(Number(multiplierSelect.value) || 1);
+		}
 	}
 </script>
 
@@ -187,7 +332,7 @@ const defaultTabId = tabs[0]?.id ?? '';
 		z-index: 9;
 		display: flex;
 		gap: 0.5rem;
-		overflow-x: auto;
+		/* overflow-x: hidden; */
 		padding: 0.75rem 0.5rem;
 		background: rgba(255, 255, 255, 0.92);
 		backdrop-filter: blur(6px);
@@ -242,6 +387,56 @@ const defaultTabId = tabs[0]?.id ?? '';
 		width: 100%;
 	}
 
+	.tabs-controls {
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+		margin-left: 0.5rem;
+	}
+
+	.tabs-controls-label {
+		font-weight: 700;
+		font-size: 0.95rem;
+		color: #374151;
+		white-space: nowrap;
+	}
+
+	.tabs-multiplier {
+		padding: 0.45rem 0.75rem;
+		border-radius: 9999px;
+		border: 1px solid #b8b8b9;
+		background: #f9fafb;
+		color: #374151;
+		font-weight: 700;
+		cursor: pointer;
+		font-size: 0.95rem;
+	}
+
+	@media (max-width: 1023px) {
+		.tabs-list {
+			flex-wrap: wrap;
+		}
+		.tabs-controls {
+			order: 2;
+			flex: 1 1 100%;
+			width: 100%;
+			justify-content: center;
+			margin-top: 0.5rem;
+		}
+		.tabs-controls-label {
+			display: inline-block;
+			margin-right: 0.5rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.tabs-controls {
+			margin-left: auto;
+			order: 0;
+			flex: 0 0 auto;
+		}
+	}
+
 	@media (min-width: 1024px) {
 		.tabs-list {
 			left: 50%;
@@ -259,7 +454,8 @@ const defaultTabId = tabs[0]?.id ?? '';
 		.tabs-list {
 			justify-content: stretch;
 			flex-wrap: wrap;
-			overflow-x: visible;
+			/* overflow-x: visible; */
+			overflow-x: hidden;
 			padding: 0.625rem;
 			border-width: 1px;
 			border-top-width: 0;
@@ -275,6 +471,10 @@ const defaultTabId = tabs[0]?.id ?? '';
 			width: 100%;
 			text-align: center;
 			white-space: normal;
+		}
+
+		.tabs-viewport {
+			padding-top: 0;
 		}
 	}
 
