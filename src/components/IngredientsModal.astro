@@ -1,13 +1,46 @@
 ---
-import ReadmeModal from './ReadmeModal.astro';
+import PortionMultiplier from './PortionMultiplier.astro';
+import TabsSlider from './TabsSlider.astro';
+
+type IngredientItem = {
+	cantidad: number;
+	unidad?: string;
+	nombre: string;
+	[key: string]: unknown;
+};
+
+type WeekCategory = {
+	notas?: string;
+	lista: IngredientItem[];
+};
+
+type WeekData = Record<string, unknown>;
+
+interface WeekConfig {
+	id?: string;
+	label?: string;
+	week: WeekData;
+	title?: string;
+}
+
+interface PreparedWeekConfig {
+	id: string;
+	label: string;
+	week: WeekData;
+	sectionColumns: string[][];
+	storageKey: string;
+}
+
 interface Props {
-	week: Record<string, any>;
+	week?: WeekData;
+	weeks?: WeekConfig[];
 	title?: string;
 	triggerLabel?: string;
 }
 
 const {
 	week,
+	weeks = [],
 	title = 'Lista de compras',
 	triggerLabel = 'Lista de compras',
 } = Astro.props;
@@ -18,6 +51,99 @@ const categoryNames: Record<string, string> = {
 	despensa: 'Despensa',
 	basicos: 'Básicos',
 };
+
+const desktopColumnOrder = [
+	['frutas_verduras'],
+	['refrigerados_congelados', 'basicos'],
+	['despensa'],
+];
+
+const isWeekCategory = (value: unknown): value is WeekCategory => {
+	if (!value || typeof value !== 'object') return false;
+	const category = value as WeekCategory;
+	return Array.isArray(category.lista);
+};
+
+const getValidCategoryKeys = (weekData: WeekData) =>
+	Object.keys(weekData).filter((key) => isWeekCategory(weekData[key]));
+
+const getSectionColumns = (weekData: WeekData) => {
+	const categoryKeys = getValidCategoryKeys(weekData);
+	const knownCategoryKeys = new Set(desktopColumnOrder.flat());
+	const remainingCategoryKeys = categoryKeys.filter(
+		(key) => !knownCategoryKeys.has(key),
+	);
+
+	return desktopColumnOrder
+		.map((columnKeys, index) =>
+			(index === 2
+				? [...columnKeys, ...remainingCategoryKeys]
+				: columnKeys
+			).filter((key) => categoryKeys.includes(key)),
+		)
+		.filter((columnKeys) => columnKeys.length > 0);
+};
+
+const normalizeIdentifierPart = (value: unknown) =>
+	String(value ?? '')
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/(^-|-$)/g, '');
+
+const getIngredientId = (
+	weekId: string,
+	categoryKey: string,
+	item: Record<string, unknown>,
+	index: number,
+) =>
+	[
+		normalizeIdentifierPart(weekId),
+		normalizeIdentifierPart(categoryKey),
+		normalizeIdentifierPart(item.nombre),
+		normalizeIdentifierPart(item.unidad) || 'sin-unidad',
+		normalizeIdentifierPart(item.cantidad) || 'sin-cantidad',
+		String(index),
+	].join('__');
+
+const hashString = (value: string) => {
+	let hash = 0;
+	for (let i = 0; i < value.length; i += 1) {
+		hash = (hash * 31 + value.charCodeAt(i)) | 0;
+	}
+	return Math.abs(hash).toString(36);
+};
+
+const sourceWeeks: WeekConfig[] =
+	weeks.length > 0
+		? weeks
+		: [{ id: 'semana-1', label: 'Semana 1', week: week ?? {} }];
+
+const resolvedWeeks: PreparedWeekConfig[] = sourceWeeks.map((entry, index) => {
+	const weekNumber = Number((entry.week as Record<string, unknown>).semana);
+	const label =
+		entry.label ??
+		(Number.isFinite(weekNumber) && weekNumber > 0
+			? `Semana ${weekNumber}`
+			: `Semana ${index + 1}`);
+	const id =
+		normalizeIdentifierPart(entry.id ?? label) || `semana-${index + 1}`;
+	const weekTitle = entry.title ?? `${title} (${label.toLowerCase()})`;
+	return {
+		id,
+		label,
+		week: entry.week,
+		sectionColumns: getSectionColumns(entry.week),
+		storageKey: `ingredients-checklist-${hashString(
+			`${weekTitle}:${id}:${JSON.stringify(entry.week)}`,
+		)}`,
+	};
+});
+
+const modalBaseId = normalizeIdentifierPart(title) || 'lista-de-compras';
+const defaultWeekId = resolvedWeeks[0]?.id ?? '';
+const weekTabs = resolvedWeeks.map(({ id, label }) => ({ id, label }));
 
 // Mapeo de unidades para display en español
 const unitDisplayMap: Record<string, string> = {
@@ -44,14 +170,18 @@ const unitDisplayMap: Record<string, string> = {
 	rebanada: 'rebanada',
 };
 
-const displayUnit = (u) => {
+const displayUnit = (u: unknown) => {
 	if (!u) return '';
 	const key = String(u).trim().toLowerCase();
-	return unitDisplayMap[key] ?? u;
+	return unitDisplayMap[key] ?? String(u);
 };
 ---
 
-<div class='ingredients-modal' data-ingredients-modal>
+<div
+	class='ingredients-modal'
+	data-ingredients-modal
+	data-ingredients-default-week={defaultWeekId}
+>
 	<button
 		type='button'
 		class='ingredients-modal__trigger'
@@ -75,91 +205,316 @@ const displayUnit = (u) => {
 		>
 			<header class='ingredients-modal__header'>
 				<h2 aria-label={title}>{title}</h2>
-				<button
-					type='button'
-					class='ingredients-modal__close'
-					data-ingredients-close
-					aria-label='Cerrar lista de compras'
-				>
-					Cerrar
-				</button>
+				<div class='ingredients-modal__actions'>
+					<button
+						type='button'
+						class='ingredients-modal__reset'
+						data-ingredients-reset
+						aria-label='Reiniciar lista de compras'
+					>
+						Reiniciar
+					</button>
+					<PortionMultiplier
+						id={`${modalBaseId}-multiplier`}
+						wrapperClass='w-fit flex gap-2 items-center'
+						labelClass='tabs-controls-label'
+						selectClass='tabs-multiplier'
+						ariaLabel='Multiplicar porciones de lista de compras'
+						value={3}
+					/>
+					<button
+						type='button'
+						class='ingredients-modal__close'
+						data-ingredients-close
+						aria-label='Cerrar lista de compras'
+					>
+						Cerrar
+					</button>
+				</div>
 			</header>
 			<div class='ingredients-modal__content'>
-				<div class='ingredients-modal__body'>
+				<TabsSlider tabs={weekTabs} ariaLabel='Semanas de lista de compras'>
 					{
-						Object.entries(week).map(([key, cat]) => (
-							<section style='margin-bottom:1rem'>
-								<h3>{categoryNames[key] ?? key}</h3>
-								{cat.notas ? (
-									<p class='text-sm text-gray-600'>{cat.notas}</p>
-								) : null}
-								<ul style='margin-top:0.5rem;'>
-									{cat.lista.map((item) => (
-										<li data-qty-base={item.cantidad} data-qty-unit={item.unidad}>
-											<span class='ingredients-qty-value'>{item.cantidad}</span>
-											{item.unidad ? <span class='ingredients-qty-unit'> {displayUnit(item.unidad)}</span> : null} — {item.nombre}
-										</li>
+						resolvedWeeks.map((weekConfig) => (
+							<section
+								data-tab-panel={weekConfig.id}
+								data-ingredients-storage-key={weekConfig.storageKey}
+								class='p-1 md:p-2'
+							>
+								<div class='ingredients-modal__body'>
+									{weekConfig.sectionColumns.map((columnKeys) => (
+										<div class='ingredients-modal__column'>
+											{columnKeys.map((key) => {
+												const category = weekConfig.week[key];
+												if (!isWeekCategory(category)) return null;
+												return (
+													<section
+														class={`ingredients-modal__section ingredients-modal__section--${key}`}
+													>
+														<h3 class='font-bold text-xl'>
+															{categoryNames[key] ?? key}
+														</h3>
+														{category.notas ? (
+															<details class='ingredients-modal__notes'>
+																<summary>Notas</summary>
+																<p>{category.notas}</p>
+															</details>
+														) : null}
+														<ul class='ingredients-modal__list'>
+															{category.lista.map((item, index) => (
+																<li
+																	data-qty-base={item.cantidad}
+																	data-qty-unit={item.unidad}
+																	data-ingredient-id={getIngredientId(
+																		weekConfig.id,
+																		key,
+																		item,
+																		index,
+																	)}
+																>
+																	<label class='ingredients-modal__item'>
+																		<input
+																			type='checkbox'
+																			class='ingredients-modal__checkbox'
+																			data-ingredient-checkbox
+																		/>
+																		<span class='ingredients-modal__item-text'>
+																			<span class='ingredients-qty-value'>
+																				{item.cantidad}
+																			</span>
+																			{item.unidad ? (
+																				<span class='ingredients-qty-unit'>
+																					{' '}
+																					{displayUnit(item.unidad)}
+																				</span>
+																			) : null}{' '}
+																			— {item.nombre}
+																		</span>
+																	</label>
+																</li>
+															))}
+														</ul>
+													</section>
+												);
+											})}
+										</div>
 									))}
-								</ul>
+								</div>
 							</section>
 						))
 					}
-				</div>
+				</TabsSlider>
 			</div>
 		</section>
 	</div>
 </div>
 
 <script is:inline>
- 	(() => {
+	(() => {
 		const UNIT_DISPLAY = {
-			"piece": "pieza",
-			"unit": "unidad",
-			"unidad": "unidad",
-			"pieza": "pieza",
-			"g": "g",
-			"gr": "g",
-			"gramos": "g",
-			"kg": "kg",
-			"ml": "ml",
-			"l": "l",
-			"taza": "taza",
-			"cup": "taza",
-			"cda": "cda",
-			"cucharada": "cda",
-			"tbsp": "cda",
-			"cdita": "cdita",
-			"cucharadita": "cdita",
-			"tsp": "cdita",
-			"scoop": "scoop",
-			"slice": "rebanada",
-			"rebanada": "rebanada",
+			piece: 'pieza',
+			unit: 'unidad',
+			unidad: 'unidad',
+			pieza: 'pieza',
+			g: 'g',
+			gr: 'g',
+			gramos: 'g',
+			kg: 'kg',
+			ml: 'ml',
+			l: 'l',
+			taza: 'taza',
+			cup: 'taza',
+			cda: 'cda',
+			cucharada: 'cda',
+			tbsp: 'cda',
+			cdita: 'cdita',
+			cucharadita: 'cdita',
+			tsp: 'cdita',
+			scoop: 'scoop',
+			slice: 'rebanada',
+			rebanada: 'rebanada',
 		};
- 		const roots = document.querySelectorAll('[data-ingredients-modal]');
+		const MULTIPLIER_EVENT = 'portions-multiplier:change';
+		const parseMultiplier = (value) => {
+			const parsed = Number(value);
+			return Number.isFinite(parsed) && parsed > 0 ? parsed : 1;
+		};
+		const getCurrentMultiplier = () => {
+			const select = document.querySelector('[data-portion-multiplier]');
+			if (!(select instanceof HTMLSelectElement)) return 1;
+			return parseMultiplier(select.value);
+		};
+		const readChecklistState = (storageKey) => {
+			const raw = window.localStorage.getItem(storageKey);
+			if (!raw) return {};
+			try {
+				const parsed = JSON.parse(raw);
+				if (parsed && typeof parsed === 'object') return parsed;
+			} catch (error) {
+				console.warn('No se pudo leer la lista de compras guardada.', error);
+			}
+			return {};
+		};
+		const saveChecklistState = (storageKey, state) => {
+			try {
+				window.localStorage.setItem(storageKey, JSON.stringify(state));
+			} catch (error) {
+				console.warn('No se pudo guardar la lista de compras.', error);
+			}
+		};
+		const getIngredientIdFromCheckbox = (checkbox) =>
+			checkbox.closest('li')?.getAttribute('data-ingredient-id') ?? '';
+		const setCheckedClass = (checkbox, isChecked) => {
+			const itemNode = checkbox.closest('li');
+			if (itemNode) itemNode.classList.toggle('is-checked', isChecked);
+		};
+
+		const FRACTIONS = [
+			[1 / 8, '⅛'],
+			[1 / 4, '¼'],
+			[1 / 3, '⅓'],
+			[1 / 2, '½'],
+			[2 / 3, '⅔'],
+			[3 / 4, '¾'],
+		];
+		const FRACTION_UNITS = new Set([
+			'taza',
+			'cda',
+			'cdita',
+			'cup',
+			'tbsp',
+			'tsp',
+		]);
+		const formatQuantityClient = (value, unit) => {
+			const useFraction =
+				typeof unit === 'string' && FRACTION_UNITS.has(unit.toLowerCase());
+			if (!useFraction) {
+				if (Number.isInteger(value)) return String(value);
+				const rounded = Math.round(value * 100) / 100;
+				return String(rounded).replace(/\.0+$/, '');
+			}
+
+			const whole = Math.floor(value);
+			const decimal = value - whole;
+			if (decimal < 0.01) return whole === 0 ? '0' : String(whole);
+
+			let best = FRACTIONS[0];
+			for (const fraction of FRACTIONS) {
+				if (Math.abs(fraction[0] - decimal) < Math.abs(best[0] - decimal)) {
+					best = fraction;
+				}
+			}
+			const [closestFraction, symbol] = best;
+			if (Math.abs(closestFraction - decimal) > 0.04) return String(value);
+			return whole === 0 ? symbol : `${whole}${symbol}`;
+		};
+
+		const roots = document.querySelectorAll('[data-ingredients-modal]');
 		for (const root of roots) {
 			const trigger = root.querySelector('[data-ingredients-trigger]');
 			const overlay = root.querySelector('[data-ingredients-overlay]');
 			const dialog = root.querySelector('[data-ingredients-dialog]');
 			const closeButton = root.querySelector('[data-ingredients-close]');
-
-			// Move overlay to document.body to avoid stacking/transform containment
-			if (overlay && overlay.parentElement !== document.body) {
-				document.body.appendChild(overlay);
-			}
+			const resetButton = root.querySelector('[data-ingredients-reset]');
 
 			if (
 				!(trigger instanceof HTMLButtonElement) ||
 				!(overlay instanceof HTMLElement) ||
 				!(dialog instanceof HTMLElement) ||
-				!(closeButton instanceof HTMLButtonElement)
+				!(closeButton instanceof HTMLButtonElement) ||
+				!(resetButton instanceof HTMLButtonElement)
 			) {
 				continue;
 			}
 
-			trigger.setAttribute('aria-expanded', 'false');
+			// Move overlay to document.body to avoid stacking/transform containment
+			if (overlay.parentElement !== document.body) {
+				document.body.appendChild(overlay);
+			}
+
+			const weekButtons = Array.from(
+				overlay.querySelectorAll('[data-tab-target]'),
+			).filter((node) => node instanceof HTMLButtonElement);
+			const weekPanels = Array.from(
+				overlay.querySelectorAll('[data-tab-panel]'),
+			).filter((node) => node instanceof HTMLElement);
+			const checklistStateByStorageKey = new Map();
+
+			const getPanelStorageKey = (panel) =>
+				panel.getAttribute('data-ingredients-storage-key') ??
+				'ingredients-checklist-default';
+
+			const ensureChecklistState = (storageKey) => {
+				if (!checklistStateByStorageKey.has(storageKey)) {
+					checklistStateByStorageKey.set(
+						storageKey,
+						readChecklistState(storageKey),
+					);
+				}
+				return checklistStateByStorageKey.get(storageKey) ?? {};
+			};
+
+			const applyChecklistStateToPanel = (panel) => {
+				const storageKey = getPanelStorageKey(panel);
+				const state = ensureChecklistState(storageKey);
+				const ingredientCheckboxes = Array.from(
+					panel.querySelectorAll('[data-ingredient-checkbox]'),
+				).filter((node) => node instanceof HTMLInputElement);
+
+				ingredientCheckboxes.forEach((checkbox) => {
+					const ingredientId = getIngredientIdFromCheckbox(checkbox);
+					const isChecked = Boolean(ingredientId && state[ingredientId]);
+					checkbox.checked = isChecked;
+					setCheckedClass(checkbox, isChecked);
+				});
+			};
+
+			const updateModalQuantities = (multiplier) => {
+				const qtyNodes = Array.from(
+					overlay.querySelectorAll('[data-qty-base]'),
+				);
+				qtyNodes.forEach((node) => {
+					const base = Number(node.getAttribute('data-qty-base'));
+					if (Number.isNaN(base)) return;
+					const rawUnit = node.getAttribute('data-qty-unit') ?? '';
+					const displayedUnit = UNIT_DISPLAY[rawUnit.toLowerCase()] ?? rawUnit;
+					const newValue = base * multiplier;
+					const formatted = formatQuantityClient(newValue, rawUnit);
+					const valueEl = node.querySelector('.ingredients-qty-value');
+					const unitEl = node.querySelector('.ingredients-qty-unit');
+					if (valueEl) valueEl.textContent = formatted;
+					if (unitEl)
+						unitEl.textContent = displayedUnit ? ' ' + displayedUnit : '';
+				});
+			};
 
 			let isOpen = false;
 			let lastFocusedElement = null;
+			let activeWeekId =
+				root.getAttribute('data-ingredients-default-week') ?? '';
+
+			const getActivePanel = () =>
+				weekPanels.find(
+					(panel) => panel.getAttribute('data-tab-panel') === activeWeekId,
+				) ??
+				weekPanels[0] ??
+				null;
+
+			const setActiveWeek = (nextWeekId) => {
+				if (!nextWeekId) return;
+				activeWeekId = nextWeekId;
+				const activePanel = getActivePanel();
+				if (activePanel) applyChecklistStateToPanel(activePanel);
+				updateModalQuantities(getCurrentMultiplier());
+			};
+
+			trigger.setAttribute('aria-expanded', 'false');
+			weekPanels.forEach((panel) => applyChecklistStateToPanel(panel));
+			const initialWeekId =
+				activeWeekId || weekPanels[0]?.getAttribute('data-tab-panel') || '';
+			if (initialWeekId) {
+				setActiveWeek(initialWeekId, false);
+			}
 
 			const openModal = () => {
 				if (isOpen) return;
@@ -169,15 +524,7 @@ const displayUnit = (u) => {
 				overlay.setAttribute('aria-hidden', 'false');
 				trigger.setAttribute('aria-expanded', 'true');
 				document.body.classList.add('has-ingredients-modal');
-				// Ensure quantities reflect current multiplier when opening
-				try {
-					const m =
-						Number(document.querySelector('[data-multiplier]')?.value) || 1;
-					if (typeof updateModalQuantities === 'function')
-						updateModalQuantities(m);
-				} catch (e) {
-					// ignore
-				}
+				updateModalQuantities(getCurrentMultiplier());
 				requestAnimationFrame(() => closeButton.focus());
 			};
 
@@ -188,12 +535,69 @@ const displayUnit = (u) => {
 				overlay.setAttribute('aria-hidden', 'true');
 				trigger.setAttribute('aria-expanded', 'false');
 				document.body.classList.remove('has-ingredients-modal');
-				if (lastFocusedElement instanceof HTMLElement)
+				if (lastFocusedElement instanceof HTMLElement) {
 					lastFocusedElement.focus();
+				}
 			};
+
+			overlay.addEventListener('change', (event) => {
+				const checkbox = event.target;
+				if (
+					!(checkbox instanceof HTMLInputElement) ||
+					!checkbox.matches('[data-ingredient-checkbox]')
+				) {
+					return;
+				}
+
+				const ingredientId = getIngredientIdFromCheckbox(checkbox);
+				if (!ingredientId) return;
+				const panel = checkbox.closest('[data-tab-panel]');
+				if (!(panel instanceof HTMLElement)) return;
+
+				const storageKey = getPanelStorageKey(panel);
+				const state = ensureChecklistState(storageKey);
+				if (checkbox.checked) state[ingredientId] = true;
+				else delete state[ingredientId];
+				setCheckedClass(checkbox, checkbox.checked);
+				saveChecklistState(storageKey, state);
+			});
+
+			weekButtons.forEach((button, index) => {
+				button.addEventListener('click', () => {
+					const targetWeek = button.getAttribute('data-tab-target');
+					if (!targetWeek) return;
+					setActiveWeek(targetWeek);
+				});
+
+				button.addEventListener('keydown', (event) => {
+					if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') {
+						return;
+					}
+					const direction = event.key === 'ArrowRight' ? 1 : -1;
+					const nextIndex =
+						(index + direction + weekButtons.length) % weekButtons.length;
+					const nextButton = weekButtons[nextIndex];
+					const targetWeek = nextButton?.getAttribute('data-tab-target') ?? '';
+					setActiveWeek(targetWeek);
+				});
+			});
 
 			trigger.addEventListener('click', openModal);
 			closeButton.addEventListener('click', closeModal);
+			resetButton.addEventListener('click', () => {
+				const activePanel = getActivePanel();
+				if (!(activePanel instanceof HTMLElement)) return;
+
+				const confirmed = window.confirm(
+					'¿Quieres reiniciar la lista de esta SEMANA?',
+				);
+				if (!confirmed) return;
+
+				const storageKey = getPanelStorageKey(activePanel);
+				checklistStateByStorageKey.set(storageKey, {});
+				saveChecklistState(storageKey, {});
+				applyChecklistStateToPanel(activePanel);
+			});
 			overlay.addEventListener('click', (event) => {
 				if (event.target === overlay) closeModal();
 			});
@@ -201,73 +605,11 @@ const displayUnit = (u) => {
 				if (event.key === 'Escape' && isOpen) closeModal();
 			});
 
-			// Sync quantities with global multiplier
-			const multiplierSelect = document.querySelector('[data-multiplier]');
-
-			const FRACTIONS = [
-				[1 / 8, '⅛'],
-				[1 / 4, '¼'],
-				[1 / 3, '⅓'],
-				[1 / 2, '½'],
-				[2 / 3, '⅔'],
-				[3 / 4, '¾'],
-			];
-
-			const FRACTION_UNITS = new Set([
-				'taza',
-				'cda',
-				'cdita',
-				'cup',
-				'tbsp',
-				'tsp',
-			]);
-
-			const formatQuantityClient = (value, unit) => {
-				const useFraction =
-					typeof unit === 'string' && FRACTION_UNITS.has(unit.toLowerCase());
-				if (!useFraction) {
-					if (Number.isInteger(value)) return String(value);
-					const rounded = Math.round(value * 100) / 100;
-					return String(rounded).replace(/\.0+$/, '');
-				}
-
-				const whole = Math.floor(value);
-				const decimal = value - whole;
-				if (decimal < 0.01) return whole === 0 ? '0' : String(whole);
-
-				let best = FRACTIONS[0];
-				for (const f of FRACTIONS) {
-					if (Math.abs(f[0] - decimal) < Math.abs(best[0] - decimal)) best = f;
-				}
-				const [frac, symbol] = best;
-				if (Math.abs(frac - decimal) > 0.04) return String(value);
-				return whole === 0 ? symbol : `${whole}${symbol}`;
-			};
-
-			const updateModalQuantities = (mult) => {
-				const qtyNodes = Array.from(overlay.querySelectorAll('[data-qty-base]'));
-				qtyNodes.forEach((node) => {
-					const base = Number(node.getAttribute('data-qty-base'));
-					if (Number.isNaN(base)) return;
-					const rawUnit = node.getAttribute('data-qty-unit') ?? '';
-					const dispUnit = rawUnit && typeof UNIT_DISPLAY !== 'undefined' ? (UNIT_DISPLAY[rawUnit.toLowerCase()] ?? rawUnit) : rawUnit;
-					const newValue = base * mult;
-					const formatted = formatQuantityClient(newValue, rawUnit);
-					const valueEl = node.querySelector('.ingredients-qty-value');
-					const unitEl = node.querySelector('.ingredients-qty-unit');
-					if (valueEl) valueEl.textContent = formatted;
-					if (unitEl) unitEl.textContent = dispUnit ? ' ' + dispUnit : '';
-				});
-			};
-
-			if (multiplierSelect instanceof HTMLSelectElement) {
-				multiplierSelect.addEventListener('change', () => {
-					const m = Number(multiplierSelect.value) || 1;
-					updateModalQuantities(m);
-				});
-				// initialize using current multiplier
-				updateModalQuantities(Number(multiplierSelect.value) || 1);
-			}
+			window.addEventListener(MULTIPLIER_EVENT, (event) => {
+				const detail = event instanceof CustomEvent ? event.detail : null;
+				updateModalQuantities(parseMultiplier(detail?.multiplier));
+			});
+			updateModalQuantities(getCurrentMultiplier());
 		}
 	})();
 </script>
@@ -298,9 +640,10 @@ const displayUnit = (u) => {
 		inset: 0;
 		z-index: 60;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
-		padding: 1rem;
+		padding: 1.25rem 1rem;
+		overflow-y: auto;
 		background: rgba(15, 23, 42, 0.28);
 		backdrop-filter: blur(2px);
 		opacity: 0;
@@ -311,8 +654,8 @@ const displayUnit = (u) => {
 			visibility 220ms ease;
 	}
 	.ingredients-modal__panel {
-		width: min(54rem, 88vw);
-		max-height: min(86vh, 52rem);
+		width: min(72rem, 92vw);
+		max-height: none;
 		border-radius: 1rem;
 		border: 1px solid #e2e8f0;
 		background: #ffffff;
@@ -330,6 +673,7 @@ const displayUnit = (u) => {
 		align-items: center;
 		justify-content: space-between;
 		gap: 0.75rem;
+		flex-wrap: wrap;
 		padding: 0.9rem 1.15rem;
 		border-bottom: 1px solid #e2e8f0;
 		background: #f8fafc;
@@ -339,6 +683,41 @@ const displayUnit = (u) => {
 		font-size: 1rem;
 		font-weight: 800;
 		color: #0f172a;
+	}
+	.ingredients-modal__actions {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		flex-wrap: wrap;
+		margin-left: auto;
+		justify-content: flex-end;
+	}
+	.ingredients-modal__reset {
+		border-radius: 0.65rem;
+		border: 1px solid #f59e0b;
+		background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%);
+		color: #7c2d12;
+		font-size: 0.8rem;
+		font-weight: 700;
+		padding: 0.44rem 0.72rem;
+		cursor: pointer;
+		transition:
+			background-color 140ms ease,
+			border-color 140ms ease,
+			box-shadow 140ms ease,
+			transform 140ms ease;
+		box-shadow: 0 1px 2px rgba(124, 45, 18, 0.14);
+	}
+	.ingredients-modal__reset:hover {
+		background: linear-gradient(180deg, #ffedd5 0%, #fed7aa 100%);
+		border-color: #ea580c;
+	}
+	.ingredients-modal__reset:active {
+		transform: translateY(1px);
+	}
+	.ingredients-modal__reset:focus-visible {
+		outline: 2px solid #fb923c;
+		outline-offset: 1px;
 	}
 	.ingredients-modal__close {
 		border-radius: 0.6rem;
@@ -352,12 +731,129 @@ const displayUnit = (u) => {
 	}
 	.ingredients-modal__content {
 		padding: 1rem 1.15rem 1.2rem;
-		overflow: auto;
+		flex: 1 1 auto;
+		min-height: 0;
+		overflow: visible;
+	}
+	/* Override TabsSlider to render as a centered static pill row inside the modal */
+	.ingredients-modal__content :global(.tabs-list) {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		transform: none !important;
+		width: fit-content !important;
+		max-width: 100%;
+		margin: 0 auto 0.95rem !important;
+		z-index: 1 !important;
+		border: 1px solid #e2e8f0 !important;
+		border-top: 1px solid #e2e8f0 !important;
+		border-radius: 9999px !important;
+		background: #f8fafc !important;
+		backdrop-filter: none !important;
+		padding: 0.3rem !important;
+		gap: 0.25rem !important;
+		flex-wrap: nowrap !important;
+		justify-content: center !important;
+		overflow-x: auto;
+		scrollbar-width: thin;
+	}
+	.ingredients-modal__content :global(.tabs-viewport) {
+		padding-top: 0 !important;
+	}
+	.ingredients-modal__content :global(.tabs-controls) {
+		display: none !important;
+	}
+	.ingredients-modal__content :global(.tabs-trigger) {
+		flex: 0 0 auto !important;
+		min-width: unset !important;
+		padding: 0.38rem 0.72rem !important;
+		font-size: 0.84rem !important;
+		font-weight: 700 !important;
 	}
 	.ingredients-modal__body {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.9rem 1.4rem;
 		font-size: 0.92rem;
 		line-height: 1.55;
 		color: #1e293b;
+	}
+	.ingredients-modal__column {
+		display: flex;
+		flex-direction: column;
+		gap: 0.9rem;
+		min-width: 0;
+	}
+	.ingredients-modal__section {
+		margin: 0;
+	}
+	.ingredients-modal__section h3 {
+		margin: 0;
+	}
+	.ingredients-modal__section p {
+		margin: 0.15rem 0 0;
+	}
+	.ingredients-modal__list {
+		margin: 0.4rem 0 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.3rem;
+	}
+	.ingredients-modal__item {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.55rem;
+		min-height: 1.6rem;
+	}
+	.ingredients-modal__checkbox {
+		margin: 0.22rem 0 0;
+		flex: 0 0 auto;
+		accent-color: #2563eb;
+		width: 1.08rem;
+		height: 1.08rem;
+	}
+	.ingredients-modal__item-text {
+		display: inline;
+	}
+	.ingredients-modal__list li.is-checked .ingredients-modal__item-text {
+		color: #64748b;
+		text-decoration: line-through;
+	}
+	.ingredients-modal__notes {
+		margin: 0.35rem 0 0;
+		border-radius: 0.5rem;
+		border: 1px solid #cbd5e1;
+		padding: 0.35rem 0.5rem;
+	}
+	.ingredients-modal__notes summary {
+		list-style: none;
+		cursor: pointer;
+		padding: 0;
+		font-size: 0.82rem;
+		font-weight: 600;
+		color: #334155;
+		text-align: center;
+		user-select: none;
+	}
+	.ingredients-modal__notes summary::-webkit-details-marker {
+		display: none;
+	}
+	.ingredients-modal__notes summary::after {
+		content: '▾';
+		display: inline-block;
+		margin-left: 0.35rem;
+		transition: transform 120ms ease-in-out;
+	}
+	.ingredients-modal__notes[open] summary::after {
+		transform: rotate(180deg);
+	}
+	.ingredients-modal__notes p {
+		margin: 0;
+		padding: 0.35rem 0 0;
+		font-size: 0.8rem;
+		color: #475569;
 	}
 	.ingredients-modal__overlay.is-open {
 		opacity: 1;
@@ -382,6 +878,66 @@ const displayUnit = (u) => {
 			border-left: none;
 			border-right: none;
 			border-bottom: none;
+		}
+		.ingredients-modal__content {
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+			padding-bottom: calc(1.2rem + env(safe-area-inset-bottom));
+		}
+		.ingredients-modal__header h2 {
+			flex: 1 1 100%;
+		}
+		.ingredients-modal__actions {
+			width: 100%;
+			justify-content: flex-start;
+		}
+		.ingredients-modal__content :global(.tabs-list) {
+			flex-wrap: nowrap !important;
+			width: fit-content !important;
+		}
+		.ingredients-modal__content :global(.tabs-trigger) {
+			flex: 0 0 auto !important;
+			min-width: unset !important;
+			width: auto !important;
+			white-space: nowrap !important;
+		}
+		.ingredients-modal__body {
+			grid-template-columns: 1fr;
+			gap: 0.85rem;
+		}
+		.ingredients-modal__column {
+			gap: 0.85rem;
+		}
+		.ingredients-modal__item {
+			gap: 0.65rem;
+			min-height: 2rem;
+		}
+		.ingredients-modal__checkbox {
+			width: 1.4rem;
+			height: 1.4rem;
+			margin-top: 0.12rem;
+		}
+		.ingredients-modal__reset {
+			font-size: 0.86rem;
+			padding: 0.52rem 0.82rem;
+		}
+	}
+
+	@media (min-width: 31.3125rem) and (max-width: 47.999rem) {
+		.ingredients-modal__content :global(.tabs-list) {
+			width: 100% !important;
+			max-width: 28rem;
+			flex-wrap: wrap !important;
+			justify-content: stretch !important;
+			overflow-x: hidden !important;
+		}
+
+		.ingredients-modal__content :global(.tabs-trigger) {
+			flex: 1 1 calc(50% - 0.25rem) !important;
+			min-width: calc(50% - 0.25rem) !important;
+			width: auto !important;
+			text-align: center !important;
+			white-space: normal !important;
 		}
 	}
 </style>
