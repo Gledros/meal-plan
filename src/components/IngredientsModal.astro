@@ -1,0 +1,387 @@
+---
+import ReadmeModal from './ReadmeModal.astro';
+interface Props {
+	week: Record<string, any>;
+	title?: string;
+	triggerLabel?: string;
+}
+
+const {
+	week,
+	title = 'Lista de compras',
+	triggerLabel = 'Lista de compras',
+} = Astro.props;
+
+const categoryNames: Record<string, string> = {
+	frutas_verduras: 'Frutas y verduras',
+	refrigerados_congelados: 'Refrigerados / Congelados',
+	despensa: 'Despensa',
+	basicos: 'Básicos',
+};
+
+// Mapeo de unidades para display en español
+const unitDisplayMap: Record<string, string> = {
+	piece: 'pieza',
+	unit: 'unidad',
+	unidad: 'unidad',
+	pieza: 'pieza',
+	g: 'g',
+	gr: 'g',
+	gramos: 'g',
+	kg: 'kg',
+	ml: 'ml',
+	l: 'l',
+	taza: 'taza',
+	cup: 'taza',
+	cda: 'cda',
+	cucharada: 'cda',
+	tbsp: 'cda',
+	cdita: 'cdita',
+	cucharadita: 'cdita',
+	tsp: 'cdita',
+	scoop: 'scoop',
+	slice: 'rebanada',
+	rebanada: 'rebanada',
+};
+
+const displayUnit = (u) => {
+	if (!u) return '';
+	const key = String(u).trim().toLowerCase();
+	return unitDisplayMap[key] ?? u;
+};
+---
+
+<div class='ingredients-modal' data-ingredients-modal>
+	<button
+		type='button'
+		class='ingredients-modal__trigger'
+		data-ingredients-trigger
+		aria-haspopup='dialog'
+	>
+		{triggerLabel}
+	</button>
+
+	<div
+		class='ingredients-modal__overlay'
+		data-ingredients-overlay
+		aria-hidden='true'
+	>
+		<section
+			class='ingredients-modal__panel'
+			role='dialog'
+			aria-modal='true'
+			aria-label={title}
+			data-ingredients-dialog
+		>
+			<header class='ingredients-modal__header'>
+				<h2 aria-label={title}>{title}</h2>
+				<button
+					type='button'
+					class='ingredients-modal__close'
+					data-ingredients-close
+					aria-label='Cerrar lista de compras'
+				>
+					Cerrar
+				</button>
+			</header>
+			<div class='ingredients-modal__content'>
+				<div class='ingredients-modal__body'>
+					{
+						Object.entries(week).map(([key, cat]) => (
+							<section style='margin-bottom:1rem'>
+								<h3>{categoryNames[key] ?? key}</h3>
+								{cat.notas ? (
+									<p class='text-sm text-gray-600'>{cat.notas}</p>
+								) : null}
+								<ul style='margin-top:0.5rem;'>
+									{cat.lista.map((item) => (
+										<li data-qty-base={item.cantidad} data-qty-unit={item.unidad}>
+											<span class='ingredients-qty-value'>{item.cantidad}</span>
+											{item.unidad ? <span class='ingredients-qty-unit'> {displayUnit(item.unidad)}</span> : null} — {item.nombre}
+										</li>
+									))}
+								</ul>
+							</section>
+						))
+					}
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<script is:inline>
+ 	(() => {
+		const UNIT_DISPLAY = {
+			"piece": "pieza",
+			"unit": "unidad",
+			"unidad": "unidad",
+			"pieza": "pieza",
+			"g": "g",
+			"gr": "g",
+			"gramos": "g",
+			"kg": "kg",
+			"ml": "ml",
+			"l": "l",
+			"taza": "taza",
+			"cup": "taza",
+			"cda": "cda",
+			"cucharada": "cda",
+			"tbsp": "cda",
+			"cdita": "cdita",
+			"cucharadita": "cdita",
+			"tsp": "cdita",
+			"scoop": "scoop",
+			"slice": "rebanada",
+			"rebanada": "rebanada",
+		};
+ 		const roots = document.querySelectorAll('[data-ingredients-modal]');
+		for (const root of roots) {
+			const trigger = root.querySelector('[data-ingredients-trigger]');
+			const overlay = root.querySelector('[data-ingredients-overlay]');
+			const dialog = root.querySelector('[data-ingredients-dialog]');
+			const closeButton = root.querySelector('[data-ingredients-close]');
+
+			// Move overlay to document.body to avoid stacking/transform containment
+			if (overlay && overlay.parentElement !== document.body) {
+				document.body.appendChild(overlay);
+			}
+
+			if (
+				!(trigger instanceof HTMLButtonElement) ||
+				!(overlay instanceof HTMLElement) ||
+				!(dialog instanceof HTMLElement) ||
+				!(closeButton instanceof HTMLButtonElement)
+			) {
+				continue;
+			}
+
+			trigger.setAttribute('aria-expanded', 'false');
+
+			let isOpen = false;
+			let lastFocusedElement = null;
+
+			const openModal = () => {
+				if (isOpen) return;
+				isOpen = true;
+				lastFocusedElement = document.activeElement;
+				overlay.classList.add('is-open');
+				overlay.setAttribute('aria-hidden', 'false');
+				trigger.setAttribute('aria-expanded', 'true');
+				document.body.classList.add('has-ingredients-modal');
+				// Ensure quantities reflect current multiplier when opening
+				try {
+					const m =
+						Number(document.querySelector('[data-multiplier]')?.value) || 1;
+					if (typeof updateModalQuantities === 'function')
+						updateModalQuantities(m);
+				} catch (e) {
+					// ignore
+				}
+				requestAnimationFrame(() => closeButton.focus());
+			};
+
+			const closeModal = () => {
+				if (!isOpen) return;
+				isOpen = false;
+				overlay.classList.remove('is-open');
+				overlay.setAttribute('aria-hidden', 'true');
+				trigger.setAttribute('aria-expanded', 'false');
+				document.body.classList.remove('has-ingredients-modal');
+				if (lastFocusedElement instanceof HTMLElement)
+					lastFocusedElement.focus();
+			};
+
+			trigger.addEventListener('click', openModal);
+			closeButton.addEventListener('click', closeModal);
+			overlay.addEventListener('click', (event) => {
+				if (event.target === overlay) closeModal();
+			});
+			window.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && isOpen) closeModal();
+			});
+
+			// Sync quantities with global multiplier
+			const multiplierSelect = document.querySelector('[data-multiplier]');
+
+			const FRACTIONS = [
+				[1 / 8, '⅛'],
+				[1 / 4, '¼'],
+				[1 / 3, '⅓'],
+				[1 / 2, '½'],
+				[2 / 3, '⅔'],
+				[3 / 4, '¾'],
+			];
+
+			const FRACTION_UNITS = new Set([
+				'taza',
+				'cda',
+				'cdita',
+				'cup',
+				'tbsp',
+				'tsp',
+			]);
+
+			const formatQuantityClient = (value, unit) => {
+				const useFraction =
+					typeof unit === 'string' && FRACTION_UNITS.has(unit.toLowerCase());
+				if (!useFraction) {
+					if (Number.isInteger(value)) return String(value);
+					const rounded = Math.round(value * 100) / 100;
+					return String(rounded).replace(/\.0+$/, '');
+				}
+
+				const whole = Math.floor(value);
+				const decimal = value - whole;
+				if (decimal < 0.01) return whole === 0 ? '0' : String(whole);
+
+				let best = FRACTIONS[0];
+				for (const f of FRACTIONS) {
+					if (Math.abs(f[0] - decimal) < Math.abs(best[0] - decimal)) best = f;
+				}
+				const [frac, symbol] = best;
+				if (Math.abs(frac - decimal) > 0.04) return String(value);
+				return whole === 0 ? symbol : `${whole}${symbol}`;
+			};
+
+			const updateModalQuantities = (mult) => {
+				const qtyNodes = Array.from(overlay.querySelectorAll('[data-qty-base]'));
+				qtyNodes.forEach((node) => {
+					const base = Number(node.getAttribute('data-qty-base'));
+					if (Number.isNaN(base)) return;
+					const rawUnit = node.getAttribute('data-qty-unit') ?? '';
+					const dispUnit = rawUnit && typeof UNIT_DISPLAY !== 'undefined' ? (UNIT_DISPLAY[rawUnit.toLowerCase()] ?? rawUnit) : rawUnit;
+					const newValue = base * mult;
+					const formatted = formatQuantityClient(newValue, rawUnit);
+					const valueEl = node.querySelector('.ingredients-qty-value');
+					const unitEl = node.querySelector('.ingredients-qty-unit');
+					if (valueEl) valueEl.textContent = formatted;
+					if (unitEl) unitEl.textContent = dispUnit ? ' ' + dispUnit : '';
+				});
+			};
+
+			if (multiplierSelect instanceof HTMLSelectElement) {
+				multiplierSelect.addEventListener('change', () => {
+					const m = Number(multiplierSelect.value) || 1;
+					updateModalQuantities(m);
+				});
+				// initialize using current multiplier
+				updateModalQuantities(Number(multiplierSelect.value) || 1);
+			}
+		}
+	})();
+</script>
+
+<style>
+	.ingredients-modal {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+	}
+	.ingredients-modal__trigger {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.35rem;
+		border-radius: 9999px;
+		border: 1px solid #b8b8b9;
+		background: rgba(255, 255, 255, 0.92);
+		color: #334155;
+		font-size: 0.875rem;
+		font-weight: 700;
+		line-height: 1;
+		padding: 0.6rem 0.95rem;
+		cursor: pointer;
+	}
+	.ingredients-modal__overlay {
+		position: fixed;
+		inset: 0;
+		z-index: 60;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		background: rgba(15, 23, 42, 0.28);
+		backdrop-filter: blur(2px);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition:
+			opacity 220ms ease,
+			visibility 220ms ease;
+	}
+	.ingredients-modal__panel {
+		width: min(54rem, 88vw);
+		max-height: min(86vh, 52rem);
+		border-radius: 1rem;
+		border: 1px solid #e2e8f0;
+		background: #ffffff;
+		box-shadow:
+			0 26px 60px -35px rgba(15, 23, 42, 0.7),
+			0 12px 28px -18px rgba(15, 23, 42, 0.45);
+		transform: translateY(14px) scale(0.98);
+		transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+	.ingredients-modal__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.75rem;
+		padding: 0.9rem 1.15rem;
+		border-bottom: 1px solid #e2e8f0;
+		background: #f8fafc;
+	}
+	.ingredients-modal__header h2 {
+		margin: 0;
+		font-size: 1rem;
+		font-weight: 800;
+		color: #0f172a;
+	}
+	.ingredients-modal__close {
+		border-radius: 0.6rem;
+		border: 1px solid #cbd5e1;
+		background: #ffffff;
+		color: #334155;
+		font-size: 0.8rem;
+		font-weight: 700;
+		padding: 0.4rem 0.65rem;
+		cursor: pointer;
+	}
+	.ingredients-modal__content {
+		padding: 1rem 1.15rem 1.2rem;
+		overflow: auto;
+	}
+	.ingredients-modal__body {
+		font-size: 0.92rem;
+		line-height: 1.55;
+		color: #1e293b;
+	}
+	.ingredients-modal__overlay.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+	.ingredients-modal__overlay.is-open .ingredients-modal__panel {
+		transform: translateY(0) scale(1);
+	}
+	:global(body.has-ingredients-modal) {
+		overflow: hidden;
+	}
+	@media (max-width: 640px) {
+		.ingredients-modal__overlay {
+			padding: 0;
+			align-items: flex-end;
+		}
+		.ingredients-modal__panel {
+			width: 100%;
+			max-height: 100dvh;
+			border-radius: 1rem 1rem 0 0;
+			border-left: none;
+			border-right: none;
+			border-bottom: none;
+		}
+	}
+</style>
