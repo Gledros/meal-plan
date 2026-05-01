@@ -70,16 +70,16 @@
       "cantidad": 2.0,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 27.6,
+      "equivalente_g": -1,
       "estado": "para freír superficialmente"
     },
     {
       "clave": "fresh_herbs",
       "nombre": "Hierbas frescas picadas (sobrantes)",
-      "cantidad": 5.0,
+      "cantidad": 21,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 5.0,
+      "equivalente_g": -1,
       "estado": "opcionales, sobrantes de la semana"
     },
     {

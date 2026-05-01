@@ -22,28 +22,28 @@
     {
       "clave": "red_cabbage",
       "nombre": "Col morada",
-      "cantidad": 99.23,
+      "cantidad": 99,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 99.23,
+      "equivalente_g": -1,
       "estado": "rallada finamente"
     },
     {
       "clave": "carrot",
       "nombre": "Zanahoria",
-      "cantidad": 1.0,
+      "cantidad": 50,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 80.0,
+      "equivalente_g": -1,
       "estado": "en juliana"
     },
     {
       "clave": "beansprouts",
       "nombre": "Germinado de frijol",
-      "cantidad": 49.61,
+      "cantidad": 21,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 49.61,
+      "equivalente_g": -1,
       "estado": "fresco"
     },
     {
@@ -58,10 +58,10 @@
     {
       "clave": "rice_paper_rounds",
       "nombre": "Láminas de papel de arroz",
-      "cantidad": 8.0,
+      "cantidad": 57,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 120.0,
+      "equivalente_g": -1,
       "estado": "secas, para rehidratar"
     },
     {

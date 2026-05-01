@@ -43,7 +43,7 @@
       "cantidad": 2.0,
       "unidad": "clove",
       "unidad_display": "diente",
-      "equivalente_g": 10.0,
+      "equivalente_g": -1,
       "estado": "machacado"
     },
     {
@@ -58,10 +58,10 @@
     {
       "clave": "ruby_red_grapefruit",
       "nombre": "Toronja roja (ruby red)",
-      "cantidad": 0.25,
+      "cantidad": 7,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 60.0,
+      "equivalente_g": -1,
       "estado": "en gajos, sin piel ni membrana"
     },
     {

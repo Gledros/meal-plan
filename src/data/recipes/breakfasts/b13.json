@@ -1,0 +1,134 @@
+{
+  "id": 13,
+  "referencia": "b013",
+  "nombre": "Mango smoothie bowl",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "No requiere cocción."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 415,
+    "grasas_g": 13.68,
+    "carbohidratos_g": 72.82,
+    "proteina_g": 25.52
+  },
+  "ingredientes": [
+    {
+      "clave": "frozen_mango",
+      "nombre": "Mango congelado",
+      "cantidad": 156,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "en trozos",
+      "enlace": ""
+    },
+    {
+      "clave": "banana",
+      "nombre": "Plátano",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "vanilla_protein_powder",
+      "nombre": "Proteína vegetal sabor vainilla",
+      "cantidad": 12,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_yogurt",
+      "nombre": "Yogur de coco",
+      "cantidad": 60,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de maple",
+      "cantidad": 15,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_water",
+      "nombre": "Agua de coco",
+      "cantidad": 60,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 62,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "banana_topping",
+      "nombre": "Plátano",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": "rebanado, topping",
+      "enlace": ""
+    },
+    {
+      "clave": "granola",
+      "nombre": "Granola",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 14,
+      "estado": "ver receta p.32",
+      "enlace": "recipe://granola-p32"
+    },
+    {
+      "clave": "coconut_flakes",
+      "nombre": "Hojuelas de coco tostado",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Licúa el mango, plátano, proteína, yogur de coco y maple hasta que quede suave.",
+    "Agrega el agua de coco y mezcla a la consistencia deseada.",
+    "Sirve en bowl con plátano, granola y coco tostado arriba."
+  ],
+  "notas": [
+    "La proteína en polvo puede omitirse si lo deseas.",
+    "Hojuelas de coco pueden ser naturales o tostadas.",
+    "Puedes cambiar toppings a tu preferencia."
+  ],
+  "validacion": {
+    "score": 89,
+    "warnings": [
+      "Cantidad de mango 156g = 5½ oz.",
+      "Banana para topping puede omitirse.",
+      "Granola y coco como toppings, peso orientativo."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 para ingredientes en gramos."
+    ]
+  }
+}

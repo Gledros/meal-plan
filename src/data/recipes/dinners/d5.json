@@ -22,10 +22,10 @@
     {
       "clave": "leftover_red_lentil_dal",
       "nombre": "Sobrante de dal de lentejas rojas",
-      "cantidad": 300.0,
+      "cantidad": 99,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 300.0,
+      "equivalente_g": -1,
       "estado": "frío, del refrigerador",
       "enlace": "recipe://red-lentil-dal-d003"
     },

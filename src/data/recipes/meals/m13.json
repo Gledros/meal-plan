@@ -1,0 +1,114 @@
+{
+  "id": 13,
+  "referencia": "m013",
+  "nombre": "Crêpe de garbanzo con aguacate y sauerkraut",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 415,
+    "grasas_g": 6.48,
+    "carbohidratos_g": 23.72,
+    "proteina_g": 6.06
+  },
+  "ingredientes": [
+    {
+      "clave": "chickpea_crepes",
+      "nombre": "Crêpes de harina de garbanzo",
+      "cantidad": 2,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 70,
+      "estado": "ver receta p.36",
+      "enlace": ""
+    },
+    {
+      "clave": "avocado",
+      "nombre": "Aguacate",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 140,
+      "estado": "pelado, sin hueso, rebanado",
+      "enlace": ""
+    },
+    {
+      "clave": "roma_tomato",
+      "nombre": "Jitomate roma",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": "rebanado",
+      "enlace": ""
+    },
+    {
+      "clave": "sauerkraut",
+      "nombre": "Sauerkraut (chucrut)",
+      "cantidad": 4,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 48,
+      "estado": "ver receta p.20",
+      "enlace": "recipe://sauerkraut-p20"
+    },
+    {
+      "clave": "lime_wedge",
+      "nombre": "Limón",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "gajo",
+      "equivalente_g": 10,
+      "estado": "para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 3,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Prepara la mezcla y cocina los crêpes siguiendo la receta (p.36).",
+    "Coloca aguacate y jitomate sobre el crêpe, añade sal y pimienta.",
+    "Agrega el sauerkraut y sirve doblando, acompaña con el gajo de limón."
+  ],
+  "notas": [
+    "Puedes agregar espinaca, kale o verduras extra.",
+    "El aguacate puede sustituirse por hummus.",
+    "El sauerkraut aporta probióticos y sabor."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "El peso del crêpe es aproximado (usado para 2 piezas).",
+      "Las medidas de gajo de limón/pimienta/sal son referencias.",
+      "Chucrut puede ser comercial (triturado en cda bien compactas)."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 para ingredientes en gramos."
+    ]
+  }
+}

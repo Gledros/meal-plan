@@ -22,10 +22,10 @@
     {
       "clave": "spaghetti",
       "nombre": "Spaghetti (o pasta a elección)",
-      "cantidad": 56.7,
+      "cantidad": 57,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 56.7,
+      "equivalente_g": -1,
       "estado": "seco, sin cocer"
     },
     {

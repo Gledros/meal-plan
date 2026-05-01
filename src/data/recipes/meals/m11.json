@@ -1,0 +1,168 @@
+{
+  "id": 11,
+  "referencia": "m011",
+  "nombre": "Ensalada sencilla de kale",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Puedes masajear el kale para mejor textura."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 589,
+    "carbohidratos_g": 27,
+    "grasas_g": 49,
+    "proteina_g": 1
+  },
+  "ingredientes": [
+    {
+      "clave": "curly_kale",
+      "nombre": "Kale verde rizado",
+      "cantidad": 40,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "en tiras finas, sin nervaduras",
+      "enlace": ""
+    },
+    {
+      "clave": "cavolo_nero",
+      "nombre": "Kale cavolo nero",
+      "cantidad": 40,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "en tiras finas, sin nervaduras",
+      "enlace": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 21,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "1½ cda",
+      "enlace": ""
+    },
+    {
+      "clave": "green_beans",
+      "nombre": "Ejote",
+      "cantidad": 45,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "cortado",
+      "enlace": ""
+    },
+    {
+      "clave": "persian_cucumber",
+      "nombre": "Pepino persa",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75,
+      "estado": "rebanado",
+      "enlace": ""
+    },
+    {
+      "clave": "fresh_mint",
+      "nombre": "Hierbabuena fresca",
+      "cantidad": 3,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "picada fina",
+      "enlace": ""
+    },
+    {
+      "clave": "crunchy_seed_mix",
+      "nombre": "Mezcla de semillas crujientes",
+      "cantidad": 10,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "ver p.24",
+      "enlace": "recipe://crunchy-seed-mix-p24"
+    },
+    {
+      "clave": "lime_juice",
+      "nombre": "Jugo de lima",
+      "cantidad": 7,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "de medio fruto",
+      "enlace": ""
+    },
+    {
+      "clave": "pea_shoots",
+      "nombre": "Brotes de chícharo",
+      "cantidad": 15,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "puñado",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "lime_wedge",
+      "nombre": "Lima",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "gajo",
+      "equivalente_g": 12,
+      "estado": "para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Remueve nervaduras de los dos tipos de kale y córtalos en tiras.",
+    "Coloca en un tazón y agrega 1 cda de aceite, masajear 5 min.",
+    "Añade pepino, ejote, menta, mezcla de semillas y brotes.",
+    "Agrega jugo de lima, más aceite, salpimienta al gusto.",
+    "Sirve con gajo de lima."
+  ],
+  "notas": [
+    "Puedes usar solo un tipo de kale y completar con espinaca.",
+    "La mezcla de semillas se sugiere la de la receta p.24.",
+    "Hierbabuena, lima y brotes como toppings.",
+    "La cantidad de aceite es en dos partes para masajear y aliñar."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "La proporción de kale, ejote, menta y brotes es estimada.",
+      "El jugo de lima y semillas es topping.",
+      "Los gramos de semillas y aceite ya ajustados.",
+      "Pepino media pieza estándar."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 en ingredientes en gramos."
+    ]
+  }
+}

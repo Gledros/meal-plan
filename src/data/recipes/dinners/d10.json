@@ -1,0 +1,166 @@
+{
+  "id": 10,
+  "referencia": "d010",
+  "nombre": "Plato de falafel",
+  "tiempo_preparacion": {
+    "tiempo": 40,
+    "unidad": "minutes",
+    "notas": "Incluye remojo y preparación de los garbanzos (ideal dejar toda la noche)."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Tiempo para freír por tandas."
+  },
+  "informacion_nutricional": {
+    "kcal": 263,
+    "grasas_g": 9.8,
+    "carbohidratos_g": 35.91,
+    "proteina_g": 18.65
+  },
+  "ingredientes": [
+    {
+      "clave": "dried_chickpeas",
+      "nombre": "Garbanzos secos",
+      "cantidad": 128,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "remojados mínimo 8 hrs",
+      "enlace": ""
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 4,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": "picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 2,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 10,
+      "estado": "machacado",
+      "enlace": ""
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso",
+      "cantidad": 1,
+      "unidad": "bunch",
+      "unidad_display": "ramito",
+      "equivalente_g": 20,
+      "estado": "hojas y tallos suaves",
+      "enlace": ""
+    },
+    {
+      "clave": "cilantro",
+      "nombre": "Cilantro",
+      "cantidad": 1,
+      "unidad": "bunch",
+      "unidad_display": "ramito",
+      "equivalente_g": 20,
+      "estado": "hojas y tallos suaves",
+      "enlace": ""
+    },
+    {
+      "clave": "fresh_mint",
+      "nombre": "Hierbabuena fresca",
+      "cantidad": 0.5,
+      "unidad": "bunch",
+      "unidad_display": "ramito",
+      "equivalente_g": 10,
+      "estado": "hojas y tallos",
+      "enlace": ""
+    },
+    {
+      "clave": "sesame_seeds",
+      "nombre": "Semillas de ajonjolí",
+      "cantidad": 9,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "crudas",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 3,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "baking_powder",
+      "nombre": "Polvo para hornear",
+      "cantidad": 2,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "½ cdita",
+      "enlace": ""
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal de mar",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "vegetable_oil",
+      "nombre": "Aceite vegetal",
+      "cantidad": 420,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "para freír",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Remojar los garbanzos por al menos 8 horas, escurrir.",
+    "Procesar todos los ingredientes excepto el aceite hasta obtener textura arenosa.",
+    "Refrigerar 30 minutos y formar bolitas pequeñas.",
+    "Freír 3-4 minutos por lado en tandas pequeñas.",
+    "Escurrir sobre papel y servir con vegetales frescos y dips."
+  ],
+  "notas": [
+    "La cantidad de aceite absorbido es muy menor al total.",
+    "El falafel se puede hornear con apenas 2 cda de aceite.",
+    "Las hierbas se consideran como ramito pequeño, ~20g."
+  ],
+  "validacion": {
+    "score": 86,
+    "warnings": [
+      "El aceite de fritura solo parte se absorbe (el total ya está ajustado en calorías).",
+      "Hierbas aproximadas por ramito.",
+      "El ajonjolí, garbanzo y polvo para hornear pesan en gramos."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 para ingredientes en gramos."
+    ]
+  }
+}

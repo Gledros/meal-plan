@@ -34,7 +34,7 @@
       "cantidad": 2.0,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 15.0,
+      "equivalente_g": -1,
       "estado": "pequeños, rebanados finamente"
     },
     {

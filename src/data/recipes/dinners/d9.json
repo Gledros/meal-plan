@@ -22,29 +22,29 @@
     {
       "clave": "quinoa",
       "nombre": "Quinoa",
-      "cantidad": 28.35,
+      "cantidad": 198,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 28.35,
+      "equivalente_g": -1,
       "estado": "seca (equivalente: 85.05g cocida / 3 oz cocida)"
     },
     {
       "clave": "bean_shakshuka",
       "nombre": "Shakshuka de frijoles pre-cocida",
-      "cantidad": 198.45,
+      "cantidad": 28,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 198.45,
+      "equivalente_g": -1,
       "estado": "sobrante del Día 08, recalentada",
       "enlace": "recipe://bean-shakshuka-b008"
     },
     {
       "clave": "red_cabbage",
       "nombre": "Col morada",
-      "cantidad": 28.35,
+      "cantidad": 28,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 28.35,
+      "equivalente_g": -1,
       "estado": "rallada finamente"
     },
     {
@@ -59,10 +59,10 @@
     {
       "clave": "pico_de_gallo",
       "nombre": "Pico de gallo",
-      "cantidad": 1.0,
+      "cantidad": 7,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 15.0,
+      "equivalente_g": -1,
       "estado": "preparado, ver p.28",
       "enlace": "recipe://pico-de-gallo-p28"
     },

@@ -22,19 +22,19 @@
     {
       "clave": "wakame",
       "nombre": "Wakame (alga marina seca)",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "seco, se rehidrata durante la cocción"
     },
     {
       "clave": "kimchi",
       "nombre": "Kimchi",
-      "cantidad": 20.0,
+      "cantidad": 14,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 20.0,
+      "equivalente_g": -1,
       "estado": "fermentado"
     },
     {

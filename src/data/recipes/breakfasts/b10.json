@@ -1,0 +1,115 @@
+{
+  "id": 10,
+  "referencia": "b010",
+  "nombre": "Bircher muesli",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Requiere al menos 1 hora o de preferencia dejar toda la noche en refrigerador."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 60,
+    "unidad": "minutes",
+    "notas": "Solo remojo, no requiere calor (puede dejarse 8 hrs toda la noche)."
+  },
+  "informacion_nutricional": {
+    "kcal": 225,
+    "grasas_g": 7.63,
+    "carbohidratos_g": 36.95,
+    "proteina_g": 29.12
+  },
+  "ingredientes": [
+    {
+      "clave": "chia_seeds",
+      "nombre": "Semillas de chía",
+      "cantidad": 15,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "vanilla_protein_powder",
+      "nombre": "Proteína vegetal sabor vainilla",
+      "cantidad": 15,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "en polvo",
+      "enlace": ""
+    },
+    {
+      "clave": "rolled_oats",
+      "nombre": "Avena en hojuelas",
+      "cantidad": 12,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "orange_juice",
+      "nombre": "Jugo de naranja",
+      "cantidad": 60,
+      "unidad": "ml",
+      "unidad_display": "ml",
+      "equivalente_g": 62,
+      "estado": "recién exprimido",
+      "enlace": ""
+    },
+    {
+      "clave": "plant_yogurt",
+      "nombre": "Yogur vegetal",
+      "cantidad": 20,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "blueberries",
+      "nombre": "Blueberries (arándanos azules)",
+      "cantidad": 15,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "8-10 piezas frescas",
+      "enlace": ""
+    },
+    {
+      "clave": "red_apple",
+      "nombre": "Manzana roja",
+      "cantidad": 0.25,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 40,
+      "estado": "sin corazón, rallada",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Mezclar semillas de chía, proteína, avena y jugo de naranja en un tazón pequeño.",
+    "Cubrir y refrigerar al menos 1 hora, preferente toda la noche.",
+    "Servir el muesli con yogur, arándanos y manzana rallada como topping."
+  ],
+  "notas": [
+    "Las medidas están basadas en equivalencias estándar de cucharadas en gramos.",
+    "El jugo de naranja puede ser natural o de caja sin azúcar.",
+    "La proteína puede omitirse si lo prefieres.",
+    "Si usas manzana pequeña, pon 1/4 pieza (~40g)."
+  ],
+  "validacion": {
+    "score": 88,
+    "warnings": [
+      "Blueberries por debajo de 20g, válido como topping.",
+      "La proteína es opcional.",
+      "La avena/polvos se pesan directo."
+    ],
+    "correcciones": [
+      "Se ajustó equivalente_g = -1 para los ingredientes en gramos."
+    ]
+  }
+}

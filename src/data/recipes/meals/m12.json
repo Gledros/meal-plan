@@ -1,0 +1,147 @@
+{
+  "id": 12,
+  "referencia": "m012",
+  "nombre": "Ensalada fría de fideos soba",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 308,
+    "grasas_g": 8.22,
+    "carbohidratos_g": 48.59,
+    "proteina_g": 14.12
+  },
+  "ingredientes": [
+    {
+      "clave": "soba_noodles",
+      "nombre": "Fideos soba (trigo sarraceno)",
+      "cantidad": 35,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "secos",
+      "enlace": ""
+    },
+    {
+      "clave": "broccolini",
+      "nombre": "Broccolini",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "ramito",
+      "equivalente_g": 40,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "edamame",
+      "nombre": "Edamame desgranado",
+      "cantidad": 28,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "fresco o congelado",
+      "enlace": ""
+    },
+    {
+      "clave": "french_radish",
+      "nombre": "Rábano francés",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 7,
+      "estado": "rebanado fino",
+      "enlace": ""
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 15,
+      "estado": "rebanada",
+      "enlace": ""
+    },
+    {
+      "clave": "tamari",
+      "nombre": "Tamari",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 14,
+      "estado": "aderezo",
+      "enlace": ""
+    },
+    {
+      "clave": "rice_vinegar",
+      "nombre": "Vinagre de arroz",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "aderezo",
+      "enlace": ""
+    },
+    {
+      "clave": "mirin",
+      "nombre": "Mirin",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "aderezo",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de ajonjolí tostado",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7,
+      "estado": "aderezo",
+      "enlace": ""
+    },
+    {
+      "clave": "red_chili",
+      "nombre": "Chile rojo fresco",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 7,
+      "estado": "finamente picado, opcional",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Hierve agua y cocina los fideos soba según el paquete.",
+    "En los últimos minutos, agrega el broccolini.",
+    "Drena y enjuaga con agua fría.",
+    "Mezcla todos los ingredientes del aderezo.",
+    "Combina fideos, broccolini, edamame, rábano y cebollita. Baña con aderezo y mezcla."
+  ],
+  "notas": [
+    "Puedes cambiar el broccolini por brócoli.",
+    "El chile rojo es opcional.",
+    "Aderezo con tamari, vinagre y mirin.",
+    "El edamame es peso sin vaina."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Peso del broccolini y fideos puede variar.",
+      "El chile rojo es topping.",
+      "Vinagre/mirin pueden omitirse si no hay."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 en ingredientes en gramos."
+    ]
+  }
+}

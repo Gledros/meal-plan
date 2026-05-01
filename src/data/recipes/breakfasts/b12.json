@@ -1,0 +1,114 @@
+{
+  "id": 12,
+  "referencia": "b012",
+  "nombre": "Tostadas de kale y setas mixtas",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 331,
+    "grasas_g": 15.37,
+    "carbohidratos_g": 46.23,
+    "proteina_g": 8.39
+  },
+  "ingredientes": [
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 13,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 5,
+      "estado": "rebanado fino",
+      "enlace": ""
+    },
+    {
+      "clave": "mixed_mushrooms",
+      "nombre": "Setas mixtas (enoki, ostión, champiñón)",
+      "cantidad": 57,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "rebanadas",
+      "enlace": ""
+    },
+    {
+      "clave": "curly_kale",
+      "nombre": "Kale rizado o cavolo nero",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "tallo",
+      "equivalente_g": 40,
+      "estado": "hojas sin tallo y troceadas",
+      "enlace": ""
+    },
+    {
+      "clave": "tamari",
+      "nombre": "Tamari",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "pumpernickel_bread",
+      "nombre": "Pan pumpernickel o integral",
+      "cantidad": 2,
+      "unidad": "piece",
+      "unidad_display": "rebanada",
+      "equivalente_g": 70,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "hot_chili_chutney",
+      "nombre": "Chutney de chile picante o pesto",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Calienta el aceite en una sartén pequeña y sofríe el ajo y las setas 3-4 min.",
+    "Agrega el kale y el tamari. Cocina hasta que se suavice.",
+    "Tuesta el pan. Unta el chutney o pesto y cubre con el salteado de verduras."
+  ],
+  "notas": [
+    "Puedes usar pesto de p.26 o chutney de tomate y chile (p.22).",
+    "El tipo de pan puede ser alemán, centeno o integral.",
+    "Setas frescas: mezcla de tu preferencia."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "El kale es 1 tallo (aprox 40g).",
+      "El chutney o pesto puede variar.",
+      "Peso del pan y setas pueden variar dependiendo de marcas."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 en ingredientes en gramos."
+    ]
+  }
+}

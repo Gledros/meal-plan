@@ -22,10 +22,10 @@
     {
       "clave": "quinoa",
       "nombre": "Quinoa",
-      "cantidad": 85.05,
+      "cantidad": 85,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 85.05,
+      "equivalente_g": -1,
       "estado": "seca, enjuagada"
     },
     {

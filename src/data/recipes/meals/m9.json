@@ -22,29 +22,29 @@
     {
       "clave": "mixed_sprouts",
       "nombre": "Brotes mixtos (mung, garbanzo, soya)",
-      "cantidad": 28.35,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 28.35,
+      "equivalente_g": -1,
       "estado": "frescos, ver p.10",
       "enlace": "recipe://growing-sprouts-p10"
     },
     {
       "clave": "snow_pea_shoots",
       "nombre": "Brotes de chícharo",
-      "cantidad": 7.09,
+      "cantidad": 14,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "frescos, microgreens"
     },
     {
       "clave": "beansprouts",
       "nombre": "Germinado de frijol",
-      "cantidad": 14.18,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 14.18,
+      "equivalente_g": -1,
       "estado": "fresco"
     },
     {
@@ -86,10 +86,10 @@
     {
       "clave": "coconut_yogurt_dressing",
       "nombre": "Aderezo de yogur de coco con limón y chile",
-      "cantidad": 1.5,
+      "cantidad": 21,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 22.5,
+      "equivalente_g": -1,
       "estado": "preparado, ver p.18",
       "enlace": "recipe://coconut-yogurt-lime-chili-dressing-p18"
     },

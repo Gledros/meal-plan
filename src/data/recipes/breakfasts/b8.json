@@ -76,28 +76,28 @@
     {
       "clave": "kale",
       "nombre": "Col rizada (kale)",
-      "cantidad": 3.0,
+      "cantidad": 397,
       "unidad": "piece",
       "unidad_display": "tallo",
-      "equivalente_g": 90.0,
+      "equivalente_g": -1,
       "estado": "tallos removidos, hojas picadas"
     },
     {
       "clave": "tinned_diced_tomatoes",
       "nombre": "Jitomates en cubos (lata)",
-      "cantidad": 396.9,
+      "cantidad": 397,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 396.9,
+      "equivalente_g": -1,
       "estado": "lata, con jugo"
     },
     {
       "clave": "cannellini_beans",
       "nombre": "Frijoles canellini (lata)",
-      "cantidad": 396.9,
+      "cantidad": 198,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 396.9,
+      "equivalente_g": -1,
       "estado": "lata, escurridos y enjuagados"
     },
     {
@@ -112,10 +112,10 @@
     {
       "clave": "tofu_cream_cheese",
       "nombre": "Queso crema de tofu",
-      "cantidad": 2.0,
+      "cantidad": 7,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 30.0,
+      "equivalente_g": -1,
       "estado": "preparado, ver p.26",
       "enlace": "recipe://tofu-cream-cheese-p26"
     },

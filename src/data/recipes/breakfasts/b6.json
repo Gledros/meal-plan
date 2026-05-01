@@ -49,10 +49,10 @@
     {
       "clave": "roma_tomato",
       "nombre": "Jitomate guaje (saladet)",
-      "cantidad": 1.0,
+      "cantidad": 156,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 60.0,
+      "equivalente_g": -1,
       "estado": "en cubos"
     },
     {
@@ -97,7 +97,7 @@
       "cantidad": 1.0,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 4.0,
+      "equivalente_g": -1,
       "estado": "picado"
     },
     {

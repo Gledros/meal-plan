@@ -1,0 +1,176 @@
+{
+  "id": 13,
+  "referencia": "d013",
+  "nombre": "Ensalada templada de lentejas y berros",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 35,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 351,
+    "grasas_g": 14.59,
+    "carbohidratos_g": 43.45,
+    "proteina_g": 14.71
+  },
+  "ingredientes": [
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 27,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "onion",
+      "nombre": "Cebolla",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 50,
+      "estado": "fina",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 2,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 10,
+      "estado": "picado fino",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "carrot",
+      "nombre": "Zanahoria",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 70,
+      "estado": "en dados",
+      "enlace": ""
+    },
+    {
+      "clave": "roma_tomato",
+      "nombre": "Jitomate roma",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": "picado",
+      "enlace": ""
+    },
+    {
+      "clave": "puy_lentils",
+      "nombre": "Lenteja puy",
+      "cantidad": 98,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_broth",
+      "nombre": "Caldo vegano",
+      "cantidad": 142,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "o agua",
+      "enlace": ""
+    },
+    {
+      "clave": "red_wine_vinegar",
+      "nombre": "Vinagre de vino tinto",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "cilantro",
+      "nombre": "Cilantro fresco",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 8,
+      "estado": "picado",
+      "enlace": ""
+    },
+    {
+      "clave": "watercress",
+      "nombre": "Berros",
+      "cantidad": 50,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 3,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "En sartén mediana, calienta la mitad del aceite y sofríe la cebolla 10 min.",
+    "Añade ajo y comino, sofríe 2 min. Incorpora zanahoria, jitomate, lentejas y caldo.",
+    "Cubre y cocina 25 min. Retira del fuego, añade vinagre, resto del aceite y cilantro.",
+    "Mezcla con los berros, salpimienta y sirve."
+  ],
+  "notas": [
+    "Las lentejas puy son pequeñas y de cocción rápida.",
+    "Puedes añadir más verduras de temporada.",
+    "El vinagre da toque ácido, puedes sustituir con jugo de limón.",
+    "Sirve tibio."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Las cantidades de caldo y lentejas pueden ajustarse.",
+      "Berros como base fresca, pesar lavados.",
+      "equivalente_g = -1 en ingredientes en gramos."
+    ],
+    "correcciones": [
+      "Pesos verificados, conversión de oz/ml a g."
+    ]
+  }
+}

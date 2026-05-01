@@ -1,0 +1,137 @@
+{
+  "id": 11,
+  "referencia": "d011",
+  "nombre": "Gyozas de vegetales con bok choy",
+  "tiempo_preparacion": {
+    "tiempo": 20,
+    "unidad": "minutes",
+    "notas": "Puedes preparar doble batch y congelar."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Incluye cocción al vapor y dorado."
+  },
+  "informacion_nutricional": {
+    "kcal": 554,
+    "carbohidratos_g": 100,
+    "grasas_g": 9,
+    "proteina_g": 17
+  },
+  "ingredientes": [
+    {
+      "clave": "bok_choy",
+      "nombre": "Bok choy",
+      "cantidad": 300,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "2 piezas, en mitades",
+      "enlace": ""
+    },
+    {
+      "clave": "water_chestnuts",
+      "nombre": "Castañas de agua",
+      "cantidad": 60,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "6 piezas, picadas finas",
+      "enlace": ""
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 15,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "rebanada",
+      "enlace": ""
+    },
+    {
+      "clave": "shiitake_mushroom",
+      "nombre": "Hongo shiitake",
+      "cantidad": 15,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "picado fino",
+      "enlace": ""
+    },
+    {
+      "clave": "ginger",
+      "nombre": "Jengibre fresco",
+      "cantidad": 7,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "rallado",
+      "enlace": ""
+    },
+    {
+      "clave": "tamari",
+      "nombre": "Salsa tamari",
+      "cantidad": 12,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "2 cditas",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de ajonjolí tostado",
+      "cantidad": 7,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "½ cda",
+      "enlace": ""
+    },
+    {
+      "clave": "gyoza_wrappers",
+      "nombre": "Lámina de gyoza",
+      "cantidad": 10,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 120,
+      "estado": "aprox. 12g c/u",
+      "enlace": ""
+    },
+    {
+      "clave": "vegetable_oil",
+      "nombre": "Aceite vegetal",
+      "cantidad": 9,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "2 cditas (para freír)",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Pica la mitad del bok choy, mezcla con castañas, cebollita, shiitake, jengibre, tamari y aceite de ajonjolí.",
+    "Coloca relleno en cada lámina, cierra y forma gyozas.",
+    "Fríe solo la base 1 min, agrega agua, tapa y cuece al vapor 3-4 min.",
+    "El resto del bok choy se saltea y sirve de guarnición.",
+    "Sirve con salsa de soya, ajonjolí, etc."
+  ],
+  "notas": [
+    "El relleno usa solo la mitad del bok choy, el resto como guarnición.",
+    "Puedes congelar gyozas ya formadas.",
+    "Las castañas de agua pueden sustituirse por apio.",
+    "Las láminas de gyoza pueden variar peso por marca."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Peso real de las láminas de gyoza puede variar.",
+      "Aceite de vegetal, parte mínimamente absorbida.",
+      "Toppings como la salsa soya no aparecen en la lista."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 en ingredientes en gramos."
+    ]
+  }
+}

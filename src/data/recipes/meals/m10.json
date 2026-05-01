@@ -1,0 +1,106 @@
+{
+  "id": 10,
+  "referencia": "m010",
+  "nombre": "Pumpernickel con hummus y pepino",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Solo tostar el pan si prefieres más textura."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Solo tuesta el pan si lo deseas."
+  },
+  "informacion_nutricional": {
+    "kcal": 449,
+    "grasas_g": 26.1,
+    "carbohidratos_g": 44.98,
+    "proteina_g": 15.78
+  },
+  "ingredientes": [
+    {
+      "clave": "pumpernickel_bread",
+      "nombre": "Pan de centeno (pumpernickel)",
+      "cantidad": 2,
+      "unidad": "piece",
+      "unidad_display": "rebanada",
+      "equivalente_g": 70,
+      "estado": "tostado",
+      "enlace": ""
+    },
+    {
+      "clave": "hummus",
+      "nombre": "Hummus (o hummus de betabel)",
+      "cantidad": 57,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "preparado",
+      "enlace": "recipe://beet-hummus-p40"
+    },
+    {
+      "clave": "persian_cucumber",
+      "nombre": "Pepino persa",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 75,
+      "estado": "rebanado finamente",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 3,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_wedge",
+      "nombre": "Limón",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "gajo",
+      "equivalente_g": 10,
+      "estado": "para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Tuesta el pan a tu gusto.",
+    "Coloca el hummus sobre el pan.",
+    "Distribuye el pepino rebanado encima.",
+    "Sazona con sal y pimienta al gusto.",
+    "Exprimir el gajo de limón sobre el pan al servir."
+  ],
+  "notas": [
+    "El hummus puede ser original o de betabel (ver p.40).",
+    "Pepino persa puede sustituirse por pepino mexicano.",
+    "Sal/pimienta al gusto y pan a tu preferencia."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Pan de centeno peso estimado. El hummus se pesa.",
+      "Pepino es media pieza estándar.",
+      "Limón como gajo, peso aproximado."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 en hummus."
+    ]
+  }
+}

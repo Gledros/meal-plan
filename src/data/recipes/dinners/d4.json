@@ -22,10 +22,10 @@
     {
       "clave": "extra_firm_tofu",
       "nombre": "Tofu extra firme",
-      "cantidad": 177.19,
+      "cantidad": 177,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 177.19,
+      "equivalente_g": -1,
       "estado": "prensado, escurrido, en 2 rebanadas gruesas"
     },
     {

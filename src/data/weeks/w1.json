@@ -1,0 +1,502 @@
+{
+	"frutas_verduras": {
+		"notas": "Algunos ingredientes pueden ser complicados de encontrar en México: 'lemongrass' (sustituye por ralladura de limón y un poco de jengibre), 'baby spinach' (puedes usar espinaca regular), 'bok choy' (sustituible por acelga o col china), 'French breakfast radish' (rábano mexicano común), 'beets' (betabel) y 'parsnip' (puedes usar más zanahoria).",
+		"lista": [
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "albahaca"
+			},
+			{
+				"cantidad": 3,
+				"unidad": "piece",
+				"nombre": "jitomate roma"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "jitomate heirloom mixto"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "toronja roja"
+			},
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "perejil liso"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "eneldo"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "cebollín"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "romero"
+			},
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "portobello grande"
+			},
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "menta"
+			},
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "cilantro"
+			},
+			{
+				"cantidad": 8,
+				"unidad": "piece",
+				"nombre": "cebollita de cambray"
+			},
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "cebolla morada"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "hierba limón (lemongrass)"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "berenjena"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "espinaca baby"
+			},
+			{
+				"cantidad": 14,
+				"unidad": "g",
+				"nombre": "arúgula"
+			},
+			{
+				"cantidad": 14,
+				"unidad": "g",
+				"nombre": "blueberries (arándano azul)"
+			},
+			{
+				"cantidad": 61,
+				"unidad": "g",
+				"nombre": "germinado de frijol"
+			},
+			{
+				"cantidad": 99,
+				"unidad": "g",
+				"nombre": "col morada"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "lechuga mantequilla"
+			},
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "rábano francés"
+			},
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "papa"
+			},
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "zanahoria"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "chirivía (parsnip)"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "durazno"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "aguacate"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "camote"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "bok choy"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "broccolini"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "plátano"
+			},
+			{
+				"cantidad": 2,
+				"unidad": "piece",
+				"nombre": "betabel"
+			}
+		]
+	},
+	"refrigerados_congelados": {
+		"notas": "El yogur de soya o coco puede sustituirse por yogur natural si eres flexible. 'Nut milk' referida puede ser leche de almendra, soja o avena (disponibles en tiendas grandes). 'Frozen mango' puede ser mango natural picado y congelado.",
+		"lista": [
+			{
+				"cantidad": 220,
+				"unidad": "ml",
+				"nombre": "bebida vegetal (leche de nuez, avena, soya…)"
+			},
+			{
+				"cantidad": 198,
+				"unidad": "g",
+				"nombre": "yogur de soya"
+			},
+			{
+				"cantidad": 240,
+				"unidad": "ml",
+				"nombre": "leche de coco"
+			},
+			{
+				"cantidad": 454,
+				"unidad": "g",
+				"nombre": "tofu firme extra"
+			},
+			{
+				"cantidad": 99,
+				"unidad": "g",
+				"nombre": "yogur de coco"
+			},
+			{
+				"cantidad": 99,
+				"unidad": "g",
+				"nombre": "mango congelado"
+			}
+		]
+	},
+	"despensa": {
+		"notas": "Algunos productos pueden ser raros fuera de supermercados grandes o tiendas naturistas: 'flaxseed' (puedes usar chía en vez), 'nutritional yeast flakes' (usa queso rallado o levadura de cerveza si eres flexible), 'sundried tomatoes' (jitomate deshidratado); 'za'atar' y 'sumac' (se pueden omitir o reemplazar por mezcla de tomillo/ajo/limón y ralladura de limón respectivamente), 'mirin' (omítelo o usa un poco de vino blanco dulce). Especias internacionales pueden omitirse si se complica conseguir.",
+		"lista": [
+			{
+				"cantidad": 39,
+				"unidad": "g",
+				"nombre": "tofu sedoso"
+			},
+			{
+				"cantidad": 40,
+				"unidad": "g",
+				"nombre": "avena de cocción rápida"
+			},
+			{
+				"cantidad": 99,
+				"unidad": "g",
+				"nombre": "agua de coco"
+			},
+			{
+				"cantidad": 30,
+				"unidad": "g",
+				"nombre": "almendras"
+			},
+			{
+				"cantidad": 7,
+				"unidad": "g",
+				"nombre": "pistaches"
+			},
+			{
+				"cantidad": 71,
+				"unidad": "g",
+				"nombre": "nuez de la india"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "cup",
+				"nombre": "pasas"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "cup",
+				"nombre": "nueces"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "cup",
+				"nombre": "almendras fileteadas"
+			},
+			{
+				"cantidad": 36,
+				"unidad": "g",
+				"nombre": "pepitas (semilla de calabaza)"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "cup",
+				"nombre": "semillas de girasol"
+			},
+			{
+				"cantidad": 30,
+				"unidad": "g",
+				"nombre": "semillas de chía"
+			},
+			{
+				"cantidad": 18,
+				"unidad": "g",
+				"nombre": "ajonjolí tostado"
+			},
+			{
+				"cantidad": 30,
+				"unidad": "g",
+				"nombre": "linaza molida"
+			},
+			{
+				"cantidad": 227,
+				"unidad": "g",
+				"nombre": "lenteja roja"
+			},
+			{
+				"cantidad": 160,
+				"unidad": "g",
+				"nombre": "garbanzo cocido"
+			},
+			{
+				"cantidad": 454,
+				"unidad": "g",
+				"nombre": "arroz integral"
+			},
+			{
+				"cantidad": 213,
+				"unidad": "g",
+				"nombre": "quinoa"
+			},
+			{
+				"cantidad": 57,
+				"unidad": "g",
+				"nombre": "spaghetti"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "cup",
+				"nombre": "coco rallado fino"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "jitomate deshidratado"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "za'atar"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "canela"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "sumac"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "paprika"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "curry en polvo"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "sal y pimienta"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "hojuelas de chile"
+			},
+			{
+				"cantidad": 500,
+				"unidad": "ml",
+				"nombre": "aceite de oliva"
+			},
+			{
+				"cantidad": 500,
+				"unidad": "ml",
+				"nombre": "aceite de uva"
+			},
+			{
+				"cantidad": 500,
+				"unidad": "ml",
+				"nombre": "aceite vegetal"
+			},
+			{
+				"cantidad": 500,
+				"unidad": "ml",
+				"nombre": "aceite de coco"
+			},
+			{
+				"cantidad": 100,
+				"unidad": "ml",
+				"nombre": "aceite de ajonjolí tostado"
+			}
+		]
+	},
+	"basicos": {
+		"notas": "Estos ingredientes son básicos de despensa; algunos pueden requerir buscar en tiendas especializadas: tahini (puede sustituirse por crema de cacahuate en emergencia), miso blanco (puede omitirse si no se encuentra), vinagres asiáticos (pueden sustituirse por vinagre blanco/mazana normal), panko (usa pan molido local).",
+		"lista": [
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "vinagre balsámico"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "vinagre de malta"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "vinagre de arroz"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "harina de trigo"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "harina leudante"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "harina de sésamo"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "harina de garbanzo"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "fécula de maíz (maicena)"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "bicarbonato de sodio"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "polvo para hornear"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "tahini"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "salsa de soya"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "mirin"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "miso blanco"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "jarabe de maple"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "azúcar mascabado"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "azúcar de coco"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "salsa agridulce de chile"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "jarabe de agave"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "vaina de vainilla"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "extracto natural de vainilla"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "láminas de arroz para rollos"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "pan de masa madre"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "panko"
+			},
+			{
+				"cantidad": 1,
+				"unidad": "piece",
+				"nombre": "levadura nutricional en copos"
+			}
+		]
+	}
+}

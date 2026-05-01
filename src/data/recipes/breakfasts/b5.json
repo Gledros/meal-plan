@@ -22,19 +22,19 @@
     {
       "clave": "baby_spinach",
       "nombre": "Espinacas baby",
-      "cantidad": 28.35,
+      "cantidad": 28,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 28.35,
+      "equivalente_g": -1,
       "estado": "hojas frescas"
     },
     {
       "clave": "frozen_banana",
       "nombre": "Plátano",
-      "cantidad": 0.5,
+      "cantidad": 99,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 60.0,
+      "equivalente_g": -1,
       "estado": "congelado"
     },
     {
@@ -43,7 +43,7 @@
       "cantidad": 99.23,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 99.23,
+      "equivalente_g": -1,
       "estado": "congelado"
     },
     {

@@ -67,10 +67,10 @@
     {
       "clave": "sea_salt",
       "nombre": "Sal de mar",
-      "cantidad": 0.25,
+      "cantidad": 128,
       "unidad": "tsp",
       "unidad_display": "cdita",
-      "equivalente_g": 1.25,
+      "equivalente_g": -1,
       "estado": "al gusto"
     },
     {

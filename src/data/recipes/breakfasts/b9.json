@@ -22,10 +22,10 @@
     {
       "clave": "flaxseed_chia_eggs",
       "nombre": "Huevos de linaza o chía",
-      "cantidad": 2.0,
+      "cantidad": 57,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 100.0,
+      "equivalente_g": -1,
       "estado": "preparados, ver p.14",
       "enlace": "recipe://flaxseed-chia-eggs-p14"
     },
@@ -50,28 +50,28 @@
     {
       "clave": "vanilla_extract",
       "nombre": "Extracto natural de vainilla",
-      "cantidad": 1.0,
+      "cantidad": 128,
       "unidad": "tsp",
       "unidad_display": "cdita",
-      "equivalente_g": 5.25,
+      "equivalente_g": -1,
       "estado": "líquido"
     },
     {
       "clave": "wholewheat_flour",
       "nombre": "Harina integral con polvo para hornear",
-      "cantidad": 127.58,
+      "cantidad": 28,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 127.58,
+      "equivalente_g": -1,
       "estado": "harina integral con leudante incorporado"
     },
     {
       "clave": "ground_almonds",
       "nombre": "Almendra molida",
-      "cantidad": 28.35,
+      "cantidad": 50,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 28.35,
+      "equivalente_g": -1,
       "estado": "finamente molida"
     },
     {
@@ -104,10 +104,10 @@
     {
       "clave": "ground_cinnamon",
       "nombre": "Canela molida",
-      "cantidad": 1.0,
+      "cantidad": 156,
       "unidad": "tsp",
       "unidad_display": "cdita",
-      "equivalente_g": 2.8,
+      "equivalente_g": -1,
       "estado": "molida"
     },
     {

@@ -1,0 +1,115 @@
+{
+  "id": 11,
+  "referencia": "b011",
+  "nombre": "Crumble de frutas con hueso asadas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Rinde 2 porciones. Puedes congelar una ya horneada para otro día."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 30,
+    "unidad": "minutes",
+    "notas": "20 min fruta + 10 min crumble, horneado a 200°C."
+  },
+  "informacion_nutricional": {
+    "kcal": 317,
+    "carbohidratos_g": 20,
+    "grasas_g": 27,
+    "proteina_g": 5
+  },
+  "ingredientes": [
+    {
+      "clave": "pecans",
+      "nombre": "Nuez pecana",
+      "cantidad": 21,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "picada groseramente",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_flour",
+      "nombre": "Harina de coco",
+      "cantidad": 21,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "fina",
+      "enlace": ""
+    },
+    {
+      "clave": "shredded_coconut",
+      "nombre": "Coco rallado",
+      "cantidad": 7,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "fino, seco",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 21,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "preferentemente sólido",
+      "enlace": ""
+    },
+    {
+      "clave": "stone_fruit_mix",
+      "nombre": "Frutas con hueso mixtas",
+      "cantidad": 300,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "durazno, ciruela, chabacano, en gajos",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cinnamon",
+      "nombre": "Canela molida",
+      "cantidad": 1,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de maple",
+      "cantidad": 10,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "opcional",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta horno a 200°C. Mezcla las nueces, harina de coco y coco rallado.",
+    "Añade el aceite de coco y desmorona con los dedos para un crumble.",
+    "Pon la fruta en ramekins, espolvorea canela y maple. Hornea 20 min.",
+    "Cubre con el crumble y hornea 10 min más. Sirve caliente."
+  ],
+  "notas": [
+    "Versión da para dos postres individuales. El maple es opcional.",
+    "Puedes cambiar el mix de frutas por la que tengas. Densidad estándar en gramos.",
+    "El aceite de coco sólido da textura crujiente."
+  ],
+  "validacion": {
+    "score": 87,
+    "warnings": [
+      "Harina y coco rallado pueden variar densidad real.",
+      "Fruta mixta: peso total, mezcla variable.",
+      "Maple puede omitirse según dulzor de la fruta."
+    ],
+    "correcciones": [
+      "equivalente_g = -1 para todos los ingredientes en gramos."
+    ]
+  }
+}

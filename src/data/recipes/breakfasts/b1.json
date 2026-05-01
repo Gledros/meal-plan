@@ -1,83 +1,83 @@
 {
-  "id": 1,
-  "referencia": "b001",
-  "nombre": "Avena con leche de almendras y pistaches",
-  "tiempo_preparacion": {
-    "tiempo": 5,
-    "unidad": "minutes",
-    "notas": "Solo tiempo activo. Requiere remojo nocturno de mínimo 8 horas en refrigerador."
-  },
-  "tiempo_cocinado": {
-    "tiempo": 5,
-    "unidad": "minutes",
-    "notas": ""
-  },
-  "informacion_nutricional": {
-    "kcal": 320,
-    "carbohidratos_g": 51,
-    "grasas_g": 16,
-    "proteina_g": 13
-  },
-  "ingredientes": [
-    {
-      "clave": "rolled_oats",
-      "nombre": "Avena en hojuelas (tipo porridge)",
-      "cantidad": 49.61,
-      "unidad": "g",
-      "unidad_display": "g",
-      "equivalente_g": 49.61,
-      "estado": "seca"
-    },
-    {
-      "clave": "ground_cinnamon",
-      "nombre": "Canela molida",
-      "cantidad": 0.5,
-      "unidad": "tsp",
-      "unidad_display": "cdita",
-      "equivalente_g": 1.4,
-      "estado": "molida"
-    },
-    {
-      "clave": "almond_milk",
-      "nombre": "Leche de almendras",
-      "cantidad": 0.5,
-      "unidad": "cup",
-      "unidad_display": "taza",
-      "equivalente_g": 123.6,
-      "estado": "líquida, sin azúcar recomendado"
-    },
-    {
-      "clave": "pistachio_nuts",
-      "nombre": "Pistaches",
-      "cantidad": 7.09,
-      "unidad": "g",
-      "unidad_display": "g",
-      "equivalente_g": 7.09,
-      "estado": "picados groseramente"
-    }
-  ],
-  "pasos": [
-    "Remojar la avena y la canela molida en la mitad de la leche de almendras y dejar reposar en el refrigerador toda la noche.",
-    "A la mañana siguiente, pasar la avena remojada a una olla y agregar la leche de almendras restante.",
-    "Cocinar a fuego medio, moviendo suavemente, hasta que el porridge espese.",
-    "Agregar un chorrito de agua si se necesita ajustar la consistencia.",
-    "Servir inmediatamente, decorado con una pizca extra de canela y los pistaches picados."
-  ],
-  "notas": [
-    "Medida original: 1¾ oz avena en hojuelas (peso en onzas) → convertido a 49.61g.",
-    "Medida original: ¼ oz pistaches (peso en onzas) → convertido a 7.09g. Es una cantidad de guarnición/decoración, válida semánticamente.",
-    "Densidades usadas: canela molida 0.56 g/ml; leche de almendras 1.03 g/ml.",
-    "El tiempo de preparación (5 min) no incluye el remojo nocturno obligatorio."
-  ],
-  "validacion": {
-    "score": 93,
-    "warnings": [
-      "Pistaches: 7.09g está por debajo del umbral heurístico de 20g. Clasificado como guarnición — no se aplica corrección.",
-      "Canela molida: ½ cdita = ~1.4g. Muy por debajo del límite de 15g para especias."
-    ],
-    "correcciones": [
-      "1¾ oz avena (onzas en peso) → 49.61g",
-      "¼ oz pistaches (onzas en peso) → 7.09g"
-    ]
-  }
+	"id": 1,
+	"referencia": "b001",
+	"nombre": "Avena con leche de almendras y pistaches",
+	"tiempo_preparacion": {
+		"tiempo": 5,
+		"unidad": "minutes",
+		"notas": "Solo tiempo activo. Requiere remojo nocturno de mínimo 8 horas en refrigerador."
+	},
+	"tiempo_cocinado": {
+		"tiempo": 5,
+		"unidad": "minutes",
+		"notas": ""
+	},
+	"informacion_nutricional": {
+		"kcal": 320,
+		"carbohidratos_g": 51,
+		"grasas_g": 16,
+		"proteina_g": 13
+	},
+	"ingredientes": [
+		{
+			"clave": "rolled_oats",
+			"nombre": "Avena en hojuelas (tipo porridge)",
+			"cantidad": 50,
+			"unidad": "g",
+			"unidad_display": "g",
+			"equivalente_g": -1,
+			"estado": "seca"
+		},
+		{
+			"clave": "ground_cinnamon",
+			"nombre": "Canela molida",
+			"cantidad": 0.5,
+			"unidad": "tsp",
+			"unidad_display": "cdita",
+			"equivalente_g": 1.4,
+			"estado": "molida"
+		},
+		{
+			"clave": "almond_milk",
+			"nombre": "Leche de almendras",
+			"cantidad": 0.5,
+			"unidad": "cup",
+			"unidad_display": "taza",
+			"equivalente_g": -1,
+			"estado": "líquida, sin azúcar recomendado"
+		},
+		{
+			"clave": "pistachio_nuts",
+			"nombre": "Pistaches",
+			"cantidad": 7,
+			"unidad": "g",
+			"unidad_display": "g",
+			"equivalente_g": -1,
+			"estado": "picados groseramente"
+		}
+	],
+	"pasos": [
+		"Remojar la avena y la canela molida en la mitad de la leche de almendras y dejar reposar en el refrigerador toda la noche.",
+		"A la mañana siguiente, pasar la avena remojada a una olla y agregar la leche de almendras restante.",
+		"Cocinar a fuego medio, moviendo suavemente, hasta que el porridge espese.",
+		"Agregar un chorrito de agua si se necesita ajustar la consistencia.",
+		"Servir inmediatamente, decorado con una pizca extra de canela y los pistaches picados."
+	],
+	"notas": [
+		"Medida original: 1¾ oz avena en hojuelas (peso en onzas) → convertido a 49.61g.",
+		"Medida original: ¼ oz pistaches (peso en onzas) → convertido a 7.09g. Es una cantidad de guarnición/decoración, válida semánticamente.",
+		"Densidades usadas: canela molida 0.56 g/ml; leche de almendras 1.03 g/ml.",
+		"El tiempo de preparación (5 min) no incluye el remojo nocturno obligatorio."
+	],
+	"validacion": {
+		"score": 93,
+		"warnings": [
+			"Pistaches: 7.09g está por debajo del umbral heurístico de 20g. Clasificado como guarnición — no se aplica corrección.",
+			"Canela molida: ½ cdita = ~1.4g. Muy por debajo del límite de 15g para especias."
+		],
+		"correcciones": [
+			"1¾ oz avena (onzas en peso) → 49.61g",
+			"¼ oz pistaches (onzas en peso) → 7.09g"
+		]
+	}
 }

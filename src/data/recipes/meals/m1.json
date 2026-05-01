@@ -22,10 +22,10 @@
     {
       "clave": "brown_rice_cooked",
       "nombre": "Arroz integral cocido, tibio",
-      "cantidad": 255.15,
+      "cantidad": 255,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 255.15,
+      "equivalente_g": -1,
       "estado": "cocido, tibio"
     },
     {
@@ -49,28 +49,28 @@
     {
       "clave": "raisins",
       "nombre": "Pasas",
-      "cantidad": 1.0,
+      "cantidad": 7,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 12.75,
+      "equivalente_g": -1,
       "estado": "secas"
     },
     {
       "clave": "flat_leaf_parsley",
       "nombre": "Perejil liso",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "picado groseramente"
     },
     {
       "clave": "fresh_mint",
       "nombre": "Hierbabuena fresca",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "picada groseramente"
     },
     {

@@ -25,7 +25,7 @@
       "cantidad": 2.0,
       "unidad": "piece",
       "unidad_display": "rebanada",
-      "equivalente_g": 120.0,
+      "equivalente_g": -1,
       "estado": "rebanado, listo para tostar",
       "enlace": "recipe://carrot-parsnip-bread-p34"
     },

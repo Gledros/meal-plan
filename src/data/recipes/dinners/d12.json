@@ -1,0 +1,155 @@
+{
+  "id": 12,
+  "referencia": "d012",
+  "nombre": "Sopa de zanahoria y calabaza rostizada",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 30,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 727,
+    "grasas_g": 12.36,
+    "carbohidratos_g": 135.45,
+    "proteina_g": 21.99
+  },
+  "ingredientes": [
+    {
+      "clave": "butternut_squash",
+      "nombre": "Calabaza butternut",
+      "cantidad": 298,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "pelada y en cubos",
+      "enlace": ""
+    },
+    {
+      "clave": "baby_carrots",
+      "nombre": "Zanahoria baby",
+      "cantidad": 1,
+      "unidad": "bunch",
+      "unidad_display": "ramito",
+      "equivalente_g": 120,
+      "estado": "5-6 piezas, peladas",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "unidad_display": "diente",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "onion",
+      "nombre": "Cebolla",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 50,
+      "estado": "cuarteada",
+      "enlace": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_broth",
+      "nombre": "Caldo vegano",
+      "cantidad": 340,
+      "unidad": "g",
+      "unidad_display": "g",
+      "equivalente_g": -1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "quick_flatbread",
+      "nombre": "Pan plano rápido",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 35,
+      "estado": "ver receta p.36, para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_turmeric",
+      "nombre": "Cúrcuma molida",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 3,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso picado",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 4,
+      "estado": "para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "breadcrumbs",
+      "nombre": "Pan rallado",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "cda",
+      "equivalente_g": 8,
+      "estado": "para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Precalentar horno a 190°C. Combina calabaza, zanahorias, ajo y cebolla, rocía con aceite y hornea por 20-25 minutos.",
+    "Coloca las verduras horneadas en una olla con el caldo y cocina hasta suavizar.",
+    "Licúa la sopa. Agrega cúrcuma, comino y rectifica sazón.",
+    "Sirve con perejil picado y pan plano o pan rallado."
+  ],
+  "notas": [
+    "Puedes usar zanahoria común en lugar de baby.",
+    "El pan plano rápido está en p.36, sustituible por tortilla.",
+    "Los toppings pueden variar."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "El pan plano y pan rallado pueden variarse/topping.",
+      "Cantidades de verduras son aproximadas/redondeadas.",
+      "equivalente_g = -1 en ingredientes de gramos."
+    ],
+    "correcciones": [
+      "Pesos convertidos. Ajuste de equivalente_g en g."
+    ]
+  }
+}

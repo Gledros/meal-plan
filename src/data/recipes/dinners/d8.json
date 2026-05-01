@@ -22,10 +22,10 @@
     {
       "clave": "red_onion",
       "nombre": "Cebolla morada",
-      "cantidad": 0.5,
+      "cantidad": 198,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 40.0,
+      "equivalente_g": -1,
       "estado": "en gajos"
     },
     {
@@ -76,10 +76,10 @@
     {
       "clave": "pine_nuts",
       "nombre": "Piñones",
-      "cantidad": 2.0,
+      "cantidad": 50,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 18.0,
+      "equivalente_g": -1,
       "estado": "tostados en seco"
     },
     {

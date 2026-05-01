@@ -61,7 +61,7 @@
       "cantidad": 2.0,
       "unidad": "clove",
       "unidad_display": "diente",
-      "equivalente_g": 10.0,
+      "equivalente_g": -1,
       "estado": "picado finamente"
     },
     {
@@ -85,20 +85,20 @@
     {
       "clave": "vegan_broth",
       "nombre": "Caldo vegano",
-      "cantidad": 2.0,
+      "cantidad": 227,
       "unidad": "cup",
       "unidad_display": "taza",
-      "equivalente_g": 480.0,
+      "equivalente_g": -1,
       "estado": "líquido, ver p.30",
       "enlace": "recipe://vegan-broth-p30"
     },
     {
       "clave": "dried_red_lentils",
       "nombre": "Lentejas rojas secas",
-      "cantidad": 226.8,
+      "cantidad": 99,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 226.8,
+      "equivalente_g": -1,
       "estado": "secas, sin remojar"
     },
     {
@@ -113,10 +113,10 @@
     {
       "clave": "french_shallot",
       "nombre": "Chalote francés",
-      "cantidad": 1.0,
+      "cantidad": 128,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 30.0,
+      "equivalente_g": -1,
       "estado": "rebanado finamente"
     },
     {
