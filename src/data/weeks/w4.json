@@ -1,0 +1,373 @@
+{
+  "semana": 4,
+  "frutas_verduras": {
+    "notas": "Semana 4 contiene muchos ingredientes frescos; 'pear', 'pistachios' y algunos frutos secos pueden ser de temporada. 'wakame' y algas secas están en tiendas asiáticas. Ajusta frutas frescas según estación.",
+    "lista": [
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "brotes (beansprouts)"
+      },
+      {
+        "cantidad": 4,
+        "unidad": "piece",
+        "nombre": "zanahorias"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "calabacines (zucchini)"
+      },
+      {
+        "cantidad": 3,
+        "unidad": "piece",
+        "nombre": "apio (stalks) - 3 tallos"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "bulbo de ajo"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "papas"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "tomillo (manojito)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "lechuga baby romaine - 1 cabeza"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "lechuga iceberg - 1"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "elote / sweetcorn - 1"
+      },
+      {
+        "cantidad": 4,
+        "unidad": "piece",
+        "nombre": "cebollitas de cambray (scallions) - 4"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "rábanos French breakfast - 2"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "chiles rojos - 2"
+      },
+      {
+        "cantidad": 4,
+        "unidad": "piece",
+        "nombre": "setas oyster - 4"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "shiitake mushroom - 1 paquete"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "enoki mushrooms - 1 paquete"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "kale rizado - 1 hoja + tallo"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "perejil liso - 1 manojo"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "cilantro - 1 manojo"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "albahaca - 1 manojo"
+      },
+      {
+        "cantidad": 5,
+        "unidad": "piece",
+        "nombre": "limones - 5"
+      },
+      {
+        "cantidad": 3,
+        "unidad": "piece",
+        "nombre": "limas - 3"
+      },
+      {
+        "cantidad": 3,
+        "unidad": "piece",
+        "nombre": "aguacates - 3"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "coliflor - ½ pieza"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "pepino persa - 1"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "mango - 1"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "nectarina - 1"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "plátanos - 2"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "berenjena pequeña - 1"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "maracuyá / passionfruit - 1"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "manzana verde - 1"
+      }
+    ]
+  },
+  "refrigerados_congelados": {
+    "notas": "Leches vegetales y yogures: tamaño y tipo según preferencia. 'extra firm tofu' y acai o purés congelados se encuentran en secciones congeladas o refrigeradas de tiendas naturistas o supermercados grandes.",
+    "lista": [
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "leche de soya (½ cup por receta) - compra envase"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "yogur de coco (coconut/soy yogurt) 3¾ oz ≈ 106 g"
+      },
+      {
+        "cantidad": 227,
+        "unidad": "g",
+        "nombre": "tofu extra firme 8 oz ≈ 227 g",
+        "unidad_display": "g",
+        "equivalente_g": -1
+      },
+      {
+        "cantidad": 99,
+        "unidad": "g",
+        "nombre": "puré congelado de acai 3½ oz ≈ 99 g",
+        "unidad_display": "g",
+        "equivalente_g": -1
+      }
+    ]
+  },
+  "despensa": {
+    "notas": "Incluye variedad de frutos secos, semillas y conservas. 'green olives', 'cloves', 'nutmeg' y otras especias pueden comprarse en frascos pequeños. Algunos productos (passata, tahini, mirin) se ubican en tiendas grandes o sección internacional.",
+    "lista": [
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "tofu sedoso (silken tofu) 1⅓ oz ≈ 37 g"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "avena para porridge (rolled oats)"
+      },
+      {
+        "cantidad": 397,
+        "unidad": "g",
+        "nombre": "jitomates en cubos en lata 1 lb 7 oz ≈ 397 g"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "jackfruit en lata 14 oz (opcional)"
+      },
+      {
+        "cantidad": 227,
+        "unidad": "g",
+        "nombre": "baked beans 8 oz ≈ 227 g"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "sweetcorn kernels 1½ oz (en lata)"
+      },
+      {
+        "cantidad": 99,
+        "unidad": "g",
+        "nombre": "black beans 3½ oz ≈ 99 g (lata pequeña)"
+      },
+      {
+        "cantidad": 85,
+        "unidad": "g",
+        "nombre": "green lentils 3½ oz ≈ 99 g",
+        "unidad_display": "g"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "chickpeas 2 lb/10 oz según recetas (usa latas según necesidad)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "quinoa (paquete pequeño)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "sticky glutinous rice 2½ oz - si aplica"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "fideos vermicelli / rice vermicelli (1¼ oz equivalente)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "mantequilla de cacahuate / peanut butter (opcional)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "almendras (almonds)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "pecanas / pecans"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "nueces (walnuts)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "almendras fileteadas (flaked almonds)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "dried apricots (orejones)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "aceitunas verdes (green olives)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "leche de coco en lata (9½ fl oz ≈ 281 ml) - 1 lata"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "clavos de olor (cloves) - frasco pequeño"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "canela en polvo (ground cinnamon) - frasco"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "nuez moscada (nutmeg) - frasco pequeño"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "pasta de tomate (passata)"
+      }
+    ]
+  },
+  "basicos": {
+    "notas": "Aceites, vinagres y básicos de repostería. 'white miso paste' y 'sesame flour' pueden ser menos comunes; busca en tiendas especializadas si los necesitas.",
+    "lista": [
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "vinagre balsámico"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "vinagre de vino tinto"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "harina todo uso"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "harina autoprise (self-rising) - opcional"
+      },
+      {
+        "cantidad": 500,
+        "unidad": "ml",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": 250,
+        "unidad": "g",
+        "nombre": "azúcar (raw o demerara) - paquete pequeño"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "tahini"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "salsa hoisin (opcional)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "salsa de soya / tamari"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "levadura nutricional en copos"
+      }
+    ]
+  }
+}

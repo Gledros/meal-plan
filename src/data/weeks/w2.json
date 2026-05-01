@@ -1,0 +1,451 @@
+{
+  "semana": 2,
+  "frutas_verduras": {
+    "notas": "Sustituciones útiles en México: 'bok choy' puede reemplazarse por acelga o repollo tierno; 'mirin' puede omitirse o usar un poco de vino blanco dulce; 'kombu' y 'nori' se consiguen en tiendas asiáticas. Las cantidades de hongos y microgreens varían según disponibilidad.",
+    "lista": [
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "cilantro"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "menta (manojo)"
+      },
+      {
+        "cantidad": 3,
+        "unidad": "piece",
+        "nombre": "perejil liso (manojos)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "eneldo (manojo)"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "cebolla roja (pequeñas)"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "cebollas (pequeñas)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "chalota francesa"
+      },
+      {
+        "cantidad": 5,
+        "unidad": "piece",
+        "nombre": "shiitake (setas)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "jengibre (¾ in)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "bulbo de ajo"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "kale rizado (manojo)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "cavolo nero (manojo)"
+      },
+      {
+        "cantidad": 78,
+        "unidad": "g",
+        "nombre": "ejotes (green beans) 2¾ oz"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "setas enoki (manojo)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "setas ostras (óyster) - paquete pequeño"
+      },
+      {
+        "cantidad": 7,
+        "unidad": "piece",
+        "nombre": "cebollines (scallions)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "rábano francés (1)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "coliflor - ¼ pieza"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "camote"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "baby spinach (manojo pequeño)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "mezcla de brotes (sprouts)"
+      },
+      {
+        "cantidad": 43,
+        "unidad": "g",
+        "nombre": "snow peas (1½ oz)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "arúgula (¾ oz aprox)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "berros (watercress) 1¾ oz"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "pera (1)"
+      },
+      {
+        "cantidad": 6,
+        "unidad": "piece",
+        "nombre": "fresas"
+      },
+      {
+        "cantidad": 3,
+        "unidad": "piece",
+        "nombre": "limones"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "limas"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "pepinos"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "chiles rojos"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "col morada - ¼"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "lechuga iceberg"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "aguacates"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "bulbo de hinojo (fennel)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "naranja (1)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "manzana roja (1)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "bunch",
+        "nombre": "zanahorias baby (manojo)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "zanahoria (1)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "arándanos (4½ oz ≈ 128 g paquete)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "berenjena (1)"
+      },
+      {
+        "cantidad": 3,
+        "unidad": "piece",
+        "nombre": "jitomate roma (3)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "jalapeño (1)"
+      }
+    ]
+  },
+  "refrigerados_congelados": {
+    "notas": "Leches vegetales y yogures pueden ser de almendra/soya/avena; el mango congelado es práctico en batidos. Busca tofu firme extras en secciones refrigeradas.",
+    "lista": [
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "leche vegetal (soya/almendra/avena) - botella pequeña (1 cup equivalente)"
+      },
+      {
+        "cantidad": 128,
+        "unidad": "g",
+        "nombre": "yogur de coco (4½ oz ≈ 128 g)",
+        "unidad_display": "g"
+      },
+      {
+        "cantidad": 156,
+        "unidad": "g",
+        "nombre": "mango congelado (5½ oz)",
+        "unidad_display": "g"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "tofu sedoso (silken) 2 oz ≈ 57 g"
+      }
+    ]
+  },
+  "despensa": {
+    "notas": "Muchos ingredientes de despensa son internacionales (mirin, miso, nori, kombu). En México, mirin y kombu se consiguen en tiendas asiáticas; si no, usa sustitutos indicados. Los fideos soba y thick rice noodles se venden en mercados asiáticos o supermercados grandes.",
+    "lista": [
+      {
+        "cantidad": 10,
+        "unidad": "piece",
+        "nombre": "láminas gyoza (gyoza wrappers) - paquete pequeño"
+      },
+      {
+        "cantidad": 57,
+        "unidad": "g",
+        "nombre": "tofu sedoso (silken tofu) 2 oz ≈ 57 g"
+      },
+      {
+        "cantidad": 397,
+        "unidad": "g",
+        "nombre": "jitomates en cubos (diced tomatoes) 14 oz en lata"
+      },
+      {
+        "cantidad": 595,
+        "unidad": "g",
+        "nombre": "alubias cannellini (cannellini beans) 21 oz en lata"
+      },
+      {
+        "cantidad": 198,
+        "unidad": "g",
+        "nombre": "frijoles negros en lata 7 oz"
+      },
+      {
+        "cantidad": 397,
+        "unidad": "g",
+        "nombre": "garbanzos en lata 14 oz"
+      },
+      {
+        "cantidad": 99,
+        "unidad": "g",
+        "nombre": "lentejas Puy 3½ oz",
+        "unidad_display": "g"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "avena para porridge (rolled oats)"
+      },
+      {
+        "cantidad": 35,
+        "unidad": "g",
+        "nombre": "fideos soba 1¼ oz ≈ 35 g"
+      },
+      {
+        "cantidad": 99,
+        "unidad": "g",
+        "nombre": "thick rice noodles 3½ oz ≈ 99 g"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "peps de castañas de agua (water chestnuts) - lata 1"
+      },
+      {
+        "cantidad": 397,
+        "unidad": "g",
+        "nombre": "crema de coco en lata 14 oz"
+      },
+      {
+        "cantidad": 57,
+        "unidad": "g",
+        "nombre": "corazones de alcachofa marinados 2 oz ≈ 57 g"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "almendras fileteadas / flaked almonds"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "almendras crudas"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "piñones / pine nuts"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "pecanas / pecans"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "nueces / walnuts"
+      },
+      {
+        "cantidad": 36,
+        "unidad": "g",
+        "nombre": "pepitas (semillas de calabaza) 1¼ oz ≈ 36 g"
+      },
+      {
+        "cantidad": 30,
+        "unidad": "g",
+        "nombre": "semillas de chía"
+      },
+      {
+        "cantidad": 30,
+        "unidad": "g",
+        "nombre": "linaza molida"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "pasas"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "coco deshidratado (coconut flakes)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "pasta miso blanca (white miso paste)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "mirin"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "vinagre de arroz"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "salsa tamari o salsa soya"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "pasta de curry Thai (vegan) o similar"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "harina de garbanzo (besan)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "panko / pan rallado japonés"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "levadura nutricional en copos"
+      }
+    ]
+  },
+  "basicos": {
+    "notas": "Aceites, vinagres y especias básicas: compra según consumo semanal. Tahini y kombu son menos comunes en tiendas pequeñas.",
+    "lista": [
+      {
+        "cantidad": 500,
+        "unidad": "ml",
+        "nombre": "aceite vegetal"
+      },
+      {
+        "cantidad": 500,
+        "unidad": "ml",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": 250,
+        "unidad": "g",
+        "nombre": "harina todo uso (all-purpose flour)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "bicarbonato de sodio"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "polvo para hornear"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "azúcar de coco o mascabado"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "sal y pimienta"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "pasta de tomate (passata)"
+      }
+    ]
+  }
+}

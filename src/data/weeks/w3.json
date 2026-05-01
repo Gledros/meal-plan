@@ -1,0 +1,278 @@
+{
+  "semana": 3,
+  "frutas_verduras": {
+    "notas": "En México la mayoría de frutas y verduras son fáciles de conseguir; 'pomegranate' (granada) temporada variable. 'kombu' y algas secas se consiguen en tiendas asiáticas. Ajusta cantidades de hierbas según preferencia.",
+    "lista": [
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "manzana verde"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "nectarina"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "sandía (porción pequeña)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "mango"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "ciruela (plum)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "maracuyá / passionfruit"
+      },
+      {
+        "cantidad": 7,
+        "unidad": "piece",
+        "nombre": "fresas"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "plátanos (1 bunch pequeño)"
+      },
+      {
+        "cantidad": 8,
+        "unidad": "piece",
+        "nombre": "jitomates cherry"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "aguacates"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "pepino (½ indicado en recetas, comprar 1)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "pimiento amarillo (½–1 compra 1)"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "baby beets (remolachas pequeñas)"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "berenjenas"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "bunch",
+        "nombre": "zanahorias baby (manojo)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "papa (1)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "cebolla roja (1)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "calabacín (zucchini) 1"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "ajos (7 dientes ~ 1 cabeza)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "jengibre (1½ in ≈ 15 g)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "bulbo de hinojo (1 grande o 2 pequeños)"
+      },
+      {
+        "cantidad": 5,
+        "unidad": "piece",
+        "nombre": "cebollines (scallions) - 5"
+      },
+      {
+        "cantidad": 3,
+        "unidad": "piece",
+        "nombre": "limones"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "granada (pomegranate) - opcional"
+      }
+    ]
+  },
+  "refrigerados_congelados": {
+    "notas": "Yogures y leches vegetales según preferencia; los berries congelados son prácticos para smoothies. 'almond milk 15 fl oz' convertido a ml para compra de envase.",
+    "lista": [
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "yogur vegetal / coconut or plant-based (≈7½ oz por porción)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "leche de almendra o similar (≈15 fl oz envase pequeño)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "congelado berries mixtos (8¼ oz ≈ 234 g paquete)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "tofu extra firme 5½ oz ≈ 156 g (si se usa)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "espinaca congelada (porción pequeña)"
+      }
+    ]
+  },
+  "despensa": {
+    "notas": "Incluye granos y especias menos comunes (garam masala) que se encuentran en tiendas de especias o supermercados grandes. 'nori sheets' y 'kombu' en tiendas asiáticas.",
+    "lista": [
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "avena para porridge (rolled oats)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "kokbu (kombu) - 1 hoja (opcional)"
+      },
+      {
+        "cantidad": 2,
+        "unidad": "piece",
+        "nombre": "hojas de nori (nori sheets) - paquete"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "arroz sushi (sushi rice) - paquete pequeño"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "quinoa"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "arroz integral (brown rice)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "lentejas puy / lentejas verdes"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "pasta de miso blanco (si se usa)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "almendras fileteadas"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "cup",
+        "nombre": "avellanas tostadas (toasted hazelnuts) - 1 oz equivalente"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "semillas de sésamo (sesame seeds)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "tbsp",
+        "nombre": "nori furikake (opcional)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "garam masala (especia) - pequeño frasco"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "hojas de laurel (bay leaf)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "canela en rama (cinnamon stick)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "chili flakes (hojuelas de chile)"
+      }
+    ]
+  },
+  "basicos": {
+    "notas": "Aceites, azúcares y harinas básicos. 'acai powder' o 'vanilla protein powder' son ingredientes opcionales y se encuentran en tiendas naturistas.",
+    "lista": [
+      {
+        "cantidad": 500,
+        "unidad": "ml",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": 250,
+        "unidad": "g",
+        "nombre": "harina todo uso"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "azúcar morena o demerara"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "levadura nutricional en copos"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "tahini (opcional)"
+      },
+      {
+        "cantidad": 1,
+        "unidad": "piece",
+        "nombre": "salsa sriracha o salsa picante"
+      }
+    ]
+  }
+}
