@@ -1,6 +1,6 @@
 {
 	"frutas_verduras": {
-		"notas": "Algunos ingredientes pueden ser complicados de encontrar en México: 'lemongrass' (sustituye por ralladura de limón y un poco de jengibre), 'baby spinach' (puedes usar espinaca regular), 'bok choy' (sustituible por acelga o col china), 'French breakfast radish' (rábano mexicano común), 'beets' (betabel) y 'parsnip' (puedes usar más zanahoria).",
+		"notas": "Algunos ingredientes pueden ser complicados de encontrar en México: hierba limón (sustituye por ralladura de limón y un poco de jengibre), espinaca tierna (puedes usar espinaca regular), col china (sustituible por acelga), rábano francés (rábano mexicano común), betabel y chirivía (puedes usar más zanahoria).",
 		"lista": [
 			{
 				"cantidad": 2,
@@ -15,7 +15,7 @@
 			{
 				"cantidad": 1,
 				"unidad": "piece",
-				"nombre": "jitomate heirloom mixto"
+				"nombre": "jitomate criollo mixto"
 			},
 			{
 				"cantidad": 1,
@@ -80,7 +80,7 @@
 			{
 				"cantidad": 1,
 				"unidad": "piece",
-				"nombre": "espinaca baby"
+				"nombre": "espinaca tierna (baby)"
 			},
 			{
 				"cantidad": 14,
@@ -90,7 +90,7 @@
 			{
 				"cantidad": 14,
 				"unidad": "g",
-				"nombre": "blueberries (arándano azul)"
+				"nombre": "arándano azul"
 			},
 			{
 				"cantidad": 61,
@@ -125,7 +125,7 @@
 			{
 				"cantidad": 1,
 				"unidad": "piece",
-				"nombre": "chirivía (parsnip)"
+				"nombre": "chirivía (zanahoria blanca)"
 			},
 			{
 				"cantidad": 1,
@@ -165,7 +165,7 @@
 		]
 	},
 	"refrigerados_congelados": {
-		"notas": "El yogur de soya o coco puede sustituirse por yogur natural si eres flexible. 'Nut milk' referida puede ser leche de almendra, soja o avena (disponibles en tiendas grandes). 'Frozen mango' puede ser mango natural picado y congelado.",
+		"notas": "El yogur de soya o coco puede sustituirse por yogur natural si eres flexible. La leche vegetal puede ser de almendra, soya o avena (disponibles en tiendas grandes). El mango congelado puede ser mango natural picado y congelado.",
 		"lista": [
 			{
 				"cantidad": 220,
@@ -200,7 +200,7 @@
 		]
 	},
 	"despensa": {
-		"notas": "Algunos productos pueden ser raros fuera de supermercados grandes o tiendas naturistas: 'flaxseed' (puedes usar chía en vez), 'nutritional yeast flakes' (usa queso rallado o levadura de cerveza si eres flexible), 'sundried tomatoes' (jitomate deshidratado); 'za'atar' y 'sumac' (se pueden omitir o reemplazar por mezcla de tomillo/ajo/limón y ralladura de limón respectivamente), 'mirin' (omítelo o usa un poco de vino blanco dulce). Especias internacionales pueden omitirse si se complica conseguir.",
+		"notas": "Algunos productos pueden ser raros fuera de supermercados grandes o tiendas naturistas: linaza (puedes usar chía en vez), levadura nutricional en copos (usa queso rallado o levadura de cerveza si eres flexible), jitomate deshidratado; za'atar y sumac (se pueden omitir o reemplazar por mezcla de tomillo/ajo/limón y ralladura de limón respectivamente), mirin (omítelo o usa un poco de vino blanco dulce). Especias internacionales pueden omitirse si se complica conseguir.",
 		"lista": [
 			{
 				"cantidad": 39,
@@ -295,7 +295,7 @@
 			{
 				"cantidad": 57,
 				"unidad": "g",
-				"nombre": "spaghetti"
+				"nombre": "espagueti"
 			},
 			{
 				"cantidad": 1,
@@ -370,7 +370,7 @@
 		]
 	},
 	"basicos": {
-		"notas": "Estos ingredientes son básicos de despensa; algunos pueden requerir buscar en tiendas especializadas: tahini (puede sustituirse por crema de cacahuate en emergencia), miso blanco (puede omitirse si no se encuentra), vinagres asiáticos (pueden sustituirse por vinagre blanco/mazana normal), panko (usa pan molido local).",
+		"notas": "Estos ingredientes son básicos de despensa; algunos pueden requerir buscar en tiendas especializadas: tahini (puede sustituirse por crema de cacahuate en emergencia), miso blanco (puede omitirse si no se encuentra), vinagres asiáticos (pueden sustituirse por vinagre blanco o de manzana normal), panko (usa pan molido local).",
 		"lista": [
 			{
 				"cantidad": 1,
