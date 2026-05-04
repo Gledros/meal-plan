@@ -5,7 +5,7 @@ import SmoothieCard from '@components/SmoothieCard.astro';
 import RecipeCard from '@components/RecipeCard.astro';
 import TabsSlider from '@components/TabsSlider.astro';
 import ReadmeModal from '@components/ReadmeModal.astro';
-import IngredientsModal from '@components/IngredientsModal.astro';
+import GroceriesModal from '@components/IngredientsModal.astro';
 import PortionMultiplier from '@components/PortionMultiplier.astro';
 import week1 from '@data/weeks/w1.json';
 import week2 from '@data/weeks/w2.json';
@@ -81,7 +81,7 @@ const shoppingWeeks = [
 					ariaLabel='Multiplicar porciones'
 					value={3}
 				/>
-				<IngredientsModal
+				<GroceriesModal
 					weeks={shoppingWeeks}
 					title='Lista de compras'
 					triggerLabel='Lista de compras'
