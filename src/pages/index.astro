@@ -4,8 +4,8 @@ import { Image } from 'astro:assets';
 import SmoothieCard from '@components/SmoothieCard.astro';
 import RecipeCard from '@components/RecipeCard.astro';
 import TabsSlider from '@components/TabsSlider.astro';
-import ReadmeModal from '@components/ReadmeModal.astro';
-import GroceriesModal from '@components/IngredientsModal.astro';
+import IngredientInfoModal from '@components/IngredientInfoModal.astro';
+import GroceriesModal from '@components/GroceriesModal.astro';
 import PortionMultiplier from '@components/PortionMultiplier.astro';
 import week1 from '@data/weeks/w1.json';
 import week2 from '@data/weeks/w2.json';
@@ -16,7 +16,6 @@ import {
 	type MealDinnerRecipe,
 	type SmoothieRecipe,
 } from '@data/runtime-recipes';
-import ReadmeContent from '../../README.md';
 import veganBadge from '../vegan-badge.svg';
 
 type Smoothie = SmoothieRecipe;
@@ -47,21 +46,31 @@ const shoppingWeeks = [
 		data-tabs-sticky-header
 	>
 		<div class='grid grid-cols-1 items-center gap-3 sm:grid-cols-[auto_1fr]'>
-			<Image
-				src={veganBadge}
-				alt='Sello vegano'
-				class='hidden h-16 w-auto object-contain sm:block sm:h-20'
-				loading='eager'
-				decoding='async'
-			/>
+			<div class='order-2 sm:order-1 flex items-center'>
+				<Image
+					src={veganBadge}
+					alt='Sello vegano'
+					class='hidden h-16 w-auto object-contain sm:block sm:h-20'
+					loading='eager'
+					decoding='async'
+				/>
+			</div>
 			<div
-				class='grid grid-cols-1 items-center gap-x-3 gap-y-1 sm:grid-cols-[1fr_auto]'
+				class='order-1 sm:order-2 grid grid-cols-1 items-center gap-x-3 gap-y-1 sm:grid-cols-[1fr_auto]'
 			>
 				<h1
 					class='order-1 self-center text-center text-3xl font-bold sm:text-5xl'
 				>
 					Plan alimenticio
 				</h1>
+				<div
+					class='order-3 mt-1 self-center justify-self-center sm:order-2 sm:col-start-2 sm:row-start-1 sm:mt-0 sm:justify-self-end'
+				>
+					<IngredientInfoModal
+						title='Ingredientes por dificultad'
+						triggerLabel='Ingredientes'
+					/>
+				</div>
 				<p
 					class='order-2 text-center text-xl font-semibold text-gray-600 sm:order-3 sm:col-span-2'
 				>

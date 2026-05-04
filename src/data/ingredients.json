@@ -46,7 +46,7 @@
 		},
 		{
 			"nombre": "lechuga mantequilla (butter lettuce)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Butterhead_lettuce"
 		},
 		{
 			"nombre": "lechuga iceberg (iceberg lettuce)",
@@ -86,7 +86,7 @@
 		},
 		{
 			"nombre": "pepino persa (persian cucumber)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Persian_cucumber"
 		},
 		{
 			"nombre": "apio (celery)",
@@ -182,7 +182,7 @@
 		},
 		{
 			"nombre": "toronja roja (ruby grapefruit)",
-			"enlace": "https://es.wikipedia.org/wiki/Pomelo_(fruta)"
+			"enlace": "https://en.wikipedia.org/wiki/Grapefruit"
 		},
 		{
 			"nombre": "eneldo (dill)",
@@ -202,7 +202,7 @@
 		},
 		{
 			"nombre": "sal y pimienta (salt and pepper)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Salt_and_pepper"
 		},
 		{
 			"nombre": "canela (cinnamon)",
@@ -214,7 +214,7 @@
 		},
 		{
 			"nombre": "harina todo uso (all-purpose flour)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Flour"
 		},
 		{
 			"nombre": "fecula de maiz (cornstarch)",
@@ -320,11 +320,11 @@
 		},
 		{
 			"nombre": "rabano frances (french breakfast radish)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Radish"
 		},
 		{
 			"nombre": "chirivia (parsnip)",
-			"enlace": "https://es.wikipedia.org/wiki/Chiriv%C3%ADa"
+			"enlace": "https://es.wikipedia.org/wiki/Chirivía"
 		},
 		{
 			"nombre": "bulbo de hinojo (fennel bulb)",
@@ -332,7 +332,7 @@
 		},
 		{
 			"nombre": "chicharo chino (snow pea)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Snow_pea"
 		},
 		{
 			"nombre": "hierba limon (lemongrass)",
@@ -344,31 +344,31 @@
 		},
 		{
 			"nombre": "maracuya (passion fruit)",
-			"enlace": "https://es.wikipedia.org/wiki/Maracuy%C3%A1"
+			"enlace": "https://es.wikipedia.org/wiki/Maracuyá"
 		},
 		{
 			"nombre": "arandano azul (blueberry)",
-			"enlace": "https://es.wikipedia.org/wiki/Ar%C3%A1ndano"
+			"enlace": "https://es.wikipedia.org/wiki/Arándano"
 		},
 		{
 			"nombre": "frutos rojos congelados (frozen mixed berries)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Berry"
 		},
 		{
 			"nombre": "mango congelado (frozen mango)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Mango"
 		},
 		{
 			"nombre": "espinaca congelada (frozen spinach)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Spinach"
 		},
 		{
 			"nombre": "brotes de frijol (bean sprouts)",
-			"enlace": "https://es.wikipedia.org/wiki/Germinaci%C3%B3n"
+			"enlace": "https://es.wikipedia.org/wiki/Brote"
 		},
 		{
 			"nombre": "mezcla de brotes (mixed sprouts)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Sprouting"
 		},
 		{
 			"nombre": "leche vegetal (plant milk)",
@@ -388,7 +388,7 @@
 		},
 		{
 			"nombre": "leche de coco en lata (canned coconut milk)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Coconut_milk"
 		},
 		{
 			"nombre": "crema de coco (coconut cream)",
@@ -400,11 +400,11 @@
 		},
 		{
 			"nombre": "yogur de coco (coconut yogurt)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Plant-based_yogurt"
 		},
 		{
 			"nombre": "yogur vegetal (plant-based yogurt)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Plant-based_yogurt"
 		},
 		{
 			"nombre": "tofu extra firme (extra-firm tofu)",
@@ -412,7 +412,7 @@
 		},
 		{
 			"nombre": "tofu sedoso (silken tofu)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Tofu"
 		},
 		{
 			"nombre": "agua de coco (coconut water)",
@@ -420,11 +420,11 @@
 		},
 		{
 			"nombre": "coco rallado fino (finely shredded coconut)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Coconut"
 		},
 		{
 			"nombre": "coco deshidratado (coconut flakes)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Coconut"
 		},
 		{
 			"nombre": "jitomate deshidratado (sun-dried tomato)",
@@ -436,15 +436,15 @@
 		},
 		{
 			"nombre": "corazon de alcachofa marinado (marinated artichoke heart)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Artichoke"
 		},
 		{
 			"nombre": "granos de elote dulce (sweetcorn kernels)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Sweet_corn"
 		},
 		{
 			"nombre": "frijoles horneados (baked beans)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Baked_beans"
 		},
 		{
 			"nombre": "yaca en lata (canned jackfruit)",
@@ -456,11 +456,11 @@
 		},
 		{
 			"nombre": "arroz para sushi (sushi rice)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Sushi_rice"
 		},
 		{
 			"nombre": "fideo vermicelli de arroz (rice vermicelli)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Rice_vermicelli"
 		},
 		{
 			"nombre": "harina de garbanzo (chickpea flour)",
@@ -468,11 +468,11 @@
 		},
 		{
 			"nombre": "harina leudante (self-rising flour)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Self-raising_flour"
 		},
 		{
 			"nombre": "vinagre balsamico (balsamic vinegar)",
-			"enlace": "https://es.wikipedia.org/wiki/Vinagre_bals%C3%A1mico"
+			"enlace": "https://es.wikipedia.org/wiki/Vinagre_balsámico"
 		},
 		{
 			"nombre": "vinagre de arroz (rice vinegar)",
@@ -480,7 +480,7 @@
 		},
 		{
 			"nombre": "vinagre de malta (malt vinegar)",
-			"enlace": "https://es.wikipedia.org/wiki/Vinagre"
+			"enlace": "https://en.wikipedia.org/wiki/Malt_vinegar"
 		},
 		{
 			"nombre": "vinagre de vino tinto (red wine vinegar)",
@@ -496,7 +496,7 @@
 		},
 		{
 			"nombre": "aceite de ajonjoli tostado (toasted sesame oil)",
-			"enlace": "https://es.wikipedia.org/wiki/Aceite_de_s%C3%A9samo"
+			"enlace": "https://es.wikipedia.org/wiki/Aceite_de_sésamo"
 		},
 		{
 			"nombre": "almendra (almond)",
@@ -504,7 +504,7 @@
 		},
 		{
 			"nombre": "almendra fileteada (flaked almond)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Almond"
 		},
 		{
 			"nombre": "nuez de la india (cashew nut)",
@@ -520,7 +520,7 @@
 		},
 		{
 			"nombre": "pinon (pine nut)",
-			"enlace": "https://es.wikipedia.org/wiki/Pi%C3%B1%C3%B3n"
+			"enlace": "https://es.wikipedia.org/wiki/Piñón"
 		},
 		{
 			"nombre": "avellana tostada (toasted hazelnut)",
@@ -536,7 +536,7 @@
 		},
 		{
 			"nombre": "orejon (dried apricot)",
-			"enlace": "https://es.wikipedia.org/wiki/Orej%C3%B3n"
+			"enlace": "https://es.wikipedia.org/wiki/Orejón"
 		},
 		{
 			"nombre": "pepita de calabaza (pumpkin seed)",
@@ -548,11 +548,11 @@
 		},
 		{
 			"nombre": "semilla de chia (chia seed)",
-			"enlace": "https://es.wikipedia.org/wiki/Ch%C3%ADa"
+			"enlace": "https://es.wikipedia.org/wiki/Chía"
 		},
 		{
 			"nombre": "semilla de sesamo (sesame seed)",
-			"enlace": "https://es.wikipedia.org/wiki/S%C3%A9samo"
+			"enlace": "https://es.wikipedia.org/wiki/Sésamo"
 		},
 		{
 			"nombre": "linaza molida (ground flaxseed)",
@@ -600,11 +600,11 @@
 		},
 		{
 			"nombre": "hojuelas de chile (chili flakes)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Chili_flakes"
 		},
 		{
 			"nombre": "salsa agridulce de chile (sweet chili sauce)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Sweet_chili_sauce"
 		},
 		{
 			"nombre": "salsa sriracha (sriracha sauce)",
@@ -620,7 +620,7 @@
 		},
 		{
 			"nombre": "mantequilla de cacahuate (peanut butter)",
-			"enlace": "https://es.wikipedia.org/wiki/Mantequilla_de_man%C3%AD"
+			"enlace": "https://es.wikipedia.org/wiki/Mantequilla_de_maní"
 		},
 		{
 			"nombre": "pan de masa madre (sourdough bread)",
@@ -636,7 +636,7 @@
 		},
 		{
 			"nombre": "lenteja puy (puy lentil)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Lentil"
 		},
 		{
 			"nombre": "lenteja verde (green lentil)",
@@ -674,7 +674,7 @@
 		},
 		{
 			"nombre": "nori furikake (nori furikake seasoning)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Furikake"
 		},
 		{
 			"nombre": "salsa hoisin (hoisin sauce)",
@@ -682,7 +682,7 @@
 		},
 		{
 			"nombre": "pasta de curry tailandes (thai curry paste)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Thai_curry"
 		},
 		{
 			"nombre": "panko (japanese breadcrumbs)",
@@ -690,11 +690,11 @@
 		},
 		{
 			"nombre": "laminas de arroz para rollos (rice paper sheets)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Rice_paper"
 		},
 		{
 			"nombre": "laminas para gyoza (gyoza wrappers)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Gyoza"
 		},
 		{
 			"nombre": "arroz glutinoso (glutinous rice)",
@@ -706,11 +706,11 @@
 		},
 		{
 			"nombre": "fideos de arroz gruesos (thick rice noodles)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Rice_noodles"
 		},
 		{
 			"nombre": "castanas de agua en lata (canned water chestnuts)",
-			"enlace": "https://es.wikipedia.org/wiki/Casta%C3%B1a_de_agua"
+			"enlace": "https://es.wikipedia.org/wiki/Castaña_de_agua"
 		},
 		{
 			"nombre": "garam masala (garam masala)",
@@ -718,11 +718,11 @@
 		},
 		{
 			"nombre": "pure congelado de acai (frozen acai puree)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Açaí_na_tigela"
 		},
 		{
 			"nombre": "harina de sesamo (sesame flour)",
-			"enlace": ""
+			"enlace": "https://en.wikipedia.org/wiki/Sesame"
 		}
 	]
 }
