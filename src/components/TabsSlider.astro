@@ -268,13 +268,29 @@ const defaultTabId = tabs[0]?.id ?? '';
 					const base = Number(node.getAttribute('data-qty-base'));
 					if (Number.isNaN(base)) return;
 					const unit = node.getAttribute('data-qty-unit') ?? '';
-					const normalizedBase = normalizeQuantityForUnit(base, unit);
+					const unitCanonical =
+						node.getAttribute('data-qty-unit-canonical') ?? unit;
+					const unitDisplay =
+						node.getAttribute('data-qty-unit-display') ?? unit;
+					const hideUnit = node.getAttribute('data-qty-hide-unit') === 'true';
+					const useDeConnector =
+						node.getAttribute('data-qty-use-de') === 'true';
+					const normalizedBase = normalizeQuantityForUnit(base, unitCanonical);
 					const newValue = normalizedBase * mult;
-					const formatted = formatQuantity(newValue, unit);
+					const formatted = formatQuantity(newValue, unitCanonical);
 					const valueEl = node.querySelector('.ingredient-qty-value');
 					const unitEl = node.querySelector('.ingredient-qty-unit');
+					const connectorEl = node.querySelector('.ingredient-qty-connector');
 					if (valueEl) valueEl.textContent = formatted;
-					if (unitEl) unitEl.textContent = unit ? ' ' + unit : '';
+					if (unitEl)
+						unitEl.textContent = hideUnit
+							? ''
+							: unitDisplay
+								? ' ' + unitDisplay
+								: '';
+					if (connectorEl)
+						connectorEl.textContent =
+							useDeConnector && !isIntegerLike(newValue) ? ' de' : '';
 				});
 
 				// smoothie / free-text ingredients (try to parse leading quantity)
@@ -287,10 +303,21 @@ const defaultTabId = tabs[0]?.id ?? '';
 					if (!parsed) return;
 					const { num, rest } = parsed;
 					const unitCandidate = rest.split(/\s+/)[0] ?? '';
-					const normalizedBase = normalizeQuantityForUnit(num, unitCandidate);
+					const hasExplicitUnit = isKnownUnitToken(unitCandidate);
+					const unitForFormatting = hasExplicitUnit ? unitCandidate : 'piece';
+					const normalizedBase = normalizeQuantityForUnit(
+						num,
+						unitForFormatting,
+					);
 					const newValue = normalizedBase * mult;
-					const formatted = formatQuantity(newValue, unitCandidate);
-					const newText = `${formatted}${rest ? ' ' + rest : ''}`;
+					const formatted = formatQuantity(newValue, unitForFormatting);
+					const separator =
+						rest.length === 0
+							? ''
+							: !hasExplicitUnit && !isIntegerLike(newValue)
+								? ' de '
+								: ' ';
+					const newText = `${formatted}${separator}${rest}`.trim();
 					const textEl = li.querySelector('.ingredient-text');
 					if (textEl) textEl.textContent = newText;
 					else li.textContent = newText;

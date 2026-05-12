@@ -9,15 +9,87 @@
     "proteina_g": 24
   },
   "ingredientes": [
-    "1 cda avena",
-    "1 cdita mantequilla de cacahuate natural",
-    "1/2 plátano",
-    "1 taza bebida vegetal",
-    "1 scoop proteína vegetal en polvo",
-    "1 scoop creatina",
-    "1 cda chía pre-hidratada",
-    "1 cda linaza pre-hidratada",
-    "1 cda semillas de cáñamo peladas"
+    {
+      "clave": "avena",
+      "nombre": "avena",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 8,
+      "estado": ""
+    },
+    {
+      "clave": "mantequilla_de_cacahuate_natural",
+      "nombre": "mantequilla de cacahuate natural",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "unidad_display": "cdita",
+      "equivalente_g": 5,
+      "estado": ""
+    },
+    {
+      "clave": "platano",
+      "nombre": "plátano",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "unidad_display": "pieza",
+      "equivalente_g": 60,
+      "estado": ""
+    },
+    {
+      "clave": "bebida_vegetal",
+      "nombre": "bebida vegetal",
+      "cantidad": 1,
+      "unidad": "cup",
+      "unidad_display": "taza",
+      "equivalente_g": 240,
+      "estado": ""
+    },
+    {
+      "clave": "proteina_vegetal_en_polvo",
+      "nombre": "proteína vegetal en polvo",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "scoop",
+      "equivalente_g": 30,
+      "estado": ""
+    },
+    {
+      "clave": "creatina",
+      "nombre": "creatina",
+      "cantidad": 1,
+      "unidad": "piece",
+      "unidad_display": "scoop",
+      "equivalente_g": 5,
+      "estado": ""
+    },
+    {
+      "clave": "chia_pre_hidratada",
+      "nombre": "chía pre-hidratada",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 12,
+      "estado": ""
+    },
+    {
+      "clave": "linaza_pre_hidratada",
+      "nombre": "linaza pre-hidratada",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 7,
+      "estado": ""
+    },
+    {
+      "clave": "semillas_de_canamo_peladas",
+      "nombre": "semillas de cáñamo peladas",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "unidad_display": "cda",
+      "equivalente_g": 10,
+      "estado": ""
+    }
   ],
   "color": "#C9A46C"
 }

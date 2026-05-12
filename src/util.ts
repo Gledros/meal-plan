@@ -39,7 +39,20 @@ const FRACTIONS: [number, string][] = [
 const FRACTION_MATCH_TOLERANCE = 0.04;
 const INTEGER_SNAP_TOLERANCE = 0.01;
 
-const FRACTION_UNITS = new Set(["taza", "cda", "cdita", "cup", "tbsp", "tsp"]);
+const FRACTION_UNITS = new Set([
+	"taza",
+	"cda",
+	"cdita",
+	"cup",
+	"tbsp",
+	"tsp",
+	"piece",
+	"pieza",
+	"piezas",
+	"clove",
+	"diente",
+	"dientes",
+]);
 
 export const isFractionUnit = (unit?: string): boolean =>
 	typeof unit === "string" && FRACTION_UNITS.has(unit.toLowerCase());

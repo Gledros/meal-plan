@@ -2,7 +2,7 @@
 import { type SmoothieRecipe } from '@data/runtime-recipes';
 import { type ImageMetadata } from 'astro';
 import { Icon } from 'astro-icon/components';
-import { lightenHexColor, darkenHexColor } from '@util';
+import { lightenHexColor, darkenHexColor, formatQuantity } from '@util';
 
 interface Props {
 	id: number;
@@ -21,6 +21,8 @@ const cardBorderStyle = `border-color: ${borderHex} !important; forced-color-adj
 const headerBgStyle = `background-color: ${smoothie.color} !important; forced-color-adjust: none;`;
 const headerTextStyle = 'color: #000000 !important; forced-color-adjust: none;';
 const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #000000 !important; forced-color-adjust: none;`;
+const isIntegerLike = (value: number) =>
+	Math.abs(value - Math.round(value)) <= 0.01;
 // const smoothieImage = smoothieImages[smoothieImagePath];
 ---
 
@@ -57,14 +59,41 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 		<!-- <p class='text-center font-bold text-xl'>Ingredientes</p> -->
 		<ul class='p-2'>
 			{
-				smoothie.ingredientes.map((ingrediente, index) => (
-					<li
-						class="text-lg list-none list-outside relative pl-8 before:content-['✅'] before:absolute before:left-0 before:top-1.25 before:text-lg before:leading-none"
-						data-ingredient-raw={ingrediente}
-					>
-						<span class='ingredient-text'>{ingrediente}</span>
-					</li>
-				))
+				smoothie.ingredientes.map((ingrediente) => {
+					const usePieceConnector =
+						ingrediente.unidad === 'piece' &&
+						ingrediente.unidad_display === 'pieza';
+					const hideUnit = usePieceConnector;
+					const baseQuantity = formatQuantity(
+						ingrediente.cantidad,
+						ingrediente.unidad,
+					);
+					const connector =
+						usePieceConnector && !isIntegerLike(ingrediente.cantidad)
+							? ' de'
+							: '';
+
+					return (
+						<li class="text-lg list-none list-outside relative pl-8 before:content-['✅'] before:absolute before:left-0 before:top-1.25 before:text-lg before:leading-none">
+							<span
+								class='font-semibold ingredient-quantity'
+								data-qty-base={ingrediente.cantidad}
+								data-qty-unit={ingrediente.unidad}
+								data-qty-unit-display={ingrediente.unidad_display}
+								data-qty-unit-canonical={ingrediente.unidad}
+								data-qty-hide-unit={hideUnit ? 'true' : 'false'}
+								data-qty-use-de={usePieceConnector ? 'true' : 'false'}
+							>
+								<span class='ingredient-qty-value'>{baseQuantity}</span>
+								<span class='ingredient-qty-unit'>
+									{hideUnit ? '' : ` ${ingrediente.unidad_display}`}
+								</span>
+								<span class='ingredient-qty-connector'>{connector}</span>
+							</span>{' '}
+							<span class='ingredient-name'>{ingrediente.nombre}</span>
+						</li>
+					);
+				})
 			}
 		</ul>
 	</div>

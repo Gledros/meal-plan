@@ -36,7 +36,7 @@ export const SmoothieSchema = z.object({
 	nombre: z.string(),
 	sabores: z.string(),
 	informacion_nutricional: NutritionSchema,
-	ingredientes: z.array(z.string()),
+	ingredientes: z.array(IngredientSchema),
 	color: hexColorSchema,
 });
 
