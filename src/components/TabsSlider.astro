@@ -40,7 +40,10 @@ const defaultTabId = tabs[0]?.id ?? '';
 	</div>
 </div>
 
-<script is:inline>
+<script>
+	// @ts-nocheck
+	import { formatQuantity, normalizeQuantityForUnit } from '../util';
+
 	(() => {
 		const ROOT_SELECTOR = '[data-tabs-slider]';
 		const INIT_ATTR = 'data-tabs-initialized';
@@ -223,46 +226,6 @@ const defaultTabId = tabs[0]?.id ?? '';
 				return parseMultiplier(select.value);
 			};
 
-			const FRACTIONS = [
-				[1 / 8, '⅛'],
-				[1 / 4, '¼'],
-				[1 / 3, '⅓'],
-				[1 / 2, '½'],
-				[2 / 3, '⅔'],
-				[3 / 4, '¾'],
-			];
-
-			const FRACTION_UNITS = new Set([
-				'taza',
-				'cda',
-				'cdita',
-				'cup',
-				'tbsp',
-				'tsp',
-			]);
-
-			const formatQuantityClient = (value, unit) => {
-				const useFraction =
-					typeof unit === 'string' && FRACTION_UNITS.has(unit.toLowerCase());
-				if (!useFraction) {
-					if (Number.isInteger(value)) return String(value);
-					const rounded = Math.round(value * 100) / 100;
-					return String(rounded).replace(/\.0+$/, '');
-				}
-
-				const whole = Math.floor(value);
-				const decimal = value - whole;
-				if (decimal < 0.01) return whole === 0 ? '0' : String(whole);
-
-				let best = FRACTIONS[0];
-				for (const f of FRACTIONS) {
-					if (Math.abs(f[0] - decimal) < Math.abs(best[0] - decimal)) best = f;
-				}
-				const [frac, symbol] = best;
-				if (Math.abs(frac - decimal) > 0.04) return String(value);
-				return whole === 0 ? symbol : `${whole}${symbol}`;
-			};
-
 			const parseLeadingQuantity = (text) => {
 				if (!text) return null;
 				const regex =
@@ -305,8 +268,9 @@ const defaultTabId = tabs[0]?.id ?? '';
 					const base = Number(node.getAttribute('data-qty-base'));
 					if (Number.isNaN(base)) return;
 					const unit = node.getAttribute('data-qty-unit') ?? '';
-					const newValue = base * mult;
-					const formatted = formatQuantityClient(newValue, unit);
+					const normalizedBase = normalizeQuantityForUnit(base, unit);
+					const newValue = normalizedBase * mult;
+					const formatted = formatQuantity(newValue, unit);
 					const valueEl = node.querySelector('.ingredient-qty-value');
 					const unitEl = node.querySelector('.ingredient-qty-unit');
 					if (valueEl) valueEl.textContent = formatted;
@@ -322,9 +286,10 @@ const defaultTabId = tabs[0]?.id ?? '';
 					const parsed = parseLeadingQuantity(raw);
 					if (!parsed) return;
 					const { num, rest } = parsed;
-					const newValue = num * mult;
 					const unitCandidate = rest.split(/\s+/)[0] ?? '';
-					const formatted = formatQuantityClient(newValue, unitCandidate);
+					const normalizedBase = normalizeQuantityForUnit(num, unitCandidate);
+					const newValue = normalizedBase * mult;
+					const formatted = formatQuantity(newValue, unitCandidate);
 					const newText = `${formatted}${rest ? ' ' + rest : ''}`;
 					const textEl = li.querySelector('.ingredient-text');
 					if (textEl) textEl.textContent = newText;

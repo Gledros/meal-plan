@@ -36,26 +36,61 @@ const FRACTIONS: [number, string][] = [
 	[3 / 4, "¾"],
 ];
 
+const FRACTION_MATCH_TOLERANCE = 0.04;
+const INTEGER_SNAP_TOLERANCE = 0.01;
+
 const FRACTION_UNITS = new Set(["taza", "cda", "cdita", "cup", "tbsp", "tsp"]);
 
-export const formatQuantity = (value: number, unit?: string): string => {
-	const useFraction = unit !== undefined && FRACTION_UNITS.has(unit.toLowerCase());
+export const isFractionUnit = (unit?: string): boolean =>
+	typeof unit === "string" && FRACTION_UNITS.has(unit.toLowerCase());
 
-	if (!useFraction) return String(value);
-
-	const whole = Math.floor(value);
-	const decimal = value - whole;
-
-	if (decimal < 0.01) return whole === 0 ? "0" : String(whole);
-
-	const match = FRACTIONS.reduce(
-		(best, [frac, symbol]) =>
-			Math.abs(frac - decimal) < Math.abs(best[0] - decimal) ? [frac, symbol] : best,
+const getClosestFraction = (decimal: number): [number, string] =>
+	FRACTIONS.reduce(
+		(best, [fraction, symbol]) =>
+			Math.abs(fraction - decimal) < Math.abs(best[0] - decimal)
+				? [fraction, symbol]
+				: best,
 		FRACTIONS[0] as [number, string],
 	);
 
-	const [frac, symbol] = match;
-	if (Math.abs(frac - decimal) > 0.04) return String(value);
+const normalizeFractionValue = (value: number): number => {
+	const roundedInteger = Math.round(value);
+	if (Math.abs(value - roundedInteger) <= INTEGER_SNAP_TOLERANCE) {
+		return roundedInteger;
+	}
+
+	const whole = Math.floor(value);
+	const decimal = value - whole;
+	const [closestFraction] = getClosestFraction(decimal);
+
+	if (Math.abs(closestFraction - decimal) <= FRACTION_MATCH_TOLERANCE) {
+		return whole + closestFraction;
+	}
+
+	return value;
+};
+
+export const normalizeQuantityForUnit = (value: number, unit?: string): number =>
+	isFractionUnit(unit) ? normalizeFractionValue(value) : value;
+
+const formatRounded = (value: number): string =>
+	String(Math.round(value * 100) / 100)
+		.replace(/\.0+$/, "")
+		.replace(/(\.\d*?)0+$/, "$1");
+
+export const formatQuantity = (value: number, unit?: string): string => {
+	if (!isFractionUnit(unit)) return formatRounded(value);
+
+	const normalizedValue = normalizeQuantityForUnit(value, unit);
+	const whole = Math.floor(normalizedValue);
+	const decimal = normalizedValue - whole;
+
+	if (decimal < INTEGER_SNAP_TOLERANCE) return whole === 0 ? "0" : String(whole);
+
+	const [frac, symbol] = getClosestFraction(decimal);
+	if (Math.abs(frac - decimal) > FRACTION_MATCH_TOLERANCE) {
+		return formatRounded(normalizedValue);
+	}
 
 	return whole === 0 ? symbol : `${whole}${symbol}`;
 };
