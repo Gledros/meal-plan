@@ -32,10 +32,10 @@
     {
       "clave": "panko_breadcrumbs",
       "nombre": "Pan molido panko",
-      "cantidad": 99.23,
+      "cantidad": 99,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 99.23,
+      "equivalente_g": -1,
       "estado": "seco"
     },
     {
@@ -59,10 +59,10 @@
     {
       "clave": "tomato_chili_relish",
       "nombre": "Salsa de jitomate y chile",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 34.0,
+      "equivalente_g": 34,
       "estado": "preparada, ver p.22, para acompañar",
       "enlace": "recipe://tomato-chili-relish-p22"
     },
@@ -72,7 +72,7 @@
       "cantidad": 0.25,
       "unidad": "cup",
       "unidad_display": "taza",
-      "equivalente_g": 60.0,
+      "equivalente_g": 60,
       "estado": "líquido"
     },
     {
@@ -81,13 +81,13 @@
       "cantidad": 0.25,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 37.0,
+      "equivalente_g": 37,
       "estado": "pequeño, picado finamente"
     },
     {
       "clave": "fresh_mint_raita",
       "nombre": "Menta fresca (para raita)",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 2.5,

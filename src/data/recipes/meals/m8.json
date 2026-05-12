@@ -40,19 +40,19 @@
     {
       "clave": "white_miso_paste",
       "nombre": "Pasta de miso blanco",
-      "cantidad": 14.18,
+      "cantidad": 14,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 14.18,
+      "equivalente_g": -1,
       "estado": "pasta, disuelta fuera del fuego"
     },
     {
       "clave": "scallion",
       "nombre": "Cebollita de cambray",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 15.0,
+      "equivalente_g": 15,
       "estado": "rebanada finamente, para servir"
     }
   ],

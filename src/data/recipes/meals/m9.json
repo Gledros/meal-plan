@@ -50,10 +50,10 @@
     {
       "clave": "fresh_mint",
       "nombre": "Hierbabuena fresca",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "picada"
     },
     {
@@ -62,16 +62,16 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 75.0,
+      "equivalente_g": 75,
       "estado": "rebanado finamente"
     },
     {
       "clave": "black_sesame_seeds",
       "nombre": "Semillas de ajonjolí negro",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tsp",
       "unidad_display": "cdita",
-      "equivalente_g": 3.0,
+      "equivalente_g": 3,
       "estado": "crudas"
     },
     {
@@ -80,7 +80,7 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 7.0,
+      "equivalente_g": 7,
       "estado": "rebanado finamente, opcional"
     },
     {
@@ -96,10 +96,10 @@
     {
       "clave": "roasted_cashew_nuts",
       "nombre": "Nueces de la india tostadas",
-      "cantidad": 21.26,
+      "cantidad": 21,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 21.26,
+      "equivalente_g": -1,
       "estado": "tostadas, picadas groseramente"
     }
   ],

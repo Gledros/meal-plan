@@ -22,16 +22,16 @@
     {
       "clave": "eggplant",
       "nombre": "Berenjena",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 200.0,
+      "equivalente_g": 200,
       "estado": "pequeña, rebanada a lo largo en láminas delgadas"
     },
     {
       "clave": "olive_oil",
       "nombre": "Aceite de oliva",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 27.6,
@@ -40,7 +40,7 @@
     {
       "clave": "zaatar",
       "nombre": "Za'atar",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 7.5,
@@ -49,10 +49,10 @@
     {
       "clave": "quick_flatbreads",
       "nombre": "Panes planos rápidos",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 120.0,
+      "equivalente_g": 120,
       "estado": "caseros, ver p.36",
       "enlace": "recipe://quick-flatbreads-p36"
     },
@@ -69,10 +69,10 @@
     {
       "clave": "baby_spinach",
       "nombre": "Espinacas baby",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "hojas frescas"
     }
   ],

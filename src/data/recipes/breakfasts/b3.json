@@ -22,7 +22,7 @@
     {
       "clave": "carrot_parsnip_bread",
       "nombre": "Pan de zanahoria y chirivía",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "piece",
       "unidad_display": "rebanada",
       "equivalente_g": -1,
@@ -32,16 +32,16 @@
     {
       "clave": "strawberries",
       "nombre": "Fresas",
-      "cantidad": 50.0,
+      "cantidad": 50,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 50.0,
+      "equivalente_g": -1,
       "estado": "frescas, rebanadas, para servir"
     },
     {
       "clave": "tahini",
       "nombre": "Tahini",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 32.1,
@@ -50,7 +50,7 @@
     {
       "clave": "maple_syrup",
       "nombre": "Jarabe de maple",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 19.95,

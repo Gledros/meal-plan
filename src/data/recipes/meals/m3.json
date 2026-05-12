@@ -22,10 +22,10 @@
     {
       "clave": "beets",
       "nombre": "Betabel",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 160.0,
+      "equivalente_g": 160,
       "estado": "fresco, entero"
     },
     {
@@ -40,10 +40,10 @@
     {
       "clave": "walnuts",
       "nombre": "Nueces de Castilla",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "picadas groseramente"
     },
     {
@@ -58,38 +58,38 @@
     {
       "clave": "spinach_arugula_mix",
       "nombre": "Mezcla de espinaca baby y arúgula",
-      "cantidad": 28.35,
+      "cantidad": 28,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 28.35,
+      "equivalente_g": -1,
       "estado": "hojas frescas"
     },
     {
       "clave": "crunchy_seed_mix",
       "nombre": "Mezcla de semillas crujientes",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 10.0,
+      "equivalente_g": 10,
       "estado": "preparada, ver p.24",
       "enlace": "recipe://crunchy-seed-mix-p24"
     },
     {
       "clave": "dill_sprig",
       "nombre": "Eneldo",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "ramita",
-      "equivalente_g": 2.0,
+      "equivalente_g": 2,
       "estado": "fresco, una ramita"
     },
     {
       "clave": "chives",
       "nombre": "Cebollín",
-      "cantidad": 3.0,
+      "cantidad": 3,
       "unidad": "piece",
       "unidad_display": "tallo",
-      "equivalente_g": 3.0,
+      "equivalente_g": 3,
       "estado": "picado finamente"
     },
     {

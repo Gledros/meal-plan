@@ -31,34 +31,34 @@
     {
       "clave": "large_carrot",
       "nombre": "Zanahoria",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 90.0,
+      "equivalente_g": 90,
       "estado": "grande, rallada"
     },
     {
       "clave": "parsnip",
       "nombre": "Chirivía (pastinaca)",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 100.0,
+      "equivalente_g": 100,
       "estado": "rallada"
     },
     {
       "clave": "onion",
       "nombre": "Cebolla",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 150.0,
+      "equivalente_g": 150,
       "estado": "rallada"
     },
     {
       "clave": "garlic",
       "nombre": "Ajo",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "clove",
       "unidad_display": "diente",
       "equivalente_g": -1,
@@ -67,19 +67,19 @@
     {
       "clave": "fresh_ginger",
       "nombre": "Jengibre fresco",
-      "cantidad": 5.0,
+      "cantidad": 5,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 5.0,
+      "equivalente_g": -1,
       "estado": "trozo de ~2 cm, pelado y rallado finamente"
     },
     {
       "clave": "mild_curry_powder",
       "nombre": "Curry en polvo suave",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tsp",
       "unidad_display": "cdita",
-      "equivalente_g": 5.0,
+      "equivalente_g": 5,
       "estado": "molido"
     },
     {
@@ -104,10 +104,10 @@
     {
       "clave": "baby_spinach",
       "nombre": "Espinacas baby",
-      "cantidad": 99.23,
+      "cantidad": 99,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 99.23,
+      "equivalente_g": -1,
       "estado": "hojas frescas"
     },
     {
@@ -122,19 +122,19 @@
     {
       "clave": "cooked_brown_rice",
       "nombre": "Arroz integral cocido",
-      "cantidad": 127.58,
+      "cantidad": 128,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 127.58,
+      "equivalente_g": -1,
       "estado": "cocido, para acompañar"
     },
     {
       "clave": "roasted_sumac_chickpeas",
       "nombre": "Garbanzos al sumaque tostado",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 10.0,
+      "equivalente_g": 10,
       "estado": "preparados, ver p.24",
       "enlace": "recipe://roasted-sumac-chickpeas-p24"
     }

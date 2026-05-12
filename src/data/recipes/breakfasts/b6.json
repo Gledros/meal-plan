@@ -22,7 +22,7 @@
     {
       "clave": "olive_oil",
       "nombre": "Aceite de oliva",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 13.8,
@@ -31,10 +31,10 @@
     {
       "clave": "scallion",
       "nombre": "Cebollita de cambray",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 15.0,
+      "equivalente_g": 15,
       "estado": "picada finamente"
     },
     {
@@ -43,7 +43,7 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 75.0,
+      "equivalente_g": 75,
       "estado": "cortado en tiras"
     },
     {
@@ -58,10 +58,10 @@
     {
       "clave": "crumbled_tofu",
       "nombre": "Tofu extra firme desmenuzado",
-      "cantidad": 155.93,
+      "cantidad": 156,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 155.93,
+      "equivalente_g": -1,
       "estado": "prensado y desmenuzado"
     },
     {
@@ -85,16 +85,16 @@
     {
       "clave": "basil_leaves",
       "nombre": "Hojas de albahaca",
-      "cantidad": 6.0,
+      "cantidad": 6,
       "unidad": "piece",
       "unidad_display": "hoja",
-      "equivalente_g": 2.0,
+      "equivalente_g": 2,
       "estado": "fresca, en chiffonade"
     },
     {
       "clave": "flat_leaf_parsley",
       "nombre": "Perejil liso",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": -1,
@@ -103,16 +103,16 @@
     {
       "clave": "baby_spinach",
       "nombre": "Espinacas baby",
-      "cantidad": 60.0,
+      "cantidad": 60,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 60.0,
+      "equivalente_g": -1,
       "estado": "hojas frescas"
     },
     {
       "clave": "sweet_chili_sauce",
       "nombre": "Salsa de chile dulce",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 16.5,

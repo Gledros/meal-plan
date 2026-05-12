@@ -22,7 +22,7 @@
     {
       "clave": "olive_oil",
       "nombre": "Aceite de oliva",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 27.6,
@@ -31,16 +31,16 @@
     {
       "clave": "sourdough_bread",
       "nombre": "Pan de masa madre",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "rebanada",
-      "equivalente_g": 60.0,
+      "equivalente_g": 60,
       "estado": "cortado en cubos"
     },
     {
       "clave": "garlic",
       "nombre": "Ajo",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "clove",
       "unidad_display": "diente",
       "equivalente_g": -1,
@@ -49,10 +49,10 @@
     {
       "clave": "heirloom_tomatoes",
       "nombre": "Jitomates heirloom (variedad mixta)",
-      "cantidad": 100.0,
+      "cantidad": 100,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 100.0,
+      "equivalente_g": -1,
       "estado": "rebanados"
     },
     {
@@ -67,10 +67,10 @@
     {
       "clave": "basil_mint_leaves",
       "nombre": "Hojas de albahaca y menta",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "fresca, en chiffonade"
     },
     {

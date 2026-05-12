@@ -25,7 +25,7 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 25.0,
+      "equivalente_g": 25,
       "estado": "preparado, ver p.14",
       "enlace": "recipe://flaxseed-egg-p14"
     },
@@ -44,7 +44,7 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "limón",
-      "equivalente_g": 1.0,
+      "equivalente_g": 1,
       "estado": "ralladura de medio limón"
     },
     {
@@ -68,10 +68,10 @@
     {
       "clave": "cooked_brown_rice",
       "nombre": "Arroz integral cocido",
-      "cantidad": 99.23,
+      "cantidad": 99,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 99.23,
+      "equivalente_g": -1,
       "estado": "cocido, tibio o frío"
     },
     {
@@ -80,7 +80,7 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 60.0,
+      "equivalente_g": 60,
       "estado": "fresco, rebanado"
     },
     {
@@ -89,7 +89,7 @@
       "cantidad": 0.5,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 4.0,
+      "equivalente_g": 4,
       "estado": "en hojuelas, para decorar"
     }
   ],

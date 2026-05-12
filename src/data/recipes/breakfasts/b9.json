@@ -32,16 +32,16 @@
     {
       "clave": "silken_tofu",
       "nombre": "Tofu sedoso",
-      "cantidad": 56.7,
+      "cantidad": 57,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 56.7,
+      "equivalente_g": -1,
       "estado": "escurrido"
     },
     {
       "clave": "maple_syrup",
       "nombre": "Jarabe de maple",
-      "cantidad": 3.0,
+      "cantidad": 3,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 59.85,
@@ -77,10 +77,10 @@
     {
       "clave": "coconut_sugar",
       "nombre": "Azúcar de coco",
-      "cantidad": 49.61,
+      "cantidad": 50,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 49.61,
+      "equivalente_g": -1,
       "estado": "granulada o alternativa (azúcar mascabado)"
     },
     {
@@ -89,7 +89,7 @@
       "cantidad": 0.5,
       "unidad": "tsp",
       "unidad_display": "cdita",
-      "equivalente_g": 2.0,
+      "equivalente_g": 2,
       "estado": "leudante"
     },
     {
@@ -113,25 +113,25 @@
     {
       "clave": "sweet_potato",
       "nombre": "Camote",
-      "cantidad": 155.93,
+      "cantidad": 156,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 155.93,
+      "equivalente_g": -1,
       "estado": "pelado y rallado"
     },
     {
       "clave": "pear",
       "nombre": "Pera",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 150.0,
+      "equivalente_g": 150,
       "estado": "pelada y picada finamente"
     },
     {
       "clave": "oil_greasing",
       "nombre": "Aceite vegetal",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tsp",
       "unidad_display": "cdita",
       "equivalente_g": 4.6,
@@ -140,10 +140,10 @@
     {
       "clave": "granola",
       "nombre": "Granola",
-      "cantidad": 3.0,
+      "cantidad": 3,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 20.0,
+      "equivalente_g": 20,
       "estado": "preparada, ver p.32, para decorar encima",
       "enlace": "recipe://granola-p32"
     }

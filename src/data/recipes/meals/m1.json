@@ -31,10 +31,10 @@
     {
       "clave": "scallion",
       "nombre": "Cebollita de cambray",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 15.0,
+      "equivalente_g": 15,
       "estado": "rebanada finamente"
     },
     {
@@ -43,7 +43,7 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 75.0,
+      "equivalente_g": 75,
       "estado": "pequeño, en cubos"
     },
     {
@@ -76,16 +76,16 @@
     {
       "clave": "cashew_nuts",
       "nombre": "Nueces de la india (marañones)",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "tostadas, picadas groseramente"
     },
     {
       "clave": "olive_oil_dressing",
       "nombre": "Aceite de oliva (para aderezo)",
-      "cantidad": 3.0,
+      "cantidad": 3,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 41.4,
@@ -94,7 +94,7 @@
     {
       "clave": "soy_sauce",
       "nombre": "Salsa de soya",
-      "cantidad": 3.0,
+      "cantidad": 3,
       "unidad": "tsp",
       "unidad_display": "cdita",
       "equivalente_g": 17.25,
@@ -103,7 +103,7 @@
     {
       "clave": "lemon_juice",
       "nombre": "Jugo de limón",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tsp",
       "unidad_display": "cdita",
       "equivalente_g": 10.3,
@@ -121,7 +121,7 @@
     {
       "clave": "fresh_ginger",
       "nombre": "Jengibre fresco",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tsp",
       "unidad_display": "cdita",
       "equivalente_g": 3.5,

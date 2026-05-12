@@ -31,10 +31,10 @@
     {
       "clave": "mixed_herbs",
       "nombre": "Mezcla de hierbas frescas (perejil liso, cilantro, menta)",
-      "cantidad": 20.0,
+      "cantidad": 20,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 20.0,
+      "equivalente_g": -1,
       "estado": "picadas finamente"
     },
     {
@@ -43,16 +43,16 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 25.0,
+      "equivalente_g": 25,
       "estado": "pequeña, picada finamente"
     },
     {
       "clave": "roma_tomatoes",
       "nombre": "Jitomates guaje (saladet)",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 120.0,
+      "equivalente_g": 120,
       "estado": "picados finamente"
     },
     {
@@ -61,13 +61,13 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 75.0,
+      "equivalente_g": 75,
       "estado": "pequeño, en cubos"
     },
     {
       "clave": "lemon_juice",
       "nombre": "Jugo de limón",
-      "cantidad": 15.0,
+      "cantidad": 15,
       "unidad": "ml",
       "unidad_display": "ml",
       "equivalente_g": 15.45,
@@ -76,7 +76,7 @@
     {
       "clave": "olive_oil",
       "nombre": "Aceite de oliva",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 13.8,

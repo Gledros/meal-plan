@@ -31,10 +31,10 @@
     {
       "clave": "sweet_potato",
       "nombre": "Camote",
-      "cantidad": 198.45,
+      "cantidad": 198,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 198.45,
+      "equivalente_g": -1,
       "estado": "pelado y en cubos"
     },
     {
@@ -43,7 +43,7 @@
       "cantidad": 0.25,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 150.0,
+      "equivalente_g": 150,
       "estado": "cortada en floretes pequeños"
     },
     {
@@ -85,19 +85,19 @@
     {
       "clave": "spinach_arugula_mix",
       "nombre": "Mezcla de espinaca baby y arúgula",
-      "cantidad": 49.61,
+      "cantidad": 50,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 49.61,
+      "equivalente_g": -1,
       "estado": "hojas frescas"
     },
     {
       "clave": "red_wine_vinaigrette",
       "nombre": "Vinagreta de vino tinto",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 30.0,
+      "equivalente_g": 30,
       "estado": "preparada, ver p.16",
       "enlace": "recipe://red-wine-vinaigrette-p16"
     }

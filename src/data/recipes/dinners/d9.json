@@ -50,10 +50,10 @@
     {
       "clave": "iceberg_lettuce",
       "nombre": "Lechuga iceberg",
-      "cantidad": 28.35,
+      "cantidad": 28,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 28.35,
+      "equivalente_g": -1,
       "estado": "rallada"
     },
     {
@@ -69,10 +69,10 @@
     {
       "clave": "cilantro",
       "nombre": "Cilantro",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "hojas frescas, para decorar"
     },
     {
@@ -81,13 +81,13 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 75.0,
+      "equivalente_g": 75,
       "estado": "rebanado"
     },
     {
       "clave": "hot_chili_sauce",
       "nombre": "Salsa picante",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tsp",
       "unidad_display": "cdita",
       "equivalente_g": 5.5,

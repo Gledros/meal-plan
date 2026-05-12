@@ -25,22 +25,22 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 75.0,
+      "equivalente_g": 75,
       "estado": "pelado y rallado"
     },
     {
       "clave": "russet_potatoes",
       "nombre": "Papas russet (alpha)",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 300.0,
+      "equivalente_g": 300,
       "estado": "peladas y ralladas"
     },
     {
       "clave": "chickpea_flour",
       "nombre": "Harina de garbanzo (besan)",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 6.5,
@@ -67,7 +67,7 @@
     {
       "clave": "frying_oil",
       "nombre": "Aceite de coco o vegetal",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": -1,
@@ -85,10 +85,10 @@
     {
       "clave": "baby_spinach",
       "nombre": "Espinacas baby",
-      "cantidad": 21.26,
+      "cantidad": 21,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 21.26,
+      "equivalente_g": -1,
       "estado": "frescas, cocidas al vapor"
     },
     {
@@ -97,16 +97,16 @@
       "cantidad": 0.5,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 75.0,
+      "equivalente_g": 75,
       "estado": "partido, sin hueso, rebanado"
     },
     {
       "clave": "lemon_wedge",
       "nombre": "Limón",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "gajo",
-      "equivalente_g": 10.0,
+      "equivalente_g": 10,
       "estado": "gajo, para servir"
     }
   ],

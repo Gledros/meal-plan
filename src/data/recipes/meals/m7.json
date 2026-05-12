@@ -25,13 +25,13 @@
       "cantidad": 0.25,
       "unidad": "piece",
       "unidad_display": "cabeza",
-      "equivalente_g": 60.0,
+      "equivalente_g": 60,
       "estado": "hojas rotas con las manos"
     },
     {
       "clave": "french_breakfast_radishes",
       "nombre": "Rábanos",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "piece",
       "unidad_display": "pieza",
       "equivalente_g": -1,
@@ -40,28 +40,28 @@
     {
       "clave": "sweetcorn_kernels",
       "nombre": "Granos de elote",
-      "cantidad": 80.0,
+      "cantidad": 80,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 80.0,
+      "equivalente_g": -1,
       "estado": "frescos, desgranados de ½ mazorca"
     },
     {
       "clave": "scallion",
       "nombre": "Cebollita de cambray",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 15.0,
+      "equivalente_g": 15,
       "estado": "rebanada finamente"
     },
     {
       "clave": "flat_leaf_parsley",
       "nombre": "Perejil liso",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "ramita",
-      "equivalente_g": 2.0,
+      "equivalente_g": 2,
       "estado": "hojas picadas"
     },
     {

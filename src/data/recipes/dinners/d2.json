@@ -49,16 +49,16 @@
     {
       "clave": "beansprouts",
       "nombre": "Germinado de frijol",
-      "cantidad": 21.26,
+      "cantidad": 21,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 21.26,
+      "equivalente_g": -1,
       "estado": "fresco"
     },
     {
       "clave": "scallion",
       "nombre": "Cebollita de cambray",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
       "equivalente_g": -1,
@@ -67,10 +67,10 @@
     {
       "clave": "cilantro_garnish",
       "nombre": "Cilantro",
-      "cantidad": 5.0,
+      "cantidad": 5,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 5.0,
+      "equivalente_g": -1,
       "estado": "fresco, para servir (cantidad estimada)"
     },
     {
@@ -85,7 +85,7 @@
     {
       "clave": "fresh_ginger_sauce",
       "nombre": "Jengibre fresco rallado (para salsa)",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 10.5,
@@ -94,7 +94,7 @@
     {
       "clave": "toasted_sesame_oil",
       "nombre": "Aceite de ajonjolí tostado (para salsa)",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tsp",
       "unidad_display": "cdita",
       "equivalente_g": 9.2,
@@ -103,7 +103,7 @@
     {
       "clave": "soy_sauce",
       "nombre": "Salsa de soya (para salsa)",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 34.5,
@@ -112,7 +112,7 @@
     {
       "clave": "rice_vinegar",
       "nombre": "Vinagre de arroz (para salsa)",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 15.15,

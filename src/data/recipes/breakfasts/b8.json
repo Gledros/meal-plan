@@ -22,7 +22,7 @@
     {
       "clave": "olive_oil",
       "nombre": "Aceite de oliva",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
       "equivalente_g": 13.8,
@@ -31,25 +31,25 @@
     {
       "clave": "small_red_onion",
       "nombre": "Cebolla morada",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 80.0,
+      "equivalente_g": 80,
       "estado": "pequeña, picada finamente"
     },
     {
       "clave": "garlic",
       "nombre": "Ajo",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "clove",
       "unidad_display": "diente",
-      "equivalente_g": 10.0,
+      "equivalente_g": 10,
       "estado": "machacado"
     },
     {
       "clave": "smoked_paprika",
       "nombre": "Pimentón ahumado",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "tsp",
       "unidad_display": "cdita",
       "equivalente_g": 4.6,
@@ -58,7 +58,7 @@
     {
       "clave": "ground_cumin",
       "nombre": "Comino molido",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tsp",
       "unidad_display": "cdita",
       "equivalente_g": 2.1,
@@ -67,7 +67,7 @@
     {
       "clave": "chili_powder",
       "nombre": "Chile en polvo",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tsp",
       "unidad_display": "cdita",
       "equivalente_g": 2.5,
@@ -103,10 +103,10 @@
     {
       "clave": "black_beans",
       "nombre": "Frijoles negros (lata)",
-      "cantidad": 198.45,
+      "cantidad": 198,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 198.45,
+      "equivalente_g": -1,
       "estado": "lata, escurridos y enjuagados"
     },
     {
@@ -122,10 +122,10 @@
     {
       "clave": "cilantro",
       "nombre": "Cilantro",
-      "cantidad": 7.09,
+      "cantidad": 7,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 7.09,
+      "equivalente_g": -1,
       "estado": "hojas picadas, para decorar"
     },
     {
@@ -149,10 +149,10 @@
     {
       "clave": "crusty_bread",
       "nombre": "Pan rústico",
-      "cantidad": 2.0,
+      "cantidad": 2,
       "unidad": "piece",
       "unidad_display": "rebanada",
-      "equivalente_g": 120.0,
+      "equivalente_g": 120,
       "estado": "para acompañar (1 rebanada por porción)"
     }
   ],

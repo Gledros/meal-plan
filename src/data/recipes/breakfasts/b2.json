@@ -22,7 +22,7 @@
     {
       "clave": "coconut_milk",
       "nombre": "Leche de coco (o cualquier leche vegetal)",
-      "cantidad": 51.75,
+      "cantidad": 52,
       "unidad": "ml",
       "unidad_display": "ml",
       "equivalente_g": 51.75,
@@ -31,10 +31,10 @@
     {
       "clave": "vanilla_bean",
       "nombre": "Vaina de vainilla",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "piece",
       "unidad_display": "pieza",
-      "equivalente_g": 3.0,
+      "equivalente_g": 3,
       "estado": "abierta, semillas raspadas"
     },
     {
@@ -49,10 +49,10 @@
     {
       "clave": "chia_seeds",
       "nombre": "Semillas de chía",
-      "cantidad": 1.0,
+      "cantidad": 1,
       "unidad": "tbsp",
       "unidad_display": "cda",
-      "equivalente_g": 12.0,
+      "equivalente_g": 12,
       "estado": "secas"
     },
     {
@@ -61,7 +61,7 @@
       "cantidad": 0.25,
       "unidad": "cup",
       "unidad_display": "taza",
-      "equivalente_g": 37.0,
+      "equivalente_g": 37,
       "estado": "frescos, divididos en dos partes"
     }
   ],

@@ -40,7 +40,7 @@
     {
       "clave": "frozen_mango",
       "nombre": "Mango",
-      "cantidad": 99.23,
+      "cantidad": 99,
       "unidad": "g",
       "unidad_display": "g",
       "equivalente_g": -1,
@@ -49,16 +49,16 @@
     {
       "clave": "coconut_yogurt",
       "nombre": "Yogur de coco",
-      "cantidad": 45.0,
+      "cantidad": 45,
       "unidad": "g",
       "unidad_display": "g",
-      "equivalente_g": 45.0,
+      "equivalente_g": -1,
       "estado": "2 cucharadas copeteadas"
     },
     {
       "clave": "coconut_water",
       "nombre": "Agua de coco",
-      "cantidad": 103.5,
+      "cantidad": 104,
       "unidad": "ml",
       "unidad_display": "ml",
       "equivalente_g": 103.5,
