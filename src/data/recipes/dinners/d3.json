@@ -24,7 +24,6 @@
       "nombre": "Aceite de coco",
       "cantidad": 1.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 20.7,
       "estado": "líquido o derretido, dividido"
     },
@@ -33,7 +32,6 @@
       "nombre": "Zanahoria",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 90,
       "estado": "grande, rallada"
     },
@@ -42,7 +40,6 @@
       "nombre": "Chirivía (pastinaca)",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 100,
       "estado": "rallada"
     },
@@ -51,7 +48,6 @@
       "nombre": "Cebolla",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 150,
       "estado": "rallada"
     },
@@ -60,7 +56,6 @@
       "nombre": "Ajo",
       "cantidad": 2,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": -1,
       "estado": "picado finamente"
     },
@@ -69,7 +64,6 @@
       "nombre": "Jengibre fresco",
       "cantidad": 5,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "trozo de ~2 cm, pelado y rallado finamente"
     },
@@ -78,7 +72,6 @@
       "nombre": "Curry en polvo suave",
       "cantidad": 2,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 5,
       "estado": "molido"
     },
@@ -87,7 +80,6 @@
       "nombre": "Caldo vegano",
       "cantidad": 227,
       "unidad": "cup",
-      "unidad_display": "taza",
       "equivalente_g": -1,
       "estado": "líquido, ver p.30",
       "enlace": "recipe://vegan-broth-p30"
@@ -97,7 +89,6 @@
       "nombre": "Lentejas rojas secas",
       "cantidad": 99,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "secas, sin remojar"
     },
@@ -106,7 +97,6 @@
       "nombre": "Espinacas baby",
       "cantidad": 99,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "hojas frescas"
     },
@@ -115,7 +105,6 @@
       "nombre": "Chalote francés",
       "cantidad": 128,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": -1,
       "estado": "rebanado finamente"
     },
@@ -124,7 +113,6 @@
       "nombre": "Arroz integral cocido",
       "cantidad": 128,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "cocido, para acompañar"
     },
@@ -133,7 +121,6 @@
       "nombre": "Garbanzos al sumaque tostado",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 10,
       "estado": "preparados, ver p.24",
       "enlace": "recipe://roasted-sumac-chickpeas-p24"
@@ -178,3 +165,4 @@
     ]
   }
 }
+

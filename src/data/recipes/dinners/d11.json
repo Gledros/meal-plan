@@ -24,7 +24,6 @@
       "nombre": "Bok choy",
       "cantidad": 300,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2 piezas, en mitades",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Castañas de agua",
       "cantidad": 60,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "6 piezas, picadas finas",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Cebollita de cambray",
       "cantidad": 15,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "rebanada",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Hongo shiitake",
       "cantidad": 15,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "picado fino",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Jengibre fresco",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "rallado",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Salsa tamari",
       "cantidad": 12,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2 cditas",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Aceite de ajonjolí tostado",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "½ cda",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Lámina de gyoza",
       "cantidad": 10,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 120,
       "estado": "aprox. 12g c/u",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Aceite vegetal",
       "cantidad": 9,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2 cditas (para freír)",
       "enlace": ""

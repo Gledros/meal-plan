@@ -24,7 +24,6 @@
       "nombre": "Semillas de chía",
       "cantidad": 15,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Proteína vegetal sabor vainilla",
       "cantidad": 15,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "en polvo",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Avena en hojuelas",
       "cantidad": 12,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Jugo de naranja",
       "cantidad": 60,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 62,
       "estado": "recién exprimido",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Yogur vegetal",
       "cantidad": 20,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Blueberries (arándanos azules)",
       "cantidad": 15,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "8-10 piezas frescas",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Manzana roja",
       "cantidad": 0.25,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 40,
       "estado": "sin corazón, rallada",
       "enlace": ""

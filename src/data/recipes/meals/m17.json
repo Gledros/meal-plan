@@ -24,7 +24,6 @@
       "nombre": "Ejotes (green beans)",
       "cantidad": 99,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "3½ oz ≈ 99 g",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Broccolini",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "ramito",
       "equivalente_g": 40,
       "estado": "½ manojo, cortado",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Aceite de ajonjolí tostado",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 14,
       "estado": "",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Avellanas tostadas",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "¼ oz ≈ 7 g, picadas",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Tahini",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 32,
       "estado": "para el aderezo",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Jugo de limón",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 15,
       "estado": "para el aderezo",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Ralladura de limón",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2,
       "estado": "ralladura, para aderezo",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Agua (para ajustar aderezo)",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 15,
       "estado": "opcional, para aligerar el aderezo",
       "enlace": ""

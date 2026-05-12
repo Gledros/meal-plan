@@ -24,7 +24,6 @@
       "nombre": "Leche de coco (o cualquier leche vegetal)",
       "cantidad": 52,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 51.75,
       "estado": "líquida"
     },
@@ -33,7 +32,6 @@
       "nombre": "Vaina de vainilla",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 3,
       "estado": "abierta, semillas raspadas"
     },
@@ -42,7 +40,6 @@
       "nombre": "Jarabe de maple",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 9.98,
       "estado": "líquido, opcional"
     },
@@ -51,7 +48,6 @@
       "nombre": "Semillas de chía",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 12,
       "estado": "secas"
     },
@@ -60,7 +56,6 @@
       "nombre": "Arándanos frescos",
       "cantidad": 0.25,
       "unidad": "cup",
-      "unidad_display": "taza",
       "equivalente_g": 37,
       "estado": "frescos, divididos en dos partes"
     }
@@ -92,3 +87,4 @@
     ]
   }
 }
+

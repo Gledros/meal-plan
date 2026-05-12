@@ -24,7 +24,6 @@
       "nombre": "Proteína vegetal sabor vainilla",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 15,
       "estado": "en polvo",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Yogur de coco (u otro vegetal)",
       "cantidad": 0.25,
       "unidad": "cup",
-      "unidad_display": "taza",
       "equivalente_g": 62,
       "estado": "",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Granola",
       "cantidad": 57,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "ver p.32",
       "enlace": "recipe://granola-p32"
@@ -54,7 +51,6 @@
       "nombre": "Nectarina",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 140,
       "estado": "deshuesada y en láminas",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Fresas",
       "cantidad": 3,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 45,
       "estado": "rebanadas",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Hojuelas de coco tostado",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 5,
       "estado": "",
       "enlace": ""

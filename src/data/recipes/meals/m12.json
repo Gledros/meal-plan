@@ -24,7 +24,6 @@
       "nombre": "Fideos soba (trigo sarraceno)",
       "cantidad": 35,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "secos",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Broccolini",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "ramito",
       "equivalente_g": 40,
       "estado": "",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Edamame desgranado",
       "cantidad": 28,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "fresco o congelado",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Rábano francés",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 7,
       "estado": "rebanado fino",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Cebollita de cambray",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 15,
       "estado": "rebanada",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Tamari",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 14,
       "estado": "aderezo",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Vinagre de arroz",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 15,
       "estado": "aderezo",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Mirin",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 5,
       "estado": "aderezo",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Aceite de ajonjolí tostado",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 7,
       "estado": "aderezo",
       "enlace": ""
@@ -114,7 +105,6 @@
       "nombre": "Chile rojo fresco",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 7,
       "estado": "finamente picado, opcional",
       "enlace": ""

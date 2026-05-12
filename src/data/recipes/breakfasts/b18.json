@@ -24,7 +24,6 @@
       "nombre": "Hojuelas de quinoa",
       "cantidad": 43,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "seca",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Leche de almendra (u otra vegetal)",
       "cantidad": 120,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 124,
       "estado": "½ cup",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Plátano",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 120,
       "estado": "machacado",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Semillas de cáñamo molidas",
       "cantidad": 10,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "1 tbsp",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Sal",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1,
       "estado": "al gusto",
       "enlace": ""

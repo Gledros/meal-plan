@@ -24,7 +24,6 @@
       "nombre": "Arroz integral cocido, tibio",
       "cantidad": 255,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "cocido, tibio"
     },
@@ -33,7 +32,6 @@
       "nombre": "Cebollita de cambray",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 15,
       "estado": "rebanada finamente"
     },
@@ -42,7 +40,6 @@
       "nombre": "Chile morrón rojo",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 75,
       "estado": "pequeño, en cubos"
     },
@@ -51,7 +48,6 @@
       "nombre": "Pasas",
       "cantidad": 7,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": -1,
       "estado": "secas"
     },
@@ -60,7 +56,6 @@
       "nombre": "Perejil liso",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "picado groseramente"
     },
@@ -69,7 +64,6 @@
       "nombre": "Hierbabuena fresca",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "picada groseramente"
     },
@@ -78,7 +72,6 @@
       "nombre": "Nueces de la india (marañones)",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "tostadas, picadas groseramente"
     },
@@ -87,7 +80,6 @@
       "nombre": "Aceite de oliva (para aderezo)",
       "cantidad": 3,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 41.4,
       "estado": "líquido"
     },
@@ -96,7 +88,6 @@
       "nombre": "Salsa de soya",
       "cantidad": 3,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 17.25,
       "estado": "líquida"
     },
@@ -105,7 +96,6 @@
       "nombre": "Jugo de limón",
       "cantidad": 2,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 10.3,
       "estado": "fresco"
     },
@@ -114,7 +104,6 @@
       "nombre": "Ajo",
       "cantidad": 0.5,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": 2.5,
       "estado": "machacado"
     },
@@ -123,7 +112,6 @@
       "nombre": "Jengibre fresco",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 3.5,
       "estado": "rallado finamente"
     },
@@ -132,7 +120,6 @@
       "nombre": "Sal",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2.71,
       "estado": "al gusto"
     },
@@ -141,7 +128,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.66,
       "estado": "al gusto"
     }
@@ -180,3 +166,4 @@
     ]
   }
 }
+

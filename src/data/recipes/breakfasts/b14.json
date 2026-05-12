@@ -24,7 +24,6 @@
       "nombre": "Plátano maduro grande",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 120,
       "estado": "hecho puré",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Aceite de coco",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 13,
       "estado": "derretido",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Proteína vegetal sabor vainilla",
       "cantidad": 12,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Leche de almendra",
       "cantidad": 220,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 226,
       "estado": "",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Polvo para hornear",
       "cantidad": 2,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 8,
       "estado": "",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Harina de trigo",
       "cantidad": 225,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Almendra molida",
       "cantidad": 30,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""

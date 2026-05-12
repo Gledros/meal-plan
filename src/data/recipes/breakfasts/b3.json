@@ -24,7 +24,6 @@
       "nombre": "Pan de zanahoria y chirivía",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "rebanada",
       "equivalente_g": -1,
       "estado": "rebanado, listo para tostar",
       "enlace": "recipe://carrot-parsnip-bread-p34"
@@ -34,7 +33,6 @@
       "nombre": "Fresas",
       "cantidad": 50,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "frescas, rebanadas, para servir"
     },
@@ -43,7 +41,6 @@
       "nombre": "Tahini",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 32.1,
       "estado": "pasta de ajonjolí"
     },
@@ -52,7 +49,6 @@
       "nombre": "Jarabe de maple",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 19.95,
       "estado": "líquido"
     },
@@ -61,7 +57,6 @@
       "nombre": "Canela molida",
       "cantidad": 0.5,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1.4,
       "estado": "molida"
     }
@@ -92,3 +87,4 @@
     ]
   }
 }
+

@@ -19,7 +19,6 @@ export const IngredientSchema = z.object({
 	nombre: z.string().min(1),
 	cantidad: z.number(),
 	unidad: z.enum(["g", "kg", "ml", "l", "tbsp", "tsp", "piece", "clove", "bunch", "cup", "pinch"]),
-	unidad_display: z.string().min(1),
 	equivalente_g: z.number(),
 	estado: z.string(),
 	enlace: z.string().optional(),

@@ -24,7 +24,6 @@
 			"nombre": "Calabaza butternut",
 			"cantidad": 298,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "pelada y en cubos",
 			"enlace": ""
@@ -34,7 +33,6 @@
 			"nombre": "Zanahoria baby",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "ramito",
 			"equivalente_g": 120,
 			"estado": "5-6 piezas, peladas",
 			"enlace": ""
@@ -44,7 +42,6 @@
 			"nombre": "Ajo",
 			"cantidad": 1,
 			"unidad": "clove",
-			"unidad_display": "diente",
 			"equivalente_g": 5,
 			"estado": "",
 			"enlace": ""
@@ -54,7 +51,6 @@
 			"nombre": "Cebolla",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": 50,
 			"estado": "cuarteada",
 			"enlace": ""
@@ -64,7 +60,6 @@
 			"nombre": "Aceite de oliva",
 			"cantidad": 0.5,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 7,
 			"estado": "",
 			"enlace": ""
@@ -74,7 +69,6 @@
 			"nombre": "Caldo vegano",
 			"cantidad": 340,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "",
 			"enlace": ""
@@ -84,7 +78,6 @@
 			"nombre": "Pan plano rápido",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": 35,
 			"estado": "ver receta p.36, para servir",
 			"enlace": ""
@@ -94,7 +87,6 @@
 			"nombre": "Cúrcuma molida",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 3,
 			"estado": "",
 			"enlace": ""
@@ -104,7 +96,6 @@
 			"nombre": "Comino molido",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 2,
 			"estado": "",
 			"enlace": ""
@@ -114,7 +105,6 @@
 			"nombre": "Perejil liso picado",
 			"cantidad": 1,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 4,
 			"estado": "para servir",
 			"enlace": ""
@@ -124,7 +114,6 @@
 			"nombre": "Pan rallado",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "cda",
 			"equivalente_g": 8,
 			"estado": "para servir",
 			"enlace": ""

@@ -24,7 +24,6 @@
       "nombre": "Spaghetti (o pasta a elección)",
       "cantidad": 57,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "seco, sin cocer"
     },
@@ -33,7 +32,6 @@
       "nombre": "Sal",
       "cantidad": 0.125,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.75,
       "estado": "pizca, para el agua de cocción"
     },
@@ -42,7 +40,6 @@
       "nombre": "Pesto",
       "cantidad": 2.0,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 32.1,
       "estado": "preparado, ver p.26",
       "enlace": "recipe://pesto-p26"
@@ -52,7 +49,6 @@
       "nombre": "Aceite (oliva o vegetal)",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 6.9,
       "estado": "líquido"
     },
@@ -61,7 +57,6 @@
       "nombre": "Levadura nutricional",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 2.5,
       "estado": "en copos, opcional"
     }

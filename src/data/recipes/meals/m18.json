@@ -24,7 +24,6 @@
       "nombre": "Aceite de coco",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 7,
       "estado": "",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Tofu extra firme",
       "cantidad": 78,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2¾ oz, presionado y cortado en cubos",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Cebolla pequeña",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 25,
       "estado": "picada",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Ajo",
       "cantidad": 2,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": 10,
       "estado": "finamente picado",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Garam masala",
       "cantidad": 0.5,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2,
       "estado": "",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Comino molido",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1,
       "estado": "",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Cúrcuma molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1,
       "estado": "",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Leche/crema de coco",
       "cantidad": 104,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 104,
       "estado": "3½ fl oz aprox.",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Espinaca congelada",
       "cantidad": 71,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2½ oz",
       "enlace": ""
@@ -114,7 +105,6 @@
       "nombre": "Sal",
       "cantidad": 0.5,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2,
       "estado": "al gusto",
       "enlace": ""
@@ -124,7 +114,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1,
       "estado": "al gusto",
       "enlace": ""

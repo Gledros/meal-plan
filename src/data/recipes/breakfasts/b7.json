@@ -24,7 +24,6 @@
       "nombre": "Camote",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 75,
       "estado": "pelado y rallado"
     },
@@ -33,7 +32,6 @@
       "nombre": "Papas russet (alpha)",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 300,
       "estado": "peladas y ralladas"
     },
@@ -42,7 +40,6 @@
       "nombre": "Harina de garbanzo (besan)",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 6.5,
       "estado": "en polvo"
     },
@@ -51,7 +48,6 @@
       "nombre": "Sal de mar",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1.25,
       "estado": "al gusto"
     },
@@ -60,7 +56,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.66,
       "estado": "al gusto"
     },
@@ -69,7 +64,6 @@
       "nombre": "Aceite de coco o vegetal",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": -1,
       "estado": "para freír superficialmente"
     },
@@ -78,7 +72,6 @@
       "nombre": "Hierbas frescas picadas (sobrantes)",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "opcionales, sobrantes de la semana"
     },
@@ -87,7 +80,6 @@
       "nombre": "Espinacas baby",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "frescas, cocidas al vapor"
     },
@@ -96,7 +88,6 @@
       "nombre": "Aguacate",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 75,
       "estado": "partido, sin hueso, rebanado"
     },
@@ -105,7 +96,6 @@
       "nombre": "Limón",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "gajo",
       "equivalente_g": 10,
       "estado": "gajo, para servir"
     }
@@ -150,3 +140,4 @@
     ]
   }
 }
+

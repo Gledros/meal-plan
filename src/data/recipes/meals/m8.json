@@ -24,7 +24,6 @@
       "nombre": "Wakame (alga marina seca)",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "seco, se rehidrata durante la cocción"
     },
@@ -33,7 +32,6 @@
       "nombre": "Kimchi",
       "cantidad": 14,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "fermentado"
     },
@@ -42,7 +40,6 @@
       "nombre": "Pasta de miso blanco",
       "cantidad": 14,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "pasta, disuelta fuera del fuego"
     },
@@ -51,7 +48,6 @@
       "nombre": "Cebollita de cambray",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 15,
       "estado": "rebanada finamente, para servir"
     }
@@ -88,3 +84,4 @@
     ]
   }
 }
+

@@ -24,7 +24,6 @@
       "nombre": "Berenjena",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 200,
       "estado": "pequeña, rebanada a lo largo en láminas delgadas"
     },
@@ -33,7 +32,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 27.6,
       "estado": "líquido"
     },
@@ -42,7 +40,6 @@
       "nombre": "Za'atar",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 7.5,
       "estado": "mezcla de especias seca"
     },
@@ -51,7 +48,6 @@
       "nombre": "Panes planos rápidos",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 120,
       "estado": "caseros, ver p.36",
       "enlace": "recipe://quick-flatbreads-p36"
@@ -61,7 +57,6 @@
       "nombre": "Crema de ajo",
       "cantidad": 7,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": -1,
       "estado": "casera, ver p.26",
       "enlace": "recipe://garlic-whip-p26"
@@ -71,7 +66,6 @@
       "nombre": "Espinacas baby",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "hojas frescas"
     }
@@ -109,3 +103,4 @@
     ]
   }
 }
+

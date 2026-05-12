@@ -24,7 +24,6 @@
       "nombre": "Nuez pecana",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "picada groseramente",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Harina de coco",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "fina",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Coco rallado",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "fino, seco",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Aceite de coco",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "preferentemente sólido",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Frutas con hueso mixtas",
       "cantidad": 300,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "durazno, ciruela, chabacano, en gajos",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Canela molida",
       "cantidad": 1,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Jarabe de maple",
       "cantidad": 10,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "opcional",
       "enlace": ""

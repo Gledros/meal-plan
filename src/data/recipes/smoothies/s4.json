@@ -14,7 +14,6 @@
       "nombre": "manzana",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 150,
       "estado": ""
     },
@@ -23,7 +22,6 @@
       "nombre": "chía",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 12,
       "estado": ""
     },
@@ -32,7 +30,6 @@
       "nombre": "pepino",
       "cantidad": 0.5,
       "unidad": "cup",
-      "unidad_display": "taza",
       "equivalente_g": 50,
       "estado": ""
     },
@@ -41,7 +38,6 @@
       "nombre": "bebida vegetal",
       "cantidad": 1,
       "unidad": "cup",
-      "unidad_display": "taza",
       "equivalente_g": 240,
       "estado": ""
     },
@@ -50,7 +46,6 @@
       "nombre": "Canela al gusto",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 100,
       "estado": ""
     },
@@ -59,7 +54,6 @@
       "nombre": "proteína vegetal en polvo",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "scoop",
       "equivalente_g": 30,
       "estado": ""
     },
@@ -68,7 +62,6 @@
       "nombre": "creatina",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "scoop",
       "equivalente_g": 5,
       "estado": ""
     },
@@ -77,7 +70,6 @@
       "nombre": "chía pre-hidratada",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 12,
       "estado": ""
     },
@@ -86,7 +78,6 @@
       "nombre": "linaza pre-hidratada",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 7,
       "estado": ""
     },
@@ -95,10 +86,10 @@
       "nombre": "semillas de cáñamo peladas",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 10,
       "estado": ""
     }
   ],
   "color": "#E5C49A"
 }
+

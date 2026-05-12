@@ -24,7 +24,6 @@
       "nombre": "Aceite de coco",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 13,
       "estado": "",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Ajo",
       "cantidad": 1,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": 5,
       "estado": "rebanado fino",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Setas mixtas (enoki, ostión, champiñón)",
       "cantidad": 57,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "rebanadas",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Kale rizado o cavolo nero",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "tallo",
       "equivalente_g": 40,
       "estado": "hojas sin tallo y troceadas",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Tamari",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 5,
       "estado": "",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Pan pumpernickel o integral",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "rebanada",
       "equivalente_g": 70,
       "estado": "",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Chutney de chile picante o pesto",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 15,
       "estado": "",
       "enlace": ""

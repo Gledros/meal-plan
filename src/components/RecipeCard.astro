@@ -1,7 +1,12 @@
 ---
 import { type MealDinnerRecipe } from '@data/runtime-recipes';
 import { Icon } from 'astro-icon/components';
-import { lightenHexColor, darkenHexColor, formatQuantity } from '@util';
+import {
+	lightenHexColor,
+	darkenHexColor,
+	formatQuantity,
+	formatUnitLabel,
+} from '@util';
 
 interface Props {
 	id: number;
@@ -77,14 +82,14 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 									<span
 										class='font-semibold ingredient-quantity'
 										data-qty-base={ing.cantidad}
-										data-qty-unit={ing.unidad_display}
+										data-qty-unit={ing.unidad}
 									>
 										<span class='ingredient-qty-value'>
-											{formatQuantity(ing.cantidad, ing.unidad_display)}
+											{formatQuantity(ing.cantidad, ing.unidad)}
 										</span>
 										<span class='ingredient-qty-unit'>
 											{' '}
-											{ing.unidad_display}
+											{formatUnitLabel(ing.unidad, ing.cantidad)}
 										</span>
 									</span>{' '}
 									<span class='ingredient-name'>{ing.nombre}</span>

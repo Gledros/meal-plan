@@ -24,7 +24,6 @@
 			"nombre": "Betabeles baby",
 			"cantidad": 2,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": 80,
 			"estado": "cortados en cuartos",
 			"enlace": ""
@@ -34,7 +33,6 @@
 			"nombre": "Zanahorias baby",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "manojo",
 			"equivalente_g": 150,
 			"estado": "limpias y recortadas",
 			"enlace": ""
@@ -44,7 +42,6 @@
 			"nombre": "Chirivía",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": 100,
 			"estado": "cuarteada",
 			"enlace": ""
@@ -54,7 +51,6 @@
 			"nombre": "Camote pequeño",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": 150,
 			"estado": "cortado en gajos",
 			"enlace": ""
@@ -64,7 +60,6 @@
 			"nombre": "Ajo",
 			"cantidad": 2,
 			"unidad": "clove",
-			"unidad_display": "diente",
 			"equivalente_g": 10,
 			"estado": "machacado",
 			"enlace": ""
@@ -74,7 +69,6 @@
 			"nombre": "Aceite de oliva",
 			"cantidad": 0.5,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 7,
 			"estado": "",
 			"enlace": ""
@@ -84,7 +78,6 @@
 			"nombre": "Sal",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 5,
 			"estado": "",
 			"enlace": ""
@@ -94,7 +87,6 @@
 			"nombre": "Chermoula",
 			"cantidad": 2,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 30,
 			"estado": "ver receta p.28",
 			"enlace": "recipe://chermoula-p28"
@@ -104,7 +96,6 @@
 			"nombre": "Garbanzos tostados con sumac",
 			"cantidad": 2,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 30,
 			"estado": "ver p.24, para servir",
 			"enlace": "recipe://roasted-sumac-chickpeas-p24"

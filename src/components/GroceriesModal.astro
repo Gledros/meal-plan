@@ -1,6 +1,7 @@
 ---
 import PortionMultiplier from './PortionMultiplier.astro';
 import TabsSlider from './TabsSlider.astro';
+import { formatUnitLabel } from '@util';
 
 type IngredientItem = {
 	cantidad: number;
@@ -145,35 +146,11 @@ const modalBaseId = normalizeIdentifierPart(title) || 'lista-de-compras';
 const defaultWeekId = resolvedWeeks[0]?.id ?? '';
 const weekTabs = resolvedWeeks.map(({ id, label }) => ({ id, label }));
 
-// Mapeo de unidades para display en español
-const unitDisplayMap: Record<string, string> = {
-	piece: 'pieza',
-	unit: 'unidad',
-	unidad: 'unidad',
-	pieza: 'pieza',
-	g: 'g',
-	gr: 'g',
-	gramos: 'g',
-	kg: 'kg',
-	ml: 'ml',
-	l: 'l',
-	taza: 'taza',
-	cup: 'taza',
-	cda: 'cda',
-	cucharada: 'cda',
-	tbsp: 'cda',
-	cdita: 'cdita',
-	cucharadita: 'cdita',
-	tsp: 'cdita',
-	scoop: 'scoop',
-	slice: 'rebanada',
-	rebanada: 'rebanada',
-};
-
-const displayUnit = (u: unknown) => {
-	if (!u) return '';
-	const key = String(u).trim().toLowerCase();
-	return unitDisplayMap[key] ?? String(u);
+const displayUnit = (unit: unknown, quantity: unknown) => {
+	if (!unit) return '';
+	const numericQuantity = Number(quantity);
+	const safeQuantity = Number.isFinite(numericQuantity) ? numericQuantity : 1;
+	return formatUnitLabel(String(unit), safeQuantity);
 };
 ---
 
@@ -285,7 +262,10 @@ const displayUnit = (u: unknown) => {
 																			{item.unidad ? (
 																				<span class='ingredients-qty-unit'>
 																					{' '}
-																					{displayUnit(item.unidad)}
+																					{displayUnit(
+																						item.unidad,
+																						item.cantidad,
+																					)}
 																				</span>
 																			) : null}{' '}
 																			— {item.nombre}
@@ -311,32 +291,13 @@ const displayUnit = (u: unknown) => {
 
 <script>
 	// @ts-nocheck
-	import { formatQuantity, normalizeQuantityForUnit } from '../util';
+	import {
+		formatQuantity,
+		normalizeQuantityForUnit,
+		formatUnitLabel,
+	} from '../util';
 
 	(() => {
-		const UNIT_DISPLAY: Record<string, string> = {
-			piece: 'pieza',
-			unit: 'unidad',
-			unidad: 'unidad',
-			pieza: 'pieza',
-			g: 'g',
-			gr: 'g',
-			gramos: 'g',
-			kg: 'kg',
-			ml: 'ml',
-			l: 'l',
-			taza: 'taza',
-			cup: 'taza',
-			cda: 'cda',
-			cucharada: 'cda',
-			tbsp: 'cda',
-			cdita: 'cdita',
-			cucharadita: 'cdita',
-			tsp: 'cdita',
-			scoop: 'scoop',
-			slice: 'rebanada',
-			rebanada: 'rebanada',
-		};
 		const MULTIPLIER_EVENT = 'portions-multiplier:change';
 		const parseMultiplier = (value: unknown) => {
 			const parsed = Number(value);
@@ -455,10 +416,10 @@ const displayUnit = (u: unknown) => {
 					const base = Number(node.getAttribute('data-qty-base'));
 					if (Number.isNaN(base)) return;
 					const rawUnit = node.getAttribute('data-qty-unit') ?? '';
-					const displayedUnit = UNIT_DISPLAY[rawUnit.toLowerCase()] ?? rawUnit;
 					const normalizedBase = normalizeQuantityForUnit(base, rawUnit);
 					const newValue = normalizedBase * multiplier;
 					const formatted = formatQuantity(newValue, rawUnit);
+					const displayedUnit = formatUnitLabel(rawUnit, newValue);
 					const valueEl = node.querySelector('.ingredients-qty-value');
 					const unitEl = node.querySelector('.ingredients-qty-unit');
 					if (valueEl) valueEl.textContent = formatted;

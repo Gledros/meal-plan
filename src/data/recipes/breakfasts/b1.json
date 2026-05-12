@@ -24,7 +24,6 @@
 			"nombre": "Avena en hojuelas (tipo porridge)",
 			"cantidad": 50,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "seca"
 		},
@@ -33,7 +32,6 @@
 			"nombre": "Canela molida",
 			"cantidad": 0.5,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 1.4,
 			"estado": "molida"
 		},
@@ -42,7 +40,6 @@
 			"nombre": "Leche de almendras",
 			"cantidad": 0.5,
 			"unidad": "cup",
-			"unidad_display": "taza",
 			"equivalente_g": -1,
 			"estado": "líquida, sin azúcar recomendado"
 		},
@@ -51,7 +48,6 @@
 			"nombre": "Pistaches",
 			"cantidad": 7,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "picados groseramente"
 		}

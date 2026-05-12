@@ -24,7 +24,6 @@
       "nombre": "Tofu extra firme",
       "cantidad": 177,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "prensado, escurrido, en 2 rebanadas gruesas"
     },
@@ -33,7 +32,6 @@
       "nombre": "Zumaque",
       "cantidad": 2.0,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 4.0,
       "estado": "molido"
     },
@@ -42,7 +40,6 @@
       "nombre": "Pimentón dulce (paprika)",
       "cantidad": 1.0,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2.3,
       "estado": "molido"
     },
@@ -51,7 +48,6 @@
       "nombre": "Ajo",
       "cantidad": 1.0,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": 5.0,
       "estado": "machacado"
     },
@@ -60,7 +56,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 1.0,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 13.8,
       "estado": "líquido, más extra para la plancha"
     },
@@ -69,7 +64,6 @@
       "nombre": "Jugo de limón",
       "cantidad": 2.0,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 30.9,
       "estado": "fresco"
     },
@@ -78,7 +72,6 @@
       "nombre": "Broccolini",
       "cantidad": 3.0,
       "unidad": "piece",
-      "unidad_display": "tallo",
       "equivalente_g": 45.0,
       "estado": "blanqueado previamente"
     },
@@ -87,7 +80,6 @@
       "nombre": "Bok choy",
       "cantidad": 1.0,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 150.0,
       "estado": "entero, partido a la mitad a lo largo"
     },
@@ -96,7 +88,6 @@
       "nombre": "Salsa satay",
       "cantidad": 2.0,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 33.0,
       "estado": "preparada, ver receta Día 02 / p.60",
       "enlace": "recipe://satay-dipping-sauce-d002"

@@ -24,7 +24,6 @@
       "nombre": "Papa",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 150,
       "estado": "pelada y en láminas finas",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Camote pequeño",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 150,
       "estado": "en gajos o láminas",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Hojas de espinaca baby",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Berenjena pequeña",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 150,
       "estado": "en láminas finas",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Champiñones grandes",
       "cantidad": 3,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 120,
       "estado": "rebanados",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Aceite de coco (para engrasar)",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 13,
       "estado": "para aceitar la bandeja",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Leche de soya",
       "cantidad": 148,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 148,
       "estado": "",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Harina de garbanzo (besan)",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 7,
       "estado": "",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Tomillo (ramita)",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "ramita",
       "equivalente_g": 1,
       "estado": "hojas picadas",
       "enlace": ""
@@ -114,7 +105,6 @@
       "nombre": "Ajo",
       "cantidad": 1,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": 5,
       "estado": "machacado",
       "enlace": ""
@@ -124,7 +114,6 @@
       "nombre": "Levadura nutricional en copos",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 8,
       "estado": "para espolvorear",
       "enlace": ""
@@ -134,7 +123,6 @@
       "nombre": "Sal",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 5,
       "estado": "al gusto",
       "enlace": ""
@@ -144,7 +132,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1,
       "estado": "al gusto",
       "enlace": ""

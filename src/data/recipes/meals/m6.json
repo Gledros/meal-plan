@@ -24,7 +24,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 27.6,
       "estado": "líquido, dividido"
     },
@@ -33,7 +32,6 @@
       "nombre": "Pan de masa madre",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "rebanada",
       "equivalente_g": 60,
       "estado": "cortado en cubos"
     },
@@ -42,7 +40,6 @@
       "nombre": "Ajo",
       "cantidad": 2,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": -1,
       "estado": "machacado"
     },
@@ -51,7 +48,6 @@
       "nombre": "Jitomates heirloom (variedad mixta)",
       "cantidad": 100,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "rebanados"
     },
@@ -60,7 +56,6 @@
       "nombre": "Toronja roja (ruby red)",
       "cantidad": 7,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": -1,
       "estado": "en gajos, sin piel ni membrana"
     },
@@ -69,7 +64,6 @@
       "nombre": "Hojas de albahaca y menta",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "fresca, en chiffonade"
     },
@@ -78,7 +72,6 @@
       "nombre": "Sal de mar",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1.25,
       "estado": "al gusto"
     },
@@ -87,7 +80,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.66,
       "estado": "al gusto"
     }
@@ -125,3 +117,4 @@
     ]
   }
 }
+

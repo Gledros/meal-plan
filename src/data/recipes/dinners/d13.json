@@ -24,7 +24,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 27,
       "estado": "",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Cebolla",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 50,
       "estado": "fina",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Ajo",
       "cantidad": 2,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": 10,
       "estado": "picado fino",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Comino molido",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2,
       "estado": "",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Zanahoria",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 70,
       "estado": "en dados",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Jitomate roma",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 60,
       "estado": "picado",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Lenteja puy",
       "cantidad": 98,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Caldo vegano",
       "cantidad": 142,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "o agua",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Vinagre de vino tinto",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 5,
       "estado": "",
       "enlace": ""
@@ -114,7 +105,6 @@
       "nombre": "Cilantro fresco",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 8,
       "estado": "picado",
       "enlace": ""
@@ -124,7 +114,6 @@
       "nombre": "Berros",
       "cantidad": 50,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -134,7 +123,6 @@
       "nombre": "Sal",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 5,
       "estado": "al gusto",
       "enlace": ""
@@ -144,7 +132,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 3,
       "estado": "al gusto",
       "enlace": ""

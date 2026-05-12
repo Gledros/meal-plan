@@ -24,7 +24,6 @@
       "nombre": "Aceite de coco",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 7,
       "estado": "",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Jengibre fresco",
       "cantidad": 5,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "finamente picado",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Echalote",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 15,
       "estado": "finamente picada",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Chile rojo",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 7,
       "estado": "sin semillas y picado fino",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Pasta de curry rojo thai vegana",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 18,
       "estado": "",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Crema de coco",
       "cantidad": 250,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 250,
       "estado": "",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Caldo vegano",
       "cantidad": 237,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 237,
       "estado": "",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Fideos de arroz",
       "cantidad": 50,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Ejote chino (snow peas)",
       "cantidad": 37,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -114,7 +105,6 @@
       "nombre": "Jugo de lima",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 25,
       "estado": "más gajos extra para servir",
       "enlace": ""
@@ -124,7 +114,6 @@
       "nombre": "Cilantro fresco",
       "cantidad": 10,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "en hojas, para decorar",
       "enlace": ""

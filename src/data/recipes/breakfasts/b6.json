@@ -24,7 +24,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 13.8,
       "estado": "líquido"
     },
@@ -33,7 +32,6 @@
       "nombre": "Cebollita de cambray",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 15,
       "estado": "picada finamente"
     },
@@ -42,7 +40,6 @@
       "nombre": "Chile morrón rojo",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 75,
       "estado": "cortado en tiras"
     },
@@ -51,7 +48,6 @@
       "nombre": "Jitomate guaje (saladet)",
       "cantidad": 156,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": -1,
       "estado": "en cubos"
     },
@@ -60,7 +56,6 @@
       "nombre": "Tofu extra firme desmenuzado",
       "cantidad": 156,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "prensado y desmenuzado"
     },
@@ -69,7 +64,6 @@
       "nombre": "Sal",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2.71,
       "estado": "al gusto"
     },
@@ -78,7 +72,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.66,
       "estado": "al gusto"
     },
@@ -87,7 +80,6 @@
       "nombre": "Hojas de albahaca",
       "cantidad": 6,
       "unidad": "piece",
-      "unidad_display": "hoja",
       "equivalente_g": 2,
       "estado": "fresca, en chiffonade"
     },
@@ -96,7 +88,6 @@
       "nombre": "Perejil liso",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": -1,
       "estado": "picado"
     },
@@ -105,7 +96,6 @@
       "nombre": "Espinacas baby",
       "cantidad": 60,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "hojas frescas"
     },
@@ -114,7 +104,6 @@
       "nombre": "Salsa de chile dulce",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 16.5,
       "estado": "para acompañar, opcional"
     }
@@ -153,3 +142,4 @@
     ]
   }
 }
+

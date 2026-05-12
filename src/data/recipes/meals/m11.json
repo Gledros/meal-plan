@@ -24,7 +24,6 @@
       "nombre": "Kale verde rizado",
       "cantidad": 40,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "en tiras finas, sin nervaduras",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Kale cavolo nero",
       "cantidad": 40,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "en tiras finas, sin nervaduras",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "1½ cda",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Ejote",
       "cantidad": 45,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "cortado",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Pepino persa",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 75,
       "estado": "rebanado",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Hierbabuena fresca",
       "cantidad": 3,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "picada fina",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Mezcla de semillas crujientes",
       "cantidad": 10,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "ver p.24",
       "enlace": "recipe://crunchy-seed-mix-p24"
@@ -94,7 +87,6 @@
       "nombre": "Jugo de lima",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "de medio fruto",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Brotes de chícharo",
       "cantidad": 15,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "puñado",
       "enlace": ""
@@ -114,7 +105,6 @@
       "nombre": "Sal",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1,
       "estado": "al gusto",
       "enlace": ""
@@ -124,7 +114,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1,
       "estado": "al gusto",
       "enlace": ""
@@ -134,7 +123,6 @@
       "nombre": "Lima",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "gajo",
       "equivalente_g": 12,
       "estado": "para servir",
       "enlace": ""

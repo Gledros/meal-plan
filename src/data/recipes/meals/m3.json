@@ -24,7 +24,6 @@
       "nombre": "Betabel",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 160,
       "estado": "fresco, entero"
     },
@@ -33,7 +32,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 7,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": -1,
       "estado": "líquido, dividido"
     },
@@ -42,7 +40,6 @@
       "nombre": "Nueces de Castilla",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "picadas groseramente"
     },
@@ -51,7 +48,6 @@
       "nombre": "Vinagre balsámico",
       "cantidad": 28,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": -1,
       "estado": "líquido"
     },
@@ -60,7 +56,6 @@
       "nombre": "Mezcla de espinaca baby y arúgula",
       "cantidad": 28,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "hojas frescas"
     },
@@ -69,7 +64,6 @@
       "nombre": "Mezcla de semillas crujientes",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 10,
       "estado": "preparada, ver p.24",
       "enlace": "recipe://crunchy-seed-mix-p24"
@@ -79,7 +73,6 @@
       "nombre": "Eneldo",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "ramita",
       "equivalente_g": 2,
       "estado": "fresco, una ramita"
     },
@@ -88,7 +81,6 @@
       "nombre": "Cebollín",
       "cantidad": 3,
       "unidad": "piece",
-      "unidad_display": "tallo",
       "equivalente_g": 3,
       "estado": "picado finamente"
     },
@@ -97,7 +89,6 @@
       "nombre": "Sal de mar en hojuelas",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1.25,
       "estado": "al gusto"
     }
@@ -139,3 +130,4 @@
     ]
   }
 }
+

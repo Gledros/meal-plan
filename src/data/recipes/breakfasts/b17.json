@@ -24,7 +24,6 @@
       "nombre": "Frutos rojos congelados",
       "cantidad": 156,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "congelados, mezcla de berries",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Polvo de açaí",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 14,
       "estado": "en polvo",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Avena en hojuelas (porridge)",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 12,
       "estado": "",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Leche de almendra (o vegetal)",
       "cantidad": 270,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 270,
       "estado": "9–10 fl oz aprox.",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Plátano",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 120,
       "estado": "maduro, hecho puré",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Semillas de cáñamo molidas",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 10,
       "estado": "molidas",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Espinaca baby",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "puñado",
       "enlace": ""

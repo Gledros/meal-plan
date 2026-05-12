@@ -24,7 +24,6 @@
       "nombre": "Aceite de coco",
       "cantidad": 128,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": -1,
       "estado": "líquido o derretido"
     },
@@ -33,7 +32,6 @@
       "nombre": "Tofu extra firme",
       "cantidad": 198,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "prensado y cortado en cubos"
     },
@@ -42,7 +40,6 @@
       "nombre": "Verduras mixtas picadas",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "picadas (brócoli, zanahoria, pimiento, champiñones o al gusto)"
     },
@@ -51,7 +48,6 @@
       "nombre": "Germinado de frijol",
       "cantidad": 21,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "fresco"
     },
@@ -60,7 +56,6 @@
       "nombre": "Cebollita de cambray",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": -1,
       "estado": "rebanada, para servir"
     },
@@ -69,7 +64,6 @@
       "nombre": "Cilantro",
       "cantidad": 5,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "fresco, para servir (cantidad estimada)"
     },
@@ -78,7 +72,6 @@
       "nombre": "Semillas de ajonjolí tostadas",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 4.2,
       "estado": "tostadas, para servir"
     },
@@ -87,7 +80,6 @@
       "nombre": "Jengibre fresco rallado (para salsa)",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 10.5,
       "estado": "rallado"
     },
@@ -96,7 +88,6 @@
       "nombre": "Aceite de ajonjolí tostado (para salsa)",
       "cantidad": 2,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 9.2,
       "estado": "líquido"
     },
@@ -105,7 +96,6 @@
       "nombre": "Salsa de soya (para salsa)",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 34.5,
       "estado": "líquida"
     },
@@ -114,7 +104,6 @@
       "nombre": "Vinagre de arroz (para salsa)",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 15.15,
       "estado": "líquido"
     },
@@ -123,7 +112,6 @@
       "nombre": "Miel de agave (para salsa)",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 10.5,
       "estado": "líquida"
     },
@@ -132,7 +120,6 @@
       "nombre": "Hojuelas de chile (para salsa)",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.38,
       "estado": "seco, opcional"
     },
@@ -141,7 +128,6 @@
       "nombre": "Maicena (para salsa)",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 4.5,
       "estado": "en polvo"
     }
@@ -181,3 +167,4 @@
     ]
   }
 }
+

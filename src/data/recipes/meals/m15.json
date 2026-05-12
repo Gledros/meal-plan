@@ -24,7 +24,6 @@
       "nombre": "Arroz para sushi, enjuagado",
       "cantidad": 78,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "seco, enjuagado",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Kombu (alga seca)",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 2,
       "estado": "1 hoja, opcional para cocer el arroz",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Vinagre de arroz",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 15,
       "estado": "",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Hojas de nori",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "hoja",
       "equivalente_g": 10,
       "estado": "cortadas a la mitad (para 4 hand rolls)",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Aguacate",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 75,
       "estado": "en láminas",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Pepino",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 75,
       "estado": "cortado en tiras a lo largo",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Pimiento amarillo",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 60,
       "estado": "en tiras finas",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Furikake de nori",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2,
       "estado": "",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Alioli vegano",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 14,
       "estado": "ver p.18, opcional",
       "enlace": "recipe://vegan-aioli-p18"

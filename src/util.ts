@@ -39,23 +39,29 @@ const FRACTIONS: [number, string][] = [
 const FRACTION_MATCH_TOLERANCE = 0.04;
 const INTEGER_SNAP_TOLERANCE = 0.01;
 
-const FRACTION_UNITS = new Set([
-	"taza",
-	"cda",
-	"cdita",
-	"cup",
-	"tbsp",
-	"tsp",
-	"piece",
-	"pieza",
-	"piezas",
-	"clove",
-	"diente",
-	"dientes",
-]);
+const PLURAL_QUANTITY_TOLERANCE = 0.01;
 
-export const isFractionUnit = (unit?: string): boolean =>
-	typeof unit === "string" && FRACTION_UNITS.has(unit.toLowerCase());
+const UNIT_LABELS: Record<string, { singular: string; plural: string }> = {
+	g: { singular: "g", plural: "g" },
+	kg: { singular: "kg", plural: "kgs" },
+	ml: { singular: "ml", plural: "ml" },
+	l: { singular: "litro", plural: "litros" },
+	cup: { singular: "taza", plural: "tazas" },
+	tbsp: { singular: "cda", plural: "cdas" },
+	tsp: { singular: "cdita", plural: "cditas" },
+	piece: { singular: "pieza", plural: "piezas" },
+	clove: { singular: "diente", plural: "dientes" },
+	bunch: { singular: "manojo", plural: "manojos" },
+	pinch: { singular: "pizca", plural: "pizcas" },
+	unit: { singular: "unidad", plural: "unidades" },
+};
+
+const FRACTION_UNITS = new Set(["cup", "tbsp", "tsp", "piece", "clove"]);
+
+export const isFractionUnit = (unit?: string): boolean => {
+	if (typeof unit !== "string") return false;
+	return FRACTION_UNITS.has(unit.trim().toLowerCase());
+};
 
 const getClosestFraction = (decimal: number): [number, string] =>
 	FRACTIONS.reduce(
@@ -85,6 +91,27 @@ const normalizeFractionValue = (value: number): number => {
 
 export const normalizeQuantityForUnit = (value: number, unit?: string): number =>
 	isFractionUnit(unit) ? normalizeFractionValue(value) : value;
+
+export const isIntegerLike = (value: number): boolean =>
+	Math.abs(value - Math.round(value)) <= INTEGER_SNAP_TOLERANCE;
+
+export const formatUnitLabel = (unit?: string, quantity = 1): string => {
+	if (typeof unit !== "string") return "";
+
+	const trimmedUnit = unit.trim();
+	if (!trimmedUnit) return "";
+
+	const labels = UNIT_LABELS[trimmedUnit.toLowerCase()];
+	const isPlural = quantity > 1 + PLURAL_QUANTITY_TOLERANCE;
+
+	if (labels) {
+		return isPlural ? labels.plural : labels.singular;
+	}
+
+	if (!isPlural) return trimmedUnit;
+	if (/s$/i.test(trimmedUnit)) return trimmedUnit;
+	return `${trimmedUnit}s`;
+};
 
 const formatRounded = (value: number): string =>
 	String(Math.round(value * 100) / 100)

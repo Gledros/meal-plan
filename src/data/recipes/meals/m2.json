@@ -24,7 +24,6 @@
 			"nombre": "Col morada",
 			"cantidad": 99,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "rallada finamente"
 		},
@@ -33,7 +32,6 @@
 			"nombre": "Zanahoria",
 			"cantidad": 50,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": -1,
 			"estado": "en juliana"
 		},
@@ -42,7 +40,6 @@
 			"nombre": "Germinado de frijol",
 			"cantidad": 21,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "fresco"
 		},
@@ -51,7 +48,6 @@
 			"nombre": "Cilantro",
 			"cantidad": 21,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "hojas enteras"
 		},
@@ -60,7 +56,6 @@
 			"nombre": "Láminas de papel de arroz",
 			"cantidad": 57,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": -1,
 			"estado": "secas, para rehidratar"
 		},
@@ -69,7 +64,6 @@
 			"nombre": "Mantequilla de cacahuate crujiente",
 			"cantidad": 57,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "crujiente, sin azúcar añadida preferible"
 		},
@@ -78,7 +72,6 @@
 			"nombre": "Salsa de soya light",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 5.75,
 			"estado": "líquida"
 		},
@@ -87,7 +80,6 @@
 			"nombre": "Salsa de chile dulce",
 			"cantidad": 1,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 16.5,
 			"estado": "líquida"
 		},
@@ -96,7 +88,6 @@
 			"nombre": "Ajo",
 			"cantidad": 0.5,
 			"unidad": "clove",
-			"unidad_display": "diente",
 			"equivalente_g": 2.5,
 			"estado": "machacado"
 		},
@@ -105,7 +96,6 @@
 			"nombre": "Cebolla morada",
 			"cantidad": 1,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 10,
 			"estado": "picada finamente"
 		},
@@ -114,7 +104,6 @@
 			"nombre": "Curry en polvo",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 2.5,
 			"estado": "molido"
 		},
@@ -123,7 +112,6 @@
 			"nombre": "Hierba limón (zacate limón)",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 2.5,
 			"estado": "tallo, picado finamente"
 		},
@@ -132,7 +120,6 @@
 			"nombre": "Leche de coco (para salsa)",
 			"cantidad": 0.333,
 			"unidad": "cup",
-			"unidad_display": "taza",
 			"equivalente_g": 80,
 			"estado": "líquida"
 		}

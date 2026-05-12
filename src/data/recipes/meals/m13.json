@@ -24,7 +24,6 @@
       "nombre": "Crêpes de harina de garbanzo",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 70,
       "estado": "ver receta p.36",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Aguacate",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 140,
       "estado": "pelado, sin hueso, rebanado",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Jitomate roma",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 60,
       "estado": "rebanado",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Sauerkraut (chucrut)",
       "cantidad": 4,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 48,
       "estado": "ver receta p.20",
       "enlace": "recipe://sauerkraut-p20"
@@ -64,7 +60,6 @@
       "nombre": "Limón",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "gajo",
       "equivalente_g": 10,
       "estado": "para servir",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Sal",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 5,
       "estado": "al gusto",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 3,
       "estado": "al gusto",
       "enlace": ""

@@ -24,7 +24,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 14,
       "estado": "",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Cebollitas de cambray",
       "cantidad": 3,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 45,
       "estado": "picadas",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Ajo",
       "cantidad": 1,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": 5,
       "estado": "finamente picado",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Lentejas puy",
       "cantidad": 64,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2¼ oz, enjuagadas",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Arroz integral (brown rice)",
       "cantidad": 50,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "1¾ oz, enjuagado",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Arroz silvestre (wild rice)",
       "cantidad": 28,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "1 oz, enjuagado",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Tomillo (ramitas)",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "ramita",
       "equivalente_g": 2,
       "estado": "hojas picadas",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Caldo vegano",
       "cantidad": 360,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 360,
       "estado": "1½ cups",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Almendras fileteadas",
       "cantidad": 14,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2 tbsp, tostadas",
       "enlace": ""
@@ -114,7 +105,6 @@
       "nombre": "Perejil liso",
       "cantidad": 8,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2 tbsp, picado",
       "enlace": ""
@@ -124,7 +114,6 @@
       "nombre": "Semillas de granada",
       "cantidad": 30,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2 tbsp, para espolvorear",
       "enlace": ""
@@ -134,7 +123,6 @@
       "nombre": "Sal",
       "cantidad": 0.5,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2,
       "estado": "al gusto",
       "enlace": ""

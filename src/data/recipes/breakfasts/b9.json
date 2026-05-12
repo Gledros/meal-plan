@@ -24,7 +24,6 @@
       "nombre": "Huevos de linaza o chía",
       "cantidad": 57,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": -1,
       "estado": "preparados, ver p.14",
       "enlace": "recipe://flaxseed-chia-eggs-p14"
@@ -34,7 +33,6 @@
       "nombre": "Tofu sedoso",
       "cantidad": 57,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "escurrido"
     },
@@ -43,7 +41,6 @@
       "nombre": "Jarabe de maple",
       "cantidad": 3,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 59.85,
       "estado": "líquido"
     },
@@ -52,7 +49,6 @@
       "nombre": "Extracto natural de vainilla",
       "cantidad": 128,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": -1,
       "estado": "líquido"
     },
@@ -61,7 +57,6 @@
       "nombre": "Harina integral con polvo para hornear",
       "cantidad": 28,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "harina integral con leudante incorporado"
     },
@@ -70,7 +65,6 @@
       "nombre": "Almendra molida",
       "cantidad": 50,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "finamente molida"
     },
@@ -79,7 +73,6 @@
       "nombre": "Azúcar de coco",
       "cantidad": 50,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "granulada o alternativa (azúcar mascabado)"
     },
@@ -88,7 +81,6 @@
       "nombre": "Polvo para hornear",
       "cantidad": 0.5,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2,
       "estado": "leudante"
     },
@@ -97,7 +89,6 @@
       "nombre": "Jengibre molido",
       "cantidad": 0.5,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1.2,
       "estado": "seco, molido"
     },
@@ -106,7 +97,6 @@
       "nombre": "Canela molida",
       "cantidad": 156,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": -1,
       "estado": "molida"
     },
@@ -115,7 +105,6 @@
       "nombre": "Camote",
       "cantidad": 156,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "pelado y rallado"
     },
@@ -124,7 +113,6 @@
       "nombre": "Pera",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 150,
       "estado": "pelada y picada finamente"
     },
@@ -133,7 +121,6 @@
       "nombre": "Aceite vegetal",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 4.6,
       "estado": "para engrasar el molde"
     },
@@ -142,7 +129,6 @@
       "nombre": "Granola",
       "cantidad": 3,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 20,
       "estado": "preparada, ver p.32, para decorar encima",
       "enlace": "recipe://granola-p32"
@@ -188,3 +174,4 @@
     ]
   }
 }
+

@@ -24,7 +24,6 @@
 			"nombre": "Cúrcuma molida",
 			"cantidad": 0.5,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 1,
 			"estado": "",
 			"enlace": ""
@@ -34,7 +33,6 @@
 			"nombre": "Comino molido",
 			"cantidad": 0.5,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 1,
 			"estado": "",
 			"enlace": ""
@@ -44,7 +42,6 @@
 			"nombre": "Cilantro molido",
 			"cantidad": 0.5,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 1,
 			"estado": "",
 			"enlace": ""
@@ -54,7 +51,6 @@
 			"nombre": "Cardamomo molido",
 			"cantidad": 0.25,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 0.5,
 			"estado": "",
 			"enlace": ""
@@ -64,7 +60,6 @@
 			"nombre": "Canela en rama",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": 2,
 			"estado": "",
 			"enlace": ""
@@ -74,7 +69,6 @@
 			"nombre": "Hojuelas de chile (opcional)",
 			"cantidad": 0.125,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 0.3,
 			"estado": "opcional",
 			"enlace": ""
@@ -84,7 +78,6 @@
 			"nombre": "Aceite de coco",
 			"cantidad": 0.5,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 7,
 			"estado": "para sofreír",
 			"enlace": ""
@@ -94,7 +87,6 @@
 			"nombre": "Cebolla roja",
 			"cantidad": 0.5,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": 25,
 			"estado": "en rodajas",
 			"enlace": ""
@@ -104,7 +96,6 @@
 			"nombre": "Garbanzos secos (remojados)",
 			"cantidad": 50,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "1¾ oz ≈ 50 g, remojados",
 			"enlace": ""
@@ -114,7 +105,6 @@
 			"nombre": "Crema de coco",
 			"cantidad": 148,
 			"unidad": "ml",
-			"unidad_display": "ml",
 			"equivalente_g": 148,
 			"estado": "5 fl oz ≈ 148 ml",
 			"enlace": ""
@@ -124,7 +114,6 @@
 			"nombre": "Caldo vegano",
 			"cantidad": 207,
 			"unidad": "ml",
-			"unidad_display": "ml",
 			"equivalente_g": 207,
 			"estado": "7 fl oz ≈ 207 ml",
 			"enlace": ""
@@ -134,7 +123,6 @@
 			"nombre": "Calabaza de invierno (winter squash)",
 			"cantidad": 50,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "1¾ oz ≈ 50 g, pelada y en cubos",
 			"enlace": ""
@@ -144,7 +132,6 @@
 			"nombre": "Hojuelas de coco tostado",
 			"cantidad": 1,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 5,
 			"estado": "para servir",
 			"enlace": ""
@@ -154,7 +141,6 @@
 			"nombre": "Mezcla de semillas crujientes",
 			"cantidad": 1,
 			"unidad": "tbsp",
-			"unidad_display": "cda",
 			"equivalente_g": 10,
 			"estado": "ver p.24, para servir",
 			"enlace": "recipe://crunchy-seed-mix-p24"
@@ -164,7 +150,6 @@
 			"nombre": "Sal",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 5,
 			"estado": "al gusto",
 			"enlace": ""

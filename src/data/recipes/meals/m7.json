@@ -24,7 +24,6 @@
       "nombre": "Lechuga mantequilla",
       "cantidad": 0.25,
       "unidad": "piece",
-      "unidad_display": "cabeza",
       "equivalente_g": 60,
       "estado": "hojas rotas con las manos"
     },
@@ -33,7 +32,6 @@
       "nombre": "Rábanos",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": -1,
       "estado": "pequeños, rebanados finamente"
     },
@@ -42,7 +40,6 @@
       "nombre": "Granos de elote",
       "cantidad": 80,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "frescos, desgranados de ½ mazorca"
     },
@@ -51,7 +48,6 @@
       "nombre": "Cebollita de cambray",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 15,
       "estado": "rebanada finamente"
     },
@@ -60,7 +56,6 @@
       "nombre": "Perejil liso",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "ramita",
       "equivalente_g": 2,
       "estado": "hojas picadas"
     },
@@ -69,7 +64,6 @@
       "nombre": "Aderezo miso de tofu",
       "cantidad": 1.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 22.5,
       "estado": "preparado, ver p.18",
       "enlace": "recipe://tofu-miso-dressing-p18"
@@ -105,3 +99,4 @@
     ]
   }
 }
+

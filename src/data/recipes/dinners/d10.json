@@ -24,7 +24,6 @@
 			"nombre": "Garbanzos secos",
 			"cantidad": 128,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "remojados mínimo 8 hrs",
 			"enlace": ""
@@ -34,7 +33,6 @@
 			"nombre": "Cebollita de cambray",
 			"cantidad": 4,
 			"unidad": "piece",
-			"unidad_display": "pieza",
 			"equivalente_g": 60,
 			"estado": "picadas",
 			"enlace": ""
@@ -44,7 +42,6 @@
 			"nombre": "Ajo",
 			"cantidad": 2,
 			"unidad": "clove",
-			"unidad_display": "diente",
 			"equivalente_g": 10,
 			"estado": "machacado",
 			"enlace": ""
@@ -54,7 +51,6 @@
 			"nombre": "Perejil liso",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "ramito",
 			"equivalente_g": 20,
 			"estado": "hojas y tallos suaves",
 			"enlace": ""
@@ -64,7 +60,6 @@
 			"nombre": "Cilantro",
 			"cantidad": 1,
 			"unidad": "piece",
-			"unidad_display": "ramito",
 			"equivalente_g": 20,
 			"estado": "hojas y tallos suaves",
 			"enlace": ""
@@ -74,7 +69,6 @@
 			"nombre": "Hierbabuena fresca",
 			"cantidad": 0.5,
 			"unidad": "piece",
-			"unidad_display": "ramito",
 			"equivalente_g": 10,
 			"estado": "hojas y tallos",
 			"enlace": ""
@@ -84,7 +78,6 @@
 			"nombre": "Semillas de ajonjolí",
 			"cantidad": 9,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "crudas",
 			"enlace": ""
@@ -94,7 +87,6 @@
 			"nombre": "Comino molido",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 2,
 			"estado": "",
 			"enlace": ""
@@ -104,7 +96,6 @@
 			"nombre": "Pimienta negra molida",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 3,
 			"estado": "",
 			"enlace": ""
@@ -114,7 +105,6 @@
 			"nombre": "Polvo para hornear",
 			"cantidad": 2,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "½ cdita",
 			"enlace": ""
@@ -124,7 +114,6 @@
 			"nombre": "Sal de mar",
 			"cantidad": 1,
 			"unidad": "tsp",
-			"unidad_display": "cdita",
 			"equivalente_g": 5,
 			"estado": "al gusto",
 			"enlace": ""
@@ -134,7 +123,6 @@
 			"nombre": "Aceite vegetal",
 			"cantidad": 420,
 			"unidad": "g",
-			"unidad_display": "g",
 			"equivalente_g": -1,
 			"estado": "para freír",
 			"enlace": ""

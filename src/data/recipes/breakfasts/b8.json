@@ -24,7 +24,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 13.8,
       "estado": "líquido"
     },
@@ -33,7 +32,6 @@
       "nombre": "Cebolla morada",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 80,
       "estado": "pequeña, picada finamente"
     },
@@ -42,7 +40,6 @@
       "nombre": "Ajo",
       "cantidad": 2,
       "unidad": "clove",
-      "unidad_display": "diente",
       "equivalente_g": 10,
       "estado": "machacado"
     },
@@ -51,7 +48,6 @@
       "nombre": "Pimentón ahumado",
       "cantidad": 2,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 4.6,
       "estado": "molido"
     },
@@ -60,7 +56,6 @@
       "nombre": "Comino molido",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2.1,
       "estado": "molido"
     },
@@ -69,7 +64,6 @@
       "nombre": "Chile en polvo",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2.5,
       "estado": "molido"
     },
@@ -78,7 +72,6 @@
       "nombre": "Col rizada (kale)",
       "cantidad": 397,
       "unidad": "piece",
-      "unidad_display": "tallo",
       "equivalente_g": -1,
       "estado": "tallos removidos, hojas picadas"
     },
@@ -87,7 +80,6 @@
       "nombre": "Jitomates en cubos (lata)",
       "cantidad": 397,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "lata, con jugo"
     },
@@ -96,7 +88,6 @@
       "nombre": "Frijoles canellini (lata)",
       "cantidad": 198,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "lata, escurridos y enjuagados"
     },
@@ -105,7 +96,6 @@
       "nombre": "Frijoles negros (lata)",
       "cantidad": 198,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "lata, escurridos y enjuagados"
     },
@@ -114,7 +104,6 @@
       "nombre": "Queso crema de tofu",
       "cantidad": 7,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": -1,
       "estado": "preparado, ver p.26",
       "enlace": "recipe://tofu-cream-cheese-p26"
@@ -124,7 +113,6 @@
       "nombre": "Cilantro",
       "cantidad": 7,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "hojas picadas, para decorar"
     },
@@ -133,7 +121,6 @@
       "nombre": "Sal",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2.71,
       "estado": "al gusto"
     },
@@ -142,7 +129,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.66,
       "estado": "al gusto"
     },
@@ -151,7 +137,6 @@
       "nombre": "Pan rústico",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "rebanada",
       "equivalente_g": 120,
       "estado": "para acompañar (1 rebanada por porción)"
     }
@@ -192,3 +177,4 @@
     ]
   }
 }
+

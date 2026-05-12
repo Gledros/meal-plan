@@ -42,7 +42,12 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 <script>
 	// @ts-nocheck
-	import { formatQuantity, normalizeQuantityForUnit } from '../util';
+	import {
+		formatQuantity,
+		normalizeQuantityForUnit,
+		formatUnitLabel,
+		isIntegerLike,
+	} from '../util';
 
 	(() => {
 		const ROOT_SELECTOR = '[data-tabs-slider]';
@@ -226,41 +231,6 @@ const defaultTabId = tabs[0]?.id ?? '';
 				return parseMultiplier(select.value);
 			};
 
-			const parseLeadingQuantity = (text) => {
-				if (!text) return null;
-				const regex =
-					/^\s*((?:\d+\s+\d+\/\d+)|\d+\/\d+|\d+(?:\.\d+)?|[½¼¾⅛⅓⅔⅝⅜])/;
-				const m = String(text).match(regex);
-				if (!m) return null;
-				const token = m[1];
-				let num = 0;
-				if (/^[½¼¾⅛⅓⅔⅝⅜]$/.test(token)) {
-					const map = {
-						'½': 0.5,
-						'¼': 0.25,
-						'¾': 0.75,
-						'⅛': 0.125,
-						'⅓': 1 / 3,
-						'⅔': 2 / 3,
-						'⅝': 0.625,
-						'⅜': 0.375,
-					};
-					num = map[token] ?? 0;
-				} else if (token.indexOf(' ') !== -1 && token.indexOf('/') !== -1) {
-					const parts = token.split(/\s+/);
-					const whole = Number(parts[0]);
-					const [n, d] = parts[1].split('/');
-					num = whole + Number(n) / Number(d);
-				} else if (token.indexOf('/') !== -1) {
-					const [n, d] = token.split('/');
-					num = Number(n) / Number(d);
-				} else {
-					num = Number(token);
-				}
-				const rest = text.slice(m[0].length).trimStart();
-				return { num, rest };
-			};
-
 			const updateQuantities = (mult) => {
 				// structured ingredients (RecipeCard)
 				const qtyNodes = Array.from(root.querySelectorAll('[data-qty-base]'));
@@ -268,59 +238,27 @@ const defaultTabId = tabs[0]?.id ?? '';
 					const base = Number(node.getAttribute('data-qty-base'));
 					if (Number.isNaN(base)) return;
 					const unit = node.getAttribute('data-qty-unit') ?? '';
-					const unitCanonical =
-						node.getAttribute('data-qty-unit-canonical') ?? unit;
-					const unitDisplay =
-						node.getAttribute('data-qty-unit-display') ?? unit;
 					const hideUnit = node.getAttribute('data-qty-hide-unit') === 'true';
 					const useDeConnector =
 						node.getAttribute('data-qty-use-de') === 'true';
-					const normalizedBase = normalizeQuantityForUnit(base, unitCanonical);
+					const normalizedBase = normalizeQuantityForUnit(base, unit);
 					const newValue = normalizedBase * mult;
-					const formatted = formatQuantity(newValue, unitCanonical);
+					const formatted = formatQuantity(newValue, unit);
+					const formattedUnit = formatUnitLabel(unit, newValue);
+					const shouldHideUnit =
+						hideUnit && useDeConnector && !isIntegerLike(newValue);
 					const valueEl = node.querySelector('.ingredient-qty-value');
 					const unitEl = node.querySelector('.ingredient-qty-unit');
 					const connectorEl = node.querySelector('.ingredient-qty-connector');
 					if (valueEl) valueEl.textContent = formatted;
 					if (unitEl)
-						unitEl.textContent = hideUnit
+						unitEl.textContent = shouldHideUnit
 							? ''
-							: unitDisplay
-								? ' ' + unitDisplay
+							: formattedUnit
+								? ' ' + formattedUnit
 								: '';
 					if (connectorEl)
-						connectorEl.textContent =
-							useDeConnector && !isIntegerLike(newValue) ? ' de' : '';
-				});
-
-				// smoothie / free-text ingredients (try to parse leading quantity)
-				const rawItems = Array.from(
-					root.querySelectorAll('[data-ingredient-raw]'),
-				);
-				rawItems.forEach((li) => {
-					const raw = li.getAttribute('data-ingredient-raw') ?? '';
-					const parsed = parseLeadingQuantity(raw);
-					if (!parsed) return;
-					const { num, rest } = parsed;
-					const unitCandidate = rest.split(/\s+/)[0] ?? '';
-					const hasExplicitUnit = isKnownUnitToken(unitCandidate);
-					const unitForFormatting = hasExplicitUnit ? unitCandidate : 'piece';
-					const normalizedBase = normalizeQuantityForUnit(
-						num,
-						unitForFormatting,
-					);
-					const newValue = normalizedBase * mult;
-					const formatted = formatQuantity(newValue, unitForFormatting);
-					const separator =
-						rest.length === 0
-							? ''
-							: !hasExplicitUnit && !isIntegerLike(newValue)
-								? ' de '
-								: ' ';
-					const newText = `${formatted}${separator}${rest}`.trim();
-					const textEl = li.querySelector('.ingredient-text');
-					if (textEl) textEl.textContent = newText;
-					else li.textContent = newText;
+						connectorEl.textContent = useDeConnector ? ' de' : '';
 				});
 
 				// update headers

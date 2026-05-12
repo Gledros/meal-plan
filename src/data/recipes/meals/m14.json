@@ -24,7 +24,6 @@
       "nombre": "Vegan alioli",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 28,
       "estado": "ver receta p.18",
       "enlace": "recipe://vegan-aioli-p18"
@@ -34,7 +33,6 @@
       "nombre": "Zumo de ½ limón",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 25,
       "estado": "recién exprimido",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Alubias cannellini en conserva",
       "cantidad": 200,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "escurridas y enjuagadas",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Cebolla morada",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 40,
       "estado": "finamente picada",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Perejil liso",
       "cantidad": 20,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "hojas picadas",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Pimiento morrón",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 50,
       "estado": "cortado en cubos",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Corazones de alcachofa marinados",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 70,
       "estado": "picados",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Sal",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 5,
       "estado": "al gusto",
       "enlace": ""
@@ -104,7 +96,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 1,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 3,
       "estado": "al gusto",
       "enlace": ""
@@ -114,7 +105,6 @@
       "nombre": "Limón",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "gajo",
       "equivalente_g": 10,
       "estado": "para servir",
       "enlace": ""

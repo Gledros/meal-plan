@@ -14,7 +14,6 @@
       "nombre": "coco rallado",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 12,
       "estado": ""
     },
@@ -23,7 +22,6 @@
       "nombre": "limón",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 15,
       "estado": ""
     },
@@ -32,7 +30,6 @@
       "nombre": "agua",
       "cantidad": 1,
       "unidad": "cup",
-      "unidad_display": "taza",
       "equivalente_g": 240,
       "estado": ""
     },
@@ -41,7 +38,6 @@
       "nombre": "proteína vegetal en polvo",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "scoop",
       "equivalente_g": 30,
       "estado": ""
     },
@@ -50,7 +46,6 @@
       "nombre": "creatina",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "scoop",
       "equivalente_g": 5,
       "estado": ""
     },
@@ -59,7 +54,6 @@
       "nombre": "chía pre-hidratada",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 12,
       "estado": ""
     },
@@ -68,7 +62,6 @@
       "nombre": "linaza pre-hidratada",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 7,
       "estado": ""
     },
@@ -77,10 +70,10 @@
       "nombre": "semillas de cáñamo peladas",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 10,
       "estado": ""
     }
   ],
   "color": "#F9E6C8"
 }
+

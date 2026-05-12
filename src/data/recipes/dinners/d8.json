@@ -24,7 +24,6 @@
       "nombre": "Cebolla morada",
       "cantidad": 198,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": -1,
       "estado": "en gajos"
     },
@@ -33,7 +32,6 @@
       "nombre": "Camote",
       "cantidad": 198,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "pelado y en cubos"
     },
@@ -42,7 +40,6 @@
       "nombre": "Coliflor",
       "cantidad": 0.25,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 150,
       "estado": "cortada en floretes pequeños"
     },
@@ -51,7 +48,6 @@
       "nombre": "Aceite de oliva",
       "cantidad": 0.5,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 6.9,
       "estado": "líquido"
     },
@@ -60,7 +56,6 @@
       "nombre": "Sal de mar",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1.25,
       "estado": "al gusto"
     },
@@ -69,7 +64,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.66,
       "estado": "al gusto"
     },
@@ -78,7 +72,6 @@
       "nombre": "Piñones",
       "cantidad": 50,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": -1,
       "estado": "tostados en seco"
     },
@@ -87,7 +80,6 @@
       "nombre": "Mezcla de espinaca baby y arúgula",
       "cantidad": 50,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "hojas frescas"
     },
@@ -96,7 +88,6 @@
       "nombre": "Vinagreta de vino tinto",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 30,
       "estado": "preparada, ver p.16",
       "enlace": "recipe://red-wine-vinaigrette-p16"
@@ -138,3 +129,4 @@
     ]
   }
 }
+

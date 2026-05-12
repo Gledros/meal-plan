@@ -24,7 +24,6 @@
       "nombre": "Sobrante de dal de lentejas rojas",
       "cantidad": 99,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "frío, del refrigerador",
       "enlace": "recipe://red-lentil-dal-d003"
@@ -34,7 +33,6 @@
       "nombre": "Pan molido panko",
       "cantidad": 99,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "seco"
     },
@@ -43,7 +41,6 @@
       "nombre": "Sal",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 2.71,
       "estado": "al gusto"
     },
@@ -52,7 +49,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.66,
       "estado": "al gusto"
     },
@@ -61,7 +57,6 @@
       "nombre": "Salsa de jitomate y chile",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 34,
       "estado": "preparada, ver p.22, para acompañar",
       "enlace": "recipe://tomato-chili-relish-p22"
@@ -71,7 +66,6 @@
       "nombre": "Yogur de coco (para raita)",
       "cantidad": 0.25,
       "unidad": "cup",
-      "unidad_display": "taza",
       "equivalente_g": 60,
       "estado": "líquido"
     },
@@ -80,7 +74,6 @@
       "nombre": "Pepino persa (para raita)",
       "cantidad": 0.25,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 37,
       "estado": "pequeño, picado finamente"
     },
@@ -89,7 +82,6 @@
       "nombre": "Menta fresca (para raita)",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 2.5,
       "estado": "finamente desmenuzada"
     },
@@ -98,7 +90,6 @@
       "nombre": "Sal de mar (para raita)",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1.25,
       "estado": "al gusto"
     },
@@ -107,7 +98,6 @@
       "nombre": "Pimienta negra molida (para raita)",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 0.66,
       "estado": "al gusto"
     }
@@ -150,3 +140,4 @@
     ]
   }
 }
+

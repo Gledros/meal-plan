@@ -24,7 +24,6 @@
       "nombre": "Espinacas baby",
       "cantidad": 28,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "hojas frescas"
     },
@@ -33,7 +32,6 @@
       "nombre": "Plátano",
       "cantidad": 99,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": -1,
       "estado": "congelado"
     },
@@ -42,7 +40,6 @@
       "nombre": "Mango",
       "cantidad": 99,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "congelado"
     },
@@ -51,7 +48,6 @@
       "nombre": "Yogur de coco",
       "cantidad": 45,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "2 cucharadas copeteadas"
     },
@@ -60,7 +56,6 @@
       "nombre": "Agua de coco",
       "cantidad": 104,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 103.5,
       "estado": "líquida"
     }
@@ -94,3 +89,4 @@
     ]
   }
 }
+

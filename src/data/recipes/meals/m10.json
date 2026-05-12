@@ -24,7 +24,6 @@
       "nombre": "Pan de centeno (pumpernickel)",
       "cantidad": 2,
       "unidad": "piece",
-      "unidad_display": "rebanada",
       "equivalente_g": 70,
       "estado": "tostado",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Hummus (o hummus de betabel)",
       "cantidad": 57,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "preparado",
       "enlace": "recipe://beet-hummus-p40"
@@ -44,7 +42,6 @@
       "nombre": "Pepino persa",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 75,
       "estado": "rebanado finamente",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Sal",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 3,
       "estado": "al gusto",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Pimienta negra molida",
       "cantidad": 0.25,
       "unidad": "tsp",
-      "unidad_display": "cdita",
       "equivalente_g": 1,
       "estado": "al gusto",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Limón",
       "cantidad": 1,
       "unidad": "piece",
-      "unidad_display": "gajo",
       "equivalente_g": 10,
       "estado": "para servir",
       "enlace": ""

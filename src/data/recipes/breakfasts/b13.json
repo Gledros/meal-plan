@@ -24,7 +24,6 @@
       "nombre": "Mango congelado",
       "cantidad": 156,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "en trozos",
       "enlace": ""
@@ -34,7 +33,6 @@
       "nombre": "Plátano",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 60,
       "estado": "",
       "enlace": ""
@@ -44,7 +42,6 @@
       "nombre": "Proteína vegetal sabor vainilla",
       "cantidad": 12,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -54,7 +51,6 @@
       "nombre": "Yogur de coco",
       "cantidad": 60,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -64,7 +60,6 @@
       "nombre": "Jarabe de maple",
       "cantidad": 15,
       "unidad": "g",
-      "unidad_display": "g",
       "equivalente_g": -1,
       "estado": "",
       "enlace": ""
@@ -74,7 +69,6 @@
       "nombre": "Agua de coco",
       "cantidad": 60,
       "unidad": "ml",
-      "unidad_display": "ml",
       "equivalente_g": 62,
       "estado": "",
       "enlace": ""
@@ -84,7 +78,6 @@
       "nombre": "Plátano",
       "cantidad": 0.5,
       "unidad": "piece",
-      "unidad_display": "pieza",
       "equivalente_g": 60,
       "estado": "rebanado, topping",
       "enlace": ""
@@ -94,7 +87,6 @@
       "nombre": "Granola",
       "cantidad": 2,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 14,
       "estado": "ver receta p.32",
       "enlace": "recipe://granola-p32"
@@ -104,7 +96,6 @@
       "nombre": "Hojuelas de coco tostado",
       "cantidad": 1,
       "unidad": "tbsp",
-      "unidad_display": "cda",
       "equivalente_g": 5,
       "estado": "",
       "enlace": ""
