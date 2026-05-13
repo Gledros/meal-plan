@@ -1,23 +1,53 @@
 ---
-import "../styles/global.css";
+import '../styles/global.css';
 
 interface Props {
 	title?: string;
 }
 
-const { title = "Plan alimenticio" } = Astro.props;
+const { title = 'Plan alimenticio' } = Astro.props;
 ---
 
-<html lang="es">
+<html lang='es'>
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/images/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
+		<meta charset='utf-8' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<link rel='icon' href='/images/favicon.svg' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='generator' content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
+		<script>
+			(() => {
+				const OPENED_FOR_PRINT_ATTR = 'data-opened-for-print';
+
+				const openDetailsForPrint = () => {
+					const detailNodes = document.querySelectorAll('details');
+					for (const node of detailNodes) {
+						if (!(node instanceof HTMLDetailsElement)) continue;
+						if (!node.open) {
+							node.open = true;
+							node.setAttribute(OPENED_FOR_PRINT_ATTR, 'true');
+						}
+					}
+				};
+
+				const restoreDetailsAfterPrint = () => {
+					const openedForPrintNodes = document.querySelectorAll(
+						`details[${OPENED_FOR_PRINT_ATTR}="true"]`,
+					);
+					for (const node of openedForPrintNodes) {
+						if (!(node instanceof HTMLDetailsElement)) continue;
+						node.open = false;
+						node.removeAttribute(OPENED_FOR_PRINT_ATTR);
+					}
+				};
+
+				window.addEventListener('beforeprint', openDetailsForPrint);
+				window.addEventListener('afterprint', restoreDetailsAfterPrint);
+			})();
+		</script>
 	</body>
 </html>

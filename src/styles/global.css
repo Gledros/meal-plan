@@ -7,8 +7,8 @@
 
 @media print {
 	@page {
-		size: letter landscape;
-		margin: 6mm;
+		size: letter portrait;
+		margin: 0.5cm 1cm;
 	}
 
 	html,
@@ -26,15 +26,139 @@
 		display: none !important;
 	}
 
-	.print-grid {
-		grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-		gap: 0.35rem !important;
+	.tab-panel {
 		padding: 0 !important;
 	}
 
-	.smoothie-card {
+	[data-tabs-track]>[data-tab-panel] {
+		display: none !important;
+	}
+
+	[data-tabs-track]>[data-tab-panel][aria-hidden='false'] {
+		display: block !important;
+	}
+
+	.print-recipes-grid {
+		display: block !important;
+		padding: 0 !important;
+	}
+
+	.print-recipes-grid>.meal-dinner-card {
+		break-inside: auto;
+		page-break-inside: auto;
+		break-before: auto;
+		page-break-before: auto;
+		break-after: auto;
+		page-break-after: auto;
+		min-height: 0;
+	}
+
+	.print-recipes-grid>.meal-dinner-card+.meal-dinner-card {
+		break-before: page;
+		page-break-before: always;
+	}
+
+	.print-recipes-grid .meal-dinner-card .text-xl {
+		font-size: 1rem !important;
+		line-height: 1.15 !important;
+	}
+
+	.print-recipes-grid .meal-dinner-card .text-lg,
+	.print-recipes-grid .meal-dinner-card .text-base,
+	.print-recipes-grid .meal-dinner-card .text-sm {
+		font-size: 0.8rem !important;
+		line-height: 1.2 !important;
+	}
+
+	.print-recipes-grid .meal-dinner-card svg {
+		width: 40px !important;
+		height: 40px !important;
+	}
+
+	.print-recipes-grid .recipe-main-columns {
+		display: grid !important;
+		grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+		align-items: start !important;
+	}
+
+	.print-recipes-grid .recipe-main-columns>.perfil-nutricional {
+		margin: 0 !important;
+	}
+
+	.print-recipes-grid .meal-dinner-card .recipe-notes summary {
+		font-size: 0.68rem !important;
+		line-height: 1.1 !important;
+	}
+
+	.print-recipes-grid .meal-dinner-card .recipe-notes li {
+		font-size: 0.62rem !important;
+		line-height: 1.1 !important;
+	}
+
+	.print-smoothies-grid {
+		display: grid !important;
+		grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+		gap: 1.6mm !important;
+		padding: 0 !important;
+	}
+
+	.print-smoothies-grid>.smoothie-card {
 		break-inside: avoid;
 		page-break-inside: avoid;
-		margin-bottom: 0.25rem;
+		break-after: auto;
+		page-break-after: auto;
+		min-height: 12.5cm;
+	}
+
+	.print-smoothies-grid>.smoothie-card:nth-child(6n + 1):not(:first-child) {
+		break-before: page;
+		page-break-before: always;
+	}
+
+	.print-smoothies-grid>.smoothie-card:last-child {
+		break-before: auto;
+		page-break-before: auto;
+	}
+
+	.print-smoothies-grid .smoothie-card .text-xl {
+		font-size: 0.84rem !important;
+		line-height: 1.1 !important;
+	}
+
+	.print-smoothies-grid .smoothie-card .text-lg,
+	.print-smoothies-grid .smoothie-card .text-base,
+	.print-smoothies-grid .smoothie-card .text-sm {
+		font-size: 0.64rem !important;
+		line-height: 1.15 !important;
+	}
+
+	.print-smoothies-grid .smoothie-card .h-14 {
+		height: auto !important;
+		min-height: 1.8rem !important;
+	}
+
+	.print-smoothies-grid .smoothie-card .p-2,
+	.print-smoothies-grid .smoothie-card .p-1,
+	.print-smoothies-grid .smoothie-card .m-1 {
+		padding: 0.3rem !important;
+		margin: 0.15rem !important;
+	}
+
+	.print-smoothies-grid .smoothie-card li {
+		padding-left: 1.15rem !important;
+		margin-bottom: 0.18rem !important;
+		line-height: 1.25 !important;
+	}
+
+	.print-smoothies-grid .smoothie-card li::before {
+		left: 0 !important;
+		top: 0 !important;
+		font-size: 0.72rem !important;
+		line-height: 1 !important;
+	}
+
+	.print-smoothies-grid .smoothie-card svg {
+		width: 22px !important;
+		height: 22px !important;
 	}
 }

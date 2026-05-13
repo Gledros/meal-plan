@@ -66,10 +66,20 @@ const shoppingWeeks = [
 				<div
 					class='order-3 mt-1 self-center justify-self-center sm:order-2 sm:col-start-2 sm:row-start-1 sm:mt-0 sm:justify-self-end'
 				>
-					<IngredientInfoModal
-						title='Ingredientes por dificultad'
-						triggerLabel='Ingredientes'
-					/>
+					<div class='flex items-center gap-2'>
+						<IngredientInfoModal
+							title='Ingredientes por dificultad'
+							triggerLabel='Ingredientes'
+						/>
+						<button
+							type='button'
+							class='inline-flex items-center justify-center gap-1 rounded-full border border-[#b8b8b9] bg-white/90 px-4 py-2 text-sm font-bold leading-none text-slate-700 transition hover:bg-slate-50 hover:cursor-pointer'
+							onclick='window.print()'
+							aria-label='Imprimir recetas del tab actual'
+						>
+							Imprimir
+						</button>
+					</div>
 				</div>
 				<p
 					class='order-2 text-center text-xl font-semibold text-gray-600 sm:order-3 sm:col-span-2'
@@ -97,9 +107,12 @@ const shoppingWeeks = [
 				/>
 			</div>
 		</div>
-		<section data-tab-panel='smoothies' class='p-1 md:p-4'>
+		<section
+			data-tab-panel='smoothies'
+			class='tab-panel tab-panel--smoothies p-1 md:p-4'
+		>
 			<div
-				class='print-grid grid w-full grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6'
+				class='print-smoothies-grid grid w-full grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6'
 			>
 				{
 					smoothies.map(
@@ -111,10 +124,13 @@ const shoppingWeeks = [
 			</div>
 		</section>
 
-		<section data-tab-panel='desayunos' class='p-2 md:p-4'>
+		<section
+			data-tab-panel='desayunos'
+			class='tab-panel tab-panel--desayunos p-2 md:p-4'
+		>
 			{
 				breakfasts.length > 0 ? (
-					<div class='grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
+					<div class='print-recipes-grid grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
 						{breakfasts.map(
 							({ id, breakfast }: { id: number; breakfast: Breakfast }) => (
 								<RecipeCard
@@ -134,10 +150,13 @@ const shoppingWeeks = [
 			}
 		</section>
 
-		<section data-tab-panel='comidas' class='p-2 md:p-4'>
+		<section
+			data-tab-panel='comidas'
+			class='tab-panel tab-panel--comidas p-2 md:p-4'
+		>
 			{
 				meals.length > 0 ? (
-					<div class='grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
+					<div class='print-recipes-grid grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
 						{meals.map(({ id, meal }: { id: number; meal: Meal }) => (
 							<RecipeCard id={id} recipe={meal} kind='Comida' color='#9BCC7A' />
 						))}
@@ -150,10 +169,13 @@ const shoppingWeeks = [
 			}
 		</section>
 
-		<section data-tab-panel='cenas' class='p-2 md:p-4'>
+		<section
+			data-tab-panel='cenas'
+			class='tab-panel tab-panel--cenas p-2 md:p-4'
+		>
 			{
 				dinners.length > 0 ? (
-					<div class='grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
+					<div class='print-recipes-grid grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
 						{dinners.map(({ id, dinner }: { id: number; dinner: Dinner }) => (
 							<RecipeCard id={id} recipe={dinner} kind='Cena' color='#A1B3FF' />
 						))}

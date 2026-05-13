@@ -50,22 +50,26 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 	<div class='p-2 flex-1 flex flex-col'>
 		<div class='mb-2 grid grid-cols-2 gap-2'>
 			<div class='rounded-lg border-2 p-2 text-center' style={timeBorderStyle}>
-				<p class='text-sm font-semibold tracking-wide'>preparación</p>
-				<p class='text-lg font-bold leading-tight'>
-					{formatTime(recipe.tiempo_preparacion)}
-				</p>
+				<div class='flex gap-2 justify-center items-center mb-1'>
+					<p class='text-sm italic tracking-wide'>preparación</p>
+					<p class='text-lg font-bold leading-tight'>
+						{formatTime(recipe.tiempo_preparacion)}
+					</p>
+				</div>
 				{prepTimeNotes && <p class='text-sm leading-tight'>{prepTimeNotes}</p>}
 			</div>
 			<div class='rounded-lg border-2 p-2 text-center' style={timeBorderStyle}>
-				<p class='text-sm font-semibold tracking-wide'>cocinado</p>
-				<p class='text-lg font-bold leading-tight'>
-					{formatTime(recipe.tiempo_cocinado)}
-				</p>
+				<div class='flex gap-2 justify-center items-center mb-1'>
+					<p class='text-sm italic tracking-wide'>cocinado</p>
+					<p class='text-lg font-bold leading-tight'>
+						{formatTime(recipe.tiempo_cocinado)}
+					</p>
+				</div>
 				{cookTimeNotes && <p class='text-sm leading-tight'>{cookTimeNotes}</p>}
 			</div>
 		</div>
 
-		<div class='grid items-start gap-2 md:grid-cols-2'>
+		<div class='recipe-main-columns grid items-start gap-2 md:grid-cols-2'>
 			<div>
 				<p
 					class='mb-1 text-lg text-center font-semibold'
@@ -112,7 +116,7 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 				<h3 class='text-center font-bold text-xl'>Perfil nutricional</h3>
 				<div class='w-full grid grid-cols-2 gap-2 p-2'>
 					<div class='flex flex-col items-center gap-1'>
-						<Icon name='noto:fire' size={40} />
+						<Icon name='noto:custard' size={40} />
 						<p class='text-lg'>
 							Energía<br />{recipe.informacion_nutricional.kcal} kcal
 						</p>
@@ -147,13 +151,13 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 		{
 			recipeNotes.length > 0 && (
 				<details
-					class='recipe-notes mt-auto rounded-lg border p-2'
+					class='recipe-notes mt-2 rounded-lg border p-2'
 					style={timeBorderStyle}
 				>
-					<summary class='text-lg font-semibold text-center'>Notas</summary>
-					<ul class='px-8 pb-2 list-disc space-y-1 mt-2'>
+					<summary class='text-base font-semibold text-center'>Notas</summary>
+					<ul class='recipe-notes-list list-disc pb-1 mt-1'>
 						{recipeNotes.map((note) => (
-							<li class='text-lg'>{note}</li>
+							<li class='text-sm'>{note}</li>
 						))}
 					</ul>
 				</details>
@@ -165,6 +169,17 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 <style>
 	.perfil-nutricional p {
 		text-align: center;
+	}
+
+	.recipe-notes-list {
+		column-count: 2;
+		column-gap: 1rem;
+		list-style-position: inside;
+	}
+
+	.recipe-notes-list li {
+		break-inside: avoid-column;
+		page-break-inside: avoid;
 	}
 
 	.recipe-notes summary {
