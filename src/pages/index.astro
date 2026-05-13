@@ -45,47 +45,41 @@ const shoppingWeeks = [
 		class='print-header sticky top-0 z-10 border-b-2 border-[#b8b8b9] bg-white/80 p-4 backdrop-blur-sm'
 		data-tabs-sticky-header
 	>
-		<div class='grid grid-cols-1 items-center gap-3 sm:grid-cols-[auto_1fr]'>
-			<div class='order-2 sm:order-1 flex items-center'>
+		<div class='relative grid grid-cols-1 items-center gap-2 sm:min-h-24'>
+			<div
+				class='hidden sm:flex sm:absolute sm:left-0 sm:top-1/2 sm:-translate-y-1/2 sm:items-center'
+			>
 				<Image
 					src={veganBadge}
 					alt='Sello vegano'
-					class='hidden h-16 w-auto object-contain sm:block sm:h-20'
+					class='h-20 w-auto object-contain'
 					loading='eager'
 					decoding='async'
 				/>
 			</div>
-			<div
-				class='order-1 sm:order-2 grid grid-cols-1 items-center gap-x-3 gap-y-1 sm:grid-cols-[1fr_auto]'
-			>
-				<h1
-					class='order-1 self-center text-center text-3xl font-bold sm:text-5xl'
-				>
-					Plan alimenticio
-				</h1>
-				<div
-					class='order-3 mt-1 self-center justify-self-center sm:order-2 sm:col-start-2 sm:row-start-1 sm:mt-0 sm:justify-self-end'
-				>
-					<div class='flex items-center gap-2'>
-						<IngredientInfoModal
-							title='Ingredientes por dificultad'
-							triggerLabel='Ingredientes'
-						/>
-						<button
-							type='button'
-							class='inline-flex items-center justify-center gap-1 rounded-full border border-[#b8b8b9] bg-white/90 px-4 py-2 text-sm font-bold leading-none text-slate-700 transition hover:bg-slate-50 hover:cursor-pointer'
-							onclick='window.print()'
-							aria-label='Imprimir recetas del tab actual'
-						>
-							Imprimir
-						</button>
-					</div>
-				</div>
-				<p
-					class='order-2 text-center text-xl font-semibold text-gray-600 sm:order-3 sm:col-span-2'
-				>
+
+			<div class='mx-auto w-full px-2 text-center sm:px-32 lg:px-40'>
+				<h1 class='text-3xl font-bold sm:text-5xl'>Plan alimenticio</h1>
+				<p class='mt-1 text-center text-xl font-semibold text-gray-600'>
 					vegano, sin gluten, sin azúcar refinada, sin aceites añadidos
 				</p>
+			</div>
+
+			<div
+				class='mt-2 flex md:flex-col items-center gap-2 sm:absolute sm:inset-y-0 sm:right-0 sm:mt-0 justify-center'
+			>
+				<IngredientInfoModal
+					title='Ingredientes por dificultad'
+					triggerLabel='Ingredientes'
+				/>
+				<button
+					type='button'
+					class='inline-flex items-center justify-center gap-1 rounded-full border border-[#b8b8b9] bg-white/90 px-4 py-2 text-sm font-bold leading-none text-slate-700 transition hover:bg-slate-50 hover:cursor-pointer'
+					onclick='window.print()'
+					aria-label='Imprimir recetas del tab actual'
+				>
+					Imprimir
+				</button>
 			</div>
 		</div>
 	</div>

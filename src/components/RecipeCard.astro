@@ -50,7 +50,9 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 	<div class='p-2 flex-1 flex flex-col'>
 		<div class='mb-2 grid grid-cols-2 gap-2'>
 			<div class='rounded-lg border-2 p-2 text-center' style={timeBorderStyle}>
-				<div class='flex gap-2 justify-center items-center mb-1'>
+				<div
+					class='prep-cook-layout flex flex-col md:flex-row gap-2 justify-center items-center mb-1'
+				>
 					<p class='text-sm italic tracking-wide'>preparación</p>
 					<p class='text-lg font-bold leading-tight'>
 						{formatTime(recipe.tiempo_preparacion)}
@@ -59,7 +61,9 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 				{prepTimeNotes && <p class='text-sm leading-tight'>{prepTimeNotes}</p>}
 			</div>
 			<div class='rounded-lg border-2 p-2 text-center' style={timeBorderStyle}>
-				<div class='flex gap-2 justify-center items-center mb-1'>
+				<div
+					class='prep-cook-layout flex flex-col md:flex-row gap-2 justify-center items-center mb-1'
+				>
 					<p class='text-sm italic tracking-wide'>cocinado</p>
 					<p class='text-lg font-bold leading-tight'>
 						{formatTime(recipe.tiempo_cocinado)}
@@ -169,6 +173,12 @@ const nutritionBgStyle = `background-color: ${nutritionHex} !important; color: #
 <style>
 	.perfil-nutricional p {
 		text-align: center;
+	}
+
+	@media print {
+		.prep-cook-layout {
+			flex-direction: row !important;
+		}
 	}
 
 	.recipe-notes-list {
