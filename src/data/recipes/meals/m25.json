@@ -1,0 +1,133 @@
+{
+  "nombre_archivo": "m25.json",
+  "id": 25,
+  "referencia": "m025",
+  "nombre": "Ensalada de arroz con aceitunas y almendras",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 296,
+    "grasas_g": 18.64,
+    "carbohidratos_g": 28.64,
+    "proteina_g": 8.89
+  },
+  "ingredientes": [
+    {
+      "clave": "almonds",
+      "nombre": "Almendras (troceadas o laminadas)",
+      "cantidad": 14,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "2 cucharadas, tostadas",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_turmeric",
+      "nombre": "Cúrcuma molida",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollín (scallion)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "rebanado",
+      "enlace": ""
+    },
+    {
+      "clave": "spinach_leaf",
+      "nombre": "Hoja de espinaca (picada)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 6,
+      "estado": "1 hoja, finamente picada",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Jugo de limón",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "leftover_wild_rice",
+      "nombre": "Arroz salvaje cocido (sobrante)",
+      "cantidad": 99,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "3½ oz arroz salvaje cocido ≈ 99 g (sobrante)",
+      "enlace": ""
+    },
+    {
+      "clave": "green_olives",
+      "nombre": "Aceitunas verdes (sin hueso)",
+      "cantidad": 6,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "6–8 aceitunas, deshuesadas y partidas por la mitad",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_zest",
+      "nombre": "Ralladura de limón",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 2,
+      "estado": "ralladura",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Tosta las almendras en una bandeja en el horno o en sartén hasta que estén doradas y crujientes.",
+    "Calienta el aceite de coco en una sartén y saltea el cebollín y la cúrcuma 1–2 minutos; añade la espinaca y cocina poco hasta que se ablande.",
+    "Mezcla el arroz salvaje cocido con las aceitunas, el cebollín/espinaca, el jugo y la ralladura de limón; añade las almendras tostadas y ajusta de sal."
+  ],
+  "notas": [
+    "La receta usa arroz salvaje sobrante (3½ oz ≈ 99 g).",
+    "Ajusta la cantidad de aceitunas y almendras según preferencia."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Se aplicó conversión 3½ oz → 99 g para el arroz sobrante.",
+      "Equivalentes en g para piezas/cucharadas son orientativos."
+    ],
+    "correcciones": [
+      "2 tbsp almonds → 14 g (referencia); 3½ oz leftover wild rice → 99 g."
+    ]
+  }
+}

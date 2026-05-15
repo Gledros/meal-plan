@@ -1,0 +1,89 @@
+{
+  "nombre_archivo": "m23.json",
+  "id": 23,
+  "referencia": "m023",
+  "nombre": "Ensalada de col roja con tofu miso",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Montar y mezclar; añadir aderezo al gusto."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 246,
+    "grasas_g": 6.95,
+    "carbohidratos_g": 43.68,
+    "proteina_g": 8.08
+  },
+  "ingredientes": [
+    {
+      "clave": "red_cabbage",
+      "nombre": "Col roja (red cabbage)",
+      "cantidad": 198,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "finamente rallada / shaved (7 oz)",
+      "enlace": ""
+    },
+    {
+      "clave": "green_apple",
+      "nombre": "Manzana verde",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 60,
+      "estado": "cortada en tiras finas (matchsticks)",
+      "enlace": ""
+    },
+    {
+      "clave": "carrot",
+      "nombre": "Zanahoria",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 70,
+      "estado": "cortada en tiras finas (matchsticks)",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_seeds",
+      "nombre": "Semillas de sésamo tostadas",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 9,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "tofu_miso_dressing",
+      "nombre": "Aderezo de tofu miso",
+      "cantidad": 2.5,
+      "unidad": "tbsp",
+      "equivalente_g": 38,
+      "estado": "2–3 tbsp según gusto (ver p.18)",
+      "enlace": "recipe://tofu-miso-dressing-p18"
+    }
+  ],
+  "pasos": [
+    "Combina la col roja, la manzana y la zanahoria en un bol grande.",
+    "Añade las semillas de sésamo tostadas y mezcla.",
+    "Incorpora el aderezo de tofu miso al gusto y mezcla hasta cubrir.",
+    "Ajusta sazón y sirve."
+  ],
+  "notas": [
+    "7 oz col roja → 198 g (convertido y redondeado).",
+    "El aderezo de tofu miso está referenciado en p.18; ajustar cantidad según preferencia."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Se aplicó conversión oz→g para la col roja.",
+      "Equivalentes en gramos para cucharadas son orientativos."
+    ],
+    "correcciones": [
+      "Conversión y redondeos aplicados según reglas aprobadas."
+    ]
+  }
+}

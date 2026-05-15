@@ -1,0 +1,124 @@
+{
+  "nombre_archivo": "m21.json",
+  "id": 21,
+  "referencia": "m021",
+  "nombre": "Calabaza asada con dip de berenjena",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 25,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 429,
+    "grasas_g": 37.95,
+    "carbohidratos_g": 21.22,
+    "proteina_g": 10.15
+  },
+  "ingredientes": [
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "winter_squash_wedges",
+      "nombre": "Cuñas de calabaza de invierno",
+      "cantidad": 3,
+      "unidad": "piece",
+      "equivalente_g": 450,
+      "estado": "3 cuñas (peladas y en gajos)",
+      "enlace": ""
+    },
+    {
+      "clave": "rosemary",
+      "nombre": "Romero (ramita)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 1,
+      "estado": "hojas picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "baby_spinach",
+      "nombre": "Hojas de espinaca baby",
+      "cantidad": 28,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1 oz (aprox.)",
+      "enlace": ""
+    },
+    {
+      "clave": "chargrilled_eggplant_dip",
+      "nombre": "Dip de berenjena asada y sumac",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "ver p.40 (2 cda)",
+      "enlace": "recipe://chargrilled-eggplant-dip-p40"
+    },
+    {
+      "clave": "toasted_hazelnuts",
+      "nombre": "Avellanas tostadas",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 7,
+      "estado": "1 cda, picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "crunchy_seed_mix",
+      "nombre": "Mezcla de semillas crujientes (opcional)",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 10,
+      "estado": "opcional, ver p.24",
+      "enlace": "recipe://crunchy-seed-mix-p24"
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 4,
+      "estado": "picado, para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 180°C (350°F). Coloca las cuñas de calabaza en bandeja, pincela con aceite y espolvorea romero y sal.",
+    "Hornea 20–25 minutos hasta que estén tiernas y doradas.",
+    "Sirve las cuñas sobre una cama de espinaca, añade cucharadas de dip de berenjena y espolvorea avellanas y mezcla de semillas."
+  ],
+  "notas": [
+    "La cantidad de cuñas es orientativa; ajusta según tamaño de la calabaza.",
+    "El dip de berenjena está en p.40 como sub-receta; puedes usar dip comprado si no lo haces casero."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Se convirtió 1 oz baby spinach → 28 g y se dejó como unidad 'g' con equivalente_g = -1.",
+      "No se convirtieron cucharadas a gramos (solo equivalentes informativos)."
+    ],
+    "correcciones": [
+      "1 oz baby spinach → 28 g aplicado."
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "nombre_archivo": "d28.json",
+  "id": 28,
+  "referencia": "d028",
+  "nombre": "Ratatouille",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 35,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 413,
+    "grasas_g": 16.02,
+    "carbohidratos_g": 59.57,
+    "proteina_g": 12.32
+  },
+  "ingredientes": [
+    {
+      "clave": "eggplant",
+      "nombre": "Berenjena",
+      "cantidad": 75,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "½ berenjena pequeña, cortada en trozos"
+    },
+    {
+      "clave": "red_bell_pepper",
+      "nombre": "Pimiento rojo",
+      "cantidad": 60,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "½ pimiento rojo, troceado"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": ""
+    },
+    {
+      "clave": "garlic_clove",
+      "nombre": "Diente de ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "equivalente_g": 5,
+      "estado": "finamente picado"
+    },
+    {
+      "clave": "french_shallot",
+      "nombre": "Chalota francesa",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "finamente picada"
+    },
+    {
+      "clave": "zucchini",
+      "nombre": "Calabacín (zucchini)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 100,
+      "estado": "en rodajas"
+    },
+    {
+      "clave": "dried_mixed_herbs",
+      "nombre": "Hierbas secas mezcladas",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": ""
+    },
+    {
+      "clave": "basil_leaves",
+      "nombre": "Hojas de albahaca",
+      "cantidad": 8,
+      "unidad": "piece",
+      "equivalente_g": 4,
+      "estado": "8–10 hojas, desgarradas"
+    },
+    {
+      "clave": "tinned_diced_tomatoes",
+      "nombre": "Tomates en cubos en lata",
+      "cantidad": 397,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "14 oz en lata"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto"
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 350°F (175°C). En una bandeja, combina la berenjena y el pimiento con un poco de aceite; sazona y asa 15–20 minutos.",
+    "En una sartén, calienta el resto del aceite y sofríe el ajo y la chalota unos minutos; añade el calabacín y las hierbas y cocina 3–4 minutos.",
+    "Añade los tomates en lata y cocina a fuego lento hasta que las verduras estén tiernas (15–20 minutos adicionales). Añade la albahaca en los últimos minutos.",
+    "Rectifica la sal y la pimienta. Sirve caliente."
+  ],
+  "notas": [
+    "14 oz diced tomatoes → 397 g aplicado según regla oz→g.",
+    "Equivalentes en g para piezas (berenjena, pimiento, calabacín) son aproximativos."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se aplicaron conversiones oz→g para tomates en lata; los ingredientes en 'g' usan equivalente_g = -1.",
+      "No se convirtieron unidades tbsp/tsp/cup salvo para referencia en equivalente_g."
+    ],
+    "correcciones": [
+      "Conversiones y redondeos aplicados según las reglas aprobadas."
+    ]
+  }
+}

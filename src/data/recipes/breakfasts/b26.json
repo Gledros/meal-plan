@@ -1,0 +1,106 @@
+{
+  "nombre_archivo": "b26.json",
+  "id": 26,
+  "referencia": "b026",
+  "nombre": "Acai bowl con chía y coco tostado",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 498,
+    "grasas_g": 17.61,
+    "carbohidratos_g": 75.58,
+    "proteina_g": 15.31
+  },
+  "ingredientes": [
+    {
+      "clave": "coconut_flakes",
+      "nombre": "Hojuelas de coco",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 12,
+      "estado": "tostadas, para topping",
+      "enlace": ""
+    },
+    {
+      "clave": "frozen_acai_puree",
+      "nombre": "Puré congelado de açaí",
+      "cantidad": 99,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "3½ oz (congelado)",
+      "enlace": ""
+    },
+    {
+      "clave": "frozen_banana",
+      "nombre": "Banana congelada",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 120,
+      "estado": "1 banana congelada",
+      "enlace": ""
+    },
+    {
+      "clave": "soy_milk",
+      "nombre": "Leche de soya",
+      "cantidad": 0.5,
+      "unidad": "cup",
+      "equivalente_g": 120,
+      "estado": "½ cup (ajustar para consistencia)",
+      "enlace": ""
+    },
+    {
+      "clave": "strawberries",
+      "nombre": "Fresas",
+      "cantidad": 5,
+      "unidad": "piece",
+      "equivalente_g": 75,
+      "estado": "4–6 fresas para servir, rebanadas",
+      "enlace": ""
+    },
+    {
+      "clave": "vanilla_protein_powder",
+      "nombre": "Proteína en polvo sabor vainilla",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 12,
+      "estado": "1 cucharada",
+      "enlace": ""
+    },
+    {
+      "clave": "chia_seeds",
+      "nombre": "Semillas de chía",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 12,
+      "estado": "1 cucharada para espolvorear",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Tosta las hojuelas de coco en una bandeja en el horno o sartén hasta que estén doradas y reserva.",
+    "En la licuadora, mezcla el puré de açaí congelado, la banana congelada, la leche de soya y la proteína hasta obtener una textura cremosa. Ajusta la cantidad de leche para la consistencia deseada.",
+    "Vierte en un bowl y decora con fresas, hojuelas de coco tostado y semillas de chía."
+  ],
+  "notas": [
+    "3½ oz puré de açaí ≈ 99 g (convertido según reglas).",
+    "La cantidad de leche y toppings puede ajustarse al gusto."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Se aplicó conversión oz→g solo al puré de açaí.",
+      "Cup se mantiene como unidad (regla: sólo convertir oz y fl oz)."
+    ],
+    "correcciones": [
+      "3½ oz → 99 g aplicado al ingrediente frozen_acai_puree."
+    ]
+  }
+}

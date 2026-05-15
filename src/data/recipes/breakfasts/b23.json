@@ -1,0 +1,91 @@
+{
+	"nombre_archivo": "b23.json",
+	"id": 23,
+	"referencia": "b023",
+	"nombre": "Pudding de arroz glutinoso y coco",
+	"tiempo_preparacion": {
+		"tiempo": 5,
+		"unidad": "minutes",
+		"notas": "Remojar el arroz toda la noche antes de cocinar."
+	},
+	"tiempo_cocinado": {
+		"tiempo": 15,
+		"unidad": "minutes",
+		"notas": "Cocer a fuego lento y dejar reposar tapado para terminar de cocinar al vapor."
+	},
+	"informacion_nutricional": {
+		"kcal": 544,
+		"grasas_g": 10.9,
+		"carbohidratos_g": 88.3,
+		"proteina_g": 18.85
+	},
+	"ingredientes": [
+		{
+			"clave": "white_sticky_rice",
+			"nombre": "Arroz glutinoso blanco (sticky rice)",
+			"cantidad": 71,
+			"unidad": "g",
+			"equivalente_g": -1,
+			"estado": "remojar toda la noche",
+			"enlace": ""
+		},
+		{
+			"clave": "coconut_milk",
+			"nombre": "Leche de coco",
+			"cantidad": 0.3,
+			"unidad": "cup",
+			"equivalente_g": 79,
+			"estado": "1/3 cup (usar 3/4 durante cocción y reservar 1/4)",
+			"enlace": ""
+		},
+		{
+			"clave": "maple_syrup",
+			"nombre": "Jarabe de maple",
+			"cantidad": 1,
+			"unidad": "tbsp",
+			"equivalente_g": 15,
+			"estado": "",
+			"enlace": ""
+		},
+		{
+			"clave": "mango_cheek",
+			"nombre": "Mejilla de mango (mango cheek) u otra fruta de temporada",
+			"cantidad": 1,
+			"unidad": "piece",
+			"equivalente_g": 100,
+			"estado": "cortada en trozos del tamaño de un bocado",
+			"enlace": ""
+		},
+		{
+			"clave": "passionfruit",
+			"nombre": "Maracuyá / passionfruit",
+			"cantidad": 1,
+			"unidad": "piece",
+			"equivalente_g": 20,
+			"estado": "pulpa para servir",
+			"enlace": ""
+		}
+	],
+	"pasos": [
+		"Cubre el arroz con agua y remoja toda la noche.",
+		"Al día siguiente, escurre y enjuaga el arroz. Coloca en una cacerola pequeña con 2¼ fl oz (≈67 ml) de agua y 3/4 de la leche de coco.",
+		"Lleva a ebullición, reduce el fuego, tapa y cocina 10 minutos. Si aún no está cocido, deja unos minutos más con la tapa puesta.",
+		"Retira del fuego y deja reposar 5 minutos tapado para que termine de cocerse al vapor.",
+		"Remueve la leche de coco restante y el maple por el arroz caliente. Sirve con trozos de mango y la pulpa de maracuyá."
+	],
+	"notas": [
+		"2½ oz arroz glutinoso ≈ 71 g (convertido y redondeado).",
+		"1/3 cup leche de coco ≈ 79 ml (equivalente indicado para referencia).",
+		"Ajusta la cantidad de maple al gusto."
+	],
+	"validacion": {
+		"score": 91,
+		"warnings": [
+			"Se aplicó conversión oz→g para el arroz (2½ oz → 71 g).",
+			"La leche en 'cup' no se convierte a 'ml' automáticamente en la unidad principal; su equivalente en ml/g se añadió en 'equivalente_g'."
+		],
+		"correcciones": [
+			"Conversión y redondeo aplicados según reglas aprobadas."
+		]
+	}
+}

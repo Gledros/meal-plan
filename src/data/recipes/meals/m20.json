@@ -1,0 +1,115 @@
+{
+  "nombre_archivo": "m20.json",
+  "id": 20,
+  "referencia": "m020",
+  "nombre": "Piccalilli snack plate",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 426,
+    "grasas_g": 21.75,
+    "carbohidratos_g": 52.58,
+    "proteina_g": 11.48
+  },
+  "ingredientes": [
+    {
+      "clave": "fennel_bulb",
+      "nombre": "Bulbo de hinojo",
+      "cantidad": 0.25,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "¼ bulbo, laminado",
+      "enlace": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 5,
+      "estado": "para aderezar",
+      "enlace": ""
+    },
+    {
+      "clave": "dill",
+      "nombre": "Eneldo picado",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "equivalente_g": 2,
+      "estado": "picado",
+      "enlace": ""
+    },
+    {
+      "clave": "avocado",
+      "nombre": "Aguacate",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 70,
+      "estado": "½, sin hueso y en láminas",
+      "enlace": ""
+    },
+    {
+      "clave": "piccalilli",
+      "nombre": "Piccalilli",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "equivalente_g": 45,
+      "estado": "ver receta p.20 o preparado",
+      "enlace": "recipe://piccalilli-p20"
+    },
+    {
+      "clave": "sourdough_bread",
+      "nombre": "Pan sourdough crujiente",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 70,
+      "estado": "2 rebanadas crujientes",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Mezcla el hinojo laminado con aceite de oliva y eneldo; sazona y mezcla para que se impregne.",
+    "Coloca el hinojo, las láminas de aguacate y el piccalilli sobre las rebanadas de sourdough.",
+    "Ajusta con sal y pimienta y sirve como snack."
+  ],
+  "notas": [
+    "Piccalilli es una conserva encurtida (ver p.20).",
+    "Hinojo puede sustituirse por pepino si no está disponible."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "equivalente_g para porciones pequeñas es aproximado.",
+      "No convertir tbsp/tsp a g en la unidad original; 'equivalente_g' usado solo como referencia."
+    ],
+    "correcciones": [
+      "No se hicieron conversiones de oz/fl oz en esta receta."
+    ]
+  }
+}

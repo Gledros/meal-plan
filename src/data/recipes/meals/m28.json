@@ -1,0 +1,124 @@
+{
+  "nombre_archivo": "m28.json",
+  "id": 28,
+  "referencia": "m028",
+  "nombre": "Quinoa jackfruit bowl",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 406,
+    "grasas_g": 6.02,
+    "carbohidratos_g": 84.11,
+    "proteina_g": 9.68
+  },
+  "ingredientes": [
+    {
+      "clave": "quinoa",
+      "nombre": "Quinoa (enjuagada)",
+      "cantidad": 43,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1½ oz, seca y enjuagada"
+    },
+    {
+      "clave": "leftover_pulled_jackfruit",
+      "nombre": "Pulled jackfruit (sobrante)",
+      "cantidad": 156,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "5½ oz leftover pulled jackfruit (ver p.114)"
+    },
+    {
+      "clave": "red_cabbage",
+      "nombre": "Col roja",
+      "cantidad": 7,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "¼ oz, finamente rallada"
+    },
+    {
+      "clave": "small_carrot",
+      "nombre": "Zanahoria pequeña",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "cortada en tiras (matchsticks)"
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "rebanada"
+    },
+    {
+      "clave": "green_apple",
+      "nombre": "Manzana verde",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 60,
+      "estado": "½, en tiras (matchsticks)"
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso",
+      "cantidad": 7,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "¼ oz, picado"
+    },
+    {
+      "clave": "mint",
+      "nombre": "Menta",
+      "cantidad": 7,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "¼ oz, picada"
+    },
+    {
+      "clave": "sesame_seeds",
+      "nombre": "Semillas de sésamo",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 7,
+      "estado": "½ cucharada"
+    },
+    {
+      "clave": "coconut_yogurt_lime_chili_dressing",
+      "nombre": "Coconut yogurt lime chili dressing",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "ver p.18"
+    }
+  ],
+  "pasos": [
+    "Cocina la quinoa según indicaciones del paquete; esponja y reserva.",
+    "Recalienta el pulled jackfruit si está frío y córtalo en trozos manejables.",
+    "En un bol combina quinoa, jackfruit, col roja, zanahoria, scallion y manzana; añade perejil y menta.",
+    "Aliña con el dressing de yogurt de coco y lima, espolvorea semillas de sésamo y sirve."
+  ],
+  "notas": [
+    "Conversiones aplicadas: 1½ oz quinoa → 43 g; 5½ oz jackfruit → 156 g; ¼ oz verduras/hierbas → 7 g.",
+    "El dressing está referenciado como sub-receta (p.18)."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Equivalentes en gramos para piezas son aproximativos.",
+      "No se convirtieron tbsp a g salvo como referencia en equivalente_g."
+    ],
+    "correcciones": [
+      "Ingredientes en 'g' llevan equivalente_g = -1."
+    ]
+  }
+}

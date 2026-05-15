@@ -1,0 +1,131 @@
+{
+  "nombre_archivo": "m26.json",
+  "id": 26,
+  "referencia": "m026",
+  "nombre": "Gazpacho",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Opcional marinado 2–4 horas para intensificar sabores"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": "No requiere cocinado largo; se licúa y se refrigera"
+  },
+  "informacion_nutricional": {
+    "kcal": 645,
+    "grasas_g": 23.51,
+    "carbohidratos_g": 92.23,
+    "proteina_g": 20.27
+  },
+  "ingredientes": [
+    {
+      "clave": "sourdough_bread_slice",
+      "nombre": "Rebanada de pan sourdough (crusty), corteza quitada",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "corteza retirada",
+      "enlace": ""
+    },
+    {
+      "clave": "roma_tomatoes",
+      "nombre": "Jitomates roma (plum), grandes",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 360,
+      "estado": "2 piezas, despitados y partidos por la mitad",
+      "enlace": ""
+    },
+    {
+      "clave": "persian_cucumber",
+      "nombre": "Pepino persa pequeño",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 50,
+      "estado": "½ pepino persa, pelado y partido por la mitad",
+      "enlace": ""
+    },
+    {
+      "clave": "fresh_jalapeno",
+      "nombre": "Jalapeño fresco",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 7,
+      "estado": "sin semillas (opcional) para menos picante",
+      "enlace": ""
+    },
+    {
+      "clave": "french_shallot",
+      "nombre": "Chalota francesa",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "1 chalota",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic_clove",
+      "nombre": "Diente de ajo pequeño",
+      "cantidad": 1,
+      "unidad": "clove",
+      "equivalente_g": 5,
+      "estado": "1 diente, machacado",
+      "enlace": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": "1 cucharada + extra para rociar",
+      "enlace": ""
+    },
+    {
+      "clave": "red_wine_vinegar",
+      "nombre": "Vinagre de vino tinto",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "equivalente_g": 10,
+      "estado": "2 cucharaditas",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_pine_nuts",
+      "nombre": "Piñones tostados",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 8,
+      "estado": "1 cucharada para coronar",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Enjuaga y escurre el pan; coloca en el vaso de la licuadora con los tomates, pepino, jalapeño, chalota, ajo, aceite y vinagre.",
+    "Tritura hasta obtener una mezcla fina y homogénea. Prueba y ajusta de sal y vinagre.",
+    "Refrigera para enfriar y permitir que los sabores se integren (opcional marinar 2–4 horas). Sirve con un chorrito de aceite y piñones tostados por encima."
+  ],
+  "notas": [
+    "Si no tienes pan, puedes omitirlo, pero el pan ayuda a dar cuerpo al gazpacho.",
+    "Marinar en frío mejora el sabor; ajustar picante retirando semillas del jalapeño."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "No se aplicaron conversiones oz→g ni fl oz→ml porque la receta no las requería aquí.",
+      "Cantidades en piezas son aproximadas y pueden ajustarse según tamaño."
+    ],
+    "correcciones": []
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "nombre_archivo": "b24.json",
+  "id": 24,
+  "referencia": "b024",
+  "nombre": "Tostada con mantequilla de almendra y plátano",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Tostar el pan y untar inmediatamente con mantequilla de almendra."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 1133,
+    "grasas_g": 31.43,
+    "carbohidratos_g": 80.15,
+    "proteina_g": 33.39
+  },
+  "ingredientes": [
+    {
+      "clave": "sourdough_bread",
+      "nombre": "Rebanadas de pan sourdough (o el de tu preferencia)",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 120,
+      "estado": "tostadas, para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "almond_butter",
+      "nombre": "Mantequilla de almendra",
+      "cantidad": 2.5,
+      "unidad": "tbsp",
+      "equivalente_g": 40,
+      "estado": "2–3 cucharadas (usar 2.5 como promedio)",
+      "enlace": "recipe://almond-butter-p08"
+    },
+    {
+      "clave": "banana",
+      "nombre": "Plátano",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 120,
+      "estado": "rebanado, para cubrir",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_hemp_seeds",
+      "nombre": "Semillas de cáñamo molidas",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "equivalente_g": 4,
+      "estado": "espolvorear encima",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Tuesta las rebanadas de pan a tu gusto.",
+    "Unta cada rebanada con mantequilla de almendra.",
+    "Coloca las rodajas de plátano encima y espolvorea las semillas de cáñamo."
+  ],
+  "notas": [
+    "La receta indica 2–3 tbsp de mantequilla de almendra; se usó 2.5 tbsp como valor medio (equivalente ≈ 40 g).",
+    "Si prefieres menos grasa, reduce la cantidad de mantequilla de almendra."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Las equivalencias en gramos para piezas y cucharadas son orientativas.",
+      "No se convirtieron tbsp a g en la unidad principal (se dejó 'tbsp' y se añadió equivalente_g informativo)."
+    ],
+    "correcciones": [
+      "Se documentó 2–3 tbsp → 2.5 tbsp (≈40 g) para facilitar inventario/compras."
+    ]
+  }
+}

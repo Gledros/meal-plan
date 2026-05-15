@@ -1,0 +1,107 @@
+{
+  "nombre_archivo": "b20.json",
+  "id": 20,
+  "referencia": "b020",
+  "nombre": "Crêpes con coulis de frutos rojos",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 354,
+    "grasas_g": 7.14,
+    "carbohidratos_g": 59.43,
+    "proteina_g": 13.24
+  },
+  "ingredientes": [
+    {
+      "clave": "frozen_mixed_berries",
+      "nombre": "Frutos rojos congelados",
+      "cantidad": 78,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "congelados",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_sugar",
+      "nombre": "Azúcar de coco",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 6,
+      "estado": "½ cda para el coulis",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Jugo de limón",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": "para el coulis",
+      "enlace": ""
+    },
+    {
+      "clave": "chickpea_flour_crepe",
+      "nombre": "Crêpe de harina de garbanzo (cantidad)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 35,
+      "estado": "ver receta p.36 (1 porción de crêpe)",
+      "enlace": "recipe://chickpea-crepe-p36"
+    },
+    {
+      "clave": "all_purpose_flour",
+      "nombre": "Harina todo uso",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 16,
+      "estado": "para masa (si aplica)",
+      "enlace": ""
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de maple",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "en la masa y para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 13,
+      "estado": "para engrasar/sartén",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "En una cacerola pequeña, lleva a hervor frutos rojos, azúcar de coco y 1 cda de jugo de limón; cocina a fuego lento hasta obtener coulis, removiendo ocasionalmente.",
+    "Prepara la masa de crêpe (usar la receta de crêpes de harina de garbanzo p.36 si aplica) y cocina crêpes en sartén engrasada.",
+    "Sirve las crêpes con el coulis de frutos rojos y un chorrito de maple."
+  ],
+  "notas": [
+    "2¾ oz frutos rojos congelados ≈ 78 g.",
+    "La crêpe de harina de garbanzo es una sub-receta (p.36).",
+    "No convertir cucharadas/cucharaditas a gramos salvo para 'equivalente_g' informativo; los 'g' tienen equivalente_g = -1."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Frutos rojos convertidos oz→g y redondeados a enteros.",
+      "equivalente_g = -1 en ingredientes con unidad 'g'."
+    ],
+    "correcciones": [
+      "2¾ oz → 78 g aplicado en frozen_mixed_berries."
+    ]
+  }
+}

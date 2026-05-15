@@ -1,0 +1,124 @@
+{
+  "nombre_archivo": "m27.json",
+  "id": 27,
+  "referencia": "m027",
+  "nombre": "Pearl barley with nectarine",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 40,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 502,
+    "grasas_g": 24.69,
+    "carbohidratos_g": 64.98,
+    "proteina_g": 11.6
+  },
+  "ingredientes": [
+    {
+      "clave": "pearl_barley",
+      "nombre": "Perlita de cebada (pearl barley)",
+      "cantidad": 50,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1¾ oz (seca)"
+    },
+    {
+      "clave": "water_or_broth",
+      "nombre": "Agua o caldo vegano",
+      "cantidad": 1,
+      "unidad": "cup",
+      "equivalente_g": 237,
+      "estado": "1 cup (para cocer la cebada), ver p.30 para caldo"
+    },
+    {
+      "clave": "garlic_clove",
+      "nombre": "Diente de ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "equivalente_g": 5,
+      "estado": "machacado"
+    },
+    {
+      "clave": "nectarine",
+      "nombre": "Nectarina",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 140,
+      "estado": "en láminas"
+    },
+    {
+      "clave": "sauerkraut",
+      "nombre": "Sauerkraut (chucrut)",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 24,
+      "estado": "ver p.20"
+    },
+    {
+      "clave": "mint_leaves",
+      "nombre": "Hojas de menta",
+      "cantidad": 7,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "¼ oz aprox., picadas groseramente"
+    },
+    {
+      "clave": "flaked_almonds",
+      "nombre": "Almendras fileteadas",
+      "cantidad": 21,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "¾ oz, ligeramente tostadas"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": ""
+    },
+    {
+      "clave": "lemon_half_juice",
+      "nombre": "Zumo de ½ limón",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "zumo de ½ limón"
+    },
+    {
+      "clave": "sea_salt_pepper",
+      "nombre": "Sal marina y pimienta",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "En una cacerola pequeña añade la cebada, el agua o caldo, el ajo y una pizca de sal. Lleva a ebullición, reduce el fuego, tapa y cocina durante 35–40 minutos hasta que la cebada esté tierna y haya absorbido la mayor parte del líquido.",
+    "Si queda demasiado líquido, escúrrelo y deja reposar la cebada tapada 5–10 minutos para que termine de absorber lo que quede.",
+    "Mezcla la cebada cocida con la nectarina en láminas, el sauerkraut, las hojas de menta, las almendras fileteadas y el aceite de oliva. Añade el zumo de ½ limón, sal y pimienta al gusto y mezcla."
+  ],
+  "notas": [
+    "1¾ oz pearl barley → 50 g (convertido y marcado con equivalente_g = -1).",
+    "1 cup water ≈ 237 ml (se mantiene la unidad 'cup' y se añade equivalente como referencia).",
+    "Ajusta la cantidad de sauerkraut y almendras según preferencia."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se aplicó conversión oz→g para la cebada y para hojas de menta y almendras (cuando estaban en oz).",
+      "Se dejó 'cup' como unidad para el líquido, con equivalente en ml para referencia."
+    ],
+    "correcciones": [
+      "Conversiones y redondeos aplicados según las reglas aprobadas."
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "nombre_archivo": "d22.json",
+  "id": 22,
+  "referencia": "d022",
+  "nombre": "Meatloaf vegano",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 45,
+    "unidad": "minutes",
+    "notas": "Hornear según instrucciones de la receta"
+  },
+  "informacion_nutricional": {
+    "kcal": 443,
+    "grasas_g": 10.9,
+    "carbohidratos_g": 71.37,
+    "proteina_g": 22.38
+  },
+  "ingredientes": [
+    {
+      "clave": "avocado_oil",
+      "nombre": "Aceite de aguacate",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 7,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "small_onion",
+      "nombre": "Cebolla pequeña",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 25,
+      "estado": "picada",
+      "enlace": ""
+    },
+    {
+      "clave": "small_carrot",
+      "nombre": "Zanahoria pequeña",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "rallada",
+      "enlace": ""
+    },
+    {
+      "clave": "small_zucchini",
+      "nombre": "Calabacín pequeño",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 100,
+      "estado": "rallado",
+      "enlace": ""
+    },
+    {
+      "clave": "celery_stalk",
+      "nombre": "Tallo de apio",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "picado",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajos",
+      "cantidad": 2,
+      "unidad": "clove",
+      "equivalente_g": 10,
+      "estado": "machacados",
+      "enlace": ""
+    },
+    {
+      "clave": "tinned_chickpeas",
+      "nombre": "Garbanzos enlatados, escurridos",
+      "cantidad": 397,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "14 oz en lata, escurridos",
+      "enlace": ""
+    },
+    {
+      "clave": "panko_breadcrumbs",
+      "nombre": "Panko breadcrumbs",
+      "cantidad": 50,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1¾ oz ≈ 50 g",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_flaxseeds",
+      "nombre": "Linaza molida",
+      "cantidad": 1.5,
+      "unidad": "tbsp",
+      "equivalente_g": 11,
+      "estado": "1½ cucharadas",
+      "enlace": ""
+    },
+    {
+      "clave": "nutritional_yeast",
+      "nombre": "Levadura nutricional en copos",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "barbecue_sauce",
+      "nombre": "Salsa barbacoa",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "passata",
+      "nombre": "Passata (puré de tomate)",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_turmeric",
+      "nombre": "Cúrcuma molida",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "eggplant_caponata",
+      "nombre": "Eggplant caponata (para servir)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 50,
+      "estado": "ver p.22",
+      "enlace": "recipe://eggplant-caponata-p22"
+    },
+    {
+      "clave": "flat_leaf_parsley_to_serve",
+      "nombre": "Perejil liso picado (para servir)",
+      "cantidad": 7,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "¼ oz ≈ 7 g, picado",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 175°C (350°F).",
+    "En una sartén, calienta aceite y sofríe la cebolla, la zanahoria, el calabacín y el apio 5–6 minutos hasta que estén tiernos.",
+    "Machaca ligeramente los garbanzos y mezcla con las verduras salteadas, los ajos, panko, linaza, levadura nutricional, salsa barbacoa, passata y especias. Ajusta sazón.",
+    "Coloca la mezcla en un molde para pan, cubre con papel aluminio y hornea 20 minutos. Descubre y hornea hasta que esté dorado.",
+    "Sirve con caponata de berenjena y perejil picado."
+  ],
+  "notas": [
+    "Si usas garbanzos cocidos caseros, usar aprox. 400 g escurridos.",
+    "Panko 1¾ oz ≈ 50 g ya convertido (unidad 'g' con equivalente_g = -1).",
+    "La linaza ayuda a ligar la mezcla; ajusta cantidad si está muy húmeda."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se convirtieron 14 oz garbanzos → 397 g y 1¾ oz panko → 50 g (ambos con equivalente_g = -1).",
+      "Equivalentes en gramos para tbsp/tsp son referenciales (no cambiaron las unidades originales)."
+    ],
+    "correcciones": [
+      "Aplicadas conversiones oz→g y redondeos prácticos según reglas aprobadas."
+    ]
+  }
+}

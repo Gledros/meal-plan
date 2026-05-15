@@ -1,0 +1,188 @@
+{
+  "nombre_archivo": "d20.json",
+  "id": 20,
+  "referencia": "d020",
+  "nombre": "Lentil burgers",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 35,
+    "unidad": "minutes",
+    "notas": "Cocción de lentejas + dorado de las hamburguesas"
+  },
+  "informacion_nutricional": {
+    "kcal": 454,
+    "grasas_g": 17.72,
+    "carbohidratos_g": 64.57,
+    "proteina_g": 14.2
+  },
+  "ingredientes": [
+    {
+      "clave": "green_lentils",
+      "nombre": "Lentejas verdes",
+      "cantidad": 85,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "3 oz, enjuagadas",
+      "enlace": ""
+    },
+    {
+      "clave": "carrot",
+      "nombre": "Zanahoria pequeña",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "finamente picada",
+      "enlace": ""
+    },
+    {
+      "clave": "small_onion",
+      "nombre": "Cebolla pequeña",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 50,
+      "estado": "finamente picada",
+      "enlace": ""
+    },
+    {
+      "clave": "celery_stalk",
+      "nombre": "Apio (tallo)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "finamente picado",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "equivalente_g": 5,
+      "estado": "machacado",
+      "enlace": ""
+    },
+    {
+      "clave": "bay_leaf",
+      "nombre": "Hoja de laurel",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "oregano",
+      "nombre": "Orégano seco",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "panko_breadcrumbs",
+      "nombre": "Panko breadcrumbs",
+      "cantidad": 78,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "2¾ oz (para ligar)",
+      "enlace": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": "para dorar",
+      "enlace": ""
+    },
+    {
+      "clave": "burger_bun",
+      "nombre": "Pan para hamburguesa",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 60,
+      "estado": "1 bollo por porción",
+      "enlace": ""
+    },
+    {
+      "clave": "lettuce_leaf",
+      "nombre": "Hoja de lechuga",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "tomato_slices",
+      "nombre": "Rodajas de jitomate",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 60,
+      "estado": "2 rodajas por burger",
+      "enlace": ""
+    },
+    {
+      "clave": "avocado_half",
+      "nombre": "Aguacate (½)",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 70,
+      "estado": "½ aguacate por porción",
+      "enlace": ""
+    },
+    {
+      "clave": "eggplant_caponata",
+      "nombre": "Caponata de berenjena (para servir)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 50,
+      "estado": "ver p.22",
+      "enlace": "recipe://eggplant-caponata-p22"
+    },
+    {
+      "clave": "vegan_aioli",
+      "nombre": "Alioli vegano (para servir)",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": "ver p.18",
+      "enlace": "recipe://vegan-aioli-p18"
+    }
+  ],
+  "pasos": [
+    "Cocina las lentejas hasta que estén tiernas; escurre y deja enfriar.",
+    "Mezcla lentejas con zanahoria, cebolla, apio, ajo, especias y panko; ajusta sal y forma hamburguesas.",
+    "Refrigera 20–30 min. Dora las hamburguesas en aceite hasta que estén doradas por ambos lados.",
+    "Monta en pan con lechuga, tomate, aguacate, caponata y alioli vegano."
+  ],
+  "notas": [
+    "3 oz lentejas ≈ 85 g (seco). Si usas lentejas en lata, usa ≈160 g escurridas y ajusta el panko.",
+    "Panko 2¾ oz ≈ 78 g; sirve para ligar la mezcla."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Se aplicaron conversiones oz→g para lentejas y panko; redondeos prácticos.",
+      "equivalente_g = -1 en ingredientes con unidad 'g'."
+    ],
+    "correcciones": [
+      "3 oz → 85 g y 2¾ oz → 78 g aplicados."
+    ]
+  }
+}

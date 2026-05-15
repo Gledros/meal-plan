@@ -1,0 +1,71 @@
+{
+  "nombre_archivo": "b22.json",
+  "id": 22,
+  "referencia": "b022",
+  "nombre": "Pan de zanahoria y chirivía con mantequilla de cacahuate",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 664,
+    "grasas_g": 28.84,
+    "carbohidratos_g": 67.48,
+    "proteina_g": 16.69
+  },
+  "ingredientes": [
+    {
+      "clave": "carrot_parsnip_loaf_slice",
+      "nombre": "Rebanada de Carrot & parsnip loaf (p.34)",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 120,
+      "estado": "2 rebanadas (ver receta p.34)",
+      "enlace": "recipe://carrot-parsnip-loaf-p34"
+    },
+    {
+      "clave": "peanut_butter",
+      "nombre": "Mantequilla de cacahuate (o de otro fruto seco)",
+      "cantidad": 2.5,
+      "unidad": "tbsp",
+      "equivalente_g": 40,
+      "estado": "2–3 cucharadas (usar 2.5 como promedio)",
+      "enlace": "recipe://peanut-butter-p08"
+    },
+    {
+      "clave": "strawberries",
+      "nombre": "Fresas",
+      "cantidad": 3,
+      "unidad": "piece",
+      "equivalente_g": 45,
+      "estado": "en rodajas para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Tuesta o calienta las rebanadas de pan de carrot & parsnip loaf según prefieras.",
+    "Unta con mantequilla de cacahuate y coloca las fresas en rodajas encima.",
+    "Sirve inmediatamente."
+  ],
+  "notas": [
+    "Las rebanadas provienen de la receta p.34; el enlace referencia la sub-receta.",
+    "Cantidad de mantequilla de cacahuate indicada como 2–3 cdas; se usa 2.5 cda como valor intermedio.",
+    "Equivalentes en gramos son orientativos para plan de compras y cálculo nutricional."
+  ],
+  "validacion": {
+    "score": 90,
+    "warnings": [
+      "Se usó 2.5 tbsp como promedio entre 2–3 tbsp.",
+      "No se convierte tbsp a g en la unidad principal; equivalente_g es referencia solamente."
+    ],
+    "correcciones": [
+      "2–3 tbsp peanut butter → 2.5 tbsp (equivalente ≈ 40 g) documentado."
+    ]
+  }
+}

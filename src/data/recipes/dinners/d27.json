@@ -1,0 +1,109 @@
+{
+  "nombre_archivo": "d27.json",
+  "id": 27,
+  "referencia": "d027",
+  "nombre": "Cauliflower steak with hummus & kale",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 25,
+    "unidad": "minutes",
+    "notas": "Asar al horno hasta tiernizar y dorar"
+  },
+  "informacion_nutricional": {
+    "kcal": 259,
+    "grasas_g": 18.32,
+    "carbohidratos_g": 20.32,
+    "proteina_g": 7.08
+  },
+  "ingredientes": [
+    {
+      "clave": "cauliflower",
+      "nombre": "Coliflor (mitades / filete)",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 300,
+      "estado": "½ cabeza (usar un filete de ¾–1¼ inch de grosor para el 'steak')"
+    },
+    {
+      "clave": "curly_kale_stem_leaves",
+      "nombre": "Tallo y hojas de kale rizado",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "hojas picadas"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": ""
+    },
+    {
+      "clave": "beet_hummus",
+      "nombre": "Beet hummus (hummus de remolacha)",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "equivalente_g": 45,
+      "estado": "ver p.40"
+    },
+    {
+      "clave": "roasted_sumac_chickpeas",
+      "nombre": "Garbanzos asados con sumac",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": "ver p.24, para espolvorear"
+    },
+    {
+      "clave": "crunchy_seed_mix",
+      "nombre": "Mezcla de semillas crujientes",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 10,
+      "estado": "ver p.24, para espolvorear"
+    },
+    {
+      "clave": "sea_salt_pepper",
+      "nombre": "Sal marina y pimienta negra",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 350°F (175°C). Corta un filete de coliflor de aproximadamente ¾–1¼ in desde el centro; reserva el resto en floretes.",
+    "En un bol, mezcla los floretes y las hojas de kale con la mitad del aceite y el comino; sazona. Coloca el filete de coliflor en una bandeja forrada y pincela con aceite y sazona.",
+    "Hornea 20 minutos hasta que esté tierno; si quieres un dorado extra, aumenta la temperatura a 400°F (200°C) y hornea 4–5 minutos más.",
+    "Sirve el 'steak' sobre una cama de hummus de remolacha; añade los floretes y kale asados alrededor. Espolvorea garbanzos asados con sumac y la mezcla de semillas crujientes. Ajusta con sal y pimienta."
+  ],
+  "notas": [
+    "Usa un filete central de coliflor para el 'steak' y trocea el resto en floretes para asar.",
+    "Beet hummus y garbanzos asados están referenciados como sub-recetas (p.40 y p.24).",
+    "Ajusta tiempo de horneado según el grosor del filete de coliflor y tu horno."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "No hubo conversiones oz→g necesarias en esta receta; las unidades tipo tbsp/tsp se mantienen y tienen equivalentes informativos.",
+      "Equivalentes en gramos para piezas (coliflor, kale) son aproximativos."
+    ],
+    "correcciones": [
+      "Campos de 'g' (si los hubiese) habrían recibido equivalente_g = -1 según las reglas; aquí se mantuvieron unidades prácticas."
+    ]
+  }
+}

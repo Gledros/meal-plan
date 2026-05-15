@@ -1,0 +1,135 @@
+{
+  "nombre_archivo": "d25.json",
+  "id": 25,
+  "referencia": "d025",
+  "nombre": "Tofu laksa",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 709,
+    "grasas_g": 40.07,
+    "carbohidratos_g": 65.24,
+    "proteina_g": 13.72
+  },
+  "ingredientes": [
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 7,
+      "estado": "½ cucharada",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_laksa_paste",
+      "nombre": "Pasta laksa vegana",
+      "cantidad": 2.5,
+      "unidad": "tbsp",
+      "equivalente_g": 38,
+      "estado": "2½ cucharadas",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_broth",
+      "nombre": "Caldo vegano",
+      "cantidad": 237,
+      "unidad": "ml",
+      "equivalente_g": 237,
+      "estado": "1 cup ≈ 237 ml",
+      "enlace": "recipe://vegan-broth-p30"
+    },
+    {
+      "clave": "coconut_milk",
+      "nombre": "Leche de coco",
+      "cantidad": 207,
+      "unidad": "ml",
+      "equivalente_g": 207,
+      "estado": "7 fl oz ≈ 207 ml",
+      "enlace": ""
+    },
+    {
+      "clave": "fried_tofu_puffs",
+      "nombre": "Tofu frito (tofu puffs), partidos por la mitad",
+      "cantidad": 50,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1¾ oz ≈ 50 g, partidos por la mitad",
+      "enlace": ""
+    },
+    {
+      "clave": "lime_half",
+      "nombre": "Lima (½)",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 12,
+      "estado": "½ lima (1 wedge para topping, resto zumo)",
+      "enlace": ""
+    },
+    {
+      "clave": "vermicelli_noodles",
+      "nombre": "Fideos vermicelli",
+      "cantidad": 50,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1¾ oz ≈ 50 g",
+      "enlace": ""
+    },
+    {
+      "clave": "beansprouts",
+      "nombre": "Brotes (beansprouts)",
+      "cantidad": 28,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1 oz ≈ 28 g (opcional para servir)",
+      "enlace": ""
+    },
+    {
+      "clave": "red_chili",
+      "nombre": "Chile rojo",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 7,
+      "estado": "finamente rebanado para servir",
+      "enlace": ""
+    },
+    {
+      "clave": "cilantro_leaves",
+      "nombre": "Hojas de cilantro",
+      "cantidad": 7,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "un puñado para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Calienta aceite en una sartén y cocina la pasta laksa 1–2 minutos hasta que desprenda aroma.",
+    "Añade el caldo vegano y la leche de coco; lleva a hervor suave y cocina 8–10 minutos para integrar sabores.",
+    "Agrega los tofu puffs para que absorban sabor y los fideos vermicelli para que se hidraten en los últimos minutos.",
+    "Sirve el laksa en tazones, coloca fideos y tofu, y cubre con brotes, rodajas de chile y cilantro; añade gajo de lima y zumo al gusto."
+  ],
+  "notas": [
+    "7 fl oz leche de coco → 207 ml (convertido según reglas).",
+    "1¾ oz fried tofu puffs y 1¾ oz vermicelli → 50 g cada uno (unidad 'g' con equivalente_g = -1).",
+    "Ajusta la cantidad de pasta laksa según intensidad de sabor que prefieras."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Se aplicaron conversiones fl oz→ml y oz→g donde correspondía (leche de coco, tofu puffs, vermicelli, brotes).",
+      "Equivalentes en gramos para ingredientes por pieza o cucharadas son referenciales."
+    ],
+    "correcciones": [
+      "7 fl oz → 207 ml; 1¾ oz → 50 g aplicado a ingredientes en 'g'."
+    ]
+  }
+}

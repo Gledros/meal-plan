@@ -1,0 +1,152 @@
+{
+  "nombre_archivo": "m24.json",
+  "id": 24,
+  "referencia": "m024",
+  "nombre": "Cucharitas de lechuga con tofu picado",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Saltear verduras y tofu brevemente hasta que estén tiernos."
+  },
+  "informacion_nutricional": {
+    "kcal": 300,
+    "grasas_g": 15.09,
+    "carbohidratos_g": 23.98,
+    "proteina_g": 23.64
+  },
+  "ingredientes": [
+    {
+      "clave": "extra_firm_tofu",
+      "nombre": "Tofu extra firme",
+      "cantidad": 28,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "28 g (1 oz), prensado y cortado en cubos",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de sésamo tostado",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "small_carrot",
+      "nombre": "Zanahoria pequeña",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "finamente picada",
+      "enlace": ""
+    },
+    {
+      "clave": "celery_stalk",
+      "nombre": "Tallo de apio",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "finamente picado",
+      "enlace": ""
+    },
+    {
+      "clave": "oyster_mushrooms",
+      "nombre": "Setas ostras (oyster mushrooms)",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "finamente picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "finamente rebanada",
+      "enlace": ""
+    },
+    {
+      "clave": "red_chili",
+      "nombre": "Chile rojo",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 7,
+      "estado": "finamente picado",
+      "enlace": ""
+    },
+    {
+      "clave": "light_soy_sauce",
+      "nombre": "Salsa de soja ligera (light soy sauce)",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "hoisin_sauce",
+      "nombre": "Salsa hoisin",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "equivalente_g": 10,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "cilantro_leaves",
+      "nombre": "Hojas de cilantro",
+      "cantidad": 7,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "≈¼ oz, picadas groseramente",
+      "enlace": ""
+    },
+    {
+      "clave": "iceberg_lettuce",
+      "nombre": "Hojas de lechuga iceberg",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 20,
+      "estado": "2 hojas para formar 'cups', llevar a tamaño de cuenco",
+      "enlace": ""
+    },
+    {
+      "clave": "lime_wedges",
+      "nombre": "Gajos de lima",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 10,
+      "estado": "para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Prensa el tofu con papel de cocina para eliminar exceso de agua y desmenúzalo con los dedos.",
+    "Calienta aceite en sartén a fuego medio-alto y sofríe la zanahoria, el apio y las setas 4–5 minutos.",
+    "Añade el tofu, la mitad de la cebollita, el chile, la salsa de soja y la hoisin; saltea hasta que se caliente y los sabores se integren.",
+    "Retira del fuego, añade el cilantro restante y sirve sobre las hojas de iceberg. Acompaña con gajos de lima."
+  ],
+  "notas": [
+    "La receta original indica 1 oz tofu → convertido a 28 g (unidad 'g' con equivalente_g = -1).",
+    "Ajusta la cantidad de hoisin y soja al gusto; sirve inmediatamente para mantener la textura crujiente de la lechuga."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Tofu y cilantro convertidos oz→g y marcados con equivalente_g = -1.",
+      "Las unidades tipo tsp/tbsp mantienen su unidad y se ofrece equivalente_g informativo."
+    ],
+    "correcciones": [
+      "1 oz tofu → 28 g aplicado."
+    ]
+  }
+}

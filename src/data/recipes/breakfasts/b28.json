@@ -1,0 +1,124 @@
+{
+  "nombre_archivo": "b28.json",
+  "id": 28,
+  "referencia": "b028",
+  "nombre": "Breakfast tofu & black bean wrap",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 546,
+    "grasas_g": 21.79,
+    "carbohidratos_g": 63.61,
+    "proteina_g": 30.52
+  },
+  "ingredientes": [
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "equivalente_g": 10,
+      "estado": ""
+    },
+    {
+      "clave": "french_shallot",
+      "nombre": "Chalota francesa",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "finamente rebanada"
+    },
+    {
+      "clave": "garlic_clove",
+      "nombre": "Diente de ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "equivalente_g": 5,
+      "estado": "machacado"
+    },
+    {
+      "clave": "roma_tomato",
+      "nombre": "Tomate roma (pequeño)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 60,
+      "estado": "picado"
+    },
+    {
+      "clave": "extra_firm_tofu",
+      "nombre": "Tofu extra firme",
+      "cantidad": 99,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "3½ oz, rallado"
+    },
+    {
+      "clave": "tinned_black_beans",
+      "nombre": "Frijoles negros en conserva",
+      "cantidad": 99,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "3½ oz, escurridos"
+    },
+    {
+      "clave": "tinned_sweetcorn",
+      "nombre": "Granitos de maíz (en lata o descongelados)",
+      "cantidad": 43,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1½ oz, escurridos"
+    },
+    {
+      "clave": "cilantro",
+      "nombre": "Cilantro",
+      "cantidad": 7,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "¼ oz, picado"
+    },
+    {
+      "clave": "large_tortilla_wrap",
+      "nombre": "Tortilla grande para wrap",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 60,
+      "estado": "1 wrap grande"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Calienta el aceite en una sartén a fuego medio y sofríe la chalota y el ajo 1–2 minutos.",
+    "Añade el tomate y cocina 3–5 minutos hasta que los jugos empiecen a soltarse.",
+    "Incorpora el tofu rallado, los frijoles y el maíz; sazona con sal y cocina brevemente hasta que todo esté caliente.",
+    "Apila el relleno en el centro de la tortilla, añade el cilantro, pliega la base y enrolla para formar el wrap."
+  ],
+  "notas": [
+    "Conversiones aplicadas: 3½ oz → 99 g; 1½ oz → 43 g; ¼ oz → 7 g.",
+    "Ajusta sal al gusto."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Equivalentes en gramos para piezas son aproximados.",
+      "Se aplicaron conversiones oz→g y redondeos prácticos."
+    ],
+    "correcciones": [
+      "Todos los ingredientes en 'g' tienen equivalente_g = -1."
+    ]
+  }
+}

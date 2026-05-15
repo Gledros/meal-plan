@@ -1,0 +1,155 @@
+{
+  "nombre_archivo": "d24.json",
+  "id": 24,
+  "referencia": "d024",
+  "nombre": "Arroz salvaje con setas mixtas y kale",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Cocer arroz salvaje hasta que esté tierno; saltear setas y mezclar con kale al final."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 45,
+    "unidad": "minutes",
+    "notas": "Cocción del arroz salvaje 40–45 minutos hasta ablandar"
+  },
+  "informacion_nutricional": {
+    "kcal": 358,
+    "grasas_g": 8.89,
+    "carbohidratos_g": 53.91,
+    "proteina_g": 17.37
+  },
+  "ingredientes": [
+    {
+      "clave": "wild_rice",
+      "nombre": "Arroz salvaje (wild rice)",
+      "cantidad": 99,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "3½ oz (seco), enjuagado",
+      "enlace": ""
+    },
+    {
+      "clave": "water_or_broth",
+      "nombre": "Agua o caldo vegano",
+      "cantidad": 2,
+      "unidad": "cup",
+      "equivalente_g": 480,
+      "estado": "para cocer el arroz (2 cups)",
+      "enlace": "recipe://vegan-broth-p30"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 3,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 7,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Diente de ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "equivalente_g": 5,
+      "estado": "finamente rebanado",
+      "enlace": ""
+    },
+    {
+      "clave": "shiitake_mushroom",
+      "nombre": "Hongo shiitake",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 12,
+      "estado": "rebanado",
+      "enlace": ""
+    },
+    {
+      "clave": "oyster_mushrooms",
+      "nombre": "Setas ostras",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "rebanadas",
+      "enlace": ""
+    },
+    {
+      "clave": "enoki_mushrooms",
+      "nombre": "Setas enoki",
+      "cantidad": 0.5,
+      "unidad": "bunch",
+      "equivalente_g": 25,
+      "estado": "½ manojo, recortadas",
+      "enlace": ""
+    },
+    {
+      "clave": "button_mushrooms",
+      "nombre": "Champiñones (button)",
+      "cantidad": 2.5,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "2–3 champiñones, partidos a la mitad",
+      "enlace": ""
+    },
+    {
+      "clave": "curly_kale_leaf",
+      "nombre": "Hoja de kale rizado",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "hoja entera, picada groseramente",
+      "enlace": ""
+    },
+    {
+      "clave": "sesame_rice_wine_dressing",
+      "nombre": "Aderezo Sesame rice wine (p.16)",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "2 cucharadas, para mezclar",
+      "enlace": "recipe://sesame-rice-wine-dressing-p16"
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso (ramitas)",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 4,
+      "estado": "2 ramitas, hojas picadas toscamente",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Lava y enjuaga el arroz salvaje. Coloca el arroz con el agua o caldo y la sal en una olla, lleva a ebullición, reduce y tapa; cocina 40–45 minutos hasta que el arroz esté tierno.",
+    "Mientras el arroz se cocina, calienta una sartén con el aceite de coco y sofríe el ajo 1–2 minutos.",
+    "Añade las setas (shiitake, ostras, enoki y button) y saltea de 6–8 minutos hasta que estén doradas; incorpora el kale y cocina brevemente hasta que se ablande.",
+    "Reserva 3½ oz de arroz cocido para el día siguiente si quieres (según nota de la receta). Mezcla el arroz restante con las setas y añade el aderezo de sesame rice wine y el perejil.",
+    "Rectifica sazón y sirve caliente."
+  ],
+  "notas": [
+    "3½ oz wild rice (seco) ≈ 99 g (convertido y redondeado).",
+    "Se sugiere reservar parte del arroz cocido para usar al día siguiente.",
+    "Las cantidades de setas por pieza son aproximadas; ajusta según tamaño y disponibilidad."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se aplicó conversión oz→g solo al arroz (regla aprobada).",
+      "No se convirtieron 'cup' ni 'tbsp' a g en la unidad principal; se añadieron equivalentes informativos cuando procede."
+    ],
+    "correcciones": [
+      "3½ oz → 99 g aplicado en wild_rice.",
+      "Se mantuvieron unidades tbsp/tsp/cup sin transformación, con equivalentes estimativos donde útil."
+    ]
+  }
+}

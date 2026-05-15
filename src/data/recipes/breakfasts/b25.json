@@ -1,0 +1,97 @@
+{
+  "nombre_archivo": "b25.json",
+  "id": 25,
+  "referencia": "b025",
+  "nombre": "Granola con pecanas y ciruelas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 434,
+    "grasas_g": 25.58,
+    "carbohidratos_g": 63.2,
+    "proteina_g": 12.85
+  },
+  "ingredientes": [
+    {
+      "clave": "rolled_oats",
+      "nombre": "Avena (hojuelas, porridge)",
+      "cantidad": 50,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1¾ oz ≈ 50 g",
+      "enlace": ""
+    },
+    {
+      "clave": "pecans",
+      "nombre": "Pecanas (troceadas)",
+      "cantidad": 28,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1 oz ≈ 28 g, picadas groseramente",
+      "enlace": ""
+    },
+    {
+      "clave": "dried_apricots",
+      "nombre": "Albaricoques secos (dried apricots)",
+      "cantidad": 3,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "3 piezas, finamente laminadas",
+      "enlace": ""
+    },
+    {
+      "clave": "prunes",
+      "nombre": "Ciruelas pasas (prunes)",
+      "cantidad": 3,
+      "unidad": "piece",
+      "equivalente_g": 45,
+      "estado": "3–4 piezas, remojadas (usar 3–4 según preferencia)",
+      "enlace": ""
+    },
+    {
+      "clave": "prune_juice",
+      "nombre": "Jugo de las ciruelas remojadas",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "equivalente_g": 45,
+      "estado": "3 cucharadas (del remojo)",
+      "enlace": ""
+    },
+    {
+      "clave": "coconut_or_soy_yogurt",
+      "nombre": "Yogur de coco o de soja",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": "1 cucharada para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Combina avena, pecanas y albaricoques en un bol.",
+    "Añade el jugo de ciruelas y deja reposar 5–10 minutos para que la avena se hidrate.",
+    "Sirve con yogur de coco/soja y las ciruelas remojadas por encima."
+  ],
+  "notas": [
+    "La receta original indica 1¾ oz de avena y 1 oz de pecanas; se convirtieron a gramos según las reglas (oz→g).",
+    "Las ciruelas se pueden ajustar entre 3–4 piezas según preferencia de dulzor/textura."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Se aplicó conversión oz→g para avena y pecanas; redondeos prácticos.",
+      "Equivalentes en g para piezas y cucharadas son orientativos."
+    ],
+    "correcciones": [
+      "1¾ oz oats → 50 g, 1 oz pecans → 28 g; 3 tbsp prune juice → 45 g (referencia)."
+    ]
+  }
+}

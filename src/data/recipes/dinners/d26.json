@@ -1,0 +1,181 @@
+{
+  "nombre_archivo": "d26.json",
+  "id": 26,
+  "referencia": "d026",
+  "nombre": "Tacos de jackfruit desmenuzado (pulled jackfruit tacos)",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 45,
+    "unidad": "minutes",
+    "notas": "Cocer el jackfruit en salsa y reducir líquido; ensambles finales"
+  },
+  "informacion_nutricional": {
+    "kcal": 555,
+    "grasas_g": 22.57,
+    "carbohidratos_g": 88.77,
+    "proteina_g": 8.24
+  },
+  "ingredientes": [
+    {
+      "clave": "french_shallots",
+      "nombre": "Chalotas francesas",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "finamente picadas",
+      "enlace": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "smoked_paprika",
+      "nombre": "Pimentón ahumado",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "barbecue_sauce",
+      "nombre": "Salsa barbacoa",
+      "cantidad": 0.3,
+      "unidad": "cup",
+      "equivalente_g": 79,
+      "estado": "1/3 cup",
+      "enlace": ""
+    },
+    {
+      "clave": "passata",
+      "nombre": "Passata (puré de tomate)",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "tinned_young_jackfruit",
+      "nombre": "Jackfruit joven en conserva, escurrido",
+      "cantidad": 397,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "14 oz en lata, escurrido",
+      "enlace": ""
+    },
+    {
+      "clave": "chinese_cabbage_wombok",
+      "nombre": "Col china (wombok), finamente rallada",
+      "cantidad": 50,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1¾ oz, finamente rallada",
+      "enlace": ""
+    },
+    {
+      "clave": "pickled_jalapenos",
+      "nombre": "Jalapeños encurtidos",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "laminados",
+      "enlace": ""
+    },
+    {
+      "clave": "cilantro_leaves",
+      "nombre": "Hojas de cilantro",
+      "cantidad": 7,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "¼ oz ≈ 7 g, picadas groseramente",
+      "enlace": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "soft_tortillas",
+      "nombre": "Tortillas blandas / soft tacos",
+      "cantidad": 4,
+      "unidad": "piece",
+      "equivalente_g": 200,
+      "estado": "4–6 tortillas (usar 4 como porción mínima)",
+      "enlace": ""
+    },
+    {
+      "clave": "guacamole",
+      "nombre": "Guacamole (para servir)",
+      "cantidad": 4,
+      "unidad": "tbsp",
+      "equivalente_g": 60,
+      "estado": "4–6 cucharadas (usar 4 como referencia)",
+      "enlace": "recipe://guacamole-p40"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "lime_wedges",
+      "nombre": "Gajos de lima",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 20,
+      "estado": "para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Calienta el aceite en una olla amplia. Añade las chalotas y sofríe unos minutos hasta que estén blandas.",
+    "Agrega comino y pimentón, remueve brevemente y añade la salsa barbacoa y la passata; mezcla bien.",
+    "Incorpora el jackfruit escurrido y cocina a fuego medio, aplastando y removiendo para que se desmenuce y absorba la salsa; cubre y cocina hasta que esté tierno y la salsa haya reducido (20–30 min).",
+    "Añade la col china rallada y los jalapeños encurtidos; mezcla y cocina 2–3 minutos más. Ajusta de sal y pimienta.",
+    "Sirve el jackfruit en tortillas blandas, corona con guacamole, cilantro y gajos de lima."
+  ],
+  "notas": [
+    "14 oz jackfruit en lata ≈ 397 g (convertido según reglas).",
+    "1¾ oz Chinese cabbage ≈ 50 g; 1/4 oz cilantro ≈ 7 g (convertidos y marcados con equivalente_g = -1).",
+    "Se recomienda 4–6 tortillas; aquí se propone 4 como cantidad base en 'cantidad' y se aclara rango en 'estado'."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se aplicaron conversiones oz→g solo a jackfruit, cabbage y cilantro según las reglas aprobadas.",
+      "Unidad 'cup' para barbecue sauce se mantiene (1/3 cup) conforme a regla de no convertir cup automáticamente."
+    ],
+    "correcciones": [
+      "14 oz → 397 g aplicado en tinned_young_jackfruit; 1¾ oz → 50 g aplicado en chinese_cabbage_wombok; 1/4 oz → 7 g en cilantro_leaves."
+    ]
+  }
+}

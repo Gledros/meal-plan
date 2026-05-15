@@ -1,0 +1,135 @@
+{
+  "nombre_archivo": "d21.json",
+  "id": 21,
+  "referencia": "d021",
+  "nombre": "Quinoa salteada con kimchi",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 281,
+    "grasas_g": 7.76,
+    "carbohidratos_g": 43.43,
+    "proteina_g": 11.24
+  },
+  "ingredientes": [
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de sésamo tostado",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "fresh_ginger",
+      "nombre": "Jengibre fresco finamente rallado",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 2,
+      "estado": "1 cdita rallada",
+      "enlace": ""
+    },
+    {
+      "clave": "kimchi",
+      "nombre": "Kimchi finamente picado",
+      "cantidad": 28,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1 oz, picado",
+      "enlace": ""
+    },
+    {
+      "clave": "curly_kale_stalk_leaves",
+      "nombre": "Tallo y hojas de kale rizado",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "hojas finamente rebanadas",
+      "enlace": ""
+    },
+    {
+      "clave": "frozen_green_peas",
+      "nombre": "Guisantes verdes congelados",
+      "cantidad": 43,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1½ oz (congelados)",
+      "enlace": ""
+    },
+    {
+      "clave": "cooked_quinoa",
+      "nombre": "Quinoa cocida",
+      "cantidad": 43,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1½ oz (ya cocida)",
+      "enlace": ""
+    },
+    {
+      "clave": "small_carrot",
+      "nombre": "Zanahoria pequeña",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "rallada",
+      "enlace": ""
+    },
+    {
+      "clave": "beansprouts",
+      "nombre": "Brotes (beansprouts)",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "tamari",
+      "nombre": "Tamari",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 7,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "sriracha",
+      "nombre": "Sriracha (o salsa picante)",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 7,
+      "estado": "½ cda o al gusto",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Calienta una sartén con aceite de sésamo y sofríe el jengibre rápidamente.",
+    "Añade kimchi y kale, saltea hasta que el kale esté tierno.",
+    "Agrega los guisantes, la quinoa cocida, zanahoria y brotes; saltea hasta que todo esté caliente.",
+    "Sazona con tamari y sriracha al gusto y sirve."
+  ],
+  "notas": [
+    "La receta original indica 1½ oz guisantes congelados y 1½ oz quinoa cocida; convertidos a g y marcados con equivalente_g = -1.",
+    "Ajusta picante con sriracha según preferencia."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se aplicaron conversiones oz→g: 1 oz kimchi → 28 g; 1½ oz peas → 43 g; 1½ oz cooked quinoa → 43 g.",
+      "No se convirtieron tbsp/tsp a g (solo equivalentes informativos)."
+    ],
+    "correcciones": [
+      "1 oz → 28 g (kimchi); 1½ oz → 43 g (peas, cooked quinoa).",
+      "equivalente_g = -1 en todos los ingredientes con unidad 'g'."
+    ]
+  }
+}

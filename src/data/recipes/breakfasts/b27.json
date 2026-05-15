@@ -1,0 +1,91 @@
+{
+  "nombre_archivo": "b27.json",
+  "id": 27,
+  "referencia": "b027",
+  "nombre": "Baked beans on toast",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 621,
+    "grasas_g": 4.31,
+    "carbohidratos_g": 98.77,
+    "proteina_g": 26.18
+  },
+  "ingredientes": [
+    {
+      "clave": "french_shallot",
+      "nombre": "Chalota francesa",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "finamente picada"
+    },
+    {
+      "clave": "red_wine_vinegar",
+      "nombre": "Vinagre de vino tinto",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 8,
+      "estado": ""
+    },
+    {
+      "clave": "tinned_baked_beans",
+      "nombre": "Baked beans en lata",
+      "cantidad": 227,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "8 oz en lata, escurrir si se desea"
+    },
+    {
+      "clave": "chili_flakes",
+      "nombre": "Hojuelas de chile",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": ""
+    },
+    {
+      "clave": "baby_spinach",
+      "nombre": "Hojas de espinaca baby",
+      "cantidad": 14,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "½ oz, hojas"
+    },
+    {
+      "clave": "sourdough_bread_slice",
+      "nombre": "Rebanada de pan sourdough",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 60,
+      "estado": "tostada, para servir"
+    }
+  ],
+  "pasos": [
+    "En una sartén, sofríe la chalota con el vinagre durante unos minutos hasta que se ablande.",
+    "Añade los baked beans, 3½ fl oz de agua (≈104 ml) y las hojuelas de chile; deja hervir a fuego lento y cocina 8–10 minutos hasta que el líquido se reduzca.",
+    "Incorpora las hojas de espinaca, mezcla hasta que se marchiten ligeramente y sirve sobre la rebanada de sourdough tostada."
+  ],
+  "notas": [
+    "8 oz baked beans ≈ 227 g (convertido y marcado con equivalente_g = -1).",
+    "3½ fl oz agua ≈ 104 ml (incluido en pasos como referencia de cocción)."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se aplicó conversión oz→g para la lata de beans (8 oz → 227 g).",
+      "Se añadió conversión fl oz→ml en los pasos (3½ fl oz → 104 ml) como referencia de cocción."
+    ],
+    "correcciones": [
+      "Redondeos aplicados según reglas aprobadas."
+    ]
+  }
+}

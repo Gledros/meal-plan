@@ -1,0 +1,163 @@
+{
+  "nombre_archivo": "d23.json",
+  "id": 23,
+  "referencia": "d023",
+  "nombre": "Sopa de verduras con lentejas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 35,
+    "unidad": "minutes",
+    "notas": "Cocer hasta que las lentejas y patatas estén tiernas."
+  },
+  "informacion_nutricional": {
+    "kcal": 433,
+    "grasas_g": 7.6,
+    "carbohidratos_g": 83.53,
+    "proteina_g": 13.39
+  },
+  "ingredientes": [
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 14,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "small_onion",
+      "nombre": "Cebolla pequeña",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 25,
+      "estado": "picada",
+      "enlace": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "equivalente_g": 5,
+      "estado": "machacado",
+      "enlace": ""
+    },
+    {
+      "clave": "small_carrot",
+      "nombre": "Zanahoria pequeña",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 30,
+      "estado": "en rodajas",
+      "enlace": ""
+    },
+    {
+      "clave": "celery_stalk",
+      "nombre": "Tallo de apio",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 40,
+      "estado": "rebanado",
+      "enlace": ""
+    },
+    {
+      "clave": "potatoes",
+      "nombre": "Papas",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 300,
+      "estado": "picadas toscamente",
+      "enlace": ""
+    },
+    {
+      "clave": "thyme_sprigs",
+      "nombre": "Ramas de tomillo",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 1,
+      "estado": "hojas recogidas",
+      "enlace": ""
+    },
+    {
+      "clave": "vegan_broth",
+      "nombre": "Caldo vegano",
+      "cantidad": 355,
+      "unidad": "ml",
+      "equivalente_g": 355,
+      "estado": "12 fl oz ≈ 355 ml (o agua)",
+      "enlace": "recipe://vegan-broth-p30"
+    },
+    {
+      "clave": "green_lentils",
+      "nombre": "Lentejas verdes",
+      "cantidad": 99,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "3½ oz, enjuagadas",
+      "enlace": ""
+    },
+    {
+      "clave": "tinned_diced_tomatoes",
+      "nombre": "Tomates en cubos en lata",
+      "cantidad": 255,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "9 oz en lata, escurridos si es necesario",
+      "enlace": ""
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 5,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 4,
+      "estado": "hojas picadas para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Calienta el aceite en una olla y sofríe la cebolla, el ajo, la zanahoria y el apio 4–5 minutos, removiendo para que el ajo no se queme.",
+    "Agrega las papas, las ramas de tomillo y sazona. Cocina 2 minutos más.",
+    "Añade el caldo vegano y lleva a ebullición; reduce a fuego lento y cuece 20–25 minutos.",
+    "Incorpora las lentejas y los tomates en cubos, tapa y cocina de 20 a 25 minutos adicionales hasta que las lentejas y las verduras estén tiernas.",
+    "Rectifica la sal y la pimienta. Sirve con perejil picado."
+  ],
+  "notas": [
+    "12 fl oz caldo → 355 ml (convertido y redondeado).",
+    "3½ oz lentejas → 99 g; 9 oz tomates en lata → 255 g (convertidos).",
+    "Ajustar la textura añadiendo más caldo si es necesario."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se aplicaron conversiones oz→g y fl oz→ml según reglas aprobadas.",
+      "Equivalentes en gramos para piezas son aproximados."
+    ],
+    "correcciones": [
+      "Conversión y redondeo aplicados siguiendo las reglas."
+    ]
+  }
+}

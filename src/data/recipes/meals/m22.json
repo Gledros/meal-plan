@@ -1,0 +1,96 @@
+{
+  "nombre_archivo": "m22.json",
+  "id": 22,
+  "referencia": "m022",
+  "nombre": "Ensalada de romaine con limón",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 298,
+    "grasas_g": 6.13,
+    "carbohidratos_g": 65,
+    "proteina_g": 11.7
+  },
+  "ingredientes": [
+    {
+      "clave": "baby_romaine_lettuce",
+      "nombre": "Lechuga baby romaine (head)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 150,
+      "estado": "cabeza, troceada groseramente",
+      "enlace": ""
+    },
+    {
+      "clave": "sweetcorn_cob",
+      "nombre": "Elote / mazorca (kernels removed)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 90,
+      "estado": "granos removidos",
+      "enlace": ""
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebollita de cambray",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "rebanada fina",
+      "enlace": ""
+    },
+    {
+      "clave": "french_breakfast_radishes",
+      "nombre": "Rábanos French breakfast",
+      "cantidad": 2,
+      "unidad": "piece",
+      "equivalente_g": 20,
+      "estado": "finamente laminados",
+      "enlace": ""
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso (hojas)",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 8,
+      "estado": "hojas picadas groseramente",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_mustard_vinaigrette",
+      "nombre": "Lemon mustard vinaigrette",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "equivalente_g": 45,
+      "estado": "para aderezar (ver p.16)",
+      "enlace": "recipe://lemon-mustard-vinaigrette-p16"
+    }
+  ],
+  "pasos": [
+    "Combina todos los ingredientes en un bol grande y mezcla para que la lechuga quede bien cubierta con la vinagreta.",
+    "Ajusta sazón y sirve inmediatamente."
+  ],
+  "notas": [
+    "La vinagreta está en p.16; el enlace referencia la sub-receta.",
+    "Si prefieres, puedes asar ligeramente la mazorca antes de desgranar para más sabor."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Equivalentes en gramos para piezas son estimativos (cabeza de lechuga, mazorca).",
+      "No se convirtieron cucharadas a gramos salvo como referencia en equivalente_g."
+    ],
+    "correcciones": [
+      "3 tbsp de aderezo → equivalente ≈ 45 g (referencia)."
+    ]
+  }
+}

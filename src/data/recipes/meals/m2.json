@@ -118,7 +118,7 @@
 		{
 			"clave": "coconut_milk_sauce",
 			"nombre": "Leche de coco (para salsa)",
-			"cantidad": 0.333,
+			"cantidad": 0.3,
 			"unidad": "cup",
 			"equivalente_g": 80,
 			"estado": "líquida"
@@ -135,7 +135,7 @@
 	"notas": [
 		"Medidas originales en oz de peso: 3½ oz col morada → 99.23g; 1¾ oz germinado → 49.61g; ¾ oz cilantro → 21.26g; 2 oz mantequilla de cacahuate → 56.7g.",
 		"AUTO-CORRECCIÓN APLICADA: la fuente indica '1 cucharada de hierba limón picada'. Según la regla documentada del pipeline ('lemongrass 1 tbsp → demasiado fuerte → corregir a 1 cdita'), se redujo a 1 cdita. Nota de corrección registrada.",
-		"La cantidad 1/3 taza (0.333) representa exactamente un tercio. Heurística de fracciones aplicada: 0.333 → 1/3.",
+		"La cantidad 1/3 taza (0.3) representa aproximadamente un tercio. Heurística de fracciones aplicada: 0.3 → 1/3.",
 		"Equivalente_g de la zanahoria (80g) y láminas de papel de arroz (15g c/u × 8 = 120g) son estimaciones estándar de peso.",
 		"Equivalente_g de cebolla morada picada (1 cda ≈ 10g) es estimación por densidad de cebolla troceada.",
 		"La hierba limón (lemongrass) puede ser difícil de conseguir en algunas regiones de México. Sustitución: ralladura de limón (1 cdita de ralladura de limón verde) + unas gotas de jugo de limón.",
@@ -156,7 +156,7 @@
 			"¾ oz cilantro (oz peso) → 21.26g",
 			"2 oz mantequilla de cacahuate (oz peso) → 56.7g",
 			"1 cda hierba limón (demasiado intensa para 1 porción) → corregido a 1 cdita según regla de corrección documentada",
-			"1/3 taza leche de coco → cantidad almacenada como 0.333 (heurística de fracción aplicada)"
+			"1/3 taza leche de coco → cantidad almacenada como 0.3 (heurística de fracción aplicada)"
 		]
 	}
 }

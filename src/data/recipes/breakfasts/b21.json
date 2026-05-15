@@ -1,0 +1,116 @@
+{
+  "nombre_archivo": "b21.json",
+  "id": 21,
+  "referencia": "b021",
+  "nombre": "Tortitas de calabacín y maíz con pico de gallo",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 304,
+    "grasas_g": 14.81,
+    "carbohidratos_g": 39.25,
+    "proteina_g": 8.2
+  },
+  "ingredientes": [
+    {
+      "clave": "frozen_sweetcorn",
+      "nombre": "Granitos de maíz dulce congelados (descongelados) o en lata",
+      "cantidad": 128,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "4½ oz, descongelados o enjuagados si son de lata",
+      "enlace": ""
+    },
+    {
+      "clave": "zucchini",
+      "nombre": "Calabacín (zucchini)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 150,
+      "estado": "rallado",
+      "enlace": ""
+    },
+    {
+      "clave": "red_onion",
+      "nombre": "Cebolla roja",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 25,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "self_rising_flour",
+      "nombre": "Harina con levadura (self-rising flour)",
+      "cantidad": 71,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "2½ oz",
+      "enlace": ""
+    },
+    {
+      "clave": "vegetable_oil",
+      "nombre": "Aceite vegetal",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 27,
+      "estado": "para freír",
+      "enlace": ""
+    },
+    {
+      "clave": "salt_pepper",
+      "nombre": "Sal y pimienta",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "pico_de_gallo",
+      "nombre": "Pico de gallo",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "2 cda colmadas (ver p.28)",
+      "enlace": "recipe://pico-de-gallo-p28"
+    },
+    {
+      "clave": "lime_wedges",
+      "nombre": "Gajos de lima",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 10,
+      "estado": "para servir",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Mezcla el maíz descongelado con el calabacín rallado, la cebolla, la harina y sazona con sal y pimienta.",
+    "Calienta una sartén antiadherente con un poco de aceite y forma pequeñas tortitas (3 cda por porción). Fríe 2 minutos por lado hasta dorar.",
+    "Sirve con pico de gallo y gajos de lima."
+  ],
+  "notas": [
+    "Si usas maíz en lata, escúrrelo bien antes de mezclar.",
+    "Si la mezcla queda demasiado húmeda añade un poco más de harina para ligar."
+  ],
+  "validacion": {
+    "score": 91,
+    "warnings": [
+      "Se convirtieron oz→g: 4½ oz maíz → 128 g; 2½ oz harina → 71 g.",
+      "No se convirtieron cucharadas a gramos (se añadieron equivalentes informativos)."
+    ],
+    "correcciones": [
+      "4½ oz frozen sweetcorn → 128 g (unidad actual: g, equivalente_g = -1).",
+      "2½ oz self-rising flour → 71 g (unidad actual: g, equivalente_g = -1)."
+    ]
+  }
+}
