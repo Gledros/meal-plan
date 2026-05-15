@@ -368,10 +368,9 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 	.tabs-controls {
 		display: flex;
-		gap: 0.5rem;
 		align-items: center;
-		margin-left: 0.5rem;
-		padding-left: 0.75rem;
+		margin-left: 0;
+		padding-left: 0;
 		border-left: 1px solid #d1d5db;
 	}
 
@@ -407,11 +406,7 @@ const defaultTabId = tabs[0]?.id ?? '';
 		.tabs-controls {
 			order: 2;
 			flex: 1 1 100%;
-			width: 100%;
 			justify-content: center;
-			margin-top: 0.5rem;
-			margin-left: 0;
-			padding-left: 0;
 			border-left: none;
 		}
 		:global(.tabs-controls-label) {
@@ -427,7 +422,8 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 	@media (min-width: 1024px) {
 		.tabs-controls {
-			margin-left: auto;
+			margin-left: 0.5rem;
+			padding-left: 0.75rem;
 			order: 0;
 			flex: 0 0 auto;
 		}

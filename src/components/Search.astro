@@ -1,0 +1,519 @@
+---
+interface Props {
+	placeholder?: string;
+	ariaLabel?: string;
+	inputId?: string;
+}
+
+const {
+	placeholder = 'Busqueda',
+	ariaLabel = 'Buscar recetas y smoothies',
+	inputId = 'plan-search-input',
+} = Astro.props;
+---
+
+<div class='tabs-search' data-tabs-search>
+	<form
+		class='tabs-search-form'
+		data-tabs-search-form
+		role='search'
+		aria-label={ariaLabel}
+	>
+		<label class='sr-only' for={inputId}>Buscar en recetas y smoothies</label>
+		<input
+			id={inputId}
+			name='q'
+			type='search'
+			class='tabs-search-input'
+			data-tabs-search-input
+			placeholder={placeholder}
+			autocomplete='off'
+		/>
+		<button
+			type='submit'
+			class='tabs-search-button'
+			aria-label='Buscar'
+			title='Buscar'
+		>
+			<svg
+				xmlns='http://www.w3.org/2000/svg'
+				viewBox='0 0 24 24'
+				fill='none'
+				stroke='currentColor'
+				stroke-width='2'
+				stroke-linecap='round'
+				stroke-linejoin='round'
+				aria-hidden='true'
+			>
+				<circle cx='11' cy='11' r='8'></circle>
+				<line x1='21' y1='21' x2='16.65' y2='16.65'></line>
+			</svg>
+		</button>
+	</form>
+</div>
+
+<script>
+	// @ts-nocheck
+
+	(() => {
+		const ROOT_SELECTOR = '[data-tabs-search]';
+		const INIT_ATTR = 'data-tabs-search-initialized';
+		const TABS_ROOT_SELECTOR = '[data-tabs-slider]';
+		const PANEL_SELECTOR = '[data-tab-panel]';
+		const SEARCH_CARD_SELECTOR = '[data-search-card]';
+		const SEARCH_EMPTY_SELECTOR = '[data-tabs-search-empty]';
+		const SEARCH_HIGHLIGHT_SELECTOR = 'mark[data-tabs-search-highlight]';
+		const MULTIPLIER_EVENT = 'portions-multiplier:change';
+		const DIACRITICS_REGEX = /[\u0300-\u036f]/g;
+		const ACCENT_CHAR_MAP = {
+			a: '[aAáÁàÀäÄâÂãÃåÅ]',
+			e: '[eEéÉèÈëËêÊ]',
+			i: '[iIíÍìÌïÏîÎ]',
+			o: '[oOóÓòÒöÖôÔõÕ]',
+			u: '[uUúÚùÙüÜûÛ]',
+			n: '[nNñÑ]',
+			c: '[cCçÇ]',
+		};
+
+		const normalizeSearchText = (value) =>
+			String(value ?? '')
+				.normalize('NFD')
+				.replace(DIACRITICS_REGEX, '')
+				.toLowerCase()
+				.replace(/\s+/g, ' ')
+				.trim();
+
+		const tokenizeSearchQuery = (query) => {
+			const normalizedQuery = normalizeSearchText(query);
+			if (!normalizedQuery) {
+				return [];
+			}
+
+			return normalizedQuery.split(' ').filter(Boolean);
+		};
+
+		const initRoot = (root) => {
+			if (!(root instanceof HTMLElement) || root.hasAttribute(INIT_ATTR)) {
+				return;
+			}
+
+			const tabsRoot = root.closest(TABS_ROOT_SELECTOR);
+			if (!(tabsRoot instanceof HTMLElement)) {
+				return;
+			}
+
+			const searchForm = root.querySelector('[data-tabs-search-form]');
+			const searchInput = root.querySelector('[data-tabs-search-input]');
+			if (
+				!(searchForm instanceof HTMLFormElement) ||
+				!(searchInput instanceof HTMLInputElement)
+			) {
+				return;
+			}
+
+			root.setAttribute(INIT_ATTR, 'true');
+
+			const panels = Array.from(
+				tabsRoot.querySelectorAll(PANEL_SELECTOR),
+			).filter((node) => node instanceof HTMLElement);
+			const searchCardTextCache = new WeakMap();
+			let activeSearchTokens = [];
+
+			const searchablePanels = panels
+				.map((panel) => {
+					const cards = Array.from(
+						panel.querySelectorAll(SEARCH_CARD_SELECTOR),
+					).filter((node) => node instanceof HTMLElement);
+
+					if (cards.length === 0) {
+						return null;
+					}
+
+					let emptyState = panel.querySelector(SEARCH_EMPTY_SELECTOR);
+					if (!(emptyState instanceof HTMLElement)) {
+						emptyState = document.createElement('p');
+						emptyState.setAttribute('data-tabs-search-empty', 'true');
+						emptyState.className = 'tabs-search-empty';
+						emptyState.textContent =
+							'No se encontraron resultados para esta busqueda en esta seccion.';
+						emptyState.style.display = 'none';
+						panel.append(emptyState);
+					}
+
+					return {
+						cards,
+						emptyState,
+					};
+				})
+				.filter((entry) => entry !== null);
+
+			if (searchablePanels.length === 0) {
+				return;
+			}
+
+			const getSearchableText = (card) => {
+				const cached = searchCardTextCache.get(card);
+				if (typeof cached === 'string') {
+					return cached;
+				}
+
+				const source =
+					card.getAttribute('data-search-content') ?? card.textContent ?? '';
+				const normalized = normalizeSearchText(source);
+				searchCardTextCache.set(card, normalized);
+				return normalized;
+			};
+
+			const escapeRegExp = (value) =>
+				value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+			const buildAccentAwarePattern = (token) =>
+				Array.from(token)
+					.map((char) => {
+						const normalizedChar = normalizeSearchText(char);
+						return ACCENT_CHAR_MAP[normalizedChar] ?? escapeRegExp(char);
+					})
+					.join('');
+
+			const buildHighlightRegex = (tokens) => {
+				const uniqueTokens = Array.from(new Set(tokens.filter(Boolean))).sort(
+					(a, b) => b.length - a.length,
+				);
+
+				if (uniqueTokens.length === 0) {
+					return null;
+				}
+
+				const pattern = uniqueTokens
+					.map((token) => buildAccentAwarePattern(token))
+					.filter(Boolean)
+					.join('|');
+
+				if (!pattern) {
+					return null;
+				}
+
+				return new RegExp(`(${pattern})`, 'giu');
+			};
+
+			const clearCardHighlights = (card) => {
+				const highlights = Array.from(
+					card.querySelectorAll(SEARCH_HIGHLIGHT_SELECTOR),
+				);
+				if (highlights.length === 0) {
+					return;
+				}
+
+				const parentNodes = new Set();
+				highlights.forEach((highlight) => {
+					const parent = highlight.parentNode;
+					if (!parent) {
+						return;
+					}
+
+					parentNodes.add(parent);
+					parent.replaceChild(
+						document.createTextNode(highlight.textContent ?? ''),
+						highlight,
+					);
+				});
+
+				parentNodes.forEach((parent) => {
+					parent.normalize();
+				});
+			};
+
+			const collectTextNodes = (card) => {
+				const textNodes = [];
+				const walker = document.createTreeWalker(card, NodeFilter.SHOW_TEXT, {
+					acceptNode(node) {
+						const text = node.textContent ?? '';
+						if (!text.trim()) {
+							return NodeFilter.FILTER_REJECT;
+						}
+
+						const parent = node.parentElement;
+						if (!parent) {
+							return NodeFilter.FILTER_REJECT;
+						}
+
+						if (
+							parent.closest(SEARCH_HIGHLIGHT_SELECTOR) ||
+							parent.tagName === 'SCRIPT' ||
+							parent.tagName === 'STYLE' ||
+							parent.tagName === 'NOSCRIPT'
+						) {
+							return NodeFilter.FILTER_REJECT;
+						}
+
+						return NodeFilter.FILTER_ACCEPT;
+					},
+				});
+
+				let currentNode = walker.nextNode();
+				while (currentNode) {
+					textNodes.push(currentNode);
+					currentNode = walker.nextNode();
+				}
+
+				return textNodes;
+			};
+
+			const highlightCardMatches = (card, highlightRegex) => {
+				if (!highlightRegex) {
+					return;
+				}
+
+				const textNodes = collectTextNodes(card);
+				textNodes.forEach((node) => {
+					const text = node.textContent ?? '';
+					highlightRegex.lastIndex = 0;
+					if (!highlightRegex.test(text)) {
+						return;
+					}
+
+					highlightRegex.lastIndex = 0;
+					const fragment = document.createDocumentFragment();
+					let lastIndex = 0;
+					let match = highlightRegex.exec(text);
+
+					while (match) {
+						const matchText = match[0];
+						const matchStart = match.index;
+						const matchEnd = matchStart + matchText.length;
+
+						if (matchStart > lastIndex) {
+							fragment.append(
+								document.createTextNode(text.slice(lastIndex, matchStart)),
+							);
+						}
+
+						const mark = document.createElement('mark');
+						mark.className = 'tabs-search-highlight';
+						mark.setAttribute('data-tabs-search-highlight', 'true');
+						mark.textContent = matchText;
+						fragment.append(mark);
+
+						lastIndex = matchEnd;
+						match = highlightRegex.exec(text);
+					}
+
+					if (lastIndex < text.length) {
+						fragment.append(document.createTextNode(text.slice(lastIndex)));
+					}
+
+					node.parentNode?.replaceChild(fragment, node);
+				});
+			};
+
+			const applySearchHighlights = (tokens) => {
+				const highlightRegex = buildHighlightRegex(tokens);
+				searchablePanels.forEach((state) => {
+					state.cards.forEach((card) => {
+						clearCardHighlights(card);
+						highlightCardMatches(card, highlightRegex);
+					});
+				});
+			};
+
+			const applySearchFilter = (rawQuery) => {
+				const tokens = tokenizeSearchQuery(rawQuery ?? '');
+				activeSearchTokens = tokens;
+				const hasQuery = tokens.length > 0;
+
+				searchablePanels.forEach((state) => {
+					let visibleCount = 0;
+
+					state.cards.forEach((card) => {
+						const searchableText = getSearchableText(card);
+						const isMatch =
+							!hasQuery ||
+							tokens.some((token) => searchableText.includes(token));
+
+						card.style.display = isMatch ? '' : 'none';
+						if (isMatch) {
+							visibleCount += 1;
+						}
+					});
+
+					state.emptyState.style.display =
+						hasQuery && visibleCount === 0 ? 'block' : 'none';
+				});
+
+				applySearchHighlights(tokens);
+			};
+
+			searchForm.addEventListener('submit', (event) => {
+				event.preventDefault();
+				applySearchFilter(searchInput.value);
+			});
+
+			searchInput.addEventListener('input', () => {
+				if ((searchInput.value ?? '').trim().length === 0) {
+					applySearchFilter('');
+				}
+			});
+
+			searchInput.addEventListener('search', () => {
+				if ((searchInput.value ?? '').trim().length === 0) {
+					applySearchFilter('');
+				}
+			});
+
+			window.addEventListener(MULTIPLIER_EVENT, () => {
+				if (activeSearchTokens.length === 0) {
+					return;
+				}
+
+				requestAnimationFrame(() => {
+					applySearchHighlights(activeSearchTokens);
+				});
+			});
+
+			applySearchFilter(searchInput.value);
+		};
+
+		const initTabsSearch = () => {
+			const roots = document.querySelectorAll(ROOT_SELECTOR);
+			for (const root of roots) {
+				initRoot(root);
+			}
+		};
+
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', initTabsSearch, {
+				once: true,
+			});
+		} else {
+			initTabsSearch();
+		}
+
+		requestAnimationFrame(() => {
+			initTabsSearch();
+		});
+	})();
+</script>
+
+<style>
+	.tabs-search {
+		display: inline-flex;
+		align-items: center;
+		max-width: 100%;
+		min-width: 0;
+	}
+
+	.tabs-search-form {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid #b8b8b9;
+		border-radius: 9999px;
+		overflow: hidden;
+		background: #ffffff;
+		min-height: 2.45rem;
+		max-width: 100%;
+		min-width: 0;
+	}
+
+	.tabs-search-input {
+		border: none;
+		padding: 0.55rem 0.9rem;
+		font-size: 0.95rem;
+		line-height: 1;
+		color: #0f172a;
+		background: transparent;
+		width: clamp(13rem, 24vw, 20rem);
+		min-width: 0;
+	}
+
+	.tabs-search-input:focus {
+		outline: none;
+	}
+
+	.tabs-search-input::placeholder {
+		color: #6b7280;
+	}
+
+	.tabs-search-input::-webkit-search-cancel-button,
+	.tabs-search-input::-webkit-search-cancel-button:hover {
+		cursor: pointer;
+	}
+
+	.tabs-search-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.6rem;
+		height: 2.45rem;
+		border: none;
+		border-left: 1px solid #d1d5db;
+		background: #f8fafc;
+		color: #1f2937;
+		cursor: pointer;
+		transition: background-color 160ms ease;
+	}
+
+	.tabs-search-button svg {
+		width: 1rem;
+		height: 1rem;
+	}
+
+	.tabs-search-button:hover {
+		background: #eef2f7;
+	}
+
+	:global(.tabs-search-empty) {
+		margin-top: 0.9rem;
+		padding: 0.85rem 1rem;
+		border: 1px dashed #cbd5e1;
+		border-radius: 0.75rem;
+		font-size: 1rem;
+		text-align: center;
+		color: #475569;
+		background: #f8fafc;
+	}
+
+	:global(mark[data-tabs-search-highlight]) {
+		padding: 0 0.08em;
+		border-radius: 0.2em;
+		background: rgba(251, 191, 36, 0.28);
+		text-decoration-line: underline;
+		text-decoration-style: solid;
+		text-decoration-color: #f59e0b;
+		text-decoration-thickness: 2px;
+		text-underline-offset: 2px;
+		color: inherit;
+	}
+
+	@media (min-width: 641px) and (max-width: 1023px) {
+		.tabs-search {
+			flex: 1 1 12rem;
+			width: auto;
+			min-width: 10.5rem;
+		}
+
+		.tabs-search-form {
+			width: 100%;
+		}
+
+		.tabs-search-input {
+			width: 100%;
+			flex: 1 1 auto;
+			padding: 0.5rem 0.75rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.tabs-search {
+			width: 100%;
+			flex: 1 1 100%;
+		}
+
+		.tabs-search-form {
+			width: 100%;
+		}
+
+		.tabs-search-input {
+			width: 100%;
+		}
+	}
+</style>

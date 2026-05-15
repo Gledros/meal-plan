@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import SmoothieCard from '@components/SmoothieCard.astro';
 import RecipeCard from '@components/RecipeCard.astro';
 import TabsSlider from '@components/TabsSlider.astro';
+import Search from '@components/Search.astro';
 import IngredientInfoModal from '@components/IngredientInfoModal.astro';
 import GroceriesModal from '@components/GroceriesModal.astro';
 import PortionMultiplier from '@components/PortionMultiplier.astro';
@@ -84,8 +85,12 @@ const shoppingWeeks = [
 		</div>
 	</div>
 	<TabsSlider {tabs}>
-		<div slot='tabs-controls-extra' class='tabs-controls-extra'>
-			<div class='flex items-center gap-4'>
+		<div
+			slot='tabs-controls-extra'
+			class='tabs-controls-extra w-full lg:w-auto'
+		>
+			<div class='flex w-full flex-wrap items-center justify-center gap-3'>
+				<Search placeholder='Busqueda' />
 				<PortionMultiplier
 					id='multiplier-select'
 					wrapperClass='w-fit flex gap-2 items-center'
