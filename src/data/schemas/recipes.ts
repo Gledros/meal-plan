@@ -43,6 +43,8 @@ export const RecipeSchema = z.object({
 	id: z.number().int().positive(),
 	referencia: z.string().min(1),
 	nombre: z.string(),
+	descripcion: z.string().optional(),
+	rinde: z.string().optional(),
 	tiempo_preparacion: TimeSchema,
 	tiempo_cocinado: TimeSchema,
 	informacion_nutricional: NutritionSchema,
