@@ -469,6 +469,30 @@ const defaultTabId = tabs[0]?.id ?? '';
 		}
 	}
 
+	@media (min-width: 1024px) and (max-width: 1322px) {
+		.tabs-list {
+			flex-wrap: wrap;
+			justify-content: center;
+			row-gap: 0.5rem;
+		}
+
+		.tabs-controls {
+			order: 2;
+			flex: 1 1 100%;
+			min-width: 0;
+			margin-left: 0;
+			padding-left: 0;
+			justify-content: center;
+		}
+
+		.tabs-controls :global(.tabs-controls-extra),
+		.tabs-controls :global(.tabs-controls-actions) {
+			width: 100%;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+
 	@media (max-width: 640px) {
 		:global([data-tabs-sticky-header]) {
 			position: static !important;
