@@ -1,0 +1,42 @@
+{
+  "id": 4,
+  "referencia": "g004",
+  "nombre": "Cómo cocinar arroz integral",
+  "rinde": "≈ 1 porción base (ajustar según cantidad de arroz)",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "medir y enjuagar"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 55,
+    "unidad": "minutes",
+    "notas": "35–40 min cocción + 10–15 min reposo al vapor"
+  },
+  "ingredientes": [
+    {
+      "clave": "brown_rice",
+      "nombre": "Arroz integral",
+      "cantidad": 184,
+      "unidad": "g",
+      "estado": "ej. 6½ onzas → ajustar según ración"
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 2,
+      "unidad": "cup",
+      "estado": "doble volumen que arroz (proporción típica)"
+    }
+  ],
+  "pasos": [
+    "Mide y enjuaga el arroz elegido para eliminar almidón suelto.",
+    "Añade el arroz a una cacerola con el doble de volumen de agua (p. ej. 6½ onzas de arroz ≈ 2 tazas de agua).",
+    "Lleva a ebullición, reduce el fuego, cubre y cuece a fuego lento durante 35–40 minutos, verificando que quede apenas algo de líquido.",
+    "Cuando el arroz esté tierno, retira del fuego, cubre y deja reposar al vapor 10–15 minutos. Esponja con un tenedor antes de servir."
+  ],
+  "notas": [
+    "Los tiempos pueden variar según el tipo de arroz integral; ajustar agua y tiempo según la variedad.",
+    "Dejar reposar con la tapa ayuda a que el grano se hidrate uniformemente y quede suelto."
+  ]
+}

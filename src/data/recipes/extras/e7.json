@@ -1,0 +1,42 @@
+{
+  "id": 7,
+  "referencia": "e007",
+  "nombre": "Huevo de semillas de chía",
+  "rinde": "1 sustitución de huevo",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Dejar reposar hasta que gelifique (≈10 min)."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "descripcion": "Buen sustituto en repostería y recetas donde se necesita capacidad de ligar. Aporta humedad y ayuda a unir la masa.",
+  "ingredientes": [
+    {
+      "clave": "chia_seeds",
+      "nombre": "Semillas de chía",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "nota": "1 cucharada"
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "nota": "3 cucharadas"
+    }
+  ],
+  "pasos": [
+    "Mezcla las semillas de chía con el agua en un bol pequeño.",
+    "Remueve y deja reposar durante aproximadamente 10 minutos hasta que la mezcla espese y tenga una textura gelatinosa.",
+    "Usa la mezcla como sustituto de 1 huevo en la receta."
+  ],
+  "notas": [
+    "Ideal para recetas de repostería y preparaciones donde se necesita capacidad de unión.",
+    "Mejor usar recién hecho; si se guarda, su textura puede cambiar."
+  ]
+}

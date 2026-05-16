@@ -1,0 +1,42 @@
+{
+  "id": 3,
+  "referencia": "g003",
+  "nombre": "Cómo remojar ciruelas pasas",
+  "rinde": "variable (según cantidad)",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": "usar agua hirviendo"
+  },
+  "ingredientes": [
+    {
+      "clave": "dried_prunes",
+      "nombre": "Ciruelas pasas secas",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "cantidad según receta"
+    },
+    {
+      "clave": "boiling_water",
+      "nombre": "Agua hirviendo",
+      "cantidad": 0,
+      "unidad": "cup",
+      "estado": "suficiente para cubrir"
+    }
+  ],
+  "pasos": [
+    "Coloca las ciruelas pasas secas en un bol pequeño resistente al calor.",
+    "Hierve agua.",
+    "Vierte agua hirviendo sobre las ciruelas hasta cubrirlas y deja reposar mientras el agua se enfría.",
+    "Tapa y guarda en el frigorífico. Conserva hasta 3 semanas en frío."
+  ],
+  "notas": [
+    "El líquido de remojo se puede usar en recetas (purés, salsas) para aportar sabor.",
+    "Ajusta tiempo de remojo según la textura deseada (más tiempo = más blandas)."
+  ]
+}

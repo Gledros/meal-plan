@@ -1,0 +1,82 @@
+{
+  "id": 32,
+  "referencia": "e032",
+  "nombre": "Hummus de remolacha",
+  "rinde": "4 porciones",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 255,
+    "grasas_g": 21.09,
+    "carbohidratos_g": 13.55,
+    "proteina_g": 5.08
+  },
+  "ingredientes": [
+    {
+      "clave": "tinned_chickpeas",
+      "nombre": "Garbanzos en conserva, escurridos",
+      "cantidad": 396,
+      "unidad": "g",
+      "estado": "14 onzas escurridos"
+    },
+    {
+      "clave": "small_beet",
+      "nombre": "Remolacha pequeña (asada)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "asada (ver receta relacionada)"
+    },
+    {
+      "clave": "garlic_clove",
+      "nombre": "Diente de ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "estado": ""
+    },
+    {
+      "clave": "tahini",
+      "nombre": "Tahini",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de limón",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "estado": "zumo de ½ limón"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 37,
+      "unidad": "ml",
+      "estado": "1¼ onzas líquidas–¼ taza (aprox.), ajustar al gusto"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Coloca todos los ingredientes en un procesador de alimentos.",
+    "Tritura hasta obtener la consistencia deseada, añadiendo más zumo de limón, sal u aceite para ajustar textura y sabor.",
+    "Sirve inmediatamente o guarda en la nevera en un recipiente hermético hasta 1 semana."
+  ],
+  "notas": [
+    "Usar remolacha asada (en vez de hervida) intensifica el sabor y aporta dulzor.",
+    "La cantidad de aceite puede ajustarse para obtener una textura más sedosa o más espesa según preferencia."
+  ]
+}

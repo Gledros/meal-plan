@@ -1,0 +1,131 @@
+{
+  "id": 24,
+  "referencia": "e024",
+  "nombre": "Caldo vegano",
+  "descripcion": "Hay varios productos veganos comerciales que pueden ahorrarte hacer este caldo, pero en la mayoría de los casos lo casero es mejor. El sabor es más intenso y la frescura aporta más beneficios nutricionales. Puedes guardar restos de verduras y usarlos para preparar un lote. Ten un recipiente en el frigorífico siempre listo para usar en recetas según lo necesites.",
+  "rinde": "≈ 14 tazas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 240,
+    "unidad": "minutes",
+    "notas": "Asar 40–45 min + cocción lenta 2–3 horas"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 62,
+    "grasas_g": 2.76,
+    "carbohidratos_g": 0.8,
+    "proteina_g": 1.8
+  },
+  "ingredientes": [
+    {
+      "clave": "shiitake_mushrooms",
+      "nombre": "Setas shiitake",
+      "cantidad": 4,
+      "unidad": "piece",
+      "estado": "frescas o secas"
+    },
+    {
+      "clave": "portobello_mushrooms",
+      "nombre": "Setas portobello (planas)",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "grandes, planas"
+    },
+    {
+      "clave": "kombu",
+      "nombre": "Kombu (alga seca)",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "trozos de alga seca"
+    },
+    {
+      "clave": "onions",
+      "nombre": "Cebollas",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": ""
+    },
+    {
+      "clave": "large_carrot",
+      "nombre": "Zanahoria grande",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "partida por la mitad"
+    },
+    {
+      "clave": "garlic_bulb",
+      "nombre": "Cabeza de ajo",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "cortada por la mitad horizontalmente"
+    },
+    {
+      "clave": "vegetable_oil",
+      "nombre": "Aceite vegetal",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "white_miso_paste",
+      "nombre": "Pasta de miso blanco",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "celery_stalks",
+      "nombre": "Tallos de apio",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "con hojas"
+    },
+    {
+      "clave": "flat_leaf_parsley_stems",
+      "nombre": "Tallos de perejil liso",
+      "cantidad": 3,
+      "unidad": "piece",
+      "estado": ""
+    },
+    {
+      "clave": "black_peppercorns",
+      "nombre": "Granos de pimienta negra",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "corn_husks",
+      "nombre": "Cáscaras de maíz (de 2 mazorcas)",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": ""
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua fría",
+      "cantidad": 14,
+      "unidad": "cup",
+      "estado": "14 tazas para cocer el caldo"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 350°F (≈175°C).",
+    "Coloca las setas, el kombu, las cebollas, la zanahoria y la cabeza de ajo en una bandeja de horno.",
+    "Mezcla el aceite y la pasta de miso en un bol pequeño hasta obtener una pasta homogénea; pincela o rocía sobre las verduras y setas.",
+    "Asa durante 40–45 minutos, removiendo a mitad de cocción para dorar uniformemente.",
+    "Transfiere las verduras asadas a una olla grande. Añade el apio, los tallos de perejil, los granos de pimienta, las cáscaras de maíz y 14 tazas de agua fría.",
+    "Cubre la olla, lleva a ebullición, reduce el fuego y cuece a fuego lento durante 2–3 horas.",
+    "Deja enfriar ligeramente y cuela el caldo a través de un colador para retirar los sólidos.",
+    "Enfría y conserva en el frigorífico hasta 4 días o congela por hasta 3 meses."
+  ],
+  "notas": [
+    "Puedes guardar restos de verduras y cáscaras en una bolsa en el congelador para lotes posteriores.",
+    "Si usas kombu y setas secas, hidrátalas previamente si lo deseas; el asado potencia el sabor umami.",
+    "Ajusta el tiempo de cocción según la intensidad de sabor deseada."
+  ]
+}

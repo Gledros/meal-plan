@@ -1,0 +1,110 @@
+{
+  "id": 22,
+  "referencia": "e022",
+  "nombre": "Chermoula",
+  "rinde": "≈ 1 taza",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 60,
+    "grasas_g": 5.94,
+    "carbohidratos_g": 1.62,
+    "proteina_g": 0.49
+  },
+  "ingredientes": [
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso (hojas y tallos tiernos)",
+      "cantidad": 43,
+      "unidad": "g",
+      "estado": "≈ 1½ onzas, hojas y tallos"
+    },
+    {
+      "clave": "cilantro",
+      "nombre": "Cilantro (hojas y tallos)",
+      "cantidad": 43,
+      "unidad": "g",
+      "estado": "≈ 1½ onzas, hojas y tallos"
+    },
+    {
+      "clave": "mint",
+      "nombre": "Hojas de menta",
+      "cantidad": 21,
+      "unidad": "g",
+      "estado": "≈ ¾ onzas, picadas"
+    },
+    {
+      "clave": "scallion",
+      "nombre": "Cebolleta",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "rebanada"
+    },
+    {
+      "clave": "garlic_cloves",
+      "nombre": "Dientes de ajo",
+      "cantidad": 3,
+      "unidad": "piece",
+      "estado": "pelados"
+    },
+    {
+      "clave": "lemon",
+      "nombre": "Limón (zumo y ralladura)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "zumo y ralladura"
+    },
+    {
+      "clave": "red_wine_vinegar",
+      "nombre": "Vinagre de vino tinto",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "smoked_paprika",
+      "nombre": "Pimentón ahumado",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.5,
+      "unidad": "cup",
+      "estado": "½–¾ taza (ajustar para consistencia deseada)"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Hojuelas de sal marina",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Coloca todas las hierbas, ajo, cebolleta, zumo y ralladura de limón, vinagre y especias en un procesador de alimentos con una pizca de sal.",
+    "Tritura hasta obtener una mezcla combinada; añade aceite poco a poco hasta lograr una consistencia ligeramente salsa (añade más aceite si es necesario).",
+    "Pasa a un tarro y refrigera; conservar hasta 2 semanas."
+  ],
+  "notas": [
+    "Ajusta la cantidad de aceite para obtener una textura más fluida o más espesa según uso (marinar, untar o acompañar).",
+    "Se puede usar como adobo para vegetales o como salsa para servir con legumbres y granos."
+  ]
+}

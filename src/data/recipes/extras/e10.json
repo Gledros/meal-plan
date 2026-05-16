@@ -1,0 +1,64 @@
+{
+  "id": 10,
+  "referencia": "e010",
+  "nombre": "Chucrut",
+  "rinde": "≈ 2 tazas",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Masajear col y envasar; fermentación ~2 semanas"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": "Fermentación lenta (ver pasos)"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 20,
+    "grasas_g": 0.12,
+    "carbohidratos_g": 4.69,
+    "proteina_g": 0.88
+  },
+  "ingredientes": [
+    {
+      "clave": "white_cabbage",
+      "nombre": "Col blanca",
+      "cantidad": 397,
+      "unidad": "g",
+      "estado": "14 onzas (≈½ pequeña), finamente rallada; hojas exteriores reservadas"
+    },
+    {
+      "clave": "fennel_bulb",
+      "nombre": "Bulbo de hinojo",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "1 bulbo, finamente rallado"
+    },
+    {
+      "clave": "dill",
+      "nombre": "Eneldo",
+      "cantidad": 7,
+      "unidad": "g",
+      "estado": "≈¼ onzas, picado (hojas reservadas)"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 3,
+      "unidad": "tsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Coloca la col y el hinojo en un bol grande. Añade el eneldo y la sal.",
+    "Masajea con los dedos durante unos 3 minutos hasta que la mezcla empiece a soltar líquido y se vuelva húmeda.",
+    "Traslada la mezcla a un tarro estéril de capacidad aprox. 2 tazas, presionando firmemente para que el líquido cubra las verduras. Coloca las hojas de col reservadas encima y prensa para que queden sumergidas.",
+    "Cubre con una segunda capa o peso para mantener las verduras bajo el líquido y sella el tarro. Deja en un lugar oscuro y fresco por 2 semanas. Revisa cada par de días y abre la tapa para liberar gases si es necesario.",
+    "Una vez fermentado, guarda en el frigorífico y consume en unas 3 semanas tras abrir."
+  ],
+  "notas": [
+    "La sal extrae agua de la col y crea la salmuera necesaria para la fermentación.",
+    "Ajusta la cantidad de sal si quieres una fermentación más lenta/rápida.",
+    "Las equivalencias en gramos son aproximadas (convertidas desde onzas)."
+  ]
+}

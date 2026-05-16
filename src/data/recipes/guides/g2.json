@@ -1,0 +1,42 @@
+{
+  "id": 2,
+  "referencia": "g002",
+  "nombre": "Cómo hacer leche de almendra",
+  "rinde": "≈ 4 tazas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Remojo 4–8 horas o toda la noche"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "ingredientes": [
+    {
+      "clave": "raw_almonds",
+      "nombre": "Almendras crudas",
+      "cantidad": 142,
+      "unidad": "g",
+      "estado": "remojadas"
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 4,
+      "unidad": "cup",
+      "estado": "para triturar"
+    }
+  ],
+  "pasos": [
+    "Remoja las almendras en agua toda la noche (o 4–8 horas).",
+    "Escurre y enjuaga las almendras remojadas.",
+    "Combina las almendras con agua en una licuadora y tritura hasta obtener una mezcla suave.",
+    "Cuela la mezcla a través de una bolsa para leches vegetales o un colador fino (muselina) y exprime para extraer toda la leche. Guarda en frigorífico 4–5 días."
+  ],
+  "notas": [
+    "Usa la pulpa restante para recetas de repostería o como añadido a batidos.",
+    "Ajusta sabor con sirope de arce, vainilla o cacao según prefieras."
+  ]
+}

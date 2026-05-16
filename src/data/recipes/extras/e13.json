@@ -1,0 +1,92 @@
+{
+  "id": 13,
+  "referencia": "e013",
+  "nombre": "Tomato & chili relish",
+  "rinde": "≈ 1 taza",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 45,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 14,
+    "grasas_g": 0.66,
+    "carbohidratos_g": 2.05,
+    "proteina_g": 0.19
+  },
+  "ingredientes": [
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "onion",
+      "nombre": "Cebolla",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "finamente picada"
+    },
+    {
+      "clave": "roma_tomatoes",
+      "nombre": "Tomates roma",
+      "cantidad": 4,
+      "unidad": "piece",
+      "estado": "madurados y picados"
+    },
+    {
+      "clave": "red_chilies",
+      "nombre": "Chiles rojos frescos",
+      "cantidad": "1-2",
+      "unidad": "piece",
+      "estado": "enteros o picados al gusto"
+    },
+    {
+      "clave": "dijon_mustard",
+      "nombre": "Mostaza Dijon",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "malt_vinegar",
+      "nombre": "Vinagre de malta",
+      "cantidad": 0.25,
+      "unidad": "cup",
+      "estado": ""
+    },
+    {
+      "clave": "coconut_sugar",
+      "nombre": "Azúcar de coco (coconut sugar)",
+      "cantidad": 1.5,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "salt_pepper",
+      "nombre": "Sal y pimienta",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Calienta el aceite en una sartén a fuego medio y sofríe la cebolla durante 4–5 minutos hasta que esté blanda.",
+    "Añade los tomates y los chiles y saltea un par de minutos más, removiendo.",
+    "Agrega la mostaza, el vinagre de malta, el azúcar de coco, sal y pimienta; mezcla bien y reduce el fuego.",
+    "Cocina a fuego lento, removiendo ocasionalmente, hasta que los tomates se deshagan y la mezcla espese y tenga textura tipo mermelada (unos 30–40 minutos en total).",
+    "Retira del fuego y vierte la mezcla en un tarro esterilizado. Enfría antes de cerrar y guardar en el frigorífico hasta 4 semanas."
+  ],
+  "notas": [
+    "Ajusta la cantidad de chile y azúcar según el picante/dulzor deseado.",
+    "Rinde aproximadamente 1 taza.",
+    "Conservar en frigorífico hasta 4 semanas una vez enfriado."
+  ]
+}

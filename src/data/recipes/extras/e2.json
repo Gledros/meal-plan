@@ -1,0 +1,94 @@
+{
+  "id": 2,
+  "referencia": "e002",
+  "nombre": "Aderezo de yogur de coco, lima y chile",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 88,
+    "grasas_g": 7.49,
+    "carbohidratos_g": 6.21,
+    "proteina_g": 1.14
+  },
+  "ingredientes": [
+    {
+      "clave": "coconut_yogurt",
+      "nombre": "Yogur de coco",
+      "cantidad": 4,
+      "unidad": "tbsp",
+      "equivalente_g": 60,
+      "estado": "4 cucharadas",
+      "enlace": ""
+    },
+    {
+      "clave": "lime",
+      "nombre": "Lima (zumo)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "zumo de 1 lima",
+      "enlace": ""
+    },
+    {
+      "clave": "red_chili",
+      "nombre": "Chile rojo pequeño",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 7,
+      "estado": "finamente picado",
+      "enlace": ""
+    },
+    {
+      "clave": "chili_flakes",
+      "nombre": "Hojuelas de chile",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 1,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "sal_pimienta",
+      "nombre": "Sal y pimienta",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto",
+      "enlace": ""
+    },
+    {
+      "clave": "agua",
+      "nombre": "Agua",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": "2 cucharadas (para ajustar textura al batir/mezclar)",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Coloca todos los ingredientes en un tarro o bol pequeño con 2 cucharadas de agua.",
+    "Agita o bate hasta obtener una mezcla homogénea y suave.",
+    "Guarda en un recipiente hermético en la nevera hasta 7 días."
+  ],
+  "notas": [
+    "Rinde aprox. ½ taza.",
+    "Ajusta picante y sal al gusto."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Las cantidades de yogur (cda) y agua se han dejado en cda conforme a regla (no convertir cda→g automáticamente).",
+      "Equivalentes en g añadidos son referenciales."
+    ],
+    "correcciones": []
+  }
+}

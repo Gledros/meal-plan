@@ -1,0 +1,68 @@
+{
+  "id": 43,
+  "referencia": "e043",
+  "nombre": "Leche dorada de cúrcuma",
+  "rinde": "1 porción",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 30,
+    "grasas_g": 0.05,
+    "carbohidratos_g": 7.83,
+    "proteina_g": 2.19
+  },
+  "ingredientes": [
+    {
+      "clave": "almond_milk_or_other",
+      "nombre": "Leche de almendra u otra leche vegetal",
+      "cantidad": 296,
+      "unidad": "ml",
+      "estado": ""
+    },
+    {
+      "clave": "ground_turmeric",
+      "nombre": "Cúrcuma molida (o cúrcuma fresca en rodajas)",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "estado": "o ¼ onza de raíz en rodajas si la tienes"
+    },
+    {
+      "clave": "ground_ginger",
+      "nombre": "Jengibre molido",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "ground_cinnamon",
+      "nombre": "Canela molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "estado": "más extra para espolvorear"
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Sirope de arce",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Combina todos los ingredientes en una cacerola pequeña y calienta a fuego medio, removiendo para mezclar bien las especias con la leche.",
+    "Mientras la leche se calienta, bate constantemente para crear algo de espuma; si dispones de espumador de leche, úsalo para obtener mejor textura.",
+    "Cuando esté caliente (sin dejar hervir), vierte en una taza grande y espolvorea con un poco de canela adicional antes de servir."
+  ],
+  "notas": [
+    "La cúrcuma es antiinflamatoria y el jengibre aporta calor y digestibilidad; ajustar dulzor al gusto.",
+    "Si usas cúrcuma fresca, córtala fina y deja infusionar un poco más para extraer sabor."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": 47,
+  "referencia": "e047",
+  "nombre": "Granola",
+  "rinde": "≈ 12½ onzas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 121,
+    "grasas_g": 6.91,
+    "carbohidratos_g": 16.8,
+    "proteina_g": 3.45
+  },
+  "ingredientes": [
+    {
+      "clave": "rolled_oats",
+      "nombre": "Avena en copos",
+      "cantidad": 99,
+      "unidad": "g",
+      "estado": "3½ onzas"
+    },
+    {
+      "clave": "coconut_flakes",
+      "nombre": "Copos de coco",
+      "cantidad": 43,
+      "unidad": "g",
+      "estado": "1½ onzas"
+    },
+    {
+      "clave": "flaked_almonds",
+      "nombre": "Almendras laminadas",
+      "cantidad": 85,
+      "unidad": "g",
+      "estado": "3 onzas"
+    },
+    {
+      "clave": "dried_cherries_or_cranberries",
+      "nombre": "Cerezas secas o arándanos secos",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": "1 onza"
+    },
+    {
+      "clave": "pecans_chopped",
+      "nombre": "Pecanas picadas",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": "1 onza, picadas"
+    },
+    {
+      "clave": "sunflower_seeds",
+      "nombre": "Semillas de girasol",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": "2 cda"
+    },
+    {
+      "clave": "poppy_seeds",
+      "nombre": "Semillas de amapola",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": "2 cda"
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Sirope de arce",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": "2 cda"
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 57,
+      "unidad": "g",
+      "estado": "2 onzas"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 320°F (≈160°C).",
+    "En un bol grande combina todos los ingredientes y remueve bien para que queden cubiertos con el sirope de arce y el aceite de coco.",
+    "Extiende la mezcla en una bandeja de horno forrada en una sola capa.",
+    "Hornea durante 15 minutos, removiendo alrededor de la mitad del tiempo, hasta que esté dorada y tostada.",
+    "Deja enfriar completamente antes de guardarla en un frasco o recipiente hermético."
+  ],
+  "notas": [
+    "Dejar enfriar antes de almacenar ayuda a que la granola quede crujiente.",
+    "Conservar en un tarro hermético hasta 6 semanas.",
+    "Puedes omitir el sirope o ajustar la cantidad si prefieres menos dulce; añadir semillas o frutos secos al gusto."
+  ]
+}

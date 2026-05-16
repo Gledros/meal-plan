@@ -1,0 +1,92 @@
+{
+  "id": 34,
+  "referencia": "e034",
+  "nombre": "Frutos secos especiados al horno",
+  "rinde": "≈ 13½ onzas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 40,
+    "unidad": "minutes",
+    "notas": "asar 30–40 min; dejar en horno apagado mientras se enfría"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 282,
+    "grasas_g": 27.27,
+    "carbohidratos_g": 7.71,
+    "proteina_g": 5.72
+  },
+  "ingredientes": [
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "smoked_paprika",
+      "nombre": "Pimentón ahumado",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1.5,
+      "unidad": "tbsp",
+      "estado": "≈ 1½ cda"
+    },
+    {
+      "clave": "sea_salt_flakes",
+      "nombre": "Hojuelas de sal marina",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "macadamia_nuts",
+      "nombre": "Macadamias, troceadas",
+      "cantidad": 128,
+      "unidad": "g",
+      "estado": "aprox., tostar ligeramente"
+    },
+    {
+      "clave": "cashew_nuts",
+      "nombre": "Anacardos (cashews)",
+      "cantidad": 142,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "almonds",
+      "nombre": "Almendras",
+      "cantidad": 142,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "pepitas",
+      "nombre": "Pepitas",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 275°F (≈135°C).",
+    "Mezcla las especias, el aceite y la sal en un bol pequeño.",
+    "En un bol grande combina las nueces y semillas; añade la mezcla de especias y remueve hasta que queden bien cubiertas.",
+    "Extiende en una bandeja forrada en una sola capa y hornea 30–40 minutos, removiendo ocasionalmente para tostar de manera uniforme.",
+    "Apaga el horno y deja las nueces dentro con la puerta cerrada mientras se enfría para mantenerlas crujientes.",
+    "Cuando estén frías, guarda en un recipiente hermético."
+  ],
+  "notas": [
+    "Vigila en los últimos minutos para evitar que se quemen; los tiempos pueden variar según el horno.",
+    "Se conservan crujientes en recipiente hermético por hasta 1 mes."
+  ]
+}

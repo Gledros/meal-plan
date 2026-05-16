@@ -1,0 +1,90 @@
+{
+  "id": 31,
+  "referencia": "e031",
+  "nombre": "Crema de berenjena asada y sumac",
+  "rinde": "4 porciones",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "asado/abrillantado del propio vegetal"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 137,
+    "grasas_g": 9.73,
+    "carbohidratos_g": 11.92,
+    "proteina_g": 3.47
+  },
+  "ingredientes": [
+    {
+      "clave": "eggplant",
+      "nombre": "Berenjena (grande)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "1 berenjena grande"
+    },
+    {
+      "clave": "garlic_cloves",
+      "nombre": "Dientes de ajo",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "finamente picados"
+    },
+    {
+      "clave": "tahini",
+      "nombre": "Tahini",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de limón",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "zumo de 1 limón"
+    },
+    {
+      "clave": "sumac",
+      "nombre": "Sumac",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso",
+      "cantidad": 7,
+      "unidad": "g",
+      "estado": "≈¼ onza, finamente picado"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Asa la berenjena directamente sobre la llama del gas o en la parrilla hasta que la piel esté ampollada y la pulpa blanda (unos minutos por lado).",
+    "Coloca la berenjena asada en un bol y cúbrela para que repose y se ablande un poco; luego retira la piel y desechala.",
+    "Combina la pulpa de berenjena con ajo, tahini, zumo de limón, sumac, perejil y aceite en un procesador de alimentos y tritura hasta la consistencia deseada.",
+    "Ajusta de sal y sirve o guarda en la nevera en un recipiente hermético hasta 1 semana."
+  ],
+  "notas": [
+    "Asar sobre la llama aporta un sabor ahumado característico; si no tienes llama directa, asar en horno a alta temperatura también funciona.",
+    "El sumac aporta una acidez y color particulares; ajustar cantidad según preferencia."
+  ]
+}

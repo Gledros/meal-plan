@@ -1,0 +1,98 @@
+{
+  "id": 11,
+  "referencia": "e011",
+  "nombre": "Apio y hinojo encurtidos dulces",
+  "rinde": "≈ 2 tazas",
+  "tiempo_preparacion": {
+    "tiempo": 45,
+    "unidad": "minutes",
+    "notas": "Preparación y breve cocción del líquido; enfriar y rellenar tarro"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Hervir el líquido y dejar infusionar 10 min"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 25,
+    "grasas_g": 7.49,
+    "carbohidratos_g": 6.21,
+    "proteina_g": 1.14
+  },
+  "ingredientes": [
+    {
+      "clave": "agave_syrup",
+      "nombre": "Jarabe de agave",
+      "cantidad": 0.333,
+      "unidad": "cup",
+      "estado": "1/3 taza"
+    },
+    {
+      "clave": "black_peppercorns",
+      "nombre": "Pimienta negra en grano",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "mustard_seeds",
+      "nombre": "Semillas de mostaza",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "cloves",
+      "nombre": "Clavos de olor",
+      "cantidad": 4,
+      "unidad": "piece",
+      "estado": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "white_wine_vinegar",
+      "nombre": "Vinagre de vino blanco",
+      "cantidad": 0.5,
+      "unidad": "cup",
+      "estado": "1/2 taza"
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 1.333,
+      "unidad": "cup",
+      "estado": "1 1/3 tazas"
+    },
+    {
+      "clave": "celery_stalks",
+      "nombre": "Tallos de apio",
+      "cantidad": 3,
+      "unidad": "piece",
+      "estado": "3–4 tallos, troceados"
+    },
+    {
+      "clave": "fennel_bulb",
+      "nombre": "Bulbo de hinojo",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "1 bulbo pequeño, en trozos"
+    }
+  ],
+  "pasos": [
+    "En una cacerola, coloca el agua y el jarabe de agave; lleva a ebullición.",
+    "Añade las especias (pimienta en grano, semillas de mostaza, clavos), la sal y el vinagre; reduce y deja hervir suavemente 10 minutos para infusionar.",
+    "Corta el apio y el hinojo en trozos del tamaño de un bocado y colócalos en un tarro esterilizado de capacidad aprox. 2 tazas.",
+    "Vierte el líquido caliente sobre las verduras hasta cubrir; añade más agua si es necesario.",
+    "Deja enfriar, tapa y refrigera. Servir frías; conservar en frigorífico."
+  ],
+  "notas": [
+    "Ajusta dulzor o acidez modificando la cantidad de agave o vinagre.",
+    "Rinde ≈2 tazas; las equivalencias en medidas son orientativas."
+  ]
+}

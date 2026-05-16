@@ -1,0 +1,98 @@
+{
+  "id": 38,
+  "referencia": "e038",
+  "nombre": "Barra de chocolate y cacahuete",
+  "rinde": "16–20 porciones",
+  "tiempo_preparacion": {
+    "tiempo": 20,
+    "unidad": "minutes",
+    "notas": "más 1½ horas de refrigerado"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 255,
+    "grasas_g": 16.54,
+    "carbohidratos_g": 25.15,
+    "proteina_g": 5.87
+  },
+  "ingredientes": [
+    {
+      "clave": "ground_almonds",
+      "nombre": "Almendras molidas",
+      "cantidad": 50,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "shredded_coconut",
+      "nombre": "Coco finamente rallado",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "unsweetened_cocoa",
+      "nombre": "Cacao en polvo sin azúcar",
+      "cantidad": 57,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "medjool_dates",
+      "nombre": "Dátiles Medjool",
+      "cantidad": 6,
+      "unidad": "piece",
+      "estado": "deshuesados"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "una pizca"
+    },
+    {
+      "clave": "melted_coconut_oil",
+      "nombre": "Aceite de coco derretido",
+      "cantidad": 4,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "solid_coconut_oil",
+      "nombre": "Aceite de coco (sólido)",
+      "cantidad": 1.5,
+      "unidad": "tbsp",
+      "estado": "para la capa de chocolate"
+    },
+    {
+      "clave": "peanut_butter",
+      "nombre": "Mantequilla de cacahuete",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de arce",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "En un procesador de alimentos, tritura las almendras molidas, el coco, el cacao, los dátiles y una pizca de sal hasta formar una masa homogénea y maleable.",
+    "Presiona la mezcla en la base de un molde de 9×5 pulgadas forrado, compactando bien para que quede uniforme.",
+    "Mezcla la mantequilla de cacahuete con 1½ cda de aceite de coco sólido (si está sólido, caliéntalo ligeramente) y 1–2 cda de jarabe de arce si necesitas mayor fluidez; extiende sobre la base y refrigera si es necesario para asentar.",
+    "Derrite el resto del aceite de coco (o mezcla con cacao extra y jarabe si prefieres una cubierta más dulce) y vierte sobre la capa de cacahuete; alisa y refrigera 1½ horas hasta que cuaje.",
+    "Corta en 16–20 porciones y conserva en frigorífico hasta 2 semanas."
+  ],
+  "notas": [
+    "Ajusta la dulzura con más o menos jarabe de arce según tu preferencia.",
+    "Si quieres una textura más firme, aumenta ligeramente la proporción de nueces molidas en la base."
+  ]
+}

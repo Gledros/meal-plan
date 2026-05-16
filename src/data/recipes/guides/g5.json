@@ -1,0 +1,49 @@
+{
+  "id": 5,
+  "referencia": "g005",
+  "nombre": "Cómo hacer pan plano",
+  "rinde": "≈ 4 panes planos",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "unos minutos por lado en plancha"
+  },
+  "ingredientes": [
+    {
+      "clave": "all_purpose_flour",
+      "nombre": "Harina (según receta)",
+      "cantidad": 0,
+      "unidad": "cup",
+      "estado": "cantidad según receta base"
+    },
+    {
+      "clave": "liquid",
+      "nombre": "Líquido (agua/leche vegetal)",
+      "cantidad": 0,
+      "unidad": "cup",
+      "estado": "cantidad según receta"
+    },
+    {
+      "clave": "oil_or_other",
+      "nombre": "Aceite/otros ingredientes (opcional)",
+      "cantidad": 0,
+      "unidad": "tbsp",
+      "estado": "según receta"
+    }
+  ],
+  "pasos": [
+    "Mezcla todos los ingredientes en un bol grande y remueve hasta integrar.",
+    "Amasa rápidamente para unir y formar una masa suave.",
+    "Divide y estira la masa en 4 formas ovaladas y muy finas con un rodillo.",
+    "Cocina en una plancha o sartén engrasada unos minutos por cada lado hasta que aparezcan manchas doradas y estén cocidos."
+  ],
+  "notas": [
+    "No amases en exceso; amasar rápido y cortos descansos dan panes planos más tiernos.",
+    "Cocinar a fuego medio-alto en una plancha bien caliente produce las marcas y textura tradicional."
+  ]
+}

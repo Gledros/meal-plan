@@ -1,0 +1,70 @@
+{
+  "id": 40,
+  "referencia": "e040",
+  "nombre": "Té helado de jengibre",
+  "rinde": "≈ 4 tazas",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 122,
+    "grasas_g": 0.58,
+    "carbohidratos_g": 31.52,
+    "proteina_g": 1.25
+  },
+  "ingredientes": [
+    {
+      "clave": "lemongrass",
+      "nombre": "Tallos de hierba limón",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "machacados"
+    },
+    {
+      "clave": "lemon",
+      "nombre": "Limón",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "estado": "zumo y ralladura de ½ limón; rodajas para servir"
+    },
+    {
+      "clave": "ginger",
+      "nombre": "Jengibre",
+      "cantidad": 50,
+      "unidad": "g",
+      "estado": "pieza pelada y finamente cortada (reservar unas rodajas)"
+    },
+    {
+      "clave": "agave_syrup",
+      "nombre": "Jarabe de agave",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 4,
+      "unidad": "cup",
+      "estado": "para infusionar"
+    }
+  ],
+  "pasos": [
+    "En una olla, combina las 4 tazas de agua con la hierba limón machacada, el jengibre y la ralladura y zumo de ½ limón; añade el jarabe de agave.",
+    "Lleva a ebullición, reduce el fuego y deja hervir suavemente unos 10 minutos para infusionar los sabores.",
+    "Retira del fuego y deja reposar tapado 5 minutos para que termine de infusionar.",
+    "Cuela y vierte en una botella; deja enfriar completamente.",
+    "Refrigera y sirve sobre hielo con una rodaja de limón. Conserva hasta 2 semanas."
+  ],
+  "notas": [
+    "Reservar unas rodajas de jengibre en la botella para un extra de sabor si se desea.",
+    "Se puede endulzar más o menos al gusto, o sustituir el agave por miel de palma/sirope vegano."
+  ]
+}

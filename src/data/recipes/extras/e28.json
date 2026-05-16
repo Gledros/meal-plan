@@ -1,0 +1,85 @@
+{
+  "id": 28,
+  "referencia": "e028",
+  "nombre": "Galletas finas de centeno",
+  "rinde": "20",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 20,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 133.1,
+    "grasas_g": 7.8,
+    "carbohidratos_g": 13.87,
+    "proteina_g": 2.2
+  },
+  "ingredientes": [
+    {
+      "clave": "cumin_seeds",
+      "nombre": "Semillas de comino",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "sea_salt_flakes",
+      "nombre": "Hojuelas de sal marina",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "rye_flour",
+      "nombre": "Harina de centeno",
+      "cantidad": 85,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "all_purpose_flour",
+      "nombre": "Harina todo uso",
+      "cantidad": 85,
+      "unidad": "g",
+      "estado": "más extra para espolvorear"
+    },
+    {
+      "clave": "toasted_sesame_seeds",
+      "nombre": "Semillas de sésamo tostadas",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "grapeseed_oil",
+      "nombre": "Aceite de semilla de uva",
+      "cantidad": 104,
+      "unidad": "ml",
+      "estado": ""
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": "añadida si es necesario para formar masa"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 320°F (≈160°C).",
+    "Muele las semillas de comino con la sal usando mortero y maja; combina con las demás harinas y las semillas de sésamo.",
+    "Añade 1 cda de agua y el aceite y procesa (o mezcla) hasta formar una masa homogénea.",
+    "Amasa en superficie ligeramente enharinada 3–4 minutos hasta obtener una textura suave y no pegajosa.",
+    "Estira la masa en una lámina muy fina, corta en la forma deseada y coloca en una bandeja forrada.",
+    "Hornea 20 minutos. Retira y deja que los galletas se enfríen para que queden crujientes. Conserva en envase hermético hasta 2 semanas."
+  ],
+  "notas": [
+    "Espolvorear con harina extra facilita estirar la masa muy fina.",
+    "Ajusta grosor para obtener textura más crujiente o más densa según preferencia."
+  ]
+}

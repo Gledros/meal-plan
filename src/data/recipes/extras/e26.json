@@ -1,0 +1,129 @@
+{
+  "id": 26,
+  "referencia": "e026",
+  "nombre": "Pan de zanahoria y chirivía",
+  "rinde": "1 pan",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 55,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 418,
+    "grasas_g": 13.43,
+    "carbohidratos_g": 48.67,
+    "proteina_g": 4.79
+  },
+  "ingredientes": [
+    {
+      "clave": "self_rising_flour",
+      "nombre": "Harina con levadura",
+      "cantidad": 227,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "baking_soda",
+      "nombre": "Bicarbonato de sodio",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "carrots",
+      "nombre": "Zanahorias ralladas",
+      "cantidad": 156,
+      "unidad": "g",
+      "estado": "≈ 2 zanahorias, ralladas"
+    },
+    {
+      "clave": "parsnip",
+      "nombre": "Chirivía rallada",
+      "cantidad": 156,
+      "unidad": "g",
+      "estado": "1 chirivía grande, rallada"
+    },
+    {
+      "clave": "demerara_sugar",
+      "nombre": "Azúcar cruda (demerara)",
+      "cantidad": 156,
+      "unidad": "g",
+      "estado": "demerara"
+    },
+    {
+      "clave": "ground_cloves",
+      "nombre": "Clavo molido",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "ground_nutmeg",
+      "nombre": "Nuez moscada molida",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "ground_cinnamon",
+      "nombre": "Canela molida",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "vanilla_extract",
+      "nombre": "Extracto de vainilla natural",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "walnuts",
+      "nombre": "Nueces",
+      "cantidad": 50,
+      "unidad": "g",
+      "estado": "≈ 1¾ onzas"
+    },
+    {
+      "clave": "nut_or_sunflower_oil",
+      "nombre": "Aceite de nuez o de girasol",
+      "cantidad": 148,
+      "unidad": "ml",
+      "estado": "más extra para engrasar el molde"
+    },
+    {
+      "clave": "aquafaba",
+      "nombre": "Aquafaba",
+      "cantidad": 6,
+      "unidad": "tbsp",
+      "estado": "ver receta (p.14) para montar si es necesario"
+    },
+    {
+      "clave": "cream_of_tartar",
+      "nombre": "Crema de tártaro",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 320°F (≈160°C).",
+    "En un procesador o bol, combina los ingredientes secos (harina, bicarbonato, especias y azúcar).",
+    "Añade las zanahorias y la chirivía ralladas, mezclar para que se integren con los secos.",
+    "En otro bol mezcla los ingredientes húmedos: aceite, vainilla, nueces troceadas y aquafaba montada con la crema de tártaro (si la receta requiere airear la aquafaba).",
+    "Incorpora los húmedos a los secos y mezcla hasta integrar.",
+    "Vierte en un molde para pan engrasado de 8 tazas y hornea aproximadamente 55 minutos, hasta que al insertar un palillo salga limpio.",
+    "Deja reposar 10 minutos, desmolda y deja enfriar sobre una rejilla."
+  ],
+  "notas": [
+    "La aquafaba actúa como aglutinante y sustituto de huevo — bate con crema de tártaro hasta picos firmes si la receta lo requiere.",
+    "Ajusta la humedad añadiendo un poco más de aceite o yogur vegetal si la masa queda demasiado seca.",
+    "Conserva las rebanadas en frigorífico o congela para guardar más tiempo."
+  ]
+}

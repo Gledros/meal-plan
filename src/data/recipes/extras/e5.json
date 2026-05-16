@@ -1,0 +1,65 @@
+{
+  "id": 5,
+  "referencia": "e005",
+  "nombre": "Aderezo de sésamo y vinagre de arroz",
+  "rinde": "½ taza",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 100,
+    "grasas_g": 9.1,
+    "carbohidratos_g": 5.46,
+    "proteina_g": 0.34
+  },
+  "ingredientes": [
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de limón",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "zumo de 1 limón"
+    },
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de sésamo tostado",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "equivalente_g": 10,
+      "estado": ""
+    },
+    {
+      "clave": "mirin",
+      "nombre": "Mirin",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "equivalente_g": 45,
+      "estado": ""
+    },
+    {
+      "clave": "rice_vinegar",
+      "nombre": "Vinagre de arroz",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "equivalente_g": 45,
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Combina todos los ingredientes en un tarro o jarra.",
+    "Agita o bate hasta integrar.",
+    "Guarda en un recipiente hermético en la nevera (aguanta hasta 2 semanas)."
+  ],
+  "notas": [
+    "Rinde aprox. ½ taza.",
+    "Ajusta la acidez o dulzor añadiendo más mirin o vinagre según prefieras."
+  ]
+}

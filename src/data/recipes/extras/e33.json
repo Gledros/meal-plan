@@ -1,0 +1,78 @@
+{
+  "id": 33,
+  "referencia": "e033",
+  "nombre": "Bastones de polenta",
+  "rinde": "≈ 20",
+  "tiempo_preparacion": {
+    "tiempo": 250,
+    "unidad": "minutes",
+    "notas": "incluye enfriado: 4 horas 10 minutos total"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "fritura final ~5 min por tanda"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 102,
+    "grasas_g": 6.98,
+    "carbohidratos_g": 9.2,
+    "proteina_g": 4.71
+  },
+  "ingredientes": [
+    {
+      "clave": "vegan_broth",
+      "nombre": "Caldo vegano",
+      "cantidad": 2,
+      "unidad": "cup",
+      "estado": "(ver p.30)"
+    },
+    {
+      "clave": "polenta",
+      "nombre": "Polenta",
+      "cantidad": 156,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "nutritional_yeast",
+      "nombre": "Levadura nutricional en escamas",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "thyme_rosemary",
+      "nombre": "Tomillo y romero finamente picados",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": "finamente picados (aprox.)"
+    },
+    {
+      "clave": "sea_salt_pepper",
+      "nombre": "Hojuelas de sal marina y pimienta",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    },
+    {
+      "clave": "vegetable_oil",
+      "nombre": "Aceite vegetal",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "para freír (cantidad necesaria)"
+    }
+  ],
+  "pasos": [
+    "Lleva el caldo a ebullición en una cacerola y, con un batidor, añade la polenta gradualmente mientras remueves.",
+    "Reduce el fuego y cocina unos 2 minutos, removiendo con cuchara de madera hasta que espese y se vea homogénea.",
+    "Retira del fuego y mezcla la levadura nutricional y las hierbas; sazona al gusto.",
+    "Vierte la mezcla en un molde cuadrado de 8 pulgadas forrado, alisa la superficie y cubre con papel de horno. Refrigera 4 horas o toda la noche hasta que cuaje.",
+    "Desmolda y corta en tiras de ≈¾ pulgada (bastones). Calienta aceite para freír a 350°F (≈175°C) y fríe en tandas 4–5 minutos hasta dorar.",
+    "Escurre sobre papel absorbente y sazona inmediatamente."
+  ],
+  "notas": [
+    "Enfriar completamente la polenta es clave para que mantenga la forma al freír.",
+    "También se pueden hornear en vez de freír para versión más ligera (hornear hasta dorar)."
+  ]
+}

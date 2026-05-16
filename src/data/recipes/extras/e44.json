@@ -1,0 +1,55 @@
+{
+  "id": 44,
+  "referencia": "e044",
+  "nombre": "Té de hinojo",
+  "rinde": "1 porción",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 30,
+    "grasas_g": 1.29,
+    "carbohidratos_g": 4.55,
+    "proteina_g": 1.37
+  },
+  "ingredientes": [
+    {
+      "clave": "fennel_seeds",
+      "nombre": "Semillas de hinojo",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "fennel_fronds",
+      "nombre": "Hojas de hinojo (frondas)",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "boiling_water",
+      "nombre": "Agua hirviendo",
+      "cantidad": 296,
+      "unidad": "ml",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Machaca ligeramente las semillas de hinojo en un mortero para liberar aceites esenciales.",
+    "Coloca las semillas y las frondas en una tetera o recipiente y vierte el agua hirviendo encima.",
+    "Deja infusionar tapado durante 8–10 minutos.",
+    "Cuela en una taza y bebe caliente."
+  ],
+  "notas": [
+    "El té de hinojo es digestivo y se usa tradicionalmente para aliviar hinchazón y calambres.",
+    "Ajusta tiempo de infusión según la intensidad deseada."
+  ]
+}

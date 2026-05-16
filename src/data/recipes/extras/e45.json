@@ -1,0 +1,51 @@
+{
+  "id": 45,
+  "referencia": "e045",
+  "nombre": "Leche de almendra",
+  "pagina": 8,
+  "tipo": "leche_frutos_secos",
+  "rinde": "≈ 4 tazas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Remojo 4–8 horas"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 40,
+    "grasas_g": 3,
+    "carbohidratos_g": 1,
+    "proteina_g": 2
+  },
+  "ingredientes": [
+    {
+      "clave": "raw_almonds",
+      "nombre": "Almendras crudas",
+      "cantidad": 142,
+      "unidad": "g",
+      "estado": "preferiblemente orgánicas; remojar"
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 4,
+      "unidad": "cup",
+      "estado": "para triturar (4 tazas)"
+    }
+  ],
+  "pasos": [
+    "Coloca las almendras en un bol pequeño y cúbrelas con agua. Deja en remojo 4–8 horas o toda la noche.",
+    "Escurre las almendras a través de un colador y enjuágalas; desecha el agua de remojo.",
+    "Añade las almendras remojadas a una licuadora con 4 tazas de agua fresca y bate hasta obtener una mezcla suave y cremosa.",
+    "Forra un colador fino con muselina o usa una bolsa para leches vegetales y vierte la mezcla. Gira y aprieta para extraer toda la leche.",
+    "Enfría la leche en botella y conserva en frigorífico hasta 4–5 días."
+  ],
+  "notas": [
+    "Extras para dar sabor: sirope de arce, canela, dátiles, cacao en polvo sin azúcar, proteína de vainilla, frutas del bosque frescas.",
+    "Para hacer leche de avena o leche de coco, usa la misma técnica con copos de avena o copos de coco; no suelen necesitar remojo y puede ser necesario ajustar la finura de la tela al colar."
+  ]
+}

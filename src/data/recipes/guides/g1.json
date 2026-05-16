@@ -1,0 +1,52 @@
+{
+	"id": 7,
+	"referencia": "g007",
+	"nombre": "Cómo cocinar legumbres",
+	"rinde": "variable (según cantidad de legumbres)",
+	"tiempo_preparacion": {
+		"tiempo": 10,
+		"unidad": "minutes",
+		"notas": "Remojo 8–12 horas (o método rápido: hervir 5 min y reposar 2 h)"
+	},
+	"tiempo_cocinado": {
+		"tiempo": 90,
+		"unidad": "minutes",
+		"notas": "Cocción a fuego lento 1–1½ horas (varía según legumbre)"
+	},
+	"ingredientes": [
+		{
+			"clave": "dried_beans",
+			"nombre": "Legumbres secas (garbanzos, lentejas, guisantes, etc.)",
+			"cantidad": 0,
+			"unidad": "cup",
+			"estado": "cantidad según receta"
+		},
+		{
+			"clave": "water",
+			"nombre": "Agua fría",
+			"cantidad": 0,
+			"unidad": "cup",
+			"estado": "2–3 veces el volumen de las legumbres para remojo y cocción"
+		},
+		{
+			"clave": "flavorings",
+			"nombre": "Aromáticos opcionales",
+			"cantidad": 0,
+			"unidad": "piece",
+			"estado": "ajo, cebolla, hoja de laurel, granos de pimienta (al gusto)"
+		}
+	],
+	"pasos": [
+		"Selecciona y mide las legumbres que vas a cocinar.",
+		"Cubre las legumbres con 2–3 veces su volumen en agua fría y deja en remojo 8–12 horas. Alternativa rápida: hierve las legumbres 5 minutos y deja reposar en esa agua caliente 2 horas.",
+		"Escurre y enjuaga las legumbres remojadas.",
+		"Coloca las legumbres en una cacerola y cúbrelas con 2–3 veces su volumen en agua fría. Añade aromáticos si lo deseas (ajo, cebolla, hojas, pimienta).",
+		"Lleva a ebullición, reduce el fuego y cuece a fuego lento durante 1–1½ horas, vigilando y retirando la espuma con una espumadera si aparece.",
+		"Cuando las legumbres estén tiernas, escúrrelas y úsalas en la receta o conserva en el refrigerador."
+	],
+	"notas": [
+		"Remojar mejora la digestibilidad y reduce el tiempo de cocción; algunos granos (como lentejas) pueden no necesitar remojo previo.",
+		"La textura y el tiempo exacto dependen de la variedad y edad de las legumbres; prueba de cocción a partir de los 45 minutos.",
+		"Conservar las legumbres cocidas en frigorífico por varios días o congelar en porciones para uso posterior."
+	]
+}

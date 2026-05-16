@@ -1,0 +1,63 @@
+{
+  "id": 16,
+  "referencia": "e016",
+  "nombre": "Frutos secos caramelizados",
+  "rinde": "≈ 4½ onzas",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 75,
+    "grasas_g": 6.16,
+    "carbohidratos_g": 4.69,
+    "proteina_g": 1.52
+  },
+  "ingredientes": [
+    {
+      "clave": "pecan_halves",
+      "nombre": "Mitades de pacana",
+      "cantidad": 57,
+      "unidad": "g",
+      "estado": "2 onzas ≈ 57 g"
+    },
+    {
+      "clave": "raw_cashew_nuts",
+      "nombre": "Anacardos crudos",
+      "cantidad": 71,
+      "unidad": "g",
+      "estado": "2½ onzas ≈ 71 g"
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de arce",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "una pizca"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 350°F (≈175°C).",
+    "En un bol, mezcla las pacanas y los anacardos con el jarabe de arce hasta que estén bien cubiertos; añade una pizca de sal.",
+    "Extiende los frutos en una bandeja forrada en una sola capa y hornea 10–15 minutos, removiendo a la mitad para que se doren por igual. Vigila para que no se quemen.",
+    "Saca del horno y deja enfriar completamente. Pica groseramente si lo deseas.",
+    "Guarda en un recipiente hermético hasta 1 mes."
+  ],
+  "notas": [
+    "Controla el horneado de cerca en los últimos minutos para evitar que se quemen.",
+    "Puedes usar otros frutos secos según preferencia (almendras, nueces)."
+  ]
+}

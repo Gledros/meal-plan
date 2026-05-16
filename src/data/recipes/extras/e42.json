@@ -1,0 +1,55 @@
+{
+  "id": 42,
+  "referencia": "e042",
+  "nombre": "Bebida de miso",
+  "rinde": "1 porción",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 35,
+    "grasas_g": 1.03,
+    "carbohidratos_g": 4.66,
+    "proteina_g": 2.04
+  },
+  "ingredientes": [
+    {
+      "clave": "vegan_broth_or_water",
+      "nombre": "Caldo vegano o agua",
+      "cantidad": 296,
+      "unidad": "ml",
+      "estado": ""
+    },
+    {
+      "clave": "miso_paste",
+      "nombre": "Pasta de miso (blanco)",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "dried_seaweed",
+      "nombre": "Tiras de alga seca",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Vierte el caldo vegano o agua en una cacerola y lleva a ebullición.",
+    "Retira un par de cucharadas del líquido caliente y viértelas en una taza o jarro pequeño con la pasta de miso; bate hasta que el miso esté completamente disuelto y suave.",
+    "Vierte la mezcla de miso de vuelta en la cacerola, reduce el fuego y deja a fuego lento un momento (no hervir vigorosamente para preservar microorganismos y sabor del miso).",
+    "Sirve en una taza y espolvorea por encima las tiras de alga seca."
+  ],
+  "notas": [
+    "El miso es un alimento fermentado con cualidades calmantes para el intestino; evitar hervir demasiado para conservar sabor y beneficios.",
+    "Ajusta la intensidad añadiendo más o menos miso al gusto."
+  ]
+}

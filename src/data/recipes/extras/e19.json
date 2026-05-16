@@ -1,0 +1,70 @@
+{
+  "id": 19,
+  "referencia": "e019",
+  "nombre": "Crema de ajo",
+  "rinde": "≈ 2 tazas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "No requiere cocción"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 102,
+    "grasas_g": 10.92,
+    "carbohidratos_g": 1.26,
+    "proteina_g": 0.23
+  },
+  "ingredientes": [
+    {
+      "clave": "garlic_cloves",
+      "nombre": "Dientes de ajo",
+      "cantidad": 71,
+      "unidad": "g",
+      "estado": "≈ 2½ onzas, pelados y partidos si son grandes"
+    },
+    {
+      "clave": "sea_salt_flakes",
+      "nombre": "Hojuelas de sal marina",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de limón",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "grapeseed_oil",
+      "nombre": "Aceite de semilla de uva (u otro aceite vegetal neutro)",
+      "cantidad": 296,
+      "unidad": "ml",
+      "estado": "≈ 10 onzas líquidas"
+    },
+    {
+      "clave": "iced_water",
+      "nombre": "Agua con hielo",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Corta los dientes de ajo por la mitad y retira el germen central si lo deseas (parte verde pequeña).",
+    "Tritura el ajo con la sal en un procesador de alimentos hasta que esté bien picado; añade ½ cucharada de zumo de limón y mezcla hasta formar una pasta.",
+    "Con el motor en marcha, vierte el aceite muy lentamente en un hilo fino (aprox. ¼ taza a la vez) hasta que la mezcla empiece a emulsionar y espesar.",
+    "Añade el resto del zumo de limón y el agua con hielo, integrando hasta obtener una textura ligera y ligeramente aireada.",
+    "Guarda en recipiente hermético en la nevera hasta 3 semanas."
+  ],
+  "notas": [
+    "La incorporación lenta del aceite es clave para emulsionar correctamente.",
+    "Ajusta la acidez con más o menos zumo de limón al gusto."
+  ]
+}

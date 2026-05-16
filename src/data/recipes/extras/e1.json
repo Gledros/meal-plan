@@ -1,0 +1,105 @@
+{
+  "id": 1,
+  "referencia": "e001",
+  "nombre": "Aderezo tofu miso",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 113,
+    "grasas_g": 0.66,
+    "carbohidratos_g": 6.48,
+    "proteina_g": 5.58
+  },
+  "ingredientes": [
+    {
+      "clave": "silken_tofu",
+      "nombre": "Tofu sedoso",
+      "cantidad": 43,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "1½ onzas (aprox.), troceado",
+      "enlace": ""
+    },
+    {
+      "clave": "white_miso",
+      "nombre": "Pasta de miso blanco",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de limón",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "zumo de ½ limón",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_oil",
+      "nombre": "Aceite de sésamo tostado",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 2,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "mirin",
+      "nombre": "Mirin",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "equivalente_g": 5,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "toasted_sesame_seeds",
+      "nombre": "Semillas de sésamo tostadas",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 9,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "agua",
+      "nombre": "Agua",
+      "cantidad": 1.5,
+      "unidad": "tbsp",
+      "equivalente_g": 22,
+      "estado": "1½ cda agua para mezclar en la licuadora",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "Combina todos los ingredientes en una licuadora con 1½ cucharadas de agua y bate hasta obtener una mezcla homogénea sin grumos.",
+    "Ajusta sal/ácido si hace falta.",
+    "Guarda en un recipiente hermético en la nevera hasta 7 días."
+  ],
+  "notas": [
+    "Rinde aprox. ½ taza.",
+    "Equivalentes en gramos para cucharadas son orientativos."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se aplicó conversión 1½ onzas → 43 g para el tofu (unidad 'g' con equivalente_g = -1).",
+      "equivalentes en g para cda/cdita son aproximativos y sólo de referencia."
+    ],
+    "correcciones": [
+      "Se añadió 1.5 cda de agua en ingredientes conforme al paso 01 de la receta."
+    ]
+  }
+}

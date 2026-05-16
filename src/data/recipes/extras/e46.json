@@ -1,0 +1,44 @@
+{
+  "id": 46,
+  "referencia": "e046",
+  "nombre": "Mantequilla de frutos secos sencilla",
+  "pagina": 8,
+  "tipo": "mantequilla_frutos_secos",
+  "rinde": "≈ 1 taza",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "Tostado 6–8 minutos"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 101,
+    "grasas_g": 9,
+    "carbohidratos_g": 3.4,
+    "proteina_g": 2.4
+  },
+  "ingredientes": [
+    {
+      "clave": "almonds_or_other_nuts",
+      "nombre": "Almendras u otros frutos secos (anacardos, macadamia, avellanas, pacanas)",
+      "cantidad": 284,
+      "unidad": "g",
+      "estado": "pelados; si se usan avellanas, tostar y frotar para quitar pieles"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 350°F (≈175°C). Extiende los frutos secos en una bandeja y tuesta 6–8 minutos hasta que estén fragantes y dorados; vigila para que no se quemen.",
+    "Si usas avellanas, envuélvelas en un paño y frótalas para eliminar la piel antes de procesar.",
+    "Coloca los frutos secos tostados en un procesador de alimentos y tritura hasta obtener una pasta lisa, parando para raspar los lados según sea necesario; puede tardar varios minutos mientras las grasas naturales se liberan.",
+    "Ajusta textura añadiendo una cucharadita de aceite neutro si deseas una mantequilla más fluida. Prueba y corrige de sal si procede.",
+    "Transfiere a un frasco y conserva en el frigorífico hasta 3 semanas."
+  ],
+  "notas": [
+    "Las semillas germinadas/ remojadas y secadas aportan beneficios, pero no son necesarias; tostar intensifica el sabor.",
+    "Se pueden mezclar distintos frutos secos (ej. anacardo+almendra) para variar textura y sabor."
+  ]
+}

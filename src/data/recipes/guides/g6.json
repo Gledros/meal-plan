@@ -1,0 +1,73 @@
+{
+	"id": 6,
+	"referencia": "g006",
+	"nombre": "Cómo germinar semillas",
+	"rinde": "depende de la cantidad de semillas",
+	"tiempo_preparacion": {
+		"tiempo": 10,
+		"unidad": "minutes",
+		"notas": "Remojo inicial 4–8 horas; luego enjuagues 3–7 días"
+	},
+	"tiempo_cocinado": {
+		"tiempo": 0,
+		"unidad": "minutes",
+		"notas": ""
+	},
+	"ingredientes": [
+		{
+			"clave": "jar",
+			"nombre": "Tarro limpio",
+			"cantidad": 1,
+			"unidad": "piece",
+			"estado": "capacidad aprox. 2 tazas; boca amplia recomendada"
+		},
+		{
+			"clave": "seeds_small",
+			"nombre": "Semillas pequeñas (alfalfa, mostaza, sésamo, etc.)",
+			"cantidad": 3,
+			"unidad": "tbsp",
+			"estado": ""
+		},
+		{
+			"clave": "seeds_medium",
+			"nombre": "Legumbres pequeñas (guisantes, frijol mungo, lentejas)",
+			"cantidad": 78,
+			"unidad": "g",
+			"estado": ""
+		},
+		{
+			"clave": "seeds_large",
+			"nombre": "Legumbres grandes (garbanzos) o almendras para brotar",
+			"cantidad": 156,
+			"unidad": "g",
+			"estado": "5½–7 onzas por tarro según el tipo"
+		},
+		{
+			"clave": "cold_water",
+			"nombre": "Agua fría",
+			"cantidad": 0,
+			"unidad": "cup",
+			"estado": "suficiente para cubrir durante el remojo y para enjuagues"
+		},
+		{
+			"clave": "muslin",
+			"nombre": "Muselina / tela para colar",
+			"cantidad": 1,
+			"unidad": "piece",
+			"estado": "para cubrir la boca del tarro y permitir drenaje"
+		}
+	],
+	"pasos": [
+		"Selecciona un tarro limpio de aproximadamente 2 tazas de capacidad; una boca amplia facilita el manejo y da más espacio a las semillas.",
+		"Mide las semillas o legumbres que quieras germinar. Enjuágalas bajo agua fría y escúrrelas.",
+		"Cubre las semillas con abundante agua fría y deja en remojo 4–8 horas (según tamaño de la semilla).",
+		"Tapa el tarro con muselina y sujétala con una goma. Coloca el tarro inclinado (≈45°) para drenar el agua sobrante, con una bandeja o plato debajo para recoger el líquido.",
+		"Enjuaga y escurre las semillas dos veces al día con agua fría para evitar la formación de baba y moho; devuelve el tarro a su posición de drenaje cada vez.",
+		"Repite el enjuague/escurrido durante 3–7 días, dependiendo del tipo de semilla y del brote deseado. Cuando los brotes tengan la apariencia y textura adecuadas, refrigera y consume."
+	],
+	"notas": [
+		"Semillas pequeñas (alfalfa, mostaza, sésamo): usar ~3 cda; legumbres medianas (guisantes, mungo, lentejas): ~2¾ onzas; legumbres grandes/almendras: 5½–7 onzas por tarro.",
+		"Mantener en lugar fresco y fuera de la luz solar directa durante el proceso. Si aparece olor o moho, desechar y empezar de nuevo.",
+		"Refrigerar los brotes terminados y consumir en pocos días para máxima frescura y seguridad."
+	]
+}
