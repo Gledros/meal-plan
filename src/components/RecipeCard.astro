@@ -1,5 +1,9 @@
 ---
-import { type MealDinnerRecipe } from '@data/schemas/runtime-recipes';
+import {
+	type ExtraRecipe,
+	type GuideRecipe,
+	type MealDinnerRecipe,
+} from '@data/schemas/runtime-recipes';
 import { Icon } from 'astro-icon/components';
 import {
 	lightenHexColor,
@@ -10,8 +14,8 @@ import {
 
 interface Props {
 	id: number;
-	recipe: MealDinnerRecipe;
-	kind: 'Desayuno' | 'Comida' | 'Cena';
+	recipe: MealDinnerRecipe | ExtraRecipe | GuideRecipe;
+	kind: 'Desayuno' | 'Comida' | 'Cena' | 'Extra' | 'Guía';
 	color: string;
 }
 
@@ -28,6 +32,9 @@ const formatTime = (t: { tiempo: number; unidad: string }) =>
 const prepTimeNotes = recipe.tiempo_preparacion.notas.trim();
 const cookTimeNotes = recipe.tiempo_cocinado.notas.trim();
 const recipeNotes = recipe.notas.filter((note) => note.trim().length > 0);
+const nutrition =
+	'informacion_nutricional' in recipe ? recipe.informacion_nutricional : null;
+const hasNutrition = nutrition !== null;
 const borderHex = darkenHexColor(color, 0.2);
 const nutritionHex = lightenHexColor(color, 0.5);
 const cardBorderStyle = `border-color: ${borderHex} !important; forced-color-adjust: none;`;
@@ -79,7 +86,12 @@ const searchContent = JSON.stringify({
 			</div>
 		</div>
 
-		<div class='recipe-main-columns grid items-start gap-2 md:grid-cols-2'>
+		<div
+			class:list={[
+				'recipe-main-columns grid items-start gap-2',
+				hasNutrition ? 'md:grid-cols-2' : 'md:grid-cols-1',
+			]}
+		>
 			<div>
 				<p
 					class='mb-1 text-lg text-center font-semibold'
@@ -119,38 +131,50 @@ const searchContent = JSON.stringify({
 					}
 				</ul>
 			</div>
-			<div
-				class='perfil-nutricional m-1 p-1 rounded-xl'
-				style={nutritionBgStyle}
-			>
-				<h3 class='text-center font-bold text-xl'>Perfil nutricional</h3>
-				<div class='w-full grid grid-cols-2 gap-2 p-2'>
-					<div class='flex flex-col items-center gap-1'>
-						<Icon name='noto:custard' size={40} />
-						<p class='text-lg'>
-							Energía<br />{recipe.informacion_nutricional.kcal} kcal
-						</p>
+			{
+				hasNutrition && nutrition && (
+					<div
+						class='perfil-nutricional m-1 p-1 rounded-xl'
+						style={nutritionBgStyle}
+					>
+						<h3 class='text-center font-bold text-xl'>Perfil nutricional</h3>
+						<div class='w-full grid grid-cols-2 gap-2 p-2'>
+							<div class='flex flex-col items-center gap-1'>
+								<Icon name='noto:custard' size={40} />
+								<p class='text-lg'>
+									Energía
+									<br />
+									{nutrition.kcal} kcal
+								</p>
+							</div>
+							<div class='flex flex-col items-center gap-1'>
+								<Icon name='noto:baguette-bread' size={40} />
+								<p class='text-lg'>
+									Carbohidrato
+									<br />
+									{nutrition.carbohidratos_g} g
+								</p>
+							</div>
+							<div class='flex flex-col items-center gap-1'>
+								<Icon name='noto:butter' size={40} />
+								<p class='text-lg'>
+									Grasa
+									<br />
+									{nutrition.grasas_g} g
+								</p>
+							</div>
+							<div class='flex flex-col items-center gap-1'>
+								<Icon name='noto:cut-of-meat' size={40} />
+								<p class='text-lg'>
+									Proteína
+									<br />
+									{nutrition.proteina_g} g
+								</p>
+							</div>
+						</div>
 					</div>
-					<div class='flex flex-col items-center gap-1'>
-						<Icon name='noto:baguette-bread' size={40} />
-						<p class='text-lg'>
-							Carbohidrato<br />{recipe.informacion_nutricional.carbohidratos_g} g
-						</p>
-					</div>
-					<div class='flex flex-col items-center gap-1'>
-						<Icon name='noto:butter' size={40} />
-						<p class='text-lg'>
-							Grasa<br />{recipe.informacion_nutricional.grasas_g} g
-						</p>
-					</div>
-					<div class='flex flex-col items-center gap-1'>
-						<Icon name='noto:cut-of-meat' size={40} />
-						<p class='text-lg'>
-							Proteína<br />{recipe.informacion_nutricional.proteina_g} g
-						</p>
-					</div>
-				</div>
-			</div>
+				)
+			}
 		</div>
 
 		<p class='mb-1 mt-2 text-lg text-center font-semibold'>Pasos</p>

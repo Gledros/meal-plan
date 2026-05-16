@@ -8,7 +8,7 @@ import Search from '@components/Search.astro';
 import IngredientInfoModal from '@components/IngredientInfoModal.astro';
 import GroceriesModal from '@components/GroceriesModal.astro';
 import PortionMultiplier from '@components/PortionMultiplier.astro';
-import { WeekPrepSchema } from '@data/schemas/weekPrep';
+import { WeekPrepSchema } from '@data/schemas/week-preparation';
 import w1_ShoppingList from '@data/weeks/w1_ShoppingList.json';
 import w2_ShoppingList from '@data/weeks/w2_ShoppingList.json';
 import w3_ShoppingList from '@data/weeks/w3_ShoppingList.json';
@@ -18,7 +18,9 @@ import w2_PreparationRaw from '@data/weeks/w2_Preparation.json';
 import w3_PreparationRaw from '@data/weeks/w3_Preparation.json';
 import w4_PreparationRaw from '@data/weeks/w4_Preparation.json';
 import {
+	type ExtraRecipe,
 	loadRecipesFromDisk,
+	type GuideRecipe,
 	type MealDinnerRecipe,
 	type SmoothieRecipe,
 } from '@data/schemas/runtime-recipes';
@@ -28,14 +30,19 @@ type Smoothie = SmoothieRecipe;
 type Breakfast = MealDinnerRecipe;
 type Meal = MealDinnerRecipe;
 type Dinner = MealDinnerRecipe;
+type Extra = ExtraRecipe;
+type Guide = GuideRecipe;
 
-const { smoothies, breakfasts, meals, dinners } = await loadRecipesFromDisk();
+const { smoothies, breakfasts, meals, dinners, extras, guides } =
+	await loadRecipesFromDisk();
 
 const tabs = [
 	{ id: 'smoothies', label: 'Smoothies' },
 	{ id: 'desayunos', label: 'Desayunos' },
 	{ id: 'comidas', label: 'Comidas' },
 	{ id: 'cenas', label: 'Cenas' },
+	{ id: 'extras', label: 'Extras' },
+	{ id: 'guias', label: 'Guías' },
 ];
 
 const shoppingWeeks = [
@@ -211,6 +218,44 @@ const preparationWeeks = [
 				) : (
 					<p class='mb-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center text-lg text-gray-600'>
 						No hay cenas cargadas todavía.
+					</p>
+				)
+			}
+		</section>
+
+		<section
+			data-tab-panel='extras'
+			class='tab-panel tab-panel--extras p-2 md:p-4'
+		>
+			{
+				extras.length > 0 ? (
+					<div class='print-recipes-grid grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
+						{extras.map(({ id, extra }) => (
+							<RecipeCard id={id} recipe={extra} kind='Extra' color='#E6B86E' />
+						))}
+					</div>
+				) : (
+					<p class='mb-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center text-lg text-gray-600'>
+						No hay extras cargados todavía.
+					</p>
+				)
+			}
+		</section>
+
+		<section
+			data-tab-panel='guias'
+			class='tab-panel tab-panel--guias p-2 md:p-4'
+		>
+			{
+				guides.length > 0 ? (
+					<div class='print-recipes-grid grid w-full grid-cols-1 gap-3 lg:grid-cols-2'>
+						{guides.map(({ id, guide }: { id: number; guide: Guide }) => (
+							<RecipeCard id={id} recipe={guide} kind='Guía' color='#8CB7A4' />
+						))}
+					</div>
+				) : (
+					<p class='mb-4 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center text-lg text-gray-600'>
+						No hay guías cargadas todavía.
 					</p>
 				)
 			}

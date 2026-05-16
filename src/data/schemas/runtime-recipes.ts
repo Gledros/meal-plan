@@ -1,14 +1,58 @@
 import { access, readdir, readFile } from "node:fs/promises";
 import path from "node:path";
-import type { ZodType } from "astro/zod";
+import { z, type ZodType } from "astro/zod";
 import {
+	NutritionSchema,
 	RecipeSchema,
 	SmoothieSchema,
+	ValidationSchema,
 	type MealDinnerRecipe,
 	type SmoothieRecipe,
 } from "./recipes";
+import { GuideSchema, type Guide } from "./guides";
+import { IngredientUnitSchema, ReferenceIdentitySchema, TimeSchema } from "./common";
 
 export type { MealDinnerRecipe, SmoothieRecipe };
+
+const ExtraIngredientRuntimeSchema = z
+	.object({
+		clave: z.string().min(1),
+		nombre: z.string().min(1),
+		cantidad: z.number(),
+		unidad: IngredientUnitSchema,
+		estado: z.string().optional(),
+		nota: z.string().optional(),
+		enlace: z.string().optional(),
+		equivalente_g: z.number().optional(),
+		equivalente_ml: z.number().optional(),
+	})
+	.transform(({ nota, estado, ...ingredient }) => ({
+		...ingredient,
+		estado: estado ?? nota ?? "",
+	}));
+
+const ExtraRuntimeSchema = ReferenceIdentitySchema.extend({
+	nombre: z.string().min(1),
+	descripcion: z.string().optional(),
+	rinde: z.string().optional(),
+	tiempo_preparacion: TimeSchema,
+	tiempo_cocinado: TimeSchema,
+	informacion_nutricional: NutritionSchema.optional(),
+	informacion_nutricional_por_racion: NutritionSchema.optional(),
+	ingredientes: z.array(ExtraIngredientRuntimeSchema),
+	pasos: z.array(z.string()),
+	notas: z.array(z.string()),
+	validacion: ValidationSchema.optional(),
+	tipo: z.string().optional(),
+	pagina: z.union([z.number(), z.string()]).optional(),
+}).transform(({ informacion_nutricional_por_racion, ...extra }) => ({
+	...extra,
+	informacion_nutricional:
+		extra.informacion_nutricional ?? informacion_nutricional_por_racion,
+}));
+
+export type ExtraRecipe = z.infer<typeof ExtraRuntimeSchema>;
+export type GuideRecipe = Guide;
 
 export interface SmoothieListItem {
 	id: number;
@@ -30,14 +74,26 @@ export interface DinnerListItem {
 	dinner: MealDinnerRecipe;
 }
 
+export interface ExtraListItem {
+	id: number;
+	extra: ExtraRecipe;
+}
+
+export interface GuideListItem {
+	id: number;
+	guide: GuideRecipe;
+}
+
 export interface RuntimeRecipes {
 	smoothies: SmoothieListItem[];
 	breakfasts: BreakfastListItem[];
 	meals: MealListItem[];
 	dinners: DinnerListItem[];
+	extras: ExtraListItem[];
+	guides: GuideListItem[];
 }
 
-type RecipePrefix = "s" | "b" | "m" | "d";
+type RecipePrefix = "s" | "b" | "m" | "d" | "e" | "g";
 
 interface RecipeConfig<T> {
 	folder: string;
@@ -162,7 +218,7 @@ const readRecipeGroup = async <T>(
 export const loadRecipesFromDisk = async (): Promise<RuntimeRecipes> => {
 	const recipesDir = await resolveRecipesDir();
 
-	const [smoothiesRaw, breakfastsRaw, mealsRaw, dinnersRaw] = await Promise.all([
+	const [smoothiesRaw, breakfastsRaw, mealsRaw, dinnersRaw, extrasRaw, guidesRaw] = await Promise.all([
 		readRecipeGroup(recipesDir, {
 			folder: "smoothies",
 			prefix: "s",
@@ -184,6 +240,18 @@ export const loadRecipesFromDisk = async (): Promise<RuntimeRecipes> => {
 			prefix: "d",
 			schema: RecipeSchema,
 		}),
+		readRecipeGroup(recipesDir, {
+			folder: "extras",
+			prefix: "e",
+			schema: ExtraRuntimeSchema,
+			optional: true,
+		}),
+		readRecipeGroup(recipesDir, {
+			folder: "guides",
+			prefix: "g",
+			schema: GuideSchema,
+			optional: true,
+		}),
 	]);
 
 	return {
@@ -191,5 +259,7 @@ export const loadRecipesFromDisk = async (): Promise<RuntimeRecipes> => {
 		breakfasts: breakfastsRaw.map(({ id, data }) => ({ id, breakfast: data })),
 		meals: mealsRaw.map(({ id, data }) => ({ id, meal: data })),
 		dinners: dinnersRaw.map(({ id, data }) => ({ id, dinner: data })),
+		extras: extrasRaw.map(({ id, data }) => ({ id, extra: data })),
+		guides: guidesRaw.map(({ id, data }) => ({ id, guide: data })),
 	};
 };
