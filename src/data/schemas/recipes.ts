@@ -1,5 +1,6 @@
 import { z } from "astro/zod";
 import { hexColorSchema } from "@util";
+import { BaseIngredientSchema, ReferenceIdentitySchema, TimeSchema } from "./common";
 
 export const NutritionSchema = z.object({
 	kcal: z.number(),
@@ -8,19 +9,8 @@ export const NutritionSchema = z.object({
 	proteina_g: z.number(),
 });
 
-export const TimeSchema = z.object({
-	tiempo: z.number(),
-	unidad: z.enum(["minutes", "hours", "days"]),
-	notas: z.string(),
-});
-
-export const IngredientSchema = z.object({
-	clave: z.string().min(1),
-	nombre: z.string().min(1),
-	cantidad: z.number(),
-	unidad: z.enum(["g", "kg", "ml", "l", "tbsp", "tsp", "piece", "clove", "bunch", "cup", "pinch"]),
+export const IngredientSchema = BaseIngredientSchema.extend({
 	equivalente_g: z.number(),
-	estado: z.string(),
 	enlace: z.string().optional(),
 });
 
@@ -39,9 +29,7 @@ export const SmoothieSchema = z.object({
 	color: hexColorSchema,
 });
 
-export const RecipeSchema = z.object({
-	id: z.number().int().positive(),
-	referencia: z.string().min(1),
+export const RecipeSchema = ReferenceIdentitySchema.extend({
 	nombre: z.string(),
 	descripcion: z.string().optional(),
 	rinde: z.string().optional(),
