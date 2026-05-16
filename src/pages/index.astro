@@ -267,7 +267,6 @@ const preparationWeeks = [
 	(() => {
 		const HEADER_SELECTOR = '[data-tabs-sticky-header]';
 		const PANEL_SELECTOR = '[data-tabs-track] > [data-tab-panel]';
-		const desktopQuery = window.matchMedia('(min-width: 1024px)');
 		const header = document.querySelector(HEADER_SELECTOR);
 
 		if (!(header instanceof HTMLElement)) {
@@ -283,8 +282,7 @@ const preparationWeeks = [
 			const headerHeight = header.getBoundingClientRect().height;
 			header.style.setProperty('--sticky-header-height', `${headerHeight}px`);
 
-			const headerSpace =
-				desktopQuery.matches && isHeaderHidden ? 0 : headerHeight;
+			const headerSpace = isHeaderHidden ? 0 : headerHeight;
 			rootElement.style.setProperty(
 				'--sticky-header-space',
 				`${Math.max(0, headerSpace)}px`,
@@ -324,11 +322,6 @@ const preparationWeeks = [
 				: currentScrollTop;
 			panelScrollState.set(panel, currentScrollTop);
 
-			if (!desktopQuery.matches) {
-				setHeaderHidden(false);
-				return;
-			}
-
 			const delta = currentScrollTop - previousScrollTop;
 			const reachedTopFromScrollUp =
 				currentScrollTop <= 8 && previousScrollTop > 8 && delta < 0;
@@ -341,9 +334,10 @@ const preparationWeeks = [
 		};
 
 		const bindPanelScrollListeners = () => {
-			const panels = mainTabsRoot instanceof HTMLElement
-				? mainTabsRoot.querySelectorAll(PANEL_SELECTOR)
-				: document.querySelectorAll(PANEL_SELECTOR);
+			const panels =
+				mainTabsRoot instanceof HTMLElement
+					? mainTabsRoot.querySelectorAll(PANEL_SELECTOR)
+					: document.querySelectorAll(PANEL_SELECTOR);
 			for (const panel of panels) {
 				if (!(panel instanceof HTMLElement)) {
 					continue;
@@ -364,17 +358,11 @@ const preparationWeeks = [
 		const syncHeaderState = () => {
 			updateHeaderLayoutVars();
 			bindPanelScrollListeners();
-
-			if (!desktopQuery.matches) {
-				setHeaderHidden(false);
-			}
 		};
 
 		window.addEventListener('resize', syncHeaderState, {
 			passive: true,
 		});
-
-		desktopQuery.addEventListener('change', syncHeaderState);
 
 		if ('ResizeObserver' in window) {
 			const headerObserver = new ResizeObserver(() => {
@@ -402,10 +390,8 @@ const preparationWeeks = [
 		transition: transform 220ms ease;
 	}
 
-	@media (min-width: 1024px) {
-		[data-tabs-sticky-header].is-scroll-hidden {
-			transform: translateY(calc(-100% - 0.5rem));
-			pointer-events: none;
-		}
+	[data-tabs-sticky-header].is-scroll-hidden {
+		transform: translateY(calc(-100% - 0.5rem));
+		pointer-events: none;
 	}
 </style>

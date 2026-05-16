@@ -494,11 +494,6 @@ const defaultTabId = tabs[0]?.id ?? '';
 	}
 
 	@media (max-width: 640px) {
-		:global([data-tabs-sticky-header]) {
-			position: static !important;
-			top: auto !important;
-		}
-
 		.tabs-list {
 			justify-content: stretch;
 			flex-wrap: wrap;
@@ -507,10 +502,6 @@ const defaultTabId = tabs[0]?.id ?? '';
 			padding: 0.625rem;
 			border-width: 1px;
 			border-top-width: 0;
-			position: sticky;
-			top: 0;
-			left: 0;
-			width: 100%;
 		}
 
 		.tabs-trigger {
