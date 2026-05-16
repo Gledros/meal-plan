@@ -618,7 +618,7 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 	}
 	.ingredients-modal__panel {
 		width: min(72rem, 92vw);
-		max-height: none;
+		max-height: calc(100dvh - 2.5rem);
 		border-radius: 1rem;
 		border: 1px solid #e2e8f0;
 		background: #ffffff;
@@ -696,9 +696,15 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 		padding: 1rem 1.15rem 1.2rem;
 		flex: 1 1 auto;
 		min-height: 0;
-		overflow: visible;
+		overflow-y: auto;
+		overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;
 	}
 	/* Override TabsSlider to render as a centered static pill row inside the modal */
+	.ingredients-modal__content :global(.tabs-slider) {
+		height: auto !important;
+		min-height: 0 !important;
+	}
 	.ingredients-modal__content :global(.tabs-list) {
 		position: relative !important;
 		top: auto !important;
@@ -706,7 +712,7 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 		transform: none !important;
 		width: fit-content !important;
 		max-width: 100%;
-		margin: 0 auto 0.95rem !important;
+		margin: 0 auto 0.45rem !important;
 		z-index: 1 !important;
 		border: 1px solid #e2e8f0 !important;
 		border-top: 1px solid #e2e8f0 !important;
@@ -722,6 +728,30 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 	}
 	.ingredients-modal__content :global(.tabs-viewport) {
 		padding-top: 0 !important;
+		height: auto !important;
+		overflow: visible !important;
+	}
+	.ingredients-modal__content :global(.tabs-track) {
+		display: block !important;
+		height: auto !important;
+		transform: none !important;
+		transition: none !important;
+	}
+	.ingredients-modal__content :global(.tabs-track > [data-tab-panel]) {
+		padding-top: 0 !important;
+		height: auto !important;
+		overflow: visible !important;
+		scrollbar-gutter: auto !important;
+		width: 100% !important;
+		flex: 0 0 auto !important;
+	}
+	.ingredients-modal__content
+		:global(.tabs-track > [data-tab-panel][aria-hidden='true']) {
+		display: none !important;
+	}
+	.ingredients-modal__content
+		:global(.tabs-track > [data-tab-panel][aria-hidden='false']) {
+		display: block !important;
 	}
 	.ingredients-modal__content :global(.tabs-controls) {
 		display: none !important;

@@ -275,6 +275,7 @@ const preparationWeeks = [
 		}
 
 		const rootElement = document.documentElement;
+		const mainTabsRoot = header.nextElementSibling;
 		let isHeaderHidden = false;
 		const panelScrollState = new WeakMap();
 
@@ -306,6 +307,13 @@ const preparationWeeks = [
 				return;
 			}
 
+			if (
+				mainTabsRoot instanceof HTMLElement &&
+				!mainTabsRoot.contains(panel)
+			) {
+				return;
+			}
+
 			if (panel.getAttribute('aria-hidden') === 'true') {
 				return;
 			}
@@ -333,7 +341,9 @@ const preparationWeeks = [
 		};
 
 		const bindPanelScrollListeners = () => {
-			const panels = document.querySelectorAll(PANEL_SELECTOR);
+			const panels = mainTabsRoot instanceof HTMLElement
+				? mainTabsRoot.querySelectorAll(PANEL_SELECTOR)
+				: document.querySelectorAll(PANEL_SELECTOR);
 			for (const panel of panels) {
 				if (!(panel instanceof HTMLElement)) {
 					continue;
