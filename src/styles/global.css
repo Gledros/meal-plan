@@ -5,6 +5,35 @@
 	--breakpoint-sm: 31.3125rem;
 }
 
+:root {
+	--surface-translucent-bg: rgba(255, 255, 255, 0.82);
+	--surface-translucent-border: rgba(184, 184, 185, 0.9);
+	--surface-translucent-blur: 6px;
+}
+
+[data-tabs-sticky-header] {
+	background: var(--surface-translucent-bg);
+	backdrop-filter: blur(var(--surface-translucent-blur));
+	-webkit-backdrop-filter: blur(var(--surface-translucent-blur));
+	border-color: var(--surface-translucent-border);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--surface-translucent-bg: rgba(0, 0, 0, 0.72);
+		--surface-translucent-border: rgba(163, 163, 163, 0.45);
+	}
+
+	[data-tabs-sticky-header] {
+		color: #f8fafc;
+		border-bottom-color: rgba(163, 163, 163, 0.75);
+	}
+
+	[data-tabs-sticky-header] p {
+		color: #cbd5e1 !important;
+	}
+}
+
 @media print {
 	@page {
 		size: letter portrait;

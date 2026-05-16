@@ -104,8 +104,6 @@ const defaultTabId = tabs[0]?.id ?? '';
 				return;
 			}
 
-			root.setAttribute(INIT_ATTR, 'true');
-
 			const panelIds = panels.map(
 				(panel) => panel.getAttribute('data-tab-panel') ?? '',
 			);
@@ -132,6 +130,10 @@ const defaultTabId = tabs[0]?.id ?? '';
 					'--tabs-list-height',
 					`${tabsList.getBoundingClientRect().height}px`,
 				);
+
+				const viewportTop = viewport.getBoundingClientRect().top;
+				const viewportHeight = Math.max(0, window.innerHeight - viewportTop);
+				root.style.setProperty('--tabs-viewport-height', `${viewportHeight}px`);
 			};
 
 			const setActiveTab = (nextIndex, smooth) => {
@@ -140,8 +142,10 @@ const defaultTabId = tabs[0]?.id ?? '';
 				}
 
 				activeIndex = nextIndex;
-				track.style.transition = 'none';
-				track.style.transform = 'none';
+				track.style.transition = smooth
+					? 'transform 320ms cubic-bezier(0.22, 1, 0.36, 1)'
+					: 'none';
+				track.style.transform = `translate3d(${-activeIndex * 100}%, 0, 0)`;
 
 				buttons.forEach((button, index) => {
 					const isActive = index === activeIndex;
@@ -153,7 +157,8 @@ const defaultTabId = tabs[0]?.id ?? '';
 				panels.forEach((panel, index) => {
 					const isActive = index === activeIndex;
 					panel.setAttribute('aria-hidden', String(!isActive));
-					panel.style.display = isActive ? 'block' : 'none';
+					panel.toggleAttribute('inert', !isActive);
+					panel.style.display = 'block';
 				});
 			};
 
@@ -216,6 +221,7 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 			setTabsOffsets();
 			setActiveTab(activeIndex, false);
+			root.setAttribute(INIT_ATTR, 'true');
 
 			// Multiplier logic: update ingredient quantities shown in panels
 			const MULTIPLIER_EVENT = 'portions-multiplier:change';
@@ -273,7 +279,18 @@ const defaultTabId = tabs[0]?.id ?? '';
 				const detail = event instanceof CustomEvent ? event.detail : null;
 				updateQuantities(parseMultiplier(detail?.multiplier));
 			});
-			updateQuantities(getCurrentMultiplier());
+
+			const runInitialQuantitiesUpdate = () => {
+				updateQuantities(getCurrentMultiplier());
+			};
+
+			if ('requestIdleCallback' in window) {
+				window.requestIdleCallback(runInitialQuantitiesUpdate, {
+					timeout: 180,
+				});
+			} else {
+				requestAnimationFrame(runInitialQuantitiesUpdate);
+			}
 		};
 
 		const initTabsSliders = () => {
@@ -283,17 +300,13 @@ const defaultTabId = tabs[0]?.id ?? '';
 			}
 		};
 
+		initTabsSliders();
+
 		if (document.readyState === 'loading') {
 			document.addEventListener('DOMContentLoaded', initTabsSliders, {
 				once: true,
 			});
-		} else {
-			initTabsSliders();
 		}
-
-		requestAnimationFrame(() => {
-			initTabsSliders();
-		});
 	})();
 </script>
 
@@ -302,6 +315,7 @@ const defaultTabId = tabs[0]?.id ?? '';
 		width: 100%;
 		--tabs-sticky-top: 0px;
 		--tabs-list-height: 0px;
+		--tabs-viewport-height: 100dvh;
 	}
 
 	.tabs-list {
@@ -313,14 +327,26 @@ const defaultTabId = tabs[0]?.id ?? '';
 		z-index: 9;
 		display: flex;
 		gap: 0.5rem;
-		/* overflow-x: hidden; */
 		padding: 0.75rem 0.5rem;
-		background: rgba(255, 255, 255, 0.92);
-		backdrop-filter: blur(6px);
-		border: 2px solid #b8b8b9;
+		background: var(--surface-translucent-bg, rgba(255, 255, 255, 0.92));
+		backdrop-filter: blur(var(--surface-translucent-blur, 6px));
+		-webkit-backdrop-filter: blur(var(--surface-translucent-blur, 6px));
+		border: 2px solid var(--surface-translucent-border, #b8b8b9);
 		border-top: none;
 		border-radius: 0 0 1.5rem 1.5rem;
 		scrollbar-width: thin;
+	}
+
+	.tabs-slider:not([data-tabs-initialized='true']) .tabs-list {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.tabs-slider[data-tabs-initialized='true'] .tabs-list {
+		opacity: 1;
+		visibility: visible;
+		transition: opacity 120ms ease;
 	}
 
 	.tabs-trigger {
@@ -354,16 +380,29 @@ const defaultTabId = tabs[0]?.id ?? '';
 	.tabs-viewport {
 		overflow: hidden;
 		width: 100%;
+		height: var(--tabs-viewport-height);
+		min-height: 0;
 		padding-top: var(--tabs-list-height);
 	}
 
 	.tabs-track {
-		display: block;
+		display: flex;
 		width: 100%;
+		height: 100%;
+		min-height: 0;
+		will-change: transform;
+		transform: translate3d(0, 0, 0);
 	}
 
 	.tabs-track :global([data-tab-panel]) {
+		flex: 0 0 100%;
 		width: 100%;
+		height: 100%;
+		min-height: 0;
+		overflow-y: auto;
+		overflow-x: hidden;
+		overscroll-behavior-y: contain;
+		-webkit-overflow-scrolling: touch;
 	}
 
 	.tabs-controls {
@@ -371,7 +410,7 @@ const defaultTabId = tabs[0]?.id ?? '';
 		align-items: center;
 		margin-left: 0;
 		padding-left: 0;
-		border-left: 1px solid #d1d5db;
+		border-left: none;
 	}
 
 	:global(.tabs-controls-label) {
@@ -422,18 +461,23 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 	@media (min-width: 1024px) {
 		.tabs-controls {
-			margin-left: 0.5rem;
+			margin-left: auto;
 			padding-left: 0.75rem;
 			order: 0;
 			flex: 0 0 auto;
+		}
+
+		.tabs-trigger {
+			flex: 0 1 auto;
 		}
 	}
 
 	@media (min-width: 1024px) {
 		.tabs-list {
-			left: 50%;
-			transform: translateX(-50%);
-			width: min(92vw, 78rem);
+			left: 1rem;
+			right: 1rem;
+			width: auto;
+			transform: none;
 		}
 	}
 
@@ -483,10 +527,15 @@ const defaultTabId = tabs[0]?.id ?? '';
 		.tabs-track {
 			display: block !important;
 			transform: none !important;
+			transition: none !important;
 		}
 
 		.tabs-track :global([data-tab-panel]) {
 			width: 100% !important;
+			height: auto !important;
+			min-height: 0 !important;
+			overflow: visible !important;
+			flex: 0 0 auto !important;
 		}
 
 		.tabs-track :global([data-tab-panel]:not([aria-hidden='false'])) {

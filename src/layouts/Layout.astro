@@ -13,8 +13,34 @@ const { title = 'Plan alimenticio' } = Astro.props;
 		<meta charset='utf-8' />
 		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
 		<link rel='icon' href='/images/favicon.svg' />
+		<meta name='color-scheme' content='light dark' />
 		<meta name='viewport' content='width=device-width' />
 		<meta name='generator' content={Astro.generator} />
+		<style is:inline>
+			:root {
+				--surface-translucent-bg: rgba(255, 255, 255, 0.82);
+				--surface-translucent-border: rgba(184, 184, 185, 0.9);
+				--surface-translucent-blur: 6px;
+			}
+
+			[data-tabs-sticky-header] {
+				background: var(--surface-translucent-bg);
+				border-color: var(--surface-translucent-border);
+				backdrop-filter: blur(var(--surface-translucent-blur));
+				-webkit-backdrop-filter: blur(var(--surface-translucent-blur));
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--surface-translucent-bg: rgba(0, 0, 0, 0.72);
+					--surface-translucent-border: rgba(163, 163, 163, 0.45);
+				}
+
+				[data-tabs-sticky-header] {
+					border-bottom-color: rgba(163, 163, 163, 0.75);
+				}
+			}
+		</style>
 		<title>{title}</title>
 	</head>
 	<body>
