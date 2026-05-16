@@ -1,6 +1,5 @@
 ---
 import PortionMultiplier from './PortionMultiplier.astro';
-import TabsSlider from './TabsSlider.astro';
 import WeekPreparationModal from './WeekPreparationModal.astro';
 import type { WeekPrep } from '@data/schemas/week-preparation';
 import { formatUnitLabel } from '@util';
@@ -58,7 +57,7 @@ const categoryNames: Record<string, string> = {
 	frutas_verduras: 'Frutas y verduras',
 	refrigerados_congelados: 'Refrigerados / Congelados',
 	despensa: 'Despensa',
-	basicos: 'Básicos',
+	basicos: 'Basicos',
 };
 
 const desktopColumnOrder = [
@@ -192,6 +191,26 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 			<header class='ingredients-modal__header'>
 				<h2 aria-label={title}>{title}</h2>
 				<div class='ingredients-modal__actions'>
+					<div
+						class='ingredients-modal__week-tabs'
+						role='tablist'
+						aria-label='Semanas de lista de compras'
+					>
+						{
+							weekTabs.map((tab, index) => (
+								<button
+									type='button'
+									role='tab'
+									class={`ingredients-modal__week-tab ${index === 0 ? 'is-active' : ''}`}
+									data-tab-target={tab.id}
+									aria-selected={index === 0 ? 'true' : 'false'}
+									tabindex={index === 0 ? '0' : '-1'}
+								>
+									{tab.label}
+								</button>
+							))
+						}
+					</div>
 					<button
 						type='button'
 						class='ingredients-modal__reset'
@@ -204,7 +223,7 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 						weeks={preparationWeeks}
 						defaultWeekId={defaultWeekId}
 						title='Preparacion de la semana'
-						triggerLabel='Preparación'
+						triggerLabel='Preparacion'
 					/>
 					<PortionMultiplier
 						id={`${modalBaseId}-multiplier`}
@@ -225,80 +244,78 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 				</div>
 			</header>
 			<div class='ingredients-modal__content'>
-				<TabsSlider tabs={weekTabs} ariaLabel='Semanas de lista de compras'>
-					{
-						resolvedWeeks.map((weekConfig) => (
-							<section
-								data-tab-panel={weekConfig.id}
-								data-ingredients-storage-key={weekConfig.storageKey}
-								class='p-1 md:p-2'
-							>
-								<div class='ingredients-modal__body'>
-									{weekConfig.sectionColumns.map((columnKeys) => (
-										<div class='ingredients-modal__column'>
-											{columnKeys.map((key) => {
-												const category = weekConfig.week[key];
-												if (!isWeekCategory(category)) return null;
-												return (
-													<section
-														class={`ingredients-modal__section ingredients-modal__section--${key}`}
-													>
-														<h3 class='font-bold text-xl'>
-															{categoryNames[key] ?? key}
-														</h3>
-														{category.notas ? (
-															<details class='ingredients-modal__notes'>
-																<summary>Notas</summary>
-																<p>{category.notas}</p>
-															</details>
-														) : null}
-														<ul class='ingredients-modal__list'>
-															{category.lista.map((item, index) => (
-																<li
-																	data-qty-base={item.cantidad}
-																	data-qty-unit={item.unidad}
-																	data-ingredient-id={getIngredientId(
-																		weekConfig.id,
-																		key,
-																		item,
-																		index,
-																	)}
-																>
-																	<label class='ingredients-modal__item'>
-																		<input
-																			type='checkbox'
-																			class='ingredients-modal__checkbox'
-																			data-ingredient-checkbox
-																		/>
-																		<span class='ingredients-modal__item-text'>
-																			<span class='ingredients-qty-value'>
-																				{item.cantidad}
+				{
+					resolvedWeeks.map((weekConfig) => (
+						<section
+							data-tab-panel={weekConfig.id}
+							data-ingredients-storage-key={weekConfig.storageKey}
+							class='p-1 md:p-2'
+						>
+							<div class='ingredients-modal__body'>
+								{weekConfig.sectionColumns.map((columnKeys) => (
+									<div class='ingredients-modal__column'>
+										{columnKeys.map((key) => {
+											const category = weekConfig.week[key];
+											if (!isWeekCategory(category)) return null;
+											return (
+												<section
+													class={`ingredients-modal__section ingredients-modal__section--${key}`}
+												>
+													<h3 class='font-bold text-xl'>
+														{categoryNames[key] ?? key}
+													</h3>
+													{category.notas ? (
+														<details class='ingredients-modal__notes'>
+															<summary>Notas</summary>
+															<p>{category.notas}</p>
+														</details>
+													) : null}
+													<ul class='ingredients-modal__list'>
+														{category.lista.map((item, index) => (
+															<li
+																data-qty-base={item.cantidad}
+																data-qty-unit={item.unidad}
+																data-ingredient-id={getIngredientId(
+																	weekConfig.id,
+																	key,
+																	item,
+																	index,
+																)}
+															>
+																<label class='ingredients-modal__item'>
+																	<input
+																		type='checkbox'
+																		class='ingredients-modal__checkbox'
+																		data-ingredient-checkbox
+																	/>
+																	<span class='ingredients-modal__item-text'>
+																		<span class='ingredients-qty-value'>
+																			{item.cantidad}
+																		</span>
+																		{item.unidad ? (
+																			<span class='ingredients-qty-unit'>
+																				{' '}
+																				{displayUnit(
+																					item.unidad,
+																					item.cantidad,
+																				)}
 																			</span>
-																			{item.unidad ? (
-																				<span class='ingredients-qty-unit'>
-																					{' '}
-																					{displayUnit(
-																						item.unidad,
-																						item.cantidad,
-																					)}
-																				</span>
-																			) : null}{' '}
+																		) : null}{' '}
 																			— {item.nombre}
 																		</span>
-																	</label>
-																</li>
-															))}
-														</ul>
-													</section>
-												);
-											})}
-										</div>
-									))}
-								</div>
-							</section>
-						))
-					}
-				</TabsSlider>
+																</label>
+															</li>
+														))}
+													</ul>
+												</section>
+											);
+										})}
+									</div>
+								))}
+							</div>
+						</section>
+					))
+				}
 			</div>
 		</section>
 	</div>
@@ -448,6 +465,24 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 			let activeWeekId =
 				root.getAttribute('data-ingredients-default-week') ?? '';
 
+			const syncWeekTabsState = () => {
+				weekButtons.forEach((button) => {
+					const targetWeek = button.getAttribute('data-tab-target') ?? '';
+					const isActive = targetWeek === activeWeekId;
+					button.setAttribute('aria-selected', String(isActive));
+					button.setAttribute('tabindex', isActive ? '0' : '-1');
+					button.classList.toggle('is-active', isActive);
+				});
+
+				weekPanels.forEach((panel) => {
+					const panelWeek = panel.getAttribute('data-tab-panel') ?? '';
+					const isActive = panelWeek === activeWeekId;
+					panel.setAttribute('aria-hidden', String(!isActive));
+					panel.toggleAttribute('inert', !isActive);
+					panel.style.display = isActive ? 'block' : 'none';
+				});
+			};
+
 			const getActivePanel = () =>
 				weekPanels.find(
 					(panel) => panel.getAttribute('data-tab-panel') === activeWeekId,
@@ -459,6 +494,7 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 				if (!nextWeekId) return;
 				activeWeekId = nextWeekId;
 				root.setAttribute('data-active-week', activeWeekId);
+				syncWeekTabsState();
 				const activePanel = getActivePanel();
 				if (activePanel) applyChecklistStateToPanel(activePanel);
 				updateModalQuantities(getCurrentMultiplier());
@@ -535,6 +571,7 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 					const nextButton = weekButtons[nextIndex];
 					const targetWeek = nextButton?.getAttribute('data-tab-target') ?? '';
 					setActiveWeek(targetWeek);
+					nextButton?.focus();
 				});
 			});
 
@@ -545,7 +582,7 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 				if (!(activePanel instanceof HTMLElement)) return;
 
 				const confirmed = window.confirm(
-					'¿Quieres reiniciar la lista de esta SEMANA?',
+					'Quieres reiniciar la lista de esta SEMANA?',
 				);
 				if (!confirmed) return;
 
@@ -655,6 +692,39 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 		margin-left: auto;
 		justify-content: flex-end;
 	}
+	.ingredients-modal__week-tabs {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+		flex-wrap: wrap;
+		border: 1px solid #e2e8f0;
+		border-radius: 0.75rem;
+		background: #f8fafc;
+		padding: 0.3rem;
+	}
+	.ingredients-modal__week-tab {
+		border-radius: 9999px;
+		border: 1px solid #b8b8b9;
+		background: #f9fafb;
+		color: #374151;
+		font-size: 0.84rem;
+		font-weight: 700;
+		line-height: 1;
+		padding: 0.42rem 0.72rem;
+		cursor: pointer;
+		transition:
+			background-color 180ms ease,
+			color 180ms ease,
+			border-color 180ms ease;
+	}
+	.ingredients-modal__week-tab:hover {
+		background: #f3f4f6;
+	}
+	.ingredients-modal__week-tab.is-active {
+		border-color: #439b44;
+		background: #439b44;
+		color: #ffffff;
+	}
 	.ingredients-modal__reset {
 		border-radius: 0.65rem;
 		border: 1px solid #f59e0b;
@@ -700,68 +770,8 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
 	}
-	/* Override TabsSlider to render as a centered static pill row inside the modal */
-	.ingredients-modal__content :global(.tabs-slider) {
-		height: auto !important;
-		min-height: 0 !important;
-	}
-	.ingredients-modal__content :global(.tabs-list) {
-		position: relative !important;
-		top: auto !important;
-		left: auto !important;
-		transform: none !important;
-		width: fit-content !important;
-		max-width: 100%;
-		margin: 0 auto 0.45rem !important;
-		z-index: 1 !important;
-		border: 1px solid #e2e8f0 !important;
-		border-top: 1px solid #e2e8f0 !important;
-		border-radius: 9999px !important;
-		background: #f8fafc !important;
-		backdrop-filter: none !important;
-		padding: 0.3rem !important;
-		gap: 0.25rem !important;
-		flex-wrap: nowrap !important;
-		justify-content: center !important;
-		overflow-x: auto;
-		scrollbar-width: thin;
-	}
-	.ingredients-modal__content :global(.tabs-viewport) {
-		padding-top: 0 !important;
-		height: auto !important;
-		overflow: visible !important;
-	}
-	.ingredients-modal__content :global(.tabs-track) {
-		display: block !important;
-		height: auto !important;
-		transform: none !important;
-		transition: none !important;
-	}
-	.ingredients-modal__content :global(.tabs-track > [data-tab-panel]) {
-		padding-top: 0 !important;
-		height: auto !important;
-		overflow: visible !important;
-		scrollbar-gutter: auto !important;
-		width: 100% !important;
-		flex: 0 0 auto !important;
-	}
-	.ingredients-modal__content
-		:global(.tabs-track > [data-tab-panel][aria-hidden='true']) {
-		display: none !important;
-	}
-	.ingredients-modal__content
-		:global(.tabs-track > [data-tab-panel][aria-hidden='false']) {
-		display: block !important;
-	}
-	.ingredients-modal__content :global(.tabs-controls) {
-		display: none !important;
-	}
-	.ingredients-modal__content :global(.tabs-trigger) {
-		flex: 0 0 auto !important;
-		min-width: unset !important;
-		padding: 0.38rem 0.72rem !important;
-		font-size: 0.84rem !important;
-		font-weight: 700 !important;
+	.ingredients-modal__content > [data-tab-panel] {
+		padding-top: 0;
 	}
 	.ingredients-modal__body {
 		display: grid;
@@ -834,7 +844,7 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 		display: none;
 	}
 	.ingredients-modal__notes summary::after {
-		content: '▾';
+		content: 'v';
 		display: inline-block;
 		margin-left: 0.35rem;
 		transition: transform 120ms ease-in-out;
@@ -884,15 +894,15 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 			width: 100%;
 			justify-content: center;
 		}
-		.ingredients-modal__content :global(.tabs-list) {
-			flex-wrap: nowrap !important;
-			width: fit-content !important;
+		.ingredients-modal__week-tabs {
+			width: 100%;
+			justify-content: stretch;
 		}
-		.ingredients-modal__content :global(.tabs-trigger) {
-			flex: 0 0 auto !important;
-			min-width: unset !important;
-			width: auto !important;
-			white-space: nowrap !important;
+		.ingredients-modal__week-tab {
+			flex: 1 1 calc(50% - 0.25rem);
+			min-width: calc(50% - 0.25rem);
+			text-align: center;
+			white-space: normal;
 		}
 		.ingredients-modal__body {
 			grid-template-columns: 1fr;
@@ -917,20 +927,17 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 	}
 
 	@media (min-width: 31.3125rem) and (max-width: 47.999rem) {
-		.ingredients-modal__content :global(.tabs-list) {
-			width: 100% !important;
+		.ingredients-modal__week-tabs {
+			width: 100%;
 			max-width: 28rem;
-			flex-wrap: wrap !important;
-			justify-content: stretch !important;
-			overflow-x: hidden !important;
+			justify-content: stretch;
 		}
 
-		.ingredients-modal__content :global(.tabs-trigger) {
-			flex: 1 1 calc(50% - 0.25rem) !important;
-			min-width: calc(50% - 0.25rem) !important;
-			width: auto !important;
-			text-align: center !important;
-			white-space: normal !important;
+		.ingredients-modal__week-tab {
+			flex: 1 1 calc(50% - 0.25rem);
+			min-width: calc(50% - 0.25rem);
+			text-align: center;
+			white-space: normal;
 		}
 	}
 </style>
