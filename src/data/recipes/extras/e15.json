@@ -1,0 +1,64 @@
+{
+  "id": 15,
+  "referencia": "e015",
+  "nombre": "Mezcla crujiente de semillas",
+  "rinde": "≈ 1 onzas",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 57,
+    "grasas_g": 5,
+    "carbohidratos_g": 1.83,
+    "proteina_g": 1.9
+  },
+  "ingredientes": [
+    {
+      "clave": "pepitas",
+      "nombre": "Pepitas (semillas de calabaza)",
+      "cantidad": 78,
+      "unidad": "g",
+      "estado": "2¾ onzas, dividir en 2 porciones para tostar"
+    },
+    {
+      "clave": "sunflower_seeds",
+      "nombre": "Semillas de girasol",
+      "cantidad": 4,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "sea_salt_flakes",
+      "nombre": "Hojuelas de sal marina",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "vegetable_oil",
+      "nombre": "Aceite vegetal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Calienta una sartén a fuego medio.",
+    "Añade la mitad de las pepitas y la mitad de las semillas de girasol y tuesta 1–2 minutos por lado, removiendo para que no se quemen.",
+    "Repite con la segunda mitad de las semillas.",
+    "Coloca las semillas tostadas en un bol, espolvorea la mitad de la sal y añade la mitad del aceite; mezcla para cubrir.",
+    "Repite con la otra mitad de sal y aceite. Deja enfriar completamente.",
+    "Guarda en un recipiente hermético hasta 1 mes."
+  ],
+  "notas": [
+    "Tostar en dos tandas asegura que todas las semillas se doren de forma uniforme y no se quemen.",
+    "Conservar en envase hermético para mantener el crujiente."
+  ]
+}

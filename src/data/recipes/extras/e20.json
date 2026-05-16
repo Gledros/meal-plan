@@ -1,0 +1,76 @@
+{
+  "id": 20,
+  "referencia": "e020",
+  "nombre": "Queso crema de tofu",
+  "rinde": "≈ 1 taza",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 114,
+    "grasas_g": 9.77,
+    "carbohidratos_g": 2.34,
+    "proteina_g": 6.04
+  },
+  "ingredientes": [
+    {
+      "clave": "extra_firm_silken_tofu",
+      "nombre": "Tofu sedoso extra firme",
+      "cantidad": 198,
+      "unidad": "g",
+      "estado": "≈ 7 onzas, prensado para eliminar exceso de líquido"
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "equivalente_g": 30,
+      "estado": ""
+    },
+    {
+      "clave": "apple_cider_vinegar",
+      "nombre": "Vinagre de sidra de manzana",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de limón",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "estado": "zumo de ½ limón"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    },
+    {
+      "clave": "nutritional_yeast",
+      "nombre": "Levadura nutricional",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Coloca todos los ingredientes en un procesador de alimentos o licuadora.",
+    "Tritura 2–3 minutos hasta obtener una crema suave y sin grumos; prueba y ajusta de sal o zumo de limón si es necesario.",
+    "Enfría en el frigorífico hasta 5 días."
+  ],
+  "notas": [
+    "Prensar el tofu previamente mejora la textura final al eliminar exceso de agua.",
+    "La levadura nutricional aporta sabor 'a queso' y umami; ajusta cantidad al gusto."
+  ]
+}

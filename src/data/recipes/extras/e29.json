@@ -1,0 +1,78 @@
+{
+  "id": 29,
+  "referencia": "e029",
+  "nombre": "Galletas de aceite de oliva",
+  "rinde": "8",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 8,
+    "unidad": "minutes",
+    "notas": "Hornear 8 minutos por tanda hasta dorar"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 113,
+    "grasas_g": 5.26,
+    "carbohidratos_g": 14.22,
+    "proteina_g": 2.03
+  },
+  "ingredientes": [
+    {
+      "clave": "all_purpose_flour",
+      "nombre": "Harina todo uso",
+      "cantidad": 128,
+      "unidad": "g",
+      "estado": "más extra para trabajar"
+    },
+    {
+      "clave": "semolina",
+      "nombre": "Sémola",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.25,
+      "unidad": "cup",
+      "estado": "¼ taza + extra para pincelar"
+    },
+    {
+      "clave": "sea_salt_flakes",
+      "nombre": "Hojuelas de sal marina",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "rosemary_leaves",
+      "nombre": "Hojas de romero finamente picadas",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "warm_water",
+      "nombre": "Agua tibia",
+      "cantidad": 0.333,
+      "unidad": "cup",
+      "estado": "≈ 1/3 taza (para unir la masa)"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 350°F (≈175°C).",
+    "Combina las harinas y la sémola en un bol; añade la sal y el romero picado.",
+    "Añade el aceite de oliva y mezcla con 1/3 taza de agua tibia hasta formar una masa; amasa 6–8 minutos sobre superficie enharinada.",
+    "Divide la masa en 2 bolas y estira cada una con rodillo hasta obtener una lámina muy fina; corta en tiras o formas alargadas.",
+    "Coloca en bandeja forrada, pincela con un poco de aceite y espolvorea con sal y romero adicional.",
+    "Hornea 6–8 minutos o hasta que estén doradas y crujientes. Repite con la masa restante. Deja enfriar y conserva en envase hermético 1–2 días."
+  ],
+  "notas": [
+    "Estirar muy fino y hornear a alta temperatura ayuda a obtener galletas crujientes.",
+    "Servir con dips o como acompañamiento de salsas y untables."
+  ]
+}

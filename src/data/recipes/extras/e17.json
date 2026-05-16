@@ -1,0 +1,63 @@
+{
+  "id": 17,
+  "referencia": "e017",
+  "nombre": "Garbanzos asados con sumac",
+  "rinde": "≈ 15½ onzas (ingredientes)",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 45,
+    "unidad": "minutes",
+    "notas": "Tostar hasta crujientes (40–45 min)"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 215,
+    "grasas_g": 4.17,
+    "carbohidratos_g": 34.62,
+    "proteina_g": 11.26
+  },
+  "ingredientes": [
+    {
+      "clave": "tinned_chickpeas",
+      "nombre": "Garbanzos (en lata o cocidos)",
+      "cantidad": 439,
+      "unidad": "g",
+      "estado": "15½ onzas ≈ 439 g, bien escurridos"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "estado": "½ cucharada"
+    },
+    {
+      "clave": "sea_salt_flakes",
+      "nombre": "Hojuelas de sal marina",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "sumac",
+      "nombre": "Sumac (especia)",
+      "cantidad": 1.5,
+      "unidad": "tsp",
+      "estado": "1½ cucharaditas"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 350°F (≈175°C).",
+    "Escurre y seca bien los garbanzos con papel de cocina para eliminar la humedad superficial.",
+    "En un bol, mezcla los garbanzos secos con el aceite, la sal y el sumac hasta que estén cubiertos uniformemente.",
+    "Extiende los garbanzos en una sola capa sobre una bandeja de horno forrada. Asa 40–45 minutos, removiendo o agitando la bandeja ocasionalmente, hasta que estén crujientes y dorados.",
+    "Deja enfriar y guarda en un recipiente hermético hasta 1 mes."
+  ],
+  "notas": [
+    "Secar bien los garbanzos antes de hornear ayuda a que queden crujientes.",
+    "Ajusta la cantidad de sumac o sal al gusto; también puedes añadir otras especias (pimentón, comino)."
+  ]
+}

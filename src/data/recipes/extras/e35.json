@@ -1,0 +1,64 @@
+{
+  "id": 35,
+  "referencia": "e035",
+  "nombre": "Chips de verduras",
+  "rinde": "4 porciones",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 20,
+    "unidad": "minutes",
+    "notas": "horneado en dos etapas: col rizada primero, luego boniato"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 265,
+    "grasas_g": 20.38,
+    "carbohidratos_g": 19.6,
+    "proteina_g": 2.47
+  },
+  "ingredientes": [
+    {
+      "clave": "curly_kale",
+      "nombre": "Hojas de col rizada",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "retirar tallos y cortar hojas en trozos grandes"
+    },
+    {
+      "clave": "sweet_potato",
+      "nombre": "Boniato / batata",
+      "cantidad": 198,
+      "unidad": "g",
+      "estado": "cortado en tiras finas con pelador"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "sea_salt_pepper",
+      "nombre": "Sal marina y pimienta",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 340°F (≈170°C).",
+    "Retira los tallos de la col rizada y corta las hojas en piezas grandes; pela la batata con pelador en tiras finas.",
+    "Enjuaga y seca bien las hojas de col rizada y las tiras de batata; coloca en un bol grande y añade el aceite; masajea para cubrir uniformemente.",
+    "Sazona con sal y pimienta y coloca en bandejas forradas, manteniendo las verduras separadas para que no se humedezcan.",
+    "Hornea 8–10 minutos hasta que las hojas de col rizada estén crujientes; retira las hojas de col rizada y continúa horneando la batata otros 8–10 minutos hasta que esté dorada y crujiente.",
+    "Deja reposar 2 minutos antes de servir."
+  ],
+  "notas": [
+    "Vigila el horneado porque las láminas finas se doran rápidamente; ajustar tiempo según grosor.",
+    "Mejor comer recién hechos para máxima textura crujiente; se pueden conservar en un recipiente hermético por poco tiempo."
+  ]
+}

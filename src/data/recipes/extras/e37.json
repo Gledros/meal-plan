@@ -1,0 +1,99 @@
+{
+  "id": 37,
+  "referencia": "e037",
+  "nombre": "Barras de granola",
+  "rinde": "14 barras",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 20,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 274,
+    "grasas_g": 24.58,
+    "carbohidratos_g": 12.22,
+    "proteina_g": 5.08
+  },
+  "ingredientes": [
+    {
+      "clave": "cashew_nuts",
+      "nombre": "Anacardos",
+      "cantidad": 78,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "almonds",
+      "nombre": "Almendras",
+      "cantidad": 50,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "macadamia_nuts",
+      "nombre": "Macadamias",
+      "cantidad": 113,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "goji_berries",
+      "nombre": "Bayas de goji",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "chia_seeds",
+      "nombre": "Semillas de chía",
+      "cantidad": 43,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "sesame_seeds",
+      "nombre": "Semillas de sésamo",
+      "cantidad": 50,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "coconut_oil",
+      "nombre": "Aceite de coco, derretido",
+      "cantidad": 4,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de arce",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 350°F (≈175°C).",
+    "Pica o pulsa los frutos secos y las bayas en un procesador hasta trozos pequeños pero no pulverizados.",
+    "Mezcla en un bol los frutos secos picados, las semillas, la sal, el aceite de coco derretido y el jarabe de arce hasta que todo esté bien combinado.",
+    "Forra un molde cuadrado de 8 pulgadas con papel de horno y presiona la mezcla firmemente en una capa uniforme.",
+    "Hornea durante 20 minutos. Deja enfriar 30 minutos en el molde antes de cortar en barras.",
+    "Una vez frío, corta en 14 barras y conserva en frigorífico hasta 2 semanas."
+  ],
+  "notas": [
+    "Presionar muy firmemente la mezcla en el molde ayuda a que las barras se mantengan compactas.",
+    "Puedes sustituir o añadir semillas/frutos secos a tu gusto."
+  ]
+}

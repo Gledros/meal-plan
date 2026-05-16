@@ -1,0 +1,63 @@
+{
+  "id": 39,
+  "referencia": "e039",
+  "nombre": "Cordial de fresa",
+  "rinde": "≈ 1 taza",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 20,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 64,
+    "grasas_g": 0.12,
+    "carbohidratos_g": 16.49,
+    "proteina_g": 0.22
+  },
+  "ingredientes": [
+    {
+      "clave": "strawberries",
+      "nombre": "Fresas",
+      "cantidad": 128,
+      "unidad": "g",
+      "estado": "partidas por la mitad (tallos incluidos)"
+    },
+    {
+      "clave": "demerara_sugar",
+      "nombre": "Azúcar (demerara) u otro endulzante",
+      "cantidad": 78,
+      "unidad": "g",
+      "estado": "crudo"
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de limón",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 1,
+      "unidad": "cup",
+      "estado": "para cocer"
+    }
+  ],
+  "pasos": [
+    "Combina las fresas, el azúcar y 1 taza de agua en una cacerola a fuego bajo.",
+    "Calienta lentamente, removiendo con frecuencia hasta que el azúcar se disuelva. Cubre con tapa y deja hervir a fuego lento unos 20 minutos para extraer los jugos.",
+    "Usa una cuchara para presionar las fresas y extraer más líquido. Retira del fuego.",
+    "Pasa el líquido por un colador y, si lo deseas, tritura y licúa el puré resultante para mayor cuerpo; vuelve a colar si quieres un cordial más claro.",
+    "Deja enfriar y guarda en un tarro o botella en el frigorífico. Para servir, diluye aproximadamente ½ onza líquida de cordial en 10 onzas líquidas de agua con gas (ajusta al gusto)."
+  ],
+  "notas": [
+    "Se puede añadir hierbas frescas (menta, albahaca) al enfriar para dar un matiz fresco.",
+    "Conservar en nevera hasta 1 mes; usar ½ onza líquida de cordial por porción de agua con gas, o ajustar según dulzor deseado."
+  ]
+}

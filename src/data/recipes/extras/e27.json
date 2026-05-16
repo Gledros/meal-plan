@@ -1,0 +1,93 @@
+{
+  "id": 27,
+  "referencia": "e027",
+  "nombre": "Galletas de chía",
+  "rinde": "20",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 45,
+    "unidad": "minutes",
+    "notas": "Hornear en dos etapas: 25 min + 20 min (ver pasos)"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 1497,
+    "grasas_g": 128.79,
+    "carbohidratos_g": 56.13,
+    "proteina_g": 57.07
+  },
+  "ingredientes": [
+    {
+      "clave": "flaxseeds",
+      "nombre": "Semillas de linaza",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": "mezcla seca"
+    },
+    {
+      "clave": "hemp_seeds",
+      "nombre": "Semillas de cáñamo",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "sesame_seeds",
+      "nombre": "Semillas de sésamo",
+      "cantidad": 64,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "chia_seeds",
+      "nombre": "Semillas de chía",
+      "cantidad": 64,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "pepitas",
+      "nombre": "Pepitas",
+      "cantidad": 57,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "nutritional_yeast",
+      "nombre": "Levadura nutricional",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "tamari",
+      "nombre": "Tamari",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 207,
+      "unidad": "ml",
+      "estado": "mezclar con tamari"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 300°F (≈150°C).",
+    "En un bol grande combina todos los ingredientes secos y mézclalos bien.",
+    "En otro recipiente mezcla 7 onzas líquidas de agua con la tamari y vierte sobre los ingredientes secos; mezcla hasta integrar.",
+    "Deja reposar la masa 5–10 minutos para que las semillas absorban líquido.",
+    "Extiende la mezcla sobre una bandeja forrada con papel de horno, presionando firmemente hasta conseguir un grosor de aprox. ¼ pulgada (0.6 cm).",
+    "Hornea 25 minutos. Retira, corta en formas de galletas y da la vuelta a las piezas.",
+    "Hornea otros 20 minutos (o hasta que estén crujientes) y deja enfriar completamente antes de guardar."
+  ],
+  "notas": [
+    "Tostar en dos tandas evita que algunas semillas se quemen.",
+    "Conservar en un recipiente hermético hasta 2 semanas para mantener el crujiente."
+  ]
+}

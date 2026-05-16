@@ -1,0 +1,105 @@
+{
+  "id": 23,
+  "referencia": "e023",
+  "nombre": "Pasta de aceitunas",
+  "rinde": "≈ 1 taza",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 68,
+    "grasas_g": 6.89,
+    "carbohidratos_g": 1.89,
+    "proteina_g": 0.35
+  },
+  "ingredientes": [
+    {
+      "clave": "mixed_pitted_olives",
+      "nombre": "Aceitunas mixtas deshuesadas (negra, kalamata, verde Siciliana)",
+      "cantidad": 198,
+      "unidad": "g",
+      "estado": "≈ 7 onzas, deshuesadas"
+    },
+    {
+      "clave": "capers",
+      "nombre": "Alcaparras",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.25,
+      "unidad": "cup",
+      "equivalente_ml": 59,
+      "estado": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de limón",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "flat_leaf_parsley",
+      "nombre": "Perejil liso (hojas)",
+      "cantidad": 14,
+      "unidad": "g",
+      "estado": "≈ ½ onzas, picado groseramente"
+    },
+    {
+      "clave": "oregano",
+      "nombre": "Hojas de orégano",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "thyme_sprigs",
+      "nombre": "Ramas de tomillo",
+      "cantidad": 3,
+      "unidad": "piece",
+      "estado": "hojas retiradas"
+    },
+    {
+      "clave": "garlic_clove",
+      "nombre": "Diente de ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "estado": "picado"
+    },
+    {
+      "clave": "basil_leaves",
+      "nombre": "Hojas de albahaca",
+      "cantidad": 6,
+      "unidad": "piece",
+      "estado": ""
+    },
+    {
+      "clave": "salt_pepper",
+      "nombre": "Sal y pimienta",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Coloca todos los ingredientes en un procesador de alimentos.",
+    "Tritura hasta obtener una pasta con la textura deseada (más rústica o más suave).",
+    "Prueba y ajusta de sal, pimienta o limón.",
+    "Guarda en el frigorífico en un recipiente hermético hasta 2 semanas."
+  ],
+  "notas": [
+    "Usar aceitunas de buena calidad mejora notablemente el sabor; ajustar la cantidad de aceite para la consistencia deseada.",
+    "Se puede usar como untable, para pan o como acompañamiento para vegetales asados."
+  ]
+}

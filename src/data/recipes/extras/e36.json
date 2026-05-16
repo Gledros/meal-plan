@@ -1,0 +1,77 @@
+{
+  "id": 36,
+  "referencia": "e036",
+  "nombre": "Bolitas de caramelo salado",
+  "rinde": "14 bolas",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 144,
+    "grasas_g": 7.11,
+    "carbohidratos_g": 21.12,
+    "proteina_g": 1.52
+  },
+  "ingredientes": [
+    {
+      "clave": "shredded_coconut",
+      "nombre": "Coco finamente rallado",
+      "cantidad": 156,
+      "unidad": "g",
+      "estado": "finamente rallado"
+    },
+    {
+      "clave": "medjool_dates",
+      "nombre": "Dátiles Medjool",
+      "cantidad": 12,
+      "unidad": "piece",
+      "estado": "deshuesados"
+    },
+    {
+      "clave": "tahini",
+      "nombre": "Tahini",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "vanilla_extract",
+      "nombre": "Extracto natural de vainilla",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "sea_salt_flakes",
+      "nombre": "Hojuelas de sal marina",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "coating",
+      "nombre": "Semillas de sésamo tostadas o coco rallado",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": "para rebozar"
+    }
+  ],
+  "pasos": [
+    "Coloca el coco rallado, los dátiles, el tahini, la vainilla y la sal en un procesador de alimentos.",
+    "Tritura hasta obtener una masa pegajosa y homogénea; si hace falta, para y empuja los ingredientes hacia abajo y procesa de nuevo.",
+    "Forma porciones pequeñas (≈1 cucharada) y rueda en bolas.",
+    "Reboza las bolas en las semillas de sésamo tostadas o en coco rallado.",
+    "Guarda en un recipiente hermético en la nevera."
+  ],
+  "notas": [
+    "Rinde aproximadamente 14 bolas.",
+    "Si la mezcla está demasiado seca, añade un poco de agua o más tahini; si está muy pegajosa, refrigera 10–15 minutos antes de formar bolas."
+  ]
+}

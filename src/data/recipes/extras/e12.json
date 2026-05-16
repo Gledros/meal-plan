@@ -1,0 +1,140 @@
+{
+  "id": 12,
+  "referencia": "e012",
+  "nombre": "Piccalilli",
+  "rinde": "≈ 2 tazas",
+  "tiempo_preparacion": {
+    "tiempo": 240,
+    "unidad": "minutes",
+    "notas": "Reposo/curado 2–4 horas + cocción final ≈25 min"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 25,
+    "unidad": "minutes",
+    "notas": "Cocción final del encurtido"
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 40,
+    "grasas_g": 0.42,
+    "carbohidratos_g": 8,
+    "proteina_g": 0.98
+  },
+  "ingredientes": [
+    {
+      "clave": "cauliflower",
+      "nombre": "Floretes de coliflor",
+      "cantidad": 156,
+      "unidad": "g",
+      "estado": "5½ onzas ≈ 156 g, troceados"
+    },
+    {
+      "clave": "zucchini",
+      "nombre": "Calabacín",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "1 calabacín, en cubitos"
+    },
+    {
+      "clave": "green_beans",
+      "nombre": "Judías verdes",
+      "cantidad": 78,
+      "unidad": "g",
+      "estado": "2¾ onzas ≈ 78 g, cortadas"
+    },
+    {
+      "clave": "french_shallots",
+      "nombre": "Chalotas francesas",
+      "cantidad": 8,
+      "unidad": "piece",
+      "estado": "8 chalotas, partidas en cuartos"
+    },
+    {
+      "clave": "capers",
+      "nombre": "Alcaparras",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "white_wine_vinegar",
+      "nombre": "Vinagre de vino blanco",
+      "cantidad": 1,
+      "unidad": "cup",
+      "estado": ""
+    },
+    {
+      "clave": "mustard_powder",
+      "nombre": "Polvo de mostaza",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "all_purpose_flour",
+      "nombre": "Harina todo uso",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "ground_turmeric",
+      "nombre": "Cúrcuma molida",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "ground_cumin",
+      "nombre": "Comino molido",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "garlic",
+      "nombre": "Ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "estado": "machacado"
+    },
+    {
+      "clave": "green_apple",
+      "nombre": "Manzana verde",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "1 manzana, rallada"
+    },
+    {
+      "clave": "organic_sugar",
+      "nombre": "Azúcar orgánica",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "mustard_seeds",
+      "nombre": "Semillas de mostaza",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Lava y corta las verduras: coliflor, calabacín y judías en trozos pequeños. Reserva las chalotas y las alcaparras.",
+    "Coloca las verduras y las alcaparras en un bol grande y cúbrelas con 3 cucharadas de sal; deja reposar 2–4 horas para que suelten líquido.",
+    "En una sartén, sofríe el ajo y la manzana rallada brevemente; añade el vinagre, el azúcar, el polvo de mostaza, la harina y las especias; mezcla y cocina hasta que espese.",
+    "Escurre las verduras reservadas y añade al líquido caliente; cocina unos minutos hasta que la mezcla espese y las verduras estén impregnadas.",
+    "Enfría ligeramente y llena tarros esterilizados. Sella y guarda en el frigorífico; consumir en semanas siguientes según gusto."
+  ],
+  "notas": [
+    "Piccalilli es un encurtido especiado y ligeramente dulce; ajusta azúcar y especias al gusto.",
+    "Las cantidades en gramos son conversiones aproximadas desde onzas (onzas→g)."
+  ]
+}

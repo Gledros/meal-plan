@@ -1,0 +1,42 @@
+{
+  "id": 8,
+  "referencia": "e008",
+  "nombre": "Huevo de linaza",
+  "rinde": "1 sustitución de huevo",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": "Refrigerar 15–30 minutos hasta que espese."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "descripcion": "Sustituto común en repostería; aporta estructura y ligero sabor a frutos secos. Se obtiene mezclando linaza molida con agua.",
+  "ingredientes": [
+    {
+      "clave": "ground_flaxseed",
+      "nombre": "Linaza molida",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "nota": "1 cucharada"
+    },
+    {
+      "clave": "water",
+      "nombre": "Agua",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "nota": "3 cucharadas"
+    }
+  ],
+  "pasos": [
+    "Mezcla la linaza molida con el agua en un bol pequeño.",
+    "Cubre y refrigera durante 15–30 minutos hasta que la mezcla espese y adquiera consistencia gelatinosa.",
+    "Usa la mezcla como sustituto de 1 huevo en tus recetas."
+  ],
+  "notas": [
+    "Funciona bien en preparaciones que requieren unión (bizcochos, magdalenas y panqueques).",
+    "Si necesitas más poder de unión, aumenta ligeramente la cantidad de linaza o combina con otros aglutinantes."
+  ]
+}

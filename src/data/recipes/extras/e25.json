@@ -1,0 +1,115 @@
+{
+  "id": 25,
+  "referencia": "e025",
+  "nombre": "Pan de plátano",
+  "rinde": "1 pan",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 50,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 339,
+    "grasas_g": 13.43,
+    "carbohidratos_g": 50.73,
+    "proteina_g": 7.22
+  },
+  "ingredientes": [
+    {
+      "clave": "chia_seed_eggs",
+      "nombre": "Huevos de chía",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "ver receta para preparar (p.14)"
+    },
+    {
+      "clave": "self_rising_flour",
+      "nombre": "Harina con levadura",
+      "cantidad": 170,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "sesame_flour",
+      "nombre": "Harina de sésamo",
+      "cantidad": 57,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "baking_soda",
+      "nombre": "Bicarbonato de sodio",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "shredded_coconut",
+      "nombre": "Coco rallado",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "demerara_sugar",
+      "nombre": "Azúcar cruda (demerara)",
+      "cantidad": 78,
+      "unidad": "g",
+      "estado": "demerara"
+    },
+    {
+      "clave": "mashed_banana",
+      "nombre": "Plátano machacado",
+      "cantidad": 227,
+      "unidad": "g",
+      "estado": "≈ 2–3 plátanos muy maduros, machacados"
+    },
+    {
+      "clave": "olive_or_coconut_oil",
+      "nombre": "Aceite (oliva o coco)",
+      "cantidad": 67,
+      "unidad": "ml",
+      "estado": "más extra para engrasar el molde"
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Sirope de arce",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "coconut_yogurt",
+      "nombre": "Yogur de coco",
+      "cantidad": 50,
+      "unidad": "g",
+      "estado": ""
+    },
+    {
+      "clave": "vanilla_extract",
+      "nombre": "Extracto natural de vainilla",
+      "cantidad": 2,
+      "unidad": "tsp",
+      "estado": ""
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 320°F (≈160°C).",
+    "Prepara los 'chia seed eggs' según indicación (ver receta de sustitutos de huevo).",
+    "Mezcla los ingredientes secos en un bol grande (harinas, bicarbonato, coco, azúcar).",
+    "En otro bol combina los ingredientes húmedos (plátano machacado, aceite, sirope, yogur, vainilla y los chia eggs preparados).",
+    "Vierte los ingredientes húmedos sobre los secos y mezcla hasta integrar sin sobrebatir.",
+    "Vierte la mezcla en un molde para pan de 8 tazas ligeramente engrasado.",
+    "Hornea 40–50 minutos hasta que al insertar un palillo salga limpio. Deja reposar 10 minutos, desmolda y enfría sobre una rejilla."
+  ],
+  "notas": [
+    "Usa plátanos muy maduros para mejor sabor y humedad.",
+    "Si el molde es más pequeño o más grande, ajusta tiempo de horneado y comprueba con palillo.",
+    "Se puede congelar en rebanadas para conservar."
+  ]
+}

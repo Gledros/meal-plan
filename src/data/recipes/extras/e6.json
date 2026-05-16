@@ -1,0 +1,89 @@
+{
+  "id": 6,
+  "referencia": "e006",
+  "nombre": "Vinagreta de vino tinto",
+  "rinde": "½ taza",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 140,
+    "grasas_g": 12.66,
+    "carbohidratos_g": 1.8,
+    "proteina_g": 0.8
+  },
+  "ingredientes": [
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.5,
+      "unidad": "cup",
+      "equivalente_g": 120,
+      "estado": ""
+    },
+    {
+      "clave": "red_wine_vinegar",
+      "nombre": "Vinagre de vino tinto",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "equivalente_g": 45,
+      "estado": ""
+    },
+    {
+      "clave": "french_shallot",
+      "nombre": "Chalota francesa",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "finamente picada"
+    },
+    {
+      "clave": "dijon_mustard",
+      "nombre": "Mostaza Dijon",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": ""
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de maple",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 8,
+      "estado": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 3,
+      "estado": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Combina todos los ingredientes en un tarro o jarra.",
+    "Agita o bate hasta integrar completamente.",
+    "Guarda en un recipiente hermético en la nevera hasta 2 semanas."
+  ],
+  "notas": [
+    "Rinde aproximadamente ½ taza.",
+    "Ajusta la proporción aceite/vinagre al gusto para más o menos acidez."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": 21,
+  "referencia": "e021",
+  "nombre": "Pico de gallo",
+  "rinde": "≈ 1 taza",
+  "tiempo_preparacion": {
+    "tiempo": 15,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 22,
+    "grasas_g": 0.2,
+    "carbohidratos_g": 4.91,
+    "proteina_g": 0.93
+  },
+  "ingredientes": [
+    {
+      "clave": "red_onion",
+      "nombre": "Cebolla roja",
+      "cantidad": 0.5,
+      "unidad": "piece",
+      "estado": "finamente picada"
+    },
+    {
+      "clave": "roma_tomatoes",
+      "nombre": "Tomates roma",
+      "cantidad": 4,
+      "unidad": "piece",
+      "estado": "finamente picados"
+    },
+    {
+      "clave": "jalapeno",
+      "nombre": "Jalapeño fresco",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "finamente picado (quitar semillas si quieres menos picante)"
+    },
+    {
+      "clave": "cilantro",
+      "nombre": "Cilantro",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "finamente picado"
+    },
+    {
+      "clave": "lime_juice",
+      "nombre": "Zumo de lima",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "zumo de 1 lima"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Mezcla en un bol todos los ingredientes bien picados.",
+    "Añade sal y el zumo de lima; remueve para combinar y cubre la mezcla con sal y lima para que se impregnen los sabores.",
+    "Deja reposar 5–10 minutos antes de servir para que los sabores se integren."
+  ],
+  "notas": [
+    "Si los tomates están demasiado maduros es mejor retirar las semillas para evitar exceso de líquido.",
+    "Conservar en nevera hasta 5 días; mejor consumir pronto para textura fresca."
+  ]
+}

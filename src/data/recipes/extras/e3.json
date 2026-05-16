@@ -1,0 +1,107 @@
+{
+  "id": 3,
+  "referencia": "e003",
+  "nombre": "Aioli vegano",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 221,
+    "grasas_g": 24.45,
+    "carbohidratos_g": 0.8,
+    "proteina_g": 0.39
+  },
+  "ingredientes": [
+    {
+      "clave": "soy_milk",
+      "nombre": "Leche de soja",
+      "cantidad": 99,
+      "unidad": "g",
+      "equivalente_g": -1,
+      "estado": "3½ onzas (aprox.) — o sustituir por aquafaba",
+      "enlace": ""
+    },
+    {
+      "clave": "aquafaba",
+      "nombre": "Aquafaba (alternativa)",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "equivalente_g": 45,
+      "estado": "3 cucharadas (si usas aquafaba en lugar de leche)",
+      "enlace": "recipe://aquafaba"
+    },
+    {
+      "clave": "garlic_clove",
+      "nombre": "Diente de ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "equivalente_g": 5,
+      "estado": "machacado",
+      "enlace": ""
+    },
+    {
+      "clave": "grapeseed_oil",
+      "nombre": "Aceite de semilla de uva (u otro vegetal)",
+      "cantidad": 207,
+      "unidad": "ml",
+      "equivalente_g": 207,
+      "estado": "7 onzas líquidas ≈ 207 ml (aprox. 1 taza)",
+      "enlace": ""
+    },
+    {
+      "clave": "apple_cider_vinegar",
+      "nombre": "Vinagre de sidra de manzana",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "dijon_mustard",
+      "nombre": "Mostaza Dijon",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": "",
+      "enlace": ""
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 3,
+      "estado": "",
+      "enlace": ""
+    }
+  ],
+  "pasos": [
+    "En un procesador de alimentos, mezcla la leche de soja (o aquafaba) con el ajo hasta integrar.",
+    "Con la máquina en marcha, vierte lentamente el aceite cucharada a cucharada (aprox. 1 cucharada a la vez) hasta que la mezcla emulsione y espese al alcanzar la consistencia deseada.",
+    "Añade el vinagre, la mostaza y la sal; mezcla y ajusta al gusto.",
+    "Guarda en un recipiente hermético en la nevera hasta 14 días."
+  ],
+  "notas": [
+    "Rinde aproximadamente 1½ tazas.",
+    "Si usas aquafaba en vez de leche, bate aquafaba sola para espumar antes de añadir aceite; se comporta de forma similar al huevo en emulsiones."
+  ],
+  "validacion": {
+    "score": 92,
+    "warnings": [
+      "Se aplicó conversión 3½ onzas → 99 g para la leche de soja (unidad 'g' con equivalente_g = -1).",
+      "Se aplicó conversión 7 onzas líquidas → 207 ml para el aceite (unidad 'ml').",
+      "Equivalentes para cda/cdita son estimativos y sólo de referencia."
+    ],
+    "correcciones": [
+      "Se mantuvieron medidas en cda/cdita donde corresponde según reglas (no convertir cucharadas/cucharaditas automáticamente)."
+    ]
+  }
+}

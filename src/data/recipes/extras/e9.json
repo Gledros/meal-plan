@@ -1,0 +1,44 @@
+{
+  "id": 9,
+  "referencia": "e009",
+  "nombre": "Aquafaba",
+  "rinde": "1 sustitución de huevo (o más si se bate)",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": "Batir hasta formar picos (opcional, ≈1–5 minutos según método)."
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "descripcion": "Líquido de cocción de legumbres (más comúnmente garbanzos) que puede usarse como sustituto del huevo en repostería y para emulsionar (mayonesas, aïolis) o espumar (merengues).",
+  "ingredientes": [
+    {
+      "clave": "aquafaba",
+      "nombre": "Aquafaba (líquido de garbanzos)",
+      "cantidad": 3,
+      "unidad": "tbsp",
+      "nota": "3 cucharadas sustituyen 1 huevo"
+    },
+    {
+      "clave": "cream_of_tartar",
+      "nombre": "Crema de tártaro (opcional, para estabilizar)",
+      "cantidad": 0.25,
+      "unidad": "tsp",
+      "nota": "¼ cucharadita (opcional)"
+    }
+  ],
+  "pasos": [
+    "Usa el líquido escurrido de una lata de garbanzos bien refrigerado o el líquido de cocción concentrado.",
+    "Para uso como sustituto directo: mide 3 cucharadas de aquafaba para sustituir 1 huevo en la receta.",
+    "Para espumar (merengues) o conseguir picos: coloca el líquido en un batidor de pie o batidora eléctrica y bate a velocidad media–alta de 1 a 5 minutos hasta que forme picos firmes. Añade ¼ cdita de crema de tártaro si quieres estabilizar la espuma.",
+    "Para emulsionar (mayonesa/aioli): bate aquafaba con ajo o condimentos y, con la batidora en marcha, incorpora el aceite lentamente en un hilo hasta emulsionar y espesar."
+  ],
+  "notas": [
+    "La aquafaba funciona de forma similar a la clara de huevo cuando se bate; su comportamiento varía según concentración y origen (lata frente a cocción casera).",
+    "Para mejores resultados en merengues, usar aquafaba a temperatura ambiente y, si es necesario, reducir a fuego lento la aquafaba fresca para concentrarla antes de batir.",
+    "Conservar en frigorífico hasta varios días; para usos de repostería, filtrar restos y medir la cantidad correcta."
+  ]
+}

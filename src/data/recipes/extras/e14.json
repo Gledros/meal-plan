@@ -1,0 +1,106 @@
+{
+  "id": 14,
+  "referencia": "e014",
+  "nombre": "Caponata de berenjena",
+  "rinde": "≈ 2 tazas",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 25,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 49,
+    "grasas_g": 2,
+    "carbohidratos_g": 6.13,
+    "proteina_g": 0.9
+  },
+  "ingredientes": [
+    {
+      "clave": "eggplant",
+      "nombre": "Berenjenas",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "2 pequeñas–medianas, cortadas en trozos"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": "dividido (mitad para asar, mitad para freír)"
+    },
+    {
+      "clave": "red_onion",
+      "nombre": "Cebolla roja",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "1, en rodajas"
+    },
+    {
+      "clave": "celery_stalks",
+      "nombre": "Tallos de apio",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "2 tallos, en rodajas"
+    },
+    {
+      "clave": "ripe_tomatoes",
+      "nombre": "Tomates maduros",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "2 tomates maduros, picados"
+    },
+    {
+      "clave": "olives",
+      "nombre": "Aceitunas verdes o negras",
+      "cantidad": 78,
+      "unidad": "g",
+      "estado": "≈2¾ onzas ≈78 g, deshuesadas y partidas por la mitad"
+    },
+    {
+      "clave": "red_wine_vinegar",
+      "nombre": "Vinagre de vino tinto",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "superfine_sugar",
+      "nombre": "Azúcar superfina",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "pine_nuts",
+      "nombre": "Piñones",
+      "cantidad": 2,
+      "unidad": "tbsp",
+      "estado": "tostados"
+    },
+    {
+      "clave": "sea_salt",
+      "nombre": "Sal marina",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Precalienta el horno a 350°F (≈175°C). Coloca los trozos de berenjena en una bandeja de horno, rocía con la mitad del aceite y sazona.",
+    "Hornea la berenjena hasta que esté dorada y tierna.",
+    "Mientras, calienta el resto del aceite en una sartén y sofríe la cebolla durante 3–4 minutos hasta que esté blanda.",
+    "Añade el apio y los tomates a la sartén, sazona y cocina brevemente.",
+    "Agrega las aceitunas, el vinagre, el azúcar y los piñones; cocina 5 minutos para integrar sabores.",
+    "Incorpora la berenjena asada a la sartén y mezcla todo. Ajusta de sal y guarda en un recipiente hermético en el frigorífico hasta 1 semana."
+  ],
+  "notas": [
+    "Caponata se sirve fría o a temperatura ambiente; los piñones aportan textura y sabor tostado.",
+    "Las cantidades en gramos para aceitunas son aproximadas (conversión desde onzas)."
+  ]
+}

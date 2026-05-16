@@ -1,0 +1,106 @@
+{
+  "id": 4,
+  "referencia": "e004",
+  "nombre": "Vinagreta de limón y mostaza",
+  "rinde": "½ taza",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional": {
+    "kcal": 120,
+    "grasas_g": 12.62,
+    "carbohidratos_g": 1.9,
+    "proteina_g": 0.28
+  },
+  "ingredientes": [
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.5,
+      "unidad": "cup",
+      "equivalente_g": 120,
+      "estado": ""
+    },
+    {
+      "clave": "lemon_juice",
+      "nombre": "Zumo de limón",
+      "cantidad": 1,
+      "unidad": "piece",
+      "equivalente_g": 15,
+      "estado": "zumo de 1 limón"
+    },
+    {
+      "clave": "apple_cider_vinegar",
+      "nombre": "Vinagre de sidra de manzana",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": ""
+    },
+    {
+      "clave": "dijon_mustard",
+      "nombre": "Mostaza Dijon",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": ""
+    },
+    {
+      "clave": "wholegrain_mustard",
+      "nombre": "Mostaza integral",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "equivalente_g": 15,
+      "estado": ""
+    },
+    {
+      "clave": "maple_syrup",
+      "nombre": "Jarabe de maple",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "equivalente_g": 8,
+      "estado": ""
+    },
+    {
+      "clave": "garlic_clove",
+      "nombre": "Diente de ajo",
+      "cantidad": 1,
+      "unidad": "clove",
+      "equivalente_g": 5,
+      "estado": "muy finamente picado"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0.5,
+      "unidad": "tsp",
+      "equivalente_g": 3,
+      "estado": ""
+    },
+    {
+      "clave": "black_pepper",
+      "nombre": "Pimienta negra",
+      "cantidad": 0,
+      "unidad": "piece",
+      "equivalente_g": 0,
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Combina todos los ingredientes en un tarro o jarra.",
+    "Agita o bate hasta emulsionar y que quede homogéneo.",
+    "Prueba y ajusta de sal, pimienta o acidez según prefieras.",
+    "Conserva en recipiente hermético en el frigorífico hasta 2 semanas."
+  ],
+  "notas": [
+    "Rinde aproximadamente ½ taza.",
+    "Equivalentes en gramos para cucharadas/cucharaditas son orientativos (solo referencia)."
+  ]
+}

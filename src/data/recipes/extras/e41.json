@@ -1,0 +1,68 @@
+{
+  "id": 41,
+  "referencia": "e041",
+  "nombre": "Soda desintoxicante de sidra de manzana",
+  "rinde": "1 porción",
+  "tiempo_preparacion": {
+    "tiempo": 5,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 55,
+    "grasas_g": 0,
+    "carbohidratos_g": 13.42,
+    "proteina_g": 0.33
+  },
+  "ingredientes": [
+    {
+      "clave": "orange_juice",
+      "nombre": "Zumo de naranja",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "zumo de 1 naranja"
+    },
+    {
+      "clave": "apple_cider_vinegar",
+      "nombre": "Vinagre de sidra de manzana",
+      "cantidad": 1,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "agave_syrup",
+      "nombre": "Jarabe de agave",
+      "cantidad": 0.5,
+      "unidad": "tbsp",
+      "estado": ""
+    },
+    {
+      "clave": "sparkling_water",
+      "nombre": "Agua con gas",
+      "cantidad": 1,
+      "unidad": "cup",
+      "estado": ""
+    },
+    {
+      "clave": "lemon_slice",
+      "nombre": "Rodaja de limón",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "para servir"
+    }
+  ],
+  "pasos": [
+    "En un vaso, combina el zumo de naranja, el vinagre de sidra de manzana y el jarabe de agave; remueve bien hasta integrar.",
+    "Añade el agua con gas, remueve suavemente para mezclar y añade la rodaja de limón si lo deseas.",
+    "Sirve inmediatamente."
+  ],
+  "notas": [
+    "Esta bebida es refrescante y lleva vinagre de sidra de manzana por sus posibles beneficios; ajustar la cantidad de vinagre/agave según preferencia.",
+    "Consumir inmediatamente para conservar la efervescencia."
+  ]
+}

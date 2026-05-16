@@ -1,0 +1,75 @@
+{
+  "id": 30,
+  "referencia": "e030",
+  "nombre": "Guacamole",
+  "rinde": "4 porciones",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 177,
+    "grasas_g": 14.88,
+    "carbohidratos_g": 12.59,
+    "proteina_g": 2.7
+  },
+  "ingredientes": [
+    {
+      "clave": "ripe_avocados",
+      "nombre": "Aguacates maduros",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": ""
+    },
+    {
+      "clave": "cilantro",
+      "nombre": "Cilantro",
+      "cantidad": 28,
+      "unidad": "g",
+      "estado": "≈1 onza, finamente picado"
+    },
+    {
+      "clave": "french_shallots",
+      "nombre": "Chalotas francesas",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "finamente picadas"
+    },
+    {
+      "clave": "red_chilies",
+      "nombre": "Chiles rojos",
+      "cantidad": 2,
+      "unidad": "piece",
+      "estado": "finamente picados"
+    },
+    {
+      "clave": "lime_juice",
+      "nombre": "Zumo de lima",
+      "cantidad": 1.5,
+      "unidad": "piece",
+      "estado": "zumo de 1½ limas"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 0,
+      "unidad": "piece",
+      "estado": "al gusto"
+    }
+  ],
+  "pasos": [
+    "Machaca los aguacates en un bol hasta obtener la textura deseada (puré o con algunos trozos).",
+    "Añade el cilantro picado, las chalotas, los chiles y el zumo de lima.",
+    "Mezcla bien, sazona con sal al gusto y sirve inmediatamente."
+  ],
+  "notas": [
+    "Consumir inmediatamente para evitar que el aguacate se oxide; si necesitas guardarlo, cubrir con film en contacto y refrigerar.",
+    "Ajusta el picante retirando semillas del chile si prefieres menos intensidad."
+  ]
+}

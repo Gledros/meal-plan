@@ -1,0 +1,70 @@
+{
+  "id": 18,
+  "referencia": "e018",
+  "nombre": "Pesto",
+  "rinde": "≈ 1 taza",
+  "tiempo_preparacion": {
+    "tiempo": 10,
+    "unidad": "minutes",
+    "notas": "No requiere cocción"
+  },
+  "tiempo_cocinado": {
+    "tiempo": 0,
+    "unidad": "minutes",
+    "notas": ""
+  },
+  "informacion_nutricional_por_racion": {
+    "kcal": 81,
+    "grasas_g": 8.15,
+    "carbohidratos_g": 1.65,
+    "proteina_g": 0.99
+  },
+  "ingredientes": [
+    {
+      "clave": "basil",
+      "nombre": "Ramillete de albahaca",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": ""
+    },
+    {
+      "clave": "toasted_cashew_nuts",
+      "nombre": "Anacardos tostados",
+      "cantidad": 57,
+      "unidad": "g",
+      "estado": "≈ 2 onzas"
+    },
+    {
+      "clave": "salt",
+      "nombre": "Sal",
+      "cantidad": 1,
+      "unidad": "tsp",
+      "estado": ""
+    },
+    {
+      "clave": "garlic_clove",
+      "nombre": "Diente de ajo (asado)",
+      "cantidad": 1,
+      "unidad": "piece",
+      "estado": "asado"
+    },
+    {
+      "clave": "olive_oil",
+      "nombre": "Aceite de oliva",
+      "cantidad": 0.33,
+      "unidad": "cup",
+      "equivalente_ml": 79,
+      "estado": "¼–⅓ taza (usar según consistencia deseada)"
+    }
+  ],
+  "pasos": [
+    "Coloca todos los ingredientes (excepto el aceite) en un procesador de alimentos y mezcla hasta obtener una pasta homogénea.",
+    "Añade el aceite poco a poco, parando para bajar los ingredientes de las paredes del bol si hace falta, hasta alcanzar la consistencia deseada.",
+    "Transfiere a un recipiente hermético con una capa de aceite por encima y conserva en la nevera hasta 2 semanas."
+  ],
+  "notas": [
+    "Rinde aproximadamente 1 taza.",
+    "Si no tienes anacardos, prueba con nueces o almendras tostadas.",
+    "Ajusta la cantidad de aceite para una textura más fluida o más espesa."
+  ]
+}
