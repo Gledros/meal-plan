@@ -294,7 +294,7 @@ const defaultTabId = tabs[0]?.id ?? '';
 <style>
 	.tabs-slider {
 		width: 100%;
-		height: calc(100dvh - var(--sticky-header-space, 0px));
+		height: 100dvh;
 		--tabs-list-height: 0px;
 		min-height: 0;
 		display: flex;
@@ -303,7 +303,7 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 	.tabs-list {
 		position: fixed;
-		top: var(--sticky-header-space, 2px);
+		top: var(--sticky-header-space, 0px);
 		left: 0;
 		width: 100%;
 		z-index: 9;
@@ -311,10 +311,8 @@ const defaultTabId = tabs[0]?.id ?? '';
 		gap: 0.5rem;
 		padding: 0.75rem 0.5rem;
 		background: var(--surface-translucent-bg);
-		backdrop-filter: saturate(var(--surface-translucent-saturate))
-			blur(var(--surface-translucent-blur));
-		-webkit-backdrop-filter: saturate(var(--surface-translucent-saturate))
-			blur(var(--surface-translucent-blur));
+		backdrop-filter: var(--shared-backdrop-filter);
+		-webkit-backdrop-filter: var(--shared-backdrop-filter);
 		border: 2px solid var(--surface-translucent-border);
 		border-top: none;
 		border-radius: 0 0 1.5rem 1.5rem;
@@ -386,7 +384,9 @@ const defaultTabId = tabs[0]?.id ?? '';
 		height: 100%;
 		min-height: 0;
 		box-sizing: border-box;
-		padding-top: calc(var(--tabs-list-height) + 0.5rem);
+		padding-top: calc(
+			var(--sticky-header-space, 0px) + var(--tabs-list-height) + 0.5rem
+		);
 		overflow-y: auto;
 		overflow-x: hidden;
 		overscroll-behavior-y: contain;

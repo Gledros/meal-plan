@@ -380,17 +380,22 @@ const preparationWeeks = [
 <style>
 	[data-tabs-sticky-header] {
 		--sticky-header-height: 0px;
-		transition:
-			transform 220ms ease,
-			margin-bottom 220ms ease;
-		will-change: transform;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		background: var(--surface-translucent-bg);
+		backdrop-filter: var(--shared-backdrop-filter);
+		-webkit-backdrop-filter: var(--shared-backdrop-filter);
+		border-color: var(--surface-translucent-border);
+		transition: transform 220ms ease;
 	}
 
 	@media (min-width: 1024px) {
 		[data-tabs-sticky-header].is-scroll-hidden {
 			transform: translateY(calc(-100% - 0.5rem));
 			pointer-events: none;
-			margin-bottom: calc(-1 * var(--sticky-header-height));
 		}
 	}
 </style>

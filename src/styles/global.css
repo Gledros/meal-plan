@@ -14,18 +14,20 @@ body {
 }
 
 :root {
+	--shared-backdrop-blur: 2px;
+	--shared-backdrop-saturate: 100%;
+	--shared-backdrop-filter: saturate(var(--shared-backdrop-saturate))
+		blur(var(--shared-backdrop-blur));
 	--surface-translucent-bg: rgba(255, 255, 255, 0.58);
 	--surface-translucent-border: rgba(148, 163, 184, 0.56);
-	--surface-translucent-blur: 14px;
-	--surface-translucent-saturate: 160%;
+	--surface-translucent-blur: var(--shared-backdrop-blur);
+	--surface-translucent-saturate: var(--shared-backdrop-saturate);
 }
 
 [data-tabs-sticky-header] {
 	background: var(--surface-translucent-bg);
-	backdrop-filter:
-		saturate(var(--surface-translucent-saturate)) blur(var(--surface-translucent-blur));
-	-webkit-backdrop-filter:
-		saturate(var(--surface-translucent-saturate)) blur(var(--surface-translucent-blur));
+	backdrop-filter: var(--shared-backdrop-filter);
+	-webkit-backdrop-filter: var(--shared-backdrop-filter);
 	border-color: var(--surface-translucent-border);
 }
 

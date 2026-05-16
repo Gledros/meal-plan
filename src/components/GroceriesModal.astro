@@ -607,7 +607,8 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 		padding: 1.25rem 1rem;
 		overflow-y: auto;
 		background: rgba(15, 23, 42, 0.28);
-		backdrop-filter: blur(2px);
+		backdrop-filter: var(--shared-backdrop-filter);
+		-webkit-backdrop-filter: var(--shared-backdrop-filter);
 		opacity: 0;
 		visibility: hidden;
 		pointer-events: none;
