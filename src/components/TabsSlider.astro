@@ -113,6 +113,13 @@ const defaultTabId = tabs[0]?.id ?? '';
 			).matches;
 			let activeIndex = Math.max(0, panelIds.indexOf(defaultTabId));
 
+			const setTabsListHeight = () => {
+				root.style.setProperty(
+					'--tabs-list-height',
+					`${tabsList.getBoundingClientRect().height}px`,
+				);
+			};
+
 			const setActiveTab = (nextIndex, smooth) => {
 				if (nextIndex < 0 || nextIndex >= panels.length) {
 					return;
@@ -165,6 +172,7 @@ const defaultTabId = tabs[0]?.id ?? '';
 			window.addEventListener(
 				'resize',
 				() => {
+					setTabsListHeight();
 					setActiveTab(activeIndex, false);
 				},
 				{ passive: true },
@@ -172,19 +180,27 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 			if ('ResizeObserver' in window) {
 				const rootObserver = new ResizeObserver(() => {
+					setTabsListHeight();
 					setActiveTab(activeIndex, false);
 				});
 				rootObserver.observe(root);
+
+				const tabsListObserver = new ResizeObserver(() => {
+					setTabsListHeight();
+				});
+				tabsListObserver.observe(tabsList);
 			}
 
 			window.addEventListener(
 				'load',
 				() => {
+					setTabsListHeight();
 					setActiveTab(activeIndex, false);
 				},
 				{ once: true },
 			);
 
+			setTabsListHeight();
 			setActiveTab(activeIndex, false);
 			root.setAttribute(INIT_ATTR, 'true');
 
@@ -279,14 +295,16 @@ const defaultTabId = tabs[0]?.id ?? '';
 	.tabs-slider {
 		width: 100%;
 		height: calc(100dvh - var(--sticky-header-space, 0px));
+		--tabs-list-height: 0px;
 		min-height: 0;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.tabs-list {
-		position: sticky;
-		top: 0;
+		position: fixed;
+		top: var(--sticky-header-space, 2px);
+		left: 0;
 		width: 100%;
 		z-index: 9;
 		display: flex;
@@ -346,6 +364,8 @@ const defaultTabId = tabs[0]?.id ?? '';
 	.tabs-viewport {
 		overflow: hidden;
 		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
 		flex: 1 1 auto;
 		min-height: 0;
 		padding-top: 0;
@@ -365,6 +385,8 @@ const defaultTabId = tabs[0]?.id ?? '';
 		width: 100%;
 		height: 100%;
 		min-height: 0;
+		box-sizing: border-box;
+		padding-top: calc(var(--tabs-list-height) + 0.5rem);
 		overflow-y: auto;
 		overflow-x: hidden;
 		overscroll-behavior-y: contain;
@@ -440,8 +462,8 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 	@media (min-width: 1024px) {
 		.tabs-list {
-			margin-left: 1rem;
-			margin-right: 1rem;
+			left: 1rem;
+			right: 1rem;
 			width: auto;
 		}
 	}
