@@ -1,10 +1,10 @@
 import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
 import {
-	MealDinnerSchema,
+	RecipeSchema,
 	SmoothieSchema,
 	type SmoothieRecipe,
-} from "./data/recipe-schemas";
+} from "./data/schemas/recipes";
 
 export type ZodSmoothie = SmoothieRecipe;
 
@@ -21,7 +21,7 @@ const Meals = defineCollection({
 		base: "./src/data/recipes/meals",
 		pattern: "m[0-9]*.json",
 	}),
-	schema: () => MealDinnerSchema,
+	schema: () => RecipeSchema,
 });
 
 const Dinners = defineCollection({
@@ -29,7 +29,7 @@ const Dinners = defineCollection({
 		base: "./src/data/recipes/dinners",
 		pattern: "d[0-9]*.json",
 	}),
-	schema: () => MealDinnerSchema,
+	schema: () => RecipeSchema,
 });
 
 export const collections = { Smoothies, Meals, Dinners };

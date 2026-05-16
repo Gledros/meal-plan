@@ -2,11 +2,11 @@ import { access, readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import type { ZodType } from "astro/zod";
 import {
-	MealDinnerSchema,
+	RecipeSchema,
 	SmoothieSchema,
 	type MealDinnerRecipe,
 	type SmoothieRecipe,
-} from "./recipe-schemas";
+} from "./recipes";
 
 export type { MealDinnerRecipe, SmoothieRecipe };
 
@@ -171,18 +171,18 @@ export const loadRecipesFromDisk = async (): Promise<RuntimeRecipes> => {
 		readRecipeGroup(recipesDir, {
 			folder: "breakfasts",
 			prefix: "b",
-			schema: MealDinnerSchema,
+			schema: RecipeSchema,
 			optional: true,
 		}),
 		readRecipeGroup(recipesDir, {
 			folder: "meals",
 			prefix: "m",
-			schema: MealDinnerSchema,
+			schema: RecipeSchema,
 		}),
 		readRecipeGroup(recipesDir, {
 			folder: "dinners",
 			prefix: "d",
-			schema: MealDinnerSchema,
+			schema: RecipeSchema,
 		}),
 	]);
 

@@ -39,7 +39,7 @@ export const SmoothieSchema = z.object({
 	color: hexColorSchema,
 });
 
-export const MealDinnerSchema = z.object({
+export const RecipeSchema = z.object({
 	id: z.number().int().positive(),
 	referencia: z.string().min(1),
 	nombre: z.string(),
@@ -52,10 +52,7 @@ export const MealDinnerSchema = z.object({
 	validacion: ValidationSchema,
 });
 
-export const BreakfastSchema = MealDinnerSchema;
-
 export type SmoothieRecipe = z.infer<typeof SmoothieSchema>;
-export type MealDinnerRecipe = z.infer<typeof MealDinnerSchema>;
-export type BreakfastRecipe = z.infer<typeof BreakfastSchema>;
+export type MealDinnerRecipe = z.infer<typeof RecipeSchema>;
 export type Ingredient = z.infer<typeof IngredientSchema>;
 export type Validation = z.infer<typeof ValidationSchema>;
