@@ -267,6 +267,7 @@ const preparationWeeks = [
 	(() => {
 		const HEADER_SELECTOR = '[data-tabs-sticky-header]';
 		const PANEL_SELECTOR = '[data-tabs-track] > [data-tab-panel]';
+		const TOP_REVEAL_THRESHOLD = 8;
 		const header = document.querySelector(HEADER_SELECTOR);
 
 		if (!(header instanceof HTMLElement)) {
@@ -274,7 +275,17 @@ const preparationWeeks = [
 		}
 
 		const rootElement = document.documentElement;
-		const mainTabsRoot = header.nextElementSibling;
+		const siblingTabsRoot = header.nextElementSibling;
+		const mainTabsRoot =
+			siblingTabsRoot instanceof HTMLElement &&
+			siblingTabsRoot.hasAttribute('data-tabs-slider')
+				? siblingTabsRoot
+				: document.querySelector('[data-tabs-slider]');
+
+		if (!(mainTabsRoot instanceof HTMLElement)) {
+			return;
+		}
+
 		let isHeaderHidden = false;
 		const panelScrollState = new WeakMap();
 
@@ -305,10 +316,7 @@ const preparationWeeks = [
 				return;
 			}
 
-			if (
-				mainTabsRoot instanceof HTMLElement &&
-				!mainTabsRoot.contains(panel)
-			) {
+			if (!mainTabsRoot.contains(panel)) {
 				return;
 			}
 
@@ -323,21 +331,25 @@ const preparationWeeks = [
 			panelScrollState.set(panel, currentScrollTop);
 
 			const delta = currentScrollTop - previousScrollTop;
-			const reachedTopFromScrollUp =
-				currentScrollTop <= 8 && previousScrollTop > 8 && delta < 0;
 
-			if (delta < -8 || reachedTopFromScrollUp) {
-				setHeaderHidden(false);
-			} else if (delta > 8) {
+			if (currentScrollTop <= TOP_REVEAL_THRESHOLD) {
+				if (delta <= 0) {
+					setHeaderHidden(false);
+				} else if (isHeaderHidden) {
+					setHeaderHidden(true);
+				}
+				return;
+			}
+
+			if (delta > 0) {
 				setHeaderHidden(true);
+			} else if (delta < 0) {
+				setHeaderHidden(false);
 			}
 		};
 
 		const bindPanelScrollListeners = () => {
-			const panels =
-				mainTabsRoot instanceof HTMLElement
-					? mainTabsRoot.querySelectorAll(PANEL_SELECTOR)
-					: document.querySelectorAll(PANEL_SELECTOR);
+			const panels = mainTabsRoot.querySelectorAll(PANEL_SELECTOR);
 			for (const panel of panels) {
 				if (!(panel instanceof HTMLElement)) {
 					continue;
