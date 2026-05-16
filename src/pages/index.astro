@@ -262,3 +262,135 @@ const preparationWeeks = [
 		</section>
 	</TabsSlider>
 </Layout>
+
+<script is:inline>
+	(() => {
+		const HEADER_SELECTOR = '[data-tabs-sticky-header]';
+		const PANEL_SELECTOR = '[data-tabs-track] > [data-tab-panel]';
+		const desktopQuery = window.matchMedia('(min-width: 1024px)');
+		const header = document.querySelector(HEADER_SELECTOR);
+
+		if (!(header instanceof HTMLElement)) {
+			return;
+		}
+
+		const rootElement = document.documentElement;
+		let isHeaderHidden = false;
+		const panelScrollState = new WeakMap();
+
+		const updateHeaderLayoutVars = () => {
+			const headerHeight = header.getBoundingClientRect().height;
+			header.style.setProperty('--sticky-header-height', `${headerHeight}px`);
+
+			const headerSpace =
+				desktopQuery.matches && isHeaderHidden ? 0 : headerHeight;
+			rootElement.style.setProperty(
+				'--sticky-header-space',
+				`${Math.max(0, headerSpace)}px`,
+			);
+		};
+
+		const setHeaderHidden = (nextHidden) => {
+			if (isHeaderHidden === nextHidden) {
+				return;
+			}
+
+			isHeaderHidden = nextHidden;
+			header.classList.toggle('is-scroll-hidden', nextHidden);
+			updateHeaderLayoutVars();
+		};
+
+		const handlePanelScroll = (event) => {
+			const panel = event.currentTarget;
+			if (!(panel instanceof HTMLElement)) {
+				return;
+			}
+
+			if (panel.getAttribute('aria-hidden') === 'true') {
+				return;
+			}
+
+			const currentScrollTop = panel.scrollTop;
+			const previousScrollTop = panelScrollState.has(panel)
+				? panelScrollState.get(panel)
+				: currentScrollTop;
+			panelScrollState.set(panel, currentScrollTop);
+
+			if (!desktopQuery.matches) {
+				setHeaderHidden(false);
+				return;
+			}
+
+			const delta = currentScrollTop - previousScrollTop;
+			const reachedTopFromScrollUp =
+				currentScrollTop <= 8 && previousScrollTop > 8 && delta < 0;
+
+			if (delta < -8 || reachedTopFromScrollUp) {
+				setHeaderHidden(false);
+			} else if (delta > 8) {
+				setHeaderHidden(true);
+			}
+		};
+
+		const bindPanelScrollListeners = () => {
+			const panels = document.querySelectorAll(PANEL_SELECTOR);
+			for (const panel of panels) {
+				if (!(panel instanceof HTMLElement)) {
+					continue;
+				}
+
+				if (panel.hasAttribute('data-header-scroll-bound')) {
+					continue;
+				}
+
+				panel.setAttribute('data-header-scroll-bound', 'true');
+				panelScrollState.set(panel, panel.scrollTop);
+				panel.addEventListener('scroll', handlePanelScroll, {
+					passive: true,
+				});
+			}
+		};
+
+		const syncHeaderState = () => {
+			updateHeaderLayoutVars();
+			bindPanelScrollListeners();
+
+			if (!desktopQuery.matches) {
+				setHeaderHidden(false);
+			}
+		};
+
+		window.addEventListener('resize', syncHeaderState, {
+			passive: true,
+		});
+
+		desktopQuery.addEventListener('change', syncHeaderState);
+
+		if ('ResizeObserver' in window) {
+			const headerObserver = new ResizeObserver(() => {
+				updateHeaderLayoutVars();
+			});
+			headerObserver.observe(header);
+		}
+
+		syncHeaderState();
+	})();
+</script>
+
+<style>
+	[data-tabs-sticky-header] {
+		--sticky-header-height: 0px;
+		transition:
+			transform 220ms ease,
+			margin-bottom 220ms ease;
+		will-change: transform;
+	}
+
+	@media (min-width: 1024px) {
+		[data-tabs-sticky-header].is-scroll-hidden {
+			transform: translateY(calc(-100% - 0.5rem));
+			pointer-events: none;
+			margin-bottom: calc(-1 * var(--sticky-header-height));
+		}
+	}
+</style>

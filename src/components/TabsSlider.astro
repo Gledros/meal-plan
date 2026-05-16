@@ -113,29 +113,6 @@ const defaultTabId = tabs[0]?.id ?? '';
 			).matches;
 			let activeIndex = Math.max(0, panelIds.indexOf(defaultTabId));
 
-			const setTabsOffsets = () => {
-				const stickyHeader = document.querySelector(
-					'[data-tabs-sticky-header]',
-				);
-				if (stickyHeader instanceof HTMLElement) {
-					root.style.setProperty(
-						'--tabs-sticky-top',
-						`${stickyHeader.getBoundingClientRect().height}px`,
-					);
-				} else {
-					root.style.setProperty('--tabs-sticky-top', '0px');
-				}
-
-				root.style.setProperty(
-					'--tabs-list-height',
-					`${tabsList.getBoundingClientRect().height}px`,
-				);
-
-				const viewportTop = viewport.getBoundingClientRect().top;
-				const viewportHeight = Math.max(0, window.innerHeight - viewportTop);
-				root.style.setProperty('--tabs-viewport-height', `${viewportHeight}px`);
-			};
-
 			const setActiveTab = (nextIndex, smooth) => {
 				if (nextIndex < 0 || nextIndex >= panels.length) {
 					return;
@@ -188,23 +165,13 @@ const defaultTabId = tabs[0]?.id ?? '';
 			window.addEventListener(
 				'resize',
 				() => {
-					setTabsOffsets();
 					setActiveTab(activeIndex, false);
 				},
 				{ passive: true },
 			);
 
-			const stickyHeader = document.querySelector('[data-tabs-sticky-header]');
-			if (stickyHeader instanceof HTMLElement && 'ResizeObserver' in window) {
-				const headerObserver = new ResizeObserver(() => {
-					setTabsOffsets();
-				});
-				headerObserver.observe(stickyHeader);
-			}
-
 			if ('ResizeObserver' in window) {
 				const rootObserver = new ResizeObserver(() => {
-					setTabsOffsets();
 					setActiveTab(activeIndex, false);
 				});
 				rootObserver.observe(root);
@@ -213,13 +180,11 @@ const defaultTabId = tabs[0]?.id ?? '';
 			window.addEventListener(
 				'load',
 				() => {
-					setTabsOffsets();
 					setActiveTab(activeIndex, false);
 				},
 				{ once: true },
 			);
 
-			setTabsOffsets();
 			setActiveTab(activeIndex, false);
 			root.setAttribute(INIT_ATTR, 'true');
 
@@ -313,25 +278,26 @@ const defaultTabId = tabs[0]?.id ?? '';
 <style>
 	.tabs-slider {
 		width: 100%;
-		--tabs-sticky-top: 0px;
-		--tabs-list-height: 0px;
-		--tabs-viewport-height: 100dvh;
+		height: calc(100dvh - var(--sticky-header-space, 0px));
+		min-height: 0;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.tabs-list {
-		position: fixed;
-		left: 0;
+		position: sticky;
+		top: 0;
 		width: 100%;
-		transform: none;
-		top: var(--tabs-sticky-top, 0px);
 		z-index: 9;
 		display: flex;
 		gap: 0.5rem;
 		padding: 0.75rem 0.5rem;
-		background: var(--surface-translucent-bg, rgba(255, 255, 255, 0.92));
-		backdrop-filter: blur(var(--surface-translucent-blur, 6px));
-		-webkit-backdrop-filter: blur(var(--surface-translucent-blur, 6px));
-		border: 2px solid var(--surface-translucent-border, #b8b8b9);
+		background: var(--surface-translucent-bg);
+		backdrop-filter: saturate(var(--surface-translucent-saturate))
+			blur(var(--surface-translucent-blur));
+		-webkit-backdrop-filter: saturate(var(--surface-translucent-saturate))
+			blur(var(--surface-translucent-blur));
+		border: 2px solid var(--surface-translucent-border);
 		border-top: none;
 		border-radius: 0 0 1.5rem 1.5rem;
 		scrollbar-width: thin;
@@ -380,9 +346,9 @@ const defaultTabId = tabs[0]?.id ?? '';
 	.tabs-viewport {
 		overflow: hidden;
 		width: 100%;
-		height: var(--tabs-viewport-height);
+		flex: 1 1 auto;
 		min-height: 0;
-		padding-top: var(--tabs-list-height);
+		padding-top: 0;
 	}
 
 	.tabs-track {
@@ -474,10 +440,9 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 	@media (min-width: 1024px) {
 		.tabs-list {
-			left: 1rem;
-			right: 1rem;
+			margin-left: 1rem;
+			margin-right: 1rem;
 			width: auto;
-			transform: none;
 		}
 	}
 
