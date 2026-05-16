@@ -1,6 +1,8 @@
 ---
 import PortionMultiplier from './PortionMultiplier.astro';
 import TabsSlider from './TabsSlider.astro';
+import WeekPreparationModal from './WeekPreparationModal.astro';
+import type { WeekPrep } from '@data/schemas/weekPrep';
 import { formatUnitLabel } from '@util';
 
 type IngredientItem = {
@@ -35,6 +37,11 @@ interface PreparedWeekConfig {
 interface Props {
 	week?: WeekData;
 	weeks?: WeekConfig[];
+	preparationWeeks?: {
+		id?: string;
+		label?: string;
+		week: WeekPrep;
+	}[];
 	title?: string;
 	triggerLabel?: string;
 }
@@ -42,9 +49,10 @@ interface Props {
 const {
 	week,
 	weeks = [],
+	preparationWeeks = [],
 	title = 'Lista de compras',
 	triggerLabel = 'Lista de compras',
-} = Astro.props;
+} = Astro.props as Props;
 
 const categoryNames: Record<string, string> = {
 	frutas_verduras: 'Frutas y verduras',
@@ -158,6 +166,7 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 	class='ingredients-modal'
 	data-ingredients-modal
 	data-ingredients-default-week={defaultWeekId}
+	data-active-week={defaultWeekId}
 >
 	<button
 		type='button'
@@ -191,6 +200,12 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 					>
 						Reiniciar
 					</button>
+					<WeekPreparationModal
+						weeks={preparationWeeks}
+						defaultWeekId={defaultWeekId}
+						title='Preparacion de la semana'
+						triggerLabel='Preparación'
+					/>
 					<PortionMultiplier
 						id={`${modalBaseId}-multiplier`}
 						wrapperClass='w-fit flex gap-2 items-center'
@@ -443,6 +458,7 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 			const setActiveWeek = (nextWeekId: string) => {
 				if (!nextWeekId) return;
 				activeWeekId = nextWeekId;
+				root.setAttribute('data-active-week', activeWeekId);
 				const activePanel = getActivePanel();
 				if (activePanel) applyChecklistStateToPanel(activePanel);
 				updateModalQuantities(getCurrentMultiplier());
@@ -542,7 +558,13 @@ const displayUnit = (unit: unknown, quantity: unknown) => {
 				if (event.target === overlay) closeModal();
 			});
 			window.addEventListener('keydown', (event) => {
-				if (event.key === 'Escape' && isOpen) closeModal();
+				if (
+					event.key === 'Escape' &&
+					isOpen &&
+					!document.body.classList.contains('has-week-prep-modal')
+				) {
+					closeModal();
+				}
 			});
 
 			window.addEventListener(MULTIPLIER_EVENT, (event) => {

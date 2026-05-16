@@ -1,0 +1,239 @@
+{
+	"semana": 3,
+	"titulo": "Semana 3",
+	"descripcion": "Preparaciones y horario para la semana 3. Revisa los básicos y sigue el horario para preparar los elementos reutilizables durante la semana.",
+	"basicos": [
+		{
+			"clave": "banana_bread_loaf",
+			"nombre": "Pan de plátano",
+			"listo": false
+		},
+		{
+			"clave": "roasted_sumac_chickpeas",
+			"nombre": "Garbanzos tostados con sumac",
+			"listo": false
+		},
+		{
+			"clave": "granola",
+			"nombre": "Granola",
+			"listo": false
+		},
+		{
+			"clave": "vegan_broth",
+			"nombre": "Caldo vegano",
+			"listo": false
+		},
+		{
+			"clave": "almond_milk",
+			"nombre": "Leche de almendras",
+			"listo": false
+		},
+		{
+			"clave": "crunchy_seed_mix",
+			"nombre": "Mezcla crujiente de semillas",
+			"listo": false
+		},
+		{
+			"clave": "eggplant_caponata",
+			"nombre": "Caponata de berenjena",
+			"listo": false
+		},
+		{
+			"clave": "piccalilli",
+			"nombre": "Piccalilli",
+			"listo": false
+		},
+		{
+			"clave": "chargrilled_eggplant_sumac_dip",
+			"nombre": "Crema de berenjena asada y sumac",
+			"listo": false
+		}
+	],
+	"tareas": [
+		{
+			"id": "prep_and_bake_banana_bread_day15",
+			"tipo": "prep_and_bake",
+			"nombre": "Preparar y hornear pan de plátano",
+			"descripcion": "Hornear pan de plátano; dejar enfriar y reservar porciones para la semana.",
+			"duracion_minutos": 60,
+			"dia_relacionado": [
+				15
+			],
+			"hecho": false
+		},
+		{
+			"id": "soak_chickpeas_day17",
+			"tipo": "prep",
+			"nombre": "Remojar garbanzos",
+			"descripcion": "Remojar garbanzos según indicación para su posterior cocción/uso.",
+			"dia_relacionado": [
+				17
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_chermoula_day15",
+			"tipo": "make",
+			"nombre": "Preparar chermoula",
+			"descripcion": "Preparar chermoula para usar en recetas de la semana.",
+			"duracion_minutos": 10,
+			"hecho": false,
+			"dia_relacionado": [
+				15
+			]
+		},
+		{
+			"id": "make_vegan_broth_day17",
+			"tipo": "make",
+			"nombre": "Preparar caldo vegano",
+			"descripcion": "Hacer caldo vegano para usar en distintas sopas/guisos.",
+			"duracion_minutos": 30,
+			"dia_relacionado": [
+				17
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_eggplant_caponata_day20",
+			"tipo": "make",
+			"nombre": "Preparar caponata de berenjena",
+			"descripcion": "Preparar la caponata de berenjena para servir en distintas recetas.",
+			"duracion_minutos": 25,
+			"dia_relacionado": [
+				20
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_vegan_aioli_day15",
+			"tipo": "make",
+			"nombre": "Preparar alioli vegano",
+			"descripcion": "Hacer alioli vegano según receta.",
+			"duracion_minutos": 10,
+			"dia_relacionado": [
+				15
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_chargrilled_eggplant_sumac_dip_day21",
+			"tipo": "make",
+			"nombre": "Preparar crema de berenjena asada y sumac",
+			"descripcion": "Preparar crema de berenjena asada y sumac para usar como crema o cobertura.",
+			"duracion_minutos": 20,
+			"dia_relacionado": [
+				21
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_chickpea_flour_crepes_day20",
+			"tipo": "make",
+			"nombre": "Preparar crepas de harina de garbanzo",
+			"descripcion": "Hacer la masa o las crepas de harina de garbanzo.",
+			"duracion_minutos": 20,
+			"dia_relacionado": [
+				20
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_pico_de_gallo_day21",
+			"tipo": "make",
+			"nombre": "Preparar pico de gallo",
+			"descripcion": "Preparar pico de gallo fresco para acompañar platos.",
+			"duracion_minutos": 10,
+			"dia_relacionado": [
+				21
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_lemon_mustard_vinaigrette_day19",
+			"tipo": "make",
+			"nombre": "Preparar vinagreta de limón y mostaza",
+			"descripcion": "Hacer la vinagreta de limón y mostaza para ensaladas.",
+			"duracion_minutos": 5,
+			"dia_relacionado": [
+				19
+			],
+			"hecho": false
+		},
+		{
+			"id": "soak_almonds_for_milk_day17",
+			"tipo": "prep",
+			"nombre": "Remojar almendras para leche",
+			"descripcion": "Remojar almendras para preparar leche vegetal más tarde.",
+			"dia_relacionado": [
+				17
+			],
+			"hecho": false
+		},
+		{
+			"id": "cook_quinoa_day21",
+			"tipo": "cook",
+			"nombre": "Cocinar quinoa",
+			"descripcion": "Cocer quinoa para usar en la receta del Día 21 y/o reservar sobrantes.",
+			"dia_relacionado": [
+				21
+			],
+			"duracion_minutos": 15,
+			"hecho": false
+		}
+	],
+	"horario": [
+		{
+			"hora": "10:00",
+			"titulo": "PREPARAR Y HORNEAR",
+			"acciones": [
+				{
+					"tipo": "prep_and_bake",
+					"tarea_id": "prep_and_bake_banana_bread_day15"
+				}
+			],
+			"notas": "Hornear pan de plátano (Día 15), dejar enfriar y reservar porciones."
+		},
+		{
+			"hora": "10:30",
+			"titulo": "PREPARAR",
+			"acciones": [
+				{
+					"tipo": "make",
+					"tarea_id": "make_chermoula_day15"
+				},
+				{
+					"tipo": "make",
+					"tarea_id": "make_vegan_broth_day17"
+				}
+			],
+			"notas": "Preparar chermoula y el caldo vegano."
+		},
+		{
+			"hora": "11:00",
+			"titulo": "PREPARAR",
+			"acciones": [
+				{
+					"tipo": "make",
+					"tarea_id": "make_eggplant_caponata_day20"
+				}
+			],
+			"notas": "Preparar la caponata de berenjena (Día 20)."
+		},
+		{
+			"hora": "11:30",
+			"titulo": "PREPARAR / REMOJAR",
+			"acciones": [
+				{
+					"tipo": "make",
+					"tarea_id": "make_lemon_mustard_vinaigrette_day19"
+				},
+				{
+					"tipo": "prep",
+					"tarea_id": "soak_almonds_for_milk_day17"
+				}
+			],
+			"notas": "Hacer vinagreta y remojar almendras para leche."
+		}
+	],
+	"notas_generales": "Revisa los 'básicos' antes de empezar. Marca las tareas completadas para actualizar la lista de la compra y sincronizar el estado en la interfaz."
+}

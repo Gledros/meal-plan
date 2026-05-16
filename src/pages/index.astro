@@ -8,10 +8,15 @@ import Search from '@components/Search.astro';
 import IngredientInfoModal from '@components/IngredientInfoModal.astro';
 import GroceriesModal from '@components/GroceriesModal.astro';
 import PortionMultiplier from '@components/PortionMultiplier.astro';
+import { WeekPrepSchema } from '@data/schemas/weekPrep';
 import w1_ShoppingList from '@data/weeks/w1_ShoppingList.json';
 import w2_ShoppingList from '@data/weeks/w2_ShoppingList.json';
 import w3_ShoppingList from '@data/weeks/w3_ShoppingList.json';
 import w4_ShoppingList from '@data/weeks/w4_ShoppingList.json';
+import w1_PreparationRaw from '@data/weeks/w1_Preparation.json';
+import w2_PreparationRaw from '@data/weeks/w2_Preparation.json';
+import w3_PreparationRaw from '@data/weeks/w3_Preparation.json';
+import w4_PreparationRaw from '@data/weeks/w4_Preparation.json';
 import {
 	loadRecipesFromDisk,
 	type MealDinnerRecipe,
@@ -38,6 +43,29 @@ const shoppingWeeks = [
 	{ id: 'semana-2', label: 'Semana 2', week: w2_ShoppingList },
 	{ id: 'semana-3', label: 'Semana 3', week: w3_ShoppingList },
 	{ id: 'semana-4', label: 'Semana 4', week: w4_ShoppingList },
+];
+
+const preparationWeeks = [
+	{
+		id: 'semana-1',
+		label: 'Semana 1',
+		week: WeekPrepSchema.parse(w1_PreparationRaw),
+	},
+	{
+		id: 'semana-2',
+		label: 'Semana 2',
+		week: WeekPrepSchema.parse(w2_PreparationRaw),
+	},
+	{
+		id: 'semana-3',
+		label: 'Semana 3',
+		week: WeekPrepSchema.parse(w3_PreparationRaw),
+	},
+	{
+		id: 'semana-4',
+		label: 'Semana 4',
+		week: WeekPrepSchema.parse(w4_PreparationRaw),
+	},
 ];
 ---
 
@@ -101,6 +129,7 @@ const shoppingWeeks = [
 				/>
 				<GroceriesModal
 					weeks={shoppingWeeks}
+					preparationWeeks={preparationWeeks}
 					title='Lista de compras'
 					triggerLabel='Lista de compras'
 				/>

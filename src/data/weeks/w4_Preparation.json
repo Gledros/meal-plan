@@ -1,0 +1,225 @@
+{
+	"semana": 4,
+	"titulo": "Semana 4",
+	"descripcion": "Lista de preparaciones y horario para la semana 4. Comprueba los básicos y sigue el horario para preparar y cocinar elementos reutilizables durante la semana.",
+	"basicos": [
+		{
+			"clave": "carrot_parsnip_loaf",
+			"nombre": "Pan de zanahoria y chirivía",
+			"listo": false
+		},
+		{
+			"clave": "peanut_butter",
+			"nombre": "Mantequilla de cacahuate",
+			"listo": false
+		},
+		{
+			"clave": "almond_butter",
+			"nombre": "Mantequilla de almendra",
+			"listo": false
+		},
+		{
+			"clave": "roasted_sumac_chickpeas",
+			"nombre": "Garbanzos tostados con sumac",
+			"listo": false
+		},
+		{
+			"clave": "eggplant_caponata",
+			"nombre": "Caponata de berenjena",
+			"listo": false
+		},
+		{
+			"clave": "beet_hummus",
+			"nombre": "Hummus de remolacha",
+			"listo": false
+		},
+		{
+			"clave": "sauerkraut",
+			"nombre": "Chucrut",
+			"listo": false
+		},
+		{
+			"clave": "vegan_broth",
+			"nombre": "Caldo vegano",
+			"listo": false
+		},
+		{
+			"clave": "crunchy_seed_mix",
+			"nombre": "Mezcla crujiente de semillas",
+			"listo": false
+		}
+	],
+	"tareas": [
+		{
+			"id": "prep_and_bake_vegan_meatloaf_day22",
+			"tipo": "prep_and_bake",
+			"nombre": "Preparar y hornear pastel de carne vegano",
+			"descripcion": "Preparar la mezcla y hornear el pastel de carne vegano; dejar reposar y cortar para servir y reservar sobrantes.",
+			"dia_relacionado": [
+				22
+			],
+			"duracion_minutos": 75,
+			"hecho": false
+		},
+		{
+			"id": "make_tofu_miso_dressing_day23",
+			"tipo": "make",
+			"nombre": "Aderezo de tofu y miso",
+			"descripcion": "Preparar el aderezo de tofu y miso.",
+			"dia_relacionado": [
+				23
+			],
+			"duracion_minutos": 10,
+			"hecho": false
+		},
+		{
+			"id": "make_sesame_rice_wine_dressing_day24",
+			"tipo": "make",
+			"nombre": "Aderezo de sésamo y vino de arroz",
+			"descripcion": "Preparar el aderezo de sésamo y vino de arroz.",
+			"dia_relacionado": [
+				24
+			],
+			"duracion_minutos": 10,
+			"hecho": false
+		},
+		{
+			"id": "make_coconut_yogurt_lime_chili_dressing_day28",
+			"tipo": "make",
+			"nombre": "Aderezo de yogur de coco, lima y chile",
+			"descripcion": "Preparar aderezo de yogur de coco, lima y chile.",
+			"dia_relacionado": [
+				28
+			],
+			"duracion_minutos": 10,
+			"hecho": false
+		},
+		{
+			"id": "make_lemon_mustard_vinaigrette_day22",
+			"tipo": "make",
+			"nombre": "Vinagreta de limón y mostaza",
+			"descripcion": "Preparar vinagreta de limón y mostaza.",
+			"dia_relacionado": [
+				22
+			],
+			"duracion_minutos": 5,
+			"hecho": false
+		},
+		{
+			"id": "make_guacamole_day26",
+			"tipo": "make",
+			"nombre": "Guacamole",
+			"descripcion": "Preparar guacamole para acompañar tacos o refrigerios.",
+			"dia_relacionado": [
+				26
+			],
+			"duracion_minutos": 10,
+			"hecho": false
+		},
+		{
+			"id": "make_lentil_vegetable_soup_day23",
+			"tipo": "make",
+			"nombre": "Sopa de lentejas y verduras",
+			"descripcion": "Preparar la sopa de lentejas y verduras.",
+			"dia_relacionado": [
+				23
+			],
+			"duracion_minutos": 35,
+			"hecho": false
+		},
+		{
+			"id": "prep_soak_prunes_day25",
+			"tipo": "prep",
+			"nombre": "Remojar ciruelas",
+			"descripcion": "Remojar las ciruelas para usar en la granola o desayunos (dejar remojar el tiempo indicado).",
+			"dia_relacionado": [
+				25
+			],
+			"duracion_minutos": 720,
+			"notas": "Remojar varias horas o durante la noche según la receta.",
+			"hecho": false
+		},
+		{
+			"id": "prep_soak_sticky_rice_day23",
+			"tipo": "prep",
+			"nombre": "Remojar arroz glutinoso",
+			"descripcion": "Remojar el arroz glutinoso toda la noche antes de cocinar.",
+			"dia_relacionado": [
+				23
+			],
+			"notas": "Remojar durante la noche.",
+			"hecho": false
+		},
+		{
+			"id": "cook_wild_rice_days24_25",
+			"tipo": "cook",
+			"nombre": "Cocinar arroz salvaje",
+			"descripcion": "Cocer el arroz salvaje según indicación para usar en las recetas de los días 24 y 25.",
+			"duracion_minutos": 45,
+			"hecho": false,
+			"dia_relacionado": [
+				24,
+				25
+			]
+		}
+	],
+	"horario": [
+		{
+			"hora": "10:00",
+			"titulo": "PREPARAR Y HORNEAR",
+			"acciones": [
+				{
+					"tipo": "prep_and_bake",
+					"tarea_id": "prep_and_bake_vegan_meatloaf_day22"
+				}
+			],
+			"notas": "Preparar y hornear el pastel de carne vegano (Día 22)."
+		},
+		{
+			"hora": "10:30",
+			"titulo": "PREPARAR",
+			"acciones": [
+				{
+					"tipo": "make",
+					"tarea_id": "make_tofu_miso_dressing_day23"
+				},
+				{
+					"tipo": "make",
+					"tarea_id": "make_sesame_rice_wine_dressing_day24"
+				},
+				{
+					"tipo": "make",
+					"tarea_id": "make_coconut_yogurt_lime_chili_dressing_day28"
+				}
+			],
+			"notas": "Preparar aderezos: tofu y miso, sésamo y vino de arroz, y yogur de coco con lima y chile."
+		},
+		{
+			"hora": "10:45",
+			"titulo": "PREPARAR (mientras tanto)",
+			"acciones": [
+				{
+					"tipo": "make",
+					"tarea_id": "make_lentil_vegetable_soup_day23"
+				}
+			],
+			"notas": "Hacer la sopa de lentejas (Día 23)."
+		},
+		{
+			"hora": "11:15",
+			"titulo": "COCINAR / REMOJAR",
+			"acciones": [
+				{
+					"tipo": "cook",
+					"tarea_id": "cook_wild_rice_days24_25"
+				},
+				{
+					"tipo": "prep",
+					"tarea_id": "prep_soak_prunes_day25"
+				}
+			],
+			"notas": "Cocer arroz salvaje y empezar a remojar las ciruelas."
+		}
+	],
+	"notas_generales": "Revisa la lista de 'básicos' y marca lo que ya tengas. Completa las tareas según el horario para facilitar las preparaciones de los días posteriores."
+}

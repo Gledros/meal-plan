@@ -1,0 +1,879 @@
+---
+import type { WeekPrep } from '@data/schemas/weekPrep';
+
+type BasicoItem = NonNullable<WeekPrep['basicos']>[number];
+type TareaItem = NonNullable<WeekPrep['tareas']>[number];
+type EventoItem = NonNullable<WeekPrep['horario']>[number];
+type AccionItem = EventoItem['acciones'][number];
+
+interface WeekPreparationConfig {
+	id?: string;
+	label?: string;
+	week: WeekPrep;
+}
+
+interface PreparedWeekConfig {
+	id: string;
+	label: string;
+	week: WeekPrep;
+	prepTitle: string;
+	prepDescription: string;
+	timetableTitle: string;
+	basics: BasicoItem[];
+	makeTasks: TareaItem[];
+	cookTasks: TareaItem[];
+	prepTasks: TareaItem[];
+	schedule: EventoItem[];
+	taskNamesById: Record<string, string>;
+}
+
+interface Props {
+	weeks?: WeekPreparationConfig[];
+	defaultWeekId?: string;
+	title?: string;
+	triggerLabel?: string;
+}
+
+const {
+	weeks = [],
+	defaultWeekId = '',
+	title = 'Preparacion semanal',
+	triggerLabel = 'Preparacion',
+} = Astro.props;
+
+const normalizeIdentifierPart = (value: unknown) =>
+	String(value ?? '')
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/(^-|-$)/g, '');
+
+const getTaskBucket = (tipo: unknown): 'make' | 'cook' | 'prep' => {
+	const normalized = String(tipo ?? '').toLowerCase();
+	if (normalized === 'make') return 'make';
+	if (normalized === 'cook') return 'cook';
+	return 'prep';
+};
+
+const formatRelatedDays = (relatedDays: unknown) => {
+	if (!Array.isArray(relatedDays)) return '';
+	const days = Array.from(
+		new Set(
+			relatedDays
+				.map((value) => Number(value))
+				.filter((value) => Number.isInteger(value) && value > 0),
+		),
+	).sort((a, b) => a - b);
+
+	if (days.length === 0) return '';
+	if (days.length === 1) return `Día ${days[0]}`;
+	return `Días ${days.join(', ')}`;
+};
+
+const formatDisplayTime = (rawTime: unknown) => {
+	const value = String(rawTime ?? '').trim();
+	if (!value) return '';
+
+	const basicMatch = value.match(/^(\d{1,2})(?::(\d{2}))?$/);
+	if (!basicMatch) return value.toUpperCase();
+
+	const hour = Number(basicMatch[1]);
+	const minute = Number(basicMatch[2] ?? '0');
+	if (
+		!Number.isFinite(hour) ||
+		hour < 0 ||
+		hour > 23 ||
+		!Number.isFinite(minute) ||
+		minute < 0 ||
+		minute > 59
+	) {
+		return value;
+	}
+
+	const period = hour >= 12 ? 'PM' : 'AM';
+	const normalizedHour = hour % 12 || 12;
+	if (minute === 0) return `${normalizedHour} ${period}`;
+	return `${normalizedHour}:${String(minute).padStart(2, '0')} ${period}`;
+};
+
+const resolveActionText = (
+	action: AccionItem,
+	taskNamesById: Record<string, string>,
+) => {
+	if (action.tarea_id && taskNamesById[action.tarea_id]) {
+		return taskNamesById[action.tarea_id];
+	}
+	if (action.descripcion) return action.descripcion;
+	if (action.tarea_id) return action.tarea_id.replace(/_/g, ' ');
+	return '';
+};
+
+const resolvedWeeks: PreparedWeekConfig[] = weeks.map((entry, index) => {
+	const weekNumber = Number(entry.week.semana);
+	const fallbackLabel =
+		Number.isFinite(weekNumber) && weekNumber > 0
+			? `Semana ${weekNumber}`
+			: `Semana ${index + 1}`;
+	const label = entry.label ?? fallbackLabel;
+	const id =
+		normalizeIdentifierPart(entry.id ?? label) || `semana-${index + 1}`;
+
+	const rawTasks = (entry.week.tareas ?? []) as TareaItem[];
+	const makeTasks: TareaItem[] = [];
+	const cookTasks: TareaItem[] = [];
+	const prepTasks: TareaItem[] = [];
+	const taskNamesById: Record<string, string> = {};
+
+	rawTasks.forEach((task) => {
+		if (task.id) taskNamesById[task.id] = task.nombre;
+		const bucket = getTaskBucket(task.tipo);
+		if (bucket === 'make') makeTasks.push(task);
+		if (bucket === 'cook') cookTasks.push(task);
+		if (bucket === 'prep') prepTasks.push(task);
+	});
+
+	return {
+		id,
+		label,
+		week: entry.week,
+		prepTitle: entry.week.titulo?.trim() || `${label.toUpperCase()} PREP`,
+		prepDescription:
+			entry.week.descripcion?.trim() ||
+			'Revisa tus basicos y prepara lo necesario antes de iniciar la semana.',
+		timetableTitle: `${label.toUpperCase()} TIMETABLE`,
+		basics: (entry.week.basicos ?? []) as BasicoItem[],
+		makeTasks,
+		cookTasks,
+		prepTasks,
+		schedule: (entry.week.horario ?? []) as EventoItem[],
+		taskNamesById,
+	};
+});
+
+const initialWeekId =
+	normalizeIdentifierPart(defaultWeekId) || resolvedWeeks[0]?.id || '';
+---
+
+<div
+	class='week-prep-modal'
+	data-week-prep-modal
+	data-week-prep-default-week={initialWeekId}
+>
+	<button
+		type='button'
+		class='week-prep-modal__trigger'
+		data-week-prep-trigger
+		aria-haspopup='dialog'
+	>
+		{triggerLabel}
+	</button>
+
+	<div
+		class='week-prep-modal__overlay'
+		data-week-prep-overlay
+		aria-hidden='true'
+	>
+		<section
+			class='week-prep-modal__panel'
+			role='dialog'
+			aria-modal='true'
+			aria-label={title}
+			data-week-prep-dialog
+		>
+			<header class='week-prep-modal__header'>
+				<div class='week-prep-modal__header-copy'>
+					<h2>{title}</h2>
+					<p data-week-prep-current-label aria-live='polite'></p>
+				</div>
+				<button
+					type='button'
+					class='week-prep-modal__close'
+					data-week-prep-close
+					aria-label='Cerrar preparacion semanal'
+				>
+					Cerrar
+				</button>
+			</header>
+
+			<div class='week-prep-modal__content'>
+				{
+					resolvedWeeks.map((weekConfig) => (
+						<article
+							class='week-prep-modal__week'
+							data-week-prep-panel={weekConfig.id}
+							data-week-prep-label={weekConfig.label}
+						>
+							<section class='week-prep-sheet'>
+								<h3 class='week-prep-sheet__title'>{weekConfig.prepTitle}</h3>
+								<p class='week-prep-sheet__description'>
+									{weekConfig.prepDescription}
+								</p>
+
+								<div class='week-prep-sheet__grid'>
+									<section class='week-prep-sheet__column'>
+										<h4>BÁSICOS</h4>
+										<ul>
+											{weekConfig.basics.map((item) => (
+												<li>
+													<span
+														class='week-prep-sheet__check'
+														aria-hidden='true'
+													/>
+													<span>{item.nombre}</span>
+												</li>
+											))}
+										</ul>
+									</section>
+
+									{weekConfig.makeTasks.length > 0 ? (
+										<section class='week-prep-sheet__column'>
+											<h4>HACER</h4>
+											<ul>
+												{weekConfig.makeTasks.map((task) => (
+													<li>
+														<span
+															class='week-prep-sheet__check'
+															aria-hidden='true'
+														/>
+														<span>{task.nombre}</span>
+														<small>
+															{formatRelatedDays(task.dia_relacionado)}
+														</small>
+													</li>
+												))}
+											</ul>
+										</section>
+									) : null}
+
+									{weekConfig.cookTasks.length > 0 ? (
+										<section class='week-prep-sheet__column'>
+											<h4>COCINAR</h4>
+											<ul>
+												{weekConfig.cookTasks.map((task) => (
+													<li>
+														<span
+															class='week-prep-sheet__check'
+															aria-hidden='true'
+														/>
+														<span>{task.nombre}</span>
+														<small>
+															{formatRelatedDays(task.dia_relacionado)}
+														</small>
+													</li>
+												))}
+											</ul>
+										</section>
+									) : null}
+
+									{weekConfig.prepTasks.length > 0 ? (
+										<section class='week-prep-sheet__column'>
+											<h4>PREPARAR</h4>
+											<ul>
+												{weekConfig.prepTasks.map((task) => (
+													<li>
+														<span
+															class='week-prep-sheet__check'
+															aria-hidden='true'
+														/>
+														<span>{task.nombre}</span>
+														<small>
+															{formatRelatedDays(task.dia_relacionado)}
+														</small>
+													</li>
+												))}
+											</ul>
+										</section>
+									) : null}
+								</div>
+
+								<section class='week-prep-timeline'>
+									<h4>{weekConfig.timetableTitle}</h4>
+									{weekConfig.schedule.length > 0 ? (
+										<div class='week-prep-timeline__events'>
+											{weekConfig.schedule.map((eventItem) => {
+												const actionItems = eventItem.acciones
+													.map((action) =>
+														resolveActionText(action, weekConfig.taskNamesById),
+													)
+													.filter((text) => text.length > 0);
+
+												return (
+													<article class='week-prep-timeline__event'>
+														<div class='week-prep-timeline__card'>
+															<p class='week-prep-timeline__time'>
+																{formatDisplayTime(eventItem.hora)}
+															</p>
+															{eventItem.titulo ? (
+																<p class='week-prep-timeline__title'>
+																	{eventItem.titulo}
+																</p>
+															) : null}
+															{actionItems.length > 0 ? (
+																<ul class='week-prep-timeline__actions'>
+																	{actionItems.map((itemText) => (
+																		<li>{itemText}</li>
+																	))}
+																</ul>
+															) : null}
+															{eventItem.notas ? (
+																<p class='week-prep-timeline__note'>
+																	{eventItem.notas}
+																</p>
+															) : null}
+														</div>
+													</article>
+												);
+											})}
+										</div>
+									) : (
+										<p class='week-prep-timeline__empty'>
+											No hay horario cargado para esta semana.
+										</p>
+									)}
+								</section>
+							</section>
+						</article>
+					))
+				}
+
+				<section class='week-prep-modal__empty' data-week-prep-empty hidden>
+					<h3>Sin datos de preparacion</h3>
+					<p data-week-prep-empty-copy>
+						No hay preparacion cargada para la semana seleccionada.
+					</p>
+				</section>
+			</div>
+		</section>
+	</div>
+</div>
+
+<script>
+	(() => {
+		const INIT_ATTR = 'data-week-prep-initialized';
+		const roots = document.querySelectorAll('[data-week-prep-modal]');
+
+		for (const root of roots) {
+			if (!(root instanceof HTMLElement) || root.hasAttribute(INIT_ATTR)) {
+				continue;
+			}
+			root.setAttribute(INIT_ATTR, 'true');
+
+			const trigger = root.querySelector('[data-week-prep-trigger]');
+			const overlay = root.querySelector('[data-week-prep-overlay]');
+			const closeButton = root.querySelector('[data-week-prep-close]');
+			const currentLabelNode = root.querySelector(
+				'[data-week-prep-current-label]',
+			);
+			const emptyState = root.querySelector('[data-week-prep-empty]');
+			const emptyCopy = root.querySelector('[data-week-prep-empty-copy]');
+
+			if (
+				!(trigger instanceof HTMLButtonElement) ||
+				!(overlay instanceof HTMLElement) ||
+				!(closeButton instanceof HTMLButtonElement)
+			) {
+				continue;
+			}
+
+			if (overlay.parentElement !== document.body) {
+				document.body.appendChild(overlay);
+			}
+
+			const parentModal = root.closest('[data-ingredients-modal]');
+			const panels = Array.from(
+				overlay.querySelectorAll('[data-week-prep-panel]'),
+			).filter((node) => node instanceof HTMLElement);
+			let isOpen = false;
+			let lastFocusedElement: Element | null = null;
+			let activeWeekId =
+				root.getAttribute('data-week-prep-default-week') ||
+				panels[0]?.getAttribute('data-week-prep-panel') ||
+				'';
+
+			const getLabelFromParentTabs = (weekId: string) => {
+				if (!weekId || !(parentModal instanceof HTMLElement)) return weekId;
+				const weekTabButton = parentModal.querySelector(
+					`[data-tab-target="${weekId}"]`,
+				);
+				if (weekTabButton instanceof HTMLElement) {
+					const text = weekTabButton.textContent?.trim();
+					if (text) return text;
+				}
+				return weekId;
+			};
+
+			const setActiveWeek = (nextWeekId: string) => {
+				if (nextWeekId) {
+					activeWeekId = nextWeekId;
+				}
+
+				const targetWeekId =
+					activeWeekId || panels[0]?.getAttribute('data-week-prep-panel') || '';
+				let hasMatch = false;
+				let activeLabel = getLabelFromParentTabs(targetWeekId);
+
+				for (const panel of panels) {
+					if (!(panel instanceof HTMLElement)) continue;
+					const panelWeekId = panel.getAttribute('data-week-prep-panel') || '';
+					const isActive = panelWeekId === targetWeekId;
+					panel.style.display = isActive ? 'block' : 'none';
+					panel.setAttribute('aria-hidden', String(!isActive));
+					if (isActive) {
+						hasMatch = true;
+						activeLabel =
+							panel.getAttribute('data-week-prep-label') || activeLabel;
+					}
+				}
+
+				if (currentLabelNode instanceof HTMLElement) {
+					currentLabelNode.textContent = activeLabel;
+				}
+				if (emptyState instanceof HTMLElement) {
+					emptyState.hidden = hasMatch;
+				}
+				if (emptyCopy instanceof HTMLElement && !hasMatch) {
+					emptyCopy.textContent = activeLabel
+						? `No hay preparacion cargada para ${activeLabel}.`
+						: 'No hay preparacion cargada para la semana seleccionada.';
+				}
+			};
+
+			const getCurrentWeekId = () => {
+				if (parentModal instanceof HTMLElement) {
+					const parentWeekId = parentModal.getAttribute('data-active-week');
+					if (parentWeekId) return parentWeekId;
+				}
+				return activeWeekId;
+			};
+
+			const openModal = () => {
+				if (isOpen) return;
+				isOpen = true;
+				lastFocusedElement = document.activeElement;
+				setActiveWeek(getCurrentWeekId());
+				overlay.classList.add('is-open');
+				overlay.setAttribute('aria-hidden', 'false');
+				trigger.setAttribute('aria-expanded', 'true');
+				document.body.classList.add('has-week-prep-modal');
+				requestAnimationFrame(() => closeButton.focus());
+			};
+
+			const closeModal = () => {
+				if (!isOpen) return;
+				isOpen = false;
+				overlay.classList.remove('is-open');
+				overlay.setAttribute('aria-hidden', 'true');
+				trigger.setAttribute('aria-expanded', 'false');
+				document.body.classList.remove('has-week-prep-modal');
+				if (lastFocusedElement instanceof HTMLElement) {
+					lastFocusedElement.focus();
+				}
+			};
+
+			trigger.setAttribute('aria-expanded', 'false');
+			setActiveWeek(getCurrentWeekId());
+			trigger.addEventListener('click', openModal);
+			closeButton.addEventListener('click', closeModal);
+			overlay.addEventListener('click', (event) => {
+				if (event.target === overlay) {
+					closeModal();
+				}
+			});
+			window.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && isOpen) {
+					event.preventDefault();
+					event.stopImmediatePropagation();
+					closeModal();
+				}
+			});
+		}
+	})();
+</script>
+
+<style>
+	.week-prep-modal {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.week-prep-modal__trigger {
+		border-radius: 0.65rem;
+		border: 1px solid #8fb8a6;
+		background: linear-gradient(180deg, #f0fdf6 0%, #ddf8ea 100%);
+		color: #0f5132;
+		font-size: 0.8rem;
+		font-weight: 700;
+		padding: 0.44rem 0.72rem;
+		cursor: pointer;
+		box-shadow: 0 1px 2px rgba(15, 81, 50, 0.14);
+		transition:
+			background-color 160ms ease,
+			border-color 160ms ease,
+			transform 160ms ease;
+	}
+
+	.week-prep-modal__trigger:hover {
+		background: linear-gradient(180deg, #dcfce7 0%, #bbf7d0 100%);
+		border-color: #65a30d;
+	}
+
+	.week-prep-modal__trigger:active {
+		transform: translateY(1px);
+	}
+
+	.week-prep-modal__trigger:focus-visible {
+		outline: 2px solid #4ade80;
+		outline-offset: 1px;
+	}
+
+	.week-prep-modal__overlay {
+		position: fixed;
+		inset: 0;
+		z-index: 75;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 1.25rem 1rem;
+		overflow-y: auto;
+		background: rgba(15, 23, 42, 0.34);
+		backdrop-filter: blur(2px);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition:
+			opacity 220ms ease,
+			visibility 220ms ease;
+	}
+
+	.week-prep-modal__panel {
+		width: min(78rem, 94vw);
+		border-radius: 1rem;
+		border: 1px solid #e2e8f0;
+		background: #fffdf8;
+		box-shadow:
+			0 26px 60px -35px rgba(15, 23, 42, 0.7),
+			0 12px 28px -18px rgba(15, 23, 42, 0.45);
+		transform: translateY(14px) scale(0.98);
+		transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	.week-prep-modal__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 0.9rem 1.15rem;
+		border-bottom: 1px solid #e2e8f0;
+		background: #f8fafc;
+	}
+
+	.week-prep-modal__header-copy h2 {
+		margin: 0;
+		font-size: 1rem;
+		font-weight: 800;
+		color: #0f172a;
+	}
+
+	.week-prep-modal__header-copy p {
+		margin: 0.15rem 0 0;
+		font-size: 0.8rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		color: #475569;
+	}
+
+	.week-prep-modal__close {
+		border-radius: 0.6rem;
+		border: 1px solid #cbd5e1;
+		background: #ffffff;
+		color: #334155;
+		font-size: 0.8rem;
+		font-weight: 700;
+		padding: 0.4rem 0.65rem;
+		cursor: pointer;
+	}
+
+	.week-prep-modal__content {
+		padding: 1rem 1.15rem 1.2rem;
+		overflow-y: auto;
+	}
+
+	.week-prep-modal__week {
+		display: block;
+	}
+
+	.week-prep-sheet {
+		background:
+			linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 0.95),
+				rgba(255, 255, 255, 1)
+			),
+			repeating-linear-gradient(
+				90deg,
+				rgba(15, 23, 42, 0),
+				rgba(15, 23, 42, 0) 6px,
+				rgba(15, 23, 42, 0.015) 6px,
+				rgba(15, 23, 42, 0.015) 12px
+			);
+		border: 1px solid #dce5f0;
+		border-radius: 0.9rem;
+		padding: 1rem;
+	}
+
+	.week-prep-sheet__title {
+		margin: 0;
+		font-size: clamp(1.3rem, 1.8vw, 1.9rem);
+		font-weight: 900;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #111827;
+	}
+
+	.week-prep-sheet__description {
+		margin: 0.8rem 0 0;
+		padding-bottom: 0.85rem;
+		border-bottom: 1px dashed #94a3b8;
+		font-size: 0.96rem;
+		line-height: 1.45;
+		color: #334155;
+	}
+
+	.week-prep-sheet__grid {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 0.8rem;
+		margin-top: 1rem;
+	}
+
+	.week-prep-sheet__column {
+		border: 1px solid #e2e8f0;
+		border-radius: 0.75rem;
+		background: #ffffff;
+		padding: 0.75rem;
+		min-width: 0;
+	}
+
+	.week-prep-sheet__column h4 {
+		margin: 0;
+		font-size: 0.9rem;
+		font-weight: 900;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #0f172a;
+	}
+
+	.week-prep-sheet__column ul {
+		margin: 0.55rem 0 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.42rem;
+	}
+
+	.week-prep-sheet__column li {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		gap: 0.42rem;
+		align-items: start;
+		font-size: 0.86rem;
+		line-height: 1.35;
+		color: #1e293b;
+	}
+
+	.week-prep-sheet__column small {
+		font-size: 0.78rem;
+		font-weight: 700;
+		color: #64748b;
+	}
+
+	.week-prep-sheet__check {
+		width: 0.88rem;
+		height: 0.88rem;
+		margin-top: 0.12rem;
+		border: 1px solid #94a3b8;
+		border-radius: 0.2rem;
+		background: #ffffff;
+	}
+
+	.week-prep-timeline {
+		margin-top: 1rem;
+		padding: 1rem;
+		border-radius: 0.85rem;
+		background:
+			linear-gradient(180deg, #fff6fb 0%, #fdf2f8 100%),
+			repeating-linear-gradient(
+				0deg,
+				rgba(236, 72, 153, 0.06),
+				rgba(236, 72, 153, 0.06) 1px,
+				rgba(0, 0, 0, 0) 1px,
+				rgba(0, 0, 0, 0) 16px
+			);
+		border: 1px solid #f5d0fe;
+	}
+
+	.week-prep-timeline h4 {
+		margin: 0;
+		font-size: 1.45rem;
+		font-weight: 900;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #1f2937;
+	}
+
+	.week-prep-timeline__events {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+
+	.week-prep-timeline__event {
+		display: block;
+	}
+
+	.week-prep-timeline__card {
+		width: 100%;
+		height: 100%;
+		border: 1px solid rgba(148, 163, 184, 0.5);
+		border-radius: 0.75rem;
+		background: rgba(255, 255, 255, 0.95);
+		padding: 0.72rem;
+		box-shadow: 0 8px 18px -16px rgba(15, 23, 42, 0.45);
+	}
+
+	.week-prep-timeline__time {
+		margin: 0;
+		font-size: 1.75rem;
+		font-weight: 900;
+		line-height: 1;
+		color: #1f2937;
+	}
+
+	.week-prep-timeline__title {
+		margin: 0.35rem 0 0;
+		font-size: 0.8rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		color: #0f172a;
+	}
+
+	.week-prep-timeline__actions {
+		margin: 0.45rem 0 0;
+		padding-left: 1rem;
+		display: grid;
+		gap: 0.15rem;
+		font-size: 0.82rem;
+		line-height: 1.32;
+		color: #334155;
+	}
+
+	.week-prep-timeline__note {
+		margin: 0.45rem 0 0;
+		font-size: 0.74rem;
+		line-height: 1.35;
+		color: #475569;
+	}
+
+	.week-prep-timeline__empty {
+		margin: 0.9rem 0 0;
+		font-size: 0.88rem;
+		color: #475569;
+	}
+
+	.week-prep-modal__empty {
+		border: 1px dashed #cbd5e1;
+		border-radius: 0.75rem;
+		padding: 1rem;
+		background: #f8fafc;
+	}
+
+	.week-prep-modal__empty h3 {
+		margin: 0;
+		font-size: 1rem;
+		font-weight: 800;
+		color: #0f172a;
+	}
+
+	.week-prep-modal__empty p {
+		margin: 0.45rem 0 0;
+		font-size: 0.9rem;
+		color: #475569;
+	}
+
+	.week-prep-modal__overlay.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.week-prep-modal__overlay.is-open .week-prep-modal__panel {
+		transform: translateY(0) scale(1);
+	}
+
+	:global(body.has-week-prep-modal) {
+		overflow: hidden;
+	}
+
+	@media (max-width: 900px) {
+		.week-prep-sheet__grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 640px) {
+		.week-prep-modal__trigger {
+			font-size: 0.86rem;
+			padding: 0.52rem 0.82rem;
+		}
+
+		.week-prep-modal__overlay {
+			padding: 0;
+			align-items: flex-end;
+		}
+
+		.week-prep-modal__panel {
+			width: 100%;
+			max-height: 100dvh;
+			border-radius: 1rem 1rem 0 0;
+			border-left: none;
+			border-right: none;
+			border-bottom: none;
+		}
+
+		.week-prep-modal__content {
+			padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+		}
+
+		.week-prep-sheet {
+			padding: 0.85rem;
+		}
+
+		.week-prep-sheet__grid {
+			grid-template-columns: 1fr;
+		}
+
+		.week-prep-timeline {
+			padding: 0.8rem;
+		}
+
+		.week-prep-timeline h4 {
+			font-size: 1.15rem;
+		}
+
+		.week-prep-timeline__events {
+			grid-template-columns: 1fr;
+			gap: 0.7rem;
+		}
+
+		.week-prep-timeline__time {
+			font-size: 1.4rem;
+		}
+	}
+</style>

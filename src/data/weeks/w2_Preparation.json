@@ -1,0 +1,244 @@
+{
+	"semana": 2,
+	"titulo": "Semana 2",
+	"descripcion": "Preparaciones y horario para la semana 2. Revisa los 'básicos' y sigue el horario para preparar y cocinar elementos que se usarán durante la semana.",
+	"basicos": [
+		{
+			"clave": "tofu_cream_cheese",
+			"nombre": "Queso crema de tofu",
+			"listo": false
+		},
+		{
+			"clave": "red_wine_vinaigrette",
+			"nombre": "Vinagreta de vino tinto",
+			"listo": false
+		},
+		{
+			"clave": "beet_hummus",
+			"nombre": "Hummus de remolacha",
+			"listo": false
+		},
+		{
+			"clave": "sauerkraut",
+			"nombre": "Chucrut",
+			"listo": false
+		},
+		{
+			"clave": "pesto",
+			"nombre": "Pesto",
+			"listo": false
+		},
+		{
+			"clave": "tomato_chili_relish",
+			"nombre": "Salsa de tomate y chile",
+			"listo": false
+		},
+		{
+			"clave": "pico_de_gallo",
+			"nombre": "Pico de gallo",
+			"listo": false
+		},
+		{
+			"clave": "granola",
+			"nombre": "Granola",
+			"listo": false
+		},
+		{
+			"clave": "vegan_broth",
+			"nombre": "Caldo vegano",
+			"listo": false
+		},
+		{
+			"clave": "vegan_aioli",
+			"nombre": "Alioli vegano",
+			"listo": false
+		},
+		{
+			"clave": "crunchy_seed_mix",
+			"nombre": "Mezcla crujiente de semillas",
+			"listo": false
+		}
+	],
+	"tareas": [
+		{
+			"id": "soak_chickpeas_day10",
+			"tipo": "prep",
+			"nombre": "Remojar garbanzos",
+			"descripcion": "Remojar garbanzos según indicaciones para usarlos en Día 10.",
+			"dia_relacionado": [
+				10
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_flax_or_chia_seed_egg_day9",
+			"tipo": "make",
+			"nombre": "Preparar 'huevo' de linaza/chía",
+			"descripcion": "Preparar sustituto de huevo con linaza o semillas de chía para usar en Día 9.",
+			"dia_relacionado": [
+				9
+			],
+			"duracion_minutos": 5,
+			"hecho": false
+		},
+		{
+			"id": "make_coconut_yogurt_lime_chili_dressing_day9",
+			"tipo": "make",
+			"nombre": "Aderezo de yogur de coco, lima y chile",
+			"descripcion": "Preparar aderezo de yogur de coco, lima y chile para Día 9.",
+			"dia_relacionado": [
+				9
+			],
+			"duracion_minutos": 10,
+			"hecho": false
+		},
+		{
+			"id": "make_chargrilled_eggplant_sumac_dip_day10",
+			"tipo": "make",
+			"nombre": "Crema de berenjena asada y sumac",
+			"descripcion": "Preparar crema de berenjena asada y sumac para Día 10.",
+			"dia_relacionado": [
+				10
+			],
+			"duracion_minutos": 20,
+			"hecho": false
+		},
+		{
+			"id": "make_quick_flatbread_day12",
+			"tipo": "make",
+			"nombre": "Pan plano rápido",
+			"descripcion": "Preparar pan plano rápido según receta para usar en Día 12.",
+			"dia_relacionado": [
+				12
+			],
+			"duracion_minutos": 20,
+			"hecho": false
+		},
+		{
+			"id": "make_chickpea_flour_crepes_day13",
+			"tipo": "make",
+			"nombre": "Crepas de harina de garbanzo",
+			"descripcion": "Preparar masa o crepas de harina de garbanzo para Día 13.",
+			"dia_relacionado": [
+				13
+			],
+			"duracion_minutos": 20,
+			"hecho": false
+		},
+		{
+			"id": "cook_quinoa_day9",
+			"tipo": "cook",
+			"nombre": "Cocinar quinoa",
+			"descripcion": "Cocer quinoa para Día 9. Nota en el libro: 1 lb 5 oz sin cocer equivalen a las raciones indicadas (6½ oz cocida como referencia).",
+			"duracion_minutos": 25,
+			"dia_relacionado": [
+				9
+			],
+			"hecho": false
+		},
+		{
+			"id": "prep_and_bake_sweet_potato_muffins_day9",
+			"tipo": "prep_and_bake",
+			"nombre": "Preparar y hornear muffins de camote",
+			"descripcion": "Hornear muffins de camote; enfriar y congelar extras para refrigerios.",
+			"dia_relacionado": [
+				9
+			],
+			"duracion_minutos": 45,
+			"hecho": false
+		},
+		{
+			"id": "make_bean_shakshuka_days8_9",
+			"tipo": "make",
+			"nombre": "Shakshuka de frijoles",
+			"descripcion": "Preparar shakshuka de frijoles siguiendo la receta para Días 8 y 9.",
+			"duracion_minutos": 30,
+			"hecho": false,
+			"dia_relacionado": [
+				8,
+				9
+			]
+		},
+		{
+			"id": "make_beet_hummus_day10",
+			"tipo": "make",
+			"nombre": "Hummus de remolacha",
+			"descripcion": "Preparar hummus de remolacha para Día 10.",
+			"dia_relacionado": [
+				10
+			],
+			"duracion_minutos": 15,
+			"hecho": false
+		},
+		{
+			"id": "make_falafel_mix_day10",
+			"tipo": "make",
+			"nombre": "Mezcla de falafel",
+			"descripcion": "Preparar mezcla de falafel para Día 10.",
+			"dia_relacionado": [
+				10
+			],
+			"duracion_minutos": 15,
+			"hecho": false
+		}
+	],
+	"horario": [
+		{
+			"hora": "10:00",
+			"titulo": "PREPARAR Y HORNEAR",
+			"acciones": [
+				{
+					"tipo": "prep_and_bake",
+					"tarea_id": "prep_and_bake_sweet_potato_muffins_day9"
+				}
+			],
+			"notas": "Hornear los muffins de camote y reservar extras para refrigerios."
+		},
+		{
+			"hora": "10:30",
+			"titulo": "PREPARAR / COCINAR",
+			"acciones": [
+				{
+					"tipo": "make",
+					"tarea_id": "make_bean_shakshuka_days8_9"
+				},
+				{
+					"tipo": "cook",
+					"tarea_id": "cook_quinoa_day9"
+				}
+			],
+			"notas": "Preparar shakshuka de frijoles y cocinar quinoa para Día 9."
+		},
+		{
+			"hora": "11:00",
+			"titulo": "PREPARAR",
+			"acciones": [
+				{
+					"tipo": "make",
+					"tarea_id": "make_chargrilled_eggplant_sumac_dip_day10"
+				},
+				{
+					"tipo": "make",
+					"tarea_id": "make_beet_hummus_day10"
+				}
+			],
+			"notas": "Preparar cremas: berenjena y sumac, y hummus de remolacha."
+		},
+		{
+			"hora": "12:00",
+			"titulo": "PREPARAR",
+			"acciones": [
+				{
+					"tipo": "make",
+					"tarea_id": "make_falafel_mix_day10"
+				},
+				{
+					"tipo": "make",
+					"tarea_id": "make_coconut_yogurt_lime_chili_dressing_day9"
+				}
+			],
+			"notas": "Preparar mezcla de falafel y aderezo de yogur de coco, lima y chile."
+		}
+	],
+	"notas_generales": "Comprueba los básicos antes de empezar; marca tareas como hechas para actualizar la lista de compras. 'Quinoa' en la sección COCINAR se refiere a 1 lb 5 oz sin cocer (referencia del libro)."
+}

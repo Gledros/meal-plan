@@ -1,0 +1,221 @@
+{
+	"semana": 1,
+	"titulo": "Semana 1",
+	"descripcion": "Lista de preparaciones y horario para la semana 1. Revisa los básicos y prepara las tareas según el horario.",
+	"basicos": [
+		{
+			"clave": "nut_milk",
+			"nombre": "Leche de frutos secos",
+			"listo": false
+		},
+		{
+			"clave": "carrot_parsnip_loaf",
+			"nombre": "Pan de zanahoria y chirivía",
+			"listo": false
+		},
+		{
+			"clave": "peanut_butter",
+			"nombre": "Mantequilla de cacahuate",
+			"listo": false
+		},
+		{
+			"clave": "garlic_whip",
+			"nombre": "Crema de ajo",
+			"listo": false
+		},
+		{
+			"clave": "crunchy_seed_mix",
+			"nombre": "Mezcla crujiente de semillas",
+			"listo": false
+		},
+		{
+			"clave": "vegan_broth",
+			"nombre": "Caldo vegano",
+			"listo": false
+		},
+		{
+			"clave": "pesto",
+			"nombre": "Pesto",
+			"listo": false
+		},
+		{
+			"clave": "tomato_chili_relish",
+			"nombre": "Salsa de tomate y chile",
+			"listo": false
+		},
+		{
+			"clave": "tofu_miso_dressing",
+			"nombre": "Aderezo de tofu y miso",
+			"listo": false
+		}
+	],
+	"tareas": [
+		{
+			"id": "prep_and_bake_carrot_parsnip_loaf",
+			"tipo": "prep_and_bake",
+			"nombre": "Preparar y hornear Pan de zanahoria y chirivía",
+			"descripcion": "Hornear el pan de zanahoria y chirivía; dejar enfriar, cortar y reservar 2 rebanadas para el Día 3.",
+			"duracion_minutos": 60,
+			"dia_relacionado": [
+				1,
+				3
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_quick_flatbread_day1",
+			"tipo": "make",
+			"nombre": "Pan plano rápido",
+			"descripcion": "Preparar pan plano rápido según receta.",
+			"duracion_minutos": 20,
+			"hecho": false,
+			"dia_relacionado": [
+				1
+			]
+		},
+		{
+			"id": "make_blueberry_chia_pudding_day2",
+			"tipo": "make",
+			"nombre": "Pudín de chía con arándanos",
+			"descripcion": "Preparar pudín de chía con arándanos para dejar en la nevera.",
+			"duracion_minutos": 10,
+			"dia_relacionado": [
+				2
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_brown_rice_dressing_day1",
+			"tipo": "make",
+			"nombre": "Aderezo de arroz integral",
+			"descripcion": "Preparar el aderezo de arroz integral.",
+			"duracion_minutos": 10,
+			"hecho": false,
+			"dia_relacionado": [
+				1
+			]
+		},
+		{
+			"id": "make_satay_dipping_sauce_day2",
+			"tipo": "make",
+			"nombre": "Salsa satay para acompañar",
+			"descripcion": "Preparar la salsa satay para Día 2.",
+			"duracion_minutos": 10,
+			"dia_relacionado": [
+				2
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_roasted_sumac_chickpeas_day3",
+			"tipo": "make",
+			"nombre": "Garbanzos tostados con sumac",
+			"descripcion": "Preparar garbanzos tostados con sumac para refrigerios.",
+			"duracion_minutos": 20,
+			"dia_relacionado": [
+				3
+			],
+			"hecho": false
+		},
+		{
+			"id": "make_flaxseed_egg_day4",
+			"tipo": "make",
+			"nombre": "Huevo de linaza",
+			"descripcion": "Preparar sustituto de huevo con linaza para Día 4.",
+			"duracion_minutos": 5,
+			"dia_relacionado": [
+				4
+			],
+			"hecho": false
+		},
+		{
+			"id": "cook_brown_rice_days_1_3",
+			"tipo": "cook",
+			"nombre": "Cocinar arroz integral",
+			"descripcion": "Cocer 9 oz de arroz integral según indicación; dividir para Día 1 y Día 3.",
+			"duracion_minutos": 40,
+			"hecho": false,
+			"dia_relacionado": [
+				1,
+				3
+			]
+		},
+		{
+			"id": "cook_boil_beets_day3",
+			"tipo": "cook",
+			"nombre": "Cocer remolachas",
+			"descripcion": "Hervir remolachas para usar en recetas del Día 3.",
+			"duracion_minutos": 30,
+			"dia_relacionado": [
+				3
+			],
+			"hecho": false
+		},
+		{
+			"id": "prep_chia_pudding_day2",
+			"tipo": "prep",
+			"nombre": "Preparar pudín de chía",
+			"descripcion": "Preparar pudín de chía y dejar en la nevera para Día 2.",
+			"duracion_minutos": 5,
+			"dia_relacionado": [
+				2
+			],
+			"hecho": false
+		}
+	],
+	"horario": [
+		{
+			"hora": "10:00",
+			"titulo": "PREPARAR Y HORNEAR",
+			"acciones": [
+				{
+					"tipo": "prep_and_bake",
+					"tarea_id": "prep_and_bake_carrot_parsnip_loaf"
+				}
+			],
+			"notas": "Hornear y enfriar el pan; reservar rebanadas extras para refrigerios."
+		},
+		{
+			"hora": "10:30",
+			"titulo": "COCINAR",
+			"acciones": [
+				{
+					"tipo": "cook",
+					"tarea_id": "cook_brown_rice_days_1_3"
+				}
+			],
+			"notas": "Cocinar arroz integral para Días 1 y 3."
+		},
+		{
+			"hora": "11:00",
+			"titulo": "PREPARAR / COCINAR",
+			"acciones": [
+				{
+					"tipo": "make",
+					"tarea_id": "make_brown_rice_dressing_day1"
+				},
+				{
+					"tipo": "make",
+					"tarea_id": "make_satay_dipping_sauce_day2"
+				},
+				{
+					"tipo": "cook",
+					"tarea_id": "cook_boil_beets_day3"
+				}
+			],
+			"notas": "Preparar aderezos y cocer remolachas."
+		},
+		{
+			"hora": "12:00",
+			"titulo": "PREPARAR",
+			"acciones": [
+				{
+					"tipo": "prep",
+					"tarea_id": "prep_chia_pudding_day2"
+				}
+			],
+			"notas": "Preparar pudín de chía y dejar en la nevera para Día 2."
+		}
+	],
+	"notas_generales": "Revisa la lista de 'básicos' antes de empezar. Marca las tareas hechas para actualizar la lista de compras."
+}
