@@ -42,7 +42,7 @@
       "cantidad": 227,
       "unidad": "g",
       "equivalente_g": -1,
-      "estado": "8 oz en lata, escurrir si se desea"
+      "estado": "en lata, escurrir si se desea"
     },
     {
       "clave": "chili_flakes",
@@ -58,7 +58,7 @@
       "cantidad": 14,
       "unidad": "g",
       "equivalente_g": -1,
-      "estado": "½ oz, hojas"
+      "estado": "hojas"
     },
     {
       "clave": "sourdough_bread_slice",
@@ -76,6 +76,7 @@
   ],
   "notas": [
     "8 oz baked beans ≈ 227 g (convertido y marcado con equivalente_g = -1).",
+    "½ oz espinaca baby ≈ 14 g.",
     "3½ fl oz agua ≈ 104 ml (incluido en pasos como referencia de cocción)."
   ],
   "validacion": {

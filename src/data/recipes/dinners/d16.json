@@ -43,7 +43,7 @@
       "cantidad": 21,
       "unidad": "g",
       "equivalente_g": -1,
-      "estado": "¾ oz ≈ 21 g",
+      "estado": "",
       "enlace": ""
     },
     {
@@ -145,6 +145,7 @@
     "Sirve caliente."
   ],
   "notas": [
+    "¾ oz espinaca baby ≈ 21 g.",
     "Puedes cambiar verduras según temporada; ajustar tiempos de horneado.",
     "La mezcla de leche y harina de garbanzo hace una salsa ligera vegana.",
     "La levadura nutricional aporta sabor 'quesoso'."

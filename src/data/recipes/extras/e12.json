@@ -25,7 +25,8 @@
       "nombre": "Floretes de coliflor",
       "cantidad": 156,
       "unidad": "g",
-      "estado": "5½ onzas ≈ 156 g, troceados"
+      "equivalente_g": -1,
+      "estado": "troceados"
     },
     {
       "clave": "zucchini",
@@ -39,7 +40,8 @@
       "nombre": "Judías verdes",
       "cantidad": 78,
       "unidad": "g",
-      "estado": "2¾ onzas ≈ 78 g, cortadas"
+      "equivalente_g": -1,
+      "estado": "cortadas"
     },
     {
       "clave": "french_shallots",
