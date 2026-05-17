@@ -1,0 +1,49 @@
+{
+	"id": "/",
+	"name": "Plan alimenticio",
+	"short_name": "MealPlan",
+	"description": "Plan alimenticio vegano instalable con recetas semanales, lista de compras y guia de preparacion paso a paso para organizar tus comidas aun sin conexion.",
+	"lang": "es-MX",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#f4f7ef",
+	"theme_color": "#2f6d4f",
+	"icons": [
+		{
+			"src": "/icons/icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/icons/icon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "/images/screenshot-desktop.png",
+			"sizes": "1280x800",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Desktop view of the application"
+		},
+		{
+			"src": "/images/screenshot-mobile.png",
+			"sizes": "750x1334",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Mobile view of the application"
+		}
+	]
+}
