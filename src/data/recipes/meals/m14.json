@@ -40,7 +40,7 @@
     {
       "clave": "cannellini_beans",
       "nombre": "Alubias cannellini en conserva",
-      "cantidad": 200,
+      "cantidad": 198,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "escurridas y enjuagadas",
@@ -49,7 +49,7 @@
     {
       "clave": "red_onion",
       "nombre": "Cebolla morada",
-      "cantidad": 0.5,
+      "cantidad": 0.25,
       "unidad": "piece",
       "equivalente_g": 40,
       "estado": "finamente picada",
@@ -58,7 +58,7 @@
     {
       "clave": "parsley",
       "nombre": "Perejil liso",
-      "cantidad": 20,
+      "cantidad": 28,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "hojas picadas",
@@ -76,8 +76,8 @@
     {
       "clave": "marinated_artichoke",
       "nombre": "Corazones de alcachofa marinados",
-      "cantidad": 2,
-      "unidad": "piece",
+      "cantidad": 57,
+      "unidad": "g",
       "equivalente_g": 70,
       "estado": "picados",
       "enlace": ""

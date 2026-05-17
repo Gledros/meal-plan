@@ -22,7 +22,7 @@
     {
       "clave": "butter_lettuce",
       "nombre": "Lechuga mantequilla",
-      "cantidad": 0.25,
+      "cantidad": 0.5,
       "unidad": "piece",
       "equivalente_g": 60,
       "estado": "hojas rotas con las manos"
@@ -99,4 +99,3 @@
     ]
   }
 }
-

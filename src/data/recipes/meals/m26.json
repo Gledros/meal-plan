@@ -41,7 +41,7 @@
     {
       "clave": "persian_cucumber",
       "nombre": "Pepino persa pequeño",
-      "cantidad": 0.5,
+      "cantidad": 0.25,
       "unidad": "piece",
       "equivalente_g": 50,
       "estado": "½ pepino persa, pelado y partido por la mitad",
@@ -50,7 +50,7 @@
     {
       "clave": "fresh_jalapeno",
       "nombre": "Jalapeño fresco",
-      "cantidad": 1,
+      "cantidad": 0.5,
       "unidad": "piece",
       "equivalente_g": 7,
       "estado": "sin semillas (opcional) para menos picante",

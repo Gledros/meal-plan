@@ -46,7 +46,7 @@
     {
       "clave": "raisins",
       "nombre": "Pasas",
-      "cantidad": 7,
+      "cantidad": 1,
       "unidad": "tbsp",
       "equivalente_g": -1,
       "estado": "secas"
@@ -166,4 +166,3 @@
     ]
   }
 }
-

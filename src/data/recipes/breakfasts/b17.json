@@ -56,24 +56,6 @@
       "enlace": ""
     },
     {
-      "clave": "banana",
-      "nombre": "Plátano",
-      "cantidad": 1,
-      "unidad": "piece",
-      "equivalente_g": 120,
-      "estado": "maduro, hecho puré",
-      "enlace": ""
-    },
-    {
-      "clave": "ground_hemp_seeds",
-      "nombre": "Semillas de cáñamo molidas",
-      "cantidad": 1,
-      "unidad": "tbsp",
-      "equivalente_g": 10,
-      "estado": "molidas",
-      "enlace": ""
-    },
-    {
       "clave": "baby_spinach",
       "nombre": "Espinaca baby",
       "cantidad": 21,

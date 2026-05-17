@@ -40,7 +40,7 @@
     {
       "clave": "shallot",
       "nombre": "Echalote",
-      "cantidad": 0.5,
+      "cantidad": 1,
       "unidad": "piece",
       "equivalente_g": 15,
       "estado": "finamente picada",
@@ -85,7 +85,7 @@
     {
       "clave": "rice_noodles",
       "nombre": "Fideos de arroz",
-      "cantidad": 50,
+      "cantidad": 99,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "",
