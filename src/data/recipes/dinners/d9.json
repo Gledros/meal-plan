@@ -22,7 +22,7 @@
     {
       "clave": "quinoa",
       "nombre": "Quinoa",
-      "cantidad": 198,
+      "cantidad": 28,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "seca (equivalente: 85.05g cocida / 3 oz cocida)"
@@ -30,7 +30,7 @@
     {
       "clave": "bean_shakshuka",
       "nombre": "Shakshuka de frijoles pre-cocida",
-      "cantidad": 28,
+      "cantidad": 198,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "sobrante del Día 08, recalentada",
@@ -55,7 +55,7 @@
     {
       "clave": "pico_de_gallo",
       "nombre": "Pico de gallo",
-      "cantidad": 7,
+      "cantidad": 1,
       "unidad": "tbsp",
       "equivalente_g": -1,
       "estado": "preparado, ver p.28",
@@ -129,4 +129,3 @@
     ]
   }
 }
-

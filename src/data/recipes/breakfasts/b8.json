@@ -70,7 +70,7 @@
     {
       "clave": "kale",
       "nombre": "Col rizada (kale)",
-      "cantidad": 397,
+      "cantidad": 3,
       "unidad": "piece",
       "equivalente_g": -1,
       "estado": "tallos removidos, hojas picadas"
@@ -86,7 +86,7 @@
     {
       "clave": "cannellini_beans",
       "nombre": "Frijoles canellini (lata)",
-      "cantidad": 198,
+      "cantidad": 397,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "lata, escurridos y enjuagados"
@@ -102,7 +102,7 @@
     {
       "clave": "tofu_cream_cheese",
       "nombre": "Queso crema de tofu",
-      "cantidad": 7,
+      "cantidad": 2,
       "unidad": "tbsp",
       "equivalente_g": -1,
       "estado": "preparado, ver p.26",
@@ -177,4 +177,3 @@
     ]
   }
 }
-

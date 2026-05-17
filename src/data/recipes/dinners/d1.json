@@ -55,7 +55,7 @@
     {
       "clave": "garlic_whip",
       "nombre": "Crema de ajo",
-      "cantidad": 7,
+      "cantidad": 4,
       "unidad": "tbsp",
       "equivalente_g": -1,
       "estado": "casera, ver p.26",
@@ -103,4 +103,3 @@
     ]
   }
 }
-

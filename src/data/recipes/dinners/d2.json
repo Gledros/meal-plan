@@ -22,7 +22,7 @@
     {
       "clave": "coconut_oil",
       "nombre": "Aceite de coco",
-      "cantidad": 128,
+      "cantidad": 0.5,
       "unidad": "tbsp",
       "equivalente_g": -1,
       "estado": "líquido o derretido"
@@ -30,7 +30,7 @@
     {
       "clave": "extra_firm_tofu",
       "nombre": "Tofu extra firme",
-      "cantidad": 198,
+      "cantidad": 128,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "prensado y cortado en cubos"
@@ -38,7 +38,7 @@
     {
       "clave": "mixed_vegetables",
       "nombre": "Verduras mixtas picadas",
-      "cantidad": 21,
+      "cantidad": 198,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "picadas (brócoli, zanahoria, pimiento, champiñones o al gusto)"
@@ -167,4 +167,3 @@
     ]
   }
 }
-

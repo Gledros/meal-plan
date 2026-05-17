@@ -22,7 +22,7 @@
     {
       "clave": "mixed_sprouts",
       "nombre": "Brotes mixtos (mung, garbanzo, soya)",
-      "cantidad": 7,
+      "cantidad": 28,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "frescos, ver p.10",
@@ -39,7 +39,7 @@
     {
       "clave": "beansprouts",
       "nombre": "Germinado de frijol",
-      "cantidad": 7,
+      "cantidad": 57,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "fresco"
@@ -79,7 +79,7 @@
     {
       "clave": "coconut_yogurt_dressing",
       "nombre": "Aderezo de yogur de coco con limón y chile",
-      "cantidad": 21,
+      "cantidad": 1.5,
       "unidad": "tbsp",
       "equivalente_g": -1,
       "estado": "preparado, ver p.18",
@@ -131,4 +131,3 @@
     ]
   }
 }
-

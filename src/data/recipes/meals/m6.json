@@ -54,7 +54,7 @@
     {
       "clave": "ruby_red_grapefruit",
       "nombre": "Toronja roja (ruby red)",
-      "cantidad": 7,
+      "cantidad": 0.25,
       "unidad": "piece",
       "equivalente_g": -1,
       "estado": "en gajos, sin piel ni membrana"
@@ -117,4 +117,3 @@
     ]
   }
 }
-

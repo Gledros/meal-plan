@@ -78,7 +78,7 @@
     {
       "clave": "vegan_broth",
       "nombre": "Caldo vegano",
-      "cantidad": 227,
+      "cantidad": 2,
       "unidad": "cup",
       "equivalente_g": -1,
       "estado": "líquido, ver p.30",
@@ -87,7 +87,7 @@
     {
       "clave": "dried_red_lentils",
       "nombre": "Lentejas rojas secas",
-      "cantidad": 99,
+      "cantidad": 227,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "secas, sin remojar"
@@ -103,7 +103,7 @@
     {
       "clave": "french_shallot",
       "nombre": "Chalote francés",
-      "cantidad": 128,
+      "cantidad": 1,
       "unidad": "piece",
       "equivalente_g": -1,
       "estado": "rebanado finamente"
@@ -165,4 +165,3 @@
     ]
   }
 }
-

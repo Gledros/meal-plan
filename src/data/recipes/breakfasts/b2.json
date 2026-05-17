@@ -54,8 +54,8 @@
     {
       "clave": "fresh_blueberries",
       "nombre": "Arándanos frescos",
-      "cantidad": 0.25,
-      "unidad": "cup",
+      "cantidad": 7,
+      "unidad": "g",
       "equivalente_g": 37,
       "estado": "frescos, divididos en dos partes"
     }
@@ -69,7 +69,7 @@
   ],
   "notas": [
     "Medida original: 1¾ fl oz leche de coco (onzas fluidas) → convertido a 51.75 ml. NO se convirtió como oz de peso.",
-    "AUTO-CORRECCIÓN APLICADA: la fuente indica '¼ oz arándanos frescos' (7.09g), lo cual activa el error heurístico de fruta < 20g. Corregido a ¼ taza (~37g) según la regla de corrección documentada del pipeline.",
+    "CORRECCIÓN APLICADA: la fuente del libro indica '¼ oz arándanos frescos' (7.09g → 7g). Según instrucciones del usuario, se ANULA la regla heurística de fruta < 20g y se respeta la cantidad del libro: 7g.",
     "El jarabe de maple está marcado como opcional en la receta original. Si se omite, afecta ligeramente el valor calórico.",
     "La vainilla en vaina puede sustituirse por 1 cdita de extracto puro de vainilla.",
     "Densidades usadas: leche de coco 1.0 g/ml; jarabe de maple 1.33 g/ml; semillas de chía densidad aparente ~0.80 g/ml (equiv_g = 12g por referencia estándar de 1 cda).",
@@ -87,4 +87,3 @@
     ]
   }
 }
-

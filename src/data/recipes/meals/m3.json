@@ -30,7 +30,7 @@
     {
       "clave": "olive_oil",
       "nombre": "Aceite de oliva",
-      "cantidad": 7,
+      "cantidad": 1,
       "unidad": "tbsp",
       "equivalente_g": -1,
       "estado": "líquido, dividido"
@@ -46,7 +46,7 @@
     {
       "clave": "balsamic_vinegar",
       "nombre": "Vinagre balsámico",
-      "cantidad": 28,
+      "cantidad": 2,
       "unidad": "tsp",
       "equivalente_g": -1,
       "estado": "líquido"
@@ -130,4 +130,3 @@
     ]
   }
 }
-

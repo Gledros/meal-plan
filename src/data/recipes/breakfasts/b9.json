@@ -22,7 +22,7 @@
     {
       "clave": "flaxseed_chia_eggs",
       "nombre": "Huevos de linaza o chía",
-      "cantidad": 57,
+      "cantidad": 2,
       "unidad": "piece",
       "equivalente_g": -1,
       "estado": "preparados, ver p.14",
@@ -47,7 +47,7 @@
     {
       "clave": "vanilla_extract",
       "nombre": "Extracto natural de vainilla",
-      "cantidad": 128,
+      "cantidad": 1,
       "unidad": "tsp",
       "equivalente_g": -1,
       "estado": "líquido"
@@ -55,7 +55,7 @@
     {
       "clave": "wholewheat_flour",
       "nombre": "Harina integral con polvo para hornear",
-      "cantidad": 28,
+      "cantidad": 128,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "harina integral con leudante incorporado"
@@ -63,7 +63,7 @@
     {
       "clave": "ground_almonds",
       "nombre": "Almendra molida",
-      "cantidad": 50,
+      "cantidad": 28,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "finamente molida"
@@ -95,7 +95,7 @@
     {
       "clave": "ground_cinnamon",
       "nombre": "Canela molida",
-      "cantidad": 156,
+      "cantidad": 1,
       "unidad": "tsp",
       "equivalente_g": -1,
       "estado": "molida"
@@ -174,4 +174,3 @@
     ]
   }
 }
-

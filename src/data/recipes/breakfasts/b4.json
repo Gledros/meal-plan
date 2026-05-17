@@ -55,7 +55,7 @@
     {
       "clave": "vanilla_extract",
       "nombre": "Extracto natural de vainilla",
-      "cantidad": 99,
+      "cantidad": 0.5,
       "unidad": "tsp",
       "equivalente_g": -1,
       "estado": "líquido"
@@ -115,4 +115,3 @@
     ]
   }
 }
-

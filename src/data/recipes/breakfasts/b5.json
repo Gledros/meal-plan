@@ -30,7 +30,7 @@
     {
       "clave": "frozen_banana",
       "nombre": "Plátano",
-      "cantidad": 99,
+      "cantidad": 0.5,
       "unidad": "piece",
       "equivalente_g": -1,
       "estado": "congelado"
@@ -89,4 +89,3 @@
     ]
   }
 }
-
