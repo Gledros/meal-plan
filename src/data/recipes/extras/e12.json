@@ -79,8 +79,8 @@
     {
       "clave": "ground_turmeric",
       "nombre": "Cúrcuma molida",
-      "cantidad": 0.25,
-      "unidad": "tbsp",
+      "cantidad": 0.5,
+      "unidad": "tsp",
       "estado": ""
     },
     {

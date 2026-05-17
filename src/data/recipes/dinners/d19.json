@@ -40,7 +40,7 @@
     {
       "clave": "toasted_sesame_seeds",
       "nombre": "Semillas de sésamo tostadas",
-      "cantidad": 2,
+      "cantidad": 0.5,
       "unidad": "tbsp",
       "equivalente_g": 4,
       "estado": "",
