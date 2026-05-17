@@ -306,8 +306,11 @@ const defaultTabId = tabs[0]?.id ?? '';
 		top: var(--sticky-header-space, 0px);
 		left: 0;
 		width: 100%;
+		box-sizing: border-box;
 		z-index: 9;
 		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
 		gap: 0.5rem;
 		padding: 0.75rem 0.5rem;
 		background: var(--surface-translucent-bg);
@@ -316,6 +319,8 @@ const defaultTabId = tabs[0]?.id ?? '';
 		border: 2px solid var(--surface-translucent-border);
 		border-top: none;
 		border-radius: 0 0 1.5rem 1.5rem;
+		overflow-x: auto;
+		overflow-y: hidden;
 		scrollbar-width: thin;
 	}
 
@@ -397,6 +402,8 @@ const defaultTabId = tabs[0]?.id ?? '';
 	.tabs-controls {
 		display: flex;
 		align-items: center;
+		flex: 0 0 auto;
+		min-width: 0;
 		margin-left: 0;
 		padding-left: 0;
 		border-left: none;
@@ -424,16 +431,15 @@ const defaultTabId = tabs[0]?.id ?? '';
 	.tabs-controls :global(.tabs-controls-actions) {
 		display: inline-flex;
 		align-items: center;
+		flex-wrap: nowrap;
+		flex: 0 0 auto;
+		min-width: max-content;
 		gap: 0.5rem;
 	}
 
 	@media (max-width: 1023px) {
-		.tabs-list {
-			flex-wrap: wrap;
-		}
 		.tabs-controls {
-			order: 2;
-			flex: 1 1 100%;
+			order: 0;
 			justify-content: center;
 			border-left: none;
 		}
@@ -443,7 +449,6 @@ const defaultTabId = tabs[0]?.id ?? '';
 		}
 		.tabs-controls :global(.tabs-controls-extra),
 		.tabs-controls :global(.tabs-controls-actions) {
-			flex-wrap: wrap;
 			justify-content: center;
 		}
 	}
@@ -471,45 +476,40 @@ const defaultTabId = tabs[0]?.id ?? '';
 
 	@media (min-width: 1024px) and (max-width: 1322px) {
 		.tabs-list {
-			flex-wrap: wrap;
-			justify-content: center;
-			row-gap: 0.5rem;
+			justify-content: flex-start;
 		}
 
 		.tabs-controls {
-			order: 2;
-			flex: 1 1 100%;
+			order: 0;
+			flex: 0 0 auto;
 			min-width: 0;
-			margin-left: 0;
-			padding-left: 0;
+			margin-left: auto;
+			padding-left: 0.75rem;
 			justify-content: center;
 		}
 
 		.tabs-controls :global(.tabs-controls-extra),
 		.tabs-controls :global(.tabs-controls-actions) {
-			width: 100%;
 			justify-content: center;
-			flex-wrap: wrap;
 		}
 	}
 
 	@media (max-width: 640px) {
 		.tabs-list {
 			justify-content: stretch;
-			flex-wrap: wrap;
-			/* overflow-x: visible; */
-			overflow-x: hidden;
+			flex-wrap: nowrap;
+			overflow-x: auto;
 			padding: 0.625rem;
 			border-width: 1px;
 			border-top-width: 0;
 		}
 
 		.tabs-trigger {
-			flex: 1 1 calc(50% - 0.25rem);
-			min-width: calc(50% - 0.25rem);
-			width: 100%;
+			flex: 0 0 auto;
+			min-width: max-content;
+			width: auto;
 			text-align: center;
-			white-space: normal;
+			white-space: nowrap;
 		}
 
 		.tabs-viewport {
