@@ -32,7 +32,7 @@
     {
       "clave": "small_onion",
       "nombre": "Cebolla pequeña",
-      "cantidad": 0.25,
+      "cantidad": 0.5,
       "unidad": "piece",
       "equivalente_g": 25,
       "estado": "picada",
@@ -95,7 +95,7 @@
     {
       "clave": "green_lentils",
       "nombre": "Lentejas verdes",
-      "cantidad": 85,
+      "cantidad": 99,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "3½ oz, enjuagadas",

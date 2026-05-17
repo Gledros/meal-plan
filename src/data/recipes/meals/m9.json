@@ -39,7 +39,7 @@
     {
       "clave": "beansprouts",
       "nombre": "Germinado de frijol",
-      "cantidad": 57,
+      "cantidad": 14,
       "unidad": "g",
       "equivalente_g": -1,
       "estado": "fresco"
@@ -79,7 +79,7 @@
     {
       "clave": "coconut_yogurt_dressing",
       "nombre": "Aderezo de yogur de coco con limón y chile",
-      "cantidad": 1.5,
+      "cantidad": 2,
       "unidad": "tbsp",
       "equivalente_g": -1,
       "estado": "preparado, ver p.18",
