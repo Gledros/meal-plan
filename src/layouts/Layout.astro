@@ -5,25 +5,60 @@ interface Props {
 	title?: string;
 }
 
-const { title = 'Plan alimenticio' } = Astro.props;
+const {
+	title = 'Plan alimenticio vegano semanal con recetas y guia completa',
+} = Astro.props;
+const description =
+	'Descubre un plan alimenticio vegano semanal con smoothies, desayunos, comidas, cenas y extras, con lista de compras y guia de preparacion para cada semana.';
+const siteUrl = 'https://meal-plan.dellarocca.mx';
+const ogImageUrl = 'https://meal-plan.dellarocca.mx/images/og-image-1200x630.png';
 ---
 
 <html lang='es'>
 	<head>
 		<meta charset='utf-8' />
-		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-		<link rel='icon' type='image/png' sizes='192x192' href='/icons/icon-192.png' />
-		<link rel='apple-touch-icon' href='/icons/apple-touch-icon.png' />
-		<link rel='manifest' href='/manifest.webmanifest' />
-		<meta name='theme-color' content='#2f6d4f' />
-		<meta name='mobile-web-app-capable' content='yes' />
-		<meta name='apple-mobile-web-app-capable' content='yes' />
-		<meta name='apple-mobile-web-app-title' content='Plan alimenticio' />
-		<meta name='apple-mobile-web-app-status-bar-style' content='default' />
-		<meta name='color-scheme' content='light dark' />
 		<meta name='viewport' content='width=device-width, initial-scale=1' />
-		<meta name='generator' content={Astro.generator} />
 		<title>{title}</title>
+		<meta name='description' content={description} />
+		<link rel='canonical' href={siteUrl} />
+		<meta name='robots' content='index, follow' />
+		<link rel='sitemap' type='application/xml' href='/sitemap.xml' />
+
+		<meta property='og:type' content='website' />
+		<meta property='og:locale' content='es_MX' />
+		<meta property='og:site_name' content='Plan alimenticio' />
+		<meta property='og:title' content={title} />
+		<meta property='og:description' content={description} />
+		<meta property='og:url' content={siteUrl} />
+		<meta property='og:image' content={ogImageUrl} />
+
+		<meta name='twitter:card' content='summary_large_image' />
+		<meta name='twitter:title' content={title} />
+		<meta name='twitter:description' content={description} />
+		<meta name='twitter:image' content={ogImageUrl} />
+
+		<meta name='theme-color' content='#2f6d4f' />
+		<meta name='color-scheme' content='light dark' />
+		<meta name='apple-mobile-web-app-title' content='Plan alimenticio' />
+		<meta
+			name='referrer'
+			content='strict-origin-when-cross-origin'
+		/>
+
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<link rel='icon' href='/favicon.ico' />
+		<link rel='apple-touch-icon' href='/icons/apple-touch-icon.png' />
+		<link rel='mask-icon' href='/safari-pinned-tab.svg' color='#2f6d4f' />
+		<link rel='manifest' href='/manifest.webmanifest' />
+
+		<script type='application/ld+json' set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'WebSite',
+			name: 'Plan alimenticio',
+			url: siteUrl,
+			description,
+			inLanguage: 'es-MX',
+		})} />
 	</head>
 	<body>
 		<slot />
