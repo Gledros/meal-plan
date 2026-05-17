@@ -89,7 +89,7 @@
       "cantidad": 355,
       "unidad": "ml",
       "equivalente_g": 355,
-      "estado": "12 fl oz ≈ 355 ml (o agua)",
+      "estado": "o agua",
       "enlace": "recipe://vegan-broth-p30"
     },
     {
@@ -98,7 +98,7 @@
       "cantidad": 99,
       "unidad": "g",
       "equivalente_g": -1,
-      "estado": "3½ oz, enjuagadas",
+      "estado": "enjuagadas",
       "enlace": ""
     },
     {
@@ -107,7 +107,7 @@
       "cantidad": 255,
       "unidad": "g",
       "equivalente_g": -1,
-      "estado": "9 oz en lata, escurridos si es necesario",
+      "estado": "en lata, escurridos si es necesario",
       "enlace": ""
     },
     {
