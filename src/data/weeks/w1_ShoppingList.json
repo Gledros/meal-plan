@@ -88,7 +88,7 @@
         "nombre": "arúgula"
       },
       {
-        "cantidad": 14,
+        "cantidad": 7,
         "unidad": "g",
         "nombre": "arándano azul"
       },
@@ -183,12 +183,12 @@
         "nombre": "leche de coco"
       },
       {
-        "cantidad": 454,
+        "cantidad": 461,
         "unidad": "g",
         "nombre": "tofu firme extra"
       },
       {
-        "cantidad": 99,
+        "cantidad": 105,
         "unidad": "g",
         "nombre": "yogur de coco"
       },
@@ -213,7 +213,7 @@
         "nombre": "avena de cocción rápida"
       },
       {
-        "cantidad": 99,
+        "cantidad": 104,
         "unidad": "g",
         "nombre": "agua de coco"
       },
@@ -283,7 +283,7 @@
         "nombre": "garbanzo cocido"
       },
       {
-        "cantidad": 454,
+        "cantidad": 482,
         "unidad": "g",
         "nombre": "arroz integral"
       },
