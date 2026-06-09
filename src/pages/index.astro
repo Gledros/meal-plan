@@ -267,7 +267,11 @@ const preparationWeeks = [
 	(() => {
 		const HEADER_SELECTOR = '[data-tabs-sticky-header]';
 		const PANEL_SELECTOR = '[data-tabs-track] > [data-tab-panel]';
-		const TOP_REVEAL_THRESHOLD = 8;
+		const TOP_REVEAL_THRESHOLD = 12;
+		const MIN_SCROLL_DELTA = 2;
+		const HIDE_SCROLL_DISTANCE = 50;
+		const SHOW_SCROLL_DISTANCE = 50;
+		const HEADER_TOGGLE_COOLDOWN_MS = 200;
 		const header = document.querySelector(HEADER_SELECTOR);
 
 		if (!(header instanceof HTMLElement)) {
@@ -287,6 +291,9 @@ const preparationWeeks = [
 		}
 
 		let isHeaderHidden = false;
+		let accumulatedScrollDistance = 0;
+		let lastScrollDirection = 0;
+		let lastHeaderToggleAt = 0;
 		const panelScrollState = new WeakMap();
 		const panelTouchStartY = new WeakMap();
 
@@ -301,14 +308,30 @@ const preparationWeeks = [
 			);
 		};
 
-		const setHeaderHidden = (nextHidden) => {
+		const setHeaderHidden = (nextHidden, force = false) => {
 			if (isHeaderHidden === nextHidden) {
-				return;
+				return false;
+			}
+
+			if (!force) {
+				const now = performance.now();
+				if (now - lastHeaderToggleAt < HEADER_TOGGLE_COOLDOWN_MS) {
+					return false;
+				}
+				lastHeaderToggleAt = now;
+			} else {
+				lastHeaderToggleAt = performance.now();
 			}
 
 			isHeaderHidden = nextHidden;
 			header.classList.toggle('is-scroll-hidden', nextHidden);
 			updateHeaderLayoutVars();
+			return true;
+		};
+
+		const resetScrollSensitivity = () => {
+			accumulatedScrollDistance = 0;
+			lastScrollDirection = 0;
 		};
 
 		const handlePanelScroll = (event) => {
@@ -332,20 +355,42 @@ const preparationWeeks = [
 			panelScrollState.set(panel, currentScrollTop);
 
 			const delta = currentScrollTop - previousScrollTop;
-
-			if (currentScrollTop <= TOP_REVEAL_THRESHOLD) {
-				if (delta <= 0) {
-					setHeaderHidden(false);
-				} else if (isHeaderHidden) {
-					setHeaderHidden(true);
-				}
+			if (Math.abs(delta) < MIN_SCROLL_DELTA) {
 				return;
 			}
 
-			if (delta > 0) {
-				setHeaderHidden(true);
-			} else if (delta < 0) {
-				setHeaderHidden(false);
+			const direction = delta > 0 ? 1 : -1;
+			if (direction !== lastScrollDirection) {
+				lastScrollDirection = direction;
+				accumulatedScrollDistance = 0;
+			}
+
+			accumulatedScrollDistance += Math.abs(delta);
+
+			if (currentScrollTop <= TOP_REVEAL_THRESHOLD) {
+				if (direction < 0 || !isHeaderHidden) {
+					setHeaderHidden(false, true);
+				}
+				resetScrollSensitivity();
+				return;
+			}
+
+			if (direction > 0) {
+				if (
+					!isHeaderHidden &&
+					accumulatedScrollDistance >= HIDE_SCROLL_DISTANCE
+				) {
+					if (setHeaderHidden(true)) {
+						accumulatedScrollDistance = 0;
+					}
+				}
+			} else if (
+				isHeaderHidden &&
+				accumulatedScrollDistance >= SHOW_SCROLL_DISTANCE
+			) {
+				if (setHeaderHidden(false)) {
+					accumulatedScrollDistance = 0;
+				}
 			}
 		};
 
@@ -413,7 +458,7 @@ const preparationWeeks = [
 			}
 
 			const currentY = event.touches[0].clientY;
-			if (currentY - startY > 4) {
+			if (currentY - startY > 10) {
 				setHeaderHidden(false);
 				panelTouchStartY.set(panel, currentY);
 			}
