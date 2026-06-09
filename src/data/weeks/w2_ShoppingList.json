@@ -64,7 +64,7 @@
 				"nombre": "col negra (manojo)"
 			},
 			{
-				"cantidad": 78,
+				"cantidad": 45,
 				"unidad": "g",
 				"nombre": "ejotes 2¾ oz"
 			},
@@ -109,7 +109,7 @@
 				"nombre": "mezcla de brotes"
 			},
 			{
-				"cantidad": 43,
+				"cantidad": 37,
 				"unidad": "g",
 				"nombre": "chícharos chinos (1½ oz)"
 			},
@@ -224,7 +224,7 @@
 				"nombre": "leche vegetal (soya/almendra/avena) - botella pequeña (1 cup equivalente)"
 			},
 			{
-				"cantidad": 128,
+				"cantidad": 60,
 				"unidad": "g",
 				"nombre": "yogur de coco (4½ oz ≈ 128 g)",
 				"unidad_display": "g"
@@ -276,7 +276,7 @@
 				"nombre": "garbanzos en lata 14 oz"
 			},
 			{
-				"cantidad": 99,
+				"cantidad": 98,
 				"unidad": "g",
 				"nombre": "lentejas Puy 3½ oz",
 				"unidad_display": "g"
@@ -302,7 +302,7 @@
 				"nombre": "castañas de agua en lata - 1 lata"
 			},
 			{
-				"cantidad": 397,
+				"cantidad": 250,
 				"unidad": "g",
 				"nombre": "crema de coco en lata 14 oz"
 			},
@@ -342,7 +342,7 @@
 				"nombre": "pepitas (semillas de calabaza) 1¼ oz ≈ 36 g"
 			},
 			{
-				"cantidad": 30,
+				"cantidad": 15,
 				"unidad": "g",
 				"nombre": "semillas de chía"
 			},
